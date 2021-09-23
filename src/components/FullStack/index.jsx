@@ -1,127 +1,214 @@
+import { Box, Button, Grid, Hidden, makeStyles } from "@material-ui/core";
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import laptopimg from "../../assets/img1.png";
-import { Container, Box, Grid } from "@material-ui/core";
-
+import laptopLg from "../../assets/laptopLg.png";
+import backgroundLg from "../../assets/backgroundLg.png";
+import backgroundmd from "../../assets/backgroundmd.png";
+import backgroundsm from "../../assets/backgroundsm.png";
+import backgroundxs from "../../assets/backgroundxs.png";
 const useStyles = makeStyles((theme) => ({
-  main: {
-    marginTop: 150,
-    display: "flex",
-    justifyContent: "center",
+  laptopImage: {
+    [theme.breakpoints.up("xs")]: {
+      width: 280,
+      height: 220,
+    },
+    [theme.breakpoints.up("sm")]: {
+      width: 320,
+      height: 300,
+    },
+    [theme.breakpoints.up("md")]: {
+      width: 450,
+      height: 380,
+    },
+    [theme.breakpoints.up("lg")]: {
+      width: 465,
+      height: 405,
+    },
+  },
+
+  backgroundImage: {
+    backgroundRepeat: "no-repeat",
+    [theme.breakpoints.up("xs")]: {
+      backgroundSize: "cover",
+      backgroundImage: `url(${backgroundxs})`,
+      height: 735,
+    },
+    [theme.breakpoints.up("sm")]: {
+      backgroundImage: `url(${backgroundsm})`,
+      height: 585,
+      backgroundSize: "contain",
+    },
+    [theme.breakpoints.up("md")]: {
+      backgroundImage: `url(${backgroundmd})`,
+      height: 750,
+      backgroundSize: "contain",
+    },
+    [theme.breakpoints.up("lg")]: {
+      backgroundImage: `url(${backgroundLg})`,
+      height: 939,
+      backgroundSize: "contain",
+    },
+  },
+  heading: {
+    fontSize: 55,
+    fontFamily: "Axiforma",
+    fontWeight: 800,
+    color: "#3B3E56",
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 50,
+    },
+  },
+  subHeading: {
+    fontSize: 45,
+    fontFamily: "Axiforma",
+    fontWeight: 800,
+    color: "#3B3E56",
+    lineHeight: "49px",
+
+    [theme.breakpoints.up("sm")]: {
+      fontSize: 30,
+      lineHeight: "40px",
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: 38,
+      lineHeight: "48px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: 45,
+      lineHeight: "49px",
+    },
+  },
+  detail: {
+    fontSize: 30,
+    fontFamily: "Axiforma",
+    fontWeight: 300,
+    color: "#1E3849",
+    lineHeight: "47px",
+    marginTop: 29,
+    [theme.breakpoints.up("xs")]: {
+      fontSize: 12,
+      textAlign: "center",
+      lineHeight: "20px",
+    },
+
+    [theme.breakpoints.up("sm")]: {
+      fontSize: 19,
+      lineHeight: "30px",
+      textAlign: "unset",
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: 23,
+      lineHeight: "35px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: 30,
+      lineHeight: "47px",
+      textAlign: "unset",
+    },
+  },
+  connectButton: {
+    fontSize: 16,
+    fontFamily: "Axiforma",
+    fontWeight: 300,
+    color: "#FFFFFF",
+    lineHeight: "25px",
+    backgroundColor: "#7FC6DC",
+    textTransform: "capitalize",
+    borderRadius: 72,
+    height: 56,
+    width: 200,
+    "&:hover": {
+      backgroundColor: "#7FC6DC",
+    },
+    marginTop: 30,
+  },
+  mobileHeader: {
+    fontSize: 19,
+    fontFamily: "Axiforma",
+    fontWeight: 800,
+    color: "#3B3E56",
+    textAlign: "center",
+    marginTop: 43,
   },
   dflex: {
     display: "flex",
+    marginTop: 80,
     justifyContent: "center",
-    // alignItems: "flex-start",
-    flexDirection: "column",
-    marginLeft: -150,
-  },
-  full: {
-    display: "flex",
-    maxWidth: 360,
-    height: 65,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 800,
-    fontSize: 55,
-    lineHeight: "61px",
-    // /* or 61px */
-
-    color: "#3B3E56",
-  },
-  app: {
-    display: "flex",
-    maxWidth: 631,
-    height: 89,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 800,
-    fontSize: 45,
-    lineHeight: "50px",
-    /* or 50px */
-    color: "#3B3E56",
-    marginTop: 20,
-  },
-  techtiz: {
-    display: "flex",
-    maxWidth: 588,
-    height: 144,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 30,
-    lineHeight: "47px",
-    color: "#1E3849",
-    marginTop: 30,
-  },
-  btn: {
-    width: 200,
-    height: 56,
-    marginTop: 30,
-    background: "#7FC6DC",
-    boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.1)",
-    borderRadius: 72,
-    fontFamily: "Axiforma",
-    fontStyle: "normal",
-    fontWeight: 300,
-    fontSize: 14,
-    lineHeight: "25px",
-    display: "flex",
-    alignItems: "center",
-    textAlign: "center",
-
-    color: "#FFFFFF",
-    "&:hover": {
-      background: "#ADD8E6",
+    [theme.breakpoints.only("xs")]: {
+      display: "block",
+    },
+    [theme.breakpoints.only("xl")]: {
+      display: "block",
+      marginTop: 228,
     },
   },
-  img: {
-    position: "absolute",
-    width: 620,
-    borderRadius: 20,
+  buttonCenter: {
+    [theme.breakpoints.up("xs")]: {
+      display: "flex",
+      justifyContent: "center",
+    },
+    [theme.breakpoints.up("lg")]: {
+      display: "unset",
+      justifyContent: "unset",
+    },
   },
-  blue: {
-    position: "absolute",
-    width: 125.4,
-    height: 421.45,
-    marginTop: -168,
-    marginLeft: 137,
-    background: "#7FC6DC",
-    borderRadius: 275,
-    transform: "matrix(-0.27, 0.97, -0.95, -0.29, 0, 0)",
-  },
-  yellow: {
-    position: "absolute",
-    width: 122.16,
-    height: 441.45,
-    marginTop: 180,
-    marginLeft: 350,
-    background: "#FFC107",
-    borderRadius: 275,
-    transform: "matrix(-0.27, 0.97, -0.95, -0.29, 0, 0)",
+  textcenter: {
+    [theme.breakpoints.only("xs")]: {
+      display: "flex",
+      flexDirection: "column",
+      textAlign: "center",
+    },
   },
 }));
-
-export default function FullStack() {
+export const FullStack = () => {
   const classes = useStyles();
-
   return (
-    <Grid container className={classes.main}>
-      <Grid item lg={5} md={12} className={classes.dflex}>
-        <Box className={classes.full}>Full-Stack</Box>
-        <Box className={classes.app}>App Development Company​</Box>
-        <Box className={classes.techtiz}>
-          At Techtiz, we build applications that click! With extraordinarily
-          creative minds on board.
-        </Box>
-        <Button className={classes.btn}> Let’s Connect Today </Button>
+    <Box className={classes.backgroundImage}>
+      <Grid container justifyContent="center">
+        <Grid item xs={10} sm={11} md={10} lg={10}>
+          <Box className={classes.dflex}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={6}
+              className={classes.textcenter}
+            >
+              <Box className={classes.heading}>Full-Stack</Box>
+              <Hidden only="xs">
+                <Box className={classes.subHeading}>
+                  App Development Company​
+                </Box>
+              </Hidden>
+              <Hidden smUp>
+                <Box className={classes.mobileHeader}>
+                  Full-Stack App Development Company​
+                </Box>
+                <Box>
+                  <img className={classes.laptopImage} src={laptopLg} alt="" />
+                </Box>
+              </Hidden>
+              <Box className={classes.detail}>
+                At Techtiz, we build applications that click! With
+                extraordinarily creative minds on board.
+              </Box>
+              <Box className={classes.buttonCenter}>
+                <Button disableRipple className={classes.connectButton}>
+                  Let’s Connect Today
+                </Button>
+              </Box>
+            </Grid>
+
+            <Grid item xs={12} sm={6} md={6} lg={5}>
+              <Hidden xsDown>
+                <Box>
+                  <img className={classes.laptopImage} src={laptopLg} alt="" />
+                </Box>
+              </Hidden>
+            </Grid>
+          </Box>
+        </Grid>
       </Grid>
-      <Grid item lg={4} md={12}>
-        <Box className={classes.blue}></Box>
-        <Box className={classes.yellow}></Box>
-        <img src={laptopimg} alt="" className={classes.img} />
-      </Grid>
-    </Grid>
+    </Box>
   );
-}
+};
