@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 14,
       fontWeight: 300,
       color: "#3B3E56",
-      marginTop: "unset",
+
       marginTop: 10,
     },
     [theme.breakpoints.up("sm")]: {

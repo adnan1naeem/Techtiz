@@ -27,10 +27,10 @@ const useStyles = makeStyles((theme) => ({
 
   backgroundImage: {
     backgroundRepeat: "no-repeat",
-    [theme.breakpoints.up("xs")]: {
+    [theme.breakpoints.only("xs")]: {
       backgroundSize: "cover",
       backgroundImage: `url(${backgroundxs})`,
-      height: 735,
+      height: 680,
     },
     [theme.breakpoints.up("sm")]: {
       backgroundImage: `url(${backgroundsm})`,
@@ -44,6 +44,11 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("lg")]: {
       backgroundImage: `url(${backgroundLg})`,
+
+      backgroundSize: "contain",
+    },
+    [theme.breakpoints.up("xl")]: {
+      backgroundImage: `url(${backgroundLg})`,
       height: 939,
       backgroundSize: "contain",
     },
@@ -55,6 +60,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#3B3E56",
     [theme.breakpoints.between("sm", "md")]: {
       fontSize: 50,
+    },
+    [theme.breakpoints.up("xs")]: {
+      fontSize: 30,
     },
   },
   subHeading: {
@@ -127,7 +135,6 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 800,
     color: "#3B3E56",
     textAlign: "center",
-    marginTop: 43,
   },
   dflex: {
     display: "flex",
@@ -137,7 +144,6 @@ const useStyles = makeStyles((theme) => ({
       display: "block",
     },
     [theme.breakpoints.only("xl")]: {
-      display: "block",
       marginTop: 228,
     },
   },
