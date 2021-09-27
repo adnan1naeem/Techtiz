@@ -5,6 +5,7 @@ import backgroundLg from "../../assets/backgroundLg.png";
 import backgroundmd from "../../assets/backgroundmd.png";
 import backgroundsm from "../../assets/backgroundsm.png";
 import backgroundxs from "../../assets/backgroundxs.png";
+
 const useStyles = makeStyles((theme) => ({
   laptopImage: {
     [theme.breakpoints.up("xs")]: {
@@ -32,19 +33,19 @@ const useStyles = makeStyles((theme) => ({
       backgroundImage: `url(${backgroundxs})`,
       height: 680,
     },
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.only("sm")]: {
       backgroundImage: `url(${backgroundsm})`,
       height: 585,
       backgroundSize: "contain",
     },
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.only("md")]: {
       backgroundImage: `url(${backgroundmd})`,
       height: 750,
       backgroundSize: "contain",
     },
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.only("lg")]: {
       backgroundImage: `url(${backgroundLg})`,
-
+      height: 580,
       backgroundSize: "contain",
     },
     [theme.breakpoints.up("xl")]: {

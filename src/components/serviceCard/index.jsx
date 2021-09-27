@@ -1,5 +1,6 @@
-import { Box, Grid, makeStyles } from "@material-ui/core";
+import { Box, Grid, Hidden, makeStyles } from "@material-ui/core";
 import React from "react";
+import mobileicon from "../../assets/mobileicon.png";
 const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: 55,
@@ -13,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("xs")]: {
       fontSize: 25,
+      textAlign: "center",
     },
   },
   subtitle: {
@@ -27,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("xs")]: {
       fontSize: 20,
+      textAlign: "center",
     },
   },
   detail: {
@@ -36,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     lineHeight: "32px",
     marginTop: 23,
+    [theme.breakpoints.only("xs")]: {
+      textAlign: "center",
+      fontSize: 18,
+    },
   },
   [theme.breakpoints.only("sm")]: {
     fontSize: 15,
@@ -74,17 +81,26 @@ export const ServicesCard = ({ title, subtitle, detail, image1, image2 }) => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={10} sm={8} md={8} lg={10}>
+      <Grid item xs={12} sm={8} md={8} lg={10}>
         <Box className={classes.dflex}>
-          <Grid item xs={11} sm={8} md={8} lg={7}>
+          <Grid item xs={12} sm={8} md={8} lg={7}>
             <Box className={classes.title}>{title}</Box>
             <Box className={classes.subtitle}>{subtitle}</Box>
             <Box className={classes.detail}>{detail}</Box>
-            <img className={classes.icon} src={image1} alt="" />
+            <Hidden smDown>
+              <Box>
+                <img className={classes.icon} src={image1} alt="" />
+              </Box>
+            </Hidden>
           </Grid>
           <Grid item xs={11} sm={4} md={4} lg={4} className={classes.textAlign}>
             <img className={classes.mobile} src={image2} alt="" />
           </Grid>
+          <Hidden smUp>
+            <Box display="flex" justifyContent="center">
+              <img className={classes.icon} src={mobileicon} alt="" />
+            </Box>
+          </Hidden>
         </Box>
       </Grid>
     </Grid>

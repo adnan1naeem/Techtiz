@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 export const ValuedServices = () => {
   const classes = useStyles();
   return (
-    <Box>
+    <Box mt={8}>
       <Box className={classes.header}>Our Valued Services</Box>
       <ServicesTabs />
     </Box>

@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
 export const OurDevelopment = () => {
   const classes = useStyles();
   return (
-    <Box className={classes.image}>
+    <Box className={classes.image} mt={10}>
       <Grid container justifyContent="center">
         <Grid item xs={10} sm={8} md={10} lg={10}>
           <Box className={classes.dflex}>
