@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <FullStack />
-      <ValuedServices />
+      {/* <ValuedServices /> */}
       <OurDevelopment />
       <OurProjects />
-      <ContactUs />
+      {/* <ContactUs /> */}
     </>
   );
 }

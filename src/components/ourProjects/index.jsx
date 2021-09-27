@@ -5,7 +5,7 @@ import ProjectStepper from "../../components/projectStepper";
 export const OurProjects = () => {
   // const classes = useStyles();
   return (
-    <Grid container justifyContent="center">
+    <Grid container justifyContent="center" style={{ overflow: "hidden" }}>
       <Grid item lg={10}>
         <ProjectStepper />
       </Grid>
