@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("sm")]: {
       backgroundImage: `url(${backgroundsm})`,
-      height: 585,
+      height: 785,
       backgroundSize: "contain",
     },
     [theme.breakpoints.only("md")]: {
@@ -46,11 +46,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("lg")]: {
       backgroundImage: `url(${backgroundLg})`,
       height: 580,
-      backgroundSize: "contain",
+      backgroundSize: "cover",
     },
     [theme.breakpoints.up("xl")]: {
       backgroundImage: `url(${backgroundLg})`,
-      height: 939,
+      height: 1100,
       backgroundSize: "contain",
     },
   },
@@ -206,9 +206,9 @@ export const FullStack = () => {
               </Box>
             </Grid>
 
-            <Grid item xs={12} sm={6} md={6} lg={5}>
+            <Grid item xs={12} sm={6} md={6} lg={6}>
               <Hidden xsDown>
-                <Box>
+                <Box textAlign="center">
                   <img className={classes.laptopImage} src={laptopLg} alt="" />
                 </Box>
               </Hidden>

@@ -20,7 +20,19 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 30,
     fontFamily: "Axiforma",
     fontWeight: 300,
-    colors: "#000000",
+    color: "#AFAFAF",
+    [theme.breakpoints.only("sm")]: {
+      fontSize: 20,
+    },
+  },
+  tabsContainer: {
+    justifyContent: "space-between",
+  },
+  selected: {
+    color: "black",
+  },
+  indicator: {
+    backgroundColor: "#FFC107",
   },
 }));
 function TabPanel(props) {
@@ -64,80 +76,91 @@ export default function ServicesTabs() {
   };
 
   return (
-    <Grid container justifyContent="center">
-      <Grid item lg={10}>
-        <Box sx={{ width: "100%" }}>
-          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-            <Tabs
-              value={value}
-              onChange={handleChange}
-              aria-label="basic tabs example"
-            >
-              <Tab
-                className={classes.title}
-                label="Mobile Development"
-                {...a11yProps(0)}
-              />
-              <Tab
-                className={classes.title}
-                label="Front-end Development"
-                {...a11yProps(1)}
-              />
-              <Tab
-                className={classes.title}
-                label="Back-end Development"
-                {...a11yProps(2)}
-              />
-              <Tab
-                className={classes.title}
-                label="Quality Assurance"
-                {...a11yProps(3)}
-              />
-            </Tabs>
-          </Box>
-          <TabPanel value={value} index={0}>
-            <ServiceCards
-              heading="Join the future of mobility with our expertise"
-              detail="For close to a decade, Intelivita being a top mobile app development company has produced apps for various industries and partners, from the start-up Social Media app Chatagram, to the Art of Works Virtual Reality app for tech giant’s Microsoft, we have worked with them all.
+    <Grid container justifyContent="center" style={{ marginTop: 50 }}>
+      <Grid item md={12} lg={10}>
+        <Grid container md={12}>
+          <Box sx={{ width: "100%" }}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                aria-label="basic tabs example"
+                classes={{
+                  flexContainer: classes.tabsContainer,
+                  indicator: classes.indicator,
+                }}
+                variant="scrollable"
+              >
+                <Tab
+                  className={classes.title}
+                  label="Mobile Development"
+                  {...a11yProps(0)}
+                  classes={{ selected: classes.selected }}
+                />
+                <Tab
+                  className={classes.title}
+                  label="Front-end Development"
+                  {...a11yProps(1)}
+                  classes={{ selected: classes.selected }}
+                />
+                <Tab
+                  className={classes.title}
+                  label="Back-end Development"
+                  {...a11yProps(2)}
+                  classes={{ selected: classes.selected }}
+                />
+                <Tab
+                  className={classes.title}
+                  label="Quality Assurance"
+                  {...a11yProps(3)}
+                  classes={{ selected: classes.selected }}
+                />
+              </Tabs>
+            </Box>
+            <TabPanel value={value} index={0}>
+              <ServiceCards
+                heading="Join the future of mobility with our expertise"
+                detail="For close to a decade, Intelivita being a top mobile app development company has produced apps for various industries and partners, from the start-up Social Media app Chatagram, to the Art of Works Virtual Reality app for tech giant’s Microsoft, we have worked with them all.
 
             "
-              icons={mobileDev}
-              image1={servicemobile}
-            />
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-            <ServiceCards
-              heading="Join the future of mobility with our expertise"
-              detail="For close to a decade, Intelivita being a top mobile app development company has produced apps for various industries and partners, from the start-up Social Media app Chatagram, to the Art of Works Virtual Reality app for tech giant’s Microsoft, we have worked with them all.
+                icons={mobileDev}
+                image1={servicemobile}
+              />
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+              <ServiceCards
+                heading="Join the future of mobility with our expertise"
+                detail="For close to a decade, Intelivita being a top mobile app development company has produced apps for various industries and partners, from the start-up Social Media app Chatagram, to the Art of Works Virtual Reality app for tech giant’s Microsoft, we have worked with them all.
 
             "
-              icons={apple}
-              image1={backend}
-            />
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-            <ServiceCards
-              heading="Join the future of mobility "
-              detail="For close to a decade, Intelivita being a top mobile app development company has produced apps for various industries and partners, from the start-up Social Media app Chatagram, to the Art of Works Virtual Reality app for tech giant’s Microsoft, we have worked with them all.
+                icons={apple}
+                image1={backend}
+              />
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+              <ServiceCards
+                heading="Join the future of mobility "
+                detail="For close to a decade, Intelivita being a top mobile app development company has produced apps for various industries and partners, from the start-up Social Media app Chatagram, to the Art of Works Virtual Reality app for tech giant’s Microsoft, we have worked with them all.
 
               .
 
             "
-              icons={mobileDev}
-              image1={frontend}
-            />
-          </TabPanel>
-          <TabPanel value={value} index={3}>
-            <ServiceCards
-              heading="Join the future of mobility with our expertise"
-              detail="For close to a decade, Intelivita being a top mobile app development company has produced apps for various industries and partners, from the start-up Social Media app Chatagram, to the Art of Works Virtual Reality app for tech giant’s Microsoft, we have worked with them all.
+                icons={mobileDev}
+                image1={frontend}
+              />
+            </TabPanel>
+            <TabPanel value={value} index={3}>
+              <ServiceCards
+                heading="Join the future of mobility with our expertise"
+                detail="For close to a decade, Intelivita being a top mobile app development company has produced apps for various industries and partners, from the start-up Social Media app Chatagram, to the Art of Works Virtual Reality app for tech giant’s Microsoft, we have worked with them all.
 
             "
-              icons={mobileDev}
-              image1={valued}
-            />
-          </TabPanel>
-        </Box>
+                icons={mobileDev}
+                image1={valued}
+              />
+            </TabPanel>
+          </Box>
+        </Grid>
       </Grid>
     </Grid>
   );

@@ -36,15 +36,18 @@ const useStyles = makeStyles((theme) => ({
     },
     marginTop: 30,
   },
+  mobileimg: {
+    width: 350,
+  },
 }));
 
 export const ServiceCards = ({ heading, detail, icons, image1 }) => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
-      <Grid lg={10}>
-        <Box display="flex">
-          <Grid item lg={9}>
+      <Grid item sm={11} md={11} lg={12}>
+        <Grid container spacing={2}>
+          <Grid item sm={8} md={8} lg={7}>
             <Box className={classes.heading}>{heading}</Box>
             <Box className={classes.detail}>{detail}</Box>
             <Box>
@@ -56,14 +59,12 @@ export const ServiceCards = ({ heading, detail, icons, image1 }) => {
               </Button>
             </Box>
           </Grid>
-          <Grid item lg={3}>
-            {" "}
-            <Box>
-              <img src={image1} alt="" />
+          <Grid item sm={4} md={3} lg={5}>
+            <Box textAlign="right">
+              <img className={classes.mobileimg} src={image1} alt="" />
             </Box>
-            <ServiceAccordion />
           </Grid>
-        </Box>
+        </Grid>
       </Grid>
     </Grid>
   );

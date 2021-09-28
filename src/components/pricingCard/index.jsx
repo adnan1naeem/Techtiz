@@ -1,6 +1,20 @@
 import { Box, makeStyles, Paper } from "@material-ui/core";
 import React from "react";
-const useStyles = makeStyles({});
+const useStyles = makeStyles({
+  title: {
+    fontFamily: "Axiforma",
+    fontSize: 30,
+    fontWeight: 300,
+    color: "#000000",
+  },
+  detail: {
+    fontFamily: "Axiforma",
+    fontSize: 18,
+    fontWeight: 300,
+    color: "#000000",
+    lineHeight: "25px",
+  },
+});
 export const PricindCard = ({
   image,
   title,
@@ -14,12 +28,14 @@ export const PricindCard = ({
   return (
     <Box>
       <Paper>
-        <Box backgroundColor={backgroundColor}>
-          <img src={image} alt="" />
+        <Box>
+          <Box backgroundColor={backgroundColor}>
+            <img src={image} alt="" />
+          </Box>
+          <Box className={classes.title}>{title}</Box>
+          <Box className={classes.detail}>{text1}</Box>
+          <Box className={classes.detail}>{text2}</Box>
         </Box>
-        <Box>{title}</Box>
-        <Box>{text1}</Box>
-        <Box>{text2}</Box>
       </Paper>
     </Box>
   );

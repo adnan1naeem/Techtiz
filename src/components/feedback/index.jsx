@@ -4,46 +4,46 @@ import iconclutch from "../../assets/iconclutch.png";
 import Rating from "@material-ui/lab/Rating";
 import feedbacklg from "../../assets/feedbacklg.png";
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    flexDirection: "column",
-    "& > * + *": {
-      marginTop: theme.spacing(1),
-    },
-  },
   backgroundImage: {
+    width: 877,
+    height: 770,
+    backgroundPositionX: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "contain",
     backgroundImage: `url(${feedbacklg})`,
+    margin: "auto",
   },
   title: {
     fontFamily: "Axiforma",
-    fontSize: 55,
+    fontSize: 49,
     fontWeight: 800,
     color: "#3B3E56",
     marginTop: 100,
+    lineHeight: "57px",
+    textAlign: "center",
   },
   detail: {
     fontFamily: "Axiforma",
     fontSize: 30,
     fontWeight: 300,
     color: "#777777",
-    marginTop: 40,
+    marginTop: 20,
     lineHeight: "43px",
+    textAlign: "center",
   },
   name: {
     fontFamily: "Axiforma",
     fontSize: 30,
     fontWeight: 800,
     color: "#000000",
-    marginTop: 30,
+    marginTop: 10,
   },
   rank: {
     fontFamily: "Axiforma",
     fontSize: 30,
     fontWeight: 400,
     color: "#1840CF",
-    marginTop: 30,
+    marginTop: 10,
   },
   ratingMessage: {
     fontFamily: "Axiforma",
@@ -57,10 +57,10 @@ const useStyles = makeStyles((theme) => ({
 export const FeedBack = () => {
   const classes = useStyles();
   return (
-    <Box className={classes.backgroundImage} mt={10}>
+    <Box className={classes.backgroundImage} mt={10} mt={5}>
       <Grid container justifyContent="center">
         <Grid item lg={10}>
-          <Grid item lg={10}>
+          <Grid container item lg={12}>
             <Box className={classes.title}>
               Valuable Feedbacks from our Satisfied Clients
             </Box>
@@ -72,22 +72,26 @@ export const FeedBack = () => {
               recommend Social Cubix to any company wishing to create their
               application!”{" "}
             </Box>
-            <Box className={classes.name}>Michail Guzman, Director</Box>
-            <Box className={classes.rank}>Sapient</Box>
-            <Paper style={{ width: 555, borderRadius: 25 }}>
-              <Box display="flex" p={4}>
-                <Box>
-                  <img src={iconclutch} alt="" />
-                </Box>
-                <Box ml={2}>
-                  <Rating name="size-small" defaultValue={2} size="small" />
-                  <Box className={classes.ratingMessage}>
-                    Rated 4.9/5.0 for web development, mobile development and
-                    design services
+            <Box style={{ width: "100%", textAlign: "center" }}>
+              <Box className={classes.name}>Michail Guzman, Director</Box>
+              <Box className={classes.rank}>Sapient</Box>
+            </Box>
+            <Box margin="auto">
+              <Paper style={{ width: 555, borderRadius: 25 }}>
+                <Box display="flex" p={4}>
+                  <Box>
+                    <img src={iconclutch} alt="" />
+                  </Box>
+                  <Box ml={2}>
+                    <Rating name="size-small" defaultValue={2} size="small" />
+                    <Box className={classes.ratingMessage}>
+                      Rated 4.9/5.0 for web development, mobile development and
+                      design services
+                    </Box>
                   </Box>
                 </Box>
-              </Box>
-            </Paper>
+              </Paper>
+            </Box>
           </Grid>
         </Grid>
       </Grid>
