@@ -11,6 +11,9 @@ import { Box, Grid, Hidden } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "row",
+    },
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -42,15 +45,34 @@ const useStyles = makeStyles((theme) => ({
     width: 189,
     "&:hover": {
       backgroundColor: "#FFC107",
+      [theme.breakpoints.only("xs")]: {
+        fontSize: 16,
+        height: 37,
+        width: 155,
+      },
     },
   },
   dflex: {
     display: "flex",
     justifyContent: "space-evenly",
     alignItems: "center",
+    [theme.breakpoints.down("sm")]: { flex: 1, justifyContent: "flex-start" },
   },
   iconclr: {
     color: "#5B5B5B",
+  },
+  logoStyling: {
+    marginTop: 16,
+    [theme.breakpoints.only("xs")]: {
+      height: 37,
+      width: 155,
+    },
+  },
+  contactContainer: {
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "auto",
+      marginRight: 48,
+    },
   },
 }));
 
@@ -59,15 +81,15 @@ export default function Appbar() {
 
   return (
     <Grid container justifyContent="center">
-      <Grid item lg={10}>
+      <Grid item sm={12} md={12} lg={12}>
         <div className={classes.root}>
           <AppBar
             position="static"
-            classes={{ colorPrimary: classes.color }}
+            classes={{ colorPrimary: classes.color, root: classes.root }}
             elevation={0}
           >
-            <Toolbar>
-              <Hidden mdUp>
+            <Hidden mdUp>
+              <Toolbar>
                 <IconButton
                   edge="start"
                   className={classes.menuButton}
@@ -76,12 +98,12 @@ export default function Appbar() {
                 >
                   <MenuIcon />
                 </IconButton>
-              </Hidden>
-            </Toolbar>
+              </Toolbar>
+            </Hidden>
 
             <Box className={classes.dflex}>
               <Box>
-                <img src={logoLg} alt="" />
+                <img className={classes.logoStyling} src={logoLg} alt="" />
               </Box>
               <Hidden smDown>
                 <Box className={classes.appbarlinks}>Services</Box>
@@ -89,7 +111,7 @@ export default function Appbar() {
                 <Box className={classes.appbarlinks}>About </Box>
                 <Box className={classes.appbarlinks}> Portfolio</Box>
               </Hidden>
-              <Box>
+              <Box className={classes.contactContainer}>
                 <Button className={classes.barButton}>Contact</Button>
               </Box>
             </Box>

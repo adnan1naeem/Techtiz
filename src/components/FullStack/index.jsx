@@ -36,16 +36,19 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("sm")]: {
       backgroundImage: `url(${backgroundsm})`,
       height: 785,
+      width: 900,
       backgroundSize: "contain",
     },
     [theme.breakpoints.only("md")]: {
       backgroundImage: `url(${backgroundmd})`,
       height: 750,
+      width: 1050,
       backgroundSize: "contain",
     },
     [theme.breakpoints.only("lg")]: {
       backgroundImage: `url(${backgroundLg})`,
       height: 580,
+      width: 1430,
       backgroundSize: "cover",
     },
     [theme.breakpoints.up("xl")]: {
