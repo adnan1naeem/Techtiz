@@ -19,9 +19,9 @@ function App() {
       <FullStack />
       <ValuedServices />
       <OurDevelopment />
-      <OurPricing />
       <OurProjects />
       <Industries />
+      <OurPricing />
       <FeedBack />
       <ContactUs />
       <LatestBlog />

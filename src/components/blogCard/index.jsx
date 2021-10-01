@@ -54,7 +54,7 @@ const useStyles = makeStyles({
 export const BlogCard = ({ heading, detail, width, height }) => {
   const classes = useStyles();
   return (
-    <Box width={width} height={height}>
+    <Box>
       <Paper className={classes.padding}>
         <Box className={classes.heading}>{heading}</Box>
         <Box className={classes.detail}>{detail}</Box>

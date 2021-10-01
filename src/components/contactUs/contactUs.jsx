@@ -24,6 +24,12 @@ const useStyles = makeStyles((theme) => ({
     left: 97,
     boxShadow: "-7px 7px 9px 4px rgba(24, 64, 207, 0.1);",
     borderRadius: 39,
+    [theme.breakpoints.down("xs")]: {
+      width: "unset",
+      height: "unset",
+      padding: 25,
+      left: "unset",
+    },
   },
   heading: {
     fontSize: 40,
@@ -73,7 +79,7 @@ export const ContactUs = () => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center" className={classes.container}>
-      <Grid className={classes.mb} md={10} lg={10} item>
+      <Grid className={classes.mb} xs={10} lg={10} item>
         <Grid container>
           <Grid item md={4} lg={3}>
             <Box>

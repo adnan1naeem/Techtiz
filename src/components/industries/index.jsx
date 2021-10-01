@@ -22,7 +22,7 @@ export const Industries = () => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
-      <Grid item lg={10}>
+      <Grid item xs={10} sm={12} lg={10}>
         <Hidden xsDown>
           <Grid container style={{ marginTop: 80 }} spacing={4}>
             <Grid item lg={5}>
@@ -41,10 +41,7 @@ export const Industries = () => {
           </Grid>
         </Hidden>
         <Hidden smUp>
-          <Grid item xs={12}>
-            {" "}
-            <IndustriesAccordion />
-          </Grid>
+          <IndustriesAccordion />
         </Hidden>
       </Grid>
     </Grid>

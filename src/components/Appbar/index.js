@@ -43,13 +43,13 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 72,
     height: 47,
     width: 189,
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 14,
+      height: 27,
+      width: 110,
+    },
     "&:hover": {
       backgroundColor: "#FFC107",
-      [theme.breakpoints.only("xs")]: {
-        fontSize: 16,
-        height: 37,
-        width: 155,
-      },
     },
   },
   dflex: {
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
   contactContainer: {
     [theme.breakpoints.down("sm")]: {
       marginLeft: "auto",
-      marginRight: 48,
+      marginRight: 10,
     },
   },
 }));
@@ -81,7 +81,7 @@ export default function Appbar() {
 
   return (
     <Grid container justifyContent="center">
-      <Grid item sm={12} md={12} lg={12}>
+      <Grid item xs={12} md={12} lg={12}>
         <div className={classes.root}>
           <AppBar
             position="static"

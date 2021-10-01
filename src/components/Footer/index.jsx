@@ -74,7 +74,7 @@ export const Footer = () => {
   return (
     <Grid container justifyContent="center" style={{ marginTop: 0 }}>
       <Hidden xsDown>
-        <Grid item lg={9} spacing={4}>
+        <Grid item xs={11} lg={9} spacing={4}>
           <Grid container style={{ marginTop: 50 }}>
             <Grid item lg={4}>
               <Box className={classes.title}>Services</Box>
@@ -180,7 +180,7 @@ export const Footer = () => {
         </Grid>
       </Hidden>
       <Hidden smUp>
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{ marginTop: 32 }}>
           <FooterAccordion />
         </Grid>
       </Hidden>

@@ -18,6 +18,11 @@ const useStyles = makeStyles((theme) => ({
       width: 730,
       height: 770,
     },
+    [theme.breakpoints.down("xs")]: {
+      backgroundImage: `url(${feedbacksm})`,
+      width: "100%",
+      height: "unset",
+    },
   },
   title: {
     fontFamily: "Axiforma",
@@ -29,6 +34,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     [theme.breakpoints.only("sm")]: {
       fontSize: 34,
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 30,
     },
   },
   detail: {
@@ -64,6 +72,21 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     lineHeight: "20px",
     width: "325px",
+    [theme.breakpoints.down("xs")]: {
+      width: "unset",
+    },
+  },
+  clutchContainer: {
+    padding: 32,
+    width: 555,
+    borderRadius: 25,
+    [theme.breakpoints.down("xs")]: {
+      padding: 23,
+      width: "unset",
+      img: {
+        width: 124,
+      },
+    },
   },
 }));
 export const FeedBack = () => {
@@ -71,42 +94,37 @@ export const FeedBack = () => {
   return (
     <Box className={classes.backgroundImage} mt={10} mt={5}>
       <Grid container justifyContent="center">
-        <Grid item sm={10} lg={10}>
-          <Grid container>
-            <Grid item sm={10} lg={12}>
-              <Box className={classes.title}>
-                Valuable Feedbacks from our Satisfied Clients
-              </Box>
-              <Box className={classes.detail}>
-                {" "}
-                “Thank you again for the successful launch of the 3M and
-                Converse applications. Your dedication, hard-work, flexibility,
-                patience and professionalism is recognized and appreciated. I
-                would recommend Social Cubix to any company wishing to create
-                their application!”{" "}
-              </Box>
-              <Box style={{ width: "100%", textAlign: "center" }}>
-                <Box className={classes.name}>Michail Guzman, Director</Box>
-                <Box className={classes.rank}>Sapient</Box>
-              </Box>
-              <Box margin="auto">
-                <Paper style={{ width: 555, borderRadius: 25 }}>
-                  <Box display="flex" p={4}>
-                    <Box>
-                      <img src={iconclutch} alt="" />
-                    </Box>
-                    <Box ml={2}>
-                      <Rating name="size-small" defaultValue={2} size="small" />
-                      <Box className={classes.ratingMessage}>
-                        Rated 4.9/5.0 for web development, mobile development
-                        and design services
-                      </Box>
-                    </Box>
+        <Grid item xs={10} lg={10}>
+          <Box className={classes.title}>
+            Valuable Feedbacks from our Satisfied Clients
+          </Box>
+          <Box className={classes.detail}>
+            {" "}
+            “Thank you again for the successful launch of the 3M and Converse
+            applications. Your dedication, hard-work, flexibility, patience and
+            professionalism is recognized and appreciated. I would recommend
+            Social Cubix to any company wishing to create their application!”{" "}
+          </Box>
+          <Box style={{ width: "100%", textAlign: "center" }}>
+            <Box className={classes.name}>Michail Guzman, Director</Box>
+            <Box className={classes.rank}>Sapient</Box>
+          </Box>
+          <Box margin="auto">
+            <Paper className={classes.clutchContainer}>
+              <Box display="flex">
+                <Box>
+                  <img src={iconclutch} alt="" />
+                </Box>
+                <Box ml={2}>
+                  <Rating name="size-small" defaultValue={2} size="small" />
+                  <Box className={classes.ratingMessage}>
+                    Rated 4.9/5.0 for web development, mobile development and
+                    design services
                   </Box>
-                </Paper>
+                </Box>
               </Box>
-            </Grid>
-          </Grid>
+            </Paper>
+          </Box>
         </Grid>
       </Grid>
     </Box>

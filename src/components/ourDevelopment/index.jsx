@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundSize: "contain",
     [theme.breakpoints.up("xs")]: {
-      height: 1000,
+      marginBottom: 30,
     },
     [theme.breakpoints.only("sm")]: {
       backgroundImage: `url(${developmentmd})`,
