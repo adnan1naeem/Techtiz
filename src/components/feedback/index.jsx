@@ -36,7 +36,8 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 34,
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: 30,
+      fontSize: 22,
+      lineHeight: "32px",
     },
   },
   detail: {
@@ -50,6 +51,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("sm")]: {
       fontSize: 22,
     },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 14,
+      lineHeight: "28px",
+    },
   },
   name: {
     fontFamily: "Axiforma",
@@ -57,6 +62,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 800,
     color: "#000000",
     marginTop: 10,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 18,
+    },
   },
   rank: {
     fontFamily: "Axiforma",
@@ -64,6 +72,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 400,
     color: "#1840CF",
     marginTop: 10,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 18,
+    },
   },
   ratingMessage: {
     fontFamily: "Axiforma",
@@ -74,6 +85,7 @@ const useStyles = makeStyles((theme) => ({
     width: "325px",
     [theme.breakpoints.down("xs")]: {
       width: "unset",
+      fontSize: 14,
     },
   },
   clutchContainer: {
@@ -88,13 +100,18 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  imgStyling: {
+    [theme.breakpoints.down("xs")]: {
+      height: 25,
+    },
+  },
 }));
 export const FeedBack = () => {
   const classes = useStyles();
   return (
-    <Box className={classes.backgroundImage} mt={10} mt={5}>
-      <Grid container justifyContent="center">
-        <Grid item xs={10} lg={10}>
+    <Grid container justifyContent="center">
+      <Grid item xs={10} lg={10}>
+        <Box className={classes.backgroundImage} mt={10} mt={5}>
           <Box className={classes.title}>
             Valuable Feedbacks from our Satisfied Clients
           </Box>
@@ -113,7 +130,7 @@ export const FeedBack = () => {
             <Paper className={classes.clutchContainer}>
               <Box display="flex">
                 <Box>
-                  <img src={iconclutch} alt="" />
+                  <img className={classes.imgStyling} src={iconclutch} alt="" />
                 </Box>
                 <Box ml={2}>
                   <Rating name="size-small" defaultValue={2} size="small" />
@@ -125,8 +142,8 @@ export const FeedBack = () => {
               </Box>
             </Paper>
           </Box>
-        </Grid>
+        </Box>
       </Grid>
-    </Box>
+    </Grid>
   );
 };

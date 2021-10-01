@@ -19,6 +19,7 @@ export const ContactInput = ({
   image,
   marginLeft,
   outline,
+  padding,
 }) => {
   const classes = useStyles();
   return (
@@ -31,7 +32,7 @@ export const ContactInput = ({
       <input
         className={classes.inputTitle}
         placeholder={name}
-        style={{ width, height, image, outline }}
+        style={{ width, height, image, outline, padding }}
       />
     </Box>
   );

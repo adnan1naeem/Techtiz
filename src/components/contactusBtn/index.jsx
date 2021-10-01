@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     color: "#000000",
     fontFamily: "Axiforma",
-    fontSize: 14,
+    fontSize: 9,
     fontWeight: 300,
   },
 }));

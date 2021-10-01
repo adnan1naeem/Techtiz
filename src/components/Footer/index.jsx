@@ -72,7 +72,7 @@ const useStyles = makeStyles({
 export const Footer = () => {
   const classes = useStyles();
   return (
-    <Grid container justifyContent="center" style={{ marginTop: 0 }}>
+    <Grid container justifyContent="center" style={{ marginTop: -144 }}>
       <Hidden xsDown>
         <Grid item xs={11} lg={9} spacing={4}>
           <Grid container style={{ marginTop: 50 }}>
@@ -180,7 +180,7 @@ export const Footer = () => {
         </Grid>
       </Hidden>
       <Hidden smUp>
-        <Grid item xs={12} style={{ marginTop: 32 }}>
+        <Grid item xs={12}>
           <FooterAccordion />
         </Grid>
       </Hidden>

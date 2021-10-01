@@ -1,5 +1,5 @@
 import { Box, Grid, Hidden, makeStyles } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
 import industries from "../../assets/industriesL.png";
 import IndustriesTabs from "../industriesTabs";
 import IndustriesAccordion from "../../components/industriesAccordion";
@@ -20,13 +20,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 export const Industries = () => {
   const classes = useStyles();
+  const [image, setImage] = useState(industries);
   return (
     <Grid container justifyContent="center">
       <Grid item xs={10} sm={12} lg={10}>
         <Hidden xsDown>
           <Grid container style={{ marginTop: 80 }} spacing={4}>
             <Grid item lg={5}>
-              <img src={industries} alt="" />
+              <img src={image} alt="" />
             </Grid>
             <Grid item lg={6}>
               <Box className={classes.header}>Industries we work</Box>
@@ -35,7 +36,7 @@ export const Industries = () => {
                 different industries
               </Box>
               <Box mt={6}>
-                <IndustriesTabs />
+                <IndustriesTabs setImage={setImage} />
               </Box>
             </Grid>
           </Grid>

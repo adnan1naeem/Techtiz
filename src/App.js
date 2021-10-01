@@ -11,22 +11,24 @@ import { Footer } from "./components/Footer";
 import Appbar from "./components/Appbar";
 import "./App.css";
 import { LatestBlog } from "./components/latestBlog";
+import { Box } from "@material-ui/core";
 
 function App() {
   return (
-    <>
+    <Box style={{ overflowX: "hidden" }}>
       <Appbar />
       <FullStack />
       <ValuedServices />
       <OurDevelopment />
       <OurProjects />
       <Industries />
-      <OurPricing />
       <FeedBack />
-      <ContactUs />
+      <OurPricing />
       <LatestBlog />
+      <ContactUs />
+
       <Footer />
-    </>
+    </Box>
   );
 }
 

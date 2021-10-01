@@ -7,6 +7,11 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import { IndustriesCard } from "../industriesCard";
+import workMobile from "../../assets/workMobile.png";
+import market from "../../assets/market.png";
+import education from "../../assets/education.png";
+import social from "../../assets/social.png";
+import industries from "../../assets/industriesL.png";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -57,13 +62,23 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function IndustriesTabs() {
+export default function IndustriesTabs({ setImage }) {
   const classes = useStyles();
 
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    let newImage =
+      newValue === 1
+        ? workMobile
+        : newValue === 2
+        ? social
+        : newValue === 3
+        ? education
+        : market;
+    debugger;
+    setImage(newImage);
   };
 
   return (

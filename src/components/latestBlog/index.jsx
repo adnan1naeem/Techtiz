@@ -1,23 +1,32 @@
 import { Box, Grid, makeStyles } from "@material-ui/core";
 import React from "react";
 import { BlogCard } from "../../components/blogCard";
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   title: {
     fontFamily: "Axiforma",
     fontSize: 55,
     fontWeight: 800,
     color: "#3B3E56",
     textAlign: "center",
+    marginTop: 100,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 26,
+    },
   },
-});
+}));
 export const LatestBlog = () => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
       <Grid item xs={10} lg={10}>
         <Box className={classes.title}>Our Latest Blog</Box>
-        <Grid container style={{ marginTop: 30 }} spacing={4}>
-          <Grid item xs={11} lg={6}>
+        <Grid
+          container
+          style={{ marginTop: 30 }}
+          spacing={4}
+          justifyContent="center"
+        >
+          <Grid item xs={11} lg={4}>
             <BlogCard
               height="526px"
               heading="Join the future of mobility with our expertise"
@@ -25,7 +34,7 @@ export const LatestBlog = () => {
         "
             />
           </Grid>
-          <Grid item xs={11} lg={6}>
+          <Grid item xs={11} lg={4}>
             <BlogCard
               height="526px"
               heading="Join the future of mobility with our expertise"

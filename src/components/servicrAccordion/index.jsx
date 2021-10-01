@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     lineHeight: "28px",
     textAlign: "center",
+    padding: 12,
   },
   icon: {
     height: 25,

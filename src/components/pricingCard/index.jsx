@@ -2,7 +2,7 @@ import { Box, Button, makeStyles, Paper } from "@material-ui/core";
 
 import React from "react";
 import Slider from "../slider";
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   title: {
     fontFamily: "Axiforma",
     fontSize: 28,
@@ -11,6 +11,9 @@ const useStyles = makeStyles({
     padding: 20,
     textAlign: "center",
     marginTop: "-25px",
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 20,
+    },
   },
   detail1: {
     fontFamily: "Axiforma",
@@ -20,6 +23,9 @@ const useStyles = makeStyles({
     lineHeight: "25px",
     padding: 20,
     textAlign: "center",
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 14,
+    },
   },
   detail2: {
     fontFamily: "Axiforma",
@@ -35,6 +41,9 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    [theme.breakpoints.only("xs")]: {
+      marginTop: 20,
+    },
   },
   paper: {
     borderRadius: 35,
@@ -64,7 +73,7 @@ const useStyles = makeStyles({
   mt: {
     marginTop: "-10px",
   },
-});
+}));
 export const PricindCard = ({
   image,
   title,
