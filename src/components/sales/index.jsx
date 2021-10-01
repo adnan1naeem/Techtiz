@@ -1,4 +1,4 @@
-import { Box, makeStyles, Paper } from "@material-ui/core";
+import { Box, Hidden, makeStyles, Paper } from "@material-ui/core";
 import React from "react";
 const useStyles = makeStyles({
   container: {
@@ -28,32 +28,35 @@ const useStyles = makeStyles({
 export const Sales = () => {
   const classes = useStyles();
   return (
-    <Box>
-      <Paper className={classes.container}>
-        <Box p={5}>
-          <Box>
-            <Box className={classes.heading}>Sales</Box>
-            <Box className={classes.headingDetail}>
-              Let us show you what Techtiz can do for your team. Get in touch at
-              <b> contact@techtiz.com</b>
+    <Hidden smDown>
+      <Box>
+        <Paper className={classes.container}>
+          <Box p={5}>
+            <Box>
+              <Box className={classes.heading}>Sales</Box>
+              <Box className={classes.headingDetail}>
+                Let us show you what Techtiz can do for your team. Get in touch
+                at
+                <b> contact@techtiz.com</b>
+              </Box>
+            </Box>
+            <Box mt={3}>
+              <Box className={classes.heading}>Customer Support</Box>
+              <Box className={classes.headingDetail}>
+                For any product or technical questions, reach us at
+                <b> contact@techtiz.com</b> Or, check out our Help Center.
+              </Box>
+            </Box>
+            <Box mt={3}>
+              <Box className={classes.heading}>General Inquiries</Box>
+              <Box className={classes.headingDetail}>
+                For anything else on your mind, including partnership ideas, say
+                hello: <b> contact@techtiz.com</b>
+              </Box>
             </Box>
           </Box>
-          <Box mt={3}>
-            <Box className={classes.heading}>Customer Support</Box>
-            <Box className={classes.headingDetail}>
-              For any product or technical questions, reach us at
-              <b> contact@techtiz.com</b> Or, check out our Help Center.
-            </Box>
-          </Box>
-          <Box mt={3}>
-            <Box className={classes.heading}>General Inquiries</Box>
-            <Box className={classes.headingDetail}>
-              For anything else on your mind, including partnership ideas, say
-              hello: <b> contact@techtiz.com</b>
-            </Box>
-          </Box>
-        </Box>
-      </Paper>
-    </Box>
+        </Paper>
+      </Box>
+    </Hidden>
   );
 };
