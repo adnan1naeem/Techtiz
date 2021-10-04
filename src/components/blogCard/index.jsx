@@ -1,4 +1,4 @@
-import { Box, Button, Grid, makeStyles, Paper } from "@material-ui/core";
+import { Box, Button, makeStyles, Paper } from "@material-ui/core";
 import React from "react";
 
 const useStyles = makeStyles((theme) => ({
@@ -32,13 +32,16 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     fontFamily: "Axiforma",
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: 800,
     color: "#3B3E56",
-    lineHeight: "33px",
+    lineHeight: "30px",
     [theme.breakpoints.down("xs")]: {
       fontSize: 16,
       lineHeight: "unset",
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 18,
     },
   },
   detail: {
@@ -47,11 +50,14 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 10,
     fontWeight: 300,
     color: "#3B3E56",
-    textAlign: "center",
+
     lineHeight: "23px",
     [theme.breakpoints.down("xs")]: {
       fontSize: 13,
       textAlign: "unset",
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 13,
     },
   },
   dflex: {

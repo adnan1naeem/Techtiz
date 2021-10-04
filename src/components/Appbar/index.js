@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    color: "#5B5B5B",
   },
   title: {
     flexGrow: 1,
@@ -58,9 +59,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     [theme.breakpoints.down("sm")]: { flex: 1, justifyContent: "flex-start" },
   },
-  iconclr: {
-    color: "#5B5B5B",
-  },
+
   logoStyling: {
     marginTop: 16,
     [theme.breakpoints.only("xs")]: {
@@ -93,7 +92,6 @@ export default function Appbar() {
                 <IconButton
                   edge="start"
                   className={classes.menuButton}
-                  className={classes.iconclr}
                   aria-label="menu"
                 >
                   <MenuIcon />

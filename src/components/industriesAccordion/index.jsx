@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     color: "#000000",
   },
+  mt: {
+    marginTop: 30,
+  },
 }));
 
 export default function IndustriesAccordion() {

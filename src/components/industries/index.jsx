@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 800,
     fontFamily: "Axiforma",
     color: "#3B3E56",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 30,
+    },
   },
   subHeading: {
     fontSize: 30,
@@ -16,20 +19,38 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     color: "#000000",
     lineHeight: "36px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 20,
+      lineHeight: "27px",
+    },
+  },
+  imgStyling: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 40,
+  },
+  mt: {
+    marginTop: 80,
+    [theme.breakpoints.down("xs")]: {
+      marginTop: 40,
+    },
+    [theme.breakpoints.down("md")]: {
+      marginTop: 40,
+    },
   },
 }));
 export const Industries = () => {
   const classes = useStyles();
   const [image, setImage] = useState(industries);
   return (
-    <Grid container justifyContent="center">
-      <Grid item xs={10} sm={12} lg={10}>
+    <Grid container justifyContent="center" spacing={4}>
+      <Grid item xs={10} sm={11} lg={9} className={classes.mt}>
         <Hidden xsDown>
-          <Grid container style={{ marginTop: 80 }} spacing={4}>
-            <Grid item lg={5}>
-              <img src={image} alt="" />
+          <Grid container spacing={4} justifyContent="center">
+            <Grid item sm={4} lg={5}>
+              <img className={classes.imgStyling} src={image} alt="" />
             </Grid>
-            <Grid item lg={6}>
+            <Grid item sm={8} lg={7}>
               <Box className={classes.header}>Industries we work</Box>
               <Box className={classes.subHeading}>
                 We Help a diverse clientele build result-driven mobile apps for
@@ -42,7 +63,7 @@ export const Industries = () => {
           </Grid>
         </Hidden>
         <Hidden smUp>
-          <IndustriesAccordion />
+          <IndustriesAccordion style={{ marginTop: 30 }} />
         </Hidden>
       </Grid>
     </Grid>

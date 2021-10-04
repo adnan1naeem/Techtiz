@@ -1,21 +1,26 @@
-import { Box, Hidden, makeStyles, Paper } from "@material-ui/core";
+import { Box, makeStyles, Paper } from "@material-ui/core";
 import React from "react";
 const useStyles = makeStyles((theme) => ({
   container: {
-    width: 397,
-    height: 470,
+    padding: 20,
+    width: "100%",
+    height: "100%",
     backgroundColor: "#FFFAF3",
     position: "relative",
     zIndex: -2,
-    top: 190,
-    left: 155,
+    top: 72,
+    left: 78,
     boxShadow: "0px -1px 17px -5px rgba(0, 0, 0, 0.25)",
     borderRadius: 18,
     [theme.breakpoints.down("xs")]: {
       width: "unset",
       position: "relative",
-      top: -41,
+      top: -59,
       left: 0,
+    },
+    [theme.breakpoints.only("sm")]: {
+      top: -214,
+      left: -5,
     },
   },
   heading: {
@@ -36,7 +41,7 @@ export const Sales = () => {
   return (
     <Box>
       <Paper className={classes.container}>
-        <Box p={5}>
+        <Box>
           <Box>
             <Box className={classes.heading}>Sales</Box>
             <Box className={classes.headingDetail}>

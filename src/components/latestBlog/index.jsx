@@ -26,7 +26,7 @@ export const LatestBlog = () => {
           spacing={4}
           justifyContent="center"
         >
-          <Grid item xs={11} lg={4}>
+          <Grid item xs={11} sm={6} lg={4}>
             <BlogCard
               height="526px"
               heading="Join the future of mobility with our expertise"
@@ -34,7 +34,7 @@ export const LatestBlog = () => {
         "
             />
           </Grid>
-          <Grid item xs={11} lg={4}>
+          <Grid item xs={11} sm={6} lg={4}>
             <BlogCard
               height="526px"
               heading="Join the future of mobility with our expertise"

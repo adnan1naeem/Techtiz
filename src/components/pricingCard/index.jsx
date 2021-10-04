@@ -9,33 +9,42 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     color: "#000000",
     padding: 20,
-    textAlign: "center",
+
     marginTop: "-25px",
-    [theme.breakpoints.only("xs")]: {
+    [theme.breakpoints.down("xs")]: {
       fontSize: 20,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 20,
+      padding: "unset",
+      marginTop: "unset",
     },
   },
   detail1: {
     fontFamily: "Axiforma",
-    fontSize: 16,
+    fontSize: 13,
     fontWeight: 300,
     color: "#000000",
-    lineHeight: "25px",
-    padding: 20,
-    textAlign: "center",
-    [theme.breakpoints.only("xs")]: {
+    padding: 40,
+    marginTop: "-26px",
+    [theme.breakpoints.down("xs")]: {
       fontSize: 14,
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: 20,
     },
   },
   detail2: {
     fontFamily: "Axiforma",
-    fontSize: 16,
+    fontSize: 13,
     fontWeight: 300,
     color: "#000000",
-    lineHeight: "25px",
-    padding: 20,
-    textAlign: "center",
-    marginTop: "-20px",
+    padding: 40,
+    marginTop: "-73px",
+    [theme.breakpoints.down("sm")]: {
+      padding: 20,
+      marginTop: -30,
+    },
   },
   dflex: {
     display: "flex",
@@ -66,12 +75,17 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "#7FC6DC",
     },
     marginBottom: 40,
+    [theme.breakpoints.down("sm")]: {
+      height: 40,
+      width: 150,
+      fontSize: 16,
+    },
   },
   root: {
     borderRadius: 33,
   },
   mt: {
-    marginTop: "-10px",
+    marginTop: "-20px",
   },
 }));
 export const PricindCard = ({
@@ -80,15 +94,12 @@ export const PricindCard = ({
   text1,
   text2,
   backgroundColor,
-  width,
-  height,
   marginLeft,
   zIndex,
 }) => {
   const classes = useStyles();
   return (
     <Paper
-      height={height}
       bgcolor={backgroundColor}
       marginLeft={marginLeft}
       zIndex={zIndex}

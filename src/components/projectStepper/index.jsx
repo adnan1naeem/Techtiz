@@ -66,6 +66,12 @@ const useStyles = makeStyles((theme) => ({
   dotActive: {
     backgroundColor: "#FFC560",
   },
+  mt: {
+    marginTop: 110,
+    [theme.breakpoints.up("xs")]: {
+      marginTop: 60,
+    },
+  },
 }));
 
 function ProjectStepper() {
@@ -80,7 +86,7 @@ function ProjectStepper() {
 
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={10} sm={8} md={8} lg={10}>
+      <Grid item xs={10} sm={11} md={10} lg={10} className={classes.mt}>
         <div className={classes.root}>
           <AutoPlaySwipeableViews
             axis={theme.direction === "rtl" ? "x-reverse" : "x"}

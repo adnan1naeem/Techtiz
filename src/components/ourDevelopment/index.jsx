@@ -1,7 +1,7 @@
 import { Box, Grid, Hidden, makeStyles } from "@material-ui/core";
 import React from "react";
 import developmentLg from "../../assets/developmentLg.png";
-import developmentmd from "../../assets/developmentmd.png";
+
 import developmentMobile from "../../assets/developmentMobile.png";
 const useStyles = makeStyles((theme) => ({
   header: {
@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 800,
     fontFamily: "Axiforma",
     color: "#3B3E56",
+
     [theme.breakpoints.up("xs")]: {
       fontSize: 23,
       fontWeight: 800,
@@ -59,26 +60,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   image: {
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "contain",
-    [theme.breakpoints.up("xs")]: {
-      marginBottom: 30,
-    },
-    [theme.breakpoints.only("sm")]: {
-      backgroundImage: `url(${developmentmd})`,
-      height: 1000,
-      width: 750,
-    },
-    [theme.breakpoints.up("md")]: {
-      backgroundImage: `url(${developmentmd})`,
-
-      height: 1000,
-    },
-    [theme.breakpoints.up("lg")]: {
-      backgroundImage: `url(${developmentLg})`,
-
-      height: 1000,
-    },
+    height: "100%",
+    width: "100%",
+    marginTop: 20,
   },
   imgCenter: {
     width: 300,
@@ -90,13 +74,18 @@ export const OurDevelopment = () => {
   return (
     <Box className={classes.image} mt={10}>
       <Grid container justifyContent="center">
-        <Grid item xs={10} sm={8} md={10} lg={10}>
+        <Grid item xs={10} sm={12} md={12} lg={11}>
           <Box className={classes.dflex}>
             <Box className={classes.header}>Our development process</Box>
             <Box className={classes.subHeading}>
               We Bring the Startup Approach to innovation in Companies of all
               Sizes{" "}
             </Box>
+            <Hidden xsDown>
+              <Box>
+                <img className={classes.image} src={developmentLg} alt="" />
+              </Box>
+            </Hidden>
           </Box>
           <Hidden smUp>
             <Box>

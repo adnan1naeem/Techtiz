@@ -6,7 +6,7 @@ export const OurProjects = () => {
   // const classes = useStyles();
   return (
     <Grid container justifyContent="center" style={{ overflow: "hidden" }}>
-      <Grid item lg={10}>
+      <Grid item lg={12}>
         <ProjectStepper />
       </Grid>
     </Grid>

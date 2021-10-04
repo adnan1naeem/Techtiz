@@ -52,7 +52,7 @@ export default function FooterAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}>Seervices</Typography>
+          <Typography className={classes.heading}>Services</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Box style={{ display: "flex", flexDirection: "column" }}>

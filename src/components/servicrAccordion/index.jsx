@@ -63,20 +63,82 @@ export default function ServiceAccordion() {
 
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={10}>
-        <Grid container xs={12}>
-          <div className={classes.root}>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography className={classes.header}>
-                  Mobile Development
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails style={{ display: "unset" }}>
+      <Grid item xs={10} lg={10}>
+        <Grid container>
+          <Grid item xs={12} lg={10}>
+            <div className={classes.root}>
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography className={classes.header}>
+                    Mobile Development
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails style={{ display: "unset" }}>
+                  <Box className={classes.title}>
+                    Join the future of mobility with our expertise
+                  </Box>
+                  <Box className={classes.detail}>
+                    For close to a decade, Intelivita being a top mobile app
+                    development company has produced apps for various industries
+                    and partners, from the start-up Social Media app Chatagram,
+                    to the Art of Works Virtual Reality app for tech giant’s
+                    Microsoft, we have worked with them all.
+                  </Box>
+                  <Box textAlign="center">
+                    <img
+                      className={classes.imgStyles}
+                      src={servicemobile}
+                      alt=""
+                    />
+                  </Box>
+                  <Box className={classes.dflex}>
+                    <img className={classes.icon} src={mobileDev} alt="" />
+                  </Box>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel2a-content"
+                  id="panel2a-header"
+                >
+                  <Typography className={classes.header}>
+                    Front-end Development
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails style={{ display: "unset" }}>
+                  <Box className={classes.title}>
+                    Join the future of mobility
+                  </Box>
+                  <Box className={classes.detail}>
+                    For close to a decade, Intelivita being a top mobile app
+                    development company has produced apps for various industries
+                    and partners, from the start-up Social Media app Chatagram,
+                    to the Art of Works Virtual Reality app for tech giant’s
+                    Microsoft, we have worked with them all.
+                  </Box>
+                  <Box textAlign="center">
+                    <img className={classes.frontendimg} src={backend} alt="" />
+                  </Box>
+                  <Box className={classes.dflex}>
+                    <img className={classes.icon} src={mobileDev} alt="" />
+                  </Box>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel2a-content"
+                  id="panel2a-header"
+                >
+                  <Typography className={classes.header}>
+                    Back-end Development
+                  </Typography>
+                </AccordionSummary>
                 <Box className={classes.title}>
                   Join the future of mobility with our expertise
                 </Box>
@@ -88,101 +150,43 @@ export default function ServiceAccordion() {
                   Microsoft, we have worked with them all.
                 </Box>
                 <Box textAlign="center">
-                  <img
-                    className={classes.imgStyles}
-                    src={servicemobile}
-                    alt=""
-                  />
+                  <img className={classes.imgStyles} src={frontend} alt="" />
                 </Box>
-                <Box className={classes.dflex}>
+                <Box className={classes.dflex} mb={2}>
                   <img className={classes.icon} src={mobileDev} alt="" />
                 </Box>
-              </AccordionDetails>
-            </Accordion>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2a-content"
-                id="panel2a-header"
-              >
-                <Typography className={classes.header}>
-                  Front-end Development
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails style={{ display: "unset" }}>
-                <Box className={classes.title}>Join the future of mobility</Box>
-                <Box className={classes.detail}>
-                  For close to a decade, Intelivita being a top mobile app
-                  development company has produced apps for various industries
-                  and partners, from the start-up Social Media app Chatagram, to
-                  the Art of Works Virtual Reality app for tech giant’s
-                  Microsoft, we have worked with them all.
-                </Box>
-                <Box textAlign="center">
-                  <img className={classes.frontendimg} src={backend} alt="" />
-                </Box>
-                <Box className={classes.dflex}>
-                  <img className={classes.icon} src={mobileDev} alt="" />
-                </Box>
-              </AccordionDetails>
-            </Accordion>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2a-content"
-                id="panel2a-header"
-              >
-                <Typography className={classes.header}>
-                  Back-end Development
-                </Typography>
-              </AccordionSummary>
-              <Box className={classes.title}>
-                Join the future of mobility with our expertise
-              </Box>
-              <Box className={classes.detail}>
-                For close to a decade, Intelivita being a top mobile app
-                development company has produced apps for various industries and
-                partners, from the start-up Social Media app Chatagram, to the
-                Art of Works Virtual Reality app for tech giant’s Microsoft, we
-                have worked with them all.
-              </Box>
-              <Box textAlign="center">
-                <img className={classes.imgStyles} src={frontend} alt="" />
-              </Box>
-              <Box className={classes.dflex} mb={2}>
-                <img className={classes.icon} src={mobileDev} alt="" />
-              </Box>
-            </Accordion>
-            <Accordion>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2a-content"
-                id="panel2a-header"
-              >
-                <Typography className={classes.header}>
-                  Quality assurance
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails style={{ display: "unset" }}>
-                <Box className={classes.title}>
-                  Join the future of mobility with our expertise
-                </Box>
-                <Box className={classes.detail}>
-                  For close to a decade, Intelivita being a top mobile app
-                  development company has produced apps for various industries
-                  and partners, from the start-up Social Media app Chatagram, to
-                  the Art of Works Virtual Reality app for tech giant’s
-                  Microsoft, we have worked with them all.
-                </Box>
-                <Box textAlign="center">
-                  <img className={classes.imgStyles} src={valued} alt="" />
-                </Box>
-                <Box className={classes.dflex}>
-                  <img className={classes.icon} src={mobileDev} alt="" />
-                </Box>
-              </AccordionDetails>
-            </Accordion>
-          </div>
+              </Accordion>
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel2a-content"
+                  id="panel2a-header"
+                >
+                  <Typography className={classes.header}>
+                    Quality assurance
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails style={{ display: "unset" }}>
+                  <Box className={classes.title}>
+                    Join the future of mobility with our expertise
+                  </Box>
+                  <Box className={classes.detail}>
+                    For close to a decade, Intelivita being a top mobile app
+                    development company has produced apps for various industries
+                    and partners, from the start-up Social Media app Chatagram,
+                    to the Art of Works Virtual Reality app for tech giant’s
+                    Microsoft, we have worked with them all.
+                  </Box>
+                  <Box textAlign="center">
+                    <img className={classes.imgStyles} src={valued} alt="" />
+                  </Box>
+                  <Box className={classes.dflex}>
+                    <img className={classes.icon} src={mobileDev} alt="" />
+                  </Box>
+                </AccordionDetails>
+              </Accordion>
+            </div>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>

@@ -6,8 +6,8 @@ import feedbacklg from "../../assets/feedbacklg.png";
 import feedbacksm from "../../assets/feedbacksm.png";
 const useStyles = makeStyles((theme) => ({
   backgroundImage: {
-    width: 877,
-    height: 770,
+    width: "100%",
+    height: "100%",
     backgroundPositionX: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "contain",
@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     [theme.breakpoints.only("sm")]: {
       backgroundImage: `url(${feedbacksm})`,
-      width: 730,
-      height: 770,
+      width: "100%",
+      height: "100%",
     },
     [theme.breakpoints.down("xs")]: {
       backgroundImage: `url(${feedbacksm})`,
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 49,
     fontWeight: 800,
     color: "#3B3E56",
-    marginTop: 100,
+    marginTop: 110,
     lineHeight: "57px",
     textAlign: "center",
     [theme.breakpoints.only("sm")]: {
@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: 22,
       lineHeight: "32px",
+      marginTop: 60,
     },
   },
   detail: {
@@ -105,44 +106,58 @@ const useStyles = makeStyles((theme) => ({
       height: 25,
     },
   },
+  dflex: {
+    display: "flex",
+    justifyContent: "center",
+    marginTop: 15,
+  },
 }));
 export const FeedBack = () => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
       <Grid item xs={10} lg={10}>
-        <Box className={classes.backgroundImage} mt={10} mt={5}>
-          <Box className={classes.title}>
-            Valuable Feedbacks from our Satisfied Clients
-          </Box>
-          <Box className={classes.detail}>
-            {" "}
-            “Thank you again for the successful launch of the 3M and Converse
-            applications. Your dedication, hard-work, flexibility, patience and
-            professionalism is recognized and appreciated. I would recommend
-            Social Cubix to any company wishing to create their application!”{" "}
-          </Box>
-          <Box style={{ width: "100%", textAlign: "center" }}>
-            <Box className={classes.name}>Michail Guzman, Director</Box>
-            <Box className={classes.rank}>Sapient</Box>
-          </Box>
-          <Box margin="auto">
-            <Paper className={classes.clutchContainer}>
-              <Box display="flex">
-                <Box>
-                  <img className={classes.imgStyling} src={iconclutch} alt="" />
-                </Box>
-                <Box ml={2}>
-                  <Rating name="size-small" defaultValue={2} size="small" />
-                  <Box className={classes.ratingMessage}>
-                    Rated 4.9/5.0 for web development, mobile development and
-                    design services
-                  </Box>
-                </Box>
+        <Grid container justifyContent="center">
+          <Grid item xs={12} lg={8}>
+            <Box className={classes.backgroundImage}>
+              <Box className={classes.title}>
+                Valuable Feedbacks from our Satisfied Clients
               </Box>
-            </Paper>
-          </Box>
-        </Box>
+              <Box className={classes.detail}>
+                {" "}
+                “Thank you again for the successful launch of the 3M and
+                Converse applications. Your dedication, hard-work, flexibility,
+                patience and professionalism is recognized and appreciated. I
+                would recommend Social Cubix to any company wishing to create
+                their application!”{" "}
+              </Box>
+              <Box style={{ width: "100%", textAlign: "center" }}>
+                <Box className={classes.name}>Michail Guzman, Director</Box>
+                <Box className={classes.rank}>Sapient</Box>
+              </Box>
+              <Box margin="auto" className={classes.dflex}>
+                <Paper className={classes.clutchContainer}>
+                  <Box display="flex">
+                    <Box>
+                      <img
+                        className={classes.imgStyling}
+                        src={iconclutch}
+                        alt=""
+                      />
+                    </Box>
+                    <Box ml={2}>
+                      <Rating name="size-small" defaultValue={2} size="small" />
+                      <Box className={classes.ratingMessage}>
+                        Rated 4.9/5.0 for web development, mobile development
+                        and design services
+                      </Box>
+                    </Box>
+                  </Box>
+                </Paper>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
   );

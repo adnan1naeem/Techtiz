@@ -9,9 +9,11 @@ import { OurPricing } from "./components/ourPricing";
 import { Industries } from "./components/industries";
 import { Footer } from "./components/Footer";
 import Appbar from "./components/Appbar";
+
 import "./App.css";
 import { LatestBlog } from "./components/latestBlog";
 import { Box } from "@material-ui/core";
+import { BelowFooter } from "./components/belowFooter";
 
 function App() {
   return (
@@ -26,8 +28,8 @@ function App() {
       <OurPricing />
       <LatestBlog />
       <ContactUs />
-
       <Footer />
+      <BelowFooter />
     </Box>
   );
 }

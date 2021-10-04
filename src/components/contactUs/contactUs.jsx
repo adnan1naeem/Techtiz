@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 40,
     position: "relative",
     top: -240,
-    left: 97,
+    left: 10,
     boxShadow: "-7px 7px 9px 4px rgba(24, 64, 207, 0.1);",
     borderRadius: 39,
     [theme.breakpoints.only("xs")]: {
@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
       padding: 25,
       left: "unset",
       top: -71,
+    },
+    [theme.breakpoints.only("sm")]: {
+      left: -39,
     },
   },
   heading: {
@@ -73,6 +76,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 16,
   },
   rectangle1: {
+    width: "100%",
+    height: "100%",
+    position: "relative",
+    right: 75,
     [theme.breakpoints.only("xs")]: {
       width: 231,
       position: "relative",
@@ -81,11 +88,14 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("sm")]: {
       width: 385,
       position: "relative",
-      right: 15,
+      right: 110,
       top: -57,
     },
   },
   rectangle2: {
+    position: "relative",
+    top: -127,
+    right: 131,
     [theme.breakpoints.only("xs")]: {
       width: 231,
       position: "relative",
@@ -93,16 +103,28 @@ const useStyles = makeStyles((theme) => ({
       top: -588,
     },
     [theme.breakpoints.only("sm")]: {
+      position: "relative",
+      right: -3,
+      top: -772,
+    },
+    [theme.breakpoints.only("md")]: {
       width: 385,
       position: "relative",
-      right: -292,
-      top: -365,
+      right: -14,
+      top: -41,
     },
   },
   position: {
     position: "relative",
     top: -12,
     zIndex: -3,
+  },
+  bgGreen: {
+    position: "relative",
+    top: -60,
+    [theme.breakpoints.up("xs")]: {
+      top: "unset",
+    },
   },
 }));
 export const ContactUs = () => {
@@ -113,7 +135,7 @@ export const ContactUs = () => {
         <Grid container className={classes.container} justifyContent="center">
           <Grid item xs={11} sm={9} md={6} lg={4}>
             <Box>
-              <Box>
+              <Box className={classes.bgGreen}>
                 <img className={classes.rectangle1} src={rectangle2} alt="" />
               </Box>
               <Box>
@@ -193,7 +215,7 @@ export const ContactUs = () => {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={11} md={3} lg={3}>
+          <Grid item xs={11} sm={10} md={3} lg={3}>
             <Sales />
             <Box className={classes.position}>
               <img className={classes.rectangle2} src={rectangle1} alt="" />

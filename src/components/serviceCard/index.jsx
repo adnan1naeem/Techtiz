@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("xs")]: {
       fontSize: 20,
       textAlign: "center",
+      marginTop: -15,
     },
   },
   detail: {
@@ -42,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("xs")]: {
       textAlign: "center",
       fontSize: 18,
+      marginTop: "unset",
     },
   },
   [theme.breakpoints.only("sm")]: {
@@ -53,15 +55,12 @@ const useStyles = makeStyles((theme) => ({
     width: 60,
   },
   mobile: {
-    width: 332,
-    height: 450,
+    width: "100%",
     [theme.breakpoints.only("sm")]: {
-      width: 255,
-      height: 450,
+      width: "100%",
     },
     [theme.breakpoints.only("xs")]: {
-      width: 132,
-      height: 250,
+      width: "100%",
     },
   },
   dflex: {
@@ -81,13 +80,13 @@ export const ServicesCard = ({ title, subtitle, detail, image1, image2 }) => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={12} sm={8} md={8} lg={10}>
+      <Grid item xs={12} sm={11} md={11} lg={10}>
         <Box className={classes.dflex}>
           <Grid item xs={12} sm={8} md={8} lg={7}>
             <Box className={classes.title}>{title}</Box>
             <Box className={classes.subtitle}>{subtitle}</Box>
             <Box className={classes.detail}>{detail}</Box>
-            <Hidden smDown>
+            <Hidden xsDown>
               <Box>
                 <img className={classes.icon} src={image1} alt="" />
               </Box>

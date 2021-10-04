@@ -9,7 +9,7 @@ import html from "../../assets/html.png";
 import node from "../../assets/node.png";
 import clutch from "../../assets/clutchfooter.png";
 import FooterAccordion from "../footerAccordion";
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   bulletPoint: {
     backgroundColor: "#C4C4C4",
     width: "9.64px",
@@ -42,6 +42,9 @@ const useStyles = makeStyles({
     fontSize: 30,
     fontWeight: 300,
     fontFamily: "Axiforma",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: 20,
+    },
   },
   service: {
     fontSize: 18,
@@ -68,15 +71,33 @@ const useStyles = makeStyles({
     height: "1.54px",
     backgroundColor: "#EDEDED",
   },
-});
+  mt: {
+    marginTop: -287,
+    [theme.breakpoints.only("xs")]: {
+      marginTop: -212,
+    },
+    [theme.breakpoints.only("sm")]: {
+      marginTop: -502,
+    },
+    [theme.breakpoints.only("md")]: {
+      marginTop: -190,
+    },
+    [theme.breakpoints.only("lg")]: {
+      marginTop: -119,
+    },
+    [theme.breakpoints.only("xl")]: {
+      marginTop: -232,
+    },
+  },
+}));
 export const Footer = () => {
   const classes = useStyles();
   return (
-    <Grid container justifyContent="center" style={{ marginTop: -144 }}>
+    <Grid container justifyContent="center" className={classes.mt} spacing={4}>
       <Hidden xsDown>
-        <Grid item xs={11} lg={9} spacing={4}>
-          <Grid container style={{ marginTop: 50 }}>
-            <Grid item lg={4}>
+        <Grid item xs={11} sm={11} md={11} lg={9}>
+          <Grid container style={{ marginTop: 50 }} justifyContent="center">
+            <Grid item sm={4} md={4} lg={4}>
               <Box className={classes.title}>Services</Box>
               <Box mt={5}>
                 <Box className={classes.dflex} mt={4}>
@@ -106,7 +127,7 @@ export const Footer = () => {
               </Box>
             </Grid>
 
-            <Grid item lg={4} textAlign="center">
+            <Grid item sm={4} md={4} lg={4} textAlign="center">
               <Box className={classes.title}>Technology Stacks</Box>
               <Box display="flex">
                 <Box>
@@ -160,7 +181,7 @@ export const Footer = () => {
               </Box>
             </Grid>
 
-            <Grid item lg={4}>
+            <Grid item sm={4} md={4} lg={4}>
               <Box className={classes.title} textAlign="center">
                 Reviews
               </Box>

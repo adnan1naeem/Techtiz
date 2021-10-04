@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("sm")]: {
       backgroundImage: `url(${backgroundsm})`,
-      height: 785,
+      height: 600,
       backgroundSize: "contain",
     },
     [theme.breakpoints.only("md")]: {

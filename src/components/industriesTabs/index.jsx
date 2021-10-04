@@ -11,7 +11,6 @@ import workMobile from "../../assets/workMobile.png";
 import market from "../../assets/market.png";
 import education from "../../assets/education.png";
 import social from "../../assets/social.png";
-import industries from "../../assets/industriesL.png";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -56,6 +55,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     fontFamily: "Axiforma",
     color: "#000000",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 16,
+    },
   },
   bgClr: {
     backgroundColor: "white",
@@ -77,7 +79,6 @@ export default function IndustriesTabs({ setImage }) {
         : newValue === 3
         ? education
         : market;
-    debugger;
     setImage(newImage);
   };
 
@@ -92,6 +93,9 @@ export default function IndustriesTabs({ setImage }) {
           value={value}
           onChange={handleChange}
           aria-label="simple tabs example"
+          variant="scrollable"
+          scrollButtons="auto"
+          style={{ color: "black" }}
         >
           <Tab className={classes.tabs} label="Food  " {...a11yProps(0)} />
           <Tab className={classes.tabs} label="E-commerce" {...a11yProps(1)} />
