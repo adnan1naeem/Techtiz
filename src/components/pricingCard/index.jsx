@@ -15,9 +15,12 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 20,
     },
     [theme.breakpoints.down("sm")]: {
-      fontSize: 20,
+      fontSize: 17,
       padding: "unset",
       marginTop: "unset",
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 32,
     },
   },
   detail1: {
@@ -33,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       padding: 20,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 32,
+    },
   },
   detail2: {
     fontFamily: "Axiforma",
@@ -44,6 +50,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       padding: 20,
       marginTop: -30,
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 32,
     },
   },
   dflex: {
@@ -87,6 +96,9 @@ const useStyles = makeStyles((theme) => ({
   mt: {
     marginTop: "-20px",
   },
+  borderRadius: {
+    borderRadius: 40,
+  },
 }));
 export const PricindCard = ({
   image,
@@ -105,7 +117,7 @@ export const PricindCard = ({
       zIndex={zIndex}
       elevation={12}
       component={Box}
-      borderRadius={33}
+      className={classes.borderRadius}
     >
       <Box
         className={classes.dflex}

@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: 22,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 50,
+    },
   },
   detail: {
     fontSize: 22,
@@ -19,6 +22,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: 14,
       lineHeight: "23px",
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 38,
+      lineHeight: "55px",
     },
   },
 }));

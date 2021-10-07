@@ -29,6 +29,11 @@ const useStyles = makeStyles((theme) => ({
       color: "#3B3E56",
       marginTop: "unset",
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 55,
+      fontWeight: 800,
+      color: "#3B3E56",
+    },
   },
   subHeading: {
     fontSize: 22,
@@ -55,6 +60,9 @@ const useStyles = makeStyles((theme) => ({
       color: "#3B3E56",
       marginTop: "unset",
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 50,
+    },
   },
   dflex: {
     textAlign: "center",
@@ -63,6 +71,12 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     width: "100%",
     marginTop: 20,
+    [theme.breakpoints.up("xs")]: {
+      marginTop: 120,
+    },
+    [theme.breakpoints.up("xl")]: {
+      marginTop: 200,
+    },
   },
   imgCenter: {
     width: 300,
@@ -88,7 +102,7 @@ export const OurDevelopment = () => {
             </Hidden>
           </Box>
           <Hidden smUp>
-            <Box>
+            <Box display="flex" justifyContent="center">
               <img
                 className={classes.imgCenter}
                 src={developmentMobile}

@@ -36,9 +36,13 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 34,
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: 22,
+      fontSize: 20,
       lineHeight: "32px",
       marginTop: 60,
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 46,
+      marginTop: 200,
     },
   },
   detail: {
@@ -55,6 +59,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: 14,
       lineHeight: "28px",
+      marginTop: "unset",
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 55,
+      lineHeight: "71px",
     },
   },
   name: {
@@ -65,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 10,
     [theme.breakpoints.down("xs")]: {
       fontSize: 18,
+      marginTop: "unset",
     },
   },
   rank: {
@@ -75,6 +85,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 10,
     [theme.breakpoints.down("xs")]: {
       fontSize: 18,
+
+      marginTop: "unset",
     },
   },
   ratingMessage: {
@@ -86,7 +98,8 @@ const useStyles = makeStyles((theme) => ({
     width: "325px",
     [theme.breakpoints.down("xs")]: {
       width: "unset",
-      fontSize: 14,
+      fontSize: 10,
+      lineHeight: "13px",
     },
   },
   clutchContainer: {
@@ -110,15 +123,18 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     marginTop: 15,
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "unset",
+    },
   },
 }));
 export const FeedBack = () => {
   const classes = useStyles();
   return (
-    <Grid container justifyContent="center">
-      <Grid item xs={10} lg={10}>
+    <Grid container justifyContent="center" id="feedback">
+      <Grid item xs={10} lg={10} xl={6}>
         <Grid container justifyContent="center">
-          <Grid item xs={12} lg={8}>
+          <Grid item xs={12} lg={8} xl={8}>
             <Box className={classes.backgroundImage}>
               <Box className={classes.title}>
                 Valuable Feedbacks from our Satisfied Clients

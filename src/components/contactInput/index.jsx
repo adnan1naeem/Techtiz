@@ -1,6 +1,6 @@
 import { Box, makeStyles } from "@material-ui/core";
 import React from "react";
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   inputTitle: {
     color: "#C6C6C6",
     fontWeight: 300,
@@ -10,8 +10,11 @@ const useStyles = makeStyles({
     border: "1px solid #7FC6DC",
     borderRadius: 6,
     paddingLeft: 10,
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 15,
+    },
   },
-});
+}));
 export const ContactInput = ({
   name,
   width,

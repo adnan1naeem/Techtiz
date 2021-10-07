@@ -58,6 +58,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 30,
+    },
   },
   bgClr: {
     backgroundColor: "white",

@@ -12,13 +12,16 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: 26,
     },
+    [theme.breakpoints.up("xl")]: {
+      marginTop: 200,
+    },
   },
 }));
 export const LatestBlog = () => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={10} lg={10}>
+      <Grid item xs={10} lg={10} xl={7}>
         <Box className={classes.title}>Our Latest Blog</Box>
         <Grid
           container

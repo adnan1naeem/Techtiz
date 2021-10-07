@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontSize: 9,
     fontWeight: 300,
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 15,
+    },
   },
 }));
 export const ContactUsBtn = ({

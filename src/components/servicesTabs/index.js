@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("sm")]: {
       fontSize: 20,
     },
+    [theme.breakpoints.only("sm")]: {
+      fontSize: 22,
+    },
   },
   tabsContainer: {
     justifyContent: "space-between",

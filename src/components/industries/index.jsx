@@ -9,8 +9,14 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 800,
     fontFamily: "Axiforma",
     color: "#3B3E56",
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.up("sm")]: {
       fontSize: 30,
+    },
+    [theme.breakpoints.up("sm")]: {
+      lineHeight: "50px",
+    },
+    [theme.breakpoints.up("xl")]: {
+      marginTop: 70,
     },
   },
   subHeading: {
@@ -19,9 +25,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     color: "#000000",
     lineHeight: "36px",
+    marginTop: 10,
     [theme.breakpoints.down("sm")]: {
       fontSize: 20,
       lineHeight: "27px",
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 50,
+      lineHeight: "65px",
     },
   },
   imgStyling: {
@@ -38,19 +49,30 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 40,
     },
   },
+  maxWidth: {
+    maxWidth: 1900,
+  },
 }));
 export const Industries = () => {
   const classes = useStyles();
   const [image, setImage] = useState(industries);
   return (
-    <Grid container justifyContent="center" spacing={4}>
-      <Grid item xs={10} sm={11} lg={9} className={classes.mt}>
+    <Grid container justifyContent="center" spacing={4} id="industries">
+      <Grid
+        item
+        xs={10}
+        sm={11}
+        md={10}
+        lg={9}
+        xl={12}
+        className={`${classes.mt} ${classes.maxWidth}`}
+      >
         <Hidden xsDown>
-          <Grid container spacing={4} justifyContent="center">
-            <Grid item sm={4} lg={5}>
+          <Grid container spacing={4} justifyContent="center" spacing={4}>
+            <Grid item sm={4} md={5} lg={5} xl={4}>
               <img className={classes.imgStyling} src={image} alt="" />
             </Grid>
-            <Grid item sm={8} lg={7}>
+            <Grid item sm={6} md={7} lg={6} xl={7}>
               <Box className={classes.header}>Industries we work</Box>
               <Box className={classes.subHeading}>
                 We Help a diverse clientele build result-driven mobile apps for

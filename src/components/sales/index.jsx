@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
       top: -214,
       left: -5,
     },
+    [theme.breakpoints.up("xls")]: {
+      top: 272,
+    },
   },
   heading: {
     color: "#FFC107",

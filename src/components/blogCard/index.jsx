@@ -43,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: 18,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 32,
+      lineHeight: "42px",
+    },
   },
   detail: {
     fontFamily: "Axiforma",
@@ -58,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: 13,
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 26,
+      lineHeight: "43px",
     },
   },
   dflex: {

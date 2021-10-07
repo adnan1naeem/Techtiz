@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("sm")]: {
       left: -39,
     },
+    [theme.breakpoints.up("xl")]: {
+      top: -408,
+    },
   },
   heading: {
     fontSize: 40,
@@ -91,6 +94,9 @@ const useStyles = makeStyles((theme) => ({
       right: 110,
       top: -57,
     },
+    [theme.breakpoints.up("xl")]: {
+      right: 190,
+    },
   },
   rectangle2: {
     position: "relative",
@@ -113,6 +119,10 @@ const useStyles = makeStyles((theme) => ({
       right: -14,
       top: -41,
     },
+    [theme.breakpoints.up("xl")]: {
+      marginTop: 212,
+      right: 26,
+    },
   },
   position: {
     position: "relative",
@@ -130,8 +140,8 @@ const useStyles = makeStyles((theme) => ({
 export const ContactUs = () => {
   const classes = useStyles();
   return (
-    <Grid container justifyContent="center">
-      <Grid className={classes.mb} xs={12} sm={10} md={11} lg={10} item>
+    <Grid container justifyContent="center" id="contactUs">
+      <Grid className={classes.mb} xs={12} item sm={10} md={11} lg={10} xl={8}>
         <Grid container className={classes.container} justifyContent="center">
           <Grid item xs={11} sm={9} md={6} lg={4}>
             <Box>
@@ -215,7 +225,7 @@ export const ContactUs = () => {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={11} sm={10} md={3} lg={3}>
+          <Grid item xs={11} sm={10} md={3} lg={3} xl={2}>
             <Sales />
             <Box className={classes.position}>
               <img className={classes.rectangle2} src={rectangle1} alt="" />

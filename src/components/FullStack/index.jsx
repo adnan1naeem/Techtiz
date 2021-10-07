@@ -10,10 +10,10 @@ const useStyles = makeStyles((theme) => ({
   laptopImage: {
     [theme.breakpoints.up("xs")]: {
       width: 280,
-      height: 220,
+      height: 200,
     },
     [theme.breakpoints.up("sm")]: {
-      width: 320,
+      width: 287,
       height: 300,
     },
     [theme.breakpoints.up("md")]: {
@@ -24,6 +24,10 @@ const useStyles = makeStyles((theme) => ({
       width: 465,
       height: 405,
     },
+    [theme.breakpoints.up("xl")]: {
+      width: 700,
+      height: 700,
+    },
   },
 
   backgroundImage: {
@@ -31,27 +35,30 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("xs")]: {
       backgroundSize: "cover",
       backgroundImage: `url(${backgroundxs})`,
-      height: 680,
+      height: 800,
+      backgroundSize: "contain",
     },
-    [theme.breakpoints.only("sm")]: {
+    [theme.breakpoints.up("sm")]: {
       backgroundImage: `url(${backgroundsm})`,
-      height: 600,
+      height: 700,
       backgroundSize: "contain",
     },
-    [theme.breakpoints.only("md")]: {
+    [theme.breakpoints.up("md")]: {
       backgroundImage: `url(${backgroundmd})`,
-      height: 750,
+      height: 780,
       backgroundSize: "contain",
     },
-    [theme.breakpoints.only("lg")]: {
+    [theme.breakpoints.up("lg")]: {
       backgroundImage: `url(${backgroundLg})`,
-      height: 580,
+      height: 780,
       backgroundSize: "cover",
     },
     [theme.breakpoints.up("xl")]: {
       backgroundImage: `url(${backgroundLg})`,
-      height: 1100,
+      height: 1678,
       backgroundSize: "contain",
+      display: "flex",
+      justifyContent: "center",
     },
   },
   heading: {
@@ -59,11 +66,20 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Axiforma",
     fontWeight: 800,
     color: "#3B3E56",
-    [theme.breakpoints.between("sm", "md")]: {
-      fontSize: 50,
-    },
     [theme.breakpoints.up("xs")]: {
       fontSize: 30,
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: 30,
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: 50,
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: 45,
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 70,
     },
   },
   subHeading: {
@@ -74,16 +90,20 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "49px",
 
     [theme.breakpoints.up("sm")]: {
-      fontSize: 30,
-      lineHeight: "40px",
+      fontSize: 26,
+      lineHeight: "33px",
     },
     [theme.breakpoints.up("md")]: {
       fontSize: 38,
       lineHeight: "48px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: 45,
-      lineHeight: "49px",
+      fontSize: 58,
+      lineHeight: "59px",
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 70,
+      lineHeight: "88px",
     },
   },
   detail: {
@@ -97,11 +117,12 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 12,
       textAlign: "center",
       lineHeight: "20px",
+      marginTop: 12,
     },
 
     [theme.breakpoints.up("sm")]: {
-      fontSize: 19,
-      lineHeight: "30px",
+      fontSize: 15,
+      lineHeight: "21px",
       textAlign: "unset",
     },
     [theme.breakpoints.up("md")]: {
@@ -109,9 +130,13 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: "35px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: 30,
-      lineHeight: "47px",
+      fontSize: 36,
+      lineHeight: "50px",
       textAlign: "unset",
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 42,
+      lineHeight: "60px",
     },
   },
   connectButton: {
@@ -129,9 +154,17 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "#7FC6DC",
     },
     marginTop: 30,
+    [theme.breakpoints.up("xs")]: {
+      marginTop: 15,
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 32,
+      width: 435,
+      height: 100,
+    },
   },
   mobileHeader: {
-    fontSize: 19,
+    fontSize: 15,
     fontFamily: "Axiforma",
     fontWeight: 800,
     color: "#3B3E56",
@@ -143,15 +176,20 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     [theme.breakpoints.only("xs")]: {
       display: "block",
+      marginTop: 40,
     },
+
     [theme.breakpoints.only("xl")]: {
-      marginTop: 228,
+      marginTop: 65,
     },
   },
   buttonCenter: {
     [theme.breakpoints.up("xs")]: {
       display: "flex",
       justifyContent: "center",
+    },
+    [theme.breakpoints.up("sm")]: {
+      justifyContent: "unset",
     },
     [theme.breakpoints.up("lg")]: {
       display: "unset",
@@ -165,12 +203,23 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
     },
   },
+  maxWidth: {
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: 1200,
+    },
+    [theme.breakpoints.up("lg")]: {
+      maxWidth: 1900,
+    },
+    [theme.breakpoints.up("xl")]: {
+      maxWidth: 1900,
+    },
+  },
 }));
 export const FullStack = () => {
   const classes = useStyles();
   return (
     <Box className={classes.backgroundImage}>
-      <Grid container justifyContent="center">
+      <Grid container justifyContent="center" className={classes.maxWidth}>
         <Grid item xs={10} sm={11} md={10} lg={10}>
           <Box className={classes.dflex}>
             <Grid
@@ -179,6 +228,7 @@ export const FullStack = () => {
               sm={6}
               md={6}
               lg={6}
+              xl={6}
               className={classes.textcenter}
             >
               <Box className={classes.heading}>Full-Stack</Box>
@@ -206,7 +256,7 @@ export const FullStack = () => {
               </Box>
             </Grid>
 
-            <Grid item xs={12} sm={6} md={6} lg={6}>
+            <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
               <Hidden xsDown>
                 <Box textAlign="center">
                   <img className={classes.laptopImage} src={laptopLg} alt="" />

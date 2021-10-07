@@ -6,7 +6,7 @@ import logoLg from "../../assets/logoLg.png";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import { Box, Grid, Hidden } from "@material-ui/core";
+import { Box, Grid, Hidden, Link } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -73,6 +73,11 @@ const useStyles = makeStyles((theme) => ({
       marginRight: 10,
     },
   },
+  ml: {
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "auto",
+    },
+  },
 }));
 
 export default function Appbar() {
@@ -104,14 +109,28 @@ export default function Appbar() {
                 <img className={classes.logoStyling} src={logoLg} alt="" />
               </Box>
               <Hidden smDown>
-                <Box className={classes.appbarlinks}>Services</Box>
-                <Box className={classes.appbarlinks}>Experties</Box>
-                <Box className={classes.appbarlinks}>About </Box>
-                <Box className={classes.appbarlinks}> Portfolio</Box>
+                <Link style={{ textDecoration: "none" }} href="/#services">
+                  <Box className={classes.appbarlinks}>Services</Box>
+                </Link>
+                <Link style={{ textDecoration: "none" }} href="/#our-projects">
+                  <Box className={classes.appbarlinks}>Experties</Box>
+                </Link>
+                <Link style={{ textDecoration: "none" }} href="/#industries">
+                  <Box className={classes.appbarlinks}>About </Box>
+                </Link>
+                <Link style={{ textDecoration: "none" }} href="/#feedback">
+                  <Box className={classes.appbarlinks}> Portfolio</Box>
+                </Link>
               </Hidden>
-              <Box className={classes.contactContainer}>
-                <Button className={classes.barButton}>Contact</Button>
-              </Box>
+              <Link
+                style={{ textDecoration: "none" }}
+                href="/#contactUs"
+                className={classes.ml}
+              >
+                <Box className={classes.contactContainer}>
+                  <Button className={classes.barButton}>Contact</Button>
+                </Box>
+              </Link>
             </Box>
           </AppBar>
         </div>

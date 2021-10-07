@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       fontSize: 35,
     },
+    [theme.breakpoints.up("xl")]: {
+      marginTop: 400,
+    },
   },
   mt: { marginTop: 60 },
   position1: {
@@ -69,7 +72,7 @@ export const OurPricing = () => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={11} sm={11} md={12} lg={10}>
+      <Grid item xs={11} sm={11} md={12} lg={10} xl={8}>
         <Box>
           <Box className={classes.title}>Our Pricing model</Box>
         </Box>

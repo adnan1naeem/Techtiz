@@ -12,10 +12,6 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 43,
       lineHeight: "51px",
     },
-    [theme.breakpoints.only("xs")]: {
-      fontSize: 25,
-      textAlign: "center",
-    },
   },
   subtitle: {
     fontSize: 30,
@@ -32,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
       marginTop: -15,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 40,
+    },
   },
   detail: {
     fontSize: 22,
@@ -45,6 +44,10 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 18,
       marginTop: "unset",
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 42,
+      lineHeight: "60px",
+    },
   },
   [theme.breakpoints.only("sm")]: {
     fontSize: 15,
@@ -53,6 +56,10 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginTop: 15,
     width: 60,
+    [theme.breakpoints.up("xl")]: {
+      width: "unset",
+      marginTop: 30,
+    },
   },
   mobile: {
     width: "100%",
@@ -61,6 +68,9 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.only("xs")]: {
       width: "100%",
+    },
+    [theme.breakpoints.up("xl")]: {
+      width: "unset",
     },
   },
   dflex: {
@@ -80,9 +90,9 @@ export const ServicesCard = ({ title, subtitle, detail, image1, image2 }) => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={12} sm={11} md={11} lg={10}>
+      <Grid item xs={12} sm={11} md={11} lg={10} xl={10}>
         <Box className={classes.dflex}>
-          <Grid item xs={12} sm={8} md={8} lg={7}>
+          <Grid item xs={12} sm={8} md={8} lg={7} xl={7}>
             <Box className={classes.title}>{title}</Box>
             <Box className={classes.subtitle}>{subtitle}</Box>
             <Box className={classes.detail}>{detail}</Box>
@@ -92,7 +102,15 @@ export const ServicesCard = ({ title, subtitle, detail, image1, image2 }) => {
               </Box>
             </Hidden>
           </Grid>
-          <Grid item xs={11} sm={4} md={4} lg={4} className={classes.textAlign}>
+          <Grid
+            item
+            xs={11}
+            sm={4}
+            md={4}
+            lg={4}
+            xl={4}
+            className={classes.textAlign}
+          >
             <img className={classes.mobile} src={image2} alt="" />
           </Grid>
           <Hidden smUp>

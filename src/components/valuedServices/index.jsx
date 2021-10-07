@@ -12,12 +12,21 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("xs")]: {
       fontSize: 22,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 70,
+    },
+  },
+  mt: {
+    marginTop: 64,
+    [theme.breakpoints.up("xl")]: {
+      marginTop: 210,
+    },
   },
 }));
 export const ValuedServices = () => {
   const classes = useStyles();
   return (
-    <Box mt={8}>
+    <Box className={classes.mt} id="services">
       <Box className={classes.header}>Our Valued Services</Box>
       <Hidden xsDown>
         <ServicesTabs />

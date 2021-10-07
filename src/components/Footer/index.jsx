@@ -37,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     color: "#000000",
     fontFamily: "Axiforma",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 22,
+    },
   },
   title: {
     fontSize: 30,
@@ -45,12 +48,18 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       fontSize: 20,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 30,
+    },
   },
   service: {
     fontSize: 18,
     fontWeight: 300,
     color: "#4E4E4E",
     fontFamily: "Axiforma",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 22,
+    },
   },
   clutchStyles: {
     width: 100,
@@ -65,6 +74,10 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "auto",
     textAlign: "left",
     marginTop: 10,
+    [theme.breakpoints.up("xl")]: {
+      width: 540,
+      fontSize: 22,
+    },
   },
   divider: {
     width: 1510,
@@ -181,7 +194,7 @@ export const Footer = () => {
               </Box>
             </Grid>
 
-            <Grid item sm={4} md={4} lg={4}>
+            <Grid item sm={4} md={4} lg={3}>
               <Box className={classes.title} textAlign="center">
                 Reviews
               </Box>
