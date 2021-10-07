@@ -81,7 +81,7 @@ export const ServiceCards = ({ heading, detail, icons, image1 }) => {
       spacing={4}
       className={classes.maxWidth}
     >
-      <Grid item sm={11} md={11} lg={12} xl={10} className={classes.mt}>
+      <Grid item sm={11} md={11} lg={12} className={classes.mt}>
         <Grid container spacing={2}>
           <Grid item sm={7} md={8} lg={7} xl={8}>
             <Box className={classes.heading}>{heading}</Box>

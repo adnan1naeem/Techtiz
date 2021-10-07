@@ -50,7 +50,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   maxWidth: {
-    maxWidth: 1900,
+    [theme.breakpoints.up("xl")]: {
+      maxWidth: 1900,
+    },
   },
 }));
 export const Industries = () => {

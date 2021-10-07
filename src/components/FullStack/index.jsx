@@ -28,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
       width: 700,
       height: 700,
     },
+    [theme.breakpoints.down(340)]: {
+      width: 240,
+      height: 200,
+    },
   },
 
   backgroundImage: {

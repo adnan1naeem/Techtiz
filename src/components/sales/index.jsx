@@ -22,8 +22,14 @@ const useStyles = makeStyles((theme) => ({
       top: -214,
       left: -5,
     },
-    [theme.breakpoints.up("xls")]: {
-      top: 272,
+    [theme.breakpoints.up("md")]: {
+      top: "8rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      top: "5rem",
+    },
+    [theme.breakpoints.up("xl")]: {
+      top: "3rem",
     },
   },
   heading: {

@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 43,
       lineHeight: "51px",
     },
+    [theme.breakpoints.up("xs")]: {
+      fontSize: 22,
+    },
   },
   subtitle: {
     fontSize: 30,
@@ -24,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 24,
     },
     [theme.breakpoints.only("xs")]: {
-      fontSize: 20,
+      fontSize: 18,
       textAlign: "center",
       marginTop: -15,
     },
@@ -43,6 +46,8 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
       fontSize: 18,
       marginTop: "unset",
+      textAlign: "unset",
+      lineHeight: "26px",
     },
     [theme.breakpoints.up("xl")]: {
       fontSize: 42,
@@ -75,6 +80,7 @@ const useStyles = makeStyles((theme) => ({
   },
   dflex: {
     display: "flex",
+    justifyContent: "center",
     [theme.breakpoints.only("xs")]: {
       display: "flex",
       flexDirection: "column",
@@ -90,7 +96,7 @@ export const ServicesCard = ({ title, subtitle, detail, image1, image2 }) => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={12} sm={11} md={11} lg={10} xl={10}>
+      <Grid item xs={10} sm={11} md={11} lg={10} xl={12}>
         <Box className={classes.dflex}>
           <Grid item xs={12} sm={8} md={8} lg={7} xl={7}>
             <Box className={classes.title}>{title}</Box>

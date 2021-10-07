@@ -40,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("xl")]: {
       fontSize: 22,
     },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: 12,
+    },
   },
   title: {
     fontSize: 30,
@@ -57,6 +60,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 300,
     color: "#4E4E4E",
     fontFamily: "Axiforma",
+    [theme.breakpoints.up("sm")]: {
+      fontSize: 12,
+    },
     [theme.breakpoints.up("xl")]: {
       fontSize: 22,
     },
@@ -71,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     width: 219,
     fontFamily: "Axiforma",
-    marginLeft: "auto",
+
     textAlign: "left",
     marginTop: 10,
     [theme.breakpoints.up("xl")]: {
@@ -102,13 +108,16 @@ const useStyles = makeStyles((theme) => ({
       marginTop: -232,
     },
   },
+  maxWidth: {
+    maxWidth: 1900,
+  },
 }));
 export const Footer = () => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center" className={classes.mt} spacing={4}>
       <Hidden xsDown>
-        <Grid item xs={11} sm={11} md={11} lg={9}>
+        <Grid item xs={11} sm={11} md={11} lg={8} className={classes.maxWidth}>
           <Grid container style={{ marginTop: 50 }} justifyContent="center">
             <Grid item sm={4} md={4} lg={4}>
               <Box className={classes.title}>Services</Box>
@@ -186,20 +195,16 @@ export const Footer = () => {
                   </Box>
                   <Box className={classes.dflex} mt={4}>
                     <img className={classes.node} src={node} alt="" />
-                    <Box ml={1} className={classes.iconName}>
-                      Node .js
-                    </Box>
+                    <Box className={classes.iconName}>Node .js</Box>
                   </Box>
                 </Box>
               </Box>
             </Grid>
 
-            <Grid item sm={4} md={4} lg={3}>
-              <Box className={classes.title} textAlign="center">
-                Reviews
-              </Box>
+            <Grid item sm={4} md={4} lg={4}>
+              <Box className={classes.title}>Reviews</Box>
               <Box mt={5}>
-                <Box textAlign="center">
+                <Box>
                   <img className={classes.clutchStyles} src={clutch} alt="" />
                 </Box>
                 <Box className={classes.clutchDetail}>

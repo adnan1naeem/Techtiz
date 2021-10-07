@@ -16,12 +16,15 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 200,
     },
   },
+  maxWidth: {
+    maxWidth: 1900,
+  },
 }));
 export const LatestBlog = () => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={10} lg={10} xl={7}>
+      <Grid item xs={10} lg={10} xl={10} className={classes.maxWidth}>
         <Box className={classes.title}>Our Latest Blog</Box>
         <Grid
           container

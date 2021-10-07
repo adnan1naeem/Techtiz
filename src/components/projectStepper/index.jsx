@@ -73,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("xl")]: {
       marginTop: 200,
+      maxWidth: 1900,
     },
   },
 }));
@@ -89,7 +90,7 @@ function ProjectStepper() {
 
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={10} sm={11} md={10} lg={10} className={classes.mt}>
+      <Grid item xs={10} sm={11} md={10} lg={10} xl={12} className={classes.mt}>
         <div className={classes.root}>
           <AutoPlaySwipeableViews
             axis={theme.direction === "rtl" ? "x-reverse" : "x"}

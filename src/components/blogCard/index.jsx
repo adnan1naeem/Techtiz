@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: "unset",
     },
     [theme.breakpoints.down("sm")]: {
-      fontSize: 18,
+      fontSize: 12,
+      lineHeight: "21px",
     },
     [theme.breakpoints.up("xl")]: {
       fontSize: 32,

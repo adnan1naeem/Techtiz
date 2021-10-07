@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
   },
   imgStyles: {
     width: 344,
+    [theme.breakpoints.down(350)]: {
+      width: 220,
+    },
   },
   header: {
     fontFamily: "Axiforma",

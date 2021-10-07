@@ -62,8 +62,8 @@ const useStyles = makeStyles((theme) => ({
       marginTop: "unset",
     },
     [theme.breakpoints.up("xl")]: {
-      fontSize: 55,
-      lineHeight: "71px",
+      fontSize: 30,
+      lineHeight: "49px",
     },
   },
   name: {
@@ -127,6 +127,11 @@ const useStyles = makeStyles((theme) => ({
       marginTop: "unset",
     },
   },
+  maxWidth: {
+    [theme.breakpoints.up("xl")]: {
+      maxWidth: 1900,
+    },
+  },
 }));
 export const FeedBack = () => {
   const classes = useStyles();
@@ -134,7 +139,7 @@ export const FeedBack = () => {
     <Grid container justifyContent="center" id="feedback">
       <Grid item xs={10} lg={10} xl={6}>
         <Grid container justifyContent="center">
-          <Grid item xs={12} lg={8} xl={8}>
+          <Grid item xs={12} lg={8} xl={8} className={classes.maxWidth}>
             <Box className={classes.backgroundImage}>
               <Box className={classes.title}>
                 Valuable Feedbacks from our Satisfied Clients

@@ -23,6 +23,18 @@ const useStyles = makeStyles((theme) => ({
     left: 10,
     boxShadow: "-7px 7px 9px 4px rgba(24, 64, 207, 0.1);",
     borderRadius: 39,
+    [theme.breakpoints.down(2700)]: {
+      top: "-19rem",
+    },
+    [theme.breakpoints.up("md")]: {
+      top: "-15rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      top: "-16rem",
+    },
+    [theme.breakpoints.down("md")]: {
+      top: -240,
+    },
     [theme.breakpoints.only("xs")]: {
       width: "unset",
       height: "unset",
@@ -34,6 +46,9 @@ const useStyles = makeStyles((theme) => ({
       left: -39,
     },
     [theme.breakpoints.up("xl")]: {
+      top: "-22rem",
+    },
+    [theme.breakpoints.up(2550)]: {
       top: -408,
     },
   },
@@ -120,8 +135,8 @@ const useStyles = makeStyles((theme) => ({
       top: -41,
     },
     [theme.breakpoints.up("xl")]: {
-      marginTop: 212,
-      right: 26,
+      top: -127,
+      right: 131,
     },
   },
   position: {
@@ -135,14 +150,39 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("xs")]: {
       top: "unset",
     },
+    [theme.breakpoints.up("xl")]: {
+      top: -126,
+    },
+  },
+  maxWidth: {
+    maxWidth: 1900,
+    [theme.breakpoints.up("lg")]: {
+      marginTop: 100,
+    },
+  },
+  mb: {
+    [theme.breakpoints.up("lg")]: {
+      display: "flex",
+      justifyContent: "center",
+    },
   },
 }));
 export const ContactUs = () => {
   const classes = useStyles();
   return (
-    <Grid container justifyContent="center" id="contactUs">
+    <Grid
+      container
+      justifyContent="center"
+      id="contactUs"
+      style={{ marginTop: "7rem", marginBottom: "4rem" }}
+    >
       <Grid className={classes.mb} xs={12} item sm={10} md={11} lg={10} xl={8}>
-        <Grid container className={classes.container} justifyContent="center">
+        <Grid
+          container
+          className={classes.container}
+          justifyContent="center"
+          className={classes.maxWidth}
+        >
           <Grid item xs={11} sm={9} md={6} lg={4}>
             <Box>
               <Box className={classes.bgGreen}>

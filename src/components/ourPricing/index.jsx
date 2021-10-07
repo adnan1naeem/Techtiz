@@ -66,13 +66,24 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 25,
     },
   },
+  maxWidth: {
+    maxWidth: 1900,
+  },
 }));
 
 export const OurPricing = () => {
   const classes = useStyles();
   return (
     <Grid container justifyContent="center">
-      <Grid item xs={11} sm={11} md={12} lg={10} xl={8}>
+      <Grid
+        item
+        xs={11}
+        sm={11}
+        md={12}
+        lg={10}
+        xl={9}
+        className={classes.maxWidth}
+      >
         <Box>
           <Box className={classes.title}>Our Pricing model</Box>
         </Box>

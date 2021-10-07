@@ -11,20 +11,26 @@ import { Box, Grid, Hidden, Link } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    backgroundColor: "#F9F9F9",
     [theme.breakpoints.down("sm")]: {
       flexDirection: "row",
     },
   },
   menuButton: {
-    marginRight: theme.spacing(2),
     color: "#5B5B5B",
+    [theme.breakpoints.down("sm")]: {
+      padding: 4,
+    },
   },
   title: {
     flexGrow: 1,
   },
   color: {
-    backgroundColor: "#F9F9F9",
     width: "100%",
+    [theme.breakpoints.up("xl")]: {
+      margin: "auto",
+      maxWidth: 1900,
+    },
   },
   appbarlinks: {
     fontSize: 22,
@@ -64,7 +70,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 16,
     [theme.breakpoints.only("xs")]: {
       height: 37,
-      width: 155,
+      width: 90,
+      marginTop: 0,
     },
   },
   contactContainer: {
@@ -76,6 +83,11 @@ const useStyles = makeStyles((theme) => ({
   ml: {
     [theme.breakpoints.down("xs")]: {
       marginLeft: "auto",
+    },
+  },
+  logoContainer: {
+    [theme.breakpoints.down("sm")]: {
+      flex: 1,
     },
   },
 }));
@@ -105,7 +117,7 @@ export default function Appbar() {
             </Hidden>
 
             <Box className={classes.dflex}>
-              <Box>
+              <Box className={classes.logoContainer}>
                 <img className={classes.logoStyling} src={logoLg} alt="" />
               </Box>
               <Hidden smDown>
