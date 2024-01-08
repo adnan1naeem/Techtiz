@@ -1,0 +1,60 @@
+/* Your CSS file (e.g., styles.css) */
+
+/* Default styles */
+
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .responsive-img-Line{
+        width: 50%;
+
+    }
+    .responsive-img-Mobile{
+        width: 50%;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 960px) {
+    .responsive-img-Line{
+        width: 40%;
+
+    }
+    .responsive-img-Mobile{
+        width: 40%;
+    }
+  }
+  
+  @media (min-width: 961px) and (max-width: 1280px) {
+    .responsive-img-Line{
+        width: 27%;
+
+    }
+    .responsive-img-Mobile{
+        width: 50%;
+    }
+  }
+  
+  @media (min-width: 1281px) {
+    .responsive-img-Line{
+      
+        width: 20%;
+
+    }
+    .responsive-img-Mobile{
+        margin-top: 5%;
+        width: 40%;
+    }
+  }
+  @media (min-width: 1781px) {
+    
+    .responsive-img-Line{
+        
+        width: 10%;
+
+    }
+    .responsive-img-Mobile{
+        margin-top: 10%;
+        margin-bottom: 5%;
+        width: 40%;
+    }
+  }

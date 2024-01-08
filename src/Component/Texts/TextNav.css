@@ -1,0 +1,17 @@
+.TextNav {
+    /* Add any container styles if needed */
+  }
+  
+  .textNavLabel {
+    color: #f8f8f8;
+    cursor: pointer;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    font-size: 16px;
+    font-weight: 400;
+
+  
+    &:hover {
+      color: #18b0e6;
+    }
+  }
+  

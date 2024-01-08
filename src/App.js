@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import { useLayoutEffect } from "react";
+import ScrollToTop from "react-scroll-to-top";
+import Home from "./Screen/Home/Home";
+import About from "./Screen/About/About";
+import Industries from "./Screen/Industries/Industries";
+import Portfolios from "./Screen/Portfolios/Portfolios";
+import Career from "./Screen/Career/Career";
+import Mobile from "./Screen/Mobile/Mobile";
+import GetStarted from "./Screen/GetStarted/GetStarted";
+import Web from "./Screen/Web/Web";
+
 
 function App() {
+  const Wrapper = ({ children }) => {
+    const location = useLocation();
+    useLayoutEffect(() => {
+      document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
+    return children;
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Wrapper>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/industries" element={<Industries />} />
+            <Route exact path="/portfolio" element={<Portfolios />} />
+            <Route exact path="/careers" element={<Career />} />
+            <Route exact path="/mobile-application" element={<Mobile />} />
+            <Route exact path="/website" element={<Web />} />
+            <Route exact path="/get-started" element={<GetStarted />} />
+          </Routes>
+        </Wrapper>
+      </Router>
+      <ScrollToTop smooth style={{ background: "#e6e6e6" }} />
     </div>
   );
 }
