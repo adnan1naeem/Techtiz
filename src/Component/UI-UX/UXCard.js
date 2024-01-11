@@ -1,7 +1,7 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import React from "react";
 
-function ServicesCard({image,heading,text}) {
+function UXCard({image,heading,text}) {
   return (
     <Box
       sx={{
@@ -12,8 +12,8 @@ function ServicesCard({image,heading,text}) {
     >
       <Card
         sx={{
-          width: { xs: "21rem", sm: "21rem", md: "21rem", lg: "22rem" },
-          height: { xs: "19rem", sm: "19rem", md: "19rem", lg: "20rem" },
+          width: { xs: "21rem", sm: "32rem", md: "30rem", lg: "32rem" },
+          height: { xs: "22rem", sm: "18rem", md: "17rem", lg: "15rem" },
           borderRadius: "10px",
           background: "white",
          
@@ -27,11 +27,11 @@ function ServicesCard({image,heading,text}) {
           sx={{
             display: "flex",
             flexDirection: "column",
-            marginLeft:'3%'
+            marginLeft:'1.5%'
           }}
         >
           <Box
-            sx={{ width: { xs: "6rem", sm: "6rem", md: "6rem", lg: "6rem" } }}
+            sx={{ width: { xs: "5rem", sm: "5rem", md: "5rem", lg: "3.2rem" } }}
           >
             <img
               style={{ width: "100%" 
@@ -41,21 +41,19 @@ function ServicesCard({image,heading,text}) {
               alt=""
             />
           </Box>
-          <Box sx={{ marginTop: "10%" }}>
+          <Box sx={{ marginTop: "3%", width: "90%" }}>
             <Typography
               sx={{
                 color: "#153A5F",
                 fontSize: "1.3rem",
                 fontWeight: "600",
                 marginBottom: "15px",
-                width:'40em'
               }}
-
             >
               {heading}
             </Typography>
             <Typography
-              sx={{ color: "#153A5F", fontWeight: "400", fontSize: "0.9rem", lineHeight:'1.5em',marginBottom:'5px' }}
+              sx={{ color: "#153A5F", fontWeight: "400", fontSize: "0.9rem", lineHeight:'1.5em',marginBottom:'1px' }}
             >
              {text}
             </Typography>
@@ -66,4 +64,4 @@ function ServicesCard({image,heading,text}) {
   );
 }
 
-export default ServicesCard;
+export default UXCard;

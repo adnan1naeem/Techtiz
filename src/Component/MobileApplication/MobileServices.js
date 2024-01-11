@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Card, CardContent, Button } from "@mui/material";
 
-function MobileServices() {
+function MobileServices({image,title}) {
   const [isHovered, setIsHovered] = React.useState(false);
   return (
     <Box
@@ -11,11 +11,12 @@ function MobileServices() {
     >
       <Card
         sx={{
-          width: { xs: "20rem", sm: "18rem", md: "19rem", lg: "17rem" },
+          width: { xs: "20rem", sm: "18rem", md: "19rem", lg: "16rem" },
           height: { xs: "22rem", sm: "22rem", md: "20rem", lg: "17rem" },
           background: "#153A5F",
           cursor: "pointer",
           boxShadow: "none",
+          border: "1px solid white", 
         }}
       >
         {!isHovered && (
@@ -34,7 +35,7 @@ function MobileServices() {
             onMouseEnter={() => setIsHovered(true)}
           >
             <img
-              src="https://techtiz.co/wp-content/uploads/2023/10/icons8-ios-800.png"
+              src={image}
               alt=""
               style={{ width: "45%" }}
             />
@@ -45,9 +46,11 @@ function MobileServices() {
                 fontSize: "1.1em",
                 marginTop: "10%",
                 lineHeight: "24px",
+                textAlign:'center',
+                width:'60%'
               }}
             >
-              React Native <br /> Development
+              {title}
             </Typography>
           </CardContent>
         )}
@@ -71,7 +74,7 @@ function MobileServices() {
             >
              Our solution-oriented developers use Flutter UI framework to deliver unconventional and engaging app designs that drive growth.
             </Typography>
-            <Button sx={{marginTop:'5%', color:'white', border:''}} variant="outlined">Outlined</Button>
+            <Button sx={{marginTop:'10%', color:'white', }} variant="outlined">Outlined</Button>
           </CardContent>
         )}
       </Card>

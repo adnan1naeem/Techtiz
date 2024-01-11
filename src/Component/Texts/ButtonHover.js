@@ -11,10 +11,12 @@ function ButtonHover({textButton}) {
           color: "#f8f8f8",
           fontWeight: "500",
           fontSize: "15px",
-          paddingTop: "4px",
-          paddingBottom: "4px",
+          paddingTop: "6px",
+          paddingBottom: "6px",
           border: "2.2px solid #18B0E6",
           textTransform: "none",
+          paddingLeft:'16px',
+          paddingRight:'16px',
        
           "&:hover": {
             backgroundColor: "#18B0E6", // Set the desired background color on hover

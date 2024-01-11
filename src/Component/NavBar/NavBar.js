@@ -59,8 +59,8 @@ const Navbar = () => {
             <div class="dropdown-content">
               <Link to="/mobile-application">Mobile Application</Link>
               <Link to="/website">Web Development Services</Link>
-              <Link>UI/UX Design</Link>
-              <Link>SQA</Link>
+              <Link to="/ui-ux-design">UI/UX Design</Link>
+              <Link to="/sqa">SQA</Link>
             </div>
           </div>
 

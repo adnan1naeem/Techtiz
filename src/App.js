@@ -15,6 +15,8 @@ import Career from "./Screen/Career/Career";
 import Mobile from "./Screen/Mobile/Mobile";
 import GetStarted from "./Screen/GetStarted/GetStarted";
 import Web from "./Screen/Web/Web";
+import UI from "./Screen/UI/UI";
+import Sqa from "./Screen/Sqa/Sqa";
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
             <Route exact path="/mobile-application" element={<Mobile />} />
             <Route exact path="/website" element={<Web />} />
             <Route exact path="/get-started" element={<GetStarted />} />
+            <Route exact path="/ui-ux-design" element={<UI />} />
+            <Route exact path="/sqa" element={<Sqa />} />
           </Routes>
         </Wrapper>
       </Router>

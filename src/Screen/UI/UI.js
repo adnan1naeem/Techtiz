@@ -2,21 +2,19 @@ import React from "react";
 import { Box } from "@mui/material";
 import Navbar from "../../Component/NavBar/NavBar";
 
-import GrowWebsite from "../../Component/Website/GrowWebsite";
-import OurServices from "../../Component/Website/Services/OurServices";
-import DoIt from "../../Component/Website/DoIt/DoIt";
-import Stack from "../../Component/Website/Stacks";
+import DesignUX from "../../Component/UI-UX/DesignUX";
+import DoUX from "../../Component/UI-UX/DoUX";
+import DoItUX from "../../Component/UI-UX/DoItUX";
 import DiscussProject from "../../Component/Website/DiscussProject";
-import SalesTeam from "../../Component/SalesTeam/SalesTeam";
 import Footer from "../../Component/Footer/Footer";
+import SalesTeam from "../../Component/SalesTeam/SalesTeam";
 
-
-function Web() {
+function UI() {
   const [isHovered, setIsHovered] = React.useState(false);
   return (
     <div>
       <Navbar />
-      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "13%" } }}>
+      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%" } }}>
         <Box
           sx={{
             display: "flex",
@@ -25,33 +23,33 @@ function Web() {
             flexWrap: "wrap",
           }}
         >
-          <GrowWebsite />
+          <DesignUX />
           <Box
             sx={{
-              width: { xs: "100%", sm: "80%", md: "34%", lg: "28%", xl: "24%" },
+              width: { xs: "100%", sm: "80%", md: "34%", lg: "33%", xl: "30%" },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
+              marginTop:{xs:'10%',sm:'10%',md:0,lg:0}
+            
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
             <img
-              src="https://techtiz.co/wp-content/uploads/2023/11/webdesign_1.webp"
+              src="https://techtiz.co/wp-content/uploads/2023/11/mobileAppDev.svg"
               alt=""
               style={{ width: "100%" }}
             />
           </Box>
         </Box>
-        <OurServices/>
-        <DoIt/>
-        <Stack/>
+        <DoUX/>
+        <DoItUX/>
         <DiscussProject/>
         <SalesTeam/>
         <Footer/>
-        
       </Box>
     </div>
   );
 }
 
-export default Web;
+export default UI;

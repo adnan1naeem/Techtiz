@@ -1,10 +1,12 @@
 import React from "react";
 import Button from "@mui/material/Button";
 
-function DoButton({
+
+function QAButton({
   text,
   isSelected,
   onClick,
+  icon: IconComponent, 
 }) {
   return (
     <div>
@@ -28,12 +30,17 @@ function DoButton({
             backgroundColor: isSelected ? "#F6F9FC" : "#EAEAEA",
             border: isSelected ? "2px solid #18B0E6" : "none",
           },
+          display: "flex",
+          alignItems: "center",
         }}
       >
+        {IconComponent && (
+          <IconComponent style={{ marginRight: "8px" }} />
+        )}
         {text}
       </Button>
     </div>
   );
 }
 
-export default DoButton;
+export default QAButton;
