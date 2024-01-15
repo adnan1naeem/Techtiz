@@ -77,7 +77,10 @@ const Navbar = () => {
           </li>
           <li>
             {" "}
-            <TextNav label="Blog" />
+            <Link to="/blogs">
+              {" "}
+              <TextNav label="Blog" />
+            </Link>
           </li>
 
           <li>
@@ -88,10 +91,9 @@ const Navbar = () => {
         </ul>
         {isWideScreen && (
           <div className="btn-group" style={{ marginRight: "6%" }}>
-          <Link to="/get-started">
-          <ButtonHover textButton="Get Started" />
-          </Link>
-            
+            <Link to="/get-started">
+              <ButtonHover textButton="Get Started" />
+            </Link>
           </div>
         )}
         <div className="hamburger" onClick={handleClick}>

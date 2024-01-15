@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Card, CardContent } from "@mui/material";
+import Input from "./Input";
 function Form() {
   return (
     <Box>
@@ -13,17 +14,9 @@ function Form() {
         }}
       >
         <CardContent>
-          <Form>
-          <select class="form-control" id="submit-form" name="Unit_type" required>
-        <option selected disabled>Select One</option>
-        <option value="1">InDoor</option>
-        <option value="2">OutDoor</option>
-        <option value="3">Compressor</option>
-        <option value="4">Outdoor Fan Motor</option>
-        <option value="5">Indoor Fan Motor</option>
-        <option value="6">Louver</option>
-      </select>
-          </Form>
+        <Box>
+          <Input/>
+        </Box>
         </CardContent>
       </Card>
     </Box>

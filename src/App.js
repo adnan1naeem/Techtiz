@@ -17,6 +17,9 @@ import GetStarted from "./Screen/GetStarted/GetStarted";
 import Web from "./Screen/Web/Web";
 import UI from "./Screen/UI/UI";
 import Sqa from "./Screen/Sqa/Sqa";
+import Blog from "./Screen/Blog/Blog";
+import BlogDescription from "./Component/Blogs/BlogDescription";
+import DateBlogs from "./Component/Blogs/DateBlogs";
 
 
 function App() {
@@ -42,6 +45,10 @@ function App() {
             <Route exact path="/get-started" element={<GetStarted />} />
             <Route exact path="/ui-ux-design" element={<UI />} />
             <Route exact path="/sqa" element={<Sqa />} />
+            <Route exact path="/blogs" element={<Blog />} />
+            <Route exact path="/blogs-description" element={<BlogDescription />} />
+            <Route exact path="/blogs-date" element={<DateBlogs />} />
+
           </Routes>
         </Wrapper>
       </Router>
