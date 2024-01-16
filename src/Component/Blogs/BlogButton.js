@@ -1,6 +1,6 @@
 import { Box, Button } from "@mui/material";
 
-function BlogButton() {
+function BlogButton( {text}) {
   return (
     <Box>
       <Button
@@ -22,7 +22,7 @@ function BlogButton() {
           },
         }}
       >
-        Best Practices
+       {text}
       </Button>
     </Box>
   );
