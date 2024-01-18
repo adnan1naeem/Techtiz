@@ -1,0 +1,88 @@
+select {
+    font-family: sans-serif;
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 14px 12px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #6373810F;
+    color: #7A7A7A;
+}
+
+
+
+input[type=text],
+textarea {
+    width: 100%;
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 14px 12px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #6373810F;
+}
+
+input[type=text]:focus {
+    /* border: 2px solid #69727d; */
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        font-family: sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+        padding: 14px 12px;
+        display: inline-block;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        background-color: #6373810F;
+    }
+
+    input[type=text] {
+        border-radius: 1px;
+        color: #7A7A7A;
+    }
+
+    input[type=text]:focus {
+        /* border: 2px solid #69727d; */
+        /* transition: all 0.75s ease-in-out */
+
+    }
+
+    textarea {
+        font-family: sans-serif;
+        border-radius: 1px;
+        color: #7A7A7A;
+    }
+
+    textarea:focus {
+        /* border: 1px solid #69727d; */
+    }
+
+    select {
+        color: #7A7A7A;
+        line-height: 20px;
+        border-radius: 2px;
+    }
+
+    select:focus {
+        /* border: 1px solid #69727d; */
+    }
+}
