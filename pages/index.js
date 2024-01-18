@@ -1,10 +1,11 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-
+import Head from "next/head";
+import { BrowserRouter } from "react-router-dom";
+import styles from "../styles/Home.module.css";
+import HomeScreen from "./HomeScreen/HomeScreen";
 export default function Home() {
   return (
     <div className={styles.container}>
-      halo
+      <HomeScreen />
 
       <style jsx>{`
         main {
@@ -38,34 +39,17 @@ export default function Home() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
       `}</style>
-
       <style jsx global>{`
         html,
         body {
           padding: 0;
           margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
         * {
