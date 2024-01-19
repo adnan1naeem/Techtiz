@@ -9,21 +9,23 @@ import { MdArrowDropDown } from 'react-icons/md';
 const Navbar = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
-    const [isWideScreen, setIsWideScreen] = useState(
-        typeof window !== 'undefined' && window.innerWidth > 900
-    );
+    const [isWideScreen, setIsWideScreen] = useState(false);
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsWideScreen(typeof window !== 'undefined' && window.innerWidth > 900);
-        };
+useEffect(() => {
+    if (typeof window !== 'undefined') {
+        setIsWideScreen(window.innerWidth > 900);
+    }
 
-        window.addEventListener('resize', handleResize);
+    const handleResize = () => {
+        setIsWideScreen(typeof window !== 'undefined' && window.innerWidth > 900);
+    };
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+        window.removeEventListener('resize', handleResize);
+    };
+}, []);
 
     return (
         <div className={styles.header}>
