@@ -1,11 +1,10 @@
-import Head from "next/head";
-import { BrowserRouter } from "react-router-dom";
-import styles from "../styles/Home.module.css";
-import HomeScreen from "./HomeScreen/HomeScreen";
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+
 export default function Home() {
   return (
     <div className={styles.container}>
-      <HomeScreen />
+      halo
 
       <style jsx>{`
         main {
