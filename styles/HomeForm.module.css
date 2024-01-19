@@ -30,11 +30,11 @@
   box-sizing: border-box;
   background-color: #6373810F;
 } 
-
+/* 
 .input:focus {
-    /* border: 2px solid #69727d; */
+    border: 2px solid #69727d;
   
-  }
+  } */
 
 
 @media only screen and (max-width: 768px) {
@@ -59,11 +59,11 @@
     color: #7A7A7A;
   }
 
-  .input:focus {
-    /* border: 2px solid #69727d; */
-    /* transition: all 0.75s ease-in-out */
+  /* .input:focus {
+    border: 2px solid #69727d;
+    transition: all 0.75s ease-in-out
   
-  }
+  } */
 
   .input {
     font-family: sans-serif;
