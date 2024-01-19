@@ -9,7 +9,6 @@ function DateBlogs() {
     console.log(item, "hello");
     return (
         <Box>
-            <Navbar />
             <Box
                 sx={{
                     marginTop: {
