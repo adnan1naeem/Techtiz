@@ -1,22 +1,28 @@
 import React, { useState } from "react";
-import { Box, Pagination } from "@mui/material";
+import { Box, Pagination, Typography } from "@mui/material";
 import BlogsMainCard from "./BlogsMainCard";
+import TagCard from "./TagCard"; // Import TagCard
 import blogData from "./BlogData";
 import { Link } from "react-router-dom";
 
-
-function AllBlogs() {
+function AllBlogs({ selectedTag }) {
   const itemsPerPage = 8;
   const [currentPage, setCurrentPage] = useState(1);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = blogData.slice(indexOfFirstItem, indexOfLastItem);
+
+  const filteredBlogs = selectedTag
+    ? blogData.filter((blog) => blog.tags === selectedTag)
+    : blogData;
+
+  const currentItems = filteredBlogs.slice(indexOfFirstItem, indexOfLastItem);
 
   const handleChangePage = (event, newPage) => {
     setCurrentPage(newPage);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
 
   return (
     <Box
@@ -26,6 +32,16 @@ function AllBlogs() {
         width: { xs: "100%", sm: "100%", md: "75%", lg: "64%", xl: "50rem" },
       }}
     >
+      <Typography
+        sx={{
+          ml: "10%",
+          fontSize: "1.6em",
+          color: "#153A5F",
+          fontWeight: "600",
+        }}
+      >
+        {selectedTag ? `Tag: ${selectedTag}` : "Blogs"}
+      </Typography>
       <Box
         sx={{
           display: "flex",
@@ -35,21 +51,35 @@ function AllBlogs() {
           justifyContent: "center",
         }}
       >
-     
         {currentItems.map((item, index) => (
-          <Link to="/blogs-description" style={{textDecoration:'none'}} state={item}> 
-          <BlogsMainCard
-            key={index}
-            image={item?.image}
-            des={item?.title}
-            date={item?.date}
-          />
+          <Link
+            to="/blogs-description"
+            style={{ textDecoration: "none" }}
+            state={item}
+            key={index} // Ensure each element has a unique key
+          >
+            {selectedTag ? (
+              <TagCard
+                key={index}
+                image={item?.image}
+                des={item?.title}
+                date={item?.date}
+              />
+            ) : (
+              <BlogsMainCard
+                key={index}
+                image={item?.image}
+                des={item?.title}
+                date={item?.date}
+                
+              />
+            )}
           </Link>
         ))}
       </Box>
       <Box sx={{ mt: "5%", display: "flex", justifyContent: "center" }}>
         <Pagination
-          count={Math.ceil(blogData.length / itemsPerPage)}
+          count={Math.ceil(filteredBlogs.length / itemsPerPage)}
           page={currentPage}
           onChange={handleChangePage}
           hideNextButton
@@ -58,8 +88,8 @@ function AllBlogs() {
             "& .Mui-selected": {
               color: "#18B0E6",
               background: "none",
-              boxShadow:'none',
-              borderBlockColor:'none'
+              boxShadow: "none",
+              borderBlockColor: "none",
             },
           }}
         />

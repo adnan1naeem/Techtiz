@@ -22,6 +22,7 @@ import BlogDescription from "./Component/Blogs/BlogDescription";
 import DateBlogs from "./Component/Blogs/DateBlogs";
 
 
+
 function App() {
   const Wrapper = ({ children }) => {
     const location = useLocation();
@@ -48,6 +49,7 @@ function App() {
             <Route exact path="/blogs" element={<Blog />} />
             <Route exact path="/blogs-description" element={<BlogDescription />} />
             <Route exact path="/blogs-date" element={<DateBlogs />} />
+           
 
           </Routes>
         </Wrapper>

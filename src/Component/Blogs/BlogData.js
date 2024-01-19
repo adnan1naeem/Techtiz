@@ -2,6 +2,7 @@
 
 const blogData = [
   {
+    tags: "Best Practices",
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
@@ -30,7 +31,7 @@ const blogData = [
   {
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
+    image: "https://techtiz.co/wp-content/uploads/2023/12/3-2-768x384.jpg",
     date: "December 31, 2023",
   },
   {
@@ -172,54 +173,63 @@ const blogData = [
     date: "December 31, 2023",
   },
   {
+    tags: "Flutter",
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
     date: "December 31, 2023",
   },
   {
+    tags: "Flutter",
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
     date: "December 31, 2023",
   },
   {
+    tags: "Flutter",
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
     date: "December 31, 2023",
   },
   {
+    tags: "Flutter",
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
     date: "December 31, 2023",
   },
   {
+    tags: "React Native",
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
     date: "December 31, 2023",
   },
   {
+    tags: "Case Study",
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
     date: "December 31, 2023",
   },
   {
+    tags: "Best Practices",
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
     date: "December 31, 2023",
   },
   {
+    tags: "Best Practices",
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
     date: "December 31, 2023",
   },
   {
+    tags: "Best Practices",
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",

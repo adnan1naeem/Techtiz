@@ -1,13 +1,19 @@
+import { useState } from "react";
 import AllBlogButton from "../../Component/Blogs/AllBlogButtons";
 import AllBlogs from "../../Component/Blogs/AllBlogs";
 import Footer from "../../Component/Footer/Footer";
-
 import Navbar from "../../Component/NavBar/NavBar";
 import SalesTeam from "../../Component/SalesTeam/SalesTeam";
+
 
 const { Box } = require("@mui/material");
 
 function Blog() {
+  const [selectedTag, setSelectedTag] = useState("");
+
+  const handleTagClick = (tag) => {
+    setSelectedTag(tag);
+  };
   return (
     <Box>
       <Navbar />
@@ -24,9 +30,10 @@ function Blog() {
       >
       
         <Box sx={{ display: "flex",flexWrap:'wrap',gap:'1%',justifyContent:'center' }}>
-          <AllBlogs />
-          <AllBlogButton />
+          <AllBlogs selectedTag={selectedTag} />
+          <AllBlogButton onTagClick={handleTagClick} />
         </Box>
+       
         <SalesTeam/>
         <Footer/>
       </Box>
