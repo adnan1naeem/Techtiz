@@ -1,7 +1,6 @@
 // import { useEffect } from "react";
 // import { useRouter } from "next/router";
 import Index from "../pages/homeScreen/Index";
-
 export default function Home() {
   // const router = useRouter();
   // useEffect(() => {
