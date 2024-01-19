@@ -1,12 +1,11 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Industries from '../components/Navbar/Navbar'
+import Blog from '../pages/Blog/Blog'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Industries/>
-
+      <Blog/>
       <style jsx>{`
         main {
           padding: 5rem 0;
