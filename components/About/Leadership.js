@@ -22,12 +22,31 @@ function Leadership() {
       >
         Our Leadership Team
       </Typography>
-      <Box sx={{marginTop:'7%', display:'flex', justifyContent:'center',gap:'6%',flexWrap:'wrap'}}>
-        <Ceo imageceo="https://techtiz.co/wp-content/uploads/2023/11/Mohsin-Naeem.webp" name="Mohsin Name" text="CEO" />
-        <Ceo imageceo="https://techtiz.co/wp-content/uploads/2023/11/Adnaan_Naeem.webp" name="Adnan Naeem" text="CTO" />
-        <Ceo imageceo="https://techtiz.co/wp-content/uploads/2023/11/Ghazanfar-Ali.webp" name="Ghazanfar Ali" text="Business Development Executive"/>
+      <Box
+        sx={{
+          marginTop: "7%",
+          display: "flex",
+          justifyContent: "center",
+          gap: "6%",
+          flexWrap: "wrap",
+        }}
+      >
+        <Ceo
+          imageceo="https://techtiz.co/wp-content/uploads/2023/11/Mohsin-Naeem.webp"
+          name="Mohsin Naeem"
+          text="CEO"
+        />
+        <Ceo
+          imageceo="https://techtiz.co/wp-content/uploads/2023/11/Adnaan_Naeem.webp"
+          name="Adnan Naeem"
+          text="CTO"
+        />
+        <Ceo
+          imageceo="https://techtiz.co/wp-content/uploads/2023/11/Ghazanfar-Ali.webp"
+          name="Ghazanfar Ali"
+          text="Business Development Executive"
+        />
       </Box>
-      
     </Box>
   );
 }

@@ -83,7 +83,6 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            
             <Link href="/portfolios">
               <TextNav label="Case Study" />
             </Link>

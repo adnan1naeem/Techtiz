@@ -3,7 +3,6 @@ import { Box } from "@mui/material";
 
 import Started from "../../components/Started/Started";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
-import Footer from "../../components/Footer/Footer";
 
 function Index() {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -38,7 +37,6 @@ function Index() {
           </Box>
         </Box>
         <SalesTeam />
-        <Footer />
       </Box>
     </div>
   );

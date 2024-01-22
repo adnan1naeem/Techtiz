@@ -19,6 +19,7 @@ function MainBanner() {
 
   return (
     <Box
+      className={styles.container}
       sx={{
         background: "#153A5F",
       }}
@@ -68,6 +69,7 @@ function MainBanner() {
             flexDirection: { xs: "column", md: "row" },
             gap: "20px",
             marginTop: "10%",
+            alignItems: { xs: "center", sm: "flex-start" },
           }}
         >
           <ButtonBusiness
