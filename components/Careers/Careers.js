@@ -2,7 +2,7 @@ import { Box, Card, CardContent, Typography } from "@mui/material";
 import React from "react";
 import Welcoming from "./Welcoming";
 import CrossLine from "../MobileApplication/CrossLine";
-import ExpertiseMobile from "../../components/MobileApplication/ExpertiseMobile";
+import ExpertiseMobile from "../MobileApplication/ExpertiseMobile";
 import ImgForm from "./ImgForm";
 
 function Careers() {

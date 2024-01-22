@@ -79,12 +79,13 @@ const Navbar = () => {
           </div>
 
           <li>
-            <Link href="/Industries">
+            <Link href="/industries">
               <TextNav label="Industries" />
             </Link>
           </li>
           <li>
-            <Link href="/Portfolios">
+            
+            <Link href="/portfolios">
               <TextNav label="Case Study" />
             </Link>
           </li>
@@ -95,19 +96,16 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link href="/Career">
+            <Link href="/career">
               <TextNav label="Career" />
             </Link>
           </li>
         </ul>
         {isWideScreen && (
           <div className={styles["btn-group"]} style={{ marginRight: "6%" }}>
-            <Button onClick={() => router.push("/Career")}>
+            <Link href="/get-started">
               <ButtonHover textButton="Get Started" />
-            </Button>
-            {/* <Link href="/get-started">
-              <ButtonHover textButton="Get Started" />
-            </Link> */}
+            </Link>
           </div>
         )}
         <div className={styles.hamburger} onClick={handleClick}>
