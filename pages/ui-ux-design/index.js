@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import DesignUX from "../../components/UI-UX/DesignUX";
 import DoUX from "../../components/UI-UX/DoUX";
-import DoItUX from "../../components/UI-UX/DoltUX";
+import DoItUX from "../../components/UI-UX/DoItUX";
 import DiscussProject from "../../components/Website/DiscussProject";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 

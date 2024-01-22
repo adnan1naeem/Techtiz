@@ -5,8 +5,12 @@ import TextNav from "../Texts/TextNav";
 import ButtonHover from "../Texts/ButtonHover";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
+import { Button } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
+
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const [isWideScreen, setIsWideScreen] = useState(false);
@@ -80,7 +84,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/portfolio">
+            
+            <Link href="/portfolios">
               <TextNav label="Case Study" />
             </Link>
           </li>
@@ -91,7 +96,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link href="/careers">
+            <Link href="/career">
               <TextNav label="Career" />
             </Link>
           </li>

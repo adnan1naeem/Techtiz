@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
-function GrowWebsite() {
+function Grow() {
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'4%'}}
@@ -25,39 +25,34 @@ function GrowWebsite() {
               lineHeight: "20px",
             }}
           >
-            &nbsp;Web App Development
+            &nbsp;Mobile App Development
           </Typography>
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "2.7em",
-              fontWeight: "800",
+              fontSize: "2.2em",
+              fontWeight: "600",
               marginTop: "1%",
             }}
           >
-            Grow With an
+            Grow With a Mobile App
           </Typography>
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "2.8em",
-              fontWeight: "800",
-              marginTop: "-4%",
+              fontSize: "2.2em",
+              fontWeight: "600",
+              marginTop: "-2%",
             }}
           >
-            Unconventional &
+            Your Customers Will Love
           </Typography>
-          <Typography
-            sx={{
-              color: "#153A5F",
-              fontSize: "2.7em",
-              fontWeight: "800",
-              marginTop: "-4%",
-            }}
-          >
-            Engaging Website
-          </Typography>
-          
+          <Typography   sx={{
+              color: "#18B0E6",
+              fontSize: "1.2em",
+              fontWeight: "600",
+ 
+            }}>iOS | Android | React Native | Flutter</Typography>
           <Typography
             sx={{
               color: "#153A5F",
@@ -66,7 +61,8 @@ function GrowWebsite() {
               marginTop: "5%",
             }}
           >
-            Make your website stand out with our professional web development services.
+            Take your business to the next level with a mobile app that disrupts
+            your Industry
           </Typography>
           <Button
             variant="contained"
@@ -96,4 +92,4 @@ function GrowWebsite() {
   );
 }
 
-export default GrowWebsite;
+export default Grow;
