@@ -5,7 +5,7 @@ import Started from "../../components/Started/Started";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import Footer from "../../components/Footer/Footer";
 
-function GetStarted() {
+function Index() {
   const [isHovered, setIsHovered] = React.useState(false);
   return (
     <div>
@@ -44,4 +44,4 @@ function GetStarted() {
   );
 }
 
-export default GetStarted;
+export default Index;
