@@ -50,7 +50,6 @@ const Navbar = () => {
           }
         >
           <li>
-            {" "}
             <Link href="/about">
               <TextNav label="About" />
             </Link>
