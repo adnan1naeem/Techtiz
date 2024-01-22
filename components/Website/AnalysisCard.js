@@ -1,70 +1,68 @@
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, List, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
+import { FaSquare } from "react-icons/fa";
 
-function ServicesCard({ image, heading, text }) {
-    return (
-        <Box
-            sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-            }}
+function AnalysisCard({ title, lists,lgTop,xlTop ,image}) {
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        gap: "10%",
+        marginTop: "7%",
+        flexWrap: "wrap",
+      }}
+    >
+      <Box sx={{ width: { xs: "21rem", sm: "20em", md: "20em", lg: "19em" } }}>
+        <img
+          src={image}
+          alt=""
+          style={{ width: "100%" }}
+        />
+      </Box>
+      <Box
+        sx={{
+          marginTop: { xs: "5%", sm: "6%", md: "6%", lg: lgTop, xl: xlTop },
+          width: { xs: "21rem", sm: "20em", md: "20em", lg: "20em" },
+        }}
+      >
+        <Typography
+          sx={{ fontSize: "1.5em", fontWeight: "600", color: "#153A5F" }}
         >
-            <Card
-                sx={{
-                    width: { xs: "21rem", sm: "21rem", md: "21rem", lg: "22rem" },
-                    height: { xs: "19rem", sm: "19rem", md: "19rem", lg: "20rem" },
-                    borderRadius: "10px",
-                    background: "white",
-                    marginTop: "8%",
-                    boxShadow: "none",
+          {title}
+        </Typography>
+        {lists.map((list, index) => (
+          <List key={index}>
+            <ListItemIcon>
+              <FaSquare
+                style={{
+                  marginTop: "1.6%",
+                  color: "#18B0E6",
+                  fontSize: "12px",
                 }}
-            >
-                <CardContent
-                    sx={{
-                        display: "flex",
-                        flexDirection: "column",
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "contain"
-                    }}
-                >
-                    <Box
-                        sx={{ width: { xs: "6rem", sm: "6rem", md: "6rem", lg: "6rem" } }}
-                    >
-                        <img
-                            style={{
-                                width: "100%",
-                                height: "100%",
-                                objectFit: "contain", // or "contain" depending on your preference
-                            }}
-                            src={image}
-                            alt=""
-                        />
-                    </Box>
-                    <Box sx={{ marginTop: "10%" }}>
-                        <Typography
-                            sx={{
-                                color: "#153A5F",
-                                fontSize: "1.3rem",
-                                fontWeight: "600",
-                                marginBottom: "15px",
-                                width: '40em'
-                            }}
-
-                        >
-                            {heading}
-                        </Typography>
-                        <Typography
-                            sx={{ color: "#153A5F", fontWeight: "400", fontSize: "0.9rem", lineHeight: '1.5em', marginBottom: '5px' }}
-                        >
-                            {text}
-                        </Typography>
-                    </Box>
-                </CardContent>
-            </Card>
-        </Box>
-    );
+              />
+              <Typography
+                sx={{
+                  marginLeft: "2%",
+                  fontSize: "17px",
+                  fontWeight: "400",
+                  color: "#153A5F",
+                  width: {
+                    xs: "18rem",
+                    sm: "20em",
+                    md: "20em",
+                    lg: "28em",
+                  },
+                }}
+              >
+                {list}
+              </Typography>
+            </ListItemIcon>
+          </List>
+        ))}
+      </Box>
+    </Box>
+  );
 }
 
-export default ServicesCard;
+export default AnalysisCard;

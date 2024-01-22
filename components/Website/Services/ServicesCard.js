@@ -27,15 +27,14 @@ function ServicesCard({image,heading,text}) {
           sx={{
             display: "flex",
             flexDirection: "column",
-            marginLeft:'3%',
-            marginTop: '3%'
+            marginLeft:'3%'
           }}
         >
           <Box
             sx={{ width: { xs: "6rem", sm: "6rem", md: "6rem", lg: "6rem" } }}
           >
             <img
-              style={{ width: "70%" 
+              style={{ width: "100%" 
            
         }}
               src={image}

@@ -5,8 +5,12 @@ import TextNav from "../Texts/TextNav";
 import ButtonHover from "../Texts/ButtonHover";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
+import { Button } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
+
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const [isWideScreen, setIsWideScreen] = useState(false);
@@ -75,12 +79,12 @@ const Navbar = () => {
           </div>
 
           <li>
-            <Link href="/industries">
+            <Link href="/Industries">
               <TextNav label="Industries" />
             </Link>
           </li>
           <li>
-            <Link href="/portfolio">
+            <Link href="/Portfolios">
               <TextNav label="Case Study" />
             </Link>
           </li>
@@ -91,16 +95,19 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link href="/careers">
+            <Link href="/Career">
               <TextNav label="Career" />
             </Link>
           </li>
         </ul>
         {isWideScreen && (
           <div className={styles["btn-group"]} style={{ marginRight: "6%" }}>
-            <Link href="/get-started">
+            <Button onClick={() => router.push("/Career")}>
               <ButtonHover textButton="Get Started" />
-            </Link>
+            </Button>
+            {/* <Link href="/get-started">
+              <ButtonHover textButton="Get Started" />
+            </Link> */}
           </div>
         )}
         <div className={styles.hamburger} onClick={handleClick}>

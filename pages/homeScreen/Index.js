@@ -9,7 +9,6 @@ import Partner from "../../components/Partner/Partner";
 import Technologies from "../../components/Technologies/Technologies";
 import FeedBack from "../../components/FeedBack/FeedBack";
 
-// import Footer from "../../Component/Footer/Footer";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 
 function HomeScreen() {
@@ -25,7 +24,6 @@ function HomeScreen() {
         <Technologies />
         <FeedBack />
         <SalesTeam />
-        {/* <Footer /> */}
       </Box>
     </div>
   );
