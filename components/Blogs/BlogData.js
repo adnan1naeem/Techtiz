@@ -2,6 +2,13 @@
 
 const blogData = [
   {
+    title:
+      "Supercharge your IT Team: Best Practices for Seamless Team Augmentation",
+    image:
+      "https://techtiz.co/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-18-at-13.55.20.jpeg",
+    date: "January 22,2024",
+  },
+  {
     id: 1,
 
     title:
@@ -65,10 +72,55 @@ const blogData = [
     date: "December 28,2023",
   },
   {
+    id: 7,
     title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
+      "Agile Development: Empowering Mobile Apps with Flexibility and Innovation",
+    image:
+      "https://techtiz.co/wp-content/uploads/2023/12/WhatsApp-Image-2023-11-24-at-19.38.21-300x169.jpeg",
+    date: "December 20,2023",
+  },
+  {
+    title: "Personal Branding 101 for Software Developers",
+    image: "https://techtiz.co/wp-content/uploads/2023/10/6-300x150.jpg",
+    date: "October 06, 2023",
+  },
+  {
+    title:
+      "How to Choose the Perfect Technology Stack for Your Software Project",
+    image: "https://techtiz.co/wp-content/uploads/2023/10/4-2-300x150.jpg",
+    date: "October 06, 2023",
+  },
+  {
+    title: "Gitex 2023: The Must-Attend Tech Extravaganza",
+    image: "https://techtiz.co/wp-content/uploads/2023/10/5-4-300x150.jpg",
+    date: "October 6, 2023",
+  },
+  {
+    title: "8 Ways to Protect Your Apps and Data from Mobile Malware",
+    image: "https://techtiz.co/wp-content/uploads/2023/10/1-6-300x150.jpg",
+    date: "October 6, 2023",
+  },
+  {
+    title: "5 Reasons Why Software Testing and Debugging is Crucial  ",
+    image:
+      "https://techtiz.co/wp-content/uploads/2023/08/techtiz-blog-cover-2-300x150.jpg",
+    date: "August 30, 2023",
+  },
+  {
+    title:
+      "Is Flutter Flow The Next Breakthrough in Cross-Platform App Development?",
+    image: "https://techtiz.co/wp-content/uploads/2023/08/1-5-300x150.jpg",
+    date: "August 17, 2023",
+  },
+  {
+    title: "9 Smart Strategies to Cut Costs on App Development",
+    image: "https://techtiz.co/wp-content/uploads/2023/08/3-3-300x150.jpg",
+    date: "August 15, 2023",
+  },
+  {
+    title: "The Linked Golf Success Story – Connecting Golf Buddies",
+    image: "https://techtiz.co/wp-content/uploads/2023/08/1-3-300x150.jpg",
+    date: "August 08, 2023",
   },
   {
     title:
@@ -77,94 +129,44 @@ const blogData = [
     date: "December 31, 2023",
   },
   {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
+    title: "What Is the Impact of AI on Developer Productivity?",
+    image: "https://techtiz.co/wp-content/uploads/2023/08/4-300x150.jpg",
+    date: "August 08, 2023",
   },
   {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
+    title: "A Guide to Understanding Front-End Development for Your App)",
+    image: "https://techtiz.co/wp-content/uploads/2023/08/7-300x150.jpg",
+    date: "August 8, 2023",
   },
   {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
+    title: "Technical Debt: Understanding Its Impact on Businesses",
+    image: "https://techtiz.co/wp-content/uploads/2023/08/2-2-300x150.jpg",
+    date: "August 6, 2023",
   },
   {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
+    title: "Custom Software Development – Myth Buster Series (Part 1)",
+    image: "https://techtiz.co/wp-content/uploads/2023/08/5-2-300x150.jpg",
+    date: "August 6, 2023",
   },
   {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
+    title: "Top Picks For The Best Web and App Development Frameworks",
+    image: "https://techtiz.co/wp-content/uploads/2023/06/1-3-300x150.jpg",
+    date: "June 6, 2023",
   },
   {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
+    title: "6 Ways to Boost Development Speed and Reach Market Faster",
+    image: "https://techtiz.co/wp-content/uploads/2023/06/4-300x150.jpg",
+    date: "June 5, 2023",
   },
   {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
+    title: "Is Generative AI A Game Changer For Software Development?",
+    image: "https://techtiz.co/wp-content/uploads/2023/05/3-300x150.jpg",
+    date: "May 5, 2023",
   },
   {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
-  },
-  {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
-  },
-  {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
-  },
-  {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
-  },
-  {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
-  },
-  {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
-  },
-  {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
-  },
-  {
-    title:
-      "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
-    image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
-    date: "December 31, 2023",
+    title: "How Staff Augmentation Can Help Your Business Grow In 2023?",
+    image: "https://techtiz.co/wp-content/uploads/2023/04/1-2-300x150.jpg",
+    date: "April 29, 2023",
   },
   {
     title:
