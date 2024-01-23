@@ -1,72 +1,73 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
+import CardMedia from "@mui/material/CardMedia";
+import { CardActionArea } from "@mui/material";
 
-function BlogsMainCard({ image, des, date }) {
-    return (
-        <Box sx={{ display: "flex", justifyContent: "center", mt: "3%" }}>
-            <Card
-                sx={{
-                    width: { xs: "21rem", sm: "23rem", md: "23rem", lg: "23rem" },
-                    height: { xs: "32rem", sm: "32rem", md: "32rem", lg: "32rem" },
-                    borderRadius: "2px",
-                    background: "white",
+function BlogsMainCard({ image, title, date }) {
+  return (
+    <Box>
+      <Card
+        sx={{
+          width: { xs: "21rem", sm: "23rem", md: "22rem", lg: "23rem" },
+          height: "30rem",
+          mb: "3%",
+          borderRadius: "3px",
+          border: "0 solid #69727d",
+          marginTop: "4%",
+          cursor: "pointer",
 
-                    cursor: "pointer",
+          "&:hover": {
+            transform: "scale(1.01) ",
+          },
+        }}
+      >
+        <CardMedia sx={{ height: "200px" }} image={image} />
 
-                    "&:hover": {
-                        transform: "scale(1.01) ",
-                    },
-                }}
-            >
-                <CardContent sx={{ mt: "-4%", ml: "-5%" }}>
-                    <Box sx={{ width: "23rem" }}>
-                        <img
-                            style={{ width: "113%", height: "15.3rem" }}
-                            src={image}
-                            alt=""
-                        />
-                    </Box>
-                    <Typography
-                        sx={{
-                            mt: "8%",
-                            width: "80%",
-                            ml: "10%",
-                            color: "#54595F",
-                            fontWeight: "500",
-                            fontSize: "21px",
-                        }}
-                    >
-                        {des}
-                    </Typography>
-                    <Typography
-                        sx={{
-                            color: "#153A5F",
-                            fontSize: "11px",
-                            fontWeight: "600",
-                            textTransform: "uppercase",
-                            ml: "10%",
-                            mt: "5%",
-                            mb: "6%",
-                        }}
-                    >
-                        Read More »
-                    </Typography>
-                    <Box sx={{ borderTop: "0.6px solid #adadad", mr: "-5%" }}>
-                        <Typography
-                            sx={{
-                                color: "#adadad",
-                                ml: "10%",
-                                fontSize: "12px",
-                                fontWeight: "400",
-                                width: "100%",
-                                mt: { xs: "6%", sm: "4%" },
-                            }}
-                        >
-                            {date}
-                        </Typography>
-                    </Box>
-                </CardContent>
-            </Card>
-        </Box>
-    );
+        <CardContent sx={{ height: "150px" }}>
+          <Typography
+            sx={{
+              mt: "5%",
+              width: "85%",
+              ml: "5%",
+              color: "#54595F",
+              fontWeight: "500",
+              lineHeight: "1.2",
+              fontSize: "21px",
+            }}
+          >
+            {title}
+          </Typography>
+        </CardContent>
+        <CardContent>
+          <Typography
+            sx={{
+              color: "#153A5F",
+              fontSize: "11px",
+              fontWeight: "600",
+              textTransform: "uppercase",
+              lineHeight: 1.3,
+              mt: "3%",
+              ml: "5%",
+            }}
+          >
+            Read More »
+          </Typography>
+        </CardContent>
+
+        <CardContent
+          sx={{
+            borderTop: "1px solid #eaeaea",
+            marginTop: "5%",
+            marginLeft: "4%",
+          }}
+        >
+          <Typography
+            sx={{ lineHeight: "1.3", fontSize: "12px", color: "#adadad" }}
+          >
+            {date}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Box>
+  );
 }
 export default BlogsMainCard;

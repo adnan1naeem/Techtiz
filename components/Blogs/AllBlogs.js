@@ -45,7 +45,7 @@ function AllBlogs() {
             <BlogsMainCard
               key={index}
               image={item?.image}
-              des={item?.title}
+              title ={item?.title}
               date={item?.date}
             />
           </Link>
