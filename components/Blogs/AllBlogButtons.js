@@ -17,13 +17,15 @@ function AllBlogButton({ onTagClick }) {
       sx={{
         width: { xs: "100%", md: "20%", lg: "22%", xl: "20rem" },
         marginTop: "1%",
+        // marginLeft: { xs: "20%", sm: "0%" },
       }}
     >
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
+
+          alignItems: { xs: "center", sm: "center", md: "flex-start" },
         }}
       >
         <form className={styles.nosubmit}>
@@ -57,13 +59,14 @@ function AllBlogButton({ onTagClick }) {
             sx={{
               display: "flex",
               flexWrap: "wrap",
+              justifyContent: "center",
+
               flexDirection: {
-                xs: "column",
+                xs: "row",
                 sm: "row",
                 md: "column",
                 lg: "column",
               },
-              justifyContent: "center",
             }}
           >
             <BlogButton
