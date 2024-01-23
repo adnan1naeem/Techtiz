@@ -23,7 +23,7 @@ function SalesTeam() {
           justifyContent: "center",
           gap: "2%",
           flexWrap: "wrap",
-          marginTop: "6%",
+          marginTop: "2%",
         }}
       >
         <Box>

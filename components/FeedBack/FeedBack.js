@@ -48,7 +48,6 @@ function FeedBack() {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    centerMode: true, // Enable center mode
     responsive: [
       {
         breakpoint: 1200, // Show 3 slides on medium screens (md)
@@ -56,7 +55,6 @@ function FeedBack() {
           slidesToShow: 2,
         },
       },
-
       {
         breakpoint: 968, // Show 2 slides on small screens (sm)
         settings: {
@@ -120,7 +118,6 @@ function FeedBack() {
           <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Linked-golf-app-review.mp4'} />
           <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Norbu-Snow-Feedback.mp4'} />
           <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Linked-golf-app-review.mp4'} />
-          <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Norbu-Snow-Feedback.mp4'} />
         </Slider>
       </Box>
     </Box>

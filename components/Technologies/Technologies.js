@@ -95,7 +95,7 @@ function Technologies() {
           marginTop: "1%",
           marginLeft: "12%",
           marginRight: "10%",
-          marginBottom: "7%",
+          marginBottom: "7%"
         }}
       >
         <Slider {...settings}>

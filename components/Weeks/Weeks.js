@@ -41,8 +41,8 @@ function Weeks() {
 
       <Box
         sx={{
-          paddingLeft: { md: 10, lg: 20 },
-          paddingRight: { md: 10, lg: 20 },
+          paddingLeft: { md: 10, lg: 20, xl: 25 },
+          paddingRight: { md: 10, lg: 20, xl: 25 },
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
