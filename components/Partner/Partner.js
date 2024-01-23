@@ -8,9 +8,9 @@ function Partner() {
     <Box
       sx={{
         background:
-          "radial-gradient(at center center, #18B0E6 0%, #153A8D 85%);",
+          "radial-gradient(at center center, #1594c6 25%, #153a5f 85%);",
         marginTop: "5%",
-        paddingTop: "5%",
+        paddingTop: "3%",
       }}
     >
       <Typography
@@ -29,8 +29,8 @@ function Partner() {
         sx={{
           display: "flex",
           justifyContent: "center",
-          gap: "1%",
-          marginTop: "4%",
+          gap: "0.5%",
+          marginTop: "1%",
           flexWrap: "wrap",
         }}
       >
@@ -51,13 +51,13 @@ function Partner() {
         />
       </Box>
       <Box
-        sx={{ display: "flex", justifyContent: "center", paddingBottom: "5%" }}
+        sx={{ display: "flex",  justifyContent: "center", paddingBottom: "3%" }}
       >
         <ButtonBusiness
           text="Let's Start"
           color="white"
-          paddingLeft="40px"
-          paddingRight="40px"
+          paddingLeft="30px"
+          paddingRight="30px"
         />
       </Box>
     </Box>

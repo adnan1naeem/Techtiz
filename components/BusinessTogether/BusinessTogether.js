@@ -10,6 +10,12 @@ function BusinessTogether() {
     setActiveButton(buttonText);
   };
 
+  const businessDetail = [
+    { title: "Startups", point1: "We evaluate the technical feasibility of your digital products", point2: "Swift MVP development for relevant and time-sensitive insights", point3: "Team collaboration and resource management to boost productivity", image: "	https://techtiz.co/wp-content/uploads/2023/10/startup.png" },
+    { title: "SMEs", point1: "Development of innovative digital applications to turn the idea behind your business into a reality", point2: "Team augmentation with technical training and expert assistance to boost business development and growth", point3: "Implementation of a client-centric approach with superlative technologies for web and mobile applications development", image: "https://techtiz.co/wp-content/uploads/2023/10/sme.png" },
+    { title: "Enterprises", point1: "Optimizing business operations and streamlining workflows with customized and functional software", point2: "Improving the efficiency of your existing digital solutions by upgrading the right features and designs", point3: "Empowering your staff with skills to successfully achieve business goals and develop a greater digital footprint", image: "https://techtiz.co/wp-content/uploads/2023/10/enterprise.png" }
+  ]
+
   return (
     <Box sx={{ marginTop: "4%" }}>
       <Typography
@@ -39,7 +45,7 @@ function BusinessTogether() {
           flexWrap: "wrap",
           alignItems: "center",
           justifyContent: "center",
-          gap: "12%",
+          gap: "3%",
         }}
       >
         <Box>
@@ -69,11 +75,11 @@ function BusinessTogether() {
           />
         </Box>
 
-        <Box sx={{ width: { xs: "90%", sm: "80%", md: "70%", lg: "55%" } }}>
-          {activeButton === "StartUps" && <BusinessCard title="Startups" />}
-          {activeButton === "SMEs" && <BusinessCard title="SMEs" />}
+        <Box sx={{ width: { xs: "90%", sm: "80%", md: "70%", lg: "42%" } }}>
+          {activeButton === "StartUps" && <BusinessCard data={businessDetail[0]} />}
+          {activeButton === "SMEs" && <BusinessCard data={businessDetail[1]} />}
           {activeButton === "Enterprises" && (
-            <BusinessCard title="Enterprises" />
+            <BusinessCard data={businessDetail[2]} />
           )}
         </Box>
       </Box>

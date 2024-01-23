@@ -35,7 +35,10 @@ function Expertise() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "5%",
+          paddingLeft: { md: 0, lg: 10 },
+          paddingRight: { md: 0, lg: 10 },
+          fontSize: { xs: "2.1em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
+          gap: "2.5%",
           marginTop: "2%",
           paddingBottom: "5%",
         }}

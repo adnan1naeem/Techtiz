@@ -49,6 +49,7 @@ function Technologies() {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    // centerMode: true, // Enable center mode
 
     responsive: [
       {
@@ -91,10 +92,10 @@ function Technologies() {
       </Typography>
       <Box
         sx={{
-          marginTop: "5%",
+          marginTop: "1%",
           marginLeft: "12%",
           marginRight: "10%",
-          marginBottom: "6%",
+          marginBottom: "7%",
         }}
       >
         <Slider {...settings}>

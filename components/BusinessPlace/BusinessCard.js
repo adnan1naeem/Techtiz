@@ -10,10 +10,9 @@ import {
   Typography,
 } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
-
 import { FaSquare } from "react-icons/fa";
 
-function BusinessCard({ title }) {
+function BusinessCard({ data }) {
   return (
     <Box>
       <Card
@@ -36,7 +35,7 @@ function BusinessCard({ title }) {
             textAlign: "center",
           }}
         >
-          {title}
+          {data?.title}
         </Typography>
         <CardContent
           sx={{
@@ -54,14 +53,13 @@ function BusinessCard({ title }) {
             }}
           >
             <img
-              src="https://techtiz.co/wp-content/uploads/2023/10/sme.png"
+              src={data?.image}
               alt=""
               style={{ height: "90%", width: "100%" }}
             />
           </Box>
           <Box
             sx={{
-              marginTop: "4%",
               width: { xs: "18rem", sm: "25rem", md: "30rem", lg: "28rem" },
               height: { xs: "20rem", sm: "20rem", md: "24rem", lg: "22rem" },
             }}
@@ -77,8 +75,7 @@ function BusinessCard({ title }) {
                     color: "#7A7A7A",
                   }}
                 >
-                  Development of innovative digital applications to turn the
-                  idea behind your business into a reality
+                  {data?.point1}
                 </Typography>
               </ListItemIcon>
             </List>
@@ -93,8 +90,7 @@ function BusinessCard({ title }) {
                     color: "#7A7A7A",
                   }}
                 >
-                  Team augmentation with technical training and expert
-                  assistance to boost business development and growth
+                  {data?.point2}
                 </Typography>
               </ListItemIcon>
             </List>
@@ -109,8 +105,7 @@ function BusinessCard({ title }) {
                     color: "#7A7A7A",
                   }}
                 >
-                  Implementation of a client-centric approach with superlative
-                  technologies for web and mobile applications development
+                  {data?.point3}
                 </Typography>
               </ListItemIcon>
             </List>

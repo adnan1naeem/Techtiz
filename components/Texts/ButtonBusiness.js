@@ -19,8 +19,9 @@ function ButtonBusiness({
         sx={{
           color: color,
           fontWeight: "500",
+          borderRadius: 3,
           fontSize: "17px",
-          border: `1px solid ${disableHoverEffect ? background : "#18B0E6"}`,
+          border: `3px solid ${disableHoverEffect ? background : "#18B0E6"}`,
           textTransform: "none",
           background: background,
           paddingTop: "10px",
@@ -31,7 +32,7 @@ function ButtonBusiness({
           "&:hover": {
             backgroundColor: disableHoverEffect ? background : "#18B0E6",
             color: disableHoverEffect ? color : "white",
-            border: `1px solid ${disableHoverEffect ? background : "#18B0E6"}`,
+            border: `3px solid ${disableHoverEffect ? background : "#18B0E6"}`,
           },
         }}
       >
