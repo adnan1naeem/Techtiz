@@ -18,16 +18,14 @@ function AllBlogButton({ onTagClick }) {
         width: { xs: "100%", md: "20%", lg: "22%", xl: "20rem" },
         marginTop: "1%",
         // marginLeft: { xs: "20%", sm: "0%" },
+
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-
-          alignItems: { xs: "center", sm: "center", md: "flex-start" },
-        }}
-      >
+      <Box>
         <form className={styles.nosubmit}>
           <input
             className={styles.inputsubmit}
