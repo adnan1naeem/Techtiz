@@ -48,7 +48,7 @@ function FeedBack() {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-
+    centerMode: true, // Enable center mode
     responsive: [
       {
         breakpoint: 1200, // Show 3 slides on medium screens (md)
@@ -68,15 +68,24 @@ function FeedBack() {
   return (
     <Box
       sx={{
+        display: 'flex',
+        flexDirection: 'column', // or 'row' depending on your layout
+        justifyContent: 'center',
+        height: '70rem',
         background: "#153A5F",
       }}
     >
       <Typography
         sx={{
-          paddingTop: "10%",
           textAlign: "center",
           color: "#FFFFFF",
-          fontSize: "2em",
+          paddingRight: 3,
+          paddingLeft: 3,
+          fontSize: {
+            xs: "1.5em",
+            sm: "1.8em",
+            md: "2em",
+          },
           fontWeight: "600",
         }}
       >
@@ -87,7 +96,13 @@ function FeedBack() {
           paddingTop: "1%",
           textAlign: "center",
           color: "#FFFFFF",
-          fontSize: "1em",
+          paddingRight: 3,
+          paddingLeft: 3,
+          fontSize: {
+            xs: "0.8em",
+            sm: "1em",
+            md: "1.2em",
+          },
           fontWeight: "100",
         }}
       >
@@ -96,16 +111,16 @@ function FeedBack() {
       </Typography>
       <Box
         sx={{
-          marginTop: "4%",
-          marginLeft: "12%",
-          marginRight: "10%",
-          paddingBottom: "10%",
+          marginLeft: '16%',
+          marginRight: '16%',
+          paddingTop: '2%'
         }}
       >
         <Slider {...settings}>
-          <FeedbackVideo />
-          <FeedbackVideo />
-          <FeedbackVideo />
+          <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Linked-golf-app-review.mp4'} />
+          <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Norbu-Snow-Feedback.mp4'} />
+          <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Linked-golf-app-review.mp4'} />
+          <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Norbu-Snow-Feedback.mp4'} />
         </Slider>
       </Box>
     </Box>

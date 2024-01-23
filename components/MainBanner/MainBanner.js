@@ -22,6 +22,7 @@ function MainBanner() {
       className={styles.container}
       sx={{
         background: "#153A5F",
+        height: '65rem'
       }}
     >
       <Box
@@ -46,17 +47,18 @@ function MainBanner() {
       <Box
         sx={{
           position: "absolute",
-          top: { xs: 150, sm: 150, md: 150, lg: 200 },
+          top: { xs: 150, sm: 150, md: 150, lg: 370 },
           left: { xs: 15, sm: 50, md: 100, lg: 150 },
-          width: { xs: "90%", sm: "70%", md: "60%", lg: "40%" },
+          width: { xs: "90%", sm: "70%", md: "50%", lg: "58%" },
+          // backgroundColor: { xs: "red", sm: 'blue', md: 'green', lg: 'yellow' },
         }}
       >
         <Typography
           sx={{
             color: "#FFFFFF",
-            fontSize: { xs: "20px", sm: "28px", md: "40px" },
-            fontWeight: "600",
-
+            fontSize: { xs: "1.7rem", sm: "2.3rem", md: "2.8rem", lg: '2.8rem' },
+            fontWeight: "bold",
+            textTransform: 'uppercase',
             animation: `${fadeIn} 1s ease-in-out 5s forwards`,
           }}
         >
