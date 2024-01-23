@@ -3,11 +3,13 @@ import DevelopmentCard from "../DevelopmentCard/DevelopmentCard";
 
 function Weeks() {
   return (
-    <Box sx={{marginTop:'3%'}}>
+    <Box sx={{
+      marginTop: '3%',
+    }}>
       <Typography
         sx={{
           textAlign: "center",
-          fontSize: "45px",
+          fontSize: { xs: "2.1em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
           fontWeight: "600",
           color: "#153A5F",
           fontFamily: "Mont bold, Sans-serif",
@@ -15,24 +17,32 @@ function Weeks() {
       >
         Go Live In Less Than 4 Weeks
       </Typography>
-      <Typography
-        sx={{
-          textAlign: "center",
-          color: "#153A5F",
-          lineHeight: "25px",
-          fontSize: "1em",
-        }}
-      >
-        With our proven express delivery, you'll get your custom build software
-        or
-        <br /> mobile app in less than a month.
-      </Typography>
+      <Box sx={{
+        display: 'flex',
+        justifyContent: 'center',
+      }}>
+        <Typography
+          sx={{
+            textAlign: 'center',
+            width: {md: "100%",lg: "35%"},
+            color: "#153A5F",
+            lineHeight: "25px",
+            fontSize: "1em",
+          }}
+        >
+          With our proven express delivery, you'll get your custom build software
+          or mobile app in less than a month.
+        </Typography>
+      </Box>
+
       <Box
         sx={{
+          paddingLeft: { md: 10, lg: 25 },
+          paddingRight: { md: 10, lg: 25 },
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "5%",
+          gap: "1%",
           marginTop: "2%",
         }}
       >
