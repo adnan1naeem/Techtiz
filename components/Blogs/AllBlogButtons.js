@@ -15,33 +15,57 @@ function AllBlogButton({ onTagClick }) {
   return (
     <Box
       sx={{
-        width: { xs: "96%", md: "20%", lg: "22%", xl: "20rem" },
-        marginTop: "1.5%",
+        width: { xs: "100%", md: "20%", lg: "22%", xl: "20rem" },
+        marginTop: "1%",
       }}
     >
-      <form className={styles.nosubmit}>
-        <input className={styles.nosubmit} type="search" placeholder="Search..." />
-      </form>
-      <Typography
+      <Box
         sx={{
-          color: "#153A5F",
-          fontWeight: "600",
-          fontSize: "30px",
-          marginTop: "3%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        All Tags
-      </Typography>
+        <form className={styles.nosubmit}>
+          <input
+            className={styles.inputsubmit}
+            type="search"
+            placeholder="Search..."
+          />
+        </form>
+        <Typography
+          sx={{
+            color: "#153A5F",
+            fontWeight: "600",
+            fontSize: "30px",
+            marginTop: "3%",
+          }}
+        >
+          All Tags
+        </Typography>
+      </Box>
       <Box sx={{ display: "flex", flexWrap: "wrap", gap: "5%", width: "100%" }}>
         {selectedTag ? (
-          <Box sx={{mt:'-5%',ml:'-15%'}}>
+          <Box sx={{ mt: "-5%", ml: "-15%" }}>
             <SmallTagCard />
             <SmallTagCard />
             <SmallTagCard />
             <SmallTagCard />
           </Box>
         ) : (
-          <>
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              flexDirection: {
+                xs: "column",
+                sm: "row",
+                md: "column",
+                lg: "column",
+              },
+              justifyContent: "center",
+            }}
+          >
             <BlogButton
               text="Best Practices"
               onClick={() => handleTagClick("Best Practices")}
@@ -51,15 +75,18 @@ function AllBlogButton({ onTagClick }) {
               onClick={() => handleTagClick("Business Strategy")}
             />
             <BlogButton
+              pr="75px"
               text="Case Study"
               onClick={() => handleTagClick("Case Study")}
             />
             <BlogButton
               text="Flutter"
+              pr="68px"
               onClick={() => handleTagClick("Flutter")}
             />
             <BlogButton
               text="Guides"
+              pr="62px"
               onClick={() => handleTagClick("Guides")}
             />
             <BlogButton
@@ -70,7 +97,11 @@ function AllBlogButton({ onTagClick }) {
               text="Mobile Apps"
               onClick={() => handleTagClick("Mobile Apps")}
             />
-            <BlogButton text="MVPs" onClick={() => handleTagClick("MVPs")} />
+            <BlogButton
+              text="MVPs"
+              pr="75px"
+              onClick={() => handleTagClick("MVPs")}
+            />
             <BlogButton
               text="Myth Buster Series"
               onClick={() => handleTagClick("Myth Buster Series")}
@@ -95,8 +126,7 @@ function AllBlogButton({ onTagClick }) {
               text="Tech Trends"
               onClick={() => handleTagClick("Tech Trends")}
             />
-          
-          </>
+          </Box>
         )}
       </Box>
     </Box>

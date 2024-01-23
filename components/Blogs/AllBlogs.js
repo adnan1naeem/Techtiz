@@ -22,7 +22,7 @@ function AllBlogs() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: { xs: "100%", sm: "100%", md: "75%", lg: "64%", xl: "50rem" },
+        width: { xs: "100%", sm: "100%", md: "70%", lg: "64%", xl: "50rem" },
       }}
     >
       <Box

@@ -1,30 +1,30 @@
 import { Box, Button } from "@mui/material";
 
-function BlogButton({ text }) {
-    return (
-        <Box>
-            <Button
-                variant="contained"
-                sx={{
-                    marginTop: '6%',
-                    bgcolor: "#18B0E6",
-                    color: "white",
-                    paddingTop: "9%",
-                    paddingBottom: "9%",
-                    fontSize: "19px",
-                    boxShadow: "none",
-                    textTransform: "none",
-                    borderRadius: '0',
+function BlogButton({ text, pr }) {
+  return (
+    <Box>
+      <Button
+        variant="contained"
+        sx={{
+          paddingRight: pr,
+          fontSize: "19px",
+          background: "#18B0E6",
+          margin: "5px",
+          boxSizing: "border-box",
+          py: "15px",
+          textTransform: "none",
+          boxShadow: "none",
+          borderRadius: "0px",
 
-                    "&:hover": {
-                        bgcolor: "#153A5F",
-                        boxShadow: "none",
-                    },
-                }}
-            >
-                {text}
-            </Button>
-        </Box>
-    );
+          "&:hover": {
+            backgroundColor: "#153A5F",
+            boxShadow: "none",
+          },
+        }}
+      >
+        {text}
+      </Button>
+    </Box>
+  );
 }
 export default BlogButton;
