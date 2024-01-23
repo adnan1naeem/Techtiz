@@ -31,7 +31,7 @@ const Navbar = () => {
     };
   }, []);
 
-  return (
+    return (
     <div className={styles.header}>
       <div className={styles.container}>
         <Link href="/">
@@ -100,7 +100,7 @@ const Navbar = () => {
           </li>
         </ul>
         {isWideScreen && (
-          <div className={styles["btn-group"]} style={{ marginRight: "6%" }}>
+          <div className={styles["btn-group"]} style={{ marginRight: "2%" }}>
             <Link href="/get-started">
               <ButtonHover textButton="Get Started" />
             </Link>
