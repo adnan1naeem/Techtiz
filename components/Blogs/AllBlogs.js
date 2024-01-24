@@ -59,7 +59,7 @@ function AllBlogs({ selectedTag }) {
               <TagCard
                 key={index}
                 image={item?.image}
-                title={item?.title}
+                des={item?.title}
                 date={item?.date}
               />
             ) : (

@@ -1,13 +1,13 @@
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 function TagCard({ image, des, date }) {
   return (
     <Box sx={{ display: "flex", justifyContent: "center", mt: "3%" }}>
       <Card
         sx={{
-          width: { xs: "21rem", sm: "23rem", md: "23rem", lg: "21rem" },
+          width: { xs: "21rem", sm: "23rem", md: "23rem", lg: "22rem" },
           height: { xs: "32rem", sm: "32rem", md: "32rem", lg: "26rem" },
-          borderRadius: "9px",
+          borderRadius: "3px",
           background: "white",
 
           cursor: "pointer",
@@ -17,54 +17,62 @@ function TagCard({ image, des, date }) {
           },
         }}
       >
-        <CardContent sx={{ mt: "-4%", ml: "-5%" }}>
-          <Box sx={{ width: "27rem" }}>
-            <img
-              style={{ width: "80%", height: "8.3rem" }}
-              src={image}
-              alt=""
-            />
-          </Box>
+        {/* <CardContent sx={{ mt: "-4%", ml: "-5%" }}> */}
+        <Box sx={{ width: "27rem" }}>
+          <CardMedia image={image} sx={{ height: "8rem", width: "83%" }} />
+        </Box>
+        <CardContent sx={{ height: "185px" }}>
           <Typography
             sx={{
-              mt: "5%",
               width: "90%",
-              ml: "10%",
+              ml: "2%",
+              mt: "12px",
               color: "#153A5F",
               fontWeight: "500",
-              fontSize: "25px",
+              fontSize: "23px",
             }}
           >
-           {des}
+            {des}
           </Typography>
+        </CardContent>
+        <CardContent>
           <Typography
             sx={{
               color: "#18B0E6",
               fontSize: "14px",
               fontWeight: "500",
               textTransform: "uppercase",
-              ml: "10%",
-              mt: "5%",
-              mb: "6%",
+              ml: "3%",
+
+              // mb: "3%",
             }}
           >
             Read More »
           </Typography>
-          <Box sx={{ borderTop: "0.6px solid #adadad", mr: "-5%" }}>
-            <Typography
-              sx={{
-                color: "#adadad",
-                ml: "10%",
-                fontSize: "12px",
-                fontWeight: "400",
-                width: "100%",
-                mt: { xs: "6%", sm: "4%" },
-              }}
-            >
-             {date}
-            </Typography>
-          </Box>
         </CardContent>
+
+        {/* <Box sx={{ borderTop: "0.6px solid #adadad" }}> */}
+        <CardContent
+          sx={{
+            borderTop: "1px solid #eaeaea",
+            marginTop: "0%",
+          }}
+        >
+          <Typography
+            sx={{
+              color: "#adadad",
+              ml: "3%",
+              fontSize: "12px",
+              fontWeight: "400",
+              width: "100%",
+              // mt: { xs: "6%", sm: "4%" },
+            }}
+          >
+            {date}
+          </Typography>
+        </CardContent>
+        {/* </Box> */}
+        {/* </CardContent> */}
       </Card>
     </Box>
   );

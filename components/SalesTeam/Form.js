@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import Alert from "@mui/material/Alert";
 import CheckIcon from "@mui/icons-material/Check";
 import styles from "../../styles/HomeForm.module.css";
+import icon from "../../public/select_icon.png";
 
 function Form() {
   const form = useRef();
