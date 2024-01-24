@@ -31,7 +31,7 @@ function Blog() {
             justifyContent: "center",
           }}
         >
-          <AllBlogs selectedTag={selectedTag} />
+     <AllBlogs selectedTag={selectedTag} />
           <AllBlogButton onTagClick={handleTagClick} />
         </Box>
         <SalesTeam />

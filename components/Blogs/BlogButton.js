@@ -1,9 +1,10 @@
 import { Box, Button } from "@mui/material";
 
-function BlogButton({ text, pr }) {
+function BlogButton({ text, pr ,onClick}) {
   return (
     <Box>
       <Button
+        onClick={onClick}
         variant="contained"
         sx={{
           paddingRight: pr,

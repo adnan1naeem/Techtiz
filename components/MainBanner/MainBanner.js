@@ -19,25 +19,27 @@ function MainBanner() {
 
   return (
     <Box
-      className={styles.container}
+   
       sx={{
         background: "#153A5F",
-        height: '65rem'
+       
       }}
     >
       <Box
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          flexWrap: "wrap",
+     
         }}
       >
         <Image
+        style={{width:'300px',height:'50rem'}}
           src={Line}
           alt="no image"
           className={styles.responsive_img_Line}
         />
         <Image
+        style={{marginTop:'20%'}}
           src={Mobile}
           alt="no image"
           className={styles.responsive_img_Mobile}
@@ -46,10 +48,11 @@ function MainBanner() {
 
       <Box
         sx={{
+    
           position: "absolute",
-          top: { xs: 150, sm: 150, md: 150, lg: 370 },
-          left: { xs: 15, sm: 50, md: 100, lg: 150 },
-          width: { xs: "90%", sm: "70%", md: "50%", lg: "58%" },
+          top: { xs: 150, sm: 150, md: 150, lg: 260 }, 
+          left: { xs: 15, sm: 50, md: 100, lg: 150 }, 
+          width: { xs: "90%", sm: "70%", md: "60%", lg: "44%" }, 
           // backgroundColor: { xs: "red", sm: 'blue', md: 'green', lg: 'yellow' },
         }}
       >
@@ -60,6 +63,7 @@ function MainBanner() {
             fontWeight: "bold",
             textTransform: 'uppercase',
             animation: `${fadeIn} 1s ease-in-out 5s forwards`,
+            lineHeight:'54px'
           }}
         >
           WE BUILD CUSTOM SOFTWARE AND CHART-TOPPING APPS FOR DISRUPTIVE

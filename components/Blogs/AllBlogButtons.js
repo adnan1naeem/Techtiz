@@ -11,6 +11,7 @@ function AllBlogButton({ onTagClick }) {
     onTagClick(tag);
     setSelectedTag(tag);
   };
+  
 
   return (
     <Box
