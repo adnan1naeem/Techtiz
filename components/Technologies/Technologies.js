@@ -15,9 +15,9 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: "block",
+        color: "#153A8D",
         height: 30,
         width: 30,
-        color: "#9f67d62",
         marginRight: "-3%", // Add right margin of 5%
       }}
       onClick={onClick}
@@ -35,7 +35,7 @@ function SamplePrevArrow(props) {
         display: "block",
         height: 30,
         width: 30,
-        color: "#9f67d62",
+        color: "#153A8D",
         marginLeft: "-5%",
       }}
       onClick={onClick}
@@ -97,8 +97,9 @@ function Technologies() {
       <Box
         sx={{
           marginTop: "2%",
-          marginLeft: {xs: '10%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
-          marginRight: {xs: '10%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
+          marginLeft: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
+          marginRight: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
+          // backgroundColor: {xs: 'red', sm: 'purple', md: 'yellow', lg: 'green', xl:'orange'},
           marginBottom: "7%"
         }}
       >
