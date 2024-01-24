@@ -2,7 +2,7 @@ import { Box, Card, CardContent, Typography } from "@mui/material";
 import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
 
-function BlogsMainCard({ image, title, date }) {
+function BlogsMainCard({ image, des, date }) {
   return (
     <Box>
       <Card
@@ -34,7 +34,7 @@ function BlogsMainCard({ image, title, date }) {
               fontSize: "21px",
             }}
           >
-            {title}
+            {des}
           </Typography>
         </CardContent>
         <CardContent>
