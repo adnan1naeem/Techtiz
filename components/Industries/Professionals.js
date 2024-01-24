@@ -5,21 +5,20 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 function Professionals() {
     return (
         <Box
-            sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
+            sx={{ display: "flex", justifyContent: "center", alignContent: "center", marginTop: '2%' }}
         >
             <Card
                 sx={{
                     width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "31rem" },
                     height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
-
                     boxShadow: "none",
                 }}
             >
                 <CardContent sx={{ display: "flex", flexDirection: "column" }}>
                     <Typography
-                        sx={{ color: "#153A5F", fontSize: "1.3em", fontWeight: "600", borderLeft: '5px solid #18B0E6' }}
+                        sx={{ color: "#153A5F", fontSize: "1.3em", fontWeight: "600", borderLeft: '3px solid #18B0E6', height: '20px', lineHeight: '20px', paddingLeft: '10px' }}
                     >
-                        &nbsp; Industries
+                        Industries
                     </Typography>
                     <Typography
                         sx={{
@@ -49,6 +48,7 @@ function Professionals() {
                             marginTop: "5%",
                         }}
                     >
+
                         If you need our help, have questions about how to use the platform
                         or are experiencing technical difficulties, please do not hesitate
                         to contact us.

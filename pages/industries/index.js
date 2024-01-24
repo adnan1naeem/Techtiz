@@ -21,8 +21,9 @@ function Industries() {
                 <Box
                     sx={{
                         display: "flex",
+                        marginLeft: '2%',
                         justifyContent: "center",
-                        gap: "3%",
+                        gap: "5%",
                         flexWrap: "wrap",
                     }}
                 >
@@ -32,6 +33,7 @@ function Industries() {
                             width: { xs: "100%", sm: "80%", md: "80%", lg: "40%", xl: "35%" },
                             transform: isHovered ? "translateY(-12px)" : "translateY(0)",
                             transition: "transform 1s ease",
+                            marginTop: '1%',
                         }}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
@@ -39,7 +41,7 @@ function Industries() {
                         <img
                             src="https://techtiz.co/wp-content/uploads/2023/10/skilled-pro.webp"
                             alt=""
-                            style={{ width: "100%" }}
+                            style={{ width: "90%" }}
                         />
                     </Box>
                 </Box>
@@ -52,7 +54,6 @@ function Industries() {
                         gap: "3%",
                         paddingTop: "5%",
                         paddingBottom: "2%",
-                        marginTop: "5%",
                     }}
                 >
                     <Box
