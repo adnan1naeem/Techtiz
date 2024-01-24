@@ -17,7 +17,6 @@ function TagCard({ image, des, date }) {
           },
         }}
       >
-        {/* <CardContent sx={{ mt: "-4%", ml: "-5%" }}> */}
         <Box sx={{ width: "27rem" }}>
           <CardMedia image={image} sx={{ height: "8rem", width: "83%" }} />
         </Box>
@@ -43,15 +42,12 @@ function TagCard({ image, des, date }) {
               fontWeight: "500",
               textTransform: "uppercase",
               ml: "3%",
-
-              // mb: "3%",
             }}
           >
             Read More »
           </Typography>
         </CardContent>
 
-        {/* <Box sx={{ borderTop: "0.6px solid #adadad" }}> */}
         <CardContent
           sx={{
             borderTop: "1px solid #eaeaea",
@@ -65,14 +61,11 @@ function TagCard({ image, des, date }) {
               fontSize: "12px",
               fontWeight: "400",
               width: "100%",
-              // mt: { xs: "6%", sm: "4%" },
             }}
           >
             {date}
           </Typography>
         </CardContent>
-        {/* </Box> */}
-        {/* </CardContent> */}
       </Card>
     </Box>
   );

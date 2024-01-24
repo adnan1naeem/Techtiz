@@ -11,13 +11,12 @@ function AllBlogButton({ onTagClick }) {
     onTagClick(tag);
     setSelectedTag(tag);
   };
-  
 
   return (
     <Box
       sx={{
         width: { xs: "100%", md: "20%", lg: "22%", xl: "20rem" },
-        marginTop: "1%",
+        marginTop: "5%",
       }}
     >
       <Box
@@ -45,9 +44,9 @@ function AllBlogButton({ onTagClick }) {
           All Tags
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", flexWrap: "wrap", gap: "5%", width: "100%" }}>
+      <Box sx={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
         {selectedTag ? (
-          <Box sx={{ mt: "-5%", ml: "-15%" }}>
+          <Box sx={{ mt: "-5%", ml: "-5%" }}>
             <SmallTagCard />
             <SmallTagCard />
             <SmallTagCard />

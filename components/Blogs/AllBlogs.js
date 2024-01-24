@@ -26,13 +26,13 @@ function AllBlogs({ selectedTag }) {
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: { xs: "100%", sm: "100%", md: "75%", lg: "64%", xl: "50rem" },
+        width: { xs: "100%", sm: "100%", md: "75%", lg: "55%", xl: "50rem" },
       }}
     >
       <Typography
         sx={{
-          ml: "10%",
-          fontSize: "1.6em",
+          ml: "2%",
+          fontSize: "2.4em",
           color: "#153A5F",
           fontWeight: "600",
         }}
