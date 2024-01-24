@@ -6,7 +6,6 @@ import Alert from "@mui/material/Alert";
 import CheckIcon from "@mui/icons-material/Check";
 import styles from "../../styles/HomeForm.module.css";
 
-
 function Form() {
   const form = useRef();
 
@@ -107,7 +106,7 @@ function Form() {
             <textarea
               className={styles.textarea}
               placeholder="Message"
-              rows={11}
+              rows={8}
               cols={60}
               name="message"
             ></textarea>
