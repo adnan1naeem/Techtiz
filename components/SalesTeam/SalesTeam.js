@@ -21,9 +21,9 @@ function SalesTeam() {
         sx={{
           display: "flex",
           justifyContent: "center",
-          gap: "2%",
+          gap: "5%",
           flexWrap: "wrap",
-          marginTop: "2%",
+          marginTop: "3%",
         }}
       >
         <Box>
