@@ -15,9 +15,10 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: "block",
-        color: "#153A8D",
-
-        marginRight: "1%", // Add right margin of 5%
+        height: 30,
+        width: 30,
+        color: "#9f67d62",
+        marginRight: "-3%", // Add right margin of 5%
       }}
       onClick={onClick}
     />
@@ -32,8 +33,10 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        color: "#153A8D",
-        marginLeft: "-3%",
+        height: 30,
+        width: 30,
+        color: "#9f67d62",
+        marginLeft: "-5%",
       }}
       onClick={onClick}
     />
@@ -71,7 +74,7 @@ function Technologies() {
     <Box sx={{ marginTop: "4%" }}>
       <Typography
         sx={{
-          color: "#153A8D",
+          color: "var(--e-global-color-9f67d62)",
           textAlign: "center",
           fontSize: "2.7em",
           fontWeight: "600",
@@ -81,7 +84,8 @@ function Technologies() {
       </Typography>
       <Typography
         sx={{
-          color: "#153A8D",
+          marginTop: '1%',
+          color: "var(--e-global-color-9f67d62)",
           textAlign: "center",
           fontWeight: "100",
           fontSize: "1em",
@@ -92,22 +96,25 @@ function Technologies() {
       </Typography>
       <Box
         sx={{
-          marginTop: "1%",
-          marginLeft: "12%",
-          marginRight: "10%",
+          marginTop: "2%",
+          marginLeft: {xs: '10%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
+          marginRight: {xs: '10%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
           marginBottom: "7%"
         }}
       >
         <Slider {...settings}>
-          <TechnologiesCard />
-          <TechnologiesCard />
-          <TechnologiesCard />
-          <TechnologiesCard />
-          <TechnologiesCard />
+          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/css3-logo-svg-vector.svg'} />
+          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Flutter.svg'} />
+          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/reactjs.svg'} />
+          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/android.svg'} />
+          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/nodejs-white.svg'} />
+          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Bootstrap-Icon.svg'} />
+          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/html5-2.svg'} />
         </Slider>
       </Box>
     </Box>
   );
 }
+
 
 export default Technologies;
