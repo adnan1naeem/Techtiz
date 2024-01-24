@@ -5,7 +5,7 @@ import blogData from "./BlogData";
 import Link from "next/link";
 
 function AllBlogs() {
-  const itemsPerPage = 8;
+  const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -45,7 +45,7 @@ function AllBlogs() {
             <BlogsMainCard
               key={index}
               image={item?.image}
-              title ={item?.title}
+              title={item?.title}
               date={item?.date}
             />
           </Link>
