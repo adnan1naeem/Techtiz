@@ -11,12 +11,6 @@ function SearchedBlogs({ data }) {
     return (
         <Grid sx={{
             width: { xs: "100%", sm: "100%", md: "75%", lg: "55%", xl: "50rem" },
-            background: {
-                xs: "red",
-                sm: "yellow",
-                md: "pink",
-                lg: "none",
-            },
             mr: '2rem',
             mt: '1rem'
         }}>
