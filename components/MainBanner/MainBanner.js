@@ -7,7 +7,7 @@ import ButtonBusiness from "../../components/Texts/ButtonBusiness";
 import styles from "../../styles/MainBanner.module.css";
 import { keyframes } from "@emotion/react";
 import { useRouter } from "next/router";
-import Link from 'next/link';
+import Link from "next/link";
 
 function MainBanner() {
   const router = useRouter();
@@ -25,36 +25,38 @@ function MainBanner() {
   };
   return (
     <Box
-
       sx={{
         background: "#153A5F",
-
       }}
     >
       <Box
         sx={{
           display: "flex",
           justifyContent: "space-between",
-
+          
         }}
+
       >
+
         <Image
-          style={{ width: '300px', height: '50rem' }}
+          style={{ width: "300px", height: "50rem" }}
           src={Line}
           alt="no image"
           className={styles.responsive_img_Line}
         />
-        <Image
-          style={{ marginTop: '20%' }}
-          src={Mobile}
-          alt="no image"
-          className={styles.responsive_img_Mobile}
-        />
+       
+        <Box  sx={{ width:{ xs: "20rem", sm: "25rem", md: "25rem", lg: "35rem",xl:'40rem' },marginTop:{lg:"16%",xl:"14%"} }}>
+          <img
+            style={{ width: "100%" }}
+            src="https://techtiz.co/wp-content/uploads/2023/09/app-dev.svg"
+            alt="no image"
+            className={styles.responsive_img_Mobile}
+          />
+        </Box>
       </Box>
 
       <Box
         sx={{
-
           position: "absolute",
           top: { xs: 150, sm: 150, md: 150, lg: 260 },
           left: { xs: 15, sm: 50, md: 100, lg: 150 },
@@ -65,11 +67,16 @@ function MainBanner() {
         <Typography
           sx={{
             color: "#FFFFFF",
-            fontSize: { xs: "1.7rem", sm: "2.3rem", md: "2.8rem", lg: '2.8rem' },
+            fontSize: {
+              xs: "1.7rem",
+              sm: "2.3rem",
+              md: "2.8rem",
+              lg: "2.8rem",
+            },
             fontWeight: "bold",
-            textTransform: 'uppercase',
+            textTransform: "uppercase",
             animation: `${fadeIn} 1s ease-in-out 5s forwards`,
-            lineHeight: '54px'
+            lineHeight: "54px",
           }}
         >
           WE BUILD CUSTOM SOFTWARE AND CHART-TOPPING APPS FOR DISRUPTIVE
