@@ -3,7 +3,7 @@ import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import List from "../List";
 
-function SocialNetworking() {
+function SocialNetworking({onPress}) {
     return (
         <Box sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}>
             <Card
@@ -44,6 +44,7 @@ function SocialNetworking() {
                     <Button
                         variant="contained"
                         endIcon={<IoMdArrowRoundForward />}
+                        onClick={onPress}
                         sx={{
                             marginTop: "8%",
 

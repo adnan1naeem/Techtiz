@@ -4,7 +4,7 @@ import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import List from "../List";
 
-function Application() {
+function Application({onPress}) {
   return (
     <Box sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}>
       <Card
@@ -46,6 +46,7 @@ function Application() {
           <Button
             variant="contained"
             endIcon={<IoMdArrowRoundForward />}
+            onClick={onPress}
             sx={{
               marginTop: "8%",
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },

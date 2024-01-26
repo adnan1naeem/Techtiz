@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import SocialNetworking from "./SocialNetworking";
 
-function Networking() {
+function Networking({onPress}) {
     return (
         <Box sx={{ mt: "6%" }}>
             <Typography
@@ -39,7 +39,7 @@ function Networking() {
                     marginTop: "1%",
                 }}
             >
-                <SocialNetworking />
+                <SocialNetworking onPress={onPress} />
                 <Box
                     sx={{
                         width: { xs: "100%", sm: "80%", md: "40%", lg: "40%", xl: "35%" },

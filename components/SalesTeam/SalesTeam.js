@@ -9,6 +9,7 @@ function SalesTeam({ id }) {
     <Box id={id}>
       <Typography
         sx={{
+          marginTop:10,
           color: "#153A5F",
           fontSize: "2.7em",
           fontWeight: "700",

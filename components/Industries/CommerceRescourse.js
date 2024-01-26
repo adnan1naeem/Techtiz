@@ -3,7 +3,7 @@ import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import List from "./List";
 
-function CommerceRescourse() {
+function CommerceRescourse({onPress}) {
     return (
         <Box
             sx={{
@@ -100,6 +100,7 @@ function CommerceRescourse() {
                                 <Button
                                     variant="contained"
                                     endIcon={<IoMdArrowRoundForward />}
+                                    onClick={onPress}
                                     sx={{
                                         marginTop: "8%",
 

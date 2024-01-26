@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import MVPsStartup from "../MVPs/MVPsStartup";
 import Image from "next/image";
 
-function MVPs() {
+function MVPs({onPress}) {
     return (
         <Box
             sx={{
@@ -29,7 +29,7 @@ function MVPs() {
                     style={{ width: "100%" }}
                 />
             </Box>
-            <MVPsStartup />
+            <MVPsStartup onPress={onPress} />
         </Box>
     );
 }

@@ -3,7 +3,7 @@ import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import List from "./List";
 
-function Transportation() {
+function Transportation({onPress}) {
     return (
         <Box
             sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
@@ -66,6 +66,7 @@ function Transportation() {
                     <Button
                         variant="contained"
                         endIcon={<IoMdArrowRoundForward />}
+                        onClick={onPress}
                         sx={{
                             marginTop: "8%",
 

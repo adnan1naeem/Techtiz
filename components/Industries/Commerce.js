@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import CommerceRescourse from "./CommerceRescourse";
 
-function Commerce() {
+function Commerce({onPress}) {
     return (
         <Box sx={{ mt: "6%" }}>
             <Typography
@@ -29,7 +29,7 @@ function Commerce() {
                 grab more sales
             </Typography>
             <Box>
-                <CommerceRescourse />
+                <CommerceRescourse onPress={onPress} />
             </Box>
         </Box>
     );

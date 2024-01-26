@@ -4,7 +4,7 @@ import React from "react";
 import Application from "../Education/Application";
 import Image from "next/image";
 
-function Education() {
+function Education({onPress}) {
   return (
     <Box sx={{ mt: "5%" }}>
       <Typography
@@ -42,7 +42,7 @@ function Education() {
           marginTop: "5%",
         }}
       >
-        <Application />
+        <Application onPress={onPress} />
         <Box
           sx={{
             width: { xs: "100%", sm: "80%", md: "40%", lg: "40%", xl: "35%" },
