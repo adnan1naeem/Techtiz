@@ -53,7 +53,7 @@ function AllBlogs({ selectedTag }) {
             href="/BlogDescription"
             style={{ textDecoration: "none" }}
             state={item}
-            key={index} // Ensure each element has a unique key
+            key={index}
           >
             {selectedTag ? (
               <TagCard

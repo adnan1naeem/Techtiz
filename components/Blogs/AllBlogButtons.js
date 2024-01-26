@@ -4,7 +4,7 @@ import BlogButton from "./BlogButton";
 import styles from "../../styles/Blog.module.css";
 import SmallTagCard from "./SmallTagCard";
 
-function AllBlogButton({ onTagClick }) {
+function AllBlogButton({ onTagClick, search }) {
   const [selectedTag, setSelectedTag] = useState(null);
 
   const handleTagClick = (tag) => {
@@ -31,6 +31,7 @@ function AllBlogButton({ onTagClick }) {
             className={styles.inputsubmit}
             type="search"
             placeholder="Search..."
+            onChange={search}
           />
         </form>
         <Typography

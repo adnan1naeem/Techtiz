@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
-function Enterprises() {
+function Enterprises({ onclick }) {
   return (
     <Box
       sx={{
@@ -11,7 +11,7 @@ function Enterprises() {
         alignItems: "center",
         justifyContent: "center",
         marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "11%" }
-      
+
       }}
     >
       <Typography
@@ -69,6 +69,7 @@ function Enterprises() {
             backgroundColor: "#153A5F",
           },
         }}
+        href={onclick}
       >
         Discuss Now &nbsp; &nbsp;
       </Button>

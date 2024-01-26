@@ -15,6 +15,7 @@ function ButtonBusiness({
     <div>
       <Button
         variant="outlined"
+        type="submit"
         onClick={onClick}
         sx={{
           color: color,

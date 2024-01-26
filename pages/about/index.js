@@ -10,11 +10,11 @@ function Index() {
   return (
     <div>
       <Box>
-        <Enterprises/>
-        <Core/>
-        <Software/>
-        <Leadership/>
-        <SalesTeam/>
+        <Enterprises onclick={'#SalesTeam'} />
+        <Core />
+        <Software />
+        <Leadership />
+        <SalesTeam id={"SalesTeam"} />
       </Box>
     </div>
   );

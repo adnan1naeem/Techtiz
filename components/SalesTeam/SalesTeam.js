@@ -4,9 +4,9 @@ import ContactInfo from "./ContactInfo";
 import ClushInfor from "./ClushInfor";
 import Form from "./Form";
 
-function SalesTeam() {
+function SalesTeam({ id }) {
   return (
-    <Box sx={{ marginTop: "4%" }}>
+    <Box id={id}>
       <Typography
         sx={{
           color: "#153A5F",

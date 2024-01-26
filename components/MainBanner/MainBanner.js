@@ -6,8 +6,12 @@ import Line from "../../public/bg-pat.svg";
 import ButtonBusiness from "../../components/Texts/ButtonBusiness";
 import styles from "../../styles/MainBanner.module.css";
 import { keyframes } from "@emotion/react";
+import { useRouter } from "next/router";
+import Link from 'next/link';
 
 function MainBanner() {
+  const router = useRouter();
+
   const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -16,30 +20,32 @@ function MainBanner() {
     opacity: 1;
   }
 `;
-
+  const sendEmail = () => {
+    router.push("/about");
+  };
   return (
     <Box
-   
+
       sx={{
         background: "#153A5F",
-       
+
       }}
     >
       <Box
         sx={{
           display: "flex",
           justifyContent: "space-between",
-     
+
         }}
       >
         <Image
-        style={{width:'300px',height:'50rem'}}
+          style={{ width: '300px', height: '50rem' }}
           src={Line}
           alt="no image"
           className={styles.responsive_img_Line}
         />
         <Image
-        style={{marginTop:'20%'}}
+          style={{ marginTop: '20%' }}
           src={Mobile}
           alt="no image"
           className={styles.responsive_img_Mobile}
@@ -48,11 +54,11 @@ function MainBanner() {
 
       <Box
         sx={{
-    
+
           position: "absolute",
-          top: { xs: 150, sm: 150, md: 150, lg: 260 }, 
-          left: { xs: 15, sm: 50, md: 100, lg: 150 }, 
-          width: { xs: "90%", sm: "70%", md: "60%", lg: "44%" }, 
+          top: { xs: 150, sm: 150, md: 150, lg: 260 },
+          left: { xs: 15, sm: 50, md: 100, lg: 150 },
+          width: { xs: "90%", sm: "70%", md: "60%", lg: "44%" },
           // backgroundColor: { xs: "red", sm: 'blue', md: 'green', lg: 'yellow' },
         }}
       >
@@ -63,7 +69,7 @@ function MainBanner() {
             fontWeight: "bold",
             textTransform: 'uppercase',
             animation: `${fadeIn} 1s ease-in-out 5s forwards`,
-            lineHeight:'54px'
+            lineHeight: '54px'
           }}
         >
           WE BUILD CUSTOM SOFTWARE AND CHART-TOPPING APPS FOR DISRUPTIVE
@@ -78,12 +84,15 @@ function MainBanner() {
             alignItems: { xs: "center", sm: "flex-start" },
           }}
         >
-          <ButtonBusiness
-            text="About Us"
-            background="white"
-            paddingLeft="45px"
-            paddingRight="45px"
-          />
+          <Link href="/About">
+            <ButtonBusiness
+              onClick={sendEmail}
+              text="About Us"
+              background="white"
+              paddingLeft="45px"
+              paddingRight="45px"
+            />
+          </Link>
           <ButtonBusiness
             text="Talk To Us"
             color="white"

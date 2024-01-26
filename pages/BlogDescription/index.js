@@ -90,7 +90,7 @@ function BlogDescription() {
             <Link
               href={{
                 pathname: "/DateBlogs",
-                query: item, 
+                query: item,
               }}
               style={{ textDecoration: "none" }}
             >
