@@ -8,10 +8,9 @@ const blogData = [
     image:
       "https://techtiz.co/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-18-at-13.55.20.jpeg",
     date: "January 22,2024",
+    Sub_discription: "Team augmentation is a powerful tool to inject specific expertise into your workflows and tackle projects with newfound agility. It’s like injecting your team with hi-octane fuel, giving you the expertise and capacity to tackle any challenge. But like any other effective fuel, augmentation requires careful handling to avoid combustion. Before you strap yourself in for this ride into smarter tech strategy, these best practices make sure you’re ready to navigate the roadblocks and reap the rewards  "
   },
   {
-    id: 1,
-
     title:
       "Debunking Myths about IT Outsourcing and Staff Augmentation – Myth Buster Series (Part 3)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/7-768x384.jpg",
@@ -41,6 +40,7 @@ const blogData = [
   {
     id: 2,
     tags: "Best Practices",
+    Aparagraph: "The IT landscape is a constant sprint, and sometimes, your internal team needs a little boost to keep up. Your IT team is the engine that drives your business towards growth and efficiency. But what happens when the workload roars past the redline? Do you white-knuckle it through or consider drastic measures like hiring a whole new crew?",
     title: "MVP Development : A Guide for Non-Techies",
     image: "https://techtiz.co/wp-content/uploads/2023/12/3-2-300x150.jpg",
     date: "December 28,2023",

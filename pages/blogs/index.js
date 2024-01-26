@@ -13,7 +13,7 @@ function Blog() {
 
   const handleTagClick = (tag) => {
     setSelectedTag(tag);
-    setSearchTerm(""); // Clear search term when a tag is clicked
+    setSearchTerm("");
   };
 
   const searchAndSave = (term) => {
@@ -26,6 +26,7 @@ function Blog() {
     );
     setSearchResults(results);
   }, [searchTerm]);
+
 
   return (
     <Box

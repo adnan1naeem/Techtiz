@@ -52,7 +52,7 @@ function SearchedBlogs({ data }) {
                                     fontFamily: 'Mont Regular", Sans-serif',
                                     marginTop: "0%",
                                 }}>
-                                {blog.content}
+                                {blog.Sub_discription}
                             </Typography>
                         </CardContent>
                         <CardContent>

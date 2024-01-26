@@ -4,8 +4,11 @@ import BlogsMainCard from "./BlogMainCard";
 import blogData from "./BlogData";
 import Link from "next/link";
 import TagCard from "./TagCard";
+import { useRouter } from 'next/router';
+
 
 function AllBlogs({ selectedTag }) {
+  const router = useRouter();
   const itemsPerPage = 8;
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -19,6 +22,13 @@ function AllBlogs({ selectedTag }) {
   const handleChangePage = (event, newPage) => {
     setCurrentPage(newPage);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleLinkClick = (item) => {
+    router.push({
+      pathname: '/BlogDescription',
+      query: { state: JSON.stringify(item) },
+    });
   };
 
   return (
@@ -49,8 +59,8 @@ function AllBlogs({ selectedTag }) {
         }}
       >
         {currentItems.map((item, index) => (
-          <Link
-            href="/BlogDescription"
+          <div
+            onClick={() => handleLinkClick(item)}
             style={{ textDecoration: "none" }}
             state={item}
             key={index}
@@ -70,7 +80,7 @@ function AllBlogs({ selectedTag }) {
                 date={item?.date}
               />
             )}
-          </Link>
+          </div>
         ))}
       </Box>
       <Box sx={{ mt: "5%", display: "flex", justifyContent: "center" }}>

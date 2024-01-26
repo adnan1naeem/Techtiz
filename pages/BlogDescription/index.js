@@ -10,33 +10,32 @@ import BlogBlodText from "../../components/Blogs/BlogBlodText";
 import BlogLightText from "../../components/Blogs/BlogLightText";
 import { useRouter } from "next/router";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
+import styles from '../../styles/Blog.module.css'
 
 // import Footer from "../Footer/Footer";
 
 function BlogDescription() {
   const router = useRouter();
   const item = router.query;
+  const parsedItem = JSON.parse(router?.query?.state || "{}");
 
   const renderContent = () => {
-    const keys = Object.keys(item);
+    const keys = Object.keys(parsedItem);
     const contentArray = [];
 
     const filteredKeys = keys.filter(
       (key) => !["title", "image", "date"].includes(key.toLowerCase())
     );
 
-    const uniquePrefixLetters = Array.from(
-      new Set(filteredKeys.map((key) => key.charAt(0).toUpperCase()))
-    );
-
-    uniquePrefixLetters.forEach((prefix, index) => {
-      const contentKeys = filteredKeys.filter((key) => key.startsWith(prefix));
-      const content = contentKeys.map((key) => item[key]);
-
-      if (prefix === "B" || prefix === "J") {
-        contentArray.push(<BlogBlodText key={index} text={content} />);
+    filteredKeys.forEach((prefix, index) => {
+      if (prefix.includes("heading")) {
+        contentArray.push(
+          <BlogBlodText key={index} text={parsedItem[prefix]} />
+        );
       } else {
-        contentArray.push(<BlogLightText key={index} text={content} />);
+        contentArray.push(
+          <BlogLightText key={index} text={parsedItem[prefix]} />
+        );
       }
     });
 
@@ -44,6 +43,7 @@ function BlogDescription() {
       <React.Fragment key={index}>{content}</React.Fragment>
     ));
   };
+
 
   return (
     <Box>
@@ -59,7 +59,7 @@ function BlogDescription() {
         }}
       >
         <Box position="relative">
-          <img src={item?.image} alt="" style={{ width: "100%" }} />
+          <img src={parsedItem?.image} alt="" style={{ width: "100%" }} />
           <Typography
             variant="h5"
             sx={{
@@ -74,7 +74,7 @@ function BlogDescription() {
               fontWeight: "100",
             }}
           >
-            {item?.title}
+            {parsedItem?.title}
           </Typography>
         </Box>
         <Box
@@ -112,12 +112,19 @@ function BlogDescription() {
                     fontSize: "14px",
                   }}
                 />
-                {item?.date}
+                {parsedItem?.date}
               </Typography>
             </Link>
             {renderContent()}
           </Box>
           <Box sx={{ mt: "3%" }}>
+            <form className={styles.nosubmit}>
+              <input
+                className={styles.inputsubmit1}
+                type="search"
+                placeholder="Search..."
+              />
+            </form>
             <BlogSecondCard />
             <BlogSecondCard />
             <BlogSecondCard />
