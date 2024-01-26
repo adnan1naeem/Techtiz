@@ -18,7 +18,7 @@ function Transportation({onPress}) {
             >
                 <CardContent sx={{ display: "flex", flexDirection: "column" }}>
                     <Typography
-                        sx={{ color: "#F8F8F8", fontSize: "2.2em", fontWeight: "600" }}
+                        sx={{ color: "#F8F8F8", fontSize: "2.2em", fontWeight: "600", }}
                     >
                         Transportation and Logistics
                     </Typography>
@@ -27,7 +27,7 @@ function Transportation({onPress}) {
                             color: "#18B0E6",
                             fontSize: "1.1em",
                             fontWeight: "300",
-                            marginTop: "1%",
+                            marginTop: "2%",
                         }}
                     >
                         Convenient logistics and transportation solutions that save cost
@@ -37,8 +37,8 @@ function Transportation({onPress}) {
                             color: "#18B0E6",
                             fontSize: "1.2em",
                             fontWeight: "700",
-                            marginTop: "4%",
-                            borderLeft: "14px solid #18B0E6",
+                            marginTop: "7%",
+                            borderLeft: "8px solid #18B0E6",
                             height: "23px",
                             paddingLeft: "10px",
                             paddingTop: "-10px%",
@@ -57,7 +57,7 @@ function Transportation({onPress}) {
                     >
                         Development of software for management distribution
                     </Typography>
-                    <Box sx={{ marginTop: "3%" }}>
+                    <Box sx={{ marginTop: "3%", paddingLeft: '5%' }}>
                         <List listone="Inventory management systems" textColor="#F8F8F8" />
                         <List listone="Delivery tracking software" textColor="#F8F8F8" />
                         <List listone="User-friendly and efficient mobile applications" textColor="#F8F8F8" />

@@ -23,7 +23,7 @@ function Application({onPress}) {
               color: "#6EC1E4",
               fontSize: "1.3em",
               fontWeight: "700",
-              borderLeft: "10px solid #18B0E6",
+              borderLeft: "8px solid #18B0E6",
               height: "18px",
               mt: '2%',
               ml: '1%',

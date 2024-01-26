@@ -36,23 +36,21 @@ function Education({onPress}) {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "3%",
-          paddingTop: "5%",
-          paddingBottom: "2%",
-          marginTop: "5%",
+          gap: "1%",
+          paddingTop: "2%",
         }}
       >
         <Application onPress={onPress} />
         <Box
           sx={{
-            width: { xs: "100%", sm: "80%", md: "40%", lg: "40%", xl: "35%" },
+            width: { xs: "90%", sm: "70%", md: "35%", lg: "35%", xl: "30%" },
           }}
         >
           {/* Use next/image for image optimization */}
           <img
             src="https://techtiz.co/wp-content/uploads/2023/12/education-1024x864.webp"
             alt=""
-            style={{ width: "100%" }}
+            style={{ width: "90%" }}
           />
         </Box>
       </Box>

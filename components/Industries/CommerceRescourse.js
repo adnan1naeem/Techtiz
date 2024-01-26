@@ -3,7 +3,7 @@ import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import List from "./List";
 
-function CommerceRescourse({onPress}) {
+function CommerceRescourse({ onPress }) {
     return (
         <Box
             sx={{
@@ -15,7 +15,7 @@ function CommerceRescourse({onPress}) {
         >
             <Card
                 sx={{
-                    width: { xs: "22rem", sm: "35rem", md: "48rem", lg: "70rem", xl: '80rem' },
+                    width: { xs: "30rem", sm: "35rem", md: "42rem", lg: "60rem", xl: '70rem' },
                     height: { xs: "55rem", sm: "70rem", md: "60rem", lg: "33rem" },
                     borderRadius: "60px",
                     background: "#153A5F",
@@ -23,7 +23,13 @@ function CommerceRescourse({onPress}) {
                     mt: "1%",
                 }}
             >
-                <CardContent sx={{ display: "flex", flexDirection: "row", gap: '10%', flexWrap: 'wrap-reverse', justifyContent: 'center', pt: '5%' }}>
+                <CardContent sx={{
+                    display: "flex", flexDirection: "row",
+                    gap: '10%',
+                    flexWrap: 'wrap-reverse',
+                    alignItems: 'center',
+                    justifyContent: "center",
+                }}>
                     <Box
                         sx={{
                             width: { xs: "90%", sm: "60%", md: "46%", lg: "30%", xl: "30%" }, mt: { xs: "-36%", sm: "-10%", md: "-10rem", lg: "5%", xl: '-1%' }
@@ -37,9 +43,8 @@ function CommerceRescourse({onPress}) {
                     </Box>
                     <Box
                         sx={{
+                            pt: "7%",
                             display: "flex",
-                            justifyContent: "center",
-                            alignContent: "center",
                         }}
                     >
                         <Card
@@ -48,7 +53,6 @@ function CommerceRescourse({onPress}) {
                                 height: { xs: "38rem", sm: "39xrem", md: "38rem", lg: "34rem" },
                                 background: "none",
                                 boxShadow: "none",
-                                mt: '5%'
                             }}
                         >
                             <CardContent sx={{ display: "flex", flexDirection: "column" }}>
@@ -58,7 +62,6 @@ function CommerceRescourse({onPress}) {
                                         color: "#18B0E6",
                                         fontSize: "1.2em",
                                         fontWeight: "700",
-                                        marginTop: "4%",
                                         borderLeft: "11px solid #18B0E6",
                                         height: "20px",
                                         paddingLeft: "10px",
@@ -79,7 +82,7 @@ function CommerceRescourse({onPress}) {
                                 >
                                     Development of secure E-commerce platforms that grow and sell
                                 </Typography>
-                                <Box sx={{ marginTop: "3%" }}>
+                                <Box sx={{ marginTop: "3%", paddingLeft: "5%" }}>
                                     <List
                                         listone="Inventory management systems"
                                         textColor="#F8F8F8"
@@ -103,7 +106,6 @@ function CommerceRescourse({onPress}) {
                                     onClick={onPress}
                                     sx={{
                                         marginTop: "8%",
-
                                         padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
                                         width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
                                         paddingLeft: "1%",

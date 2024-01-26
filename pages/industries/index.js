@@ -59,20 +59,19 @@ function Industries() {
                             display: "flex",
                             flexWrap: "wrap",
                             justifyContent: "center",
-                            gap: "3%",
-                            paddingTop: "5%",
-                            paddingBottom: "2%",
+                            paddingTop: "3%",
                         }}
                     >
                         <Box
                             sx={{
                                 width: { xs: "100%", sm: "80%", md: "50%", lg: "40%", xl: "35%" },
+                                marginTop: 5,
                             }}
                         >
                             <img
                                 src="https://techtiz.co/wp-content/uploads/2023/12/Transportation.webp"
                                 alt=""
-                                style={{ width: "100%" }}
+                                style={{ width: "90%" }}
                             />
                         </Box>
                         <Transportation onPress={handleClick} />
