@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 // import Navbar from "../NavBar/NavBar";
 import Link from "next/link";
 import { FaCalendar } from "react-icons/fa";
@@ -24,13 +24,25 @@ function BlogDescription() {
     const contentArray = [];
 
     const filteredKeys = keys.filter(
-      (key) => !["title", "image", "date"].includes(key.toLowerCase())
+      (key) => !["title", "image", "date", "tags", 'id', "Sub_discription",].includes(key.toLowerCase())
     );
 
     filteredKeys.forEach((prefix, index) => {
-      if (prefix.includes("heading")) {
+      if (Array.isArray(parsedItem[prefix])) {
+        parsedItem[prefix].forEach((paragraph, paragraphIndex) => {
+          contentArray.push(
+            <BlogLightText key={`${index}_${paragraphIndex}`} text={paragraph} />
+          );
+        });
+      } else if (prefix.includes("heading")) {
         contentArray.push(
           <BlogBlodText key={index} text={parsedItem[prefix]} />
+        );
+      } else if (prefix.includes('dot')) {
+        contentArray.push(
+          <Grid sx={{ mb: '2%' }}>
+            <Typography sx={{ color: '#153A5F', fontSize: '16px', }} key={index}>• {parsedItem[prefix]}</Typography>
+          </Grid>
         );
       } else {
         contentArray.push(
@@ -43,6 +55,7 @@ function BlogDescription() {
       <React.Fragment key={index}>{content}</React.Fragment>
     ));
   };
+
 
 
   return (
@@ -117,7 +130,7 @@ function BlogDescription() {
             </Link>
             {renderContent()}
           </Box>
-          <Box sx={{ mt: "3%" }}>
+          <Box sx={{ mt: "2.1%" }}>
             <form className={styles.nosubmit}>
               <input
                 className={styles.inputsubmit1}
