@@ -7,8 +7,9 @@
   cursor: pointer;
   transition: color 0.3s;
   /* Smooth transition for hover effect */
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Mont-Regula",Sans-serif
 }
 
 .textNavLabel:hover {

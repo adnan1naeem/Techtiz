@@ -1,14 +1,14 @@
 import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
-function GrowWebsite() {
+function GrowWebsite({onPress}) {
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'4%'}}
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "31rem" },
+          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "38rem" },
           height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",
@@ -21,7 +21,7 @@ function GrowWebsite() {
               fontSize: "1.3em",
               fontWeight: "600",
               borderLeft: "3px solid #18B0E6",
-              height: "20px",
+              height: "18px",
               lineHeight: "20px",
             }}
           >
@@ -71,13 +71,14 @@ function GrowWebsite() {
           <Button
             variant="contained"
             endIcon={<IoMdArrowRoundForward />}
+            onClick={onPress}
             sx={{
               marginTop: "8%",
 
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
-              paddingLeft: "1%",
-              paddingRight: "1%",
+              width: { xs: "100%", sm: "80%", md: "60%", lg: "35%" },
+              paddingLeft: "2px",
+              paddingRight: "2px",
               borderRadius: 0,
               textTransform: "none",
               fontSize: "16px",

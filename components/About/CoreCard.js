@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Card, CardContent } from "@mui/material";
 
-function CoreCard() {
+function CoreCard({image,heading,bg,para}) {
   const [isHovered, setIsHovered] = React.useState(false);
   return (
     <Box
@@ -11,11 +11,12 @@ function CoreCard() {
     >
       <Card
         sx={{
-          width: { xs: "21rem", sm: "20rem", md: "20rem", lg: "22rem" },
-          height: { xs: "22rem", sm: "22rem", md: "20rem", lg: "18rem" },
-          background: "#18B0E6",
+          width: { xs: "21rem", sm: "20rem", md: "22rem", lg: "22rem" },
+          height: { xs: "22rem", sm: "22rem", md: "20rem", lg: "20rem" },
+          background: bg,
           borderRadius: "15px",
-          cursor:'pointer'
+          cursor:'pointer',
+          boxShadow:"none"
         }}
       >
         {!isHovered && (
@@ -35,7 +36,7 @@ function CoreCard() {
             onMouseEnter={() => setIsHovered(true)}
           >
             <img
-              src="https://techtiz.co/wp-content/uploads/2023/11/badge.svg"
+              src={image}
               alt=""
               style={{ width: "35%", filter: "invert(100%)" }}
             />
@@ -43,11 +44,11 @@ function CoreCard() {
               sx={{
                 color: "white",
                 fontWeight: "600",
-                fontSize: "2.5em",
+                fontSize: "2.1em",
                 marginTop: "10%",
               }}
             >
-              Collebration
+              {heading}
             </Typography>
           </CardContent>
         )}
@@ -62,6 +63,8 @@ function CoreCard() {
               marginTop: "14%",
               marginBottom: "5%",
               textAlign: "center",
+              transition: 'transform 0.5s ease',
+             
             }}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -72,16 +75,13 @@ function CoreCard() {
                 fontWeight: "600",
               }}
             >
-              Collebration
+              {heading}
             </Typography>
             <Typography
               color="white"
               sx={{ marginTop: "6%", fontSize: "16px" }}
             >
-              Great ideas emerge through <br /> collaboration and teamwork. All
-              our <br />
-              employees are team players who bring <br /> their own unique blend
-              of creativity and <br /> inspiration to the table.
+             {para}
             </Typography>
           </CardContent>
         )}

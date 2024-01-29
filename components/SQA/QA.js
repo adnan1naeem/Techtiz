@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
-function QA() {
+function QA({onPress}) {
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
@@ -81,6 +81,7 @@ function QA() {
           <Button
             variant="contained"
             endIcon={<IoMdArrowRoundForward />}
+            onClick={onPress}
             sx={{
               marginTop: "6%",
 

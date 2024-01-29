@@ -5,7 +5,6 @@ import TextNav from "../Texts/TextNav";
 import ButtonHover from "../Texts/ButtonHover";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
-import { Button } from "@mui/material";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
@@ -39,6 +38,7 @@ const Navbar = () => {
             className={styles.logo}
             src="https://techtiz.co/wp-content/uploads/2023/09/Techtiz-Logo-White@2x.webp"
             alt=""
+            
           />
         </Link>
 

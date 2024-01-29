@@ -15,25 +15,26 @@ function ButtonBusiness({
     <div>
       <Button
         variant="outlined"
-        type="submit"
         onClick={onClick}
         sx={{
           color: color,
-          fontWeight: "500",
-          borderRadius: 3,
-          fontSize: "17px",
-          border: `3px solid ${disableHoverEffect ? background : "#18B0E6"}`,
+          fontWeight: "200",
+          fontSize: "18px",
+          border: `1px solid ${disableHoverEffect ? background : "#18B0E6"}`,
           textTransform: "none",
           background: background,
           paddingTop: "10px",
           paddingBottom: "10px",
+          fontFamily:"Mont-Regular, Sans-serif",
           paddingLeft: paddingLeft,
           paddingRight: paddingRight,
           marginTop: "8px",
           "&:hover": {
             backgroundColor: disableHoverEffect ? background : "#18B0E6",
             color: disableHoverEffect ? color : "white",
-            border: `3px solid ${disableHoverEffect ? background : "#18B0E6"}`,
+            border: `1px solid ${
+              disableHoverEffect ? background : "#18B0E6"
+            }`,
           },
         }}
       >

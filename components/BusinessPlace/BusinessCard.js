@@ -33,6 +33,8 @@ function BusinessCard({ data }) {
             color: "#153A5F",
             fontFamily: "Mont bold, Sans-serif",
             textAlign: "center",
+            marginLeft:'-8%'
+            
           }}
         >
           {data?.title}
@@ -47,9 +49,9 @@ function BusinessCard({ data }) {
         >
           <Box
             sx={{
-              marginTop: "1%",
-              width: { xs: "18rem", sm: "14rem", md: "13rem", lg: "14rem" },
-              height: { xs: "22rem", sm: "20rem", md: "20rem", lg: "20rem" },
+              marginTop: "-3%",
+              width: { xs: "18rem", sm: "14rem", md: "13rem", lg: "15rem" },
+              height: { xs: "22rem", sm: "20rem", md: "20rem", lg: "22rem" },
             }}
           >
             <img
@@ -66,13 +68,14 @@ function BusinessCard({ data }) {
           >
             <List>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F" }} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F" ,fontSize:'18px'}} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
                     fontSize: "17px",
                     fontWeight: "400",
-                    color: "#7A7A7A",
+                    color: "#54595F",
+                    fontFamily:"Mont-Regular, Sans-serif",
                   }}
                 >
                   {data?.point1}
@@ -81,13 +84,14 @@ function BusinessCard({ data }) {
             </List>
             <List>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F" }} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F" ,fontSize:'18px'}} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
                     fontSize: "17px",
                     fontWeight: "400",
-                    color: "#7A7A7A",
+                    color: "#54595F",
+                    fontFamily:"Mont-Regular, Sans-serif",
                   }}
                 >
                   {data?.point2}
@@ -96,13 +100,14 @@ function BusinessCard({ data }) {
             </List>
             <List>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F" }} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F",fontSize:'18px' }} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
                     fontSize: "17px",
                     fontWeight: "400",
-                    color: "#7A7A7A",
+                    color: "#54595F",
+                    fontFamily:"Mont-Regular, Sans-serif",
                   }}
                 >
                   {data?.point3}
@@ -115,9 +120,9 @@ function BusinessCard({ data }) {
                 variant="contained"
                 endIcon={<IoMdArrowRoundForward />}
                 sx={{
-                  padding: "3%",
-                  paddingLeft: "6%",
-                  paddingRight: "6%",
+                  padding: "2.8%",
+                  paddingLeft: "9%",
+                  paddingRight: "9%",
                   background: "#18B0E6",
                   "&:hover": {
                     backgroundColor: "#153A5F", // Set the desired background color on hover

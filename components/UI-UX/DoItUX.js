@@ -4,9 +4,7 @@ import DoButton from "../Texts/DoButton";
 import AnalysisCard from "../Website/AnalysisCard";
 
 function DoItUX() {
-  const [selectedButton, setSelectedButton] = useState(
-    "Design and Development"
-  );
+  const [selectedButton, setSelectedButton] = useState("Build and Itrate");
 
   const handleButtonClick = (text) => {
     setSelectedButton(text);

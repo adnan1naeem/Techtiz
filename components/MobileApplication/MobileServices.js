@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Card, CardContent, Button } from "@mui/material";
 
-function MobileServices({image,title}) {
+function MobileServices({ image, title, des ,onPress }) {
   const [isHovered, setIsHovered] = React.useState(false);
   return (
     <Box
@@ -16,7 +16,7 @@ function MobileServices({image,title}) {
           background: "#153A5F",
           cursor: "pointer",
           boxShadow: "none",
-          border: "1px solid white", 
+          border: "1px solid white",
         }}
       >
         {!isHovered && (
@@ -28,17 +28,11 @@ function MobileServices({image,title}) {
               alignItems: "center",
               marginTop: "8%",
               marginBottom: "5%",
-              animation: isHovered
-                ? "slideUp 0.5s forwards"
-                : "slideDown 0.5s forwards",
+              transition: "all 0.5s ease", // Add transition here
             }}
             onMouseEnter={() => setIsHovered(true)}
           >
-            <img
-              src={image}
-              alt=""
-              style={{ width: "45%" }}
-            />
+            <img src={image} alt="" style={{ width: "45%" }} />
             <Typography
               sx={{
                 color: "white",
@@ -46,8 +40,8 @@ function MobileServices({image,title}) {
                 fontSize: "1.1em",
                 marginTop: "10%",
                 lineHeight: "24px",
-                textAlign:'center',
-                width:'60%'
+                textAlign: "center",
+                width: "60%",
               }}
             >
               {title}
@@ -72,9 +66,23 @@ function MobileServices({image,title}) {
               color="white"
               sx={{ marginTop: "6%", fontSize: "15px" }}
             >
-             Our solution-oriented developers use Flutter UI framework to deliver unconventional and engaging app designs that drive growth.
+              {des}
             </Typography>
-            <Button sx={{marginTop:'10%', color:'white', }} variant="outlined">Outlined</Button>
+            <Button
+              sx={{
+                marginTop: "10%",
+                color: "white",
+                transition: "background-color 0.3s ease",
+                border:'2px soild #6EC1E4',
+                "&:hover": {
+                  backgroundColor: "#6EC1E4",
+                },
+              }}
+              onClick={onPress}
+              variant="outlined"
+            >
+              GET STARTED
+            </Button>
           </CardContent>
         )}
       </Card>

@@ -18,7 +18,7 @@ function SampleNextArrow(props) {
         color: "#153A8D",
         height: 30,
         width: 30,
-        marginRight: "-3%", // Add right margin of 5%
+        
       }}
       onClick={onClick}
     />
@@ -50,7 +50,7 @@ function Technologies() {
     speed: 500,
     slidesToShow: 4, // Show 4 slides by default
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
+    nextArrow: <SampleNextArrow  />,
     prevArrow: <SamplePrevArrow />,
     // centerMode: true, // Enable center mode
 
@@ -65,6 +65,7 @@ function Technologies() {
         breakpoint: 768, // Show 2 slides on small screens (sm)
         settings: {
           slidesToShow: 2,
+          
         },
       },
     ],
@@ -103,7 +104,10 @@ function Technologies() {
           marginBottom: "7%"
         }}
       >
-        <Slider {...settings}>
+      <Box sx={{ml:'6%'}}> 
+
+     
+        <Slider {...settings} >
           <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/css3-logo-svg-vector.svg'} />
           <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Flutter.svg'} />
           <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/reactjs.svg'} />
@@ -112,6 +116,7 @@ function Technologies() {
           <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Bootstrap-Icon.svg'} />
           <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/html5-2.svg'} />
         </Slider>
+        </Box>
       </Box>
     </Box>
   );

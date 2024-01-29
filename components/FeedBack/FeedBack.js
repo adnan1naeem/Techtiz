@@ -69,7 +69,7 @@ function FeedBack() {
         display: 'flex',
         flexDirection: 'column', // or 'row' depending on your layout
         justifyContent: 'center',
-        height: '70rem',
+        height: '50rem',
         background: "#153A5F",
       }}
     >

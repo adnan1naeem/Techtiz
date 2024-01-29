@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
-function Grow() {
+function Grow({onPress}) {
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'4%'}}
@@ -21,8 +21,8 @@ function Grow() {
               fontSize: "1.3em",
               fontWeight: "600",
               borderLeft: "3px solid #18B0E6",
-              height: "20px",
-              lineHeight: "20px",
+              height: "16px",
+              lineHeight: "17px",
             }}
           >
             &nbsp;Mobile App Development
@@ -67,13 +67,13 @@ function Grow() {
           <Button
             variant="contained"
             endIcon={<IoMdArrowRoundForward />}
+            onClick={onPress}
             sx={{
               marginTop: "8%",
-
-              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
+             padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
               width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
-              paddingLeft: "1%",
-              paddingRight: "1%",
+              paddingLeft: "1.2%",
+              paddingRight: "1.2%",
               borderRadius: 0,
               textTransform: "none",
               fontSize: "16px",
@@ -84,7 +84,7 @@ function Grow() {
               },
             }}
           >
-            Discuss Now &nbsp; &nbsp;
+            Get Started &nbsp; &nbsp;
           </Button>
         </CardContent>
       </Card>

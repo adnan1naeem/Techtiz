@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Box } from "@mui/material";
 import GrowWebsite from "../../components/Website/GrowWebsite";
 import OurServices from "../../components/Website/Services/OurServices";
@@ -9,6 +9,16 @@ import SalesTeam from "../../components/SalesTeam/SalesTeam";
 
 function Web() {
   const [isHovered, setIsHovered] = React.useState(false);
+  const contactSectionRef = useRef(null);
+  const handleClick = () => {
+    if (contactSectionRef.current) {
+      const yOffset = -180;
+      const element = contactSectionRef.current;
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
     <div>
       <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "13%" } }}>
@@ -20,7 +30,7 @@ function Web() {
             flexWrap: "wrap",
           }}
         >
-          <GrowWebsite />
+          <GrowWebsite onPress={handleClick}  />
           <Box
             sx={{
               width: { xs: "100%", sm: "80%", md: "34%", lg: "28%", xl: "24%" },
@@ -40,8 +50,10 @@ function Web() {
         <OurServices />
         <DoIt />
         <Stack />
-        <DiscussProject />
-        <SalesTeam />
+        <DiscussProject onPress={handleClick} />
+        <div id="contact-section" ref={contactSectionRef}>
+          <SalesTeam />
+        </div>
       </Box>
     </div>
   );

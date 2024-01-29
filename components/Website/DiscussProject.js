@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, Card, CardContent, Typography } from "@mui/material";
 
 
-function DiscussProject() {
+function DiscussProject({onPress}) {
   return (
     <Box
       sx={{
@@ -32,6 +32,7 @@ function DiscussProject() {
           <Box sx={{marginTop:'3%',marginRight:'8%'}}>
             <Button
               variant="outlined"
+              onClick={onPress}
               sx={{
                 color: "white",
                 fontWeight: "600",

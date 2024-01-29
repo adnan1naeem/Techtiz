@@ -3,7 +3,7 @@ import PartnerCard from "../PartnerCard/PartnerCard";
 import { Box, Typography } from "@mui/material";
 import ButtonBusiness from "../Texts/ButtonBusiness";
 
-function Partner() {
+function Partner({onPress}) {
   return (
     <Box
       sx={{
@@ -58,6 +58,7 @@ function Partner() {
           color="white"
           paddingLeft="30px"
           paddingRight="30px"
+          onClick={onPress}
         />
       </Box>
     </Box>

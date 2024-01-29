@@ -14,6 +14,7 @@ function SalesTeam({ id }) {
           fontSize: "2.7em",
           fontWeight: "700",
           textAlign: "center",
+          
         }}
       >
         Contact our sales team

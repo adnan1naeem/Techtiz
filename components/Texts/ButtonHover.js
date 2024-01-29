@@ -15,11 +15,14 @@ function ButtonHover({ textButton }) {
           paddingBottom: "6px",
           border: "2.2px solid #18B0E6",
           textTransform: "none",
-          paddingLeft: "16px",
-          paddingRight: "16px",
+          paddingLeft: "20px",
+          paddingRight: "20px",
+          fontFamily:"Mont-Regula,Sans-serif",
 
           "&:hover": {
             backgroundColor: "#18B0E6", // Set the desired background color on hover
+            transition: '0.5s',
+            
           },
         }}
       >

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import ButtonBusiness from "../Texts/ButtonBusiness";
 
-function ModelsCard( {maintitle,backgroundImage}) {
+function ModelsCard( {maintitle,backgroundImage,onPress}) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -30,7 +30,7 @@ function ModelsCard( {maintitle,backgroundImage}) {
               display: "flex",
               flexDirection: "column",
               justifyContent: "flex-end",
-              marginTop: "-4%",
+          
               marginLeft: "-4.5%",
             }}
           >
@@ -96,6 +96,7 @@ function ModelsCard( {maintitle,backgroundImage}) {
                 color="white"
                 paddingLeft="40px"
                 paddingRight="40px"
+                onClick={onPress}
               />
             </Box>
           </CardContent>

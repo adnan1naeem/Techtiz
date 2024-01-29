@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-import React from "react";
+import React, { useRef } from "react";
 import QA from "../../components/SQA/QA";
 import DoQA from "../../components/SQA/DoQA";
 import QAForYou from "../../components/SQA/QAForYou";
@@ -10,6 +10,15 @@ import SalesTeam from "../../components/SalesTeam/SalesTeam";
 
 function Sqa() {
   const [isHovered, setIsHovered] = React.useState(false);
+  const contactSectionRef = useRef(null);
+  const handleClick = () => {
+    if (contactSectionRef.current) {
+      const yOffset = -180;
+      const element = contactSectionRef.current;
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
   return (
     <Box>
       <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%" } }}>
@@ -21,7 +30,7 @@ function Sqa() {
             flexWrap: "wrap",
           }}
         >
-          <QA />
+          <QA  onPress={handleClick}/>
           <Box
             sx={{
               width: { xs: "100%", sm: "80%", md: "38%", lg: "43%", xl: "35%" },
@@ -43,8 +52,10 @@ function Sqa() {
       <DoQA />
       <QAForYou />
       <Autonomous />
-      <DiscussProject />
-      <SalesTeam />
+      <DiscussProject onPress={handleClick}/>
+      <div id="contact-section" ref={contactSectionRef}>
+          <SalesTeam />
+        </div>
     </Box>
   );
 }

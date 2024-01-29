@@ -48,7 +48,9 @@ function FooterCard({
                   color: "#18B0E6",
                 },
                 cursor: "pointer",
-                fontSize: "17px",
+                fontSize: "16px",
+                fontFamily:"Mont-Regular, Sans-serif",
+                fontWeight:400
               }}
             >
               {text1}
@@ -67,7 +69,9 @@ function FooterCard({
                   color: "#18B0E6",
                 },
                 cursor: "pointer",
-                fontSize: "17px",
+                fontSize: "16px",
+                fontFamily:"Mont-Regular, Sans-serif",
+                fontWeight:400
               }}
             >
               {text2}

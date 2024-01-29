@@ -39,10 +39,10 @@ function MVPsStartup({onPress}) {
                             fontSize: "1.2em",
                             fontWeight: "700",
                             marginTop: "4%",
-                            borderLeft: "12px solid #18B0E6",
-                            height: "20px",
+                            borderLeft: "9px solid #18B0E6",
+                            height: "16px",
                             paddingLeft: "10px",
-                            lineHeight: '20px'
+                            lineHeight: '16px'
                         }}
                     >
                         What we offer
@@ -84,7 +84,7 @@ function MVPsStartup({onPress}) {
                             border: "1px solid #18B0E6",
                             "&:hover": {
                                 backgroundColor: "#18B0E6",
-                                color: 'black'
+                                color: '#153A5F'
                             },
                         }}
                     >

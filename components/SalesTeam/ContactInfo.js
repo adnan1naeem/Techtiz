@@ -21,11 +21,13 @@ function ContactInfo() {
             flexWrap: "wrap",
           }}
         >
+        <Box sx={{ "&:hover img": { transform: "scale(1.1)",transition: "transform 0.3s ease" }, }}>
           <img
             src="https://techtiz.co/wp-content/uploads/2023/09/pakistan.svg"
             alt=""
             width={"63px"}
           />
+          </Box>
           <Box>
             <Typography
               sx={{

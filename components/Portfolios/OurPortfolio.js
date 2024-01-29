@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
-function OurPortfolio() {
+function OurPortfolio({onPress}) {
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
@@ -46,13 +46,14 @@ function OurPortfolio() {
           <Button
             variant="contained"
             endIcon={<IoMdArrowRoundForward />}
+            onClick={onPress}
             sx={{
               marginTop: "8%",
 
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
-              paddingLeft: "1%",
-              paddingRight: "1%",
+              width: { xs: "100%", sm: "80%", md: "60%", lg: "43%" },
+              paddingLeft: "2%",
+              paddingRight: "2%",
               borderRadius: '5px',
               textTransform: "none",
               fontSize: "16px",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Box } from "@mui/material";
 
 import Grow from "../../components/MobileApplication/Grow";
@@ -11,11 +11,20 @@ import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import DevelopmentMobile from "../../components/MobileApplication/DevelopmentMobile";
 
 function Mobile() {
+  const contactSectionRef = useRef(null);
   const [isHovered, setIsHovered] = React.useState(false);
+  const handleClick = () => {
+    if (contactSectionRef.current) {
+      const yOffset = -180;
+      const element = contactSectionRef.current;
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
 
   return (
     <div>
-      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "13%" } }}>
+      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "11%" } }}>
         <Box
           sx={{
             display: "flex",
@@ -24,10 +33,10 @@ function Mobile() {
             flexWrap: "wrap",
           }}
         >
-          <Grow />
+          <Grow onPress={handleClick} />
           <Box
             sx={{
-              width: { xs: "100%", sm: "80%", md: "80%", lg: "34%", xl: "35%" },
+              width: { xs: "100%", sm: "80%", md: "80%", lg: "34%", xl: "30%" },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
             }}
@@ -41,7 +50,7 @@ function Mobile() {
             />
           </Box>
         </Box>
-        <DevelopmentMobile />
+        <DevelopmentMobile onPress={handleClick} />
         <Box
           sx={{
             display: "flex",
@@ -52,6 +61,7 @@ function Mobile() {
         >
           <Box>
             <ExpertiseMobile
+            onPress={handleClick}
               title="Our Expertise"
               des="Guaranteed delivery of an App that satisfies your goals."
             />
@@ -87,8 +97,10 @@ function Mobile() {
         </Box>
         <OutshineCard />
         <DoItMobile />
-        <DiscussProject />
-        <SalesTeam />
+        <DiscussProject onPress={handleClick} />
+        <div id="contact-section" ref={contactSectionRef}>
+          <SalesTeam />
+        </div>
       </Box>
     </div>
   );

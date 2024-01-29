@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
-function ExpertiseMobile({title,des}) {
+function ExpertiseMobile({title,des,onPress}) {
   return (
     <Box
       sx={{
@@ -16,9 +16,10 @@ function ExpertiseMobile({title,des}) {
       <Button
             variant="contained"
             endIcon={<IoMdArrowRoundForward />}
+            onClick={onPress}
             sx={{
               marginTop: "5%",
-
+              
               padding: { xs: "3%", sm: "2%", md: "2.3%", lg: "2.3%" },
               width: { xs: "20em", sm: "18em", md: "16em", lg: "16em" },
               paddingLeft: "1%",

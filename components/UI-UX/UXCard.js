@@ -31,7 +31,7 @@ function UXCard({image,heading,text}) {
           }}
         >
           <Box
-            sx={{ width: { xs: "5rem", sm: "5rem", md: "5rem", lg: "3.2rem" } }}
+            sx={{ width: { xs: "5rem", sm: "5rem", md: "5rem", lg: "3.2rem" } ,"&:hover img": { transform: "scale(1.1)",transition: "transform 0.3s ease" },  }}
           >
             <img
               style={{ width: "100%" 

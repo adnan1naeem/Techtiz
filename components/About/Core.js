@@ -38,11 +38,39 @@ function Core() {
           gap: "2%",
         }}
       >
-        <CoreCard />
-        <CoreCard />
-        <CoreCard />
-        <CoreCard />
-        <CoreCard />
+        <CoreCard
+          image="https://techtiz.co/wp-content/uploads/2023/11/badge.svg"
+          heading="Quality"
+          bg="#18B0E6"
+
+          para="Our work speaks for itself through the quality we deliver, within the given timescales and budgets."
+        />
+        <CoreCard
+          image="https://techtiz.co/wp-content/uploads/2023/11/creative.svg"
+          heading="Creativity"
+          bg="#153A5F"
+
+          para="Creativity is the fuel our company runs on. We have fostered a culture that appreciates out-of-the-box thinking and innovative ideas."
+        />
+        <CoreCard
+          image="https://techtiz.co/wp-content/uploads/2023/11/privacy.svg"
+          heading="Privacy"
+          bg="#18B0E6"
+   
+          para="When we partner with your business, we ensure that we safeguard your confidential information and provide the maximum privacy and security."
+        />
+        <CoreCard
+          image="https://techtiz.co/wp-content/uploads/2023/11/transparency.svg"
+          heading="Transparency"
+          bg="#153A5F"
+          para="We believe in open and honest communication with our clients, keeping them updated every step of the product lifecycle while ensuring complete transparency."
+        />
+        <CoreCard
+          image="https://techtiz.co/wp-content/uploads/2023/11/deal.svg"
+          heading="Collaboration"
+          bg="#18B0E6"
+          para="Great ideas emerge through collaboration and teamwork. All our employees are team players who bring their own unique blend of creativity and inspiration to the table."
+        />
       </Box>
     </Box>
   );

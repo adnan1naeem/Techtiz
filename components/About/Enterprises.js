@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
-function Enterprises({ onclick }) {
+function Enterprises({ onPress }) {
   return (
     <Box
       sx={{
@@ -54,13 +54,15 @@ function Enterprises({ onclick }) {
       <Button
         variant="contained"
         endIcon={<IoMdArrowRoundForward />}
+        onClick={onPress}
         sx={{
           marginTop: "3%",
-
-          padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "0.80%" },
-          paddingLeft: "1.4%",
-          paddingRight: "1.4%",
-          borderRadius: 0,
+          boxShadow:'none',
+         pt:'0.6%',
+         pb:'0.6%',
+          paddingLeft: "2.4%",
+          paddingRight: "2.4%",
+          borderRadius: 1,
           textTransform: "none",
           fontSize: "16px",
           fontWeight: "400",
@@ -69,9 +71,9 @@ function Enterprises({ onclick }) {
             backgroundColor: "#153A5F",
           },
         }}
-        href={onclick}
+   
       >
-        Discuss Now &nbsp; &nbsp;
+        Discuss Now &nbsp;
       </Button>
     </Box>
   );

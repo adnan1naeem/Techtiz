@@ -23,11 +23,11 @@ function DevelopmentCard({ background, title, Description }) {
         <CardContent style={{ marginLeft: "5%" }}>
           <Typography
             sx={{
-              fontSize: 22,
+              fontSize: '1.5rem',
               fontWeight: 600,
               marginTop: "13%",
               color: "#FFFFFF",
-              fontFamily: "Sans-serif",
+              fontFamily:"Mont-Bold, Sans-serif",
             }}
             gutterBottom
           >
@@ -35,11 +35,11 @@ function DevelopmentCard({ background, title, Description }) {
           </Typography>
           <Typography
             sx={{
-              fontSize: "16px",
-              fontWeight: 500,
+              fontSize: "1rem",
+              fontWeight: 100,
               marginTop: "18%",
               color: "#FFFFFF",
-              fontFamily: "Mont Regular, Sans-serif",
+              fontFamily:"Mont-Regular, Sans-serif",
               height: "9rem",
             }}
           >
@@ -52,9 +52,8 @@ function DevelopmentCard({ background, title, Description }) {
               sx={{
                 fontSize: "16px",
                 fontWeight: 500,
-
                 color: "#FFFFFF",
-                fontFamily: "Mont Regular, Sans-serif",
+                fontFamily:"Mont-Regular, Sans-serif",
               }}
             >
               GET STARTED

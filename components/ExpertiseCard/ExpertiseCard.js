@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
 import { GoArrowUpRight } from "react-icons/go";
+import Link from "next/link";
 
-function ExpertiseCard({ title, imageCard, height, description }) {
+function ExpertiseCard({ title, imageCard, height, description ,href }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <Box>
+        <Link  href={{ pathname: href }} style={{textDecoration:'none'}}>
       <Card
         sx={{
           width: { xs: "21rem", sm: "25rem", md: "26rem", lg: "33rem" },
@@ -30,13 +32,15 @@ function ExpertiseCard({ title, imageCard, height, description }) {
             justifyContent: "space-between",
           }}
         >
-          <Box sx={{ width: { xs: "100%", sm: "45%", md: "45%", lg: "45%" } }}>
+    
+          <Box  sx={{ width: { xs: "100%", sm: "45%", md: "45%", lg: "45%" } }}>
             <Typography
               sx={{
                 fontSize: "31px",
                 color: "#153A5F",
                 fontWeight: "600",
                 lineHeight: 1,
+                fontFamily:"Mont-Bold, Sans-serif",
               }}
             >
               {title}
@@ -46,7 +50,7 @@ function ExpertiseCard({ title, imageCard, height, description }) {
                 color: "#7A7A7A",
                 fontSize: "14px",
                 fontWeight: "400",
-                fontFamily: "mont,Sans-serif",
+                fontFamily: "Mont-Regular, Sans-serif",
                 marginTop: "2%",
               }}
             >
@@ -73,6 +77,7 @@ function ExpertiseCard({ title, imageCard, height, description }) {
           />
         </CardActions>
       </Card>
+      </Link>
     </Box>
   );
 }

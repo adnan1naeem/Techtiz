@@ -14,7 +14,8 @@ function Weeks() {
           fontSize: { xs: "2.1em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
           fontWeight: "600",
           color: "#153A5F",
-          fontFamily: "Mont bold, Sans-serif",
+          fontFamily:"Mont-Bold, Sans-serif",
+          
         }}
       >
         Go Live In Less Than 4 Weeks
@@ -32,6 +33,8 @@ function Weeks() {
             color: "#153A5F",
             lineHeight: "25px",
             fontSize: "1em",
+            fontWeight:'100',
+            fontFamily:"Mont-Regular, Sans-serif",
           }}
         >
           With our proven express delivery, you'll get your custom build

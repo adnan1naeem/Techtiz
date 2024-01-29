@@ -9,9 +9,9 @@ function Expertise() {
           sx={{
             textAlign: "center",
             color: "#FFFFFF",
-            fontSize: "2.7em",
+            fontSize: "43.2px",
             fontWeight: "600",
-            fontFamily: "Mont bold, Sans-serif",
+             fontFamily:"Mont-Bold, Sans-serif",
           }}
         >
           Our Expertise
@@ -21,7 +21,9 @@ function Expertise() {
             textAlign: "center",
             marginTop: "2%",
             color: "#FFFFFF",
-            fontFamily: "Mont bold, Sans-serif",
+            fontFamily:"Mont-Regular, Sans-serif",
+            fontWeight:'300'
+
           }}
         >
           Our skilled team excels in mobile app development (iOS, Android,
@@ -47,21 +49,25 @@ function Expertise() {
           title="Web Development"
           imageCard="https://techtiz.co/wp-content/uploads/2023/11/web-dev.svg"
           description="Techtiz crafts stunning websites with cutting-edge features."
+          href="/website"
         />
         <ExpertiseCard
           title="Mobile App Development"
           imageCard="https://techtiz.co/wp-content/uploads/2023/11/mobileAppDev.svg"
           description="Techtiz delivers seamless mobile experiences for diverse platforms."
+          href="/mobile-application"
         />
         <ExpertiseCard
           title="Software Quality Assurance"
           imageCard="https://techtiz.co/wp-content/uploads/2023/11/ux-ui_.svg"
           description="Techtiz ensures flawless performance through rigorous testing."
+          href="sqa"
         />
         <ExpertiseCard
           title="UI/UX Design"
           imageCard="https://techtiz.co/wp-content/uploads/2023/11/ux-ui_.svg"
           description="Techtiz creates intuitive and visually captivating user interfaces."
+          href="ui-ux-design"
         />
       </Box>
     </Box>

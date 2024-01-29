@@ -39,7 +39,8 @@ function Transportation({onPress}) {
                             fontWeight: "700",
                             marginTop: "7%",
                             borderLeft: "8px solid #18B0E6",
-                            height: "23px",
+                            height: "18px",
+                            lineHeight:'18px',
                             paddingLeft: "10px",
                             paddingTop: "-10px%",
                         }}
@@ -74,17 +75,17 @@ function Transportation({onPress}) {
                             width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
                             paddingLeft: "1%",
                             paddingRight: "1%",
-                            borderRadius: 0,
+                            borderRadius: 1,
                             textTransform: "none",
                             fontSize: "16px",
                             fontWeight: "400",
                             background: "none",
                             boxShadow: "none",
-                            color: "F8F8F8",
+                            color: "#F8F8F8",
                             border: "1px solid #18B0E6",
                             "&:hover": {
-                                backgroundColor: "#18B0E6",
-                                color: 'black'
+                                backgroundColor: "#6EC1E4",
+                                color: '#153A5F'
                             },
                         }}
                     >

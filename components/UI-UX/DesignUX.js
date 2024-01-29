@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
-function DesignUX() {
+function DesignUX({onPress}) {
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
@@ -18,10 +18,10 @@ function DesignUX() {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.3em",
+              fontSize: "1.2em",
               fontWeight: "600",
               borderLeft: "3px solid #18B0E6",
-              height: "20px",
+              height: "15px",
               lineHeight: "20px",
             }}
           >
@@ -72,6 +72,7 @@ function DesignUX() {
           <Button
             variant="contained"
             endIcon={<IoMdArrowRoundForward />}
+            onClick={onPress}
             sx={{
               marginTop: "8%",
 

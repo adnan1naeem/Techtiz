@@ -21,9 +21,12 @@ function BusinessTogether() {
       <Typography
         sx={{
           fontWeight: 600,
-          fontSize: "44px",
+
           textAlign: "center",
           color: "#153A5F",
+          fontSize: "43.2px",
+            fontWeight: "600",
+             fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
         Let's Grow Your Business Together
@@ -34,6 +37,8 @@ function BusinessTogether() {
           textAlign: "center",
           color: "#153A5F",
           fontSize: "1em",
+          fontWeight:'100',
+          fontFamily:"Mont-Regular, Sans-serif",
         }}
       >
         With the right tech partner, your business can go places
@@ -62,8 +67,8 @@ function BusinessTogether() {
             background={activeButton === "SMEs" ? "#153A5F" : "#f1f2f3"}
             color={activeButton === "SMEs" ? "white" : "#54595F"}
             onClick={() => handleButtonClick("SMEs")}
-            paddingLeft="91px"
-            paddingRight="91px"
+            paddingLeft="93px"
+            paddingRight="93px"
           />
           <ButtonBusiness
             text="Enterprises"
@@ -75,7 +80,7 @@ function BusinessTogether() {
           />
         </Box>
 
-        <Box sx={{ width: { xs: "90%", sm: "80%", md: "70%", lg: "42%" } }}>
+        <Box sx={{ width: { xs: "90%", sm: "80%", md: "70%", lg: "55%" } }}>
           {activeButton === "StartUps" && <BusinessCard data={businessDetail[0]} />}
           {activeButton === "SMEs" && <BusinessCard data={businessDetail[1]} />}
           {activeButton === "Enterprises" && (

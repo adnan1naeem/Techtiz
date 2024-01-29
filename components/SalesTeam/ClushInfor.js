@@ -12,6 +12,7 @@ function ClushInfor() {
           boxShadow: "none",
         }}
       >
+      <a href="https://clutch.co/profile/techtiz-0">
         <CardContent
           sx={{
             marginTop: "-3%",
@@ -22,6 +23,7 @@ function ClushInfor() {
             sx={{ width: "100px", height: "110px" }}
           />
         </CardContent>
+        </a>
       </Card>
     </Box>
   );
