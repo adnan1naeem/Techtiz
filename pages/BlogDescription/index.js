@@ -12,12 +12,23 @@ import { useRouter } from "next/router";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import styles from '../../styles/Blog.module.css'
 
-// import Footer from "../Footer/Footer";
 
 function BlogDescription() {
   const router = useRouter();
   const item = router.query;
   const parsedItem = JSON.parse(router?.query?.state || "{}");
+
+
+
+  const handleLinkClick = (item) => {
+    router.push({
+      pathname: '/BlogDateFilter',
+      query: { state: JSON.stringify(item) },
+    });
+  };
+
+
+
 
   const renderContent = () => {
     const keys = Object.keys(parsedItem);
@@ -55,8 +66,6 @@ function BlogDescription() {
       <React.Fragment key={index}>{content}</React.Fragment>
     ));
   };
-
-
 
   return (
     <Box>
@@ -100,12 +109,11 @@ function BlogDescription() {
           }}
         >
           <Box sx={{ width: { xs: "80%", md: "50%", lg: "43em" } }}>
-            <Link
-              href={{
-                pathname: "/DateBlogs",
-                query: item,
-              }}
+            <div
+              onClick={() => handleLinkClick(item)}
               style={{ textDecoration: "none" }}
+              state={item}
+
             >
               <Typography
                 sx={{
@@ -127,7 +135,7 @@ function BlogDescription() {
                 />
                 {parsedItem?.date}
               </Typography>
-            </Link>
+            </div>
             {renderContent()}
           </Box>
           <Box sx={{ mt: "2.1%" }}>

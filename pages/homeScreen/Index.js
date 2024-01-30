@@ -26,10 +26,10 @@ function HomeScreen() {
       <Box>
         <MainBanner onPress={handleClick} />
         <Weeks />
-        <BusinessTogether />
+        <BusinessTogether onClick={handleClick} />
         <Expertise />
         <Model onPress={handleClick} />
-        <Partner  onPress={handleClick}/>
+        <Partner onPress={handleClick} />
         <Technologies />
         <FeedBack />
         <div id="contact-section" ref={contactSectionRef}>

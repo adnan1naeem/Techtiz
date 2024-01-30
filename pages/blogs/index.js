@@ -50,9 +50,7 @@ function Blog() {
       >
         {searchResults?.length <= 1 ?
           <>
-            <Grid sx={{
-              width: '80.5%',
-            }}>
+            <Grid sx={{ width: '80.5%' }}>
               <Typography
                 sx={{
                   fontSize: "2.4em",

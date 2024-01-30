@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import BusinessCard from "../BusinessPlace/BusinessCard";
 import ButtonBusiness from "../Texts/ButtonBusiness";
 
-function BusinessTogether() {
+
+function BusinessTogether({ onClick }) {
   const [activeButton, setActiveButton] = useState("SMEs");
 
   const handleButtonClick = (buttonText) => {
@@ -17,16 +18,14 @@ function BusinessTogether() {
   ]
 
   return (
-    <Box sx={{ marginTop: "4%" }}>
+    <Box sx={{ marginTop: "5%" }}>
       <Typography
         sx={{
           fontWeight: 600,
-
+          fontSize: "42.2px",
           textAlign: "center",
           color: "#153A5F",
-          fontSize: "43.2px",
-            fontWeight: "600",
-             fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: '"Mont-bold", Sans-serif',
         }}
       >
         Let's Grow Your Business Together
@@ -36,9 +35,10 @@ function BusinessTogether() {
           fontWeight: 400,
           textAlign: "center",
           color: "#153A5F",
-          fontSize: "1em",
-          fontWeight:'100',
-          fontFamily:"Mont-Regular, Sans-serif",
+          fontSize: "14px",
+          mt: '1.2rem',
+          fontFamily: 'Mont-Regular, Sans-serif',
+          fontWeight: '100'
         }}
       >
         With the right tech partner, your business can go places
@@ -81,11 +81,9 @@ function BusinessTogether() {
         </Box>
 
         <Box sx={{ width: { xs: "90%", sm: "80%", md: "70%", lg: "55%" } }}>
-          {activeButton === "StartUps" && <BusinessCard data={businessDetail[0]} />}
-          {activeButton === "SMEs" && <BusinessCard data={businessDetail[1]} />}
-          {activeButton === "Enterprises" && (
-            <BusinessCard data={businessDetail[2]} />
-          )}
+          {activeButton === "StartUps" && <BusinessCard onClick={onClick} data={businessDetail[0]} />}
+          {activeButton === "SMEs" && <BusinessCard onClick={onClick} data={businessDetail[1]} />}
+          {activeButton === "Enterprises" && (<BusinessCard onClick={onClick} data={businessDetail[2]} />)}
         </Box>
       </Box>
     </Box>

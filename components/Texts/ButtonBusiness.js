@@ -18,23 +18,23 @@ function ButtonBusiness({
         onClick={onClick}
         sx={{
           color: color,
-          fontWeight: "200",
-          fontSize: "18px",
-          border: `1px solid ${disableHoverEffect ? background : "#18B0E6"}`,
+          fontWeight: "500",
+          borderRadius: 1,
+          fontSize: "17px",
+          fontFamily: 'Mont-Regular, Sans-serif',
+          border: `2px solid ${disableHoverEffect ? background : "#18B0E6"}`,
           textTransform: "none",
           background: background,
-          paddingTop: "10px",
-          paddingBottom: "10px",
-          fontFamily:"Mont-Regular, Sans-serif",
+          paddingTop: "12px",
+          paddingBottom: "12px",
           paddingLeft: paddingLeft,
           paddingRight: paddingRight,
           marginTop: "8px",
           "&:hover": {
             backgroundColor: disableHoverEffect ? background : "#18B0E6",
             color: disableHoverEffect ? color : "white",
-            border: `1px solid ${
-              disableHoverEffect ? background : "#18B0E6"
-            }`,
+            border: `1px solid ${disableHoverEffect ? background : "#18B0E6"
+              }`,
           },
         }}
       >

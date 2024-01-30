@@ -15,7 +15,7 @@ function DevelopmentCard({ background, title, Description }) {
           background: background,
           transition: "transform 1s ease", // Adding transition for the transform property
           transform: isHovered ? "translateY(-12px)" : "translateY(0)",
-          marginTop: "8%",
+          marginTop: "6%",
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -23,11 +23,11 @@ function DevelopmentCard({ background, title, Description }) {
         <CardContent style={{ marginLeft: "5%" }}>
           <Typography
             sx={{
-              fontSize: '1.5rem',
+              fontSize: '1.5em',
               fontWeight: 600,
               marginTop: "13%",
               color: "#FFFFFF",
-              fontFamily:"Mont-Bold, Sans-serif",
+              fontFamily: '"Mont-bold", Sans-serif',
             }}
             gutterBottom
           >
@@ -39,7 +39,7 @@ function DevelopmentCard({ background, title, Description }) {
               fontWeight: 100,
               marginTop: "18%",
               color: "#FFFFFF",
-              fontFamily:"Mont-Regular, Sans-serif",
+              fontFamily: "Mont-Regular, Sans-serif",
               height: "9rem",
             }}
           >
@@ -50,10 +50,10 @@ function DevelopmentCard({ background, title, Description }) {
           >
             <Typography
               sx={{
-                fontSize: "16px",
-                fontWeight: 500,
+                fontSize: "15px",
+                fontWeight: '500',
                 color: "#FFFFFF",
-                fontFamily:"Mont-Regular, Sans-serif",
+                fontFamily: "Mont-Regular, Sans-serif",
               }}
             >
               GET STARTED

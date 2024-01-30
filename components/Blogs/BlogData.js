@@ -99,13 +99,6 @@ const blogData = [
     jjjparagraph: "So, buckle up, hit the gas, and let’s supercharge your IT team together!",
     oooparagraph: "Bonus Tip: Remember, team augmentation is a partnership, not a quick fix. Invest in building strong relationships with your augmented team members to create a cohesive, high-performing unit. You can learn more about growing your business with staff augmentation here. If you’re curious about common myths and misconceptions around IT sourcing and staff augmentation, you can read more about it in our Myth Buster Series (Part 3).",
 
-
-
-
-
-
-
-
   },
   {
     id: 91,

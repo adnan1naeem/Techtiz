@@ -40,3 +40,8 @@ img {
   src: local("AirbnbCerealLight"),
     url("../fonts/FontsFree-Net-Mont-Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Acme-Regular";  
+  src: local("AirbnbCerealLight"),
+    url("../fonts/Acme-Regular.ttf") format("truetype");
+}

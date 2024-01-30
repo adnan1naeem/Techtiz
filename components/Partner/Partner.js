@@ -1,23 +1,23 @@
 import React from "react";
 import PartnerCard from "../PartnerCard/PartnerCard";
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import ButtonBusiness from "../Texts/ButtonBusiness";
 
-function Partner({onPress}) {
+function Partner({ onPress }) {
   return (
     <Box
       sx={{
         background:
           "radial-gradient(at center center, #1594c6 25%, #153a5f 85%);",
         marginTop: "5%",
-        paddingTop: "3%",
+        paddingTop: "4%",
       }}
     >
       <Typography
         sx={{
           textAlign: "center",
           color: "#FFFFFF",
-          fontSize:  { xs: "2em", sm: "2.5em", md: "2.7em" ,lg:'2.7em'},
+          fontSize: { xs: "2em", sm: "2.5em", md: "2.7em", lg: '2.7em' },
           fontWeight: "600",
           lineHeight: "53px",
         }}
@@ -51,15 +51,46 @@ function Partner({onPress}) {
         />
       </Box>
       <Box
-        sx={{ display: "flex",  justifyContent: "center", paddingBottom: "3%" }}
+        sx={{ display: "flex", justifyContent: "center", }}
       >
-        <ButtonBusiness
+        <Button
+          variant="outlined"
+          type="submit"
+          onClick={onPress}
+          sx={{
+            paddingBottom: "3%",
+            fontFamily: 'Mont-Regular, Mont-Bold',
+            color: 'white',
+            fontWeight: "500",
+            borderRadius: 3,
+            fontSize: "17px",
+            border: '3px solid #18B0E6 !important',
+            textTransform: "none",
+            paddingTop: "12px",
+            paddingBottom: "12px",
+            paddingLeft: "30px",
+            paddingRight: "30px",
+            marginTop: "8px",
+            "&:hover": {
+              backgroundColor: "#18B0E6",
+              color: "white",
+              border: '3px solid #18B0E6 !important',
+              borderRadius: 3,
+              width: '10rem',
+
+
+            },
+          }}
+        >
+          Let's Start
+        </Button>
+        {/* <ButtonBusiness
           text="Let's Start"
           color="white"
           paddingLeft="30px"
           paddingRight="30px"
           onClick={onPress}
-        />
+        /> */}
       </Box>
     </Box>
   );

@@ -12,7 +12,7 @@ import {
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { FaSquare } from "react-icons/fa";
 
-function BusinessCard({ data }) {
+function BusinessCard({ data, onClick }) {
   return (
     <Box>
       <Card
@@ -31,10 +31,10 @@ function BusinessCard({ data }) {
             fontWeight: 700,
             marginTop: "3%",
             color: "#153A5F",
-            fontFamily: "Mont bold, Sans-serif",
+            fontFamily: "Mont-bold, Sans-serif",
             textAlign: "center",
-            marginLeft:'-8%'
-            
+            marginLeft: '-8%'
+
           }}
         >
           {data?.title}
@@ -68,14 +68,14 @@ function BusinessCard({ data }) {
           >
             <List>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F" ,fontSize:'18px'}} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '18px' }} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
                     fontSize: "17px",
                     fontWeight: "400",
                     color: "#54595F",
-                    fontFamily:"Mont-Regular, Sans-serif",
+                    fontFamily: "Mont-Regular, Sans-serif",
                   }}
                 >
                   {data?.point1}
@@ -84,14 +84,14 @@ function BusinessCard({ data }) {
             </List>
             <List>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F" ,fontSize:'18px'}} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '18px' }} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
                     fontSize: "17px",
                     fontWeight: "400",
                     color: "#54595F",
-                    fontFamily:"Mont-Regular, Sans-serif",
+                    fontFamily: "Mont-Regular, Sans-serif",
                   }}
                 >
                   {data?.point2}
@@ -100,14 +100,14 @@ function BusinessCard({ data }) {
             </List>
             <List>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F",fontSize:'18px' }} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '18px' }} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
                     fontSize: "17px",
                     fontWeight: "400",
                     color: "#54595F",
-                    fontFamily:"Mont-Regular, Sans-serif",
+                    fontFamily: "Mont-Regular, Sans-serif",
                   }}
                 >
                   {data?.point3}
@@ -118,6 +118,7 @@ function BusinessCard({ data }) {
             <CardActions sx={{ marginTop: "10%" }}>
               <Button
                 variant="contained"
+                onClick={onClick}
                 endIcon={<IoMdArrowRoundForward />}
                 sx={{
                   padding: "2.8%",

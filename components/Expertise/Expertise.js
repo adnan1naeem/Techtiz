@@ -4,14 +4,14 @@ import { Box, Typography } from "@mui/material";
 function Expertise() {
   return (
     <Box sx={{ background: "#18B0E6", marginTop: "2%" }}>
-      <Box sx={{ paddingTop: "3%", display: "flex", flexDirection: "column" }}>
+      <Box sx={{ paddingTop: "4%", display: "flex", flexDirection: "column" }}>
         <Typography
           sx={{
             textAlign: "center",
             color: "#FFFFFF",
             fontSize: "43.2px",
             fontWeight: "600",
-             fontFamily:"Mont-Bold, Sans-serif",
+            fontFamily: "Mont-Bold, Sans-serif",
           }}
         >
           Our Expertise
@@ -21,8 +21,8 @@ function Expertise() {
             textAlign: "center",
             marginTop: "2%",
             color: "#FFFFFF",
-            fontFamily:"Mont-Regular, Sans-serif",
-            fontWeight:'300'
+            fontFamily: "Mont-Regular, Sans-serif",
+            fontWeight: '300'
 
           }}
         >
