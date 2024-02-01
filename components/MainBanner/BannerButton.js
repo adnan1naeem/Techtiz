@@ -10,7 +10,8 @@ export default function BannerButton({ onClick }) {
             sx={{
                 //fontFamily: 'Mont-Regular, Acme-Regular',
                 color: '#153A5F',
-                fontWeight: "500",
+                fontWeight: "400",
+                fontFamily: 'Mont-Regular, Sans-serif',
                 borderRadius: 1,
                 fontSize: "17px",
                 border: '3px solid #ffffff !important',
@@ -20,17 +21,12 @@ export default function BannerButton({ onClick }) {
                 paddingBottom: "12px",
                 paddingLeft: '40px',
                 paddingRight: '40px',
-                marginTop: "8px",
+                marginTop: "12px",
                 "&:hover": {
                     backgroundColor: "#153A5F",
                     color: "white",
                     border: '3px solid #ffffff !important',
-                    borderRadius: 1,
-                    paddingTop: "12px",
-                    paddingBottom: "12px",
-                    paddingLeft: '40px',
-                    paddingRight: '40px',
-                    marginTop: "8px",
+                 
                 },
             }}
         >

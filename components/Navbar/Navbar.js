@@ -5,6 +5,7 @@ import TextNav from "../Texts/TextNav";
 import ButtonHover from "../Texts/ButtonHover";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
+import { Button } from "@mui/material";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
@@ -30,7 +31,9 @@ const Navbar = () => {
     };
   }, []);
 
-    return (
+  const closeMenu = () => setClick(false); // Function to close the menu
+
+  return (
     <div className={styles.header}>
       <div className={styles.container}>
         <Link href="/">
@@ -38,7 +41,6 @@ const Navbar = () => {
             className={styles.logo}
             src="https://techtiz.co/wp-content/uploads/2023/09/Techtiz-Logo-White@2x.webp"
             alt=""
-            
           />
         </Link>
 
@@ -50,7 +52,7 @@ const Navbar = () => {
           }
         >
           <li>
-            <Link href="/about">
+            <Link href="/about" onClick={closeMenu}>
               <TextNav label="About" />
             </Link>
           </li>
@@ -69,38 +71,39 @@ const Navbar = () => {
                 className={click ? styles.services : styles["services-menu"]}
               />
             </li>
+            
             <div className={styles["dropdown-content"]}>
-              <Link href="/mobile-application">Mobile Application</Link>
-              <Link href="/website">Web Development Services</Link>
-              <Link href="/ui-ux-design">UI/UX Design</Link>
-              <Link href="/sqa">SQA</Link>
+              <Link href="/mobile-application" onClick={closeMenu}>Mobile Application</Link>
+              <Link href="/website" onClick={closeMenu}>Web Development Services</Link>
+              <Link href="/ui-ux-design" onClick={closeMenu}>UI/UX Design</Link>
+              <Link href="/sqa" onClick={closeMenu}>SQA</Link>
             </div>
           </div>
 
           <li>
-            <Link href="/industries">
+            <Link href="/industries" onClick={closeMenu}>
               <TextNav label="Industries" />
             </Link>
           </li>
           <li>
-            <Link href="/portfolios">
-              <TextNav label="Case Study" />
+            <Link href="/portfolios" onClick={closeMenu}>
+              <TextNav label="Case Studies" />
             </Link>
           </li>
           <li>
-            <Link href="/blogs">
+            <Link href="/blogs" onClick={closeMenu}>
               <TextNav label="Blog" />
             </Link>
           </li>
 
           <li>
-            <Link href="/career">
-              <TextNav label="Career" />
+            <Link href="/career" onClick={closeMenu}>
+              <TextNav label="Carees" />
             </Link>
           </li>
         </ul>
         {isWideScreen && (
-          <div className={styles["btn-group"]} style={{ marginRight: "2%" }}>
+          <div className={styles["btn-group"]} style={{ marginRight: "2%"  }}>
             <Link href="/get-started">
               <ButtonHover textButton="Get Started" />
             </Link>

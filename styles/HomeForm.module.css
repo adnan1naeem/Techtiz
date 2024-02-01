@@ -21,11 +21,12 @@
   
 
 .input::placeholder{
-  color: #9ea8b1;
+  color: #c6cdd2;
 }
 .textarea::placeholder{
-  color: #9ea8b1;
+  color: #c6cdd2;
 }
+
 
 .input
  {
@@ -68,19 +69,19 @@
 } 
 
 .input:focus {
-   outline: 1.5px solid #ccd4d4;
+   outline: 1px solid #e3e8e8;
    transition: 50ms;
   
   }
 
   .select:focus {
-    outline: 1.5px solid #ccd4d4;
+    outline: 1px solid #e3e8e8;
     transition: 50ms;
    
    }
 
    .textarea:focus {
-    outline: 1.5px solid #ccd4d4;
+    outline: 1px solid #e3e8e8;
     transition: 50ms;
    
    }

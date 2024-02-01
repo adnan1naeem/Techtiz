@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import CoreCard from "./CoreCard";
 
+
 function Core() {
   return (
     <Box
@@ -35,7 +36,8 @@ function Core() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "2%",
+          gap: "1.3%",
+          mt:'1%'
         }}
       >
         <CoreCard

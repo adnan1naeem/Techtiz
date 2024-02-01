@@ -57,14 +57,14 @@ function Footer() {
       </Box>
       <Box
         sx={{
-          marginTop: "2%",
+          marginTop: "-4%",
           borderTop: "1px solid #ccc",
           display: "flex",
           justifyContent: "space-between",
           flexWrap: "wrap",
           paddingLeft: "10%",
           paddingRight: "10%",
-          paddingTop: "5%",
+          paddingTop: "4%",
           paddingBottom: "2.5%",
         }}
       >

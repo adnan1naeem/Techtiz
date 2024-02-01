@@ -11,8 +11,8 @@ function ExpertiseCard({ title, imageCard, height, description, href }) {
       <Link href={{ pathname: href }} style={{ textDecoration: 'none' }}>
         <Card
           sx={{
-            width: { xs: "21rem", sm: "25rem", md: "26rem", lg: "33rem" },
-            height: { xs: "31rem", sm: "20rem", md: "20rem", lg: "20rem" },
+            width: { xs: "21rem", sm: "25rem", md: "26rem", lg: "31rem" },
+            height: { xs: "31rem", sm: "20rem", md: "20rem", lg: "19rem" },
 
             borderRadius: "30px",
             background: "#F8F8F8",
@@ -28,7 +28,7 @@ function ExpertiseCard({ title, imageCard, height, description, href }) {
             sx={{
               display: "flex",
               flexDirection: { xs: "column", sm: "row", md: "row", lg: "row" },
-              marginTop: "14%",
+              marginTop: "13%",
               justifyContent: "space-between",
             }}
           >

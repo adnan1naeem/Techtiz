@@ -27,7 +27,8 @@ function MainBanner({ onPress }) {
     <Box
       sx={{
         background: "#153A5F",
-        width: '100%'
+        width: '100%',
+        height:{ xs:'140vh', sm:'100%',lg: "100%", xl: '110vh' }
       }}
     >
       <Box
@@ -40,15 +41,16 @@ function MainBanner({ onPress }) {
         }}
 
       >
-
+        <Box sx={{height: { xs: "40rem", sm: "50rem", md: "50rem", lg: "50rem", xl: '50rem' }}}>
         <Image
-          style={{ width: "300px", height: "50rem" }}
+          style={{ width: "300px", height: "100%" }}
+          
           src={Line}
           alt="no image"
           className={styles.responsive_img_Line}
         />
-
-        <Box sx={{ width: { xs: "21rem", sm: "25rem", md: "25rem", lg: "35rem", xl: '40rem' }, marginTop: { xs: "6%", sm: '25%', md: '20%', lg: "16%", xl: "14%" } }}>
+        </Box>
+        <Box sx={{ width: { xs: "22rem", sm: "25rem", md: "25rem", lg: "35rem", xl: '40rem' }, marginTop: { xs: "6%", sm: '25%', md: '20%', lg: "14%", xl: "10%" } }}>
           <img
             style={{ width: "100%" }}
             src="https://techtiz.co/wp-content/uploads/2023/09/app-dev.svg"
@@ -61,8 +63,8 @@ function MainBanner({ onPress }) {
       <Box
         sx={{
           position: "absolute",
-          top: { xs: 150, sm: 150, md: 150, lg: 220 },
-          left: { xs: 15, sm: 50, md: 100, lg: 150 },
+          top: { xs: 150, sm: 200, md: 210, lg: 210,xl:260 },
+          left: { xs: 15, sm: 50, md: 90, lg: 150 },
           width: { xs: "90%", sm: "70%", md: "60%", lg: "44%" },
           // backgroundColor: { xs: "red", sm: 'blue', md: 'green', lg: 'yellow' },
         }}
@@ -74,13 +76,13 @@ function MainBanner({ onPress }) {
               xs: "1.7rem",
               sm: "2.3rem",
               md: "2.8rem",
-              lg: "2.8rem",
+              lg: "2.8em",
             },
             fontWeight: "bold",
             textTransform: "uppercase",
             animation: `${fadeIn} 1s ease-in-out 5s forwards`,
             lineHeight: "50px",
-            fontFamily: "Mont-Bold, Acme-Regular"
+            fontFamily: "Mont-Bold, Sans-serif"
           }}
         >
           WE BUILD CUSTOM SOFTWARE AND CHART-TOPPING APPS FOR DISRUPTIVE
@@ -91,7 +93,7 @@ function MainBanner({ onPress }) {
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             gap: "20px",
-            marginTop: "8%",
+            marginTop: "4%",
             alignItems: { xs: "center", sm: "flex-start" },
           }}
         >
@@ -104,6 +106,7 @@ function MainBanner({ onPress }) {
             paddingLeft="40px"
             paddingRight="40px"
             onClick={onPress}
+
           />
         </Box>
       </Box>

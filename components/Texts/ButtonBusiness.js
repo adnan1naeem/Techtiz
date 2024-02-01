@@ -18,19 +18,20 @@ function ButtonBusiness({
         onClick={onClick}
         sx={{
           color: color,
-          fontWeight: "500",
+          fontWeight: "400",
           borderRadius: 1,
           fontSize: "17px",
           fontFamily: 'Mont-Regular, Sans-serif',
-          border: `2px solid ${disableHoverEffect ? background : "#18B0E6"}`,
+          border: `1px solid ${disableHoverEffect ? background : "#18B0E6"}`,
           textTransform: "none",
           background: background,
-          paddingTop: "12px",
-          paddingBottom: "12px",
+          paddingTop: "11px",
+          paddingBottom: "11px",
           paddingLeft: paddingLeft,
           paddingRight: paddingRight,
-          marginTop: "8px",
+          marginTop: "11px",
           "&:hover": {
+            
             backgroundColor: disableHoverEffect ? background : "#18B0E6",
             color: disableHoverEffect ? color : "white",
             border: `1px solid ${disableHoverEffect ? background : "#18B0E6"

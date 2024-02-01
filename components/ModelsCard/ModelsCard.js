@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import ButtonBusiness from "../Texts/ButtonBusiness";
 
-function ModelsCard( {maintitle,backgroundImage,onPress}) {
+function ModelsCard( {maintitle,backgroundImage,onPress,resource,titleresource}) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -40,6 +40,7 @@ function ModelsCard( {maintitle,backgroundImage,onPress}) {
                 width: "23rem",
                 height: "4rem",
                 borderRadius: "8px",
+                
               }}
             >
               <Typography
@@ -83,12 +84,10 @@ function ModelsCard( {maintitle,backgroundImage,onPress}) {
                 fontWeight: "600",
               }}
             >
-              DEDICATED RESOURCES
+             {resource}
             </Typography>
             <Typography color="white" sx={{ marginTop: "2%" }}>
-              Our team of enthusiastic software engineers understands what's
-              ideal for your business and creates pleasant user experiences for
-              your customers. Get Started
+             {titleresource}
             </Typography>
             <Box sx={{ marginTop: "2%" }}>
               <ButtonBusiness

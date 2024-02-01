@@ -13,9 +13,11 @@ function Weeks() {
         sx={{
           textAlign: "center",
           fontSize: { xs: "2.1em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
-          fontWeight: "600",
+          fontWeight: 'bold',
+          lineHeight:'50px',
           color: "#153A5F",
-          fontFamily: "Mont-Bold, Sans-serif",
+          fontFamily: '"Mont-bold", Sans-serif',
+   
 
         }}
       >
@@ -25,12 +27,13 @@ function Weeks() {
       <Typography
         sx={{
           textAlign: "center",
+          mt:'0.8%',
           width: { md: "100%", lg: "100%" },
           color: "#153A5F",
           lineHeight: "25px",
           fontSize: "1em",
-          fontWeight: '100',
-          fontFamily: 'MontRegular, Sans-serif',
+          fontWeight: '300',
+          fontFamily: 'Mont-Regular, Sans-serif',
         }}
       >
         With our proven express delivery, you'll get your custom build
@@ -40,8 +43,7 @@ function Weeks() {
 
       <Box
         sx={{
-          paddingLeft: { md: 10, lg: 20, xl: 25 },
-          paddingRight: { md: 10, lg: 20, xl: 25 },
+       
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",

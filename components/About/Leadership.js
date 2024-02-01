@@ -1,15 +1,20 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Ceo from "./Ceo";
+import image from "../../assets/download.png"
 
 function Leadership() {
   return (
     <Box
       sx={{
         background: "#F8F8F8",
-
+        backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/Sqr-Light-Outline.svg')`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: '1600px',
         paddingTop: "10%",
         paddingBottom: "10%",
+ 
+
       }}
     >
       <Typography

@@ -71,12 +71,13 @@ function Partner({ onPress }) {
             paddingLeft: "30px",
             paddingRight: "30px",
             marginTop: "8px",
+            mb:'5%',
             "&:hover": {
               backgroundColor: "#18B0E6",
               color: "white",
               border: '3px solid #18B0E6 !important',
               borderRadius: 3,
-              width: '10rem',
+                    
 
 
             },

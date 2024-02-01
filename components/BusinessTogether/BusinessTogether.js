@@ -21,11 +21,12 @@ function BusinessTogether({ onClick }) {
     <Box sx={{ marginTop: "5%" }}>
       <Typography
         sx={{
-          fontWeight: 600,
-          fontSize: "42.2px",
+          fontWeight: 'bold',
+          fontSize: "2.6em",
+          lineHeight:'50px',
           textAlign: "center",
           color: "#153A5F",
-          fontFamily: '"Mont-bold", Sans-serif',
+          fontFamily: "Mont-bold, Sans-serif",
         }}
       >
         Let's Grow Your Business Together
@@ -35,10 +36,11 @@ function BusinessTogether({ onClick }) {
           fontWeight: 400,
           textAlign: "center",
           color: "#153A5F",
-          fontSize: "14px",
+          fontSize: "1em",
+          lineHeight:'25px',
           mt: '1.2rem',
           fontFamily: 'Mont-Regular, Sans-serif',
-          fontWeight: '100'
+          fontWeight: '300'
         }}
       >
         With the right tech partner, your business can go places
@@ -59,24 +61,24 @@ function BusinessTogether({ onClick }) {
             background={activeButton === "StartUps" ? "#153A5F" : "#f1f2f3"}
             color={activeButton === "StartUps" ? "white" : "#54595F"}
             onClick={() => handleButtonClick("StartUps")}
-            paddingLeft="80px"
-            paddingRight="80px"
+            paddingLeft="85px"
+            paddingRight="85px"
           />
           <ButtonBusiness
             text="SMEs"
             background={activeButton === "SMEs" ? "#153A5F" : "#f1f2f3"}
             color={activeButton === "SMEs" ? "white" : "#54595F"}
             onClick={() => handleButtonClick("SMEs")}
-            paddingLeft="93px"
-            paddingRight="93px"
+            paddingLeft="96px"
+            paddingRight="96px"
           />
           <ButtonBusiness
             text="Enterprises"
             background={activeButton === "Enterprises" ? "#153A5F" : "#f1f2f3"}
             color={activeButton === "Enterprises" ? "white" : "#54595F"}
             onClick={() => handleButtonClick("Enterprises")}
-            paddingLeft="69px"
-            paddingRight="69px"
+            paddingLeft="74px"
+            paddingRight="74px"
           />
         </Box>
 

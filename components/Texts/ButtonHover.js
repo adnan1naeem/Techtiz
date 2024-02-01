@@ -21,7 +21,8 @@ function ButtonHover({ textButton }) {
 
           "&:hover": {
             backgroundColor: "#18B0E6", // Set the desired background color on hover
-            transition: '0.5s',
+            border: "2.2px solid #18B0E6",
+  
             
           },
         }}

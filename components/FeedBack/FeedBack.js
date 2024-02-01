@@ -109,9 +109,9 @@ function FeedBack() {
       </Typography>
       <Box
         sx={{
-          marginLeft: '16%',
-          marginRight: '16%',
-          paddingTop: '2%'
+          marginLeft: '12%',
+          marginRight: '12%',
+          paddingTop: '4%'
         }}
       >
         <Slider {...settings}>

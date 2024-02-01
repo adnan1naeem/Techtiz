@@ -10,7 +10,7 @@ function Enterprises({ onPress }) {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "11%" }
+        marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "12%" }
 
       }}
     >
@@ -58,10 +58,10 @@ function Enterprises({ onPress }) {
         sx={{
           marginTop: "3%",
           boxShadow:'none',
-         pt:'0.6%',
-         pb:'0.6%',
-          paddingLeft: "2.4%",
-          paddingRight: "2.4%",
+         pt:'0.7%',
+         pb:'0.7%',
+          paddingLeft: "2.6%",
+          paddingRight: "2.6%",
           borderRadius: 1,
           textTransform: "none",
           fontSize: "16px",

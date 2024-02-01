@@ -6,12 +6,12 @@ function DevelopmentCard({ background, title, Description }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Box>
+    <Box >
       <Card
         sx={{
-          width: { xs: "21rem", sm: "22rem", md: "22em", lg: "22rem" },
-          height: "22rem",
-          borderRadius: "7px",
+          width: { xs: "21rem", sm: "22rem", md: "22em", lg: "22.5rem" },
+          height: "23rem",
+          borderRadius: "6px",
           background: background,
           transition: "transform 1s ease", // Adding transition for the transform property
           transform: isHovered ? "translateY(-12px)" : "translateY(0)",
@@ -24,7 +24,8 @@ function DevelopmentCard({ background, title, Description }) {
           <Typography
             sx={{
               fontSize: '1.5em',
-              fontWeight: 600,
+              fontWeight: 'bold',
+              lineHeight:'50px',
               marginTop: "13%",
               color: "#FFFFFF",
               fontFamily: '"Mont-bold", Sans-serif',
@@ -40,6 +41,7 @@ function DevelopmentCard({ background, title, Description }) {
               marginTop: "18%",
               color: "#FFFFFF",
               fontFamily: "Mont-Regular, Sans-serif",
+              lineHeight:'25px',
               height: "9rem",
             }}
           >
@@ -51,7 +53,7 @@ function DevelopmentCard({ background, title, Description }) {
             <Typography
               sx={{
                 fontSize: "15px",
-                fontWeight: '500',
+                fontWeight: '300',
                 color: "#FFFFFF",
                 fontFamily: "Mont-Regular, Sans-serif",
               }}
@@ -63,7 +65,7 @@ function DevelopmentCard({ background, title, Description }) {
                 marginTop: "-1%",
                 fontSize: "25px",
                 color: "#FFFFFF",
-                fontWeight: "300",
+                fontWeight: "100",
                 transform: "rotate(-40deg)",
               }}
             />
