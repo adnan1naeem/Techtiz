@@ -42,7 +42,7 @@ function Networking({onPress}) {
                 <SocialNetworking onPress={onPress} />
                 <Box
                     sx={{
-                        width: { xs: "100%", sm: "80%", md: "40%", lg: "40%", xl: "35%" },
+                        width: { xs: "100%", sm: "80%", md: "40%", lg: "35%", xl: "30%" },
                     }}
                 >
                     <img

@@ -1,8 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-// import Navbar from "../NavBar/NavBar";
-import Link from "next/link";
 import { FaCalendar } from "react-icons/fa";
-
 import React from "react";
 import BlogSecondCard from "../../components/Blogs/BlogSecondCard";
 import RelatedCard from "../../components/Blogs/RelatedCard";
@@ -10,49 +7,65 @@ import BlogBlodText from "../../components/Blogs/BlogBlodText";
 import BlogLightText from "../../components/Blogs/BlogLightText";
 import { useRouter } from "next/router";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
-import styles from '../../styles/Blog.module.css'
-
+import styles from "../../styles/Blog.module.css";
+import blogData from "../../components/Blogs/BlogData";
 
 function BlogDescription() {
   const router = useRouter();
   const item = router.query;
   const parsedItem = JSON.parse(router?.query?.state || "{}");
 
-
-
+  const openBlogTitle = parsedItem?.title;
+  const filteredBlogData = blogData.filter(
+    (blog) => blog.title !== openBlogTitle
+  );
+  const blogSecondCards = filteredBlogData.slice(0, 3);
+  const relatedCards = filteredBlogData.slice(3, 6);
   const handleLinkClick = (item) => {
     router.push({
-      pathname: '/BlogDateFilter',
-      query: { state: JSON.stringify(item) },
+      pathname: "/BlogDateFilter",
+      query: item,
     });
   };
 
-
-
+  const handleLinkDes = (item) => {
+    router.push({
+      pathname: "/BlogDescription",
+      query: { state: JSON.stringify(item) },
+    });
+  };
 
   const renderContent = () => {
     const keys = Object.keys(parsedItem);
     const contentArray = [];
 
     const filteredKeys = keys.filter(
-      (key) => !["title", "image", "date", "tags", 'id', "Sub_discription",].includes(key.toLowerCase())
+      (key) =>
+        !["title", "image", "date", "tags", "id", "Sub_discription"].includes(
+          key.toLowerCase()
+        )
     );
 
     filteredKeys.forEach((prefix, index) => {
       if (Array.isArray(parsedItem[prefix])) {
         parsedItem[prefix].forEach((paragraph, paragraphIndex) => {
           contentArray.push(
-            <BlogLightText key={`${index}_${paragraphIndex}`} text={paragraph} />
+            <BlogLightText
+              key={`${index}_${paragraphIndex}`}
+              text={paragraph}
+            />
           );
         });
       } else if (prefix.includes("heading")) {
         contentArray.push(
           <BlogBlodText key={index} text={parsedItem[prefix]} />
         );
-      } else if (prefix.includes('dot')) {
+      } else if (prefix.includes("dot")) {
         contentArray.push(
-          <Grid sx={{ mb: '2%' }}>
-            <Typography sx={{ color: '#153A5F', fontSize: '16px', }} key={index}>• {parsedItem[prefix]}</Typography>
+          <Grid sx={{ mb: "2%" }}>
+            <Typography sx={{ color: "#153A5F", fontSize: "16px" }} key={index}>
+              • {parsedItem[prefix]}
+            </Typography>
           </Grid>
         );
       } else {
@@ -113,7 +126,6 @@ function BlogDescription() {
               onClick={() => handleLinkClick(item)}
               style={{ textDecoration: "none" }}
               state={item}
-
             >
               <Typography
                 sx={{
@@ -146,9 +158,21 @@ function BlogDescription() {
                 placeholder="Search..."
               />
             </form>
-            <BlogSecondCard />
-            <BlogSecondCard />
-            <BlogSecondCard />
+            {blogSecondCards.map((blog, index) => (
+              <div
+                onClick={() => handleLinkDes(blog)}
+                style={{ textDecoration: "none" }}
+                state={blog}
+                key={index}
+              >
+                <BlogSecondCard
+                  key={index}
+                  image={blog.image}
+                  des={blog.title}
+                  date={blog.date}
+                />
+              </div>
+            ))}
           </Box>
         </Box>
         <Box sx={{ marginTop: "10%" }}>
@@ -174,9 +198,21 @@ function BlogDescription() {
               justifyContent: "center",
             }}
           >
-            <RelatedCard />
-            <RelatedCard />
-            <RelatedCard />
+            {relatedCards.map((blog, index) => (
+              <div
+                onClick={() => handleLinkDes(blog)}
+                style={{ textDecoration: "none" }}
+                state={blog}
+                key={index}
+              >
+                <RelatedCard
+                  key={index}
+                  image={blog.image}
+                  des={blog.title}
+                  date={blog.date}
+                />
+              </div>
+            ))}
           </Box>
         </Box>
         <SalesTeam />

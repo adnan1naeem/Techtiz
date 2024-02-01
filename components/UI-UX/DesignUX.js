@@ -4,11 +4,11 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 function DesignUX({onPress}) {
   return (
     <Box
-      sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
+      sx={{ display: "flex", justifyContent: "center", alignContent: "center",mt:"-1%" }}
     >
       <Card
         sx={{
-          width: { xs: "23rem", sm: "33rem", md: "28rem", lg: "36rem" },
+          width: { xs: "23rem", sm: "33rem", md: "36rem", lg: "36rem" },
           height: { xs: "35rem", sm: "32rem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",
@@ -62,12 +62,12 @@ function DesignUX({onPress}) {
             sx={{
               color: "#153A5F",
               fontSize: "1.1em",
-              fontWeight: "400",
+              fontWeight: "300",
               marginTop: "5%",
             }}
           >
-            With our user-friendly and responsive interfaces, you can establish
-            an online presence, drive growth, and disrupt your industry
+            With our user-friendly and responsive interfaces, you <br/> can establish
+            an online presence, drive growth, and <br/> disrupt your industry
           </Typography>
           <Button
             variant="contained"

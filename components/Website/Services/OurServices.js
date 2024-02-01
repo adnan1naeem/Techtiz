@@ -20,9 +20,9 @@ function OurServices() {
         sx={{
           display: "flex",
           justifyContent: "center",
-          gap: "2.1%",
+          gap: "1%",
           flexWrap: "wrap",
-          marginTop: "4%",
+          marginTop: "3px",
           paddingBottom: "6%",
         }}
       >

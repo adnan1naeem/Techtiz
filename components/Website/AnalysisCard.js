@@ -8,12 +8,12 @@ function AnalysisCard({ title, lists,lgTop,xlTop ,image}) {
       sx={{
         display: "flex",
         justifyContent: "center",
-        gap: "10%",
+        gap: "12%",
         marginTop: "7%",
         flexWrap: "wrap",
       }}
     >
-      <Box sx={{ width: { xs: "21rem", sm: "20em", md: "20em", lg: "19em" } }}>
+      <Box sx={{ width: { xs: "21rem", sm: "20em", md: "20em", lg: "17em" } }}>
         <img
           src={image}
           alt=""

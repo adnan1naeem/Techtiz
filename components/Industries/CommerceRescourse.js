@@ -15,7 +15,7 @@ function CommerceRescourse({ onPress }) {
         >
             <Card
                 sx={{
-                    width: { xs: "30rem", sm: "35rem", md: "42rem", lg: "60rem", xl: '70rem' },
+                    width: { xs: "30rem", sm: "35rem", md: "42rem", lg: "70rem", xl: '70rem' },
                     height: { xs: "55rem", sm: "70rem", md: "60rem", lg: "33rem" },
                     borderRadius: "60px",
                     background: "#153A5F",
@@ -25,14 +25,14 @@ function CommerceRescourse({ onPress }) {
             >
                 <CardContent sx={{
                     display: "flex", flexDirection: "row",
-                    gap: '10%',
+                    gap: '12%',
                     flexWrap: 'wrap-reverse',
                     alignItems: 'center',
                     justifyContent: "center",
                 }}>
                     <Box
                         sx={{
-                            width: { xs: "90%", sm: "60%", md: "46%", lg: "30%", xl: "30%" }, mt: { xs: "-36%", sm: "-10%", md: "-10rem", lg: "5%", xl: '-1%' }
+                            width: { xs: "90%", sm: "60%", md: "46%", lg: "31%", xl: "30%" }, mt: { xs: "-36%", sm: "-10%", md: "-10rem", lg: "-10%", xl: '-10%' }
                         }}
                     >
                         <img
@@ -59,11 +59,11 @@ function CommerceRescourse({ onPress }) {
 
                                 <Typography
                                     sx={{
-                                        color: "#18B0E6",
-                                        fontSize: "1.2em",
-                                        fontWeight: "700",
-                                        borderLeft: "11px solid #18B0E6",
-                                        height: "20px",
+                                        color: "#6EC1E4",
+                                        fontSize: "1.4em",
+                                        fontWeight: "bold",
+                                        borderLeft: "9px solid #18B0E6",
+                                        height: "18px",
                                         paddingLeft: "10px",
                                         lineHeight: '20px',
 
@@ -84,19 +84,23 @@ function CommerceRescourse({ onPress }) {
                                 </Typography>
                                 <Box sx={{ marginTop: "3%", paddingLeft: "5%" }}>
                                     <List
-                                        listone="Inventory management systems"
+                                        listone="Custom designs and themes"
                                         textColor="#F8F8F8"
                                     />
                                     <List
-                                        listone="Delivery tracking software"
+                                        listone="Customer-focused website development"
                                         textColor="#F8F8F8"
                                     />
                                     <List
-                                        listone="User-friendly and efficient mobile applications"
+                                        listone="Sales-oriented e-commerce applications"
                                         textColor="#F8F8F8"
                                     />
                                     <List
-                                        listone="Validation and standardization of data"
+                                        listone="Rejoicing sales environment on the website"
+                                        textColor="#F8F8F8"
+                                    />
+                                    <List
+                                        listone="Maintenance and support"
                                         textColor="#F8F8F8"
                                     />
                                 </Box>

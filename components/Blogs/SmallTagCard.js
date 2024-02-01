@@ -25,8 +25,7 @@ function SmallTagCard({ image, des, date }) {
                 fontSize: "15px",
               }}
             >
-              Debunking Myths about IT Outsourcing and Staff Augmentation – Myth
-              Buster Series (Part 3)
+             {des}
             </Typography>
             <Typography
               sx={{
@@ -37,13 +36,13 @@ function SmallTagCard({ image, des, date }) {
                 width: "100%",
               }}
             >
-              December 31, 2023
+             {date}
             </Typography>
           </Box>
-          <CardMedia
-            image="https://techtiz.co/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-18-at-13.55.20-300x169.jpeg"
-            sx={{ width: "260px", height: "140px" }}
-          />
+          <img style={{ width: "100px", height: "130px"}} src={image}/>
+      
+           
+          
         </CardContent>
       </Card>
     </Box>

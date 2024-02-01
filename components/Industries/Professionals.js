@@ -14,7 +14,7 @@ function Professionals({ onPress }) {
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "31rem" },
+          width: { xs: "22rem", sm: "23rem", md: "31rem", lg: "31rem" },
           height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
           boxShadow: "none",
         }}
@@ -72,10 +72,10 @@ function Professionals({ onPress }) {
             sx={{
               marginTop: "8%",
 
-              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
+              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2%" },
               width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
-              paddingLeft: "1.3%",
-              paddingRight: "1.3%",
+              paddingLeft: "3%",
+              paddingRight: "3%",
               borderRadius: 1,
               textTransform: "none",
               fontSize: "16px",

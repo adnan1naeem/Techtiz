@@ -4,11 +4,11 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 function GrowWebsite({onPress}) {
   return (
     <Box
-      sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'4%'}}
+      sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'1%',mr:'8%'}}
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "38rem" },
+          width: { xs: "22rem", sm: "28rem", md: "27rem", lg: "38rem" },
           height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",
@@ -61,19 +61,19 @@ function GrowWebsite({onPress}) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.1em",
-              fontWeight: "400",
-              marginTop: "5%",
+              fontSize: "1.3em",
+              fontWeight: "300",
+              marginTop: "2%",
             }}
           >
-            Make your website stand out with our professional web development services.
+            Make your website stand out with our professional <br/> web development services.
           </Typography>
           <Button
             variant="contained"
             endIcon={<IoMdArrowRoundForward />}
             onClick={onPress}
             sx={{
-              marginTop: "8%",
+              marginTop: "6%",
 
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
               width: { xs: "100%", sm: "80%", md: "60%", lg: "35%" },

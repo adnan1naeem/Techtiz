@@ -33,9 +33,9 @@ function Stack() {
         sx={{
           width: "70%",
           marginLeft: "20%",
-          marginRight: "10%",
+          marginRight: "8%",
           paddingBottom:'10%',
-          marginTop:'3%'
+          marginTop:'1%'
         }}
       >
         <Box sx={{ display: "flex", flexWrap: "wrap", gap: "10%" }}>

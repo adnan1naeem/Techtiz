@@ -3,15 +3,24 @@ import { Box, Typography } from "@mui/material";
 import BlogButton from "./BlogButton";
 import styles from "../../styles/Blog.module.css";
 import SmallTagCard from "./SmallTagCard";
+import blogData from "./BlogData";
+import { useRouter } from 'next/router';
 
 function AllBlogButton({ onTagClick, search }) {
   const [selectedTag, setSelectedTag] = useState(null);
+  const router = useRouter();
 
   const handleTagClick = (tag) => {
     onTagClick(tag);
     setSelectedTag(tag);
   };
-
+  const SmallTagCardData = blogData.slice(0, 6);
+  const handleLinkDes = (item) => {
+    router.push({
+      pathname: "/BlogDescription",
+      query: { state: JSON.stringify(item) },
+    });
+  };
   return (
     <Box
       sx={{
@@ -48,10 +57,20 @@ function AllBlogButton({ onTagClick, search }) {
       <Box sx={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
         {selectedTag ? (
           <Box sx={{ mt: "-5%", ml: "-5%" }}>
-            <SmallTagCard />
-            <SmallTagCard />
-            <SmallTagCard />
-            <SmallTagCard />
+            {SmallTagCardData.map((blog, index) => (
+              <div
+                onClick={() => handleLinkDes(blog)}
+                style={{ textDecoration: "none" }}
+                state={blog}
+                key={index}
+              >
+              <SmallTagCard
+                image={blog?.image}
+                des={blog?.title}
+                date={blog?.date}
+              />
+              </div>
+            ))}
           </Box>
         ) : (
           <Box

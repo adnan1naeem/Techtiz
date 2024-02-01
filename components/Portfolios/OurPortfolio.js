@@ -9,7 +9,7 @@ function OurPortfolio({onPress}) {
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "31rem" },
+          width: { xs: "22rem", sm: "23rem", md: "31rem", lg: "31rem" },
           height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",
@@ -17,7 +17,7 @@ function OurPortfolio({onPress}) {
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
           <Typography
-            sx={{ color: "#153A5F", fontSize: "1.3em", fontWeight: "600" ,borderLeft:'3px solid #18B0E6',height:'20px',lineHeight:'20px', paddingLeft:'10px'}}
+            sx={{ color: "#153A5F", fontSize: "1.3em", fontWeight: "600" ,borderLeft:'3px solid #18B0E6',height:'18px',lineHeight:'20px', paddingLeft:'10px'}}
           >
              Our Portfolios
           </Typography>

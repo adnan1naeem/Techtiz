@@ -60,7 +60,7 @@ const blogData = [
       "Supercharge your IT Team: Best Practices for Seamless Team Augmentation",
     image:
       "https://techtiz.co/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-18-at-13.55.20.jpeg",
-    date: "January 22,2024",
+      date: "January 25, 2024",
     Sub_discription: "Team augmentation is a powerful tool to inject specific expertise into your workflows and tackle projects with newfound agility. It’s like injecting your team with hi-octane fuel, giving you the expertise and capacity to tackle any challenge. But like any other effective fuel, augmentation requires careful handling to avoid combustion. Before you strap yourself in for this ride into smarter tech strategy, these best practices make sure you’re ready to navigate the roadblocks and reap the rewards",
     aparagraph: "The IT landscape is a constant sprint, and sometimes, your internal team needs a little boost to keep up. Your IT team is the engine that drives your business towards growth and efficiency. But what happens when the workload roars past the redline? Do you white-knuckle it through or consider drastic measures like hiring a whole new crew?",
     bparagraph: "This is where team augmentation (also known as staff augmentation) comes in – a powerful tool to inject specific expertise into your workflows and tackle projects with newfound agility. It’s like injecting your team with hi-octane fuel, giving you the expertise and capacity to tackle any challenge. But like any other effective fuel, augmentation requires careful handling to avoid combustion.",

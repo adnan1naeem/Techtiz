@@ -59,10 +59,10 @@ function MVPsStartup({onPress}) {
                         Development of software for management distribution
                     </Typography>
                     <Box sx={{ marginTop: "3%" }}>
-                        <List listone="Inventory management systems" textColor="#F8F8F8" />
-                        <List listone="Delivery tracking software" textColor="#F8F8F8" />
-                        <List listone="User-friendly and efficient mobile applications" textColor="#F8F8F8" />
-                        <List listone="Validation and standardization of data" textColor="#F8F8F8" />
+                        <List listone="MVP software to test the idea behind new product" textColor="#F8F8F8" />
+                        <List listone="Improved market research and competitor analysis" textColor="#F8F8F8" />
+                        <List listone="Evaluation of customer feedback through MVPs" textColor="#F8F8F8" />
+                    
                     </Box>
                     <Button
                         variant="contained"

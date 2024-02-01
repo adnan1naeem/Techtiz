@@ -18,7 +18,7 @@ function BlogSecondCard({ image, des, date }) {
                     <Box sx={{ width: { xs: "21rem", sm: "23rem", md: "20rem", lg: "20rem" }, }}>
                         <img
                             style={{ width: "113%", height: "14.3rem" }}
-                            src="https://techtiz.co/wp-content/uploads/2023/08/5-2-300x150.jpg"
+                            src={image}
                             alt=""
                         />
                     </Box>
@@ -33,7 +33,7 @@ function BlogSecondCard({ image, des, date }) {
                             lineHeight: "25px",
                         }}
                     >
-                        Custom Software Development – Myth Buster Series (Part 1)
+                    {des}
                     </Typography>
 
                     <Box>
@@ -47,7 +47,7 @@ function BlogSecondCard({ image, des, date }) {
                                 mt: "1%",
                             }}
                         >
-                            August 6, 2023
+                            {date}
                         </Typography>
                     </Box>
                 </CardContent>

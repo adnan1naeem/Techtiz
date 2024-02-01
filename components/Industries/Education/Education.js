@@ -36,14 +36,15 @@ function Education({onPress}) {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "1%",
+          gap: "2%",
           paddingTop: "2%",
         }}
       >
         <Application onPress={onPress} />
         <Box
           sx={{
-            width: { xs: "90%", sm: "70%", md: "35%", lg: "35%", xl: "30%" },
+            width: { xs: "90%", sm: "70%", md: "40%", lg: "40%", xl: "35%" },
+            mt:{md:'7%',lg:'4%',xl:'1%'}
           }}
         >
           {/* Use next/image for image optimization */}

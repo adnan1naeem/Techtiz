@@ -24,7 +24,7 @@ function Transportation({onPress}) {
                     </Typography>
                     <Typography
                         sx={{
-                            color: "#18B0E6",
+                            color: "#6EC1E4",
                             fontSize: "1.1em",
                             fontWeight: "300",
                             marginTop: "2%",
@@ -34,11 +34,11 @@ function Transportation({onPress}) {
                     </Typography>
                     <Typography
                         sx={{
-                            color: "#18B0E6",
-                            fontSize: "1.2em",
-                            fontWeight: "700",
+                            color: "#6EC1E4",
+                            fontSize: "1.3em",
+                            fontWeight: "bold",
                             marginTop: "7%",
-                            borderLeft: "8px solid #18B0E6",
+                            borderLeft: "10px solid #18B0E6",
                             height: "18px",
                             lineHeight:'18px',
                             paddingLeft: "10px",

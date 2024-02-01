@@ -13,7 +13,7 @@ function DoIt() {
   };
 
   return (
-    <Box sx={{ marginTop: "5%" }}>
+    <Box sx={{ marginTop: "6%" }}>
       <Typography
         sx={{
           color: "#153A5F",
@@ -36,6 +36,7 @@ function DoIt() {
           padding: " 0.5% 0.5% 0.5% 0.5%",
           borderRadius: "40px",
           marginTop: "3%",
+          mb:'3%'
         }}
       >
         <DoButton

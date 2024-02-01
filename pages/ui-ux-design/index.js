@@ -25,14 +25,14 @@ function UI() {
                     sx={{
                         display: "flex",
                         justifyContent: "center",
-                        gap: "4%",
+                        gap: "1%",
                         flexWrap: "wrap",
                     }}
                 >
                     <DesignUX  onPress={handleClick} />
                     <Box
                         sx={{
-                            width: { xs: "100%", sm: "80%", md: "34%", lg: "38%", xl: "35%" },
+                            width: { xs: "100%", sm: "80%", md: "36%", lg: "38%", xl: "35%" },
                             transform: isHovered ? "translateY(-12px)" : "translateY(0)",
                             transition: "transform 1s ease",
                             marginTop: { xs: '10%', sm: '10%', md: 0, lg: 0 }

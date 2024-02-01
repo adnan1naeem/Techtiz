@@ -38,7 +38,7 @@ function Industries() {
                         <Professionals onPress={handleClick} />
                         <Box
                             sx={{
-                                width: { xs: "100%", sm: "80%", md: "80%", lg: "40%", xl: "35%" },
+                                width: { xs: "100%", sm: "80%", md: "45%", lg: "42%", xl: "35%" },
                                 transform: isHovered ? "translateY(-12px)" : "translateY(0)",
                                 transition: "transform 1s ease",
                                 marginTop: '1%',
@@ -59,7 +59,9 @@ function Industries() {
                             display: "flex",
                             flexWrap: "wrap",
                             justifyContent: "center",
-                            paddingTop: "3%",
+                            paddingTop: "8%",
+                            paddingBottom:'3%'
+
                         }}
                     >
                         <Box
@@ -71,7 +73,7 @@ function Industries() {
                             <img
                                 src="https://techtiz.co/wp-content/uploads/2023/12/Transportation.webp"
                                 alt=""
-                                style={{ width: "90%" }}
+                                style={{ width: "95%" }}
                             />
                         </Box>
                         <Transportation onPress={handleClick} />

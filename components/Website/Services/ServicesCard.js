@@ -12,8 +12,8 @@ function ServicesCard({ image, heading, text }) {
     >
       <Card
         sx={{
-          width: { xs: "21rem", sm: "21rem", md: "21rem", lg: "22rem" },
-          height: { xs: "19rem", sm: "19rem", md: "19rem", lg: "20rem" },
+          width: { xs: "21rem", sm: "21rem", md: "21rem", lg: "21rem" },
+          height: { xs: "19rem", sm: "19rem", md: "19rem", lg: "19rem" },
           borderRadius: "10px",
           background: "white",
 
@@ -31,7 +31,7 @@ function ServicesCard({ image, heading, text }) {
         >
           <Box
             sx={{
-              width: { xs: "6rem", sm: "6rem", md: "6rem", lg: "6rem" },
+              width: { xs: "6rem", sm: "6rem", md: "5rem", lg: "4rem" },
   
               "&:hover img": { transform: "scale(1.1)",transition: "transform 0.3s ease" }, 
             }}

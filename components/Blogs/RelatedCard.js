@@ -9,7 +9,7 @@ function RelatedCard({ image, des, date }) {
                     height: { xs: "32rem", sm: "32rem", md: "32rem", lg: "32rem" },
                     borderRadius: "2px",
                     background: "white",
-
+               
                     cursor: "pointer",
 
                     "&:hover": {
@@ -24,7 +24,7 @@ function RelatedCard({ image, des, date }) {
                     <Box sx={{ width: "21rem" }}>
                         <img
                             style={{ width: "113%", height: "15.3rem" }}
-                            src="https://techtiz.co/wp-content/uploads/2023/12/4-2-768x384.jpg"
+                            src={image}
                             alt=""
                         />
                     </Box>
@@ -38,8 +38,7 @@ function RelatedCard({ image, des, date }) {
                             fontSize: "21px",
                         }}
                     >
-                        The Future of MVP Development – Trends To Watch Out For in 2024 and
-                        Beyond
+                          {des}
                     </Typography>
                     <Box sx={{ mt: "8%", mr: "-5%" }}>
                         <Typography
@@ -52,7 +51,7 @@ function RelatedCard({ image, des, date }) {
                                 mt: { xs: "6%", sm: "4%" },
                             }}
                         >
-                            December 28, 2023
+                                  {date}
                         </Typography>
                     </Box>
                     <Typography

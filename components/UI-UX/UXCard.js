@@ -12,8 +12,8 @@ function UXCard({image,heading,text}) {
     >
       <Card
         sx={{
-          width: { xs: "21rem", sm: "32rem", md: "30rem", lg: "32rem" },
-          height: { xs: "22rem", sm: "18rem", md: "17rem", lg: "15rem" },
+          width: { xs: "21rem", sm: "32rem", md: "34rem", lg: "34rem" },
+          height: { xs: "22rem", sm: "18rem", md: "17rem", lg: "17rem" },
           borderRadius: "10px",
           background: "white",
          
@@ -31,7 +31,7 @@ function UXCard({image,heading,text}) {
           }}
         >
           <Box
-            sx={{ width: { xs: "5rem", sm: "5rem", md: "5rem", lg: "3.2rem" } ,"&:hover img": { transform: "scale(1.1)",transition: "transform 0.3s ease" },  }}
+            sx={{ width: { xs: "5rem", sm: "5rem", md: "3.5rem", lg: "3.5rem" } ,"&:hover img": { transform: "scale(1.1)",transition: "transform 0.3s ease" },  }}
           >
             <img
               style={{ width: "100%" 
@@ -53,7 +53,7 @@ function UXCard({image,heading,text}) {
               {heading}
             </Typography>
             <Typography
-              sx={{ color: "#153A5F", fontWeight: "400", fontSize: "0.9rem", lineHeight:'1.5em',marginBottom:'1px' }}
+              sx={{ color: "#153A5F", fontWeight: "300", fontSize: "1rem", lineHeight:'1.5em',marginBottom:'1px',}}
             >
              {text}
             </Typography>

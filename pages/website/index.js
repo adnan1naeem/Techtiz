@@ -26,7 +26,7 @@ function Web() {
           sx={{
             display: "flex",
             justifyContent: "center",
-            gap: "8%",
+            gap: "2px",
             flexWrap: "wrap",
           }}
         >
@@ -34,6 +34,8 @@ function Web() {
           <Box
             sx={{
               width: { xs: "100%", sm: "80%", md: "34%", lg: "28%", xl: "24%" },
+              mt:'-3%',
+              
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
             }}
