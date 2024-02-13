@@ -71,12 +71,12 @@ const Navbar = () => {
                 className={click ? styles.services : styles["services-menu"]}
               />
             </li>
-            
+
             <div className={styles["dropdown-content"]}>
               <Link href="/mobile-application" onClick={closeMenu}>Mobile Application</Link>
               <Link href="/website" onClick={closeMenu}>Web Development Services</Link>
               <Link href="/ui-ux-design" onClick={closeMenu}>UI/UX Design</Link>
-              <Link href="/sqa" onClick={closeMenu}>SQA</Link>
+              <Link href="/SQA" onClick={closeMenu}>SQA</Link>
             </div>
           </div>
 
@@ -103,7 +103,7 @@ const Navbar = () => {
           </li>
         </ul>
         {isWideScreen && (
-          <div className={styles["btn-group"]} style={{ marginRight: "2%"  }}>
+          <div className={styles["btn-group"]} style={{ marginRight: "2%" }}>
             <Link href="/get-started">
               <ButtonHover textButton="Get Started" />
             </Link>

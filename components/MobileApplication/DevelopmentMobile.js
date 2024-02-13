@@ -1,14 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import MobileServices from "./MobileServices";
 
-function DevelopmentMobile({onPress}) {
+function DevelopmentMobile({ onPress }) {
   return (
     <Box
       sx={{
         background: "#153A5F",
         marginTop: "1%",
         backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/bg-lines.png')`,
-        backgroundRepeat:'no-repeat',
+        backgroundRepeat: 'no-repeat',
         backgroundSize: '260px',
 
         paddingBottom: "5%",

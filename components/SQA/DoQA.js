@@ -24,6 +24,8 @@ function DoQA() {
           flexWrap: "wrap",
           marginTop: "1%",
           paddingBottom: "6%",
+          ml: '7rem',
+          mr: '7rem'
         }}
       >
         <ServicesCard
