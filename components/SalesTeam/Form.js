@@ -28,14 +28,13 @@ function Form() {
           console.log(error.text);
         }
       );
-    e.target.reset();
-  };
-
-  const handleClick = () => {
-    setShowAlert(true);
+      setShowAlert(true);
     setTimeout(() => setShowAlert(false), 7000);
+    e.target.reset();
+    
   };
 
+  
   const [showAlert, setShowAlert] = React.useState(false);
 
   return (
@@ -50,7 +49,7 @@ function Form() {
       <div>
         <form ref={form} onSubmit={sendEmail}>
           <div style={{ marginBottom: "7px" }}>
-            <select className={styles.select} id="selection" name="question">
+            <select className={styles.select} id="selection" name="question" required>
               <option value="how">How Can we help you?</option>
               <option value="web">Web Application</option>
               <option value="ui/ux">UI/UX</option>
@@ -73,6 +72,7 @@ function Form() {
                 type="text"
                 placeholder="First Name"
                 name="from_name"
+                required
               />
 
               <input
@@ -80,6 +80,7 @@ function Form() {
                 type="text"
                 placeholder="Last Name"
                 name="from_lastname"
+                required
               />
             </div>
             <div
@@ -95,12 +96,14 @@ function Form() {
                 type="text"
                 placeholder="E-mail Address"
                 name="from_email"
+                required
               />
               <input
                 className={styles.input}
                 type="text"
                 placeholder="Phone"
                 name="from_phone"
+                required
               />
             </div>
 
@@ -110,13 +113,14 @@ function Form() {
               rows={8}
               cols={60}
               name="message"
+              required
             ></textarea>
           </div>
 
           <Button
             type="submit"
             variant="contained"
-            onClick={handleClick}
+            
             sx={{
               marginTop: "5px",
               marginBottom: "3px",
