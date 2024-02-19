@@ -4,6 +4,46 @@ import styles from "../../styles/CareerForm.module.css";
 import image from "../../public/up-arrow.png";
 
 const ImgForm = () => {
+  const [email, setEmail] = useState('');
+  const [file, setFile] = useState(null);
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleFileChange = (event) => {
+    console.log('==>', (event.target))
+    if (event.target.files.length > 0) {
+      const path = (event.target.files[0])
+      console.log(event.target.files)
+      setFile(path);
+    }
+  };
+
+  const handleSubmit = async (event) => {
+
+    event.preventDefault();
+    const formData = new FormData();
+    console.log(file)
+    formData.append('path', file);
+    formData.append('email', email);
+
+    try {
+      const response = await fetch('/api/emailHandler', {
+        method: 'POST',
+        body: formData,
+      });
+      console.log("response:: ", response);
+      if (response.ok) {
+        alert('Submitted!');
+      } else {
+        throw new Error('Failed to upload file and send email.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
   return (
     <div className={styles.main}>
       <div className={styles.career}>Careers</div>
@@ -21,22 +61,31 @@ const ImgForm = () => {
       </div>
 
       <div className={styles.form_section}>
-        <form className={styles.Careers_form}>
+        <form className={styles.Careers_form} onSubmit={handleSubmit}>
           <div className={styles.group_one}>
-            <label for="email">Enter Your Email</label>
+            <label htmlFor="email">Enter Your Email</label>
             <input
               className={styles.email}
-              type="text"
+              type="email"
               placeholder="abc@gmail.com"
+              value={email}
+              required
+              onChange={handleEmailChange}
             />
           </div>
           <div className={styles.group_second}>
-            <label for="email">Upload Your CV</label>
-            <input className={styles.file} type="file" />
+            <label htmlFor="file">Upload Your CV</label>
+            <input
+              required
+              className={styles.file}
+              type="file"
+              onChange={handleFileChange}
+              accept="application/pdf"
+            />
           </div>
           <div className={styles.button}>
-            <button className={styles.submit_button}>
-              Submit&nbsp; <Image src={image} width={20} height={15} />
+            <button type="submit" className={styles.submit_button}>
+              Submit
             </button>
           </div>
         </form>
