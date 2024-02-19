@@ -2,8 +2,10 @@ import nodemailer from 'nodemailer'
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-        const { email, path } = req.body
-        if (!(email && path)) {
+        const { email, content } = (req.body)
+        console.log('==>', Object.keys({ email, content }))
+        console.log(req.body)
+        if (!(email && content)) {
             return res.status(400).json({
                 error: 'Bad Request',
                 message: "Invalid Body"
@@ -18,14 +20,15 @@ export default async function handler(req, res) {
                 }
             });
             const mailOptions = {
-                from: 'mbhatti@techtiz.co',
-                to: 'mbhatti@techtiz.co',
+                from: 'Applicant <hr@techtiz.co>',
+                to: 'hr@techtiz.co',
                 subject: `CV Received from ${email}`,
                 html: `<p>Email Received: ${email}</>`,
                 attachments: [
                     {
-                        filename: `${email}.jpg`,
-                        path,
+                        filename: `${email}.pdf`,
+                        content,
+                        encoding: 'base64'
                     }
                 ]
             };
@@ -38,7 +41,6 @@ export default async function handler(req, res) {
                 console.log(info)
                 return res.send('File uploaded and email sent successfully!');
             });
-            // return res.status(200).send();
         } catch (error) {
             console.error('Error reading PDF file:', error);
             return res.status(500).json({ error: 'Internal Server Error' });
@@ -48,5 +50,10 @@ export default async function handler(req, res) {
     }
 }
 export const config = {
-    maxDuration: 30
+    maxDuration: 30,
+    api: {
+        bodyParser: {
+            sizeLimit: '5mb' // Set desired value here
+        }
+    }
 }
