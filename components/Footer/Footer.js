@@ -62,7 +62,7 @@ function Footer() {
           display: "flex",
           justifyContent: "space-between",
           flexWrap: "wrap",
-          paddingLeft: "10%",
+          paddingLeft: "13%",
           paddingRight: "10%",
           paddingTop: "4%",
           paddingBottom: "2.5%",
@@ -78,6 +78,7 @@ function Footer() {
           <FaLinkedinIn style={{ fontSize: "28px", color: "#153A5F" }} />
           <FaFacebookF style={{ fontSize: "24px", color: "#153A5F" }} />
           <AiFillInstagram style={{ fontSize: "28px", color: "#153A5F" }} />
+          <img src="https://seeklogo.com/images/C/clutch-co-logo-CE7F48313C-seeklogo.com.png" style={{width:'28px',borderRadius:'30px'}}/>
         </Box>
       </Box>
     </Box>

@@ -63,7 +63,7 @@ function MainBanner({ onPress }) {
       <Box
         sx={{
           position: "absolute",
-          top: { xs: 150, sm: 200, md: 210, lg: 210,xl:260 },
+          top: { xs: 150, sm: 200, md: 210, lg: 270,xl:260 },
           left: { xs: 15, sm: 50, md: 90, lg: 150 },
           width: { xs: "90%", sm: "70%", md: "60%", lg: "44%" },
           // backgroundColor: { xs: "red", sm: 'blue', md: 'green', lg: 'yellow' },
