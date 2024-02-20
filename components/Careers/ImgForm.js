@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import styles from "../../styles/CareerForm.module.css";
-import image from "../../public/up-arrow.png";
+import axios from "axios";
 
 const ImgForm = () => {
   const [email, setEmail] = useState('');
@@ -12,33 +11,31 @@ const ImgForm = () => {
   };
 
   const handleFileChange = (event) => {
-    console.log('==>', (event.target))
     if (event.target.files.length > 0) {
-      const path = (event.target.files[0])
-      console.log(event.target.files)
-      setFile(path);
+      let file = event.target.files[0];
+      let reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onloadend = () =>
+        ((result) => {
+          setFile({ content: result })
+          console.log({ content: result })
+        })(reader.result)
     }
   };
 
   const handleSubmit = async (event) => {
-
     event.preventDefault();
-    const formData = new FormData();
-    console.log(file)
-    formData.append('path', file);
-    formData.append('email', email);
-
     try {
-      const response = await fetch('/api/emailHandler', {
-        method: 'POST',
-        body: formData,
-      });
-      console.log("response:: ", response);
-      if (response.ok) {
-        alert('Submitted!');
-      } else {
-        throw new Error('Failed to upload file and send email.');
-      }
+      console.log({ email: email, content: file.content })
+      await axios.request(
+        {
+          url: "/api/emailHandler",
+          method: 'post',
+          data: { email: email, content: file.content },
+          maxBodyLength: Infinity
+        }
+      );
+      alert('Submitted!');
     } catch (error) {
       console.error('Error:', error);
     }
