@@ -49,8 +49,8 @@ const ImgForm = () => {
       <div className={styles.career}>Careers</div>
 
       <div className={styles.join_techtiz}>
-        <h1 className="first_name">Join Techtiz's</h1>
-        <h2 className="last_name">Flourishing community</h2>
+        <h1 className={styles.first_name}>Join Techtiz's</h1>
+        <h2 className={styles.last_name}>Flourishing community</h2>
       </div>
 
       <div className={styles.text_line}>

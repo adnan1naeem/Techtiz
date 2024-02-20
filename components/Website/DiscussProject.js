@@ -14,7 +14,7 @@ function DiscussProject({onPress}) {
     >
       <Card
         sx={{
-          height: { sx: "18rem", sm: "20rem", md: "19rem", lg: "14rem" },
+          height: { xs: "26rem", sm: "20rem", md: "19rem", lg: "14rem" },
           width: { xs: "21rem", sm: "36rem", md: "43rem", lg: "70rem" },
           background: "linear-gradient(90deg, #18B0E6 0%, #153A5F 100%)",
           boxShadow: "none",

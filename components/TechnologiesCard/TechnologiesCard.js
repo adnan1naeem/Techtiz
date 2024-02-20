@@ -6,7 +6,7 @@ function TechnologiesCard({ image }) {
     <Box>
       <Card
         sx={{
-          width: { xs: "8rem", sm: "11rem", md: "14rem", lg: "14rem", xl: "14rem" },
+          width: { xs: "8rem", sm: "11rem", md: "14rem", lg: "12rem", xl: "12rem" },
           height: { xs: "6rem", sm: "10rem", md: "10rem", lg: "11rem", xl: "11rem" },
           marginTop: "10%",
           background: "#18B0E6",

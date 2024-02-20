@@ -12,7 +12,7 @@ function MobileDoCard({ background, title, des }) {
     >
       <Card
         sx={{
-          width: { xs: "16rem", sm: "16rem", md: "16rem", lg: "16rem" },
+          width: { xs: "19rem", sm: "16rem", md: "16rem", lg: "16rem" },
           height: { xs: "13rem", sm: "13rem", md: "13rem", lg: "13rem" },
           borderRadius: "20px",
           background: background,

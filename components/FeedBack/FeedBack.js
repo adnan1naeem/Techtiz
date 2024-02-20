@@ -15,8 +15,9 @@ function SampleNextArrow(props) {
         ...style,
         display: "block",
         color: "white",
+        marginRight:'-0.7%'
 
-        marginRight: "1%", // Add right margin of 5%
+       
       }}
       onClick={onClick}
     />
@@ -32,7 +33,7 @@ function SamplePrevArrow(props) {
         ...style,
         display: "block",
         color: "white",
-        marginLeft: "-3%",
+        marginLeft: "-1%",
       }}
       onClick={onClick}
     />

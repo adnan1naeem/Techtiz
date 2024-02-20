@@ -38,7 +38,7 @@ function Industries() {
                         <Professionals onPress={handleClick} />
                         <Box
                             sx={{
-                                width: { xs: "100%", sm: "80%", md: "45%", lg: "42%", xl: "35%" },
+                                width: { xs: "100%", sm: "80%", md: "45%", lg: "37%", xl: "30%" },
                                 transform: isHovered ? "translateY(-12px)" : "translateY(0)",
                                 transition: "transform 1s ease",
                                 marginTop: '1%',
@@ -49,7 +49,7 @@ function Industries() {
                             <img
                                 src="https://techtiz.co/wp-content/uploads/2023/10/skilled-pro.webp"
                                 alt=""
-                                style={{ width: "90%" }}
+                                style={{ width: "100%" }}
                             />
                         </Box>
                     </Box>

@@ -76,7 +76,7 @@ const Navbar = () => {
               <Link href="/mobile-application" onClick={closeMenu}>Mobile Application</Link>
               <Link href="/website" onClick={closeMenu}>Web Development Services</Link>
               <Link href="/ui-ux-design" onClick={closeMenu}>UI/UX Design</Link>
-              <Link href="/SQA" onClick={closeMenu}>SQA</Link>
+              <Link href="/sqa" onClick={closeMenu}>SQA</Link>
             </div>
           </div>
 

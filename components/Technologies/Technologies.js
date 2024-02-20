@@ -18,6 +18,7 @@ function SampleNextArrow(props) {
         color: "#153A8D",
         height: 30,
         width: 30,
+        marginRight:'1%'
         
       }}
       onClick={onClick}
@@ -36,7 +37,7 @@ function SamplePrevArrow(props) {
         height: 30,
         width: 30,
         color: "#153A8D",
-        marginLeft: "-5%",
+        marginLeft: "-4%",
       }}
       onClick={onClick}
     />

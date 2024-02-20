@@ -39,7 +39,7 @@ function QAForYou() {
           background: "#F6F9FC",
           marginLeft: "18%",
           marginRight: "18%",
-          padding: " 0.5% 0.5% 0.5% 0.5%",
+          padding: "1.5% 0.5% 1.5% 0.5%",
           borderRadius: "40px",
           marginTop: "3%",
         }}

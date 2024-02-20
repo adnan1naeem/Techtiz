@@ -3,13 +3,13 @@ import { Box, Typography, CardContent, Card } from "@mui/material";
 
 function Ceo({imageceo,name, text}) {
   return (
-    <Box>
+    <Box >
       <Card
         sx={{
-          width: { xs: "11rem", sm: "11rem", md: "11rem", lg: "14rem" },
+          width: { xs: "13rem", sm: "11rem", md: "11rem", lg: "14rem" },
           height: { xs: "22rem", sm: "22rem", md: "22rem", lg: "20rem" },
           boxShadow: "none",
-          background: "#F8F8F8",
+          background:'none'
         }}
       >
         <CardContent

@@ -29,9 +29,8 @@ function DoItUX() {
           justifyContent: "center",
           gap: "2%",
           background: "#F6F9FC",
-          
-          marginLeft: "30%",
-          marginRight: "30%",
+          marginLeft:{xs:0,sm:'10%',md:'15%',lg: "30%"},
+          marginRight: {xs:0,sm:'10%',md:'15%',lg: "30%"},
           padding: " 0.5% 0.5% 0.5% 0.5%",
           borderRadius: "40px",
           marginTop: "3%",

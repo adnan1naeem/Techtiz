@@ -33,7 +33,7 @@ function QACard({ title,text ,image,lg,top}) {
         {text}
         </Typography>
       </Box>
-      <Box sx={{ width: { xs: "21rem", sm: "24em", md: "17em", lg: lg } }}>
+      <Box sx={{ width: { xs: "18rem", sm: "24em", md: "17em", lg: lg } }}>
         <img
           src={image}
           alt=""

@@ -31,14 +31,15 @@ function Stack() {
       </Typography>
       <Box
         sx={{
-          width: "70%",
-          marginLeft: "20%",
-          marginRight: "8%",
+          width: "100%",
+         display:'flex',
+         justifyContent:'center',
+         alignItems:'center',
           paddingBottom:'10%',
           marginTop:'1%'
         }}
       >
-        <Box sx={{ display: "flex", flexWrap: "wrap", gap: "10%" }}>
+        <Box sx={{ display: "flex", flexWrap: "wrap", gap: "10%",justifyContent:'center' }}>
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/js-logo.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/reactjs.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/appstore.svg" />
@@ -52,7 +53,7 @@ function Stack() {
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/swift.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/dart.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/typescript.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/typescript.svg" />
+       
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/php.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/diamond.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/python.svg" />

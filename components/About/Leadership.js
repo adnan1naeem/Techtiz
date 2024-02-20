@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Ceo from "./Ceo";
-import image from "../../assets/download.png"
+import image from "../../assets/output-onlinepngtools.png"
 
 function Leadership() {
   return (
@@ -13,7 +13,8 @@ function Leadership() {
         backgroundSize: '1600px',
         paddingTop: "10%",
         paddingBottom: "10%",
- 
+
+  
 
       }}
     >
