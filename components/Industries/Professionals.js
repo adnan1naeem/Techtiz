@@ -3,6 +3,15 @@ import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
 function Professionals({ onPress }) {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 700);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <Box
       sx={{
@@ -29,6 +38,8 @@ function Professionals({ onPress }) {
               height: "17px",
               lineHeight: "18px",
               paddingLeft: "10px",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             Industries
@@ -39,6 +50,8 @@ function Professionals({ onPress }) {
               fontSize: "2.2em",
               fontWeight: "600",
               marginTop: "1%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             Skilled professionals with
@@ -49,6 +62,8 @@ function Professionals({ onPress }) {
               fontSize: "2.2em",
               fontWeight: "600",
               marginTop: "-2%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             State of the art technology

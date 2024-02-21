@@ -1,12 +1,43 @@
 import { Box, Typography } from "@mui/material";
 import DevelopmentCard from "../DevelopmentCard/DevelopmentCard";
+import { useEffect, useRef, useState } from "react";
 
 function Weeks() {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
+
   return (
     <Box
+     ref={weeksRef}
       sx={{
         marginTop: "5.5rem",
-
       }}
     >
       <Typography
@@ -17,6 +48,8 @@ function Weeks() {
           lineHeight:'50px',
           color: "#153A5F",
           fontFamily: '"Mont-bold", Sans-serif',
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
    
 
         }}
@@ -34,6 +67,8 @@ function Weeks() {
           fontSize: "1em",
           fontWeight: '300',
           fontFamily: 'Mont-Regular, Sans-serif',
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         With our proven express delivery, you'll get your custom build
@@ -47,7 +82,7 @@ function Weeks() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "1%",
+          gap: "1.5%",
           marginTop: "3%",
         }}
       >

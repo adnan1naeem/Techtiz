@@ -10,6 +10,7 @@ function Blog() {
   const [selectedTag, setSelectedTag] = React.useState("");
   const [searchTerm, setSearchTerm] = React.useState("");
   const [searchResults, setSearchResults] = useState([]);
+  
 
   const handleTagClick = (tag) => {
     setSelectedTag(tag);

@@ -1,17 +1,47 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import ServicesCard from "../Website/Services/ServicesCard";
-
+import { useEffect, useRef, useState } from "react";
 function OutshineCard() {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
-    <Box sx={{ background: "#F8F8F8", marginTop: "6%" }}>
+    <Box ref={weeksRef} sx={{ background: "#F8F8F8", marginTop: "3%" }}>
       <Typography
         sx={{
           color: "#153A5F",
           fontSize: "1.6em",
           textAlign: "center",
           fontWeight: "600",
-          paddingTop: "5%",
+          paddingTop: "2%",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Outshine Your Competition With the Right Mobile App

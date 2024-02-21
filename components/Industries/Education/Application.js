@@ -3,18 +3,49 @@ import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import List from "../List";
+import { useEffect, useRef, useState } from "react";
+function Application({ onPress }) {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
 
-function Application({onPress}) {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2,
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}>
+    <Box
+      ref={weeksRef}
+      sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
+    >
       <Card
         sx={{
           width: { xs: "21rem", sm: "35rem", md: "30rem", lg: "35rem" },
           height: { xs: "30rem", sm: "29rem", md: "30rem", lg: "30rem" },
-          borderRadius: '10px',
+          borderRadius: "10px",
           background: "#F8F8F8",
           boxShadow: "none",
-          mt: '1%',
+          mt: "1%",
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
@@ -25,22 +56,37 @@ function Application({onPress}) {
               fontWeight: "700",
               borderLeft: "8px solid #18B0E6",
               height: "18px",
-              mt: '2%',
-              ml: '1%',
-              pl: '10px',
-              paddingTop: '-5%',
-              lineHeight: '18px'
+              mt: "2%",
+              ml: "1%",
+              pl: "10px",
+              paddingTop: "-5%",
+              lineHeight: "18px",
+              transition: "opacity 1s ease-in-out",
+              opacity: isVisible ? 1 : 0,
             }}
           >
             What we offer
           </Typography>
-          <Typography sx={{ color: '#153A5F', fontSize: '21px', fontWeight: '600', mt: '3%', ml: '1%' }}>
+          <Typography
+            sx={{
+              color: "#153A5F",
+              fontSize: "21px",
+              fontWeight: "600",
+              mt: "3%",
+              ml: "1%",
+              transition: "opacity 1s ease-in-out",
+              opacity: isVisible ? 1 : 0,
+            }}
+          >
             Design, development, and implementation of educational applications
           </Typography>
-          <Box sx={{ marginTop: "3%", ml: '6%' }}>
+          <Box sx={{ marginTop: "3%", ml: "6%" }}>
             <List listone="Interactive applications" textColor="#153A5F" />
             <List listone="Custom-built" textColor="#153A5F" />
-            <List listone="Applications for the distribution of educational  content" textColor="#153A5F" />
+            <List
+              listone="Applications for the distribution of educational  content"
+              textColor="#153A5F"
+            />
             <List listone="Learning Management Software" textColor="#153A5F" />
           </Box>
           <Button

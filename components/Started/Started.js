@@ -2,6 +2,15 @@ import React from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 
 function Started() {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 700);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <Box
       sx={{
@@ -25,7 +34,9 @@ function Started() {
               color: "#153A5F",
               fontSize: "2.7em",
               fontWeight: "600",
-              lineHeight:'50px'
+              lineHeight:'50px',
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
     
             
             }}
@@ -39,6 +50,7 @@ function Started() {
               fontSize: "1.1em",
               fontWeight: "400",
               marginTop: "10%",
+              
             }}
           >
             Thank you for considering TechTiz. For inquiries, feedback, or

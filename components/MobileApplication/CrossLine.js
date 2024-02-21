@@ -1,8 +1,39 @@
 import { Box, Typography } from "@mui/material";
+import { useEffect, useRef, useState } from "react";
 
 function CrossLine({title,des}) {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
     <Box
+      ref={weeksRef}
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -13,7 +44,8 @@ function CrossLine({title,des}) {
       }}
     >
       <Typography
-        sx={{ fontSize: "1.5em", color: "#153A5F", fontWeight: "600" ,marginTop:'4%'}}
+        sx={{ fontSize: "1.5em", color: "#153A5F", fontWeight: "600" ,marginTop:'4%',transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,}}
       >
         {title}
       </Typography>

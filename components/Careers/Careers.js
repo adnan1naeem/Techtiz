@@ -5,7 +5,7 @@ import CrossLine from "../MobileApplication/CrossLine";
 import ExpertiseMobile from "../MobileApplication/ExpertiseMobile";
 import ImgForm from "./ImgForm";
 
-function Careers({onPress}) {
+function Careers({ onPress }) {
   return (
     <Box>
       <ImgForm />
@@ -18,6 +18,7 @@ function Careers({onPress}) {
             flexWrap: "wrap",
             justifyContent: "center",
             gap: "8%",
+            mb:'5%'
           }}
         >
           <Box>
@@ -25,8 +26,7 @@ function Careers({onPress}) {
               title="Why
 You Should 
 Choose TechTiz"
-onPress={onPress}
-   
+              onPress={onPress}
             />
           </Box>
 

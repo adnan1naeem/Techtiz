@@ -1,11 +1,12 @@
 import { Box, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import QAButton from "./QAButton";
 import { MdTimer } from "react-icons/md";
 import { BiSolidDetail } from "react-icons/bi";
 import { FaSearchDollar } from "react-icons/fa";
 import { PiMedalBold } from "react-icons/pi";
 import QACard from "./QACard";
+import { useEffect, useRef, useState } from "react";
 
 
 
@@ -17,15 +18,44 @@ function QAForYou() {
   const handleButtonClick = (text) => {
     setSelectedButton(text);
   };
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
-    <Box sx={{ marginTop: "5%" }}>
+    <Box ref={weeksRef} sx={{ marginTop: "5%" }}>
       <Typography
         sx={{
           color: "#153A5F",
           fontSize: "2.7em",
           fontWeight: "600",
           textAlign: "center",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         What's in it for you
@@ -37,9 +67,9 @@ function QAForYou() {
           justifyContent: "center",
           gap: "2%",
           background: "#F6F9FC",
-          marginLeft: "18%",
-          marginRight: "18%",
-          padding: "1.5% 0.5% 1.5% 0.5%",
+          marginLeft: {lg:"18%",xl:'23%'},
+          marginRight: {lg:"18%",xl:'23%'},
+          padding: "0.5% 0.5% 0.5% 0.5%",
           borderRadius: "40px",
           marginTop: "3%",
         }}

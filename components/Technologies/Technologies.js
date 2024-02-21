@@ -4,10 +4,12 @@ import Slider from "react-slick";
 import TechnologiesCard from "../TechnologiesCard/TechnologiesCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { useEffect, useRef, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function SampleNextArrow(props) {
+ 
+
   const { className, style, onClick } = props;
   return (
     <FaChevronRight
@@ -45,6 +47,35 @@ function SamplePrevArrow(props) {
 }
 
 function Technologies() {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   const settings = {
     dots: false,
     infinite: true,
@@ -73,13 +104,15 @@ function Technologies() {
   };
 
   return (
-    <Box sx={{ marginTop: "4%" }}>
+    <Box sx={{ marginTop: "4%" }}  ref={weeksRef}>
       <Typography
         sx={{
           color: "var(--e-global-color-9f67d62)",
           textAlign: "center",
           fontSize: "2.7em",
           fontWeight: "600",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Technologies
@@ -91,6 +124,8 @@ function Technologies() {
           textAlign: "center",
           fontWeight: "100",
           fontSize: "1em",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         We are a multi-platform app development company with modern technologies
@@ -102,7 +137,7 @@ function Technologies() {
           marginLeft: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
           marginRight: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
           // backgroundColor: {xs: 'red', sm: 'purple', md: 'yellow', lg: 'green', xl:'orange'},
-          marginBottom: "7%"
+          marginBottom: "5%"
         }}
       >
       <Box sx={{ml:'6%'}}> 

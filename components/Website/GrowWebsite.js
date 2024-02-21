@@ -2,6 +2,15 @@ import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 function GrowWebsite({onPress}) {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 700);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'1%',mr:'8%'}}
@@ -23,6 +32,8 @@ function GrowWebsite({onPress}) {
               borderLeft: "3px solid #18B0E6",
               height: "18px",
               lineHeight: "20px",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             &nbsp;Web App Development
@@ -33,6 +44,8 @@ function GrowWebsite({onPress}) {
               fontSize: "2.7em",
               fontWeight: "800",
               marginTop: "1%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             Grow With an
@@ -43,6 +56,8 @@ function GrowWebsite({onPress}) {
               fontSize: "2.8em",
               fontWeight: "800",
               marginTop: "-4%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             Unconventional &
@@ -53,6 +68,8 @@ function GrowWebsite({onPress}) {
               fontSize: "2.7em",
               fontWeight: "800",
               marginTop: "-4%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             Engaging Website

@@ -1,10 +1,40 @@
 import ExpertiseCard from "../ExpertiseCard/ExpertiseCard";
 import { Box, Typography } from "@mui/material";
+import { useEffect, useRef, useState } from "react";
 
 function Expertise() {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
-    <Box sx={{ background: "#18B0E6", marginTop: "2%" }}>
-      <Box sx={{ paddingTop: "4%", display: "flex", flexDirection: "column" }}>
+    <Box ref={weeksRef} sx={{ background: "#18B0E6", marginTop: "2%" }}>
+      <Box sx={{ paddingTop: "2.3%", display: "flex", flexDirection: "column" }}>
         <Typography
           sx={{
             textAlign: "center",
@@ -12,6 +42,8 @@ function Expertise() {
             fontSize: "43.2px",
             fontWeight: "600",
             fontFamily: "Mont-Bold, Sans-serif",
+            transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
           }}
         >
           Our Expertise
@@ -19,7 +51,7 @@ function Expertise() {
         <Typography
           sx={{
             textAlign: "center",
-            marginTop: "2%",
+            marginTop: "1%",
             color: "#FFFFFF",
             fontFamily: "Mont-Regular, Sans-serif",
             fontWeight: '300'

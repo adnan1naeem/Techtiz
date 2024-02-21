@@ -1,21 +1,49 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { useEffect, useRef, useState } from "react";
 
 function DevelopmentCard({ background, title, Description }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
 
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
-    <Box >
+    <Box   ref={weeksRef} >
       <Card
         sx={{
-          width: { xs: "21rem", sm: "22rem", md: "22em", lg: "22.5rem" },
+          width: { xs: "21rem", sm: "22rem", md: "22em", lg: "23rem" },
           height: "23rem",
           borderRadius: "6px",
           background: background,
           transition: "transform 1s ease", // Adding transition for the transform property
           transform: isHovered ? "translateY(-12px)" : "translateY(0)",
           marginTop: "6%",
+          boxShadow:'none'
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -29,6 +57,8 @@ function DevelopmentCard({ background, title, Description }) {
               marginTop: "13%",
               color: "#FFFFFF",
               fontFamily: '"Mont-bold", Sans-serif',
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
             gutterBottom
           >
@@ -43,6 +73,8 @@ function DevelopmentCard({ background, title, Description }) {
               fontFamily: "Mont-Regular, Sans-serif",
               lineHeight:'25px',
               height: "9rem",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             {Description}
@@ -56,17 +88,21 @@ function DevelopmentCard({ background, title, Description }) {
                 fontWeight: '300',
                 color: "#FFFFFF",
                 fontFamily: "Mont-Regular, Sans-serif",
+                transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
               }}
             >
               GET STARTED
             </Typography>
-            <FaArrowRightLong
+            <IoIosArrowRoundForward
               style={{
                 marginTop: "-1%",
-                fontSize: "25px",
+                fontSize: "35px",
                 color: "#FFFFFF",
                 fontWeight: "100",
                 transform: "rotate(-40deg)",
+                transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
               }}
             />
           </CardActions>

@@ -2,6 +2,15 @@ import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 function Grow({onPress}) {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 700);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'4%'}}
@@ -23,6 +32,8 @@ function Grow({onPress}) {
               borderLeft: "3px solid #18B0E6",
               height: "16px",
               lineHeight: "17px",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             &nbsp;Mobile App Development
@@ -33,6 +44,8 @@ function Grow({onPress}) {
               fontSize: "2.2em",
               fontWeight: "600",
               marginTop: "1%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             Grow With a Mobile App
@@ -42,7 +55,9 @@ function Grow({onPress}) {
               color: "#153A5F",
               fontSize: "2.2em",
               fontWeight: "600",
-              marginTop: "-2%",
+              marginTop: "-2%",transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
+
             }}
           >
             Your Customers Will Love
@@ -51,6 +66,8 @@ function Grow({onPress}) {
               color: "#18B0E6",
               fontSize: "1.2em",
               fontWeight: "600",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
  
             }}>iOS | Android | React Native | Flutter</Typography>
           <Typography

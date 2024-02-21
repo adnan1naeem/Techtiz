@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Slider from "react-slick";
+import { useEffect, useRef, useState } from "react";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -41,6 +42,35 @@ function SamplePrevArrow(props) {
 }
 
 function FeedBack() {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   const settings = {
     dots: false,
     infinite: true,
@@ -66,6 +96,7 @@ function FeedBack() {
   };
   return (
     <Box
+     ref={weeksRef}
       sx={{
         display: 'flex',
         flexDirection: 'column', // or 'row' depending on your layout
@@ -86,6 +117,8 @@ function FeedBack() {
             md: "2em",
           },
           fontWeight: "600",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Feedback From Satisfied Clients
@@ -103,6 +136,8 @@ function FeedBack() {
             md: "1.2em",
           },
           fontWeight: "100",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Our diverse and satisfied clientele have consistently shared positive

@@ -1,11 +1,40 @@
 import { Box, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import BusinessCard from "../BusinessPlace/BusinessCard";
 import ButtonBusiness from "../Texts/ButtonBusiness";
-
+import { useEffect, useRef, useState } from "react";
 
 function BusinessTogether({ onClick }) {
   const [activeButton, setActiveButton] = useState("SMEs");
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
 
   const handleButtonClick = (buttonText) => {
     setActiveButton(buttonText);
@@ -18,7 +47,7 @@ function BusinessTogether({ onClick }) {
   ]
 
   return (
-    <Box sx={{ marginTop: "5%" }}>
+    <Box  ref={weeksRef} sx={{ marginTop: "4%" }}>
       <Typography
         sx={{
           fontWeight: 'bold',
@@ -27,6 +56,8 @@ function BusinessTogether({ onClick }) {
           textAlign: "center",
           color: "#153A5F",
           fontFamily: "Mont-bold, Sans-serif",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Let's Grow Your Business Together
@@ -40,7 +71,9 @@ function BusinessTogether({ onClick }) {
           lineHeight:'25px',
           mt: '1.2rem',
           fontFamily: 'Mont-Regular, Sans-serif',
-          fontWeight: '300'
+          fontWeight: '300',
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         With the right tech partner, your business can go places
@@ -53,6 +86,7 @@ function BusinessTogether({ onClick }) {
           alignItems: "center",
           justifyContent: "center",
           gap: "3%",
+          mt:'-2%'
         }}
       >
         <Box>

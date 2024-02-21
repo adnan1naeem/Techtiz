@@ -1,9 +1,37 @@
 import { Box, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import DoButton from "../Texts/DoButton";
 import AnalysisCard from "../Website/AnalysisCard";
-
+import { useEffect, useRef, useState } from "react";
 function DoItUX() {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   const [selectedButton, setSelectedButton] = useState("Build and Itrate");
 
   const handleButtonClick = (text) => {
@@ -11,13 +39,15 @@ function DoItUX() {
   };
 
   return (
-    <Box sx={{ marginTop: "5%" }}>
+    <Box ref={weeksRef} sx={{ marginTop: "5%" }}>
       <Typography
         sx={{
           color: "#153A5F",
           fontSize: "2.7em",
           fontWeight: "600",
           textAlign: "center",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         How We Do It

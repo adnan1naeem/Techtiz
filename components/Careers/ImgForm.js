@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import styles from "../../styles/CareerForm.module.css";
 import axios from "axios";
+import { Alert } from '@mui/material';
+import { CheckCircleOutline as CheckIcon } from '@mui/icons-material';
 
 const ImgForm = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [file, setFile] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -17,27 +21,26 @@ const ImgForm = () => {
       reader.readAsDataURL(file);
       reader.onloadend = () =>
         ((result) => {
-          setFile({ content: result })
-          console.log({ content: result })
-        })(reader.result)
+          setFile({ content: result });
+        })(reader.result);
     }
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setIsLoading(true);
     try {
-      console.log({ email: email, content: file.content })
-      await axios.request(
-        {
-          url: "/api/emailHandler",
-          method: 'post',
-          data: { email: email, content: file.content },
-          maxBodyLength: Infinity
-        }
-      );
-      alert('Submitted!');
+      await axios.request({
+        url: "/api/emailHandler",
+        method: "post",
+        data: { email: email, content: file.content },
+        maxBodyLength: Infinity,
+      });
+      setIsLoading(false);
+      setIsSubmitted(true);
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
+      setIsLoading(false);
     }
   };
 
@@ -81,11 +84,20 @@ const ImgForm = () => {
             />
           </div>
           <div className={styles.button}>
-            <button type="submit" className={styles.submit_button}>
-              Submit
+            <button type="submit" className={styles.submit_button} disabled={isLoading}>
+              {isLoading ? 'Submitting...' : 'Submit'}
             </button>
           </div>
         </form>
+        {isSubmitted && (
+          <Alert
+            sx={{ mt: "20px" }}
+            icon={<CheckIcon fontSize="inherit" />}
+            severity="success"
+          >
+            Your Form Submitted Successfully
+          </Alert>
+        )}
       </div>
     </div>
   );

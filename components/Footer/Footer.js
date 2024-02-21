@@ -6,6 +6,7 @@ import FooterReach from "../FooterCard/FooterReach";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -13,7 +14,7 @@ function Footer() {
       <Box
         sx={{
           display: "flex",
-          gap: "2%",
+          gap: "8%",
           justifyContent: "center",
           flexWrap: "wrap",
           paddingBottom: "5%",
@@ -62,7 +63,7 @@ function Footer() {
           display: "flex",
           justifyContent: "space-between",
           flexWrap: "wrap",
-          paddingLeft: "13%",
+          paddingLeft: {lg:"8%",xl:'18%'},
           paddingRight: "10%",
           paddingTop: "4%",
           paddingBottom: "2.5%",
@@ -75,10 +76,21 @@ function Footer() {
         </Box>
         <Box sx={{ display: "flex", gap: "1rem" }}>
           {" "}
-          <FaLinkedinIn style={{ fontSize: "28px", color: "#153A5F" }} />
-          <FaFacebookF style={{ fontSize: "24px", color: "#153A5F" }} />
-          <AiFillInstagram style={{ fontSize: "28px", color: "#153A5F" }} />
-          <img src="https://seeklogo.com/images/C/clutch-co-logo-CE7F48313C-seeklogo.com.png" style={{width:'28px',borderRadius:'30px'}}/>
+          <Link href="https://www.linkedin.com/company/techtiz/">
+            <FaLinkedinIn style={{ fontSize: "28px", color: "#153A5F" }} />
+          </Link>
+          <Link href="https://www.facebook.com/techtiz">
+            <FaFacebookF style={{ fontSize: "24px", color: "#153A5F" }} />
+          </Link>
+          <Link href="https://www.instagram.com/techtiz.co/">
+            <AiFillInstagram style={{ fontSize: "28px", color: "#153A5F" }} />
+          </Link>
+          <Link href="https://clutch.co/profile/techtiz-0#highlights">
+            <img
+              src="https://seeklogo.com/images/C/clutch-co-logo-CE7F48313C-seeklogo.com.png"
+              style={{ width: "28px", borderRadius: "30px" }}
+            />
+          </Link>
         </Box>
       </Box>
     </Box>

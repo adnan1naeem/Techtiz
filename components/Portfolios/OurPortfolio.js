@@ -2,7 +2,16 @@ import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
-function OurPortfolio({onPress}) {
+function OurPortfolio({ onPress }) {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 700);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
@@ -17,9 +26,19 @@ function OurPortfolio({onPress}) {
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
           <Typography
-            sx={{ color: "#153A5F", fontSize: "1.3em", fontWeight: "600" ,borderLeft:'3px solid #18B0E6',height:'18px',lineHeight:'20px', paddingLeft:'10px'}}
+            sx={{
+              color: "#153A5F",
+              fontSize: "1.3em",
+              fontWeight: "600",
+              borderLeft: "3px solid #18B0E6",
+              height: "18px",
+              lineHeight: "20px",
+              paddingLeft: "10px",
+              transition: "opacity 1s ease-in-out",
+              opacity: isVisible ? 1 : 0,
+            }}
           >
-             Our Portfolios
+            Our Portfolios
           </Typography>
           <Typography
             sx={{
@@ -27,12 +46,14 @@ function OurPortfolio({onPress}) {
               fontSize: "2.5em",
               fontWeight: "600",
               marginTop: "3%",
-              lineHeight:'45px'
+              lineHeight: "45px",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
-           We Have Innovative and Time-Tested Solutions to Grow Your Business
+            We Have Innovative and Time-Tested Solutions to Grow Your Business
           </Typography>
-         
+
           <Typography
             sx={{
               color: "#153A5F",
@@ -41,7 +62,8 @@ function OurPortfolio({onPress}) {
               marginTop: "5%",
             }}
           >
-            At TechTiz, we transform goals and dreams into digital solutions that pay off for years to come.
+            At TechTiz, we transform goals and dreams into digital solutions
+            that pay off for years to come.
           </Typography>
           <Button
             variant="contained"
@@ -54,7 +76,7 @@ function OurPortfolio({onPress}) {
               width: { xs: "100%", sm: "80%", md: "60%", lg: "43%" },
               paddingLeft: "2%",
               paddingRight: "2%",
-              borderRadius: '5px',
+              borderRadius: "5px",
               textTransform: "none",
               fontSize: "16px",
               fontWeight: "400",

@@ -19,6 +19,7 @@ function ExpertiseCard({ title, imageCard, height, description, href }) {
             transition: "transform 1s ease", // Adding transition for the transform property
             transform: isHovered ? "translateY(-12px)" : "translateY(0)",
             marginTop: "4%",
+            boxShadow:'none'
           }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}

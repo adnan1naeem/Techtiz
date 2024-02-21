@@ -1,6 +1,6 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import React from "react";
-import Link from "next/link";
+
 import { IoMdCall } from "react-icons/io";
 import { MdOutlineMail } from "react-icons/md";
 import { FaSearchLocation } from "react-icons/fa";
@@ -89,7 +89,7 @@ function FooterReach() {
               <FaSearchLocation
                 style={{
                   marginRight: "3%",
-                  fontWeight: "300",
+                  fontWeight: "200",
                   fontSize: "17px",
                 }}
               />

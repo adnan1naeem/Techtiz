@@ -1,9 +1,38 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import WebImage from "./WebImage";
+import { useEffect, useRef, useState } from "react";
 function Stack() {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
-    <Box sx={{ background: "#153A5F", marginTop: "5%" }}>
+    <Box ref={weeksRef} sx={{ background: "#153A5F", marginTop: "5%" }}>
       <Typography
         sx={{
           textAlign: "center",
@@ -11,6 +40,8 @@ function Stack() {
           color: "#FFFFFF",
           fontSize: "2.7em",
           fontWeight: "600",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Tech Stacks
@@ -22,6 +53,8 @@ function Stack() {
           color: "#FFFFFF",
           fontSize: "0.9em",
           fontWeight: "100",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         We invest our time and resources in state-of-the-art innovations to stay

@@ -1,17 +1,46 @@
 import React from "react";
 import PartnerCard from "../PartnerCard/PartnerCard";
 import { Box, Button, Typography } from "@mui/material";
-import ButtonBusiness from "../Texts/ButtonBusiness";
-
+import { useEffect, useRef, useState } from "react";
 function Partner({ onPress }) {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
     <Box
       sx={{
         background:
           "radial-gradient(at center center, #1594c6 25%, #153a5f 85%);",
-        marginTop: "5%",
+        marginTop: "3%",
         paddingTop: "4%",
       }}
+      ref={weeksRef}
     >
       <Typography
         sx={{
@@ -20,6 +49,8 @@ function Partner({ onPress }) {
           fontSize: { xs: "2em", sm: "2.5em", md: "2.7em", lg: '2.7em' },
           fontWeight: "600",
           lineHeight: "53px",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Case Studies: Qarrt, Qarrt Partner,

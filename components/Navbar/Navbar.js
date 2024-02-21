@@ -5,6 +5,7 @@ import TextNav from "../Texts/TextNav";
 import ButtonHover from "../Texts/ButtonHover";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
+import { IoMdArrowDropup } from "react-icons/io";
 import { Button } from "@mui/material";
 import { useRouter } from "next/navigation";
 
@@ -14,14 +15,18 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const [isWideScreen, setIsWideScreen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isArrowUp, setIsArrowUp] = useState(false);
+
+
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setIsWideScreen(window.innerWidth > 900);
+      setIsWideScreen(window.innerWidth > 990);
     }
 
     const handleResize = () => {
-      setIsWideScreen(typeof window !== "undefined" && window.innerWidth > 900);
+      setIsWideScreen(typeof window !== "undefined" && window.innerWidth > 990);
     };
 
     window.addEventListener("resize", handleResize);
@@ -31,7 +36,16 @@ const Navbar = () => {
     };
   }, []);
 
-  const closeMenu = () => setClick(false); // Function to close the menu
+  const closeMenu = () => {
+    setClick(false);
+    setIsDropdownOpen(false); 
+    setIsArrowUp(false);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+    setIsArrowUp(!isArrowUp);
+  };
 
   return (
     <div className={styles.header}>
@@ -60,24 +74,70 @@ const Navbar = () => {
             <li
               style={{ display: "flex", justifyContent: "center" }}
               className={styles.dropbtn}
+              onClick={toggleDropdown}
             >
               <TextNav label="Services" />
-              <MdArrowDropDown
-                style={{
-                  fontSize: "30px",
-                  color: "white",
-                  cursor: "pointer",
-                }}
-                className={click ? styles.services : styles["services-menu"]}
-              />
-            </li>
 
-            <div className={styles["dropdown-content"]}>
-              <Link href="/mobile-application" onClick={closeMenu}>Mobile Application</Link>
-              <Link href="/website" onClick={closeMenu}>Web Development Services</Link>
-              <Link href="/ui-ux-design" onClick={closeMenu}>UI/UX Design</Link>
-              <Link href="/sqa" onClick={closeMenu}>SQA</Link>
-            </div>
+             {isArrowUp ? (
+                <IoMdArrowDropup
+                  style={{
+                    fontSize: "30px",
+                    color: "white",
+                    cursor: "pointer",
+                  }}
+                  className={click ? styles.services : styles["services-menu"]}
+                />
+              ) : (
+                <MdArrowDropDown
+                  style={{
+                    fontSize: "30px",
+                    color: "white",
+                    cursor: "pointer",
+                  }}
+                  className={click ? styles.services : styles["services-menu"]}
+                />
+              )}
+            </li>
+            { isWideScreen && (
+              <div className={styles["dropdown-content"]}>
+                <Link href="/mobile-application" onClick={closeMenu}>
+                  Mobile Application
+                </Link>
+                <Link href="/website" onClick={closeMenu}>
+                  Web Development Services
+                </Link>
+                <Link href="/ui-ux-design" onClick={closeMenu}>
+                  UI/UX Design
+                </Link>
+                <Link href="/sqa" onClick={closeMenu}>
+                  SQA
+                </Link>
+              </div>
+            )}
+            {!isWideScreen && isDropdownOpen && (
+              <ul  style={{padding:'0'}} >
+                <li  className={styles.drop}>
+                  <Link href="/mobile-application" onClick={closeMenu}>
+                    <TextNav label="Mobile Application" />
+                  </Link>
+                </li>
+                <li className={styles.drop}>
+                  <Link href="/website" onClick={closeMenu}>
+                    <TextNav label="Web Development Services" />
+                  </Link>
+                </li>
+                <li className={styles.drop}>
+                  <Link href="/ui-ux-design" onClick={closeMenu}>
+                    <TextNav label="UI/UX Design" />
+                  </Link>
+                </li>
+                <li className={styles.drop}>
+                  <Link href="/sqa" onClick={closeMenu}>
+                    <TextNav label="SQA" />
+                  </Link>
+                </li>
+              </ul>
+            )}
           </div>
 
           <li>

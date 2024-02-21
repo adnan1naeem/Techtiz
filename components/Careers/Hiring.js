@@ -1,8 +1,36 @@
 import { Box, Typography } from "@mui/material";
-
+import { useEffect, useRef, useState } from "react";
 function Hiring() {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
-    <Box sx={{ marginTop: "0%", background: "#F8F8F8", paddingBottom: "8%" }}>
+    <Box ref={weeksRef}  sx={{ marginTop: "0%", background: "#F8F8F8", paddingBottom: "8%" }}>
       <Typography
         sx={{
           textAlign: "center",
@@ -10,6 +38,8 @@ function Hiring() {
           color: "#153A5F",
           fontSize: "2.2em",
           fontWeight: "600",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Techtiz Hiring Process
@@ -21,6 +51,8 @@ function Hiring() {
           fontSize: "1em",
           fontWeight: "400",
           marginTop: "1%",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Techtiz hires on the basis of skills, we need people who can be
@@ -42,7 +74,8 @@ function Hiring() {
           }}
         >
           <Typography
-            sx={{ color: "#18B0E6", fontSize: "2em", fontWeight: "600" ,textAlign:{xs:'center',sm:'left'}}}
+            sx={{ color: "#18B0E6", fontSize: "2em", fontWeight: "600" ,textAlign:{xs:'center',sm:'left'}, transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,}}
           >
             Hiring Funnel
           </Typography>

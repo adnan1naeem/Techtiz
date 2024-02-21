@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import { Box, Pagination, Typography } from "@mui/material";
 import BlogsMainCard from "./BlogMainCard";
 import blogData from "./BlogData";
-import Link from "next/link";
 import TagCard from "./TagCard";
 import { useRouter } from 'next/router';
 
 
 function AllBlogs({ selectedTag }) {
   const router = useRouter();
-  const itemsPerPage = 8;
+  const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -30,6 +29,15 @@ function AllBlogs({ selectedTag }) {
       query: { state: JSON.stringify(item) },
     });
   };
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 700);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <Box
@@ -42,9 +50,11 @@ function AllBlogs({ selectedTag }) {
       <Typography
         sx={{
           ml: "2%",
-          fontSize: "2.4em",
+          fontSize: "1.6em",
           color: "#153A5F",
           fontWeight: "600",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         {selectedTag ? `Tag: ${selectedTag}` : "Blogs"}

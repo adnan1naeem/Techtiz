@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
 function Enterprises({ onPress }) {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 700); 
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <Box
       sx={{
@@ -20,6 +29,8 @@ function Enterprises({ onPress }) {
           fontSize: "2.7em",
           fontWeight: "700",
           textAlign: "center",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Making Technology Work for You
@@ -30,6 +41,8 @@ function Enterprises({ onPress }) {
           fontSize: "1.7em",
           fontWeight: "700",
           textAlign: "center",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Startups. SMEs. Enterprises

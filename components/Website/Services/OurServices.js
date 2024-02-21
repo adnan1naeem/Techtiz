@@ -1,10 +1,38 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import ServicesCard from "./ServicesCard";
-
+import { useEffect, useRef, useState } from "react";
 function OurServices() {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
-    <Box sx={{ background: "#F8F8F8" }}>
+    <Box sx={{ background: "#F8F8F8" }} ref={weeksRef}>
       <Typography
         sx={{
           color: "#153A5F",
@@ -12,6 +40,8 @@ function OurServices() {
           textAlign: "center",
           fontWeight: "600",
           paddingTop: "5%",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
         }}
       >
         Our Services

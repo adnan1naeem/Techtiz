@@ -21,6 +21,7 @@ function Mobile() {
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
+  
 
   return (
     <div>
@@ -36,7 +37,7 @@ function Mobile() {
           <Grow onPress={handleClick} />
           <Box
             sx={{
-              width: { xs: "100%", sm: "80%", md: "80%", lg: "34%", xl: "30%" },
+              width: { xs: "100%", sm: "80%", md: "80%", lg: "34%", xl: "24%" },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
             }}

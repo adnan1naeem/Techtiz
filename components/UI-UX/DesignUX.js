@@ -2,6 +2,15 @@ import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 function DesignUX({onPress}) {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 700);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center",mt:"-1%" }}
@@ -23,6 +32,8 @@ function DesignUX({onPress}) {
               borderLeft: "3px solid #18B0E6",
               height: "15px",
               lineHeight: "20px",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             &nbsp;UI/UX Design
@@ -33,6 +44,8 @@ function DesignUX({onPress}) {
               fontSize: "2.7em",
               fontWeight: "800",
               marginTop: "1%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             UI/UX Design That
@@ -43,6 +56,8 @@ function DesignUX({onPress}) {
               fontSize: "2.8em",
               fontWeight: "800",
               marginTop: "-4%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             Drives Growth & Never
@@ -53,6 +68,8 @@ function DesignUX({onPress}) {
               fontSize: "2.7em",
               fontWeight: "800",
               marginTop: "-4%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             Lets You Down

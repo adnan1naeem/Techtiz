@@ -1,8 +1,36 @@
 import React from "react";
 import { Box, Button, Card, CardContent, Typography } from "@mui/material";
-
+import { useEffect, useRef, useState } from "react";
 
 function DiscussProject({onPress}) {
+  const [isVisible, setIsVisible] = useState(false);
+  const weeksRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(weeksRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, 
+      }
+    );
+
+    if (weeksRef.current) {
+      observer.observe(weeksRef.current);
+    }
+
+    return () => {
+      if (weeksRef.current) {
+        observer.unobserve(weeksRef.current);
+      }
+    };
+  }, []);
   return (
     <Box
       sx={{
@@ -11,6 +39,7 @@ function DiscussProject({onPress}) {
         alignItems: "center",
         marginTop: "10%",
       }}
+      ref={weeksRef}
     >
       <Card
         sx={{
@@ -24,7 +53,8 @@ function DiscussProject({onPress}) {
         <CardContent sx={{ display: "flex", flexDirection: "row" ,justifyContent:'space-between',marginTop:'2%',flexWrap:'wrap'}}>
           <Box sx={{marginLeft:'3%'}}>
             <Typography sx={{color:'#FFFFFF',fontSize:'2.2em',fontWeight:'700'}}> Let's Discuss Your Project!</Typography>
-            <Typography sx={{color:'#FFFFFF',fontSize:'1.3em',fontWeight:'300',marginTop:'5%'}}>
+            <Typography sx={{color:'#FFFFFF',fontSize:'1.3em',fontWeight:'300',marginTop:'5%',transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,}}>
               Get a free consultation and let us know your project idea to{" "}
               <br /> turn into an amazing digital product.
             </Typography>

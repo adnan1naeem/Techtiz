@@ -19,6 +19,7 @@ function Sqa() {
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
+  
   return (
     <Box>
       <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%" } }}>
@@ -33,7 +34,7 @@ function Sqa() {
           <QA  onPress={handleClick}/>
           <Box
             sx={{
-              width: { xs: "100%", sm: "80%", md: "38%", lg: "43%", xl: "35%" },
+              width: { xs: "100%", sm: "80%", md: "38%", lg: "43%", xl: "32%" },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
               marginTop: { xs: "10%", sm: "10%", md: 0, lg: 0 },

@@ -2,6 +2,15 @@ import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 function QA({onPress}) {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 700);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
@@ -23,6 +32,8 @@ function QA({onPress}) {
               borderLeft: "3px solid #18B0E6",
               height: "20px",
               lineHeight: "20px",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             &nbsp;QA & Testing
@@ -33,6 +44,8 @@ function QA({onPress}) {
               fontSize: "2.7em",
               fontWeight: "800",
               marginTop: "1%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
             Keep Your Business
@@ -43,6 +56,8 @@ function QA({onPress}) {
               fontSize: "2.8em",
               fontWeight: "800",
               marginTop: "-4%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
            Running With Our
@@ -53,6 +68,8 @@ function QA({onPress}) {
               fontSize: "2.7em",
               fontWeight: "800",
               marginTop: "-4%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
            Software Quality
@@ -63,6 +80,8 @@ function QA({onPress}) {
               fontSize: "2.7em",
               fontWeight: "800",
               marginTop: "-4%",
+              transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
             }}
           >
           Testing Services

@@ -4,6 +4,7 @@ import MVPsStartup from "../MVPs/MVPsStartup";
 import Image from "next/image";
 
 function MVPs({onPress}) {
+    
     return (
         <Box
             sx={{
