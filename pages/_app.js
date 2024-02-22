@@ -1,6 +1,7 @@
 // import '@/styles/globals.css'
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import "../styles/global.css"
 
 export default function App({ Component, pageProps }) {
   return (
@@ -14,9 +15,7 @@ export default function App({ Component, pageProps }) {
           padding: 0;
           margin: 0;
           
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: sans-serif;
         }
         * {
           box-sizing: border-box;

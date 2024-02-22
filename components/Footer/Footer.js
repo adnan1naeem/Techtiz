@@ -63,7 +63,7 @@ function Footer() {
           display: "flex",
           justifyContent: "space-between",
           flexWrap: "wrap",
-          paddingLeft: {lg:"8%",xl:'18%'},
+          paddingLeft: {xs:'8%',lg:"8%",xl:'18%'},
           paddingRight: "10%",
           paddingTop: "4%",
           paddingBottom: "2.5%",

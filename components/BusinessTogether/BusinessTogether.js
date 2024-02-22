@@ -51,7 +51,7 @@ function BusinessTogether({ onClick }) {
       <Typography
         sx={{
           fontWeight: 'bold',
-          fontSize: "2.6em",
+          fontSize: { xs: "1.8em", sm: "2.1em", md: "2.1em", lg: "2.6em" },
           lineHeight:'50px',
           textAlign: "center",
           color: "#153A5F",
@@ -69,7 +69,7 @@ function BusinessTogether({ onClick }) {
           color: "#153A5F",
           fontSize: "1em",
           lineHeight:'25px',
-          mt: '1.2rem',
+          mt: {lg:'1.2rem',xl:'1.3rem'},
           fontFamily: 'Mont-Regular, Sans-serif',
           fontWeight: '300',
           transition: "opacity 1s ease-in-out",
@@ -85,11 +85,11 @@ function BusinessTogether({ onClick }) {
           flexWrap: "wrap",
           alignItems: "center",
           justifyContent: "center",
-          gap: "3%",
+          gap: "10px",
           mt:'-2%'
         }}
       >
-        <Box>
+        <Box sx={{mt:'3%'}}>
           <ButtonBusiness
             text="StartUps"
             background={activeButton === "StartUps" ? "#153A5F" : "#f1f2f3"}
@@ -116,7 +116,7 @@ function BusinessTogether({ onClick }) {
           />
         </Box>
 
-        <Box sx={{ width: { xs: "90%", sm: "80%", md: "70%", lg: "55%" } }}>
+        <Box sx={{ width: { xs: "90%", sm: "80%", md: "70%", lg: "55%",xl:'43%' } }}>
           {activeButton === "StartUps" && <BusinessCard onClick={onClick} data={businessDetail[0]} />}
           {activeButton === "SMEs" && <BusinessCard onClick={onClick} data={businessDetail[1]} />}
           {activeButton === "Enterprises" && (<BusinessCard onClick={onClick} data={businessDetail[2]} />)}

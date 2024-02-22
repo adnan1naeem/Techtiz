@@ -43,7 +43,7 @@ function Weeks() {
       <Typography
         sx={{
           textAlign: "center",
-          fontSize: { xs: "2.1em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
+          fontSize: { xs: "1.8em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
           fontWeight: 'bold',
           lineHeight:'50px',
           color: "#153A5F",
@@ -84,6 +84,11 @@ function Weeks() {
           justifyContent: "center",
           gap: "1.5%",
           marginTop: "3%",
+          '@media screen and (min-width: 1500px)': { // Adjust the minimum width as per your requirement
+      maxWidth: "1200px",
+      margin: "0 auto",
+      marginTop:'2%'
+    }
         }}
       >
         <DevelopmentCard

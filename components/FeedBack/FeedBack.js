@@ -101,8 +101,10 @@ function FeedBack() {
         display: 'flex',
         flexDirection: 'column', // or 'row' depending on your layout
         justifyContent: 'center',
-        height: '50rem',
+        // height: '50rem',
         background: "#153A5F",
+        pt:{xs:'5.5rem',sm:"11.5rem",lg:'11.5rem'},
+        pb:{xs:'5.5rem',sm:"11.5rem",lg:'11.5rem'},
       }}
     >
       <Typography

@@ -106,7 +106,7 @@ function MobileServices({ image, title, des, onPress }) {
             marginTop: "8%",
             marginBottom: "5%",
             textAlign: "center",
-            transition: "transform 0.5s ease",
+            transition: "transform 1s ease",
             transform: scrollUp ? "translateY(-220px)" : "translateY(0)",
           }}
         >

@@ -39,9 +39,9 @@ function SmallTagCard({ image, des, date }) {
              {date}
             </Typography>
           </Box>
-          <img style={{ width: "100px", height: "130px"}} src={image}/>
+          <img style={{ width: "110px", height: "90px"}} src={image}/>
       
-           
+        
           
         </CardContent>
       </Card>

@@ -87,15 +87,16 @@ function Grow({onPress}) {
             onClick={onPress}
             sx={{
               marginTop: "8%",
-             padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
-              paddingLeft: "1.2%",
-              paddingRight: "1.2%",
-              borderRadius: 0,
+             padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2.2%" },
+              width: { xs: "100%", sm: "80%", md: "60%", lg: "44%" },
+              
+              borderRadius: '5px',
               textTransform: "none",
+              
               fontSize: "16px",
               fontWeight: "400",
               background: "#18B0E6",
+              boxShadow:'none',
               "&:hover": {
                 backgroundColor: "#153A5F",
               },

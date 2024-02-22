@@ -38,7 +38,7 @@ function Partner({ onPress }) {
         background:
           "radial-gradient(at center center, #1594c6 25%, #153a5f 85%);",
         marginTop: "3%",
-        paddingTop: "4%",
+        paddingTop: {lg:"4%",xl:'3%'},
       }}
       ref={weeksRef}
     >
@@ -102,14 +102,16 @@ function Partner({ onPress }) {
             paddingLeft: "30px",
             paddingRight: "30px",
             marginTop: "8px",
-            mb:'5%',
+            mb:{lg:'5%',xl:'4%'},
+            transition: 'all 0.3s ease', 
             "&:hover": {
-              backgroundColor: "#18B0E6",
+              backgroundColor: "rgba(24, 176, 230, 0.6)",
               color: "white",
               border: '3px solid #18B0E6 !important',
               borderRadius: 3,
-                    
-
+              transform: 'scale(1.05)',
+            
+    
 
             },
           }}

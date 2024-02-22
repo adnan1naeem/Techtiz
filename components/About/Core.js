@@ -56,9 +56,10 @@ function Core() {
         sx={{
           color: "#153A5F",
           fontSize: "2.7em",
-          fontWeight: "700",
+          fontWeight: "bold",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif"
         }}
       >
         Our Core Values
@@ -67,10 +68,12 @@ function Core() {
         sx={{
           color: "#153A5F",
           fontSize: "1.1em",
-          fontWeight: "400",
+          fontWeight: "100",
           textAlign: "center",
+          mt:'7px',
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Regular', sans-serif"
         }}
       >
         We are thorough professionals driven by a strong value system and a
@@ -84,6 +87,12 @@ function Core() {
           justifyContent: "center",
           gap: "1.3%",
           mt: "1%",
+          '@media screen and (min-width: 1600px)': {
+justifyContent:'start',
+      maxWidth: "1200px",
+      margin: "0 auto",
+      marginTop:'1%'
+    }
         }}
       >
         <CoreCard

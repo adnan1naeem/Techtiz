@@ -40,11 +40,13 @@ function SalesTeam({ id }) {
         sx={{
           marginTop:7,
           color: "#153A5F",
-          fontSize: "2.7em",
-          fontWeight: "700",
+          fontSize: { xs: "1.8em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
+       
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+             fontFamily: "'Mont-Regular', sans-serif",
+             fontWeight:'bold'
           
         }}
       >

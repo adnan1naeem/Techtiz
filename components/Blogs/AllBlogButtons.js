@@ -24,7 +24,7 @@ function AllBlogButton({ onTagClick, search }) {
   return (
     <Box
       sx={{
-        width: { xs: "100%", md: "20%", lg: "22%", xl: "20rem" },
+        width: { xs: "80%", md: "20%", lg: "22%", xl: "20rem" },
         marginTop: "5%",
       }}
     >

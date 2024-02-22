@@ -1,10 +1,11 @@
 const blogData = [
   
-  //PAGE 1
+  //  tags: "Best Practices",
   
     {
       id: 111,
-      //tags: "Business Strategy",
+      tags: "Business Strategy",
+      tags: "Flutter",
       title:
         "Demystifying Team Augmentation Models: Onsite, Hybrid, and Offshore – Which is the Right Fit for Your Project",
       image:
@@ -87,7 +88,7 @@ const blogData = [
     
     {
       id: 222,
-      //tags: "Business Strategy",
+      tags: "Best Practices",
       title:"Building the Developer Dream Team: Finding the Perfect External Team for your Mobile App.",
       image:"https://techtiz.co/wp-content/uploads/2023/10/6-768x384.jpg",
       date: "February 4, 2024",
@@ -272,8 +273,8 @@ const blogData = [
         alparagraph: "We’re your bridge to the future, connecting you with the talent that can turn your vision into a reality."
       },
       {
-        id: 555,
         tags: "Best Practices",
+        id: 555,
         title:
           "Supercharge your IT Team: Best Practices for Seamless Team Augmentation",
         image:
@@ -363,7 +364,6 @@ const blogData = [
   
       {
         id: 1111,
-        tags: "Best Practices",
         title: "MVP Development : A Guide for Non-Techies",
         image: "https://techtiz.co/wp-content/uploads/2023/12/3-2-300x150.jpg",
         date: "December 28,2023",
@@ -443,7 +443,6 @@ const blogData = [
   
   {
     id: 2222,
-    tags: "Best Practices",
     title:
       "The Future of MVP Development – Trends To Watch Out For in 2024 and Beyond",
     image: "https://techtiz.co/wp-content/uploads/2023/12/4-2-300x150.jpg",
@@ -505,7 +504,6 @@ const blogData = [
   
   {
     id: 3333,
-    tags: "Best Practices",
     title:
       "Maximizing Your Investment in App Development: A Comprehensive Guide",
     image: "https://techtiz.co/wp-content/uploads/2023/12/6-300x150.jpg",
@@ -599,8 +597,8 @@ const blogData = [
   },
   
   {
-    id: 5555,
     tags: "Best Practices",
+    id: 5555,
     title: "Busting Common Myths about MVP Development – Myth Buster Series (Part 2)",
     image: "https://techtiz.co/wp-content/uploads/2023/12/2-2-300x150.jpg",
     date: "January 28, 2023",
@@ -709,8 +707,8 @@ const blogData = [
      //PAGE 3
   
      {
-      id: 11,
       tags: "Best Practices",
+      id: 11,
       title: "Personal Branding 101 for Software Developers",
       image: "https://techtiz.co/wp-content/uploads/2023/10/6-300x150.jpg",
       date: "October 6, 2023",
@@ -926,7 +924,7 @@ const blogData = [
   
       {
         id: 44,
-        //tags: "Case Study",
+        tags: "Best Practices",
         title: "8 Ways to Protect Your Apps and Data from Mobile Malware",
         image: "https://techtiz.co/wp-content/uploads/2023/10/1-6-300x150.jpg",
         date: "October 6, 2023",
@@ -989,7 +987,7 @@ const blogData = [
   
       {
         id: 55,
-        //tags: "Case Study",
+        tags: "Best Practices",
         title: "5 Reasons Why Software Testing and Debugging is Crucial  ",
         image:
           "https://techtiz.co/wp-content/uploads/2023/08/techtiz-blog-cover-2-300x150.jpg",
@@ -1184,7 +1182,7 @@ const blogData = [
   
       {
         id: 2,
-        //tags: "Flutter",
+        tags: "Case Study",
         title: "The Linked Golf Success Story – Connecting Golf Buddies",
         image: "https://techtiz.co/wp-content/uploads/2023/08/1-3-300x150.jpg",
         date: "August 08, 2023",
@@ -1244,7 +1242,7 @@ const blogData = [
   
       {
         id: 3,
-        //tags: "Guides",
+        tags: "Best Practices",
         title: "What Is the Impact of AI on Developer Productivity?",
         image: "https://techtiz.co/wp-content/uploads/2023/08/4-300x150.jpg",
         date: "August 08, 2023",
@@ -1309,7 +1307,7 @@ const blogData = [
   
       {
         id: 4,
-        //tags: "Guides",
+        tags: "Best Practices",
         title: "A Guide to Understanding Front-End Development for Your App)",
         image: "https://techtiz.co/wp-content/uploads/2023/08/7-300x150.jpg",
         date: "August 8, 2023",
@@ -1391,7 +1389,7 @@ const blogData = [
   
       {
         id: 5,
-        //tags: "Guides",
+        tags: "Best Practices",
         title: "Technical Debt: Understanding Its Impact on Businesses",
         image: "https://techtiz.co/wp-content/uploads/2023/08/2-2-300x150.jpg",
         date: "August 6, 2023",
@@ -1464,7 +1462,7 @@ const blogData = [
   
       {
         id: 6,
-        //tags: "Guides",
+        tags: "Best Practices",
         title: "Custom Software Development – Myth Buster Series (Part 1)",
         image: "https://techtiz.co/wp-content/uploads/2023/08/5-2-300x150.jpg",
         date: "August 6, 2023",
@@ -1748,7 +1746,7 @@ const blogData = [
   
       {
         id: 44,
-        //tags: "Mobile Apps",
+        tags: "Best Practices",
         title: "How Staff Augmentation Can Help Your Business Grow In 2023?",
         image: "https://techtiz.co/wp-content/uploads/2023/04/1-2-300x150.jpg",
         date: "April 29, 2023",
@@ -1811,7 +1809,7 @@ const blogData = [
   
       {
         id: 55,
-        //tags: 
+        tags: "Best Practices",
         title: "Businesses That Leveraged Custom App Development",
         image: "https://techtiz.co/wp-content/uploads/2023/04/5.jpg",
         date: "April 26, 2023",
@@ -1867,7 +1865,7 @@ const blogData = [
   
       {
         id: 66,
-        //tags: "Flutter",
+        tags: "Best Practices",
         title:"Backend Showdown – Which Option Reigns Supreme for Flutter Apps?",
         image: "https://techtiz.co/wp-content/uploads/2023/04/2-4-300x150.jpg",
         date: "April 16, 2023",

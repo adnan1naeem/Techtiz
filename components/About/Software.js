@@ -37,10 +37,10 @@ function Software() {
       sx={{
         backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/bg-pat.svg')`, // Set the background image URL
         backgroundRepeat: 'repeat', // Set the background repeat property
-        backgroundSize: '300px 1300px', // Set the width of the background image
+        backgroundSize: '300px 600px', // Set the width of the background image
         marginTop: "5%",
-        paddingTop: "11%",
-        paddingBottom: "14%",
+        paddingTop: "5%",
+        paddingBottom: "7%",
         backgroundPosition: 'center', // Center the background image
         backgroundColor:'#153A5F'
 
@@ -52,9 +52,10 @@ function Software() {
           color: "#FFFFFF",
           fontSize: "2.3em",
           textAlign: "center",
-          fontWeight: "700",
+          fontWeight: "blod",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif"
      
         }}
       >
@@ -65,8 +66,9 @@ function Software() {
           color: "#FFFFFF",
           fontSize: "1.1em",
           textAlign: "center",
-          fontWeight: "400",
+          fontWeight: 400,
           marginTop: "2.5%",
+          fontFamily: "'Mont-Regular', sans-serif"
         }}
       >
         Techtiz offers more than software development services. With our

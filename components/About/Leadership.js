@@ -37,17 +37,18 @@ function Leadership() {
       ref={weeksRef}
       sx={{
         background: "#F8F8F8",
-        backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/Sqr-Light-Outline.svg')`,
+        // backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/Sqr-Light-Outline.svg')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "1800px",
-        paddingTop: "10%",
-        paddingBottom: "10%",
+        paddingTop: "8%",
+        paddingBottom: "8%",
       }}
     >
       <Typography
         sx={{
           color: "#153A5F",
           fontWeight: "700",
+          fontFamily: "'Mont-Bold', sans-serif",
           fontSize: "2.7em",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
@@ -58,10 +59,10 @@ function Leadership() {
       </Typography>
       <Box
         sx={{
-          marginTop: "7%",
+          marginTop: "4%",
           display: "flex",
           justifyContent: "center",
-          gap: "6%",
+          gap: {lg:"6%",xl:'4%'},
           flexWrap: "wrap",
         }}
       >

@@ -72,7 +72,7 @@ function DiscussProject({onPress}) {
                 background: "none",
                 paddingTop: "20px",
                 paddingBottom: "20px",
-
+                transition: 'background-color 0.8s, color 0.6s',
                 marginTop: "8px",
                 "&:hover": {
                   backgroundColor: "white",

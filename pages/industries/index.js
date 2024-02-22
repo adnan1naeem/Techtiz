@@ -41,7 +41,7 @@ function Industries() {
                                 width: { xs: "100%", sm: "80%", md: "45%", lg: "37%", xl: "30%" },
                                 transform: isHovered ? "translateY(-12px)" : "translateY(0)",
                                 transition: "transform 1s ease",
-                                marginTop: '1%',
+                                marginTop:{xs:'-8%', sm:'1%',lg:'1%'},
                             }}
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}

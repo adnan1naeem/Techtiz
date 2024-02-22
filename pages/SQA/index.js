@@ -37,7 +37,7 @@ function Sqa() {
               width: { xs: "100%", sm: "80%", md: "38%", lg: "43%", xl: "32%" },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
-              marginTop: { xs: "10%", sm: "10%", md: 0, lg: 0 },
+              marginTop: { xs: "-32%", sm: "10%", md: 0, lg: 0 },
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

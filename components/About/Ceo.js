@@ -26,8 +26,8 @@ function Ceo({imageceo,name, text}) {
             alt=""
             style={{ borderRadius: "100%", width: "80%", marginBottom: "8%" }}
           />
-          <Typography sx={{color:'#153A5F', fontWeight:'600',fontSize:'18px'}}>{name}</Typography>
-          <Typography sx={{color:'#18B0E6',fontSize:'16px',fontWeight:'500'}}>{text}</Typography>
+          <Typography sx={{color:'#153A5F', fontWeight:'600',fontSize:'18px',fontFamily: "'Mont-Bold', sans-serif"}}>{name}</Typography>
+          <Typography sx={{color:'#18B0E6',fontSize:'16px', fontFamily: "'Mont-Regular', sans-serif"}}>{text}</Typography>
         </CardContent>
       </Card>
     </Box>

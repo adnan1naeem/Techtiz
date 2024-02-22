@@ -27,10 +27,11 @@ function Enterprises({ onPress }) {
         sx={{
           color: "#153A5F",
           fontSize: "2.7em",
-          fontWeight: "700",
+          fontWeight: "bold",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif"
         }}
       >
         Making Technology Work for You
@@ -39,10 +40,11 @@ function Enterprises({ onPress }) {
         sx={{
           color: "#18B0E6",
           fontSize: "1.7em",
-          fontWeight: "700",
+          fontWeight: "bold",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Regular', sans-serif"
         }}
       >
         Startups. SMEs. Enterprises
@@ -50,10 +52,11 @@ function Enterprises({ onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "1.1em",
+          fontSize: "17.6px",
           fontWeight: "400",
           textAlign: "center",
-          marginTop: "2%",
+          marginTop: "1%",
+          fontFamily: "'Mont-Regular', sans-serif"
         }}
       >
         Techtiz is a custom software development company that helps startups and
@@ -77,9 +80,10 @@ function Enterprises({ onPress }) {
           pr: {xs:'4%',sm:'2.6%',lg:'2.6%'},
           borderRadius: 1,
           textTransform: "none",
-          fontSize: "16px",
-          fontWeight: "400",
+          fontSize: "17px",
+          fontWeight: "600",
           background: "#18B0E6",
+          fontFamily: "'Mont-Regular', sans-serif",
           "&:hover": {
             backgroundColor: "#153A5F",
           },

@@ -87,8 +87,8 @@ function Professionals({ onPress }) {
             sx={{
               marginTop: "8%",
 
-              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2.3%" },
+              width: { xs: "100%", sm: "80%", md: "60%", lg: "43%" },
               paddingLeft: "3%",
               paddingRight: "3%",
               borderRadius: 1,
@@ -96,6 +96,7 @@ function Professionals({ onPress }) {
               fontSize: "16px",
               fontWeight: "400",
               background: "#18B0E6",
+              boxShadow:'none',
               "&:hover": {
                 backgroundColor: "#153A5F",
               },

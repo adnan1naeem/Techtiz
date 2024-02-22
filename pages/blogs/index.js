@@ -45,7 +45,7 @@ function Blog() {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          gap: "1%",
+     
           justifyContent: "center",
         }}
       >

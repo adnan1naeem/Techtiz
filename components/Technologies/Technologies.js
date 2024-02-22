@@ -109,7 +109,7 @@ function Technologies() {
         sx={{
           color: "var(--e-global-color-9f67d62)",
           textAlign: "center",
-          fontSize: "2.7em",
+          fontSize: { xs: "1.8em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,

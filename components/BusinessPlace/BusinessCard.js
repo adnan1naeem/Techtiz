@@ -51,7 +51,7 @@ function BusinessCard({ data, onClick }) {
             sx={{
               marginTop: "-3%",
               width: { xs: "18rem", sm: "14rem", md: "13rem", lg: "15rem" },
-              height: { xs: "22rem", sm: "20rem", md: "20rem", lg: "22rem" },
+              height: { xs: "24rem", sm: "20rem", md: "20rem", lg: "22rem" },
             }}
           >
             <img
@@ -66,7 +66,7 @@ function BusinessCard({ data, onClick }) {
               height: { xs: "20rem", sm: "20rem", md: "24rem", lg: "22rem" },
             }}
           >
-            <List>
+            <List sx={{mt:'3%'}}>
               <ListItemIcon>
                 <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '18px' }} />
                 <Typography
@@ -125,6 +125,7 @@ function BusinessCard({ data, onClick }) {
                   paddingLeft: "9%",
                   paddingRight: "9%",
                   background: "#18B0E6",
+                  boxShadow:'none',
                   "&:hover": {
                     backgroundColor: "#153A5F", // Set the desired background color on hover
                   },

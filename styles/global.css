@@ -31,14 +31,17 @@ img {
   height: auto;
 }
 @font-face {
-  font-family: "Mont-Regular";   
+    
   src: local("AirbnbCerealLight"),
-    url("../fonts/Mont-Trial-Regular.ttf") format("truetype");
+    url("../public/fonts/Mont-Regular.ttf") format("truetype");
+    font-family: "Mont-Regular"; 
+
 }
 @font-face {
-  font-family: "Mont-Bold";  
-  src: local("AirbnbCerealLight"),
-    url("../fonts/FontsFree-Net-Mont-Bold.ttf") format("truetype");
+  src: local("AirbnbCerealBold"),
+    url("../public/fonts/Mont-Bold.ttf") format("truetype");
+    font-family: "Mont-Bold";
+  
 }
 @font-face {
   font-family: "Acme-Regular";  

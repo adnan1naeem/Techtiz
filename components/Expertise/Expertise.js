@@ -6,7 +6,6 @@ function Expertise() {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
 
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -18,7 +17,7 @@ function Expertise() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -34,7 +33,9 @@ function Expertise() {
   }, []);
   return (
     <Box ref={weeksRef} sx={{ background: "#18B0E6", marginTop: "2%" }}>
-      <Box sx={{ paddingTop: "2.3%", display: "flex", flexDirection: "column" }}>
+      <Box
+        sx={{ paddingTop: "4.6%", display: "flex", flexDirection: "column" }}
+      >
         <Typography
           sx={{
             textAlign: "center",
@@ -43,7 +44,7 @@ function Expertise() {
             fontWeight: "600",
             fontFamily: "Mont-Bold, Sans-serif",
             transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
+            opacity: isVisible ? 1 : 0,
           }}
         >
           Our Expertise
@@ -51,11 +52,10 @@ function Expertise() {
         <Typography
           sx={{
             textAlign: "center",
-            marginTop: "1%",
+            marginTop: { lg: "1%" },
             color: "#FFFFFF",
             fontFamily: "Mont-Regular, Sans-serif",
-            fontWeight: '300'
-
+            fontWeight: "300",
           }}
         >
           Our skilled team excels in mobile app development (iOS, Android,
@@ -72,9 +72,15 @@ function Expertise() {
           paddingLeft: { md: 0, lg: 10 },
           paddingRight: { md: 0, lg: 10 },
           fontSize: { xs: "2.1em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
-          gap: "2.5%",
+          gap: "3.1%",
           marginTop: "2%",
           paddingBottom: "5%",
+          "@media screen and (min-width: 1500px)": {
+            justifyContent: "space-between",
+            maxWidth: "1200px",
+            margin: "0 auto",
+            
+          },
         }}
       >
         <ExpertiseCard

@@ -9,7 +9,7 @@ function TagCard({ image, des, date }) {
           height: { xs: "32rem", sm: "32rem", md: "32rem", lg: "26rem" },
           borderRadius: "3px",
           background: "white",
-
+          transition: 'all 0.3s ease',
           cursor: "pointer",
 
           "&:hover": {

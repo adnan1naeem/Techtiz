@@ -78,6 +78,7 @@ function ExpertiseMobile({ title, des, onPress }) {
           fontSize: "16px",
           fontWeight: "400",
           background: "#18B0E6",
+          boxShadow:'none',
           "&:hover": {
             backgroundColor: "#153A5F",
           },

@@ -45,7 +45,7 @@ function Application({ onPress }) {
           borderRadius: "10px",
           background: "#F8F8F8",
           boxShadow: "none",
-          mt: "1%",
+          mt: "1.5%",
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>

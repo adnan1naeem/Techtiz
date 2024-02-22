@@ -72,7 +72,7 @@ const Navbar = () => {
           </li>
           <div className={styles.dropdown}>
             <li
-              style={{ display: "flex", justifyContent: "center" }}
+              style={{ display: "flex" }}
               className={styles.dropbtn}
               onClick={toggleDropdown}
             >
@@ -84,6 +84,7 @@ const Navbar = () => {
                     fontSize: "30px",
                     color: "white",
                     cursor: "pointer",
+                    
                   }}
                   className={click ? styles.services : styles["services-menu"]}
                 />
@@ -158,7 +159,7 @@ const Navbar = () => {
 
           <li>
             <Link href="/career" onClick={closeMenu}>
-              <TextNav label="Carees" />
+              <TextNav label="Careers" />
             </Link>
           </li>
         </ul>

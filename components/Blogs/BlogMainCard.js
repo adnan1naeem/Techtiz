@@ -14,6 +14,7 @@ function BlogsMainCard({ image, des, date }) {
           border: "0 solid #69727d",
           marginTop: "4%",
           cursor: "pointer",
+          transition: 'all 0.3s ease',
 
           "&:hover": {
             transform: "scale(1.01) ",

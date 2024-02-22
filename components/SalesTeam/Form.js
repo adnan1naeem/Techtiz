@@ -123,8 +123,8 @@ function Form() {
             
             sx={{
               marginTop: "5px",
-              marginBottom: "3px",
-              width: "27%",
+              marginBottom: "8%",
+              width: {xs:'80%',sm:'27%',lg:"27%"},
               height: "45px",
               fontSize: "15px",
               fontWeight: "bold",
@@ -134,7 +134,7 @@ function Form() {
               boxSizing: "border-box",
               boxShadow: "none",
               borderRadius: "5px",
-              marginLeft: "72%",
+              marginLeft: {xs:'10%',sm:'72%',lg:"72%"},
 
               "&:hover": {
                 backgroundColor: "#303846",

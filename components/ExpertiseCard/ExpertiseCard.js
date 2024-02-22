@@ -7,7 +7,7 @@ function ExpertiseCard({ title, imageCard, height, description, href }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Box>
+    <Box sx={{mt:'1.1%'}}>
       <Link href={{ pathname: href }} style={{ textDecoration: 'none' }}>
         <Card
           sx={{

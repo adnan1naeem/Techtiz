@@ -40,9 +40,10 @@ function CoreCard({ image, heading, bg, para }) {
           <Typography
             sx={{
               color: "white",
-              fontWeight: "600",
-              fontSize: "2.1em",
+              fontWeight: 500,
+              fontSize: "35px",
               marginTop: "10%",
+              fontFamily: "'Mont-Bold', sans-serif",
             }}
           >
             {heading}
@@ -72,12 +73,21 @@ function CoreCard({ image, heading, bg, para }) {
             color="white"
             sx={{
               fontSize: "27px",
-              fontWeight: "600",
+              fontWeight: 400,
+              fontFamily: "'Mont-Bold', sans-serif",
             }}
           >
             {heading}
           </Typography>
-          <Typography color="white" sx={{ marginTop: "6%", fontSize: "16px" }}>
+          <Typography
+            color="white"
+            sx={{
+              marginTop: "6%",
+              fontSize: "16px",
+              fontFamily: "'Mont-Regular', sans-serif",
+              fontWeight:100
+            }}
+          >
             {para}
           </Typography>
         </CardContent>

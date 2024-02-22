@@ -23,7 +23,7 @@ function MainBanner({ onPress }) {
       sx={{
         background: "#153A5F",
         width: "100%",
-        height: { xs: "140vh", sm: "100%", lg: "100%", xl: "110vh" },
+        height: { xs: "140vh", sm: "100%", lg: "100%", xl: "100vh" },
       }}
     >
       <Box
@@ -33,7 +33,7 @@ function MainBanner({ onPress }) {
           flexDirection: { xs: "column", sm: "row", md: "row", lg: "row", xl: "row" },
         }}
       >
-        <Box sx={{ height: { xs: "40rem", sm: "50rem", md: "50rem", lg: "50rem", xl: "50rem" } }}>
+        <Box sx={{ height: { xs: "40rem", sm: "50rem", md: "50rem", lg: "50rem", xl: "60rem" } }}>
           <Image
             style={{ width: "300px", height: "100%" }}
             src={Line}
@@ -41,7 +41,7 @@ function MainBanner({ onPress }) {
             className={styles.responsive_img_Line}
           />
         </Box>
-        <Box sx={{ width: { xs: "22rem", sm: "25rem", md: "25rem", lg: "35rem", xl: "45rem" }, marginTop: { xs: "6%", sm: "25%", md: "20%", lg: "18%", xl: "8%" } }}>
+        <Box sx={{ width: { xs: "22rem", sm: "25rem", md: "25rem", lg: "35rem", xl: "52rem" }, marginTop: { xs: "6%", sm: "25%", md: "20%", lg: "18%", xl: "10%" } }}>
           <img
             style={{ width: "100%" }}
             src="https://techtiz.co/wp-content/uploads/2023/09/app-dev.svg"
@@ -54,7 +54,7 @@ function MainBanner({ onPress }) {
       <Box
         sx={{
           position: "absolute",
-          top: { xs: 150, sm: 200, md: 210, lg: 270, xl: 260 },
+          top: { xs: 150, sm: 200, md: 210, lg: 270, xl: 350 },
           left: { xs: 15, sm: 50, md: 90, lg: 150 },
           width: { xs: "90%", sm: "70%", md: "60%", lg: "55%" },
         }}
@@ -83,7 +83,7 @@ function MainBanner({ onPress }) {
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             gap: "20px",
-            marginTop: "4%",
+            marginTop: "2%",
             alignItems: { xs: "center", sm: "flex-start" },
           }}
         >

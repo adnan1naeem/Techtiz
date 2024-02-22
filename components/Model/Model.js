@@ -38,7 +38,7 @@ function Model({ onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "43px",
+          fontSize: {xs:'35px',md:'43px',lg:"43px"},
           fontWeight: "600",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",

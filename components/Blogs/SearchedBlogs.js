@@ -12,7 +12,8 @@ function SearchedBlogs({ data }) {
         <Grid sx={{
             width: { xs: "100%", sm: "100%", md: "75%", lg: "55%", xl: "50rem" },
             mr: '2rem',
-            mt: '1rem'
+            mt: '1rem',
+            
         }}>
 
             <Box>
@@ -23,6 +24,8 @@ function SearchedBlogs({ data }) {
                             borderRadius: "3px",
                             background: "white",
                             cursor: "pointer",
+                            transition: 'all 0.3s ease',
+                   
                             "&:hover": {
                                 transform: "scale(1.01) ",
                             }

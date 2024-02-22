@@ -93,10 +93,11 @@
         padding-left: 3rem;
         padding-right: 4rem;
     }
-   
+  
 
     .hamburger {
         display: flex;
+        
     }
  
     .nav-menu {
@@ -110,8 +111,8 @@
         transition: 0.4s;
         z-index: 2;
         background: #18B0E6;
-        text-align: center;
-       padding: 0%;
+        text-align: start;
+       padding: 5%;
     }
    
     .nav-menu.active {
@@ -121,11 +122,8 @@
 
     .nav-menu li {
         padding: 1rem;
-        width: 100%;
-        border-bottom: 1px solid #eee;  
-        text-align: center;
-
-
+        border-bottom: 0.5px solid rgba(21, 58, 95, 0.5);
+        text-align: start;
     }
     .nav-menu li:hover{
         background-color: #153A5F;

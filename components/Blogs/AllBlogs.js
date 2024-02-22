@@ -44,12 +44,12 @@ function AllBlogs({ selectedTag }) {
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: { xs: "100%", sm: "100%", md: "75%", lg: "55%", xl: "50rem" },
+        width: { xs: "100%", sm: "100%", md: "75%", lg: "65%", xl: "50rem" },
       }}
     >
       <Typography
         sx={{
-          ml: "2%",
+          ml: {xs:'10%',sm:'12%',md:'10%',lg:'8%',xl:"2%"},
           fontSize: "1.6em",
           color: "#153A5F",
           fontWeight: "600",
