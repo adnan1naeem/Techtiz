@@ -54,6 +54,7 @@ function DevelopmentMobile({ onPress }) {
           fontSize: "2.2em",
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
+          fontFamily:"Mont-Bold, Sans-serif",
           opacity: isVisible ? 1 : 0,
         }}
       >

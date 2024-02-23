@@ -26,6 +26,7 @@ function QAButton({
           paddingRight: "23px",
           marginTop: "8px",
           borderRadius: "28px",
+          fontFamily:"Mont-Bold, Sans-serif",
           "&:hover": {
             backgroundColor: isSelected ? "#F6F9FC" : "#EAEAEA",
             border: isSelected ? "2px solid #18B0E6" : "none",

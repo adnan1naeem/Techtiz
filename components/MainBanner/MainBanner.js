@@ -71,7 +71,7 @@ function MainBanner({ onPress }) {
             fontWeight: "bold",
             textTransform: "uppercase",
             lineHeight: "50px",
-            fontFamily: "Mont-Bold, Sans-serif",
+            fontFamily: "'Mont-Bold', sans-serif",
             opacity: showText ? 1 : 0, // Set opacity based on showText state
             transition: "opacity 1s ease-in-out", // Apply transition effect
           }}

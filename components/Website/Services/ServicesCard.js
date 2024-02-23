@@ -47,6 +47,7 @@ function ServicesCard({ image, heading, text }) {
                 fontWeight: "600",
                 marginBottom: "15px",
                 width: "100%",
+                fontFamily:"Mont-Bold, Sans-serif",
               }}
             >
               {heading}
@@ -58,6 +59,7 @@ function ServicesCard({ image, heading, text }) {
                 fontSize: "0.9rem",
                 lineHeight: "1.5em",
                 marginBottom: "5px",
+                fontFamily:"Mont-Regular, Sans-serif",
               }}
             >
               {text}

@@ -43,6 +43,7 @@ function Education({onPress}) {
           fontWeight: "700",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
         Education Sector
@@ -55,6 +56,7 @@ function Education({onPress}) {
           fontWeight: "400",
           mt: "5px",
           lineHeight: "30px",
+          fontFamily:"Mont-Regular, Sans-serif",
         }}
       >
         Digital learning is the new normal. We help to create value through

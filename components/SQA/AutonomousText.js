@@ -20,6 +20,7 @@ function AutonomousText() {
               fontSize: "2.7em",
               fontWeight: "600",
               lineHeight: "48px",
+              fontFamily:"Mont-Regular, Sans-serif",
             }}
           >
             Autonomous QA and Testing
@@ -29,7 +30,8 @@ function AutonomousText() {
               fontSize: "0.9em",
               fontWeight: "100",
               lineHeight: "25px",
-              marginTop:'4%'
+              marginTop:'4%',
+              fontFamily:"Mont-Regular, Sans-serif",
             }}>
             At TechTiz, we embrace the future of software testing with
             Autonomous QA and Testing. With AI-driven automation, we

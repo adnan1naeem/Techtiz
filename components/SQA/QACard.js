@@ -50,6 +50,7 @@ function QACard({ title,text ,image,lg,top}) {
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
       
         }}>
         {title}
@@ -58,7 +59,8 @@ function QACard({ title,text ,image,lg,top}) {
           color: "#153A5F",
           fontSize: "1em",
           fontWeight: "500",
-          marginTop:'4%'
+          marginTop:'4%',
+          fontFamily:"Mont-Regular, Sans-serif",
       
         }}>
         {text}

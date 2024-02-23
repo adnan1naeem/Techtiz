@@ -51,6 +51,7 @@ function Partner({ onPress }) {
           lineHeight: "53px",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif",
         }}
       >
         Case Studies: Qarrt, Qarrt Partner,

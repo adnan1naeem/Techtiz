@@ -40,6 +40,7 @@ function Professionals({ onPress }) {
               paddingLeft: "10px",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Industries
@@ -52,6 +53,7 @@ function Professionals({ onPress }) {
               marginTop: "1%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Skilled professionals with
@@ -61,9 +63,11 @@ function Professionals({ onPress }) {
               color: "#18B0E6",
               fontSize: "2.2em",
               fontWeight: "600",
-              marginTop: "-2%",
+              lineHeight:'40px',
+              
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             State of the art technology
@@ -74,6 +78,7 @@ function Professionals({ onPress }) {
               fontSize: "1.1em",
               fontWeight: "400",
               marginTop: "5%",
+              fontFamily:"Mont-Regular, Sans-serif",
             }}
           >
             If you need our help, have questions about how to use the platform
@@ -96,6 +101,8 @@ function Professionals({ onPress }) {
               fontSize: "16px",
               fontWeight: "400",
               background: "#18B0E6",
+              fontFamily:"Mont-Regular, Sans-serif",
+              
               boxShadow:'none',
               "&:hover": {
                 backgroundColor: "#153A5F",

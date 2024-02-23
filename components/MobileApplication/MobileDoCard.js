@@ -42,7 +42,7 @@ function MobileDoCard({ background, title, des }) {
     >
       <Card
         sx={{
-          width: { xs: "19rem", sm: "16rem", md: "16rem", lg: "16rem" },
+          width: { xs: "19rem", sm: "16rem", md: "16rem", lg: "17rem" },
           height: { xs: "13rem", sm: "13rem", md: "13rem", lg: "13rem" },
           borderRadius: "20px",
           background: background,
@@ -65,6 +65,7 @@ function MobileDoCard({ background, title, des }) {
               lineHeight: "30px",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             {title}
@@ -76,6 +77,7 @@ function MobileDoCard({ background, title, des }) {
               color: "#54595F",
               lineHeight: "20px",
               marginTop: "9%",
+              fontFamily:"Mont-Regular, Sans-serif",
             }}
           >
             {des}

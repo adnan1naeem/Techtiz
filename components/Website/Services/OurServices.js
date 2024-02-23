@@ -42,6 +42,8 @@ function OurServices() {
           paddingTop: "5%",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
+          
         }}
       >
         Our Services
@@ -54,6 +56,11 @@ function OurServices() {
           flexWrap: "wrap",
           marginTop: "3px",
           paddingBottom: "6%",
+          '@media screen and (min-width: 1500px)': { // Adjust the minimum width as per your requirement
+      maxWidth: "1200px",
+      margin: "0 auto",
+    }
+
         }}
       >
         <ServicesCard

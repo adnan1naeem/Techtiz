@@ -45,7 +45,7 @@ function CrossLine({title,des}) {
     >
       <Typography
         sx={{ fontSize: "1.5em", color: "#153A5F", fontWeight: "600" ,marginTop:'4%',transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,}}
+          opacity: isVisible ? 1 : 0,fontFamily:"Mont-Bold, Sans-serif",}}
       >
         {title}
       </Typography>
@@ -55,6 +55,7 @@ function CrossLine({title,des}) {
           color: "#153A5F",
           fontWeight: "400",
           marginTop: "1%",
+          fontFamily:"Mont-Regular, Sans-serif",
         }}
       >
        {des}

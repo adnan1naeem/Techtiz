@@ -52,9 +52,9 @@ function DiscussProject({onPress}) {
       >
         <CardContent sx={{ display: "flex", flexDirection: "row" ,justifyContent:'space-between',marginTop:'2%',flexWrap:'wrap'}}>
           <Box sx={{marginLeft:'3%'}}>
-            <Typography sx={{color:'#FFFFFF',fontSize:'2.2em',fontWeight:'700'}}> Let's Discuss Your Project!</Typography>
+            <Typography sx={{color:'#FFFFFF',fontSize:'2.2em',fontWeight:'700',fontFamily:"Mont-Bold, Sans-serif",}}> Let's Discuss Your Project!</Typography>
             <Typography sx={{color:'#FFFFFF',fontSize:'1.3em',fontWeight:'300',marginTop:'5%',transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,}}>
+          opacity: isVisible ? 1 : 0, fontFamily:"Mont-Regular, Sans-serif",}}>
               Get a free consultation and let us know your project idea to{" "}
               <br /> turn into an amazing digital product.
             </Typography>
@@ -73,6 +73,7 @@ function DiscussProject({onPress}) {
                 paddingTop: "20px",
                 paddingBottom: "20px",
                 transition: 'background-color 0.8s, color 0.6s',
+                fontFamily:"Mont-Regular, Sans-serif",
                 marginTop: "8px",
                 "&:hover": {
                   backgroundColor: "white",

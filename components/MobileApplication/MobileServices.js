@@ -17,7 +17,7 @@ function AnimatedContent({ scrollUp, des, onPress }) {
         }}
       >
         <Box sx={{ height: 150, position: "relative", zIndex: 1 }}>
-          <Typography color="white" sx={{ marginTop: "4%", fontSize: "15px" }}>
+          <Typography color="white" sx={{ marginTop: "4%", fontSize: "15px",fontFamily:"Mont-Regular, Sans-serif", }}>
             {des}
           </Typography>
         </Box>
@@ -27,6 +27,7 @@ function AnimatedContent({ scrollUp, des, onPress }) {
             color: "white",
             transition: "background-color 0.3s ease",
             border: "2px solid #6EC1E4",
+            fontFamily:"Mont-Regular, Sans-serif",
             "&:hover": {
               backgroundColor: "#6EC1E4",
             },
@@ -120,6 +121,7 @@ function MobileServices({ image, title, des, onPress }) {
               lineHeight: "24px",
               textAlign: "center",
               width: "60%",
+              fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             {title}

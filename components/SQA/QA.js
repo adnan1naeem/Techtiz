@@ -34,6 +34,7 @@ function QA({onPress}) {
               lineHeight: "20px",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             &nbsp;QA & Testing
@@ -46,6 +47,7 @@ function QA({onPress}) {
               marginTop: "1%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Keep Your Business
@@ -55,9 +57,10 @@ function QA({onPress}) {
               color: "#153A5F",
               fontSize: "2.8em",
               fontWeight: "800",
-              marginTop: "-4%",
+              marginTop: "-3%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
            Running With Our
@@ -67,9 +70,11 @@ function QA({onPress}) {
               color: "#153A5F",
               fontSize: "2.7em",
               fontWeight: "800",
-              marginTop: "-4%",
+              marginTop: "-3%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
            Software Quality
@@ -79,9 +84,10 @@ function QA({onPress}) {
               color: "#153A5F",
               fontSize: "2.7em",
               fontWeight: "800",
-              marginTop: "-4%",
+              marginTop: "-3%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
           Testing Services
@@ -93,7 +99,9 @@ function QA({onPress}) {
               fontSize: "1.1em",
               fontWeight: "400",
               marginTop: "2%",
+              fontFamily:"Mont-Regular, Sans-serif",
             }}
+
           >
             Getting the most out of your business starts with a <br/>customized quality testing approach
           </Typography>
@@ -113,6 +121,8 @@ function QA({onPress}) {
               fontSize: "16px",
               fontWeight: "400",
               background: "#18B0E6",
+              fontFamily:"Mont-Regular, Sans-serif",
+              boxShadow:"none",
               "&:hover": {
                 backgroundColor: "#153A5F",
               },

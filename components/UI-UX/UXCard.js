@@ -48,12 +48,13 @@ function UXCard({image,heading,text}) {
                 fontSize: "1.3rem",
                 fontWeight: "600",
                 marginBottom: "15px",
+                fontFamily:"Mont-Bold, Sans-serif",
               }}
             >
               {heading}
             </Typography>
             <Typography
-              sx={{ color: "#153A5F", fontWeight: "300", fontSize: "1rem", lineHeight:'1.5em',marginBottom:'1px',}}
+              sx={{ color: "#153A5F", fontWeight: "300", fontSize: "1rem", lineHeight:'1.5em',marginBottom:'1px', fontFamily:"Mont-Regular, Sans-serif",}}
             >
              {text}
             </Typography>

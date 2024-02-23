@@ -70,6 +70,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                     fontWeight: "600",
                     marginTop: "3%",
                     marginLeft: "-8%",
+                    fontFamily: "'Mont-Bold', sans-serif"
                   }}
                 >
                   {maintitle}
@@ -106,11 +107,12 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                 sx={{
                   fontSize: "25px",
                   fontWeight: "600",
+                  fontFamily: "'Mont-Bold', sans-serif"
                 }}
               >
                 {resource}
               </Typography>
-              <Typography color="white" sx={{ marginTop: "2%" }}>
+              <Typography color="white" sx={{ marginTop: "2%" , fontFamily: "'Mont-Regular', sans-serif"}}>
                 {titleresource}
               </Typography>
               <Box sx={{ marginTop: "2%" }}>

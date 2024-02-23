@@ -43,6 +43,7 @@ function Model({ onPress }) {
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif"
         }}
       >
         Engagement Models

@@ -27,7 +27,7 @@ function AnalysisCard({ title, lists,lgTop,xlTop ,image}) {
         }}
       >
         <Typography
-          sx={{ fontSize: "1.5em", fontWeight: "600", color: "#153A5F" }}
+          sx={{ fontSize: "1.5em", fontWeight: "600", color: "#153A5F" ,fontFamily:"Mont-Bold, Sans-serif",}}
         >
           {title}
         </Typography>
@@ -47,6 +47,7 @@ function AnalysisCard({ title, lists,lgTop,xlTop ,image}) {
                   fontSize: "17px",
                   fontWeight: "400",
                   color: "#153A5F",
+                  fontFamily:"Mont-Regular, Sans-serif",
                   width: {
                     xs: "18rem",
                     sm: "20em",

@@ -47,7 +47,7 @@ function QAForYou() {
     };
   }, []);
   return (
-    <Box ref={weeksRef} sx={{ marginTop: "5%" }}>
+    <Box ref={weeksRef} sx={{ marginTop: "3%" }}>
       <Typography
         sx={{
           color: "#153A5F",
@@ -56,6 +56,7 @@ function QAForYou() {
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
         What's in it for you
@@ -67,11 +68,11 @@ function QAForYou() {
           justifyContent: "center",
           gap: "2%",
           background: "#F6F9FC",
-          marginLeft: {lg:"18%",xl:'23%'},
-          marginRight: {lg:"18%",xl:'23%'},
+          marginLeft: {lg:"18%",xl:'24%'},
+          marginRight: {lg:"18%",xl:'24%'},
           padding: "0.5% 0.5% 0.5% 0.5%",
           borderRadius: "40px",
-          marginTop: "3%",
+          marginTop: "2%",
         }}
       >
         <QAButton

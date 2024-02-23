@@ -42,7 +42,7 @@ function Expertise() {
             color: "#FFFFFF",
             fontSize: "43.2px",
             fontWeight: "600",
-            fontFamily: "Mont-Bold, Sans-serif",
+            fontFamily: "'Mont-Bold', sans-serif",
             transition: "opacity 1s ease-in-out",
             opacity: isVisible ? 1 : 0,
           }}
@@ -54,7 +54,7 @@ function Expertise() {
             textAlign: "center",
             marginTop: { lg: "1%" },
             color: "#FFFFFF",
-            fontFamily: "Mont-Regular, Sans-serif",
+            fontFamily: "'Mont-Regular', sans-serif",
             fontWeight: "300",
           }}
         >

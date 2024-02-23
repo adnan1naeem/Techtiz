@@ -38,18 +38,13 @@ img {
 
 }
 @font-face {
-  src: local("AirbnbCerealBold"),
+  src: local("AirbnbCerealLight"),
     url("../public/fonts/Mont-Bold.ttf") format("truetype");
     font-family: "Mont-Bold";
-  
+
 }
 @font-face {
   font-family: "Acme-Regular";  
   src: local("AirbnbCerealLight"),
     url("../fonts/Acme-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Sans-serif";  
-  src: local("AirbnbCerealLight"),
-    url("../fonts/SansSerif.ttf") format("truetype");
 }

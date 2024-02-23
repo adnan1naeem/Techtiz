@@ -48,6 +48,7 @@ function DoItMobile() {
           color: "#153A5F",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
         How we do it

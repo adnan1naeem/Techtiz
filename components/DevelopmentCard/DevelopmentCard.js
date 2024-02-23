@@ -56,8 +56,9 @@ function DevelopmentCard({ background, title, Description }) {
               lineHeight:'50px',
               marginTop: "13%",
               color: "#FFFFFF",
-              fontFamily: '"Mont-bold", Sans-serif',
+              fontFamily: "'Mont-Bold', sans-serif",
               transition: "opacity 1s ease-in-out",
+              
           opacity: isVisible ? 1 : 0,
             }}
             gutterBottom
@@ -70,7 +71,7 @@ function DevelopmentCard({ background, title, Description }) {
               fontWeight: 100,
               marginTop: "18%",
               color: "#FFFFFF",
-              fontFamily: "Mont-Regular, Sans-serif",
+              fontFamily: "'Mont-Regular', sans-serif",
               lineHeight:'25px',
               height: "9rem",
               transition: "opacity 1s ease-in-out",
@@ -87,7 +88,7 @@ function DevelopmentCard({ background, title, Description }) {
                 fontSize: "15px",
                 fontWeight: '300',
                 color: "#FFFFFF",
-                fontFamily: "Mont-Regular, Sans-serif",
+                fontFamily: "'Mont-Regular', sans-serif",
                 transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
               }}

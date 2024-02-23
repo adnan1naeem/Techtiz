@@ -41,7 +41,7 @@ function Transportation({ onPress }) {
       <Card
         sx={{
           width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "33rem" },
-          height: { xs: "38rem", sm: "39xrem", md: "38rem", lg: "34rem" },
+          height: { xs: "38rem", sm: "39xrem", md: "38rem", lg: "38rem" },
           background: "none",
           boxShadow: "none",
         }}
@@ -54,6 +54,7 @@ function Transportation({ onPress }) {
               fontWeight: "600",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
+              fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Transportation and Logistics
@@ -64,6 +65,7 @@ function Transportation({ onPress }) {
               fontSize: "1.1em",
               fontWeight: "300",
               marginTop: "2%",
+              fontFamily:"Mont-Regular, Sans-serif",
             }}
           >
             Convenient logistics and transportation solutions that save cost
@@ -81,6 +83,7 @@ function Transportation({ onPress }) {
               paddingTop: "-10px%",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
+              fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             What we offer
@@ -94,6 +97,7 @@ function Transportation({ onPress }) {
               marginTop: "5%",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
+              fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Development of software for management distribution

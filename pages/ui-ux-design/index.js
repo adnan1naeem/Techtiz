@@ -21,7 +21,7 @@ function UI() {
 
     return (
         <div>
-            <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%" } }}>
+            <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%" ,xl:'12%'} }}>
                 <Box
                     sx={{
                         display: "flex",
@@ -33,7 +33,7 @@ function UI() {
                     <DesignUX  onPress={handleClick} />
                     <Box
                         sx={{
-                            width: { xs: "100%", sm: "80%", md: "36%", lg: "38%", xl: "30%" },
+                            width: { xs: "100%", sm: "80%", md: "36%", lg: "38%", xl: "28%" },
                             transform: isHovered ? "translateY(-12px)" : "translateY(0)",
                             transition: "transform 1s ease",
                             marginTop: { xs: '10%', sm: '10%', md: 0, lg: 0 }

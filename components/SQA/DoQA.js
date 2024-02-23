@@ -42,6 +42,7 @@ function DoQA() {
           paddingTop: "2%",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
         What We Do
@@ -55,7 +56,11 @@ function DoQA() {
           marginTop: "1%",
           paddingBottom: "6%",
           ml: '7rem',
-          mr: '7rem'
+          mr: '7rem',
+          '@media screen and (min-width: 1500px)': { // Adjust the minimum width as per your requirement
+      maxWidth: "1200px",
+      margin: "0 auto",
+    }
         }}
       >
         <ServicesCard

@@ -33,7 +33,8 @@ function BusinessCard({ data, onClick }) {
             color: "#153A5F",
             fontFamily: "Mont-bold, Sans-serif",
             textAlign: "center",
-            marginLeft: '-8%'
+            marginLeft: '-8%',
+            fontFamily: "'Mont-Bold', sans-serif"
 
           }}
         >
@@ -51,7 +52,7 @@ function BusinessCard({ data, onClick }) {
             sx={{
               marginTop: "-3%",
               width: { xs: "18rem", sm: "14rem", md: "13rem", lg: "15rem" },
-              height: { xs: "24rem", sm: "20rem", md: "20rem", lg: "22rem" },
+              height: { xs: "24rem", sm: "20rem", md: "20rem", lg: "22rem" ,xl:'25rem'},
             }}
           >
             <img
@@ -75,7 +76,7 @@ function BusinessCard({ data, onClick }) {
                     fontSize: "17px",
                     fontWeight: "400",
                     color: "#54595F",
-                    fontFamily: "Mont-Regular, Sans-serif",
+                    fontFamily: "'Mont-Regular', sans-serif"
                   }}
                 >
                   {data?.point1}
@@ -91,7 +92,7 @@ function BusinessCard({ data, onClick }) {
                     fontSize: "17px",
                     fontWeight: "400",
                     color: "#54595F",
-                    fontFamily: "Mont-Regular, Sans-serif",
+                    fontFamily: "'Mont-Regular', sans-serif"
                   }}
                 >
                   {data?.point2}
@@ -107,7 +108,7 @@ function BusinessCard({ data, onClick }) {
                     fontSize: "17px",
                     fontWeight: "400",
                     color: "#54595F",
-                    fontFamily: "Mont-Regular, Sans-serif",
+                    fontFamily: "'Mont-Regular', sans-serif"
                   }}
                 >
                   {data?.point3}
@@ -115,7 +116,7 @@ function BusinessCard({ data, onClick }) {
               </ListItemIcon>
             </List>
 
-            <CardActions sx={{ marginTop: "10%" }}>
+            <CardActions sx={{ marginTop: "7%" }}>
               <Button
                 variant="contained"
                 onClick={onClick}
@@ -124,6 +125,7 @@ function BusinessCard({ data, onClick }) {
                   padding: "2.8%",
                   paddingLeft: "9%",
                   paddingRight: "9%",
+                  fontFamily: "'Mont-Regular', sans-serif",
                   background: "#18B0E6",
                   boxShadow:'none',
                   "&:hover": {

@@ -5,7 +5,7 @@ function FooterLogoCard() {
         <Box>
             <Card
                 sx={{
-                    width: { sx: "20rem", sm: '29rem', md: '19rem', lg: '17rem' },
+                    width: { sx: "20rem", sm: '29rem', md: '19rem', lg: '17rem',xl:'19rem' },
                     height: "17rem",
                     background: "none",
                     boxShadow: "none",
@@ -20,7 +20,8 @@ function FooterLogoCard() {
                     <Typography
                         sx={{
                             color: "#153A5F",
-                            fontSize: '17px'
+                            fontSize: '17px',
+                            fontFamily: 'Mont-Regular, Sans-serif',
                         }}
                     >
                         Advancing beyond traditional software development practices and

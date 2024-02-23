@@ -32,6 +32,7 @@ function FooterCard({
               fontSize: "18px",
               fontWeight: "600",
               paddingBottom: "12%",
+              fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             {title}

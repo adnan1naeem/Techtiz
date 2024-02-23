@@ -39,7 +39,7 @@ function DoItUX() {
   };
 
   return (
-    <Box ref={weeksRef} sx={{ marginTop: "5%" }}>
+    <Box ref={weeksRef} sx={{ marginTop: "3%" }}>
       <Typography
         sx={{
           color: "#153A5F",
@@ -48,6 +48,7 @@ function DoItUX() {
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
         How We Do It
@@ -59,8 +60,8 @@ function DoItUX() {
           justifyContent: "center",
           gap: "2%",
           background: "#F6F9FC",
-          marginLeft:{xs:0,sm:'10%',md:'15%',lg: "30%"},
-          marginRight: {xs:0,sm:'10%',md:'15%',lg: "30%"},
+          marginLeft:{xs:0,sm:'10%',md:'15%',lg: "30%",xl:'33%'},
+          marginRight: {xs:0,sm:'10%',md:'15%',lg: "30%",xl:'33%'},
           padding: " 0.5% 0.5% 0.5% 0.5%",
           borderRadius: "40px",
           marginTop: "3%",

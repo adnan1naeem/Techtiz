@@ -121,6 +121,7 @@ function FeedBack() {
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif"
         }}
       >
         Feedback From Satisfied Clients
@@ -140,6 +141,7 @@ function FeedBack() {
           fontWeight: "100",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Regular', sans-serif"
         }}
       >
         Our diverse and satisfied clientele have consistently shared positive

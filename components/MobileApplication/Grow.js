@@ -34,6 +34,7 @@ function Grow({onPress}) {
               lineHeight: "17px",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             &nbsp;Mobile App Development
@@ -46,6 +47,7 @@ function Grow({onPress}) {
               marginTop: "1%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Grow With a Mobile App
@@ -57,6 +59,7 @@ function Grow({onPress}) {
               fontWeight: "600",
               marginTop: "-2%",transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
 
             }}
           >
@@ -68,6 +71,7 @@ function Grow({onPress}) {
               fontWeight: "600",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
  
             }}>iOS | Android | React Native | Flutter</Typography>
           <Typography
@@ -76,6 +80,7 @@ function Grow({onPress}) {
               fontSize: "1.1em",
               fontWeight: "400",
               marginTop: "5%",
+              fontFamily:"Mont-Regular, Sans-serif",
             }}
           >
             Take your business to the next level with a mobile app that disrupts
@@ -92,7 +97,7 @@ function Grow({onPress}) {
               
               borderRadius: '5px',
               textTransform: "none",
-              
+              fontFamily:"Mont-Regular, Sans-serif",
               fontSize: "16px",
               fontWeight: "400",
               background: "#18B0E6",

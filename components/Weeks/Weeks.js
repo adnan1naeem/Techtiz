@@ -47,7 +47,7 @@ function Weeks() {
           fontWeight: 'bold',
           lineHeight:'50px',
           color: "#153A5F",
-          fontFamily: '"Mont-bold", Sans-serif',
+          fontFamily: "'Mont-Bold', sans-serif",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
    
@@ -66,7 +66,7 @@ function Weeks() {
           lineHeight: "25px",
           fontSize: "1em",
           fontWeight: '300',
-          fontFamily: 'Mont-Regular, Sans-serif',
+          fontFamily: "'Mont-Regular', sans-serif",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
         }}

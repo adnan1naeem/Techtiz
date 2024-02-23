@@ -48,6 +48,7 @@ function ExpertiseMobile({ title, des, onPress }) {
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
         {title}
@@ -58,6 +59,7 @@ function ExpertiseMobile({ title, des, onPress }) {
           fontSize: "1.1em",
           fontWeight: "400",
           marginTop: "3%",
+          fontFamily:"Mont-Regular, Sans-serif",
         }}
       >
         {des}
@@ -78,6 +80,7 @@ function ExpertiseMobile({ title, des, onPress }) {
           fontSize: "16px",
           fontWeight: "400",
           background: "#18B0E6",
+          fontFamily:"Mont-Regular, Sans-serif",
           boxShadow:'none',
           "&:hover": {
             backgroundColor: "#153A5F",

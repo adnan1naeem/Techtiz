@@ -34,6 +34,7 @@ function DesignUX({onPress}) {
               lineHeight: "20px",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             &nbsp;UI/UX Design
@@ -46,6 +47,7 @@ function DesignUX({onPress}) {
               marginTop: "1%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             UI/UX Design That
@@ -55,9 +57,10 @@ function DesignUX({onPress}) {
               color: "#153A5F",
               fontSize: "2.8em",
               fontWeight: "800",
-              marginTop: "-4%",
+              marginTop: "-2%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Drives Growth & Never
@@ -67,9 +70,10 @@ function DesignUX({onPress}) {
               color: "#153A5F",
               fontSize: "2.7em",
               fontWeight: "800",
-              marginTop: "-4%",
+              marginTop: "-2%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Lets You Down
@@ -81,6 +85,7 @@ function DesignUX({onPress}) {
               fontSize: "1.1em",
               fontWeight: "300",
               marginTop: "5%",
+              fontFamily:"Mont-Regular, Sans-serif",
             }}
           >
             With our user-friendly and responsive interfaces, you <br/> can establish
@@ -100,6 +105,8 @@ function DesignUX({onPress}) {
               borderRadius: 0,
               textTransform: "none",
               fontSize: "16px",
+              fontFamily:"Mont-Regular, Sans-serif",
+              boxShadow:'none',
               fontWeight: "400",
               background: "#18B0E6",
               "&:hover": {

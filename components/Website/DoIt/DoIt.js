@@ -50,6 +50,7 @@ function DoIt() {
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
         How We Do It
@@ -61,8 +62,8 @@ function DoIt() {
           justifyContent: "center",
           gap: "2%",
           background: "#F6F9FC",
-          marginLeft: {lg:"10%",xl:'15%'},
-          marginRight:{lg:"10%",xl:'15%'},
+          marginLeft: {lg:"10%",xl:'17%'},
+          marginRight:{lg:"10%",xl:'17%'},
           padding: " 0.5% 0.5% 0.5% 0.5%",
           borderRadius: "40px",
           marginTop: "3%",

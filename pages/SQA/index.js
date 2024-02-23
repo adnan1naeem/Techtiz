@@ -22,7 +22,7 @@ function Sqa() {
   
   return (
     <Box>
-      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%" } }}>
+      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%" ,xl:'10%'} }}>
         <Box
           sx={{
             display: "flex",

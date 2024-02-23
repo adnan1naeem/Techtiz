@@ -25,12 +25,12 @@ function Mobile() {
 
   return (
     <div>
-      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "11%" } }}>
+      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "11%",xl:'10%' } }}>
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
-            gap: "12%",
+            gap: {lg:"12%",xl:'8%'},
             flexWrap: "wrap",
           }}
         >

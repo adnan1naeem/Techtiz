@@ -67,10 +67,11 @@ function Footer() {
           paddingRight: "10%",
           paddingTop: "4%",
           paddingBottom: "2.5%",
+          
         }}
       >
         <Box>
-          <Typography sx={{ color: "#153A5F", fontWeight: "100" }}>
+          <Typography sx={{ color: "#153A5F", fontWeight: "100",  fontFamily: 'Mont-Regular, Sans-serif', }}>
             © 2023 Techtiz. All Rights Reserved.
           </Typography>
         </Box>

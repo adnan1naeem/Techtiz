@@ -39,9 +39,10 @@ function DoUX() {
           fontSize: "2.8em",
           textAlign: "center",
           fontWeight: "600",
-          paddingTop: "5%",
+          paddingTop: "2%",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
         What We Do
@@ -54,6 +55,10 @@ function DoUX() {
           flexWrap: "wrap",
           marginTop: "3%",
           paddingBottom: "6%",
+          '@media screen and (min-width: 1500px)': { // Adjust the minimum width as per your requirement
+      maxWidth: "1200px",
+      margin: "0 auto",
+    }
         }}
       >
         <UXCard

@@ -42,6 +42,7 @@ function Stack() {
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
         Tech Stacks
@@ -55,6 +56,7 @@ function Stack() {
           fontWeight: "100",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Regular, Sans-serif",
         }}
       >
         We invest our time and resources in state-of-the-art innovations to stay

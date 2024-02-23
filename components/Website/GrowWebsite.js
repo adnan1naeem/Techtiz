@@ -17,7 +17,7 @@ function GrowWebsite({onPress}) {
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "28rem", md: "27rem", lg: "38rem" },
+          width: { xs: "22rem", sm: "28rem", md: "27rem", lg: "38rem",xl:'33rem' },
           height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",
@@ -34,6 +34,7 @@ function GrowWebsite({onPress}) {
               lineHeight: "20px",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             &nbsp;Web App Development
@@ -46,6 +47,7 @@ function GrowWebsite({onPress}) {
               marginTop: "1%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Grow With an
@@ -58,6 +60,7 @@ function GrowWebsite({onPress}) {
               marginTop: "-4%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Unconventional &
@@ -70,6 +73,7 @@ function GrowWebsite({onPress}) {
               marginTop: "-4%",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Engaging Website
@@ -81,6 +85,7 @@ function GrowWebsite({onPress}) {
               fontSize: "1.3em",
               fontWeight: "300",
               marginTop: "2%",
+              fontFamily:"Mont-Regular, Sans-serif",
             }}
           >
             Make your website stand out with our professional <br/> web development services.
@@ -93,7 +98,7 @@ function GrowWebsite({onPress}) {
               marginTop: "6%",
 
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "35%" },
+              width: { xs: "100%", sm: "80%", md: "60%", lg: "35%", },
               paddingLeft: "2px",
               paddingRight: "2px",
               borderRadius: 0,
@@ -101,6 +106,7 @@ function GrowWebsite({onPress}) {
               fontSize: "16px",
               fontWeight: "400",
               background: "#18B0E6",
+              fontFamily:"Mont-Regular, Sans-serif",
               "&:hover": {
                 backgroundColor: "#153A5F",
               },
