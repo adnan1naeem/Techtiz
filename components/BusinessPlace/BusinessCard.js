@@ -27,49 +27,49 @@ function BusinessCard({ data, onClick }) {
       >
         <Typography
           sx={{
-            fontSize: "28px",
-            fontWeight: 700,
-            marginTop: "3%",
+            fontSize: "2.2em",
+            fontWeight: "bold",
+            width: { xs: "100%", sm: "64%", md: "64%", lg: "64%" },
+            marginTop: "2%",
             color: "#153A5F",
-            fontFamily: "Mont-bold, Sans-serif",
-            textAlign: "center",
-            marginLeft: '-8%',
-            fontFamily: "'Mont-Bold', sans-serif"
-
+            fontFamily: "'Mont-Bold', sans-serif",
+            textAlign: { xs: "center", sm: "start", md: "start", lg: "start" },
+            marginLeft: 'auto', // Move the box to the right
           }}
         >
           {data?.title}
         </Typography>
+
         <CardContent
           sx={{
             display: "flex",
             marginLeft: "2%",
-            gap: "2%",
+            gap: "3%",
             flexDirection: { xs: "column", sm: "row", md: "row", lg: "row" },
           }}
         >
           <Box
             sx={{
-              marginTop: "-3%",
+              marginTop: "-6%",
               width: { xs: "18rem", sm: "14rem", md: "13rem", lg: "15rem" },
-              height: { xs: "24rem", sm: "20rem", md: "20rem", lg: "22rem" ,xl:'25rem'},
+              height: { xs: "22rem", sm: "18rem", md: "18rem", lg: "20rem", xl: '22rem' },
             }}
           >
             <img
               src={data?.image}
               alt=""
-              style={{ height: "90%", width: "100%" }}
+              style={{ height: "80%", width: "100%" }}
             />
           </Box>
           <Box
             sx={{
               width: { xs: "18rem", sm: "25rem", md: "30rem", lg: "28rem" },
-              height: { xs: "20rem", sm: "20rem", md: "24rem", lg: "22rem" },
+              height: { xs: "18rem", sm: "18rem", md: "22rem", lg: "20rem" ,xl:'24rem'},
             }}
           >
-            <List sx={{mt:'3%'}}>
+            <List sx={{ mt: '3%' }}>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '18px' }} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '12px' }} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
@@ -85,7 +85,7 @@ function BusinessCard({ data, onClick }) {
             </List>
             <List>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '18px' }} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '12px' }} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
@@ -101,7 +101,7 @@ function BusinessCard({ data, onClick }) {
             </List>
             <List>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '18px' }} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '12px' }} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
@@ -116,7 +116,7 @@ function BusinessCard({ data, onClick }) {
               </ListItemIcon>
             </List>
 
-            <CardActions sx={{ marginTop: "7%" }}>
+            <CardActions sx={{ marginTop: "6%" }}>
               <Button
                 variant="contained"
                 onClick={onClick}
@@ -127,7 +127,7 @@ function BusinessCard({ data, onClick }) {
                   paddingRight: "9%",
                   fontFamily: "'Mont-Regular', sans-serif",
                   background: "#18B0E6",
-                  boxShadow:'none',
+                  boxShadow: 'none',
                   "&:hover": {
                     backgroundColor: "#153A5F", // Set the desired background color on hover
                   },

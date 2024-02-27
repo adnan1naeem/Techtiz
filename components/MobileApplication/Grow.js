@@ -13,7 +13,10 @@ function Grow({onPress}) {
   }, []);
   return (
     <Box
-      sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'4%'}}
+      sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'4%', '@media screen and (min-width: 1700px)': {
+        mt:'3%'
+        
+         }}}
     >
       <Card
         sx={{

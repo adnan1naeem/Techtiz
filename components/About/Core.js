@@ -18,7 +18,7 @@ function Core() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -42,14 +42,14 @@ function Core() {
   }, []);
   return (
     <Box
-    ref={weeksRef}
+      ref={weeksRef}
       sx={{
         marginTop: "7%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        
+
       }}
     >
       <Typography
@@ -68,9 +68,9 @@ function Core() {
         sx={{
           color: "#153A5F",
           fontSize: "1.1em",
-          fontWeight: "100",
+          fontWeight: 100,
           textAlign: "center",
-          mt:'7px',
+          mt: '7px',
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Regular', sans-serif"
@@ -85,14 +85,9 @@ function Core() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "1.3%",
-          mt: "1%",
-          '@media screen and (min-width: 1600px)': {
-justifyContent:'start',
-      maxWidth: "1200px",
-      margin: "0 auto",
-      marginTop:'1%'
-    }
+          width: {xs: "100%", sm: "100%", md: "90%", lg: "80%", xl:"70%"},
+          gap: "1.9%",
+          mt: "2%",
         }}
       >
         <CoreCard

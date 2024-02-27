@@ -42,7 +42,12 @@ function Software() {
         paddingTop: "5%",
         paddingBottom: "7%",
         backgroundPosition: 'center', // Center the background image
-        backgroundColor:'#153A5F'
+        backgroundColor:'#153A5F',
+        '@media screen and (min-width: 1700px)': {
+       pt:'20%',
+       pb:'20%',
+       backgroundSize: '300px 800px',
+        }
 
       }}
     >

@@ -87,6 +87,15 @@ function Enterprises({ onPress }) {
           "&:hover": {
             backgroundColor: "#153A5F",
           },
+          '@media screen and (min-width: 1700px)': {
+            pt:'0.6%',
+            pb:'0.6%',
+            pr:'1.7%',
+            pl:'1.7%'
+            
+             }
+       
+
         }}
    
       >

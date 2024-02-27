@@ -32,9 +32,9 @@ function Expertise() {
     };
   }, []);
   return (
-    <Box ref={weeksRef} sx={{ background: "#18B0E6", marginTop: "2%" }}>
+    <Box ref={weeksRef} sx={{ background: "#18B0E6"}}>
       <Box
-        sx={{ paddingTop: "4.6%", display: "flex", flexDirection: "column" }}
+        sx={{ paddingTop: "4.6%", display: "flex", flexDirection: "column",mt:'2%' }}
       >
         <Typography
           sx={{

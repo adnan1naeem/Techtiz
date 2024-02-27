@@ -13,12 +13,19 @@ function GrowWebsite({onPress}) {
   }, []);
   return (
     <Box
-      sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'1%',mr:'8%'}}
+      sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,marginTop:'1%',mr:'8%', '@media screen and (min-width: 1700px)': {
+        mt:'-1%'
+        
+         }}}
     >
       <Card
         sx={{
           width: { xs: "22rem", sm: "28rem", md: "27rem", lg: "38rem",xl:'33rem' },
           height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
+          '@media screen and (min-width: 1700px)': {
+            width:'36rem'
+            
+             },
 
           boxShadow: "none",
         }}
@@ -99,14 +106,15 @@ function GrowWebsite({onPress}) {
 
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
               width: { xs: "100%", sm: "80%", md: "60%", lg: "35%", },
-              paddingLeft: "2px",
-              paddingRight: "2px",
-              borderRadius: 0,
+              paddingLeft: "6px",
+              paddingRight: "6px",
+              borderRadius: '5px',
               textTransform: "none",
               fontSize: "16px",
               fontWeight: "400",
               background: "#18B0E6",
               fontFamily:"Mont-Regular, Sans-serif",
+              boxShadow:'none',
               "&:hover": {
                 backgroundColor: "#153A5F",
               },

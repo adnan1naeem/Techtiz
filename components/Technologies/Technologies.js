@@ -110,7 +110,7 @@ function Technologies() {
           color: "var(--e-global-color-9f67d62)",
           textAlign: "center",
           fontSize: { xs: "1.8em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
-          fontWeight: "600",
+          fontWeight: "bold",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Bold', sans-serif"
@@ -138,7 +138,6 @@ function Technologies() {
           marginTop: "2%",
           marginLeft: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
           marginRight: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
-          // backgroundColor: {xs: 'red', sm: 'purple', md: 'yellow', lg: 'green', xl:'orange'},
           marginBottom: "5%"
         }}
       >

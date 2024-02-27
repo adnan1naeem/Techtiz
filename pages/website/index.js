@@ -28,12 +28,18 @@ function Web() {
             justifyContent: "center",
             gap: {lg:"2px",xl:'0'},
             flexWrap: "wrap",
+
           }}
         >
           <GrowWebsite onPress={handleClick}  />
           <Box
             sx={{
               width: { xs: "100%", sm: "80%", md: "34%", lg: "28%", xl: "20%" },
+              '@media screen and (min-width: 1700px)': {
+                width:'21%',
+                mt:'-4%'
+                
+                 },
               mt:'-3%',
               
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",

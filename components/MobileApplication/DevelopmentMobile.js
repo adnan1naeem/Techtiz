@@ -67,6 +67,10 @@ function DevelopmentMobile({ onPress }) {
           justifyContent: "center",
           gap: "2%",
           marginBottom: "3%",
+          '@media screen and (min-width: 1700px)': {
+            mt:'0.7%'
+            
+             }
    
         }}
       >

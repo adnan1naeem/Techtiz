@@ -32,6 +32,10 @@ function Mobile() {
             justifyContent: "center",
             gap: {lg:"12%",xl:'8%'},
             flexWrap: "wrap",
+            '@media screen and (min-width: 1700px)': {
+             gap:'10%'
+              
+               }
           }}
         >
           <Grow onPress={handleClick} />
@@ -40,6 +44,11 @@ function Mobile() {
               width: { xs: "100%", sm: "80%", md: "80%", lg: "34%", xl: "24%" },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
+              '@media screen and (min-width: 1700px)': {
+                width:'26%'
+                
+                 }
+           
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

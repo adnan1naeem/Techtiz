@@ -38,7 +38,7 @@ function Partner({ onPress }) {
         background:
           "radial-gradient(at center center, #1594c6 25%, #153a5f 85%);",
         marginTop: "3%",
-        paddingTop: {lg:"4%",xl:'3%'},
+        padding: '4%',
       }}
       ref={weeksRef}
     >
