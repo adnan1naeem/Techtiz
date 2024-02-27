@@ -36,12 +36,14 @@ function Leadership() {
     <Box
       ref={weeksRef}
       sx={{
-        background: "#F8F8F8",
-        // backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/Sqr-Light-Outline.svg')`,
+        
+         backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/Sqr-Light-Outline.svg')`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "1800px",
+        backgroundSize: "cover",
         paddingTop: "8%",
         paddingBottom: "8%",
+       
+        
       }}
     >
       <Typography
@@ -87,12 +89,12 @@ function Leadership() {
           />
         </Link>
         
-          <Ceo
+          {/* <Ceo
             imageceo="https://techtiz.co/wp-content/uploads/2023/11/Ghazanfar-Ali.webp"
             name="Ghazanfar Ali"
             text="Business Development Executive"
           />
-      
+       */}
       </Box>
     </Box>
   );

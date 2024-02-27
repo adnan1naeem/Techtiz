@@ -134,7 +134,7 @@ function MVPsStartup({ onPress }) {
               border: "1px solid #18B0E6",
               "&:hover": {
                 backgroundColor: "#18B0E6",
-                color: "#153A5F",
+                color: "#69727d",
               },
             }}
           >
