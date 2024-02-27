@@ -44,7 +44,13 @@ function PortfoliosCard( {title, description,mainImage,mr,ml}) {
               mt: "2%",
              mr:mr,
              ml:ml,
+             '@media screen and (min-width: 1700px)': {
+              width:'200%'
+              
+               }
+         
             }}
+            
           >
             <img
               src={mainImage}

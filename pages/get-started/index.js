@@ -16,6 +16,10 @@ function Index() {
             justifyContent: "center",
             gap: "12%",
             flexWrap: "wrap",
+            "@media screen and (min-width: 1700px)": {
+            gap:'10%'
+              
+            },
           }}
         >
           <Started />
@@ -25,6 +29,9 @@ function Index() {
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
               marginTop: { xs: "-33%", sm: "-30%", md: "-15%", lg: "0" },
+              "@media screen and (min-width: 1700px)": {
+                width:'30%'
+              },
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

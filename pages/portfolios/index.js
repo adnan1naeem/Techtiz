@@ -39,6 +39,11 @@ function Portfolios() {
               mt:'-1%',
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
+              '@media screen and (min-width: 1700px)': {
+               width:'33%'
+                
+                 }
+           
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

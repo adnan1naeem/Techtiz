@@ -42,6 +42,11 @@ function Industries() {
                                 transform: isHovered ? "translateY(-12px)" : "translateY(0)",
                                 transition: "transform 1s ease",
                                 marginTop:{xs:'-8%', sm:'1%',lg:'1%'},
+                                '@media screen and (min-width: 1700px)': {
+                                    width:'32%'            
+                                     }
+                               
+                                    
                             }}
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
@@ -60,7 +65,10 @@ function Industries() {
                             flexWrap: "wrap",
                             justifyContent: "center",
                             paddingTop: "8%",
-                            paddingBottom:'3%'
+                            paddingBottom:'3%',
+                            '@media screen and (min-width: 1700px)': {
+                                pt:'4%'           
+                                 }
 
                         }}
                     >

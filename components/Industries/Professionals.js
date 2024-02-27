@@ -26,6 +26,9 @@ function Professionals({ onPress }) {
           width: { xs: "22rem", sm: "23rem", md: "31rem", lg: "31rem" },
           height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
           boxShadow: "none",
+          '@media screen and (min-width: 1700px)': {
+            width:'33rem'         
+             }
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>

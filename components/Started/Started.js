@@ -18,6 +18,10 @@ function Started() {
         justifyContent: "center",
         alignContent: "center",
         marginTop: "11%",
+        "@media screen and (min-width: 1700px)": {
+        mt:'9%'
+          
+        },
       }}
     >
       <Card

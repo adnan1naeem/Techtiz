@@ -29,6 +29,9 @@ function Sqa() {
             justifyContent: "center",
             gap: "2%",
             flexWrap: "wrap",
+            '@media screen and (min-width: 1700px)': {
+              gap:'1%'
+            }
           }}
         >
           <QA  onPress={handleClick}/>
@@ -38,6 +41,9 @@ function Sqa() {
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
               marginTop: { xs: "-32%", sm: "10%", md: 0, lg: 0 },
+              '@media screen and (min-width: 1700px)': {
+                width:'35%'
+              }
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

@@ -44,6 +44,9 @@ function Transportation({ onPress }) {
           height: { xs: "38rem", sm: "39xrem", md: "38rem", lg: "38rem" },
           background: "none",
           boxShadow: "none",
+          '@media screen and (min-width: 1700px)': {
+            width:'35rem'           
+             }
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>

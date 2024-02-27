@@ -13,7 +13,11 @@ function DesignUX({onPress}) {
   }, []);
   return (
     <Box
-      sx={{ display: "flex", justifyContent: "center", alignContent: "center",mt:"-1%" }}
+      sx={{ display: "flex", justifyContent: "center", alignContent: "center",mt:"-1%" , '@media screen and (min-width: 1700px)': {
+        mt:'1%'            
+         }
+   
+        }}
     >
       <Card
         sx={{
@@ -61,6 +65,10 @@ function DesignUX({onPress}) {
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily:"Mont-Bold, Sans-serif",
+          '@media screen and (min-width: 1700px)': {
+            mt:'-3.5%'            
+             }
+       
             }}
           >
             Drives Growth & Never
@@ -74,6 +82,11 @@ function DesignUX({onPress}) {
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily:"Mont-Bold, Sans-serif",
+          '@media screen and (min-width: 1700px)': {
+            mt:'-3.5%'            
+             }
+       
+         
             }}
           >
             Lets You Down
@@ -86,6 +99,10 @@ function DesignUX({onPress}) {
               fontWeight: "300",
               marginTop: "5%",
               fontFamily:"Mont-Regular, Sans-serif",
+              '@media screen and (min-width: 1700px)': {
+                mt:'2%'            
+                 }
+         
             }}
           >
             With our user-friendly and responsive interfaces, you <br/> can establish
@@ -97,12 +114,11 @@ function DesignUX({onPress}) {
             onClick={onPress}
             sx={{
               marginTop: "8%",
-
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
               width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
-              paddingLeft: "1%",
-              paddingRight: "1%",
-              borderRadius: 0,
+              paddingLeft: "0.6%",
+              paddingRight: "0.6%",
+              borderRadius: '6px',
               textTransform: "none",
               fontSize: "16px",
               fontFamily:"Mont-Regular, Sans-serif",
@@ -112,6 +128,12 @@ function DesignUX({onPress}) {
               "&:hover": {
                 backgroundColor: "#153A5F",
               },
+              '@media screen and (min-width: 1700px)': {
+                mt:'7%' ,
+                width:'35%'         
+                 }
+           
+               
             }}
           >
             Discuss Now &nbsp; &nbsp;
