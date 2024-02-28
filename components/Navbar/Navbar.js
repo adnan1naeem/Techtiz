@@ -84,6 +84,7 @@ const Navbar = () => {
                     fontSize: "30px",
                     color: "white",
                     cursor: "pointer",
+                    transition: "opacity 0.3s ease-in-out"
                     
                   }}
                   className={click ? styles.services : styles["services-menu"]}
@@ -94,6 +95,7 @@ const Navbar = () => {
                     fontSize: "30px",
                     color: "white",
                     cursor: "pointer",
+                    transition: "opacity 0.3s ease-in-out"
                   }}
                   className={click ? styles.services : styles["services-menu"]}
                 />
@@ -110,7 +112,7 @@ const Navbar = () => {
                 <Link href="/ui-ux-design" onClick={closeMenu}>
                   UI/UX Design
                 </Link>
-                <Link href="/sqa" onClick={closeMenu}>
+                <Link href="/SQA" onClick={closeMenu}>
                   SQA
                 </Link>
               </div>
@@ -133,7 +135,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className={styles.drop}>
-                  <Link href="/sqa" onClick={closeMenu}>
+                  <Link href="/SQA" onClick={closeMenu}>
                     <TextNav label="SQA" />
                   </Link>
                 </li>

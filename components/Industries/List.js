@@ -12,9 +12,10 @@ function List({ listone, textColor }) {
 
                 }}
             >
-                <FaDiamond style={{ color: "rgb(110, 193, 228)", marginRight: "8px", fontSize: '13px' }} />
-                <Typography sx={{ color: textColor, fontSize: '1.2em', fontWeight: '300' ,width:'90%', fontFamily:"Mont-Regular, Sans-serif",}}>
-                    {listone}
+                {/* <FaDiamond style={{ color: "rgb(110, 193, 228)", marginRight: "8px", fontSize: '13px' }} />"🔹 " */}
+
+                <Typography sx={{ color: textColor, fontSize: '1.2em', fontWeight: '300' ,width:'100%', fontFamily:"Mont-Regular, Sans-serif",}}>
+                    🔹 {listone}
                 </Typography>
             </div>
 
