@@ -40,7 +40,8 @@ function PortfoliosCard( {title, description,mainImage,mr,ml}) {
         >
           <Box
             sx={{
-              height: { xs: "12rem", sm: "8rem", md: "9rem", lg: "11rem" },
+              height: { xs: "12rem", sm: "10rem", md: "9rem", lg: "11rem" },
+              width:{ xs: "12rem", sm: "50rem", md: "50rem", lg: "55rem" },
               mt: "2%",
              mr:mr,
              ml:ml,

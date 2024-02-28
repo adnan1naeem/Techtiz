@@ -30,10 +30,29 @@ function MainBanner({ onPress }) {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          flexDirection: { xs: "column", sm: "row", md: "row", lg: "row", xl: "row" },
+          flexDirection: {
+            xs: "column",
+            sm: "row",
+            md: "row",
+            lg: "row",
+            xl: "row",
+          },
         }}
       >
-        <Box sx={{ height: { xs: "40rem", sm: "50rem", md: "50rem", lg: "50rem", xl: "60rem" } }}>
+        <Box
+          sx={{
+            height: {
+              xs: "40rem",
+              sm: "50rem",
+              md: "50rem",
+              lg: "50rem",
+              xl: "60rem",
+            },
+            "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
+              height:'41rem'
+            },
+          }}
+        >
           <Image
             style={{ width: "300px", height: "100%" }}
             src={Line}
@@ -41,12 +60,26 @@ function MainBanner({ onPress }) {
             className={styles.responsive_img_Line}
           />
         </Box>
-        <Box sx={{
-          width: { xs: "22rem", sm: "25rem", md: "25rem", lg: "35rem", xl: "52rem" }, marginTop: { xs: "6%", sm: "25%", md: "20%", lg: "18%", xl: "10%" }, '@media screen and (min-width: 1700px)': {
-            width: "48rem",
-            marginTop: '16%'
-          }
-        }}>
+        <Box
+          sx={{
+            width: {
+              xs: "22rem",
+              sm: "25rem",
+              md: "25rem",
+              lg: "35rem",
+              xl: "52rem",
+            },
+            marginTop: { xs: "6%", sm: "25%", md: "20%", lg: "18%", xl: "10%" },
+            "@media screen and (min-width: 1500px) and (max-width: 1600px)": {
+              width: "40rem",
+              marginTop: "11%",
+            },
+            "@media screen and (min-width: 1700px)": {
+              width: "48rem",
+              marginTop: "16%",
+            },
+          }}
+        >
           <img
             style={{ width: "100%" }}
             src="https://techtiz.co/wp-content/uploads/2023/09/app-dev.svg"
@@ -62,13 +95,19 @@ function MainBanner({ onPress }) {
           top: { xs: 150, sm: 200, md: 210, lg: 270, xl: 350 },
           left: { xs: 15, sm: 50, md: 90, lg: 150 },
           width: { xs: "90%", sm: "70%", md: "60%", lg: "55%" },
-          '@media screen and (min-width: 1700px)': {
-            top:410,
-            left:160,
-          }
+          "@media screen and (min-width: 1700px)": {
+            top: 410,
+            left: 160,
+          },
+          "@media screen and (min-width: 1250px) and (max-width: 1530px)": {
+            width: "40%",
+          },
+          "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
+              width: "44rem",
+              top:250,
+            },
         }}
       >
-
         <Typography
           sx={{
             color: "#FFFFFF",
@@ -86,7 +125,8 @@ function MainBanner({ onPress }) {
             transition: "opacity 1s ease-in-out", // Apply transition effect
           }}
         >
-          WE BUILD CUSTOM SOFTWARE AND CHART-TOPPING APPS FOR DISRUPTIVE BUSINESSES
+          WE BUILD CUSTOM SOFTWARE AND CHART-TOPPING APPS FOR DISRUPTIVE
+          BUSINESSES
         </Typography>
         <Box
           sx={{

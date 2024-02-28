@@ -40,6 +40,10 @@ function Web() {
                 mt:'-4%'
                 
                  },
+                 "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
+              width: "23%",
+             
+            },
               mt:'-3%',
               
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",

@@ -12,8 +12,7 @@ function ExpertiseCard({ title, imageCard, height, description, href }) {
         <Card
           sx={{
             width: { xs: "21rem", sm: "25rem", md: "26rem", lg: "31rem" },
-            height: { xs: "31rem", sm: "20rem", md: "20rem", lg: "19rem" },
-
+            height: { xs: "31rem", sm: "20rem", md: "20rem", lg: "20rem" },
             borderRadius: "30px",
             background: "#F8F8F8",
             transition: "transform 1s ease", // Adding transition for the transform property
@@ -34,7 +33,7 @@ function ExpertiseCard({ title, imageCard, height, description, href }) {
             }}
           >
 
-            <Box sx={{ width: { xs: "100%", sm: "45%", md: "45%", lg: "45%" } }}>
+            <Box sx={{ width: { xs: "100%", sm: "45%", md: "45%", lg: "46%" } }}>
               <Typography
                 sx={{
                   fontSize: "31px",
@@ -63,17 +62,17 @@ function ExpertiseCard({ title, imageCard, height, description, href }) {
               sx={{
                 width: { xs: "100%", sm: "40%", md: "40%", lg: "40%" },
                 marginTop: { xs: "8%", sm: "0%", md: "0%", lg: "0%" },
+                height:{md:'20%'}
               }}
             >
               <img src={imageCard} alt="" style={{ height: height }} />
             </Box>
           </CardContent>
-          <CardActions style={{ display: "flex", justifyContent: "flex-end" }}>
+          <CardActions style={{ display: "flex", justifyContent: "flex-end",position:'absolute',right:"2%", }} sx={{top:{ xs: "90%", sm: "90%", md: "85%", lg: "80%" }}}>
             <GoArrowUpRight
               style={{
                 fontSize: "30px",
                 color: "#153A5F",
-
                 marginRight: "5%",
               }}
             />

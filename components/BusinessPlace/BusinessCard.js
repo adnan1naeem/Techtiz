@@ -30,6 +30,7 @@ function BusinessCard({ data, onClick }) {
             fontSize: "2.2em",
             fontWeight: "bold",
             width: { xs: "100%", sm: "64%", md: "64%", lg: "64%" },
+            
             marginTop: "2%",
             color: "#153A5F",
             fontFamily: "'Mont-Bold', sans-serif",

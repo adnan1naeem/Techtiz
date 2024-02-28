@@ -138,7 +138,11 @@ function Technologies() {
           marginTop: "2%",
           marginLeft: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
           marginRight: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
-          marginBottom: "5%"
+          marginBottom: "5%",
+          "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
+              marginLeft:'18%',
+              mr:'18%'
+            },
         }}
       >
       <Box sx={{ml:'6%'}}> 

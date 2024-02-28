@@ -38,12 +38,17 @@ function Model({ onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs:'35px',md:'43px',lg:"43px"},
+          fontSize: {xs:'25px',sm:"35px",md:'43px',lg:"43px"},
           fontWeight: "600",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily: "'Mont-Bold', sans-serif"
+          fontFamily: "'Mont-Bold', sans-serif",
+          marginTop: {xs:"15%",sm: "5%",
+            md: "3%",
+            lg: "0",
+            xl: "0",},
+          marginBottom: {xs:"5%",sm:"0"}
         }}
       >
         Engagement Models

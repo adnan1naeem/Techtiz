@@ -59,7 +59,6 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                   height: "4rem",
                   borderRadius: "8px",
                   marginLeft:'-5%',
-              
                 }}
               >
                 <Typography
