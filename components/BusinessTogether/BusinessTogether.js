@@ -54,6 +54,8 @@ function BusinessTogether({ onClick }) {
           fontSize: { xs: "1.8em", sm: "2.1em", md: "2.1em", lg: "2.6em" },
           lineHeight:'50px',
           textAlign: "center",
+          paddingLeft:{xs: "2%", sm: "1%", md: 0, lg:0},
+          paddingRight:{xs: "2%", sm: "1%", md: 0, lg:0},
           color: "#153A5F",
           fontFamily: "'Mont-Bold', sans-serif",
           transition: "opacity 1s ease-in-out",
@@ -70,6 +72,8 @@ function BusinessTogether({ onClick }) {
           fontSize: "1em",
           lineHeight:'25px',
           mt: {lg:'1.2rem',xl:'1.3rem'},
+          paddingLeft:{xs: "6%", sm: "6%", md: 0, lg:0},
+          paddingRight:{xs: "6%", sm: "6%", md: 0, lg:0},
           fontFamily: "'Mont-Regular', sans-serif",
           fontWeight: '300',
           transition: "opacity 1s ease-in-out",
@@ -117,9 +121,9 @@ function BusinessTogether({ onClick }) {
         </Box>
 
         <Box sx={{ width: { xs: "90%", sm: "80%", md: "70%", lg: "55%",xl:'47%' } }}>
-          {activeButton === "StartUps" && <BusinessCard onClick={onClick} data={businessDetail[0]} />}
-          {activeButton === "SMEs" && <BusinessCard onClick={onClick} data={businessDetail[1]} />}
-          {activeButton === "Enterprises" && (<BusinessCard onClick={onClick} data={businessDetail[2]} />)}
+          {activeButton === "StartUps" && <BusinessCard onClick={onClick} data={businessDetail[0]} activeButton={activeButton}/>}
+          {activeButton === "SMEs" && <BusinessCard onClick={onClick} data={businessDetail[1]} activeButton={activeButton}/>}
+          {activeButton === "Enterprises" && (<BusinessCard onClick={onClick} data={businessDetail[2]} activeButton={activeButton}/>)}
         </Box>
       </Box>
     </Box>

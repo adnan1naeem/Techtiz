@@ -3,7 +3,7 @@ import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
 import { GoArrowUpRight } from "react-icons/go";
 import Link from "next/link";
 
-function ExpertiseCard({ title, imageCard, height, description, href }) {
+function ExpertiseCard({ title, imageCard, imagestyle, description, href }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -65,7 +65,7 @@ function ExpertiseCard({ title, imageCard, height, description, href }) {
                 height:{md:'20%'}
               }}
             >
-              <img src={imageCard} alt="" style={{ height: height }} />
+              <img src={imageCard} alt="" style={{imagestyle}} />
             </Box>
           </CardContent>
           <CardActions style={{ display: "flex", justifyContent: "flex-end",position:'absolute',right:"2%", }} sx={{top:{ xs: "90%", sm: "90%", md: "85%", lg: "80%" }}}>

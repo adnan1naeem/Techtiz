@@ -36,25 +36,25 @@ function DevelopmentCard({ background, title, Description }) {
     <Box   ref={weeksRef} >
       <Card
         sx={{
-          width: { xs: "21rem", sm: "22rem", md: "22em", lg: "23rem" },
+          width: { xs: "22rem", sm: "22rem", md: "22em", lg: "23rem" },
           height: "23rem",
           borderRadius: "6px",
           background: background,
           transition: "transform 1s ease", // Adding transition for the transform property
           transform: isHovered ? "translateY(-12px)" : "translateY(0)",
-          marginTop: "6%",
+          marginTop: { xs: "4%", sm: "4%", md: "6%", lg: "6%" },
           boxShadow:'none'
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <CardContent style={{ marginLeft: "5%" }}>
+        <CardContent sx={{ marginLeft: { xs: "1%", sm: "2%", md: "5%", lg: "5%" } }}>
           <Typography
             sx={{
               fontSize: '1.5em',
               fontWeight: 'bold',
               lineHeight:'50px',
-              marginTop: "13%",
+              marginTop: { xs: "8%", sm: "8%", md: "13%", lg: "13%" },
               color: "#FFFFFF",
               fontFamily: "'Mont-Bold', sans-serif",
               transition: "opacity 1s ease-in-out",
@@ -69,7 +69,7 @@ function DevelopmentCard({ background, title, Description }) {
             sx={{
               fontSize: "1rem",
               fontWeight: 100,
-              marginTop: "18%",
+              marginTop: { xs: "14%", sm: "14%", md: "18%", lg: "18%" },
               color: "#FFFFFF",
               fontFamily: "'Mont-Regular', sans-serif",
               lineHeight:'25px',

@@ -38,9 +38,10 @@ function Expertise() {
       >
         <Typography
           sx={{
-            textAlign: "center",
+            textAlign: {xs: "", sm: "", md: "center", lg:"center"},
+            paddingLeft:{xs: "8%", sm: "8%", md: 0, lg:0},
             color: "#FFFFFF",
-            fontSize: "43.2px",
+            fontSize: {xs: "30.2px", sm: "30.2px", md: "43.2px", lg:"43.2px"},
             fontWeight: "600",
             fontFamily: "'Mont-Bold', sans-serif",
             transition: "opacity 1s ease-in-out",
@@ -51,8 +52,10 @@ function Expertise() {
         </Typography>
         <Typography
           sx={{
-            textAlign: "center",
-            marginTop: { lg: "1%" },
+            textAlign: {xs: "", sm: "", md: "center", lg:"center"},
+            paddingLeft:{xs: "8%", sm: "8%", md: 0, lg:0},
+            fontSize:15,
+            marginTop: { xs:"5%",lg: "1%" },
             color: "#FFFFFF",
             fontFamily: "'Mont-Regular', sans-serif",
             fontWeight: "300",

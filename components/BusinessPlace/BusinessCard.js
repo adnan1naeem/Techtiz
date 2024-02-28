@@ -12,7 +12,13 @@ import {
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { FaSquare } from "react-icons/fa";
 
-function BusinessCard({ data, onClick }) {
+function BusinessCard({ data, onClick,activeButton }) {
+  const bottomMap = {
+    StartUps: 0,
+    SMEs: "3%",
+  };
+  const defaultBottom = "5%";
+  const bottom = bottomMap[activeButton] || defaultBottom;
   return (
     <Box>
       <Card
@@ -23,6 +29,7 @@ function BusinessCard({ data, onClick }) {
           background: "#F8F8F8",
           marginTop: "8%",
           boxShadow: "none",
+          paddingBottom:bottom,
         }}
       >
         <Typography
@@ -30,7 +37,6 @@ function BusinessCard({ data, onClick }) {
             fontSize: "2.2em",
             fontWeight: "bold",
             width: { xs: "100%", sm: "64%", md: "64%", lg: "64%" },
-            
             marginTop: "2%",
             color: "#153A5F",
             fontFamily: "'Mont-Bold', sans-serif",

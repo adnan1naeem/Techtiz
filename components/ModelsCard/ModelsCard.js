@@ -9,9 +9,8 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
     <Box>
       <Card
         sx={{
-          width: { xs: "21rem", sm: "23rem", md: "23rem", lg: "23rem" },
-          height: "28rem",
-          borderRadius: "8px",
+          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "23rem" },
+          height: { xs: "25rem", sm: "25rem", md: "28rem", lg: "28rem" },
           overflow: "hidden",
           marginTop: "8%",
           cursor: "pointer",
@@ -44,21 +43,20 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                 backgroundImage: backgroundImage,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                borderRadius:2,
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "flex-end",
-                marginLeft: "-4.5%",
-                marginTop:'-4%'
               }}
             >
               <Box
                 sx={{
                   background: "#18B0E691",
-                  width: "25rem",
+                  width: "100%",
                   height: "4rem",
-                  borderRadius: "8px",
-                  marginLeft:'-5%',
+                  left:0,
+                  position:"absolute",
+                  top:'83%'
                 }}
               >
                 <Typography
@@ -68,8 +66,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                     fontSize: "25px",
                     fontWeight: "600",
                     marginTop: "3%",
-                    marginLeft: "-8%",
-                    fontFamily: "'Mont-Bold', sans-serif"
+                    fontFamily: "'Mont-Bold', sans-serif",
                   }}
                 >
                   {maintitle}
