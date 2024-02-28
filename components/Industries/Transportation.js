@@ -138,7 +138,7 @@ function Transportation({ onPress }) {
               border: "1px solid #18B0E6",
               "&:hover": {
                 backgroundColor: "#6EC1E4",
-                color: "#153A5F",
+                color: "#69727d",
               },
             }}
           >

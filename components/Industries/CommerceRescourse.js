@@ -169,7 +169,7 @@ function CommerceRescourse({ onPress }) {
                     border: "1px solid #18B0E6",
                     "&:hover": {
                       backgroundColor: "#18B0E6",
-                      color: "black",
+                      color: "#69727d",
                     },
                   }}
                 >
