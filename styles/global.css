@@ -33,8 +33,9 @@ img {
 @font-face {
     
   src: local("AirbnbCerealLight"),
-    url("../public/fonts/Mont-Regular.ttf") format("truetype");
+    url("../fonts/mont-light.ttf") format("truetype");
     font-family: "Mont-Regular"; 
+   
 
 }
 @font-face {

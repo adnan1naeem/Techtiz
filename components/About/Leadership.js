@@ -37,13 +37,21 @@ function Leadership() {
       ref={weeksRef}
       sx={{
         
-         backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/Sqr-Light-Outline.svg')`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        position: "relative",
         paddingTop: "8%",
-        paddingBottom: "8%",
-       
-        
+        paddingBottom: "3%",   
+        "&::before": {
+      content: "''",
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/Sqr-Light-Outline.svg')`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      opacity: isVisible ? 0.1 : 1, // Adjust the opacity value as needed
+    },         
       }}
     >
       <Typography

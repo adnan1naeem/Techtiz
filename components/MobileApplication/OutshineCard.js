@@ -55,7 +55,7 @@ function OutshineCard() {
           flexWrap: "wrap",
           marginTop: "2%",
           paddingBottom: "6%",
-          '@media screen and (min-width: 1500px)': { // Adjust the minimum width as per your requirement
+          '@media screen and (min-width: 1400px)': { // Adjust the minimum width as per your requirement
       maxWidth: "1200px",
       margin: "0 auto",
     }

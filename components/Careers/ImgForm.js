@@ -81,6 +81,7 @@ const ImgForm = () => {
               type="file"
               onChange={handleFileChange}
               accept="application/pdf"
+              
             />
           </div>
           <div className={styles.button}>

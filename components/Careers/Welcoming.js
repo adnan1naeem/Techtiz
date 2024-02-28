@@ -43,6 +43,7 @@ function Welcoming() {
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif"
         }}
       >
         Welcoming Diversity and Competency with Open Arms
@@ -77,6 +78,7 @@ function Welcoming() {
               fontSize: "1.1em",
               fontWeight: "400",
               marginTop: "5%",
+              fontFamily: "'Mont-Regular', sans-serif",
             }}
           >
             We strive to provide opportunities to young and rising tech talent

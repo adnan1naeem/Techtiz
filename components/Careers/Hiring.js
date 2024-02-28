@@ -15,7 +15,7 @@ function Hiring() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -30,7 +30,10 @@ function Hiring() {
     };
   }, []);
   return (
-    <Box ref={weeksRef}  sx={{ marginTop: "0%", background: "#F8F8F8", paddingBottom: "8%" }}>
+    <Box
+      ref={weeksRef}
+      sx={{ marginTop: "0%", background: "#F8F8F8", paddingBottom: "8%" }}
+    >
       <Typography
         sx={{
           textAlign: "center",
@@ -40,6 +43,7 @@ function Hiring() {
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif",
         }}
       >
         Techtiz Hiring Process
@@ -53,6 +57,7 @@ function Hiring() {
           marginTop: "1%",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Regular', sans-serif",
         }}
       >
         Techtiz hires on the basis of skills, we need people who can be
@@ -74,8 +79,15 @@ function Hiring() {
           }}
         >
           <Typography
-            sx={{ color: "#18B0E6", fontSize: "2em", fontWeight: "600" ,textAlign:{xs:'center',sm:'left'}, transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,}}
+            sx={{
+              color: "#18B0E6",
+              fontSize: "2em",
+              fontWeight: "600",
+              textAlign: { xs: "center", sm: "left" },
+              transition: "opacity 1s ease-in-out",
+              opacity: isVisible ? 1 : 0,
+              fontFamily: "'Mont-Bold', sans-serif"
+            }}
           >
             Hiring Funnel
           </Typography>
@@ -85,6 +97,7 @@ function Hiring() {
               fontSize: "1.1em",
               fontWeight: "400",
               marginTop: "5%",
+              fontFamily: "'Mont-Regular', sans-serif",
             }}
           >
             In order to put together a team of highly skilled software
@@ -93,7 +106,10 @@ function Hiring() {
           </Typography>
         </Box>
         <Box
-          sx={{ width: { xs: "21em", sm: "30em", md: "30em", lg: "40rem" } ,marginTop: { xs: "10%", sm: "10%", md: "0", lg: "0" }}}
+          sx={{
+            width: { xs: "21em", sm: "30em", md: "30em", lg: "40rem" },
+            marginTop: { xs: "10%", sm: "10%", md: "0", lg: "0" },
+          }}
         >
           <img
             src="https://techtiz.co/wp-content/uploads/2023/10/Hiring.webp"

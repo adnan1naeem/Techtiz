@@ -92,6 +92,7 @@ function FooterCard({
                 },
                 cursor: "pointer",
                 fontSize: "17px",
+                fontFamily:"Mont-Regular, Sans-serif",
               }}
             >
               {text3}
@@ -111,6 +112,7 @@ function FooterCard({
                 },
                 cursor: "pointer",
                 fontSize: "17px",
+                fontFamily:"Mont-Regular, Sans-serif",
               }}
             >
               {text4}
@@ -130,6 +132,7 @@ function FooterCard({
                 },
                 cursor: "pointer",
                 fontSize: "17px",
+                fontFamily:"Mont-Regular, Sans-serif",
               }}
             >
               {text5}

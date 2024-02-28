@@ -23,6 +23,7 @@ function FooterReach() {
               fontSize: "18px",
               fontWeight: "600",
               paddingBottom: "12%",
+              fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Reach Us
@@ -39,9 +40,9 @@ function FooterReach() {
             }}
           >
             <IoMdCall
-              style={{ marginRight: "3%", fontWeight: "600", fontSize: "17px" }}
+              style={{ marginRight: "3%", fontWeight: "600", fontSize: "17px" , fontFamily:"Mont-Regular, Sans-serif",}}
             />
-            <span style={{ fontSize: "17px" }}>+92 326 1199244</span>
+            <span style={{ fontSize: "17px", fontFamily:"Mont-Regular, Sans-serif", }}>+92 326 1199244</span>
           </Typography>
           <a
             href="mailto:contact@techtiz.co"
@@ -67,7 +68,7 @@ function FooterReach() {
                 }}
               />
 
-              <span style={{ fontSize: "17px" }}>contact@techtiz.co</span>
+              <span style={{ fontSize: "17px", fontFamily:"Mont-Regular, Sans-serif", }}>contact@techtiz.co</span>
             </Typography>
           </a>
           <a
@@ -93,7 +94,7 @@ function FooterReach() {
                   fontSize: "17px",
                 }}
               />
-              <span style={{ fontSize: "17px" }}>Our location</span>
+              <span style={{ fontSize: "17px", fontFamily:"Mont-Regular, Sans-serif", }}>Our location</span>
             </Typography>
           </a>
         </CardContent>

@@ -74,10 +74,10 @@ function Enterprises({ onPress }) {
         sx={{
           marginTop: "3%",
           boxShadow:'none',
-         pt:{xs:'2%',sm:'1%',lg:'0.7%'},
-         pb:{xs:'2%',sm:'1%',lg:'0.7%'},
-          pl:{xs:'4%',sm:'2.6%',lg:'2.6%'},
-          pr: {xs:'4%',sm:'2.6%',lg:'2.6%'},
+         pt:{xs:'2%',sm:'1%',lg:'0.6%'},
+         pb:{xs:'2%',sm:'1%',lg:'0.6%'},
+          pl:{xs:'4%',sm:'2.6%',lg:'2%'},
+          pr: {xs:'4%',sm:'2.6%',lg:'2%'},
           borderRadius: 1,
           textTransform: "none",
           fontSize: "17px",
@@ -95,7 +95,6 @@ function Enterprises({ onPress }) {
             
              }
        
-
         }}
    
       >
