@@ -116,7 +116,7 @@ function Application({ onPress }) {
               },
             }}
           >
-            Discuss Now &nbsp; &nbsp;
+            Discuss now &nbsp; &nbsp;
           </Button>
         </CardContent>
       </Card>

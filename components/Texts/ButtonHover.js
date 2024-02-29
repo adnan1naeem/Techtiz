@@ -17,7 +17,7 @@ function ButtonHover({ textButton }) {
           textTransform: "none",
           paddingLeft: "20px",
           paddingRight: "20px",
-          fontFamily:"Mont-Regula,Sans-serif",
+          fontFamily:"Mont-Regular,Sans-serif",
 
           "&:hover": {
             backgroundColor: "#18B0E6", // Set the desired background color on hover

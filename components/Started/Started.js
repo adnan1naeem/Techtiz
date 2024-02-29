@@ -26,7 +26,7 @@ function Started() {
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "33rem", md: "33rem", lg: "31rem" },
+          width: { xs: "22rem", sm: "100%", md: "33rem", lg: "31rem" },
           height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",

@@ -25,10 +25,10 @@ function Index() {
           <Started />
           <Box
             sx={{
-              width: { xs: "100%", sm: "80%", md: "70%", lg: "34%", xl: "35%" },
+              width: { xs: "100%", sm: "80%", md: "30%", lg: "34%", xl: "35%" },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
-              marginTop: { xs: "-33%", sm: "-30%", md: "-15%", lg: "0" },
+              marginTop: { xs: "-33%", sm: "-30%", md: "5%", lg: "0" },
               "@media screen and (min-width: 1700px)": {
                 width:'30%'
               },

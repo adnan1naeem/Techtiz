@@ -13,11 +13,11 @@ function QA({onPress}) {
   }, []);
   return (
     <Box
-      sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
+      sx={{ display: "flex", justifyContent: "center", alignContent: "center" ,mb:{xs:'28%',md:'0%'}}}
     >
       <Card
         sx={{
-          width: { xs: "23rem", sm: "33rem", md: "28rem", lg: "36rem" },
+          width: { xs: "100%", sm: "33rem", md: "28rem", lg: "36rem" },
           height: { xs: "45rem", sm: "26rem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",
@@ -128,7 +128,7 @@ function QA({onPress}) {
               },
             }}
           >
-            Discuss Now &nbsp; &nbsp;
+            Discuss now &nbsp; &nbsp;
           </Button>
         </CardContent>
       </Card>

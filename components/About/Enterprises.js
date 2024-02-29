@@ -98,7 +98,7 @@ function Enterprises({ onPress }) {
         }}
    
       >
-        Discuss Now &nbsp;
+        Discuss now &nbsp;
       </Button>
     </Box>
   );

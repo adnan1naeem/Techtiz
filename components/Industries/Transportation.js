@@ -142,7 +142,7 @@ function Transportation({ onPress }) {
               },
             }}
           >
-            Discuss Now &nbsp; 
+            Discuss now &nbsp; 
           </Button>
         </CardContent>
       </Card>

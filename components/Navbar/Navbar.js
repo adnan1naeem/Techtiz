@@ -112,7 +112,7 @@ const Navbar = () => {
                 <Link href="/ui-ux-design" onClick={closeMenu}>
                   UI/UX Design
                 </Link>
-                <Link href="/SQA" onClick={closeMenu}>
+                <Link href="/sqa" onClick={closeMenu}>
                   SQA
                 </Link>
               </div>
