@@ -2,18 +2,18 @@ import { Box, List, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
 import { FaSquare } from "react-icons/fa";
 
-function AnalysisCard({ title, lists,lgTop,xlTop ,image}) {
+function AnalysisCard({ title, lists,lgTop,xlTop ,image,mt}) {
   return (
     <Box
       sx={{
         display: "flex",
         justifyContent: "center",
-        gap: "12%",
+        gap: "5%",
         marginTop: "7%",
         flexWrap: "wrap",
       }}
     >
-      <Box sx={{ width: { xs: "17rem", sm: "20em", md: "20em", lg: "17em" } }}>
+      <Box sx={{ width: { xs: "17rem", sm: "20em", md: "20em", lg: "24em" },mt:mt }}>
         <img
           src={image}
           alt=""

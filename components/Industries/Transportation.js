@@ -40,8 +40,8 @@ function Transportation({ onPress }) {
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "33rem" },
-          height: { xs: "38rem", sm: "39xrem", md: "38rem", lg: "38rem" },
+          width: { xs: "22rem", sm: "100%", md: "100%", lg: "33rem" },
+          height: { xs: "42rem", sm: "39rem", md: "38rem", lg: "38rem" },
           background: "none",
           boxShadow: "none",
           '@media screen and (min-width: 1700px)': {
@@ -123,9 +123,9 @@ function Transportation({ onPress }) {
             onClick={onPress}
             sx={{
               marginTop: "8%",
-
-              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+              ml:'3%',
+              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2%" },
+              width: { xs: "100%", sm: "40%", md: "60%", lg: "40%" },
               paddingLeft: "1%",
               paddingRight: "1%",
               borderRadius: 1,
@@ -135,14 +135,14 @@ function Transportation({ onPress }) {
               background: "none",
               boxShadow: "none",
               color: "#F8F8F8",
-              border: "1px solid #18B0E6",
+              border: "1px solid #6EC1E4",
               "&:hover": {
                 backgroundColor: "#6EC1E4",
-                color: "#69727d",
+                color: "#595959",
               },
             }}
           >
-            Discuss Now &nbsp; &nbsp;
+            Discuss Now &nbsp; 
           </Button>
         </CardContent>
       </Card>

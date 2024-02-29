@@ -54,18 +54,20 @@ function MVPsStartup({ onPress }) {
               fontWeight: "600",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
+              fontFamily: "'Mont-Bold', sans-serif"
             }}
           >
             MVPs for Startups
           </Typography>
           <Typography
             sx={{
-              color: "#18B0E6",
+              color: "#6EC1E4",
               fontSize: "1.1em",
               fontWeight: "300",
               marginTop: "1%",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
+              fontFamily: "'Mont-Regular', sans-serif"
             }}
           >
             We empower startups with MVPs specifically tailored to redefine
@@ -73,7 +75,7 @@ function MVPsStartup({ onPress }) {
           </Typography>
           <Typography
             sx={{
-              color: "#18B0E6",
+              color: "#6EC1E4",
               fontSize: "1.2em",
               fontWeight: "700",
               marginTop: "4%",
@@ -83,6 +85,8 @@ function MVPsStartup({ onPress }) {
               lineHeight: "16px",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
+              fontFamily: "'Mont-Bold', sans-serif"
+
             }}
           >
             What we offer
@@ -96,6 +100,7 @@ function MVPsStartup({ onPress }) {
               marginTop: "5%",
               transition: "opacity 1ss ease-in-out",
               opacity: isVisible ? 1 : 0,
+              fontFamily: "'Mont-Bold', sans-serif"
             }}
           >
             Development of software for management distribution
@@ -120,21 +125,22 @@ function MVPsStartup({ onPress }) {
             onClick={onPress}
             sx={{
               marginTop: "8%",
-              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
+              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2%" },
               width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
               paddingLeft: "1%",
               paddingRight: "1%",
-              borderRadius: 0,
+              borderRadius: '2px',
               textTransform: "none",
               fontSize: "16px",
               fontWeight: "400",
               background: "none",
               boxShadow: "none",
               color: "F8F8F8",
+             
               border: "1px solid #18B0E6",
               "&:hover": {
-                backgroundColor: "#18B0E6",
-                color: "#69727d",
+                backgroundColor: "#6EC1E4",
+                color: "#595959",
               },
             }}
           >

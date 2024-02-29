@@ -20,8 +20,8 @@ function Grow({onPress}) {
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "31rem" },
-          height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
+          width: { xs: "100%", sm: "100%", md: "23rem", lg: "31rem" },
+          height: { xs: "32rem", sm: "32rem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",
         }}
@@ -96,9 +96,9 @@ function Grow({onPress}) {
             sx={{
               marginTop: "8%",
              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2.2%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "44%" },
+              width: { xs: "100%", sm: "40%", md: "60%", lg: "42.7%" },
               
-              borderRadius: '5px',
+              borderRadius: '3px',
               textTransform: "none",
               fontFamily:"Mont-Regular, Sans-serif",
               fontSize: "16px",
@@ -110,7 +110,7 @@ function Grow({onPress}) {
               },
             }}
           >
-            Get Started &nbsp; &nbsp;
+            Get Started &nbsp; 
           </Button>
         </CardContent>
       </Card>

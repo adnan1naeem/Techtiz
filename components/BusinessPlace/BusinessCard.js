@@ -57,9 +57,12 @@ function BusinessCard({ data, onClick,activeButton }) {
         >
           <Box
             sx={{
-              marginTop: {md:'5%',lg:"-6%"},
-              width: { xs: "18rem", sm: "14rem", md: "13rem", lg: "15rem" },
-              height: { xs: "22rem", sm: "18rem", md: "18rem", lg: "20rem", xl: '22rem' },
+              marginTop: {md:'5%',lg:"1%"},
+              width: { xs: "100%", sm: "40%", md: "13rem", lg: "15rem" },
+              height: { xs: "28rem", sm: "22rem", md: "18rem", lg: "22rem", xl: '22rem' },
+              "@media screen and (min-width: 450px) and (max-width: 600px)": {
+              height:'33rem'
+            },
             }}
           >
             <img
@@ -70,11 +73,11 @@ function BusinessCard({ data, onClick,activeButton }) {
           </Box>
           <Box
             sx={{
-              width: { xs: "18rem", sm: "25rem", md: "30rem", lg: "28rem" },
+              width: { xs: "100%", sm: "25rem", md: "30rem", lg: "28rem" },
               height: { xs: "18rem", sm: "18rem", md: "22rem", lg: "20rem" ,xl:'24rem'},
             }}
           >
-            <List sx={{ mt: '3%' }}>
+            <List sx={{ mt: {xs:'1%',sm:'3%'} }}>
               <ListItemIcon>
                 <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '12px' }} />
                 <Typography

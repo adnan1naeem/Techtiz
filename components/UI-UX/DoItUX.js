@@ -92,8 +92,7 @@ function DoItUX() {
             "Interviews & observations",
             "Functional requirements",
           ]}
-          lgTop='4%'
-          xlTop='2%'
+        
           image="https://techtiz.co/wp-content/uploads/2023/10/dicovery2-768x768.webp"
         />
       )}
@@ -107,8 +106,8 @@ function DoItUX() {
           ]}
           image="https://techtiz.co/wp-content/uploads/2023/09/wireframe.webp"
 
-          lgTop='4%'
-          xlTop='2%'
+        
+       
         />
       )}
       {selectedButton === "Build and Itrate" && (
@@ -120,8 +119,8 @@ function DoItUX() {
             "Interactive prototypes",
             "UI Style guide/brand identity"
           ]}
-          lgTop='2%'
-          xlTop='2%'
+          mt='3%'
+         
           image="https://techtiz.co/wp-content/uploads/2023/11/web-dev.svg"
         />
       )}

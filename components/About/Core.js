@@ -85,7 +85,7 @@ function Core() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          width: {xs: "100%", sm: "100%", md: "90%", lg: "80%", xl:"70%"},
+          width: {xs: "100%", sm: "100%", md: "100%", lg: "100%", xl:"70%"},
           gap: "1.9%",
           mt: "2%",
         }}

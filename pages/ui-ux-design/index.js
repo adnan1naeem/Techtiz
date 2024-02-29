@@ -36,7 +36,7 @@ function UI() {
                             width: { xs: "100%", sm: "80%", md: "36%", lg: "38%", xl: "28%" },
                             transform: isHovered ? "translateY(-12px)" : "translateY(0)",
                             transition: "transform 1s ease",
-                            marginTop: { xs: '10%', sm: '10%', md: 0, lg: 0 },
+                            marginTop: { xs: '10%', sm: '10%', md: '5%', lg: 0 },
                             '@media screen and (min-width: 1700px)': {
                                 width:'31%'
                                 

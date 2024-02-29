@@ -38,10 +38,10 @@ function Industries() {
                         <Professionals onPress={handleClick} />
                         <Box
                             sx={{
-                                width: { xs: "100%", sm: "80%", md: "45%", lg: "37%", xl: "30%" },
+                                width: { xs: "100%", sm: "100%", md: "35%", lg: "37%", xl: "30%" },
                                 transform: isHovered ? "translateY(-12px)" : "translateY(0)",
                                 transition: "transform 1s ease",
-                                marginTop:{xs:'-8%', sm:'1%',lg:'1%'},
+                                marginTop:{xs:"3%",md:'4%',xs:'-8%', sm:'1%',lg:'1%'},
                                 '@media screen and (min-width: 1700px)': {
                                     width:'32%'            
                                      }
@@ -62,6 +62,7 @@ function Industries() {
                         sx={{
                             background: "#153A5F",
                             display: "flex",
+                            flexDirection:{sm:'column-reverse',md:'row'},
                             flexWrap: "wrap",
                             justifyContent: "center",
                             paddingTop: "8%",
@@ -74,7 +75,7 @@ function Industries() {
                     >
                         <Box
                             sx={{
-                                width: { xs: "100%", sm: "80%", md: "50%", lg: "40%", xl: "35%" },
+                                width: { xs: "100%", sm: "80%", md: "30%", lg: "40%", xl: "35%" },
                                 marginTop: 5,
                             }}
                         >

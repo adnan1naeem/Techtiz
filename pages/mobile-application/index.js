@@ -41,7 +41,8 @@ function Mobile() {
           <Grow onPress={handleClick} />
           <Box
             sx={{
-              width: { xs: "100%", sm: "80%", md: "80%", lg: "34%", xl: "24%" },
+              mt:{md:'10%',lg:'0'},
+              width: { xs: "100%", sm: "100%", md: "34%", lg: "34%", xl: "24%" },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
               '@media screen and (min-width: 1700px)': {

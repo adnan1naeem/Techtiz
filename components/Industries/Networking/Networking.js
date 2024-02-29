@@ -41,6 +41,7 @@ function Networking({onPress}) {
                     fontWeight: "700",
                     transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif"
                 }}
             >
                 Social Networking
@@ -55,6 +56,7 @@ function Networking({onPress}) {
                     lineHeight: "20px",
                     transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Regular', sans-serif"
                 }}
             >
                 We are taking “social” to the next level through interactive web and

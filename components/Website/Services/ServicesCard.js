@@ -12,8 +12,8 @@ function ServicesCard({ image, heading, text }) {
     >
       <Card
         sx={{
-          width: { xs: "21rem", sm: "21rem", md: "21rem", lg: "21rem" },
-          height: { xs: "19rem", sm: "19rem", md: "19rem", lg: "19rem" },
+          width: { xs: "90%", sm: "21rem", md: "21rem", lg: "21rem" },
+          height: { xs: "21rem", sm: "21rem", md: "19rem", lg: "19rem" },
           borderRadius: "10px",
           background: "white",
 

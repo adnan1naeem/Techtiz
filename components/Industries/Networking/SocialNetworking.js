@@ -62,6 +62,7 @@ function SocialNetworking({ onPress }) {
               lineHeight: "18px",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
+              fontFamily: "'Mont-Bold', sans-serif"
             }}
           >
             What we offer
@@ -75,6 +76,7 @@ function SocialNetworking({ onPress }) {
               ml: "1%",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
+              fontFamily: "'Mont-Bold', sans-serif"
             }}
           >
             Design & development of social networking applications

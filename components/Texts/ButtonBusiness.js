@@ -30,6 +30,11 @@ function ButtonBusiness({
           paddingLeft: paddingLeft,
           paddingRight: paddingRight,
           marginTop: "11px",
+          "@media screen and (min-width: 700px) and (max-width: 910px)": {
+            paddingTop: "10px",
+          paddingBottom: "10px",
+       
+            },
           "&:hover": {
             
             backgroundColor: disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)',

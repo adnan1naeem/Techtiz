@@ -16,7 +16,7 @@ function PortfoliosCard( {title, description,mainImage,mr,ml}) {
       <Card
         sx={{
           width: { xs: "21rem", sm: "35rem", md: "30rem", lg: "35rem" },
-          height: { xs: "33rem", sm: "19rem", md: "25rem", lg: "19rem" },
+          height: { xs: "33rem", sm: "19rem", md: "20rem", lg: "19rem" },
 
           borderRadius: "30px",
           background: "#F8F8F8",
@@ -33,6 +33,7 @@ function PortfoliosCard( {title, description,mainImage,mr,ml}) {
             display: "flex",
             flexDirection: { xs: "column", sm: "row", md: "row", lg: "row", xl:'row' },
             justifyContent: "center",
+            
 
           
             
@@ -41,7 +42,7 @@ function PortfoliosCard( {title, description,mainImage,mr,ml}) {
           <Box
             sx={{
               height: { xs: "12rem", sm: "10rem", md: "9rem", lg: "11rem" },
-              width:{ xs: "12rem", sm: "50rem", md: "50rem", lg: "55rem" },
+              width:{ xs: "12rem", sm: "60rem", md: "50rem", lg: "65rem" },
               mt: "2%",
              mr:mr,
              ml:ml,

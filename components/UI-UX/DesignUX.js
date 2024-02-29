@@ -21,7 +21,7 @@ function DesignUX({onPress}) {
     >
       <Card
         sx={{
-          width: { xs: "23rem", sm: "33rem", md: "36rem", lg: "36rem" },
+          width: { xs: "23rem", sm: "100%", md: "36rem", lg: "36rem" },
           height: { xs: "35rem", sm: "32rem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",
@@ -115,7 +115,7 @@ function DesignUX({onPress}) {
             sx={{
               marginTop: "8%",
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+              width: { xs: "100%", sm: "40%", md: "60%", lg: "40%" },
               paddingLeft: "0.6%",
               paddingRight: "0.6%",
               borderRadius: '6px',

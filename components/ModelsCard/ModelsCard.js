@@ -53,10 +53,10 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                 sx={{
                   background: "#18B0E691",
                   width: "100%",
-                  height: "4rem",
+                  height: "8rem",
                   left:0,
                   position:"absolute",
-                  top:'83%'
+                  top:'80%'
                 }}
               >
                 <Typography
@@ -65,7 +65,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                     textAlign: "center",
                     fontSize: "25px",
                     fontWeight: "600",
-                    marginTop: "3%",
+                    marginTop: "4%",
                     fontFamily: "'Mont-Bold', sans-serif",
                   }}
                 >

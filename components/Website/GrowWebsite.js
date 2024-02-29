@@ -28,9 +28,9 @@ function GrowWebsite({ onPress }) {
       <Card
         sx={{
           width: {
-            xs: "22rem",
-            sm: "28rem",
-            md: "27rem",
+            xs: "21rem",
+            sm: "100%",
+            md: "30rem",
             lg: "38rem",
             xl: "33rem",
           },
@@ -121,7 +121,7 @@ function GrowWebsite({ onPress }) {
               marginTop: "6%",
 
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "35%" },
+              width: { xs: "100%", sm: "60%", md: "60%", lg: "35%" },
               paddingLeft: "6px",
               paddingRight: "6px",
               borderRadius: "5px",

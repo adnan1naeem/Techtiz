@@ -19,11 +19,12 @@ function Professionals({ onPress }) {
         justifyContent: "center",
         alignContent: "center",
         marginTop: "2%",
+        mb:{xs:'6%',sm:'0%'}
       }}
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "23rem", md: "31rem", lg: "31rem" },
+          width: { xs: "22rem", sm: "100%", md: "31rem", lg: "31rem" },
           height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
           boxShadow: "none",
           '@media screen and (min-width: 1700px)': {
@@ -96,7 +97,7 @@ function Professionals({ onPress }) {
               marginTop: "8%",
 
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2.3%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "43%" },
+              width: { xs: "100%", sm: "40%", md: "60%", lg: "43%" },
               paddingLeft: "3%",
               paddingRight: "3%",
               borderRadius: 1,

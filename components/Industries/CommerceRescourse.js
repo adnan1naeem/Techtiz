@@ -113,7 +113,9 @@ function CommerceRescourse({ onPress }) {
                     lineHeight: "20px",
                     transition: "opacity 1s ease-in-out",
                     opacity: isVisible ? 1 : 0,
+                    fontFamily: "'Mont-Bold', sans-serif"
                   }}
+
                 >
                   What we offer
                 </Typography>
@@ -126,6 +128,7 @@ function CommerceRescourse({ onPress }) {
                     marginTop: "5%",
                     transition: "opacity 1s ease-in-out",
                     opacity: isVisible ? 1 : 0,
+                    fontFamily: "'Mont-Bold', sans-serif"
                   }}
                 >
                   Development of secure E-commerce platforms that grow and sell
@@ -155,11 +158,11 @@ function CommerceRescourse({ onPress }) {
                   onClick={onPress}
                   sx={{
                     marginTop: "8%",
-                    padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
+                    padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2%" },
                     width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
                     paddingLeft: "1%",
                     paddingRight: "1%",
-                    borderRadius: 0,
+                    borderRadius: '2px',
                     textTransform: "none",
                     fontSize: "16px",
                     fontWeight: "400",
@@ -168,8 +171,8 @@ function CommerceRescourse({ onPress }) {
                     color: "F8F8F8",
                     border: "1px solid #18B0E6",
                     "&:hover": {
-                      backgroundColor: "#18B0E6",
-                      color: "#69727d",
+                      backgroundColor: "#6EC1E4",
+                color: "#595959",
                     },
                   }}
                 >

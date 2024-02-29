@@ -102,9 +102,10 @@ function FeedBack() {
         flexDirection: 'column', // or 'row' depending on your layout
         justifyContent: 'center',
         background: "#153A5F",
-        p:{xs:'5.5rem',sm:"5.5rem", md:'9rem',lg:'11.5rem'},
+        p:{xs:'0',sm:"5.5rem", md:'9rem',lg:'11.5rem'},
         pt:{xs:'3.5rem',sm:"5.5rem",md:'10rem',lg:'15.5rem'},
         pb:{xs:'3.5rem',sm:"5.5rem",md:'10rem',lg:'15.5rem'},
+ 
       }}
     >
       <Typography
@@ -121,7 +122,8 @@ function FeedBack() {
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily: "'Mont-Bold', sans-serif"
+          fontFamily: "'Mont-Bold', sans-serif",
+    
         }}
       >
         Feedback From Satisfied Clients

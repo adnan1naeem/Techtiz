@@ -34,7 +34,8 @@ function Web() {
           <GrowWebsite onPress={handleClick}  />
           <Box
             sx={{
-              width: { xs: "100%", sm: "80%", md: "34%", lg: "28%", xl: "20%" },
+              width: { xs: "100%", sm: "80%", md: "28%", lg: "28%", xl: "20%" },
+              mt:{md:'4%',lg:'-3%'},
               '@media screen and (min-width: 1700px)': {
                 width:'21%',
                 mt:'-4%'
@@ -44,7 +45,7 @@ function Web() {
               width: "23%",
              
             },
-              mt:'-3%',
+             
               
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",

@@ -41,6 +41,7 @@ function Commerce({onPress}) {
                     fontWeight: "700",
                     transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif",
                 }}
             >
                 E-Commerce
@@ -53,6 +54,7 @@ function Commerce({onPress}) {
                     fontWeight: "400",
                     mt: "5px",
                     lineHeight: "20px",
+                    fontFamily: "'Mont-Regular', sans-serif"
                 }}
             >
                 We implement intuitive ideas for e-commerce businesses, helping them<br />

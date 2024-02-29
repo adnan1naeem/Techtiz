@@ -44,7 +44,7 @@ function DiscussProject({onPress}) {
       <Card
         sx={{
           height: { xs: "26rem", sm: "20rem", md: "19rem", lg: "14rem" },
-          width: { xs: "21rem", sm: "36rem", md: "43rem", lg: "70rem" },
+          width: { xs: "90%", sm: "90%", md: "95%", lg: "70rem" },
           background: "linear-gradient(90deg, #18B0E6 0%, #153A5F 100%)",
           boxShadow: "none",
           borderRadius: "20px",
@@ -78,6 +78,7 @@ function DiscussProject({onPress}) {
                 "&:hover": {
                   backgroundColor: "white",
                   color: "#18B0E6",
+               
                 },
               }}
             >
