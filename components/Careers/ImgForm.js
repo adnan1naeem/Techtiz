@@ -3,6 +3,7 @@ import styles from "../../styles/CareerForm.module.css";
 import axios from "axios";
 import { Alert } from '@mui/material';
 import { CheckCircleOutline as CheckIcon } from '@mui/icons-material';
+import { IoMdArrowRoundUp } from "react-icons/io";
 
 const ImgForm = () => {
   const [email, setEmail] = useState("");
@@ -46,60 +47,61 @@ const ImgForm = () => {
 
   return (
     <div className={styles.main}>
-      <div className={styles.career}>Careers</div>
+        <div className={styles.career}>Careers</div>
 
-      <div className={styles.join_techtiz}>
-        <h1 className={styles.first_name}>Join Techtiz's</h1>
-        <h2 className={styles.last_name}>Flourishing community</h2>
-      </div>
+        <div className={styles.join_techtiz}>
+          <h1 className={styles.first_name}>Join Techtiz's</h1>
+          <h2 className={styles.last_name}>Flourishing community</h2>
+        </div>
 
-      <div className={styles.text_line}>
-        <p>
-          TechTiz seeks aspiring software engineers, nurturing them into
-          professionals in months.
-        </p>
-      </div>
+        <div className={styles.text_line}>
+          <p>
+            TechTiz seeks aspiring software engineers, nurturing them into
+            professionals in months.
+          </p>
+        </div>
 
-      <div className={styles.form_section}>
-        <form className={styles.Careers_form} onSubmit={handleSubmit}>
-          <div className={styles.group_one}>
-            <label htmlFor="email">Enter Your Email</label>
-            <input
-              className={styles.email}
-              type="email"
-              placeholder="abc@gmail.com"
-              value={email}
-              required
-              onChange={handleEmailChange}
-            />
-          </div>
-          <div className={styles.group_second}>
-            <label htmlFor="file">Upload Your CV</label>
-            <input
-              required
-              className={styles.file}
-              type="file"
-              onChange={handleFileChange}
-              accept="application/pdf"
-              
-            />
-          </div>
-          <div className={styles.button}>
-            <button type="submit" className={styles.submit_button} disabled={isLoading}>
-              {isLoading ? 'Submitting...' : 'Submit'}
-            </button>
-          </div>
-        </form>
-        {isSubmitted && (
-          <Alert
-            sx={{ mt: "20px" }}
-            icon={<CheckIcon fontSize="inherit" />}
-            severity="success"
-          >
-            Your Form Submitted Successfully
-          </Alert>
-        )}
-      </div>
+        <div className={styles.form_section}>
+          <form className={styles.Careers_form} onSubmit={handleSubmit}>
+            <div className={styles.group_one}>
+              <label htmlFor="email">Enter Your Email</label>
+              <input
+                className={styles.email}
+                type="email"
+                placeholder="abc@gmail.com"
+                value={email}
+                required
+                onChange={handleEmailChange}
+              />
+            </div>
+            <div className={styles.group_second}>
+              <label htmlFor="file">Upload Your CV</label>
+              <input
+                required
+                className={styles.file}
+                type="file"
+                onChange={handleFileChange}
+                accept="application/pdf"
+
+              />
+            </div>
+            <div className={styles.button}>
+              <button type="submit" className={styles.submit_button} disabled={isLoading}>
+                {isLoading ? 'Submitting...' : 'Submit'}
+                <IoMdArrowRoundUp />
+              </button>
+            </div>
+          </form>
+          {isSubmitted && (
+            <Alert
+              sx={{ mt: "20px" }}
+              icon={<CheckIcon fontSize="inherit" />}
+              severity="success"
+            >
+              Your Form Submitted Successfully
+            </Alert>
+          )}
+        </div>
     </div>
   );
 };

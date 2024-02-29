@@ -17,15 +17,17 @@ function Careers({ onPress }) {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",
-            gap: "8%",
-            mb:'5%'
+            padding: '5%',
+            gap: "2%",
+            mt: '3%',
+            mb: '5%'
           }}
         >
           <Box>
             <ExpertiseMobile
-              title="Why
-You Should 
-Choose TechTiz"
+              title1={`Why`}
+              title2={`You Should`}
+              title3={`Choose TechTiz`}
               onPress={onPress}
             />
           </Box>

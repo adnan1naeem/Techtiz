@@ -1,69 +1,71 @@
-
 .main {
-    background: linear-gradient(rgba(25,50,76, 0.7), rgba(25,50,76, 0.7)),
-                url(https://techtiz.co/wp-content/uploads/2023/10/senior-manager-is-sitting-boardroom-with-multiracial-colleagues-discussing-project.jpg);
+    background: linear-gradient(rgba(25, 50, 76, 0.7), rgba(25, 50, 76, 0.7)),
+        url(https://techtiz.co/wp-content/uploads/2023/10/senior-manager-is-sitting-boardroom-with-multiracial-colleagues-discussing-project.jpg);
     background-position: center;
     width: 100%;
     background-size: cover;
-    height: 900px;
+    height: 1050px;
     position: relative;
-    
 }
 
-.career{
+.career {
     position: absolute;
+    margin-left: 10%;
     padding-left: 10px;
-   border-left: 3px solid #18b0e6;
-   color: aliceblue;
-   font-size: 20px;
-   font-weight: bold;
+    border-left: 3px solid #18b0e6;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
     top: 300px;
-   left: 160px; 
-   font-family: "Mont-Bold", Sans-serif;
+    left: 160px;
+    font-family: "Mont-Bold", Sans-serif;
 }
 
-.join_techtiz{
+.join_techtiz {
+    margin-left: 10%;
     position: absolute;
     color: #FFFFFF;
     font-family: "Mont-Bold", Sans-serif;
     text-transform: uppercase;
     top: 320px;
-    left:160px;
+    left: 160px;
     line-height: 18px;
     height: 100px;
-   padding-top: 2em;
+    padding-top: 2em;
 }
 
-.text_line{
+.text_line {
+    margin-left: 10%;
     position: absolute;
     color: #FFFFFF;
     font-family: "Mont-Regular", Sans-serif;
-    top: 430px ;
-    left:160px ;
+    top: 430px;
+    left: 160px;
     line-height: 14px;
     font-size: 1.1em;
-   padding-top: 2em;
+    padding-top: 2em;
 }
 
 
-.form_section{
-    
+.form_section {
+    margin-left: 10%;
+
     position: absolute;
     display: flex;
     flex-direction: row;
     top: 540px;
-   left: 150px; 
-   font-family: "Mont-Regular", Sans-serif;
+    left: 150px;
+    font-family: "Mont-Regular", Sans-serif;
 }
 
-.Careers_form{
+.Careers_form {
     display: flex;
     flex-wrap: wrap;
     color: #f8f8f8;
     width: 100%;
 }
 
-.group_one{
+.group_one {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,7 +73,7 @@
     width: 300px;
 }
 
-.group_second{
+.group_second {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -80,11 +82,11 @@
     width: 200px;
 }
 
-.email{
+.email {
     background-color: #18B0E666;
-    border-color: rgba(99,115,129,0.06);
+    border-color: rgba(99, 115, 129, 0.06);
     border-width: 1px 1px 1px 1px;
-    border-radius:4px;
+    border-radius: 4px;
     color: #f8f8f8;
     border: none;
     outline: none;
@@ -96,13 +98,13 @@
     width: 20rem;
 }
 
-.email::placeholder{
+.email::placeholder {
     color: #ffffff80;
 }
 
 
 
-.file{
+.file {
     font-family: "Mont Regular", Sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -111,8 +113,8 @@
     flex-basis: 100%;
     max-width: 100%;
     margin-top: 10px;
-  
-  
+
+
 }
 
 .submit_button {
@@ -122,7 +124,7 @@
     border: none;
     height: 45px;
     width: 170%;
-   border-radius: 4px;
+    border-radius: 4px;
     font-family: "Mont Regular", Sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -132,34 +134,110 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
-    
+
 }
-.submit_button:hover{
+
+.submit_button:hover {
     background-color: #153A5F;
     cursor: pointer;
 }
 
-.button{
+.button {
     display: flex;
     flex-direction: column;
 }
 
 
-.first_name{
-    font-size: 30px;
-
-
-}
- .last_name{
-    font-size: 30px;
-
+.first_name {
+    font-size: 2.7em;
+    font-weight: bold;
+    font-family: 'Mont bold', Sans-serif;
 }
 
+.last_name {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Mont bold', Sans-serif;
+}
+
+@media screen and (max-width: 1160px) {
+    .form_section {
+        left: 4px;
+    }
+
+    .career {
+        color: aquamarine;
+        left: 10px;
+    }
+
+    .join_techtiz {
+        left: 10px;
+        line-height: 20px;
+    }
+
+    .text_line {
+        left: 10px;
+        line-height: 20px;
+    }
+
+    .first_name {
+        line-height: 10px;
+    }
+
+    .last_name {
+        line-height: 24px;
+        font-size: 25px;
+    }
+
+
+
+    .submit_button {
+        width: 150%;
+
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .form_section {
+        left: 4px;
+    }
+
+    .career {
+        color: aquamarine;
+        left: 10px;
+    }
+
+    .join_techtiz {
+        left: 10px;
+        line-height: 20px;
+    }
+
+    .text_line {
+        left: 10px;
+        line-height: 20px;
+    }
+
+    .first_name {
+        line-height: 10px;
+    }
+
+    .last_name {
+        line-height: 24px;
+        font-size: 25px;
+    }
+
+
+
+    .submit_button {
+        width: 150%;
+
+    }
+
+}
 
 
 @media screen and (max-width: 760px) {
-
-
     .main {
         width: 100%;
         display: flex;
@@ -168,41 +246,37 @@
     }
 
     .form_section {
-        left: 4px; 
-    }
-    .career{
-        left: 10px;  
+        left: 4px;
     }
 
-    .join_techtiz{
-        left: 10px; 
-        line-height: 20px; 
-        
+    .career {
+        left: 10px;
     }
 
-    .text_line{
-        top:  385px;
-        left: 10px; 
-        line-height: 20px; 
-
-
+    .join_techtiz {
+        left: 10px;
+        line-height: 20px;
     }
 
-    .first_name{
+    .text_line {
+        left: 10px;
+    }
+
+    .first_name {
         line-height: 10px;
 
     }
-    .last_name{
+
+    .last_name {
         line-height: 24px;
         font-size: 25px;
     }
 
 
-    
-    .submit_button{
+
+    .submit_button {
         width: 150%;
-       
-}
+
+    }
 
 }
-
