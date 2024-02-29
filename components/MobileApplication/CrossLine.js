@@ -37,7 +37,7 @@ function CrossLine({title,des}) {
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: { xs: "21em", sm: "33em", md: "35em", lg: "35em", xl: "35em" },
+        width: { xs: "21em", sm: "33em", md: "35em", lg: "35em", xl: "40em" },
         borderBottom: "1px solid #18B0E6",
         paddingBottom: "7px",
         

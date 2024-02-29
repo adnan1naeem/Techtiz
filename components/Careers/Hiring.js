@@ -69,13 +69,13 @@ function Hiring() {
           justifyContent: "center",
           flexWrap: "wrap",
           gap: "3%",
-          marginTop: "5%",
+          marginTop: "2%",
         }}
       >
         <Box
           sx={{
             width: { xs: "21em", sm: "35em", md: "19em", lg: "18rem" },
-            marginTop: "11%",
+            marginTop: "9%",
           }}
         >
           <Typography
@@ -96,7 +96,7 @@ function Hiring() {
               color: "#153A5F",
               fontSize: "1.1em",
               fontWeight: "400",
-              marginTop: "5%",
+              marginTop: "2%",
               fontFamily: "'Mont-Regular', sans-serif",
             }}
           >
@@ -107,7 +107,7 @@ function Hiring() {
         </Box>
         <Box
           sx={{
-            width: { xs: "21em", sm: "30em", md: "30em", lg: "40rem" },
+            width: { xs: "22em", sm: "34em", md: "34em", lg: "44rem" },
             marginTop: { xs: "10%", sm: "10%", md: "0", lg: "0" },
           }}
         >

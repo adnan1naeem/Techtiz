@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { useEffect, useRef, useState } from "react";
-function ExpertiseMobile({ title, des, onPress }) {
+function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
 
@@ -37,8 +37,7 @@ function ExpertiseMobile({ title, des, onPress }) {
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: { xs: "21em", sm: "28em", md: "26em", lg: "26em", xl: "26em" },
-        marginTop: "30%",
+        width: { xs: "21em", sm: "33em", md: "35em", lg: "26em", xl: "26em" },
       }}
     >
       <Typography
@@ -51,7 +50,31 @@ function ExpertiseMobile({ title, des, onPress }) {
           fontFamily:"Mont-Bold, Sans-serif",
         }}
       >
-        {title}
+        {title1}
+      </Typography>
+      <Typography
+        sx={{
+          color: "#153A5F",
+          fontSize: "2.2em",
+          fontWeight: "600",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
+        }}
+      >
+        {title2}
+      </Typography>
+      <Typography
+        sx={{
+          color: "#153A5F",
+          fontSize: "2.2em",
+          fontWeight: "600",
+          transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0,
+          fontFamily:"Mont-Bold, Sans-serif",
+        }}
+      >
+        {title3}
       </Typography>
       <Typography
         sx={{

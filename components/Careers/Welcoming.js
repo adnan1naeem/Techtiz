@@ -53,12 +53,12 @@ function Welcoming() {
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
-          gap: "1%",
-          marginTop: "5%",
+          gap: "2%",
+          marginTop: "3%",
         }}
       >
         <Box
-          sx={{ width: { xs: "21em", sm: "30em", md: "30em", lg: "35rem" } }}
+          sx={{ width: { xs: "21em", sm: "28em", md: "29em", lg: "32rem" } }}
         >
           <img
             src="https://techtiz.co/wp-content/uploads/2023/10/welcoming-team.webp"
@@ -75,7 +75,7 @@ function Welcoming() {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.1em",
+              fontSize: '1em',
               fontWeight: "400",
               marginTop: "5%",
               fontFamily: "'Mont-Regular', sans-serif",
