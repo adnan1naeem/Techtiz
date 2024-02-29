@@ -47,11 +47,12 @@ function Software() {
        pt:'20%',
        pb:'20%',
        backgroundSize: '300px 800px',
-        }
+        },
+        width:'100%'
 
       }}
     >
-    <Card sx={{background:'#153A5FA3',pb:'2%',pt:'2%',ml:'15%',mr:'15%',boxShadow:'none'}}>
+    <Card sx={{background:'#153A5FA3',pb:'2%',pt:'2%',ml:{xs:'5%',sm:'15%'},mr:{xs:'5%',sm:'15%'},boxShadow:'none'}}>
       <Typography
         sx={{
           color: "#FFFFFF",
@@ -88,6 +89,7 @@ function Software() {
           textAlign: "center",
           fontWeight: "400",
           marginTop: "2%",
+          fontFamily: "'Mont-Regular', sans-serif"
         }}
       >
         As a leading software agency, we have a proven track record of

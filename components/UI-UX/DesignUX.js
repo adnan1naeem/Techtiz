@@ -15,15 +15,17 @@ function DesignUX({onPress}) {
     <Box
       sx={{ display: "flex", justifyContent: "center", alignContent: "center",mt:"-1%" , '@media screen and (min-width: 1700px)': {
         mt:'1%'            
-         }
+         },
+       
+         
    
         }}
     >
       <Card
         sx={{
           width: { xs: "23rem", sm: "100%", md: "36rem", lg: "36rem" },
-          height: { xs: "35rem", sm: "32rem", md: "32rem", lg: "28rem" },
-
+          height: { xs: "37rem", sm: "32rem", md: "32rem", lg: "28rem" },
+          
           boxShadow: "none",
         }}
       >
