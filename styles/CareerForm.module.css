@@ -13,7 +13,7 @@
     margin-left: 10%;
     padding-left: 10px;
     border-left: 3px solid #18b0e6;
-    color: aliceblue;
+    color: white;
     font-size: 20px;
     font-weight: bold;
     top: 300px;
@@ -49,7 +49,6 @@
 
 .form_section {
     margin-left: 10%;
-
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -166,7 +165,6 @@
     }
 
     .career {
-        color: aquamarine;
         left: 10px;
     }
 
@@ -204,7 +202,6 @@
     }
 
     .career {
-        color: aquamarine;
         left: 10px;
     }
 
@@ -246,28 +243,36 @@
     }
 
     .form_section {
+        margin-left: 0%;
         left: 4px;
     }
 
     .career {
+        margin-left: 0%;
         left: 10px;
     }
 
     .join_techtiz {
+        top: 385px;
         left: 10px;
         line-height: 20px;
+        margin-left: 0%;
+        padding-top: 0em;
     }
 
     .text_line {
+        margin-left: 0%;
         left: 10px;
     }
 
     .first_name {
+        margin-left: 0%;
         line-height: 10px;
 
     }
 
     .last_name {
+        margin-left: 0%;
         line-height: 24px;
         font-size: 25px;
     }
