@@ -91,8 +91,8 @@ const ImgForm = () => {
                 <IoMdArrowRoundUp />
               </button>
             </div>
-          </form>
-          {isSubmitted && (
+           <div>
+           {isSubmitted && (
             <Alert
               sx={{ mt: "20px" }}
               icon={<CheckIcon fontSize="inherit" />}
@@ -101,7 +101,12 @@ const ImgForm = () => {
               Your Form Submitted Successfully
             </Alert>
           )}
+           </div>
+          </form>
+        
         </div>
+       
+       
     </div>
   );
 };
