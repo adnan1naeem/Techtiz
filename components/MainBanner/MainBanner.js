@@ -6,6 +6,7 @@ import ButtonBusiness from "../../components/Texts/ButtonBusiness";
 import styles from "../../styles/MainBanner.module.css";
 import Link from "next/link";
 import BannerButton from "./BannerButton";
+import banner from "../../assets/main-banner.svg"
 
 function MainBanner({ onPress }) {
   const [showText, setShowText] = useState(false);
@@ -23,7 +24,10 @@ function MainBanner({ onPress }) {
       sx={{
         background: "#153A5F",
         width: "100%",
-        height: { xs: "140vh", sm: "100%", lg: "100%", xl: "99vh" },
+        height: { xs: "110vh", sm: "100%", lg: "90%", xl: "99vh" },
+        "@media screen and (min-width: 350px) and (max-width: 380px)": {
+              height:'140vh'
+            },
       }}
     >
       <Box
@@ -42,7 +46,7 @@ function MainBanner({ onPress }) {
         <Box
           sx={{
             height: {
-              xs: "40rem",
+              xs: "35rem",
               sm: "50rem",
               md: "50rem",
               lg: "50rem",
@@ -64,12 +68,12 @@ function MainBanner({ onPress }) {
           sx={{
             width: {
               xs: "22rem",
-              sm: "25rem",
+              sm: "24rem",
               md: "25rem",
               lg: "35rem",
               xl: "52rem",
             },
-            marginTop: { xs: "6%", sm: "25%", md: "20%", lg: "18%", xl: "10%" },
+            marginTop: { xs: "6%", sm: "30%", md: "23%", lg: "18%", xl: "10%" },
             "@media screen and (min-width: 1500px) and (max-width: 1600px)": {
               width: "40rem",
               marginTop: "11%",
@@ -80,9 +84,9 @@ function MainBanner({ onPress }) {
             },
           }}
         >
-          <img
+          <Image
             style={{ width: "100%" }}
-            src="https://techtiz.co/wp-content/uploads/2023/09/app-dev.svg"
+            src={banner}
             alt="no image"
             className={styles.responsive_img_Mobile}
           />
@@ -94,7 +98,7 @@ function MainBanner({ onPress }) {
           position: "absolute",
           top: { xs: 150, sm: 200, md: 210, lg: 270, xl: 350 },
           left: { xs: 15, sm: 50, md: 90, lg: 150 },
-          width: { xs: "90%", sm: "70%", md: "60%", lg: "55%" },
+          width: { xs: "90%", sm: "50%", md: "60%", lg: "55%" },
           "@media screen and (min-width: 1700px)": {
             top: 410,
             left: 160,
@@ -105,6 +109,10 @@ function MainBanner({ onPress }) {
           "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
               width: "44rem",
               top:250,
+            },
+            "@media screen and (min-width: 900px) and (max-width: 1020px)": {
+              width:'53%',
+              left: 40,
             },
         }}
       >
@@ -123,6 +131,9 @@ function MainBanner({ onPress }) {
             fontFamily: "'Mont-Bold', sans-serif",
             opacity: showText ? 1 : 0, // Set opacity based on showText state
             transition: "opacity 1s ease-in-out", // Apply transition effect
+            "@media screen and (min-width: 900px) and (max-width: 1020px)": {
+              fontSize:'2.4rem'
+            },
           }}
         >
           WE BUILD CUSTOM SOFTWARE AND CHART-TOPPING APPS FOR DISRUPTIVE

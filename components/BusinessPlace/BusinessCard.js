@@ -57,7 +57,7 @@ function BusinessCard({ data, onClick,activeButton }) {
         >
           <Box
             sx={{
-              marginTop: "-6%",
+              marginTop: {md:'5%',lg:"-6%"},
               width: { xs: "18rem", sm: "14rem", md: "13rem", lg: "15rem" },
               height: { xs: "22rem", sm: "18rem", md: "18rem", lg: "20rem", xl: '22rem' },
             }}
