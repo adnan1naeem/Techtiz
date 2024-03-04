@@ -2,18 +2,21 @@ import { Box, List, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
 import { FaSquare } from "react-icons/fa";
 
-function AnalysisCard({ title, lists,lgTop,xlTop ,image,mt}) {
+function AnalysisCard({ title, lists, lgTop, xlTop, image, mt }) {
   return (
     <Box
       sx={{
         display: "flex",
         justifyContent: "center",
-        gap: "5%",
-        marginTop: "7%",
+        gap: "10%",
+        marginTop: "5%",
         flexWrap: "wrap",
       }}
     >
-      <Box sx={{ width: { xs: "17rem", sm: "20em", md: "20em", lg: "24em" },mt:mt }}>
+      <Box sx={{
+        width: { xs: "17rem", sm: "20em", md: "20em", lg: "24em", xl: '20em' },
+        mt: mt
+      }}>
         <img
           src={image}
           alt=""
@@ -27,7 +30,7 @@ function AnalysisCard({ title, lists,lgTop,xlTop ,image,mt}) {
         }}
       >
         <Typography
-          sx={{ fontSize: "1.5em", fontWeight: "600", color: "#153A5F" ,fontFamily:"Mont-Bold, Sans-serif",}}
+          sx={{ fontSize: "1.5em", fontWeight: "600", color: "#153A5F", fontFamily: "Mont-Bold, Sans-serif", }}
         >
           {title}
         </Typography>
@@ -47,7 +50,7 @@ function AnalysisCard({ title, lists,lgTop,xlTop ,image,mt}) {
                   fontSize: "17px",
                   fontWeight: "400",
                   color: "#153A5F",
-                  fontFamily:"Mont-Regular, Sans-serif",
+                  fontFamily: "Mont-Regular, Sans-serif",
                   width: {
                     xs: "18rem",
                     sm: "20em",

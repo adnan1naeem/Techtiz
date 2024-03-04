@@ -15,8 +15,8 @@ function ButtonHover({ textButton }) {
           paddingBottom: "6px",
           border: "2.2px solid #18B0E6",
           textTransform: "none",
-          paddingLeft: "20px",
-          paddingRight: "20px",
+          paddingLeft: "15px",
+          paddingRight: "15px",
           fontFamily:"Mont-Regular,Sans-serif",
 
           "&:hover": {

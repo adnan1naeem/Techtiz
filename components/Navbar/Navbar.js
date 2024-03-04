@@ -18,8 +18,6 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isArrowUp, setIsArrowUp] = useState(false);
 
-
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       setIsWideScreen(window.innerWidth > 990);
@@ -38,7 +36,7 @@ const Navbar = () => {
 
   const closeMenu = () => {
     setClick(false);
-    setIsDropdownOpen(false); 
+    setIsDropdownOpen(false);
     setIsArrowUp(false);
   };
 
@@ -78,14 +76,14 @@ const Navbar = () => {
             >
               <TextNav label="Services" />
 
-             {isArrowUp ? (
+              {isArrowUp ? (
                 <IoMdArrowDropup
                   style={{
                     fontSize: "30px",
                     color: "white",
                     cursor: "pointer",
                     transition: "opacity 0.3s ease-in-out"
-                    
+
                   }}
                   className={click ? styles.services : styles["services-menu"]}
                 />
@@ -101,7 +99,7 @@ const Navbar = () => {
                 />
               )}
             </li>
-            { isWideScreen && (
+            {isWideScreen && (
               <div className={styles["dropdown-content"]}>
                 <Link href="/mobile-application" onClick={closeMenu}>
                   Mobile Application
@@ -112,14 +110,14 @@ const Navbar = () => {
                 <Link href="/ui-ux-design" onClick={closeMenu}>
                   UI/UX Design
                 </Link>
-                <Link href="/SQA" onClick={closeMenu}>
+                <Link href="/sqa" onClick={closeMenu}>
                   SQA
                 </Link>
               </div>
             )}
             {!isWideScreen && isDropdownOpen && (
-              <ul  style={{padding:'0'}} >
-                <li  className={styles.drop}>
+              <ul style={{ padding: '0' }} >
+                <li className={styles.drop}>
                   <Link href="/mobile-application" onClick={closeMenu}>
                     <TextNav label="Mobile Application" />
                   </Link>
@@ -165,9 +163,10 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+
         {isWideScreen && (
           <div className={styles["btn-group"]} style={{ marginRight: "2%" }}>
-            <Link href="/get-started">
+            <Link href={{ pathname: '/get-started' }}>
               <ButtonHover textButton="Get Started" />
             </Link>
           </div>
@@ -176,7 +175,7 @@ const Navbar = () => {
           {click ? (
             <FaTimes size={20} style={{ color: "white", marginLeft: "10%" }} />
           ) : (
-            <FaBars size={20} style={{ color: "white",marginLeft: "10%" }} />
+            <FaBars size={20} style={{ color: "white", marginLeft: "10%" }} />
           )}
         </div>
       </div>

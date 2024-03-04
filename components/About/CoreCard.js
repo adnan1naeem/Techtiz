@@ -85,7 +85,7 @@ function CoreCard({ image, heading, bg, para }) {
               marginTop: "6%",
               fontSize: "16px",
               fontFamily: "'Mont-Regular', sans-serif",
-              fontWeight:100
+              fontWeight:600
             }}
           >
             {para}

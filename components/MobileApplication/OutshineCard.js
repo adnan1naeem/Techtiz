@@ -17,7 +17,7 @@ function OutshineCard() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -39,10 +39,10 @@ function OutshineCard() {
           fontSize: "1.6em",
           textAlign: "center",
           fontWeight: "600",
-          paddingTop: "2%",
+          paddingTop: "4%",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
         }}
       >
         Outshine Your Competition With the Right Mobile App
@@ -55,10 +55,11 @@ function OutshineCard() {
           flexWrap: "wrap",
           marginTop: "2%",
           paddingBottom: "6%",
-          '@media screen and (min-width: 1400px)': { // Adjust the minimum width as per your requirement
-      maxWidth: "1200px",
-      margin: "0 auto",
-    }
+          '@media screen and (min-width: 1400px)': {
+            maxWidth: "1200px",
+            margin: "0 auto",
+            marginTop: "2%",
+          }
         }}
       >
         <ServicesCard

@@ -53,7 +53,7 @@ function CrossLine({title,des}) {
         sx={{
           fontSize: "16px",
           color: "#153A5F",
-          fontWeight: "400",
+          fontWeight: 800,
           marginTop: "1%",
           fontFamily:"Mont-Regular, Sans-serif",
         }}

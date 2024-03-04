@@ -25,7 +25,7 @@ function DoIt() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -50,7 +50,7 @@ function DoIt() {
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
         }}
       >
         How We Do It
@@ -59,15 +59,20 @@ function DoIt() {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "center",
+          justifyContent: "left",
           gap: "2%",
           background: "#F6F9FC",
-          marginLeft: {lg:"10%",xl:'17%'},
-          marginRight:{lg:"10%",xl:'17%'},
-          padding: " 0.5% 0.5% 0.5% 0.5%",
+          marginLeft: { lg: "10%", xl: '17%' },
+          marginRight: { lg: "10%", xl: '17%' },
+          "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
+            marginLeft: '10%',
+            marginRight: '10%',
+          },
+          padding: "0.5% 0.5% 0.5% 0.5%",
+          pl: { xs: "5%", sm: "4%", md: "2%", lg: "3%", xl: '2%' },
           borderRadius: "40px",
           marginTop: "3%",
-          mb:'3%'
+          mb: '3%'
         }}
       >
         <DoButton
@@ -100,7 +105,7 @@ function DoIt() {
             "Defining user personas and user journeys",
           ]}
           lgTop='4%'
-          xlTop='2%'
+          xlTop='4%'
           image="https://techtiz.co/wp-content/uploads/2023/10/dicovery2-768x768.webp"
         />
       )}
@@ -113,7 +118,6 @@ function DoIt() {
             "Defining the technology stack and architecture",
           ]}
           image="https://techtiz.co/wp-content/uploads/2023/09/wireframe.webp"
-
           lgTop='4%'
           xlTop='2%'
         />

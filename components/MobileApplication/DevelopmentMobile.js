@@ -42,14 +42,14 @@ function DevelopmentMobile({ onPress }) {
         backgroundRepeat: 'no-repeat',
         backgroundSize: '260px',
 
-        paddingBottom: "5%",
+        paddingBottom: "6%",
         marginBottom: "3%",
       }}
     >
       <Typography
         sx={{
           textAlign: "center",
-          paddingTop: "5%",
+          paddingTop: "6%",
           color: "#FFFFFF",
           fontSize: "2.2em",
           fontWeight: "600",
@@ -65,13 +65,12 @@ function DevelopmentMobile({ onPress }) {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "2%",
-          marginBottom: "3%",
+          gap: "1%",
+          marginBottom: "2%",
           '@media screen and (min-width: 1700px)': {
             mt:'0.7%'
             
              }
-   
         }}
       >
         <MobileServices
@@ -96,7 +95,7 @@ function DevelopmentMobile({ onPress }) {
         />
         <MobileServices
           image="https://techtiz.co/wp-content/uploads/2023/10/icons8-ios-800-300x300.png"
-          title="ios Development"
+          title="iOS Development"
           des="With years of experience and expertise in all the latest coding languages, our solution-oriented programmers create feature-rich and intuitive rich iOS apps."
           onPress={onPress}
 

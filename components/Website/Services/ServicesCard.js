@@ -12,11 +12,10 @@ function ServicesCard({ image, heading, text }) {
     >
       <Card
         sx={{
-          width: { xs: "90%", sm: "21rem", md: "21rem", lg: "21rem" },
-          height: { xs: "22rem", sm: "21rem", md: "19rem", lg: "19rem" },
+          width: { xs: "90%", sm: "16rem", md: "21rem", lg: "22rem" },
+          height: { xs: "18rem", sm: "24rem", md: "18rem", lg: "18rem" },
           borderRadius: "10px",
           background: "white",
-
           border: "1px solid #18B0E6",
           marginTop: "8%",
           boxShadow: "none",
@@ -26,20 +25,19 @@ function ServicesCard({ image, heading, text }) {
           sx={{
             display: "flex",
             flexDirection: "column",
-            marginLeft: "3%",
+            marginLeft: "0%",
           }}
         >
           <Box
             sx={{
-              width: { xs: "6rem", sm: "6rem", md: "5rem", lg: "4rem" },
-  
+              width: { xs: "6rem", sm: "6rem", md: "5rem", lg: "4.8rem" },
               "&:hover img": { transform: "scale(1.1)",transition: "transform 0.3s ease" }, 
             }}
           >
             <img style={{ width: "100%" }} src={image} alt="" />
           </Box>
 
-          <Box sx={{ marginTop: "10%" }}>
+          <Box sx={{ marginTop: "8%" }}>
             <Typography
               sx={{
                 color: "#153A5F",
@@ -55,7 +53,7 @@ function ServicesCard({ image, heading, text }) {
             <Typography
               sx={{
                 color: "#153A5F",
-                fontWeight: "400",
+                fontWeight: 600,
                 fontSize: "0.9rem",
                 lineHeight: "1.5em",
                 marginBottom: "5px",

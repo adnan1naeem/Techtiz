@@ -26,27 +26,23 @@ function Web() {
           sx={{
             display: "flex",
             justifyContent: "center",
-            gap: {lg:"2px",xl:'0'},
+            gap: "3%",
             flexWrap: "wrap",
-
           }}
         >
-          <GrowWebsite onPress={handleClick}  />
+          <GrowWebsite onPress={handleClick} />
           <Box
             sx={{
-              width: { xs: "100%", sm: "80%", md: "28%", lg: "28%", xl: "20%" },
-              mt:{md:'4%',lg:'-3%'},
+              width: { xs: "50%", sm: "50%", md: "28%", lg: "28%", xl: "20%" },
+              mt: { md: '4%', lg: '-3%' },
               '@media screen and (min-width: 1700px)': {
-                width:'21%',
-                mt:'-4%'
-                
-                 },
-                 "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
-              width: "23%",
-             
-            },
-             
-              
+                width: '21%',
+                mt: '-4%'
+              },
+              "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
+                width: "24rem",
+                top: 250
+              },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
             }}

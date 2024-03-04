@@ -18,7 +18,7 @@ function GrowWebsite({ onPress }) {
         justifyContent: "center",
         alignContent: "center",
         marginTop: "1%",
-        mr: "8%",
+        ml: {xl: '-8%'},
         "@media screen and (min-width: 1700px)": {
           mt: "-1%",
         },
@@ -28,13 +28,13 @@ function GrowWebsite({ onPress }) {
       <Card
         sx={{
           width: {
-            xs: "21rem",
-            sm: "100%",
+            xs: "24rem",
+            sm: "37rem",
             md: "30rem",
             lg: "38rem",
             xl: "33rem",
           },
-          height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
+          height: { xs: "32rem", sm: "26rem", md: "32rem", lg: "28rem" },
           "@media screen and (min-width: 1700px)": {
             width: "36rem",
           },
@@ -104,8 +104,8 @@ function GrowWebsite({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.3em",
-              fontWeight: "300",
+              fontSize: "1.2em",
+              fontWeight: 600,
               marginTop: "2%",
               fontFamily: "Mont-Regular, Sans-serif",
             }}

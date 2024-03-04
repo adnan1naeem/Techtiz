@@ -40,11 +40,10 @@ function Enterprises({ onPress }) {
         sx={{
           color: "#18B0E6",
           fontSize: "1.7em",
-          fontWeight: "bold",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily: "'Mont-Regular', sans-serif"
+          fontFamily: "'Mont-Bold', sans-serif"
         }}
       >
         Startups. SMEs. Enterprises
@@ -53,7 +52,7 @@ function Enterprises({ onPress }) {
         sx={{
           color: "#153A5F",
           fontSize: "17.6px",
-          fontWeight: "400",
+          fontWeight: 600,
           textAlign: "center",
           marginTop: "1%",
           fontFamily: "'Mont-Regular', sans-serif"

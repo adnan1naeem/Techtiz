@@ -7,7 +7,7 @@ function AutonomousText() {
     >
       <Card
         sx={{
-          width: { xs: "23rem", sm: "31rem", md: "26rem", lg: "30rem" },
+          width: { xs: "23rem", sm: "31rem", md: "26rem", lg: "31rem" },
           height: { xs: "45rem", sm: "26rem", md: "32rem", lg: "28rem" },
           background: "none",
           boxShadow: "none",
@@ -20,7 +20,7 @@ function AutonomousText() {
               fontSize: "2.7em",
               fontWeight: "600",
               lineHeight: "48px",
-              fontFamily:"Mont-Regular, Sans-serif",
+              fontFamily:"Mont-Bold, Sans-serif",
             }}
           >
             Autonomous QA and Testing
@@ -28,7 +28,7 @@ function AutonomousText() {
           <Typography  sx={{
               color: "#FFFFFF",
               fontSize: "0.9em",
-              fontWeight: "100",
+              fontWeight: 600,
               lineHeight: "25px",
               marginTop:'4%',
               fontFamily:"Mont-Regular, Sans-serif",

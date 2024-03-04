@@ -32,7 +32,7 @@ function Stack() {
     };
   }, []);
   return (
-    <Box ref={weeksRef} sx={{ background: "#153A5F", marginTop: "5%" }}>
+    <Box ref={weeksRef} sx={{ background: "#153A5F", marginTop: "5%", marginBottom: '9%' }}>
       <Typography
         sx={{
           textAlign: "center",

@@ -9,13 +9,14 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
     <Box>
       <Card
         sx={{
-          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "23rem" },
-          height: { xs: "25rem", sm: "25rem", md: "28rem", lg: "28rem" },
+          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "23rem", xl: "23rem" },
+          height: { xs: "25rem", sm: "25rem", md: "28rem", lg: "28rem", xl: "28rem" },
+          borderRadius: 3,
           overflow: "hidden",
-          marginTop: "8%",
+          marginTop: "6%",
           cursor: "pointer",
-          perspective: "1000px", 
-          boxShadow:'none'
+          perspective: "1000px",
+          boxShadow: 'none'
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -25,6 +26,8 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
             position: "relative",
             width: "100%",
             height: "100%",
+            marginTop: '-4.5%',
+            marginLeft: '-4.3%',
             transition: "transform 0.9s",
             transformStyle: "preserve-3d", // Preserve 3D transformations
             transform: isHovered ? "rotateY(180deg)" : "rotateY(0deg)", // Rotate on hover
@@ -43,7 +46,8 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                 backgroundImage: backgroundImage,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                borderRadius:2,
+                width: '100%',
+                borderRadius: 3,
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
@@ -54,9 +58,9 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                   background: "#18B0E691",
                   width: "100%",
                   height: "8rem",
-                  left:0,
-                  position:"absolute",
-                  top:'80%'
+                  left: 0,
+                  position: "absolute",
+                  top: '80%'
                 }}
               >
                 <Typography
@@ -87,15 +91,15 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                height:'100%',
+                height: '100%',
                 paddingTop: "30%",
                 marginLeft: "3%",
+                borderRadius: 3,
                 background: "#153A5F",
                 color: "white",
-                marginTop:'-4%',
-                mr:'-5%',
-                pl:'7%'
-             
+                mr: '-9%',
+                pl: '9%'
+
               }}
             >
               <Typography
@@ -108,7 +112,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
               >
                 {resource}
               </Typography>
-              <Typography color="white" sx={{ marginTop: "2%" , fontFamily: "'Mont-Regular', sans-serif"}}>
+              <Typography color="white" sx={{ marginTop: "2%", fontFamily: "'Mont-Regular', sans-serif" }}>
                 {titleresource}
               </Typography>
               <Box sx={{ marginTop: "2%" }}>

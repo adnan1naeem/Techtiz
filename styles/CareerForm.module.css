@@ -103,8 +103,6 @@
     color: #ffffff80;
 }
 
-
-
 .file {
     font-family: "Mont Regular", Sans-serif;
     font-size: 15px;
@@ -114,8 +112,6 @@
     flex-basis: 100%;
     max-width: 100%;
     margin-top: 10px;
-
-
 }
 
 .submit_button {

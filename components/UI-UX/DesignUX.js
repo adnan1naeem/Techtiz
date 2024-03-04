@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
-function DesignUX({onPress}) {
+function DesignUX({ onPress }) {
   const [isVisible, setIsVisible] = React.useState(false);
 
   React.useEffect(() => {
@@ -13,19 +13,17 @@ function DesignUX({onPress}) {
   }, []);
   return (
     <Box
-      sx={{ display: "flex", justifyContent: "center", alignContent: "center",mt:"-1%" , '@media screen and (min-width: 1700px)': {
-        mt:'1%'            
-         },
-       
-         
-   
-        }}
+      sx={{
+        display: "flex", justifyContent: "center", alignContent: "center", mt: "2%", '@media screen and (min-width: 1700px)': {
+          mt: '1%'
+        },
+      }}
     >
       <Card
         sx={{
           width: { xs: "23rem", sm: "100%", md: "36rem", lg: "36rem" },
           height: { xs: "37rem", sm: "32rem", md: "32rem", lg: "28rem" },
-          
+
           boxShadow: "none",
         }}
       >
@@ -39,8 +37,8 @@ function DesignUX({onPress}) {
               height: "15px",
               lineHeight: "20px",
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+              opacity: isVisible ? 1 : 0,
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             &nbsp;UI/UX Design
@@ -52,8 +50,8 @@ function DesignUX({onPress}) {
               fontWeight: "800",
               marginTop: "1%",
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+              opacity: isVisible ? 1 : 0,
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             UI/UX Design That
@@ -65,12 +63,12 @@ function DesignUX({onPress}) {
               fontWeight: "800",
               marginTop: "-2%",
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
-          '@media screen and (min-width: 1700px)': {
-            mt:'-3.5%'            
-             }
-       
+              opacity: isVisible ? 1 : 0,
+              fontFamily: "Mont-Bold, Sans-serif",
+              '@media screen and (min-width: 1700px)': {
+                mt: '-3.5%'
+              }
+
             }}
           >
             Drives Growth & Never
@@ -82,13 +80,13 @@ function DesignUX({onPress}) {
               fontWeight: "800",
               marginTop: "-2%",
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
-          '@media screen and (min-width: 1700px)': {
-            mt:'-3.5%'            
-             }
-       
-         
+              opacity: isVisible ? 1 : 0,
+              fontFamily: "Mont-Bold, Sans-serif",
+              '@media screen and (min-width: 1700px)': {
+                mt: '-3.5%'
+              }
+
+
             }}
           >
             Lets You Down
@@ -98,17 +96,17 @@ function DesignUX({onPress}) {
             sx={{
               color: "#153A5F",
               fontSize: "1.1em",
-              fontWeight: "300",
+              fontWeight: 600,
               marginTop: "5%",
-              fontFamily:"Mont-Regular, Sans-serif",
+              fontFamily: "Mont-Regular, Sans-serif",
               '@media screen and (min-width: 1700px)': {
-                mt:'2%'            
-                 }
-         
+                mt: '2%'
+              }
+
             }}
           >
-            With our user-friendly and responsive interfaces, you <br/> can establish
-            an online presence, drive growth, and <br/> disrupt your industry
+            With our user-friendly and responsive interfaces, you <br /> can establish
+            an online presence, drive growth, and <br /> disrupt your industry
           </Typography>
           <Button
             variant="contained"
@@ -123,19 +121,19 @@ function DesignUX({onPress}) {
               borderRadius: '6px',
               textTransform: "none",
               fontSize: "16px",
-              fontFamily:"Mont-Regular, Sans-serif",
-              boxShadow:'none',
-              fontWeight: "400",
+              fontFamily: "Mont-Regular, Sans-serif",
+              boxShadow: 'none',
+              fontWeight: 600,
               background: "#18B0E6",
               "&:hover": {
                 backgroundColor: "#153A5F",
               },
               '@media screen and (min-width: 1700px)': {
-                mt:'7%' ,
-                width:'35%'         
-                 }
-           
-               
+                mt: '7%',
+                width: '35%'
+              }
+
+
             }}
           >
             Discuss now &nbsp; &nbsp;

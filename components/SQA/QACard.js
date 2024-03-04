@@ -36,8 +36,8 @@ function QACard({ title,text ,image,lg,top}) {
       sx={{
         display: "flex",
         justifyContent: "center",
-        gap: "13%",
-        marginTop: "7%",
+        gap: "6%",
+        marginTop: "4%",
         flexWrap: "wrap",
       }}
       ref={weeksRef}
@@ -58,8 +58,7 @@ function QACard({ title,text ,image,lg,top}) {
         <Typography sx={{
           color: "#153A5F",
           fontSize: "1em",
-          fontWeight: "500",
-          marginTop:'4%',
+          fontWeight: 700,
           fontFamily:"Mont-Regular, Sans-serif",
       
         }}>

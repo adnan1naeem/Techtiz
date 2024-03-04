@@ -73,7 +73,7 @@ function MobileDoCard({ background, title, des }) {
           <Typography
             sx={{
               fontSize: "15px",
-              fontWeight: "400",
+              fontWeight: 600,
               color: "#54595F",
               lineHeight: "20px",
               marginTop: "9%",

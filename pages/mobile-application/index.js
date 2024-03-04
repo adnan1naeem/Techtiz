@@ -21,35 +21,34 @@ function Mobile() {
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
-  
+
 
   return (
     <div>
-      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "11%",xl:'10%' } }}>
+      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "11%", xl: '10%' } }}>
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
-            gap: {lg:"12%",xl:'8%'},
+            gap: { xs: "1%", sm: "2%", md: "2%", lg: "12%", xl: '8%' },
+            width: "100%",
             flexWrap: "wrap",
             '@media screen and (min-width: 1700px)': {
-             gap:'10%'
-              
-               }
+              gap: '10%'
+            }
           }}
         >
           <Grow onPress={handleClick} />
           <Box
             sx={{
-              mt:{md:'10%',lg:'0'},
-              width: { xs: "100%", sm: "100%", md: "34%", lg: "34%", xl: "24%" },
+              width: { xs: "50%", sm: "70%", md: "30%", lg: "30%", xl: "24%" },
+              mt: { xs: 0, sm: 0, md: '2%', lg: 0, xl: 0 },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
-              '@media screen and (min-width: 1700px)': {
-                width:'26%'
-                
-                 }
-           
+              "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
+                width: "30rem",
+                top:250,
+              },
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -67,13 +66,13 @@ function Mobile() {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",
-            gap: "8%",
+            gap: "3%",
           }}
         >
-          <Box>
+          <Box sx={{ marginTop: '3%' }}>
             <ExpertiseMobile
-            onPress={handleClick}
-              title="Our Expertise"
+              onPress={handleClick}
+              title1="Our Expertise"
               des="Guaranteed delivery of an App that satisfies your goals."
             />
           </Box>

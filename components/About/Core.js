@@ -85,10 +85,11 @@ function Core() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          width: {xs: "100%", sm: "100%", md: "100%", lg: "100%", xl:"70%"},
+          width: {xs: "100%", sm: "100%", md: "100%", lg: "100%", xl:"75%"},
           gap: "1.9%",
           mt: "2%",
         }}
+        
       >
         <CoreCard
           image="https://techtiz.co/wp-content/uploads/2023/11/badge.svg"

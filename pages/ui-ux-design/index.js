@@ -11,17 +11,17 @@ function UI() {
     const contactSectionRef = useRef(null);
     const handleClick = () => {
         if (contactSectionRef.current) {
-          const yOffset = -180;
-          const element = contactSectionRef.current;
-          const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-          window.scrollTo({ top: y, behavior: "smooth" });
+            const yOffset = -180;
+            const element = contactSectionRef.current;
+            const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+            window.scrollTo({ top: y, behavior: "smooth" });
         }
-      };
-      
+    };
+
 
     return (
         <div>
-            <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%" ,xl:'12%'} }}>
+            <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%", xl: '12%' } }}>
                 <Box
                     sx={{
                         display: "flex",
@@ -30,20 +30,17 @@ function UI() {
                         flexWrap: "wrap",
                     }}
                 >
-                    <DesignUX  onPress={handleClick} />
+                    <DesignUX onPress={handleClick} />
                     <Box
                         sx={{
-                            width: { xs: "100%", sm: "80%", md: "36%", lg: "38%", xl: "28%" },
+                            width: { xs: "100%", sm: "80%", md: "36%", lg: "42%", xl: "28%" },
                             transform: isHovered ? "translateY(-12px)" : "translateY(0)",
                             transition: "transform 1s ease",
                             marginTop: { xs: '10%', sm: '10%', md: '5%', lg: 0 },
                             '@media screen and (min-width: 1700px)': {
-                                width:'31%'
-                                
-                                 }
-
+                                width: '31%'
+                            }
                         }}
-                        
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                     >
@@ -58,8 +55,8 @@ function UI() {
                 <DoItUX />
                 <DiscussProject onPress={handleClick} />
                 <div id="contact-section" ref={contactSectionRef}>
-          <SalesTeam />
-        </div>
+                    <SalesTeam />
+                </div>
             </Box>
         </div>
     );
