@@ -30,6 +30,7 @@ function DoButton({
                         backgroundColor: isSelected ? "#F6F9FC" : "#EAEAEA",
                         border: isSelected ? "2px solid #18B0E6" : "none",
                     },
+                  
                 }}
             >
                 {text}

@@ -26,6 +26,11 @@ function Grow({ onPress }) {
           width: { xs: "100%", sm: "100%", md: "38rem", lg: "31rem" },
           height: { xs: "31rem", sm: "26rem", md: "32rem", lg: "25rem" },
           boxShadow: "none",
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width:'33rem',
+                
+              
+              },
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
@@ -108,6 +113,7 @@ function Grow({ onPress }) {
               fontWeight: "400",
               background: "#18B0E6",
               boxShadow: 'none',
+             
               "&:hover": {
                 backgroundColor: "#153A5F",
               },

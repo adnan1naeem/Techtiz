@@ -72,7 +72,12 @@ function DoIt() {
           pl: { xs: "5%", sm: "4%", md: "2%", lg: "3%", xl: '2%' },
           borderRadius: "40px",
           marginTop: "3%",
-          mb: '3%'
+          mb: '3%',
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            marginLeft: '3.9%',
+            marginRight: '3%',        
+              },
+          
         }}
       >
         <DoButton

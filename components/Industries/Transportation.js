@@ -46,7 +46,11 @@ function Transportation({ onPress }) {
           boxShadow: "none",
           '@media screen and (min-width: 1700px)': {
             width:'35rem'           
-             }
+             },
+             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width: "36rem",
+              
+              },
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
@@ -136,6 +140,11 @@ function Transportation({ onPress }) {
               boxShadow: "none",
               color: "#F8F8F8",
               border: "1px solid #6EC1E4",
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                border: "2px solid #6EC1E4",
+                width:'38%'
+              
+              },
               "&:hover": {
                 backgroundColor: "#6EC1E4",
                 color: "#595959",

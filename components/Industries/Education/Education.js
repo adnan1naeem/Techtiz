@@ -76,7 +76,12 @@ function Education({onPress}) {
         <Box
           sx={{
             width: { xs: "90%", sm: "70%", md: "40%", lg: "40%", xl: "35%" },
-            mt:{md:'7%',lg:'4%',xl:'1%'}
+            mt:{md:'7%',lg:'4%',xl:'1%'},
+            "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width: "45%",
+                mt:'2%'
+              
+              },
           }}
         >
           {/* Use next/image for image optimization */}

@@ -41,8 +41,11 @@ function Portfolios() {
               transition: "transform 1s ease",
               '@media screen and (min-width: 1700px)': {
                width:'33%'
-                
-                 }
+                 },
+                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width:'44%'
+              
+              },
            
             }}
             onMouseEnter={() => setIsHovered(true)}

@@ -142,6 +142,10 @@ function MVPsStartup({ onPress }) {
                 backgroundColor: "#6EC1E4",
                 color: "#595959",
               },
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                border: "2px solid #18B0E6",
+              
+              },
             }}
           >
             Discuss now &nbsp; &nbsp;

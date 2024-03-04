@@ -24,7 +24,7 @@ const Navbar = () => {
     }
 
     const handleResize = () => {
-      setIsWideScreen(typeof window !== "undefined" && window.innerWidth > 990);
+      setIsWideScreen(typeof window !== "undefined" && window.innerWidth > 1080);
     };
 
     window.addEventListener("resize", handleResize);
@@ -116,7 +116,7 @@ const Navbar = () => {
               </div>
             )}
             {!isWideScreen && isDropdownOpen && (
-              <ul style={{ padding: '0' }} >
+              <ul style={{ padding: '0'}} >
                 <li className={styles.drop}>
                   <Link href="/mobile-application" onClick={closeMenu}>
                     <TextNav label="Mobile Application" />

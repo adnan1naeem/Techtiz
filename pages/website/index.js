@@ -21,13 +21,18 @@ function Web() {
 
   return (
     <div>
-      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "13%" } }}>
+      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "13%" }, "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                mt:'15%'          
+              }, }}>
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
             gap: "3%",
             flexWrap: "wrap",
+            "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+              gap:0          
+              },
           }}
         >
           <GrowWebsite onPress={handleClick} />
@@ -45,6 +50,10 @@ function Web() {
               },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width:'31%',
+                      
+              },
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

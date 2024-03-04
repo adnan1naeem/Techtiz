@@ -22,32 +22,39 @@ function Mobile() {
     }
   };
 
-
   return (
     <div>
-      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "11%", xl: '10%' } }}>
+      <Box
+        sx={{
+          marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "11%", xl: "10%" },
+        }}
+      >
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
-            gap: { xs: "1%", sm: "2%", md: "2%", lg: "12%", xl: '8%' },
+            gap: { xs: "1%", sm: "2%", md: "2%", lg: "12%", xl: "8%" },
             width: "100%",
             flexWrap: "wrap",
-            '@media screen and (min-width: 1700px)': {
-              gap: '10%'
-            }
+            "@media screen and (min-width: 1700px)": {
+              gap: "10%",
+            },
           }}
         >
           <Grow onPress={handleClick} />
           <Box
             sx={{
               width: { xs: "50%", sm: "70%", md: "30%", lg: "30%", xl: "24%" },
-              mt: { xs: 0, sm: 0, md: '2%', lg: 0, xl: 0 },
+              mt: { xs: 0, sm: 0, md: "2%", lg: 0, xl: 0 },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
               "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
                 width: "30rem",
-                top:250,
+                top: 250,
+              },
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width:'37%',
+                mt:'1%'          
               },
             }}
             onMouseEnter={() => setIsHovered(true)}
@@ -66,10 +73,12 @@ function Mobile() {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",
+           
             gap: "3%",
           }}
         >
-          <Box sx={{ marginTop: '3%' }}>
+          <Box sx={{ marginTop: "3%" 
+           }}>
             <ExpertiseMobile
               onPress={handleClick}
               title1="Our Expertise"

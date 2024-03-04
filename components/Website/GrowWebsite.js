@@ -22,6 +22,7 @@ function GrowWebsite({ onPress }) {
         "@media screen and (min-width: 1700px)": {
           mt: "-1%",
         },
+        
        
       }}
     >
@@ -42,6 +43,10 @@ function GrowWebsite({ onPress }) {
               width: "37rem",
               
             },
+            "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width:'45rem',
+                        
+              },
           boxShadow: "none",
         }}
       >

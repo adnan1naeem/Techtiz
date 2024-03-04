@@ -67,6 +67,10 @@ function CommerceRescourse({ onPress }) {
             flexWrap: "wrap-reverse",
             alignItems: "center",
             justifyContent: "center",
+            "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                gap:'6%'
+              
+              },
           }}
         >
           <Box
@@ -79,6 +83,7 @@ function CommerceRescourse({ onPress }) {
                 lg: "-10%",
                 xl: "-10%",
               },
+              
             }}
           >
             <img
@@ -174,6 +179,10 @@ function CommerceRescourse({ onPress }) {
                       backgroundColor: "#6EC1E4",
                 color: "#595959",
                     },
+                    "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                      border: "2px solid #18B0E6",
+              
+              },
                   }}
                 >
                   Discuss now &nbsp; &nbsp;

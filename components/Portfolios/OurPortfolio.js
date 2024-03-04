@@ -42,6 +42,7 @@ function OurPortfolio({ onPress }) {
               paddingLeft: "10px",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
+              fontFamily: "'Mont-Bold', sans-serif"
             }}
           >
             Our Portfolios
@@ -55,6 +56,7 @@ function OurPortfolio({ onPress }) {
               lineHeight: "45px",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontFamily: "'Mont-Bold', sans-serif"
             }}
           >
             We Have Innovative and Time-Tested Solutions to Grow Your Business
@@ -66,6 +68,7 @@ function OurPortfolio({ onPress }) {
               fontSize: "1.1em",
               fontWeight: "400",
               marginTop: "5%",
+              fontFamily: "'Mont-Regular', sans-serif"
             }}
           >
             At TechTiz, we transform goals and dreams into digital solutions

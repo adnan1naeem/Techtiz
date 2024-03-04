@@ -62,7 +62,7 @@ function PortfoliosCard( {title, description,mainImage,mr,ml}) {
           </Box>
           <Box sx={{ mt: "6%" }}>
             <Typography
-              sx={{ fontSize: "23px", color: "#153A5F", fontWeight: "600" }}
+              sx={{ fontSize: "23px", color: "#153A5F", fontWeight: "600",fontFamily: "'Mont-Regular',Sans-serif", }}
             >
               {title}
             </Typography>
@@ -71,7 +71,7 @@ function PortfoliosCard( {title, description,mainImage,mr,ml}) {
                 color: "#7A7A7A",
                 fontSize: "14px",
                 fontWeight: "400",
-                fontFamily: "mont,Sans-serif",
+                fontFamily: "'Mont-Regular',Sans-serif",
                 marginTop: "1%",
                 lineHeight:'19px'
               }}

@@ -114,6 +114,11 @@ function Application({ onPress }) {
                 backgroundColor: "#153A5F",
                 border: "1px solid #153A5F",
               },
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                fontFamily:"Mont-Bold, Sans-serif",
+                width:'39%'
+              
+              },
             }}
           >
             Discuss now &nbsp; &nbsp;

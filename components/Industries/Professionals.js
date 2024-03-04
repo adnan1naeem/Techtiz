@@ -29,7 +29,12 @@ function Professionals({ onPress }) {
           boxShadow: "none",
           '@media screen and (min-width: 1700px)': {
             width:'33rem'         
-             }
+             },
+             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width:'33rem',
+                mt:'2%'
+              },
+             
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
@@ -105,7 +110,11 @@ function Professionals({ onPress }) {
               fontSize: "16px",
               fontWeight: "400",
               background: "#18B0E6",
-              fontFamily:"Mont-Regular, Sans-serif",
+              fontFamily:"Mont-Bold, Sans-serif",
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width: "41%",
+              
+              },
               
               boxShadow:'none',
               "&:hover": {
