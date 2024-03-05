@@ -23,7 +23,7 @@ function Careers({ onPress }) {
             mb: '5%'
           }}
         >
-          <Box>
+          <Box  >
             <ExpertiseMobile
               title1={`Why`}
               title2={`You Should`}

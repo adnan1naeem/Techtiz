@@ -6,8 +6,7 @@ import ButtonHover from "../Texts/ButtonHover";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
 import { IoMdArrowDropup } from "react-icons/io";
-import { Button } from "@mui/material";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const router = useRouter();
@@ -24,7 +23,9 @@ const Navbar = () => {
     }
 
     const handleResize = () => {
-      setIsWideScreen(typeof window !== "undefined" && window.innerWidth > 1080);
+      setIsWideScreen(
+        typeof window !== "undefined" && window.innerWidth > 1080
+      );
     };
 
     window.addEventListener("resize", handleResize);
@@ -63,9 +64,9 @@ const Navbar = () => {
               : styles["nav-menu"]
           }
         >
-          <li>
+          <li className={router.pathname === "/about" ? styles.menu : ""}>
             <Link href="/about" onClick={closeMenu}>
-              <TextNav label="About" />
+              <TextNav label="About" isActive={router.pathname === "/about"} />
             </Link>
           </li>
           <div className={styles.dropdown}>
@@ -82,8 +83,7 @@ const Navbar = () => {
                     fontSize: "30px",
                     color: "white",
                     cursor: "pointer",
-                    transition: "opacity 0.3s ease-in-out"
-
+                    transition: "opacity 0.3s ease-in-out",
                   }}
                   className={click ? styles.services : styles["services-menu"]}
                 />
@@ -93,7 +93,7 @@ const Navbar = () => {
                     fontSize: "30px",
                     color: "white",
                     cursor: "pointer",
-                    transition: "opacity 0.3s ease-in-out"
+                    transition: "opacity 0.3s ease-in-out",
                   }}
                   className={click ? styles.services : styles["services-menu"]}
                 />
@@ -116,23 +116,23 @@ const Navbar = () => {
               </div>
             )}
             {!isWideScreen && isDropdownOpen && (
-              <ul style={{ padding: '0'}} >
-                <li className={styles.drop}>
+              <ul style={{ padding: "0" }}>
+                <li className={router.pathname === "/mobile-application" ? styles.menu : styles.drop}>
                   <Link href="/mobile-application" onClick={closeMenu}>
                     <TextNav label="Mobile Application" />
                   </Link>
                 </li>
-                <li className={styles.drop}>
+                <li className={router.pathname === "/website" ? styles.menu : styles.drop}>
                   <Link href="/website" onClick={closeMenu}>
                     <TextNav label="Web Development Services" />
                   </Link>
                 </li>
-                <li className={styles.drop}>
+                <li className={router.pathname === "/ui-ux-design" ? styles.menu : styles.drop}>
                   <Link href="/ui-ux-design" onClick={closeMenu}>
                     <TextNav label="UI/UX Design" />
                   </Link>
                 </li>
-                <li className={styles.drop}>
+                <li className={router.pathname === "/SQA" ? styles.menu : styles.drop}>
                   <Link href="/SQA" onClick={closeMenu}>
                     <TextNav label="SQA" />
                   </Link>
@@ -141,41 +141,50 @@ const Navbar = () => {
             )}
           </div>
 
-          <li>
+          <li  className={router.pathname === "/industries" ? styles.menu : ""}>
             <Link href="/industries" onClick={closeMenu}>
-              <TextNav label="Industries" />
+              <TextNav
+                label="Industries"
+                isActive={router.pathname === "/industries"}
+              />
             </Link>
           </li>
-          <li>
+          <li   className={router.pathname === "/portfolios" ? styles.menu : ""}>
             <Link href="/portfolios" onClick={closeMenu}>
-              <TextNav label="Case Studies" />
+              <TextNav
+                label="Case Studies"
+                isActive={router.pathname === "/portfolios"}
+              />
             </Link>
           </li>
-          <li>
+          <li className={router.pathname === "/blogs" ? styles.menu : ""}>
             <Link href="/blogs" onClick={closeMenu}>
-              <TextNav label="Blog" />
+              <TextNav label="Blog" isActive={router.pathname === "/blogs"} />
             </Link>
           </li>
 
-          <li>
+          <li className={router.pathname === "/career" ? styles.menu : ""}>
             <Link href="/career" onClick={closeMenu}>
-              <TextNav label="Careers" />
+              <TextNav
+                label="Careers"
+                isActive={router.pathname === "/career"}
+              />
             </Link>
           </li>
         </ul>
 
         {isWideScreen && (
           <div className={styles["btn-group"]} style={{ marginRight: "2%" }}>
-            <Link href={{ pathname: '/get-started' }}>
+            <Link href={{ pathname: "/get-started" }}>
               <ButtonHover textButton="Get Started" />
             </Link>
           </div>
         )}
         <div className={styles.hamburger} onClick={handleClick}>
           {click ? (
-            <FaTimes size={20} style={{ color: "white", marginLeft: "10%" }} />
+            <FaTimes size={20} style={{ color: "white" }} />
           ) : (
-            <FaBars size={20} style={{ color: "white", marginLeft: "10%" }} />
+            <FaBars size={20} style={{ color: "white" }} />
           )}
         </div>
       </div>

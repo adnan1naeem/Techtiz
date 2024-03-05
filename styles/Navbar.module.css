@@ -95,7 +95,21 @@
 
 }
  
+@media screen and (max-width:480px){
+    .header{
+        height: 87px;
+    }
+    .logo{
+        width: 45%;
+        height: auto;
+        margin-left: -10%;
+    }
+   
+   
+
+}
 @media screen and (max-width:1080px) {
+    
     .header{
         width: 100%;
       
@@ -128,8 +142,8 @@
         z-index: 2;
         background: #18B0E6;
         text-align: start;
-       padding: 5%;
-       overflow:none;
+        padding: 5%;
+        overflow:none;
     }
    
     .nav-menu.active {
@@ -153,6 +167,12 @@
     width: 100%;
    border: none;
  }
+ .menu{
+    background-color: #153A5F;
+    width: 100%;
+   border: none;
+   color: white;
+ }
    
     .nav-menu a {
         font-size: 1.2rem;
@@ -161,13 +181,9 @@
     .services{
         margin-top: -1%;
     }
-    
-   
-   
-    
-
-
+        
 }
+
   .dropdown {
     
     overflow: none;
