@@ -77,6 +77,11 @@ function QAForYou() {
           },
           borderRadius: "40px",
           marginTop: "2%",
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            marginLeft: '13%',
+            marginRight: '13%',
+              
+              },
         }}
       >
         <QAButton

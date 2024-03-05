@@ -63,16 +63,28 @@ function Footer() {
           display: "flex",
           justifyContent: "space-between",
           flexWrap: "wrap",
-          paddingLeft: {xs:'8%',lg:"8%",xl:'18%'},
+          paddingLeft: { xs: "8%", lg: "8%", xl: "18%" },
           paddingRight: "10%",
           paddingTop: "4%",
           paddingBottom: "2.5%",
-          
         }}
       >
         <Box>
-          <Typography sx={{ color: "#153A5F", fontWeight: "100",  fontFamily: 'Mont-Regular, Sans-serif', }}>
-            © 2023 Techtiz. All Rights Reserved.
+          <Typography
+            sx={{
+              color: "#153A5F",
+              fontWeight: "100",
+              fontFamily: "Mont-Regular, Sans-serif",
+              fontWeight: 600,
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                fontSize: "13px",
+                ml:'-10%'
+                
+              },
+        
+            }}
+          >
+            © 2023  Techtiz. All Rights Reserved.
           </Typography>
         </Box>
         <Box sx={{ display: "flex", gap: "1rem" }}>

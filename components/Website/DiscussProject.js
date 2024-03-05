@@ -51,18 +51,46 @@ function DiscussProject({ onPress }) {
           borderRadius: "20px",
         }}
       >
-        <CardContent sx={{ display: "flex", flexDirection: "row", justifyContent: 'space-between', marginTop: '2%', flexWrap: 'wrap' }}>
-          <Box sx={{ marginLeft: '3%' }}>
-            <Typography sx={{ color: '#FFFFFF', fontSize: '2.2em', fontWeight: '700', fontFamily: "Mont-Bold, Sans-serif", }}> Let's Discuss Your Project!</Typography>
-            <Typography sx={{
-              color: '#FFFFFF', fontSize: '1.3em', fontWeight: 600, marginTop: '5%', transition: "opacity 1s ease-in-out",
-              opacity: isVisible ? 1 : 0, fontFamily: "Mont-Regular, Sans-serif",
-            }}>
+        <CardContent
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            marginTop: "2%",
+            flexWrap: "wrap",
+          }}
+        >
+          <Box sx={{ marginLeft: "3%" }}>
+            <Typography
+              sx={{
+                color: "#FFFFFF",
+                fontSize: "2.2em",
+                fontWeight: "700",
+                fontFamily: "Mont-Bold, Sans-serif",
+              }}
+            >
+              {" "}
+              Let's Discuss Your Project!
+            </Typography>
+            <Typography
+              sx={{
+                color: "#FFFFFF",
+                fontSize: "1.3em",
+                fontWeight: 600,
+                marginTop: "5%",
+                transition: "opacity 1s ease-in-out",
+                opacity: isVisible ? 1 : 0,
+                fontFamily: "Mont-Regular, Sans-serif",
+                "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                fontSize:'1em'
+              },
+              }}
+            >
               Get a free consultation and let us know your project idea to{" "}
               <br /> turn into an amazing digital product.
             </Typography>
           </Box>
-          <Box sx={{ marginTop: '3%', marginRight: '8%' }}>
+          <Box sx={{ marginTop: "3%", marginRight: "8%" }}>
             <Button
               variant="outlined"
               onClick={onPress}
@@ -75,13 +103,12 @@ function DiscussProject({ onPress }) {
                 background: "none",
                 paddingTop: "20px",
                 paddingBottom: "20px",
-                transition: 'background-color 0.8s, color 0.6s',
+                transition: "background-color 0.8s, color 0.6s",
                 fontFamily: "Mont-Bold, Sans-serif",
                 marginTop: "8px",
                 "&:hover": {
                   backgroundColor: "white",
                   color: "#18B0E6",
-
                 },
               }}
             >

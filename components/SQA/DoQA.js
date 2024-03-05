@@ -17,7 +17,7 @@ function DoQA() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -42,7 +42,7 @@ function DoQA() {
           paddingTop: "2%",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
         }}
       >
         What We Do
@@ -55,12 +55,16 @@ function DoQA() {
           flexWrap: "wrap",
           marginTop: "1%",
           paddingBottom: "6%",
-          ml: '7rem',
-          mr: '7rem',
-          '@media screen and (min-width: 1500px)': { // Adjust the minimum width as per your requirement
-      maxWidth: "1200px",
-      margin: "0 auto",
-    }
+       
+          "@media screen and (min-width: 1500px)": {
+            // Adjust the minimum width as per your requirement
+            maxWidth: "1200px",
+            margin: "0 auto",
+          },
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            maxWidth: "1200px",
+            margin: "0 auto",
+          },
         }}
       >
         <ServicesCard

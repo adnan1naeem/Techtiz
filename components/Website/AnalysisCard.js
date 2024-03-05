@@ -2,7 +2,7 @@ import { Box, List, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
 import { FaSquare } from "react-icons/fa";
 
-function AnalysisCard({ title, lists, lgTop, xlTop, image, mt }) {
+function AnalysisCard({ title, lists, lgTop, xlTop, image, mt ,width}) {
   return (
     <Box
       sx={{
@@ -11,17 +11,27 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt }) {
         gap: "10%",
         marginTop: "5%",
         flexWrap: "wrap",
+        "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                gap:'7%',
+              },
       }}
     >
-      <Box sx={{
-        width: { xs: "17rem", sm: "20em", md: "20em", lg: "24em", xl: '20em' },
-        mt: mt
-      }}>
-        <img
-          src={image}
-          alt=""
-          style={{ width: "100%" }}
-        />
+      <Box
+        sx={{
+          width: {
+            xs: "17rem",
+            sm: "20em",
+            md: "20em",
+            lg: "24em",
+            xl: "20em",
+          },
+          mt: mt,
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width: width,
+              },
+        }}
+      >
+        <img src={image} alt="" style={{ width: "100%" }} />
       </Box>
       <Box
         sx={{
@@ -30,7 +40,12 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt }) {
         }}
       >
         <Typography
-          sx={{ fontSize: "1.5em", fontWeight: "600", color: "#153A5F", fontFamily: "Mont-Bold, Sans-serif", }}
+          sx={{
+            fontSize: "1.5em",
+            fontWeight: "600",
+            color: "#153A5F",
+            fontFamily: "Mont-Bold, Sans-serif",
+          }}
         >
           {title}
         </Typography>
@@ -48,7 +63,7 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt }) {
                 sx={{
                   marginLeft: "2%",
                   fontSize: "17px",
-                  fontWeight: "400",
+                  fontWeight: 600,
                   color: "#153A5F",
                   fontFamily: "Mont-Regular, Sans-serif",
                   width: {
@@ -57,6 +72,9 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt }) {
                     md: "20em",
                     lg: "28em",
                   },
+                  "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                fontSize:'14.4px'
+              },
                 }}
               >
                 {list}

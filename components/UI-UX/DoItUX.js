@@ -65,6 +65,10 @@ function DoItUX() {
           padding: " 0.5% 0.5% 0.5% 0.5%",
           borderRadius: "40px",
           marginTop: "3%",
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                ml:'27%',
+                mr:'27%'
+              },
         }}
       >
         <DoButton
@@ -92,7 +96,7 @@ function DoItUX() {
             "Interviews & observations",
             "Functional requirements",
           ]}
-        
+          width="24%"
           image="https://techtiz.co/wp-content/uploads/2023/10/dicovery2-768x768.webp"
         />
       )}
@@ -105,7 +109,7 @@ function DoItUX() {
             "Information architecture",
           ]}
           image="https://techtiz.co/wp-content/uploads/2023/09/wireframe.webp"
-
+          width="27%"
         
        
         />

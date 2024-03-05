@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 
-function QACard({ title,text ,image,lg,top}) {
+function QACard({ title, text, image, lg, top }) {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
 
@@ -17,7 +17,7 @@ function QACard({ title,text ,image,lg,top}) {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -42,35 +42,39 @@ function QACard({ title,text ,image,lg,top}) {
       }}
       ref={weeksRef}
     >
-      
-      <Box sx={{ width: { xs: "21rem", sm: "32em", md: "20em", lg: "30em" }, marginTop:'5%',textAlign:'left'}}>
-        <Typography   sx={{
-          color: "#153A5F",
-          fontSize: "1.5em",
-          fontWeight: "600",
-          transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
-      
-        }}>
-        {title}
+      <Box
+        sx={{
+          width: { xs: "21rem", sm: "32em", md: "20em", lg: "30em" },
+          marginTop: "5%",
+          textAlign: "left",
+          
+        }}
+      >
+        <Typography
+          sx={{
+            color: "#153A5F",
+            fontSize: "1.5em",
+            fontWeight: "600",
+            transition: "opacity 1s ease-in-out",
+            opacity: isVisible ? 1 : 0,
+            fontFamily: "Mont-Bold, Sans-serif",
+          }}
+        >
+          {title}
         </Typography>
-        <Typography sx={{
-          color: "#153A5F",
-          fontSize: "1em",
-          fontWeight: 700,
-          fontFamily:"Mont-Regular, Sans-serif",
-      
-        }}>
-        {text}
+        <Typography
+          sx={{
+            color: "#153A5F",
+            fontSize: "1em",
+            fontWeight: 700,
+            fontFamily: "Mont-Regular, Sans-serif",
+          }}
+        >
+          {text}
         </Typography>
       </Box>
       <Box sx={{ width: { xs: "18rem", sm: "24em", md: "17em", lg: lg } }}>
-        <img
-          src={image}
-          alt=""
-          style={{ width: "100%" ,marginTop:top}}
-        />
+        <img src={image} alt="" style={{ width: "100%", marginTop: top }} />
       </Box>
     </Box>
   );

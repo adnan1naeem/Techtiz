@@ -31,7 +31,11 @@ function Sqa() {
             flexWrap: "wrap",
             '@media screen and (min-width: 1700px)': {
               gap:'1%'
-            }
+            },
+            "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+              gap:0,
+              
+              },
           }}
         >
           <QA  onPress={handleClick}/>
@@ -43,7 +47,11 @@ function Sqa() {
               marginTop: { xs: "-32%", sm: "10%", md: 0, lg: 0 },
               '@media screen and (min-width: 1700px)': {
                 width:'35%'
-              }
+              },
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width:'50%'
+              
+              },
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

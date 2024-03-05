@@ -51,7 +51,10 @@ function FooterCard({
                 cursor: "pointer",
                 fontSize: "16px",
                 fontFamily:"Mont-Regular, Sans-serif",
-                fontWeight:400
+                fontWeight:600,
+                "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                  fontSize: "15px",
+              },
               }}
             >
               {text1}
@@ -72,7 +75,10 @@ function FooterCard({
                 cursor: "pointer",
                 fontSize: "16px",
                 fontFamily:"Mont-Regular, Sans-serif",
-                fontWeight:400
+                fontWeight:600,
+                "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                  fontSize: "15px",
+              },
               }}
             >
               {text2}
@@ -93,6 +99,10 @@ function FooterCard({
                 cursor: "pointer",
                 fontSize: "17px",
                 fontFamily:"Mont-Regular, Sans-serif",
+                fontWeight:600,
+                "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                  fontSize: "15px",
+              },
               }}
             >
               {text3}
@@ -113,6 +123,10 @@ function FooterCard({
                 cursor: "pointer",
                 fontSize: "17px",
                 fontFamily:"Mont-Regular, Sans-serif",
+                fontWeight:600,
+                "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                  fontSize: "15px",
+              },
               }}
             >
               {text4}
@@ -133,6 +147,10 @@ function FooterCard({
                 cursor: "pointer",
                 fontSize: "17px",
                 fontFamily:"Mont-Regular, Sans-serif",
+                fontWeight:600,
+                "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                  fontSize: "15px",
+              },
               }}
             >
               {text5}

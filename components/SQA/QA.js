@@ -19,6 +19,10 @@ function QA({onPress}) {
         sx={{
           width: { xs: "100%", sm: "33rem", md: "28rem", lg: "36rem" },
           height: { xs: "45rem", sm: "26rem", md: "32rem", lg: "28rem" },
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+             width:'31rem'
+              
+              },
 
           boxShadow: "none",
         }}
@@ -61,7 +65,12 @@ function QA({onPress}) {
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily:"Mont-Bold, Sans-serif",
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            marginTop: "-4.4%",
+              
+              },
             }}
+
           >
            Running With Our
           </Typography>
@@ -75,6 +84,10 @@ function QA({onPress}) {
           opacity: isVisible ? 1 : 0,
           fontFamily:"Mont-Bold, Sans-serif",
           fontFamily:"Mont-Bold, Sans-serif",
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            marginTop: "-4.4%",
+              
+              },
             }}
           >
            Software Quality
@@ -88,6 +101,11 @@ function QA({onPress}) {
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily:"Mont-Bold, Sans-serif",
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            marginTop: "-4.4%",
+            
+              
+              },
             }}
           >
           Testing Services
@@ -97,7 +115,7 @@ function QA({onPress}) {
             sx={{
               color: "#153A5F",
               fontSize: "1.1em",
-              fontWeight: "400",
+              fontWeight: 600,
               marginTop: "2%",
               fontFamily:"Mont-Regular, Sans-serif",
             }}

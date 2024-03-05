@@ -19,12 +19,17 @@ function DesignUX({ onPress }) {
         },
       }}
     >
+    
       <Card
         sx={{
           width: { xs: "23rem", sm: "100%", md: "36rem", lg: "36rem" },
           height: { xs: "37rem", sm: "32rem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width:'38rem'
+              },
+
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
@@ -67,7 +72,10 @@ function DesignUX({ onPress }) {
               fontFamily: "Mont-Bold, Sans-serif",
               '@media screen and (min-width: 1700px)': {
                 mt: '-3.5%'
-              }
+              },
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                mt:'-4%'
+              },
 
             }}
           >
@@ -84,7 +92,12 @@ function DesignUX({ onPress }) {
               fontFamily: "Mont-Bold, Sans-serif",
               '@media screen and (min-width: 1700px)': {
                 mt: '-3.5%'
-              }
+              },
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                mt:'-4%'
+              },
+
+
 
 
             }}
@@ -98,10 +111,15 @@ function DesignUX({ onPress }) {
               fontSize: "1.1em",
               fontWeight: 600,
               marginTop: "5%",
-              fontFamily: "Mont-Regular, Sans-serif",
+              fontFamily: "'Mont-Regular', sans-serif",
               '@media screen and (min-width: 1700px)': {
                 mt: '2%'
-              }
+              },
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                mt:'2%',
+               
+              },
+
 
             }}
           >
@@ -131,7 +149,11 @@ function DesignUX({ onPress }) {
               '@media screen and (min-width: 1700px)': {
                 mt: '7%',
                 width: '35%'
-              }
+              },
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                mt:'6%'
+              },
+
 
 
             }}
