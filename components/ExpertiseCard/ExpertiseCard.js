@@ -49,9 +49,10 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href }) {
                 sx={{
                   color: "#7A7A7A",
                   fontSize: "14px",
-                  fontWeight: "300",
+   
                   fontFamily: "Mont-Regular, Sans-serif",
                   marginTop: "2%",
+                  fontWeight: 600,
                   lineHeightt: 17,
                 }}
               >

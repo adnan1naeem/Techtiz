@@ -44,7 +44,8 @@ function ContactInfo() {
               sx={{
                 color: "#153A5F",
                 fontSize: "15px",
-                fontFamily: "'Mont-Regular', sans-serif"
+                fontFamily: "'Mont-Regular', sans-serif",
+                fontWeight: 600,
               }}
             >
               Email: contact@techtiz.co
@@ -53,7 +54,8 @@ function ContactInfo() {
               sx={{
                 color: "#153A5F",
                 fontSize: "15px",
-                fontFamily: "'Mont-Regular', sans-serif"
+                fontFamily: "'Mont-Regular', sans-serif",
+                fontWeight: 600,
               }}
             >
               Phone: +92 326 1199244
@@ -62,7 +64,8 @@ function ContactInfo() {
               sx={{
                 color: "#153A5F",
                 fontSize: "15px",
-                fontFamily: "'Mont-Regular', sans-serif"
+                fontFamily: "'Mont-Regular', sans-serif",
+                fontWeight: 600,
               }}
             >
               Office address: 34, Block-Civic Center,
@@ -71,7 +74,8 @@ function ContactInfo() {
               sx={{
                 color: "#153A5F",
                 fontSize: "15px",
-                fontFamily: "'Mont-Regular', sans-serif"
+                fontFamily: "'Mont-Regular', sans-serif",
+                fontWeight: 600,
               }}
             >
               Quaid - e- Azam Town / Township, Scheme, <br /> Lahore, Pakistan

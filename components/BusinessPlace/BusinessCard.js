@@ -84,7 +84,7 @@ function BusinessCard({ data, onClick,activeButton }) {
                   sx={{
                     marginLeft: "2%",
                     fontSize: "17px",
-                    fontWeight: "400",
+                    fontWeight: 600,
                     color: "#54595F",
                     fontFamily: "'Mont-Regular', sans-serif"
                   }}
@@ -100,7 +100,7 @@ function BusinessCard({ data, onClick,activeButton }) {
                   sx={{
                     marginLeft: "2%",
                     fontSize: "17px",
-                    fontWeight: "400",
+                    fontWeight: 600,
                     color: "#54595F",
                     fontFamily: "'Mont-Regular', sans-serif"
                   }}
@@ -116,7 +116,7 @@ function BusinessCard({ data, onClick,activeButton }) {
                   sx={{
                     marginLeft: "2%",
                     fontSize: "17px",
-                    fontWeight: "400",
+                    fontWeight: 600,
                     color: "#54595F",
                     fontFamily: "'Mont-Regular', sans-serif"
                   }}
@@ -138,6 +138,7 @@ function BusinessCard({ data, onClick,activeButton }) {
                   fontFamily: "'Mont-Regular', sans-serif",
                   background: "#18B0E6",
                   boxShadow: 'none',
+                  fontWeight: 600,
                   "&:hover": {
                     backgroundColor: "#153A5F", // Set the desired background color on hover
                   },

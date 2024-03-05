@@ -18,7 +18,7 @@ function ButtonBusiness({
         onClick={onClick}
         sx={{
           color: color,
-          fontWeight: "400",
+          fontWeight: 600,
           borderRadius: 1,
           fontSize: "17px",
           fontFamily: "'Mont-Regular', sans-serif",

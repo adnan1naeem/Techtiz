@@ -66,7 +66,7 @@ function BusinessTogether({ onClick }) {
       </Typography>
       <Typography
         sx={{
-          fontWeight: 400,
+       
           textAlign: "center",
           color: "#153A5F",
           fontSize: "1em",
@@ -78,6 +78,7 @@ function BusinessTogether({ onClick }) {
           fontWeight: '300',
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          fontWeight: 600,
         }}
       >
         With the right tech partner, your business can go places

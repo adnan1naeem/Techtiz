@@ -89,7 +89,7 @@ function Grow({ onPress }) {
             sx={{
               color: "#153A5F",
               fontSize: "1.1em",
-              fontWeight: "400",
+              fontWeight: 600,
               marginTop: "5%",
               fontFamily: "Mont-Regular, Sans-serif",
             }}

@@ -68,7 +68,7 @@ function Core() {
         sx={{
           color: "#153A5F",
           fontSize: "1.1em",
-          fontWeight: 100,
+          fontWeight: 600,
           textAlign: "center",
           mt: '7px',
           transition: "opacity 1s ease-in-out",

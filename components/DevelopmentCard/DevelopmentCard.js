@@ -76,6 +76,7 @@ function DevelopmentCard({ background, title, Description }) {
               height: "9rem",
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+
             }}
           >
             {Description}

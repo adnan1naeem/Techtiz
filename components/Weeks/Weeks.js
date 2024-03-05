@@ -65,7 +65,7 @@ function Weeks() {
           color: "#153A5F",
           lineHeight: "25px",
           fontSize: "1em",
-          fontWeight: '300',
+          fontWeight: 600,
           fontFamily: "'Mont-Regular', sans-serif",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,

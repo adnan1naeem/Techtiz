@@ -123,7 +123,7 @@ function Technologies() {
           marginTop: '1%',
           color: "var(--e-global-color-9f67d62)",
           textAlign: "center",
-          fontWeight: "100",
+          fontWeight: 600,
           fontSize: "1em",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,

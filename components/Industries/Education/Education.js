@@ -53,7 +53,7 @@ function Education({onPress}) {
           textAlign: "center",
           color: "#153A5F",
           fontSize: "1.1em",
-          fontWeight: "400",
+          fontWeight: 600,
           mt: "5px",
           lineHeight: "30px",
           fontFamily:"Mont-Regular, Sans-serif",
