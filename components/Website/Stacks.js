@@ -36,9 +36,9 @@ function Stack() {
       <Typography
         sx={{
           textAlign: "center",
-          paddingTop: "6%",
+          paddingTop: {xs:"26%", sm: "15%", md:"6%"},
           color: "#FFFFFF",
-          fontSize: "2.7em",
+          fontSize: {xs: "1.9em",md:"2.7em"},
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,

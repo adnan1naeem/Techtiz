@@ -39,8 +39,10 @@ function Welcoming() {
           textAlign: "center",
           paddingTop: "7%",
           color: "#153A5F",
-          fontSize: "2.2em",
+          fontSize: { xs: "1.2em", sm: "1.9em", md: "2.2em" },
           fontWeight: "600",
+          pl: 3,
+          pr: 3,
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Bold', sans-serif"
@@ -69,14 +71,22 @@ function Welcoming() {
         <Box
           sx={{ width: { xs: "21em", sm: "30em", md: "30em", lg: "30rem" } }}
         >
-          <Typography sx={{ color: "#000000" }}>
+          <Typography sx={{
+            color: "#000000",
+            pl: 3,
+            pr: 3,
+            fontSize: { xs: "0.9em", sm: "1.1em" },
+            fontFamily: "'Mont-Regular', sans-serif",
+          }}>
             At TechTiz, we believe our employees are our greatest asset.
           </Typography>
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: '1em',
-              fontWeight: "400",
+              fontSize: { xs: "1em", sm: "1.1em" },
+              fontWeight: 600,
+              pl: 3,
+              pr: 3,
               marginTop: "5%",
               fontFamily: "'Mont-Regular', sans-serif",
             }}

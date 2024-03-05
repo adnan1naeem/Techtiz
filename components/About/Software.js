@@ -61,7 +61,7 @@ function Software() {
         <Typography
           sx={{
             color: "#FFFFFF",
-            fontSize: "2.3em",
+            fontSize: {xs: "1.3em", sm: "2.3em"},
             textAlign: "center",
             fontWeight: "blod",
             transition: "opacity 1s ease-in-out",
@@ -75,7 +75,7 @@ function Software() {
         <Typography
           sx={{
             color: "#FFFFFF",
-            fontSize: "1.1em",
+            fontSize: {xs: "1em", sm:"1.1em"},
             textAlign: "center",
             fontWeight: 400,
             marginTop: "2.5%",

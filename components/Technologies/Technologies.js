@@ -126,6 +126,8 @@ function Technologies() {
           fontWeight: 600,
           fontSize: "1em",
           transition: "opacity 1s ease-in-out",
+          pl: { xs: '3%' },
+          pr: { xs: '3%' },
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Regular', sans-serif"
         }}

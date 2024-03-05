@@ -57,7 +57,7 @@ function Transportation({ onPress }) {
           <Typography
             sx={{
               color: "#F8F8F8",
-              fontSize: "2.2em",
+              fontSize: {xs:"1.3em",sm:"2.2em"},
               fontWeight: "600",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
@@ -69,7 +69,7 @@ function Transportation({ onPress }) {
           <Typography
             sx={{
               color: "#6EC1E4",
-              fontSize: "1.1em",
+              fontSize: {xs:"0.9em",sm:"1.1em"},
               fontWeight: "300",
               marginTop: "2%",
               fontFamily:"Mont-Regular, Sans-serif",
@@ -83,7 +83,7 @@ function Transportation({ onPress }) {
               fontSize: "1.3em",
               fontWeight: "bold",
               marginTop: "7%",
-              borderLeft: "10px solid #18B0E6",
+              borderLeft: {xs: "5px solid #18B0E6", sm:"10px solid #18B0E6"},
               height: "18px",
               lineHeight: "18px",
               paddingLeft: "10px",
@@ -98,7 +98,7 @@ function Transportation({ onPress }) {
           <Typography
             sx={{
               color: "#F8F8F8",
-              fontSize: "21px",
+              fontSize: {xs: "19px",sm:"21px"},
               fontWeight: "600",
               lineHeight: "29px",
               marginTop: "5%",
@@ -129,7 +129,7 @@ function Transportation({ onPress }) {
               marginTop: "8%",
               ml:'3%',
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2%" },
-              width: { xs: "100%", sm: "40%", md: "60%", lg: "40%" },
+              width: { xs: "90%", sm: "40%", md: "60%", lg: "40%" },
               paddingLeft: "1%",
               paddingRight: "1%",
               borderRadius: 1,
@@ -143,7 +143,6 @@ function Transportation({ onPress }) {
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 border: "2px solid #6EC1E4",
                 width:'38%'
-              
               },
               "&:hover": {
                 backgroundColor: "#6EC1E4",

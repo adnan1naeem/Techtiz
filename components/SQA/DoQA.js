@@ -36,7 +36,7 @@ function DoQA() {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "2.8em",
+          fontSize: {xs:"1.9em",md:"2.8em"},
           textAlign: "center",
           fontWeight: "600",
           paddingTop: "2%",

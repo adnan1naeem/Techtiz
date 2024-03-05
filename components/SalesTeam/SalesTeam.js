@@ -45,6 +45,8 @@ function SalesTeam({ id }) {
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
+          pl: {xs: '3%', sm: '0%'},
+          pr: {xs: '3%', sm: '0%'},
           fontFamily: "'Mont-Bold', sans-serif"
           
         }}
@@ -58,6 +60,8 @@ function SalesTeam({ id }) {
           gap: "5%",
           flexWrap: "wrap",
           marginTop: "3%",
+          pl: {xs: '3%', sm: '0%'},
+          pr: {xs: '3%', sm: '0%'},
         }}
       >
         <Box>

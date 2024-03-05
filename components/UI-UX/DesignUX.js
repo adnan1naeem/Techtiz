@@ -19,16 +19,15 @@ function DesignUX({ onPress }) {
         },
       }}
     >
-    
       <Card
         sx={{
           width: { xs: "23rem", sm: "100%", md: "36rem", lg: "36rem" },
-          height: { xs: "37rem", sm: "32rem", md: "32rem", lg: "28rem" },
+          height: { xs: "30rem", sm: "30rem", md: "32rem", lg: "28rem" },
 
           boxShadow: "none",
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width:'38rem'
-              },
+            width: '38rem'
+          },
 
         }}
       >
@@ -51,58 +50,23 @@ function DesignUX({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "2.7em",
+              fontSize: { xs: "1.9em", md: "2.8em" },
               fontWeight: "800",
-              marginTop: "1%",
-              transition: "opacity 1s ease-in-out",
-              opacity: isVisible ? 1 : 0,
-              fontFamily: "Mont-Bold, Sans-serif",
-            }}
-          >
-            UI/UX Design That
-          </Typography>
-          <Typography
-            sx={{
-              color: "#153A5F",
-              fontSize: "2.8em",
-              fontWeight: "800",
-              marginTop: "-2%",
+              marginTop: { xs: "2%", md: "2%" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
               '@media screen and (min-width: 1700px)': {
-                mt: '-3.5%'
+                mt: '-2%'
               },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                mt:'-4%'
+                mt: '-2%'
               },
 
             }}
           >
-            Drives Growth & Never
-          </Typography>
-          <Typography
-            sx={{
-              color: "#153A5F",
-              fontSize: "2.7em",
-              fontWeight: "800",
-              marginTop: "-2%",
-              transition: "opacity 1s ease-in-out",
-              opacity: isVisible ? 1 : 0,
-              fontFamily: "Mont-Bold, Sans-serif",
-              '@media screen and (min-width: 1700px)': {
-                mt: '-3.5%'
-              },
-              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                mt:'-4%'
-              },
-
-
-
-
-            }}
-          >
-            Lets You Down
+            {`UI/UX Design That
+            \nDrives Growth & Never\nLets You Down`}
           </Typography>
 
           <Typography
@@ -116,8 +80,8 @@ function DesignUX({ onPress }) {
                 mt: '2%'
               },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                mt:'2%',
-               
+                mt: '2%',
+
               },
 
 
@@ -151,7 +115,7 @@ function DesignUX({ onPress }) {
                 width: '35%'
               },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                mt:'6%'
+                mt: '6%'
               },
 
 

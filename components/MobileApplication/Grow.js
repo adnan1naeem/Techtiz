@@ -24,7 +24,7 @@ function Grow({ onPress }) {
       <Card
         sx={{
           width: { xs: "100%", sm: "100%", md: "38rem", lg: "31rem" },
-          height: { xs: "31rem", sm: "26rem", md: "32rem", lg: "25rem" },
+          height: { xs: "22rem", sm: "30rem", md: "32rem", lg: "25rem" },
           boxShadow: "none",
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 width:'33rem',
@@ -37,7 +37,7 @@ function Grow({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.3em",
+              fontSize: {xs: "1em",sm:"1.3em"},
               fontWeight: "600",
               borderLeft: "3px solid #18B0E6",
               height: "16px",
@@ -52,7 +52,7 @@ function Grow({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "2.2em",
+              fontSize: {xs: "1.4em", sm:"2.2em"},
               fontWeight: "600",
               marginTop: "3%",
               transition: "opacity 1s ease-in-out",
@@ -61,18 +61,6 @@ function Grow({ onPress }) {
             }}
           >
             Grow With a Mobile App
-          </Typography>
-          <Typography
-            sx={{
-              color: "#153A5F",
-              fontSize: "2.2em",
-              fontWeight: "600",
-              marginTop: "-2%", transition: "opacity 1s ease-in-out",
-              opacity: isVisible ? 1 : 0,
-              fontFamily: "Mont-Bold, Sans-serif",
-
-            }}
-          >
             Your Customers Will Love
           </Typography>
           <Typography
@@ -88,7 +76,7 @@ function Grow({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.1em",
+              fontSize: {xs: "0.9em",sm:"1.1em"},
               fontWeight: 600,
               marginTop: "5%",
               fontFamily: "Mont-Regular, Sans-serif",
@@ -104,8 +92,7 @@ function Grow({ onPress }) {
             sx={{
               marginTop: "8%",
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2.2%" },
-              width: { xs: "100%", sm: "40%", md: "60%", lg: "42.7%" },
-
+              width: { xs: "50%", sm: "40%", md: "60%", lg: "42.7%" },
               borderRadius: '3px',
               textTransform: "none",
               fontFamily: "Mont-Regular, Sans-serif",
@@ -113,7 +100,6 @@ function Grow({ onPress }) {
               fontWeight: "400",
               background: "#18B0E6",
               boxShadow: 'none',
-             
               "&:hover": {
                 backgroundColor: "#153A5F",
               },

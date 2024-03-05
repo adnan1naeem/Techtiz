@@ -44,7 +44,7 @@ function Mobile() {
           <Grow onPress={handleClick} />
           <Box
             sx={{
-              width: { xs: "50%", sm: "70%", md: "30%", lg: "30%", xl: "24%" },
+              width: { xs: "60%", sm: "70%", md: "30%", lg: "30%", xl: "24%" },
               mt: { xs: 0, sm: 0, md: "2%", lg: 0, xl: 0 },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
@@ -53,8 +53,8 @@ function Mobile() {
                 top: 250,
               },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width:'37%',
-                mt:'1%'          
+                width: '37%',
+                mt: '1%'
               },
             }}
             onMouseEnter={() => setIsHovered(true)}
@@ -73,12 +73,12 @@ function Mobile() {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",
-           
             gap: "3%",
           }}
         >
-          <Box sx={{ marginTop: "3%" 
-           }}>
+          <Box sx={{
+            marginTop: "3%"
+          }}>
             <ExpertiseMobile
               onPress={handleClick}
               title1="Our Expertise"

@@ -59,7 +59,7 @@ function Leadership() {
           color: "#153A5F",
           fontWeight: "700",
           fontFamily: "'Mont-Bold', sans-serif",
-          fontSize: "2.7em",
+          fontSize: {xs: "1.6em", sm:"2.7em"},
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,

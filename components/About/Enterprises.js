@@ -26,7 +26,7 @@ function Enterprises({ onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "2.7em",
+          fontSize: {xs: "1.7em", sm:"2.7em"},
           fontWeight: "bold",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
@@ -39,7 +39,7 @@ function Enterprises({ onPress }) {
       <Typography
         sx={{
           color: "#18B0E6",
-          fontSize: "1.7em",
+          fontSize: {xs: "1em", sm:"1.7em"},
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
@@ -51,8 +51,10 @@ function Enterprises({ onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "17.6px",
+          fontSize: {xs: "14px", sm:"17.6px"},
           fontWeight: 600,
+          pl: {xs: '3%', sm: '0%'},
+          pr: {xs: '3%', sm: '0%'},
           textAlign: "center",
           marginTop: "1%",
           fontFamily: "'Mont-Regular', sans-serif"

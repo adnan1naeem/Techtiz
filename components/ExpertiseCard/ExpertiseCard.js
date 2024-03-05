@@ -11,8 +11,8 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href }) {
       <Link href={{ pathname: href }} style={{ textDecoration: 'none' }}>
         <Card
           sx={{
-            width: { xs: "21rem", sm: "36rem", md: "26rem", lg: "31rem" },
-            height: { xs: "31rem", sm: "22rem", md: "20rem", lg: "19rem" },
+            width: { xs: "20rem", sm: "36rem", md: "26rem", lg: "31rem" },
+            height: { xs: "25rem", sm: "22rem", md: "20rem", lg: "19rem" },
             borderRadius: "30px",
             background: "#F8F8F8",
             transition: "transform 1s ease", // Adding transition for the transform property
@@ -61,8 +61,9 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href }) {
             </Box>
             <Box
               sx={{
-                width: { xs: "100%", sm: "40%", md: "40%", lg: "40%" },
+                width: { xs: "60%", sm: "40%", md: "40%", lg: "40%" },
                 marginTop: { xs: "8%", sm: "0%", md: "0%", lg: "0%" },
+                ml: {xs: '25%', sm: '0%'},
                 height:{md:'20%'}
               }}
             >

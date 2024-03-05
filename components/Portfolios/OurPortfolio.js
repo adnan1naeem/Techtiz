@@ -19,7 +19,7 @@ function OurPortfolio({ onPress }) {
       <Card
         sx={{
           width: { xs: "22rem", sm: "23rem", md: "31rem", lg: "31rem" },
-          height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
+          height: { xs: "28rem", sm: "32xrem", md: "32rem", lg: "28rem" },
           
           '@media screen and (min-width: 1700px)': {
            mt:'3%'
@@ -51,9 +51,10 @@ function OurPortfolio({ onPress }) {
             sx={{
               color: "#153A5F",
               fontSize: "2.5em",
+              fontSize: { xs: "1.4em", sm: "2em", md: "2.5em" },
               fontWeight: "600",
-              marginTop: "3%",
-              lineHeight: "45px",
+              marginTop: {xs: 3, md: "3%"},
+              lineHeight: {xs:"35px",md:"45px"},
               transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Bold', sans-serif"
@@ -65,7 +66,7 @@ function OurPortfolio({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.1em",
+              fontSize: { xs: "0.9em", sm: "1.1em" },
               fontWeight: 600,
               marginTop: "5%",
               fontFamily: "'Mont-Regular', sans-serif"

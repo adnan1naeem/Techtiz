@@ -50,7 +50,7 @@ function MVPsStartup({ onPress }) {
           <Typography
             sx={{
               color: "#F8F8F8",
-              fontSize: "2.2em",
+              fontSize: { xs: "1.4em", sm: "1.9em", md: "2.2em" },
               fontWeight: "600",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
@@ -62,9 +62,11 @@ function MVPsStartup({ onPress }) {
           <Typography
             sx={{
               color: "#6EC1E4",
-              fontSize: "1.1em",
+              fontSize: { xs: "0.9em", sm: "1.1em" },
               fontWeight: "300",
               marginTop: "1%",
+              pl: 3,
+              pr: 3,
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "'Mont-Regular', sans-serif"

@@ -17,7 +17,7 @@ function OurServices() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -36,14 +36,14 @@ function OurServices() {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "2.8em",
+          fontSize: {xs:"1.9em",md:"2.8em"},
           textAlign: "center",
           fontWeight: "600",
           paddingTop: "5%",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
-          
+          fontFamily: "Mont-Bold, Sans-serif",
+
         }}
       >
         Our Services
@@ -57,10 +57,9 @@ function OurServices() {
           marginTop: "3px",
           paddingBottom: "6%",
           '@media screen and (min-width: 1400px)': { // Adjust the minimum width as per your requirement
-      maxWidth: "1200px",
-      margin: "0 auto",
-    }
-
+            maxWidth: "1200px",
+            margin: "0 auto",
+          }
         }}
       >
         <ServicesCard

@@ -45,7 +45,7 @@ function DoIt() {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "2.7em",
+          fontSize: {xs:"2.1em",md:"2.7em"},
           fontWeight: "600",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",

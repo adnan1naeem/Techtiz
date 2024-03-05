@@ -14,23 +14,23 @@ function DoButton({
                 sx={{
                     color: "#153A5F",
                     fontWeight: "700",
-                    fontSize: "17px",
+                    fontSize: {xs:"15px", md:"17px"},
                     border: isSelected ? "2px solid #18B0E6" : "none",
                     textTransform: "none",
                     background: isSelected ? "#F6F9FC" : "#EAEAEA",
-                    fontFamily:"Mont-Bold, Sans-serif",
-                    paddingTop: "11px",
-                    paddingBottom: "11px",
-                    paddingLeft: "23px",
-                    paddingRight: "23px",
-                    fontFamily:"Mont-Bold, Sans-serif",
+                    fontFamily: "Mont-Bold, Sans-serif",
+                    paddingTop: {xs:"13px", md: "11px"},
+                    paddingBottom: {xs:"13px", md: "11px"},
+                    paddingLeft: {xs:"25px", md: "23"},
+                    paddingRight: {xs:"25px", md: "23px"},
+                    fontFamily: "Mont-Bold, Sans-serif",
                     marginTop: "8px",
                     borderRadius: "28px",
                     "&:hover": {
                         backgroundColor: isSelected ? "#F6F9FC" : "#EAEAEA",
                         border: isSelected ? "2px solid #18B0E6" : "none",
                     },
-                  
+
                 }}
             >
                 {text}

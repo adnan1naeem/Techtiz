@@ -32,14 +32,20 @@ function Hiring() {
   return (
     <Box
       ref={weeksRef}
-      sx={{ marginTop: "0%", background: "#F8F8F8", paddingBottom: "8%" }}
+      sx={{
+        marginTop: "0%",
+        pl: 3,
+        pr: 3,
+        background: "#F8F8F8",
+        paddingBottom: "8%"
+      }}
     >
       <Typography
         sx={{
           textAlign: "center",
           paddingTop: "7%",
           color: "#153A5F",
-          fontSize: "2.2em",
+          fontSize: { xs: "1.9em", md: "2.2em" },
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
@@ -81,7 +87,7 @@ function Hiring() {
           <Typography
             sx={{
               color: "#18B0E6",
-              fontSize: "2em",
+              fontSize: { xs: "1.7em", md: "2em" },
               fontWeight: "600",
               textAlign: { xs: "center", sm: "left" },
               transition: "opacity 1s ease-in-out",
@@ -94,9 +100,10 @@ function Hiring() {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.1em",
+              fontSize: { xs: "0.9em", md: "1.1em" },
               fontWeight: "400",
               marginTop: "2%",
+              textAlign: { xs: "center", sm: "left" },
               fontFamily: "'Mont-Regular', sans-serif",
             }}
           >

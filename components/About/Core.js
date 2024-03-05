@@ -55,7 +55,7 @@ function Core() {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "2.7em",
+          fontSize: {xs: "1.7em", sm:"2.7em"},
           fontWeight: "bold",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
@@ -68,6 +68,9 @@ function Core() {
         sx={{
           color: "#153A5F",
           fontSize: "1.1em",
+          fontSize: {xs: "0.9em", sm:"1.1em"},
+          pl: {xs: '3%', sm: '3%', md: "0%"},
+          pr: {xs: '3%', sm: '3%', md: "0%"},
           fontWeight: 600,
           textAlign: "center",
           mt: '7px',

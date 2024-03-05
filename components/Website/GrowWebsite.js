@@ -18,12 +18,10 @@ function GrowWebsite({ onPress }) {
         justifyContent: "center",
         alignContent: "center",
         marginTop: "1%",
-        ml: {xl: '-8%'},
+        ml: { xl: '-8%' },
         "@media screen and (min-width: 1700px)": {
           mt: "-1%",
         },
-        
-       
       }}
     >
       <Card
@@ -35,27 +33,31 @@ function GrowWebsite({ onPress }) {
             lg: "38rem",
             xl: "33rem",
           },
-          height: { xs: "32rem", sm: "26rem", md: "32rem", lg: "28rem" },
+          height: { xs: "28rem", sm: "26rem", md: "32rem", lg: "28rem" },
           "@media screen and (min-width: 1700px)": {
             width: "36rem",
           },
           "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
-              width: "37rem",
-              
-            },
-            "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width:'45rem',
-                        
-              },
+            width: "37rem",
+
+          },
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            width: '45rem',
+
+          },
           boxShadow: "none",
         }}
       >
-        <CardContent sx={{ display: "flex", flexDirection: "column" }}>
+        <CardContent sx={{
+          display: "flex", flexDirection: "column",
+          ml: {xs: '3%', md: 0},
+        }}>
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.3em",
+              fontSize: {xs:"1em", sm: "1.3em"},
               fontWeight: "600",
+              marginTop: {xs:"4%",md: 1, lg: 2},
               borderLeft: "3px solid #18B0E6",
               height: "18px",
               lineHeight: "20px",
@@ -69,41 +71,17 @@ function GrowWebsite({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "2.7em",
+              fontSize: {xs: "1.9em", sm:"2.2em", md: "2.7em"},
               fontWeight: "800",
-              marginTop: "1%",
+              marginTop: {xs:"4%",md: "3%"},
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
-            Grow With an
-          </Typography>
-          <Typography
-            sx={{
-              color: "#153A5F",
-              fontSize: "2.8em",
-              fontWeight: "800",
-              marginTop: "-4%",
-              transition: "opacity 1s ease-in-out",
-              opacity: isVisible ? 1 : 0,
-              fontFamily: "Mont-Bold, Sans-serif",
-            }}
-          >
-            Unconventional &
-          </Typography>
-          <Typography
-            sx={{
-              color: "#153A5F",
-              fontSize: "2.7em",
-              fontWeight: "800",
-              marginTop: "-4%",
-              transition: "opacity 1s ease-in-out",
-              opacity: isVisible ? 1 : 0,
-              fontFamily: "Mont-Bold, Sans-serif",
-            }}
-          >
-            Engaging Website
+            {`Grow With an\n
+            Unconventional &\n
+            Engaging Website`}
           </Typography>
 
           <Typography

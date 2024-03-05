@@ -44,7 +44,7 @@ function DiscussProject({ onPress }) {
     >
       <Card
         sx={{
-          height: { xs: "26rem", sm: "20rem", md: "19rem", lg: "14rem" },
+          height: { xs: "auto",lg: "14rem" },
           width: { xs: "90%", sm: "90%", md: "95%", lg: "70rem" },
           background: "linear-gradient(90deg, #18B0E6 0%, #153A5F 100%)",
           boxShadow: "none",
@@ -64,18 +64,17 @@ function DiscussProject({ onPress }) {
             <Typography
               sx={{
                 color: "#FFFFFF",
-                fontSize: "2.2em",
+                fontSize: {xs:"1.3em", sm: "1.7em", md: "2.2em"},
                 fontWeight: "700",
                 fontFamily: "Mont-Bold, Sans-serif",
               }}
             >
-              {" "}
               Let's Discuss Your Project!
             </Typography>
             <Typography
               sx={{
                 color: "#FFFFFF",
-                fontSize: "1.3em",
+                fontSize: {xs:"0.8em", sm: "1em", md: "1.3em"},
                 fontWeight: 600,
                 marginTop: "5%",
                 transition: "opacity 1s ease-in-out",
@@ -90,19 +89,19 @@ function DiscussProject({ onPress }) {
               <br /> turn into an amazing digital product.
             </Typography>
           </Box>
-          <Box sx={{ marginTop: "3%", marginRight: "8%" }}>
+          <Box sx={{ marginTop: "3%",marginLeft: "3%", marginRight: "8%" }}>
             <Button
               variant="outlined"
               onClick={onPress}
               sx={{
                 color: "white",
                 fontWeight: "600",
-                fontSize: "17px",
+                fontSize: {xs: "14px" ,sm:"15px" ,md:"17px"},
                 border: `1px solid  white`,
                 textTransform: "none",
                 background: "none",
-                paddingTop: "20px",
-                paddingBottom: "20px",
+                paddingTop: {xs: "10px",md:"20px"},
+                paddingBottom: {xs: "10px",md:"20px"},
                 transition: "background-color 0.8s, color 0.6s",
                 fontFamily: "Mont-Bold, Sans-serif",
                 marginTop: "8px",

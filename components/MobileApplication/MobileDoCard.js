@@ -33,23 +33,23 @@ function MobileDoCard({ background, title, des }) {
   }, []);
   return (
     <Box
-       ref={weeksRef}
+      ref={weeksRef}
       sx={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        width: { xs: "90%", sm: "16rem", md: "16rem", lg: "17rem" },
+        height: { xs: "auto", sm: "14rem", md: "13rem", lg: "13rem" },
+        marginTop: {xs: "5%", sm:"10%"},
       }}
     >
-      <Card
-        sx={{
-          width: { xs: "90%", sm: "16rem", md: "16rem", lg: "17rem" },
-          height: { xs: "13rem", sm: "14rem", md: "13rem", lg: "13rem" },
-          borderRadius: "20px",
-          background: background,
-          marginTop: "10%",
-          boxShadow: "none",
-        }}
-      >
+      <Card sx={{
+        width: '100%',
+        height: '100%',
+        background: background,
+        borderRadius: "20px",
+        boxShadow: "none",
+      }}>
         <CardContent
           sx={{
             display: "flex",
@@ -59,13 +59,13 @@ function MobileDoCard({ background, title, des }) {
         >
           <Typography
             sx={{
-              fontSize: "1.5em",
+              fontSize: {xs: "1.3em",sm:"1.5em"},
               fontWeight: "600",
               color: "#153A5F",
               lineHeight: "30px",
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+              opacity: isVisible ? 1 : 0,
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             {title}
@@ -77,7 +77,7 @@ function MobileDoCard({ background, title, des }) {
               color: "#54595F",
               lineHeight: "20px",
               marginTop: "9%",
-              fontFamily:"Mont-Regular, Sans-serif",
+              fontFamily: "Mont-Regular, Sans-serif",
             }}
           >
             {des}

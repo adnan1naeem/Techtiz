@@ -35,6 +35,8 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
     <Box
       ref={weeksRef}
       sx={{
+        ml: {xs: "3%", sm: 0},
+        mr: {xs: "3%", sm: 0},
         display: "flex",
         flexDirection: "column",
         width: { xs: "21em", sm: "33em", md: "35em", lg: "26em", xl: "26em" },
@@ -43,7 +45,7 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "2.2em",
+          fontSize: {xs: "1.5em",sm:"2.2em"},
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
@@ -55,7 +57,7 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "2.2em",
+          fontSize: {xs: "1.5em",sm:"2.2em"},
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
@@ -67,7 +69,7 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "2.2em",
+          fontSize: {xs: "1.5em",sm:"2.2em"},
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,

@@ -18,7 +18,7 @@ function Weeks() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -35,7 +35,7 @@ function Weeks() {
 
   return (
     <Box
-     ref={weeksRef}
+      ref={weeksRef}
       sx={{
         marginTop: "5.5rem",
       }}
@@ -45,12 +45,12 @@ function Weeks() {
           textAlign: "center",
           fontSize: { xs: "1.8em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
           fontWeight: 'bold',
-          lineHeight:'50px',
+          lineHeight: '50px',
           color: "#153A5F",
           fontFamily: "'Mont-Bold', sans-serif",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-   
+
 
         }}
       >
@@ -60,7 +60,7 @@ function Weeks() {
       <Typography
         sx={{
           textAlign: "center",
-          mt:'0.8%',
+          mt: '0.8%',
           width: { md: "100%", lg: "100%" },
           color: "#153A5F",
           lineHeight: "25px",
@@ -68,6 +68,8 @@ function Weeks() {
           fontWeight: 600,
           fontFamily: "'Mont-Regular', sans-serif",
           transition: "opacity 1s ease-in-out",
+          pl: { xs: '3%' },
+          pr: { xs: '3%' },
           opacity: isVisible ? 1 : 0,
         }}
       >
@@ -78,17 +80,17 @@ function Weeks() {
 
       <Box
         sx={{
-       
+
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
           gap: "1.5%",
           marginTop: "3%",
           '@media screen and (min-width: 1500px)': { // Adjust the minimum width as per your requirement
-      maxWidth: "1200px",
-      margin: "0 auto",
-      marginTop:'2%'
-    }
+            maxWidth: "1200px",
+            margin: "0 auto",
+            marginTop: '2%'
+          }
         }}
       >
         <DevelopmentCard

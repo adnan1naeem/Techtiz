@@ -2,18 +2,20 @@ import { Box, List, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
 import { FaSquare } from "react-icons/fa";
 
-function AnalysisCard({ title, lists, lgTop, xlTop, image, mt ,width}) {
+function AnalysisCard({ title, lists, lgTop, xlTop, image, mt, width }) {
   return (
     <Box
       sx={{
         display: "flex",
         justifyContent: "center",
         gap: "10%",
+        ml: {xs: 4, md: 0},
+        mr: {xs: 4, md: 0},
         marginTop: "5%",
         flexWrap: "wrap",
         "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                gap:'7%',
-              },
+          gap: '7%',
+        },
       }}
     >
       <Box
@@ -27,8 +29,8 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt ,width}) {
           },
           mt: mt,
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width: width,
-              },
+            width: width,
+          },
         }}
       >
         <img src={image} alt="" style={{ width: "100%" }} />
@@ -44,6 +46,7 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt ,width}) {
             fontSize: "1.5em",
             fontWeight: "600",
             color: "#153A5F",
+            marginBottom: {xs: 2, md:0},
             fontFamily: "Mont-Bold, Sans-serif",
           }}
         >
@@ -73,8 +76,8 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt ,width}) {
                     lg: "28em",
                   },
                   "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                fontSize:'14.4px'
-              },
+                    fontSize: '14.4px'
+                  },
                 }}
               >
                 {list}

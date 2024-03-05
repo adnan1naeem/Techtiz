@@ -37,7 +37,7 @@ function Networking({ onPress }) {
         sx={{
           textAlign: "center",
           color: "#153A5F",
-          fontSize: "2.2em",
+          fontSize: { xs: "1.4em", sm: "1.9em", md: "2.2em" },
           fontWeight: "700",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
@@ -50,9 +50,11 @@ function Networking({ onPress }) {
         sx={{
           textAlign: "center",
           color: "#153A5F",
-          fontSize: "1.1em",
+          fontSize: { xs: "0.9em", sm: "1.1em" },
           fontWeight: 600,
           mt: "5px",
+          pl: 3,
+          pr: 3,
           lineHeight: "20px",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,

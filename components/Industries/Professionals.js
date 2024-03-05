@@ -25,7 +25,7 @@ function Professionals({ onPress }) {
       <Card
         sx={{
           width: { xs: "22rem", sm: "100%", md: "31rem", lg: "31rem" },
-          height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
+          height: { xs: "26rem", sm: "32xrem", md: "32rem", lg: "28rem" },
           boxShadow: "none",
           '@media screen and (min-width: 1700px)': {
             width:'33rem'         
@@ -57,7 +57,7 @@ function Professionals({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "2.2em",
+              fontSize: {xs: "1.4em", sm:"2.2em"},
               fontWeight: "600",
               marginTop: "1%",
               transition: "opacity 1s ease-in-out",
@@ -70,7 +70,7 @@ function Professionals({ onPress }) {
           <Typography
             sx={{
               color: "#18B0E6",
-              fontSize: "2.2em",
+              fontSize: {xs: "1.4em", sm:"2.2em"},
               fontWeight: "600",
               lineHeight:'40px',
               
@@ -84,7 +84,7 @@ function Professionals({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.1em",
+              fontSize: {xs: "0.9em",md:"1.1em"},
               fontWeight: 600,
               marginTop: "5%",
               fontFamily:"Mont-Regular, Sans-serif",

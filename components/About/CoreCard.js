@@ -5,11 +5,11 @@ function CoreCard({ image, heading, bg, para }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Box sx={{ marginTop: "2%" }}>
+    <Box sx={{ marginTop: { xs: '5%', sm: "5%" } }}>
       <Card
         sx={{
-          width: { xs: "21rem", sm: "20rem", md: "22rem", lg: "22rem" },
-          height: { xs: "22rem", sm: "22rem", md: "20rem", lg: "19rem" },
+          width: { xs: "20rem", sm: "20rem", md: "22rem", lg: "22rem" },
+          height: { xs: "17rem", sm: "22rem", md: "20rem", lg: "19rem" },
           background: bg,
           borderRadius: "15px",
           cursor: "pointer",
@@ -41,7 +41,7 @@ function CoreCard({ image, heading, bg, para }) {
             sx={{
               color: "white",
               fontWeight: 500,
-              fontSize: "35px",
+              fontSize: { xs: '22px', sm: "35px" },
               marginTop: "10%",
               fontFamily: "'Mont-Bold', sans-serif",
             }}
@@ -85,7 +85,7 @@ function CoreCard({ image, heading, bg, para }) {
               marginTop: "6%",
               fontSize: "16px",
               fontFamily: "'Mont-Regular', sans-serif",
-              fontWeight:600
+              fontWeight: 600
             }}
           >
             {para}

@@ -4,7 +4,7 @@ import React from "react";
 import Application from "../Education/Application";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-function Education({onPress}) {
+function Education({ onPress }) {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
 
@@ -19,7 +19,7 @@ function Education({onPress}) {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -34,16 +34,16 @@ function Education({onPress}) {
     };
   }, []);
   return (
-    <Box  ref={weeksRef}  sx={{ mt: "5%" }}>
+    <Box ref={weeksRef} sx={{ mt: "5%" }}>
       <Typography
         sx={{
           textAlign: "center",
           color: "#153A5F",
-          fontSize: "2.2em",
+          fontSize: { xs: "1.4em", sm: "1.9em", md: "2.2em" },
           fontWeight: "700",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
         }}
       >
         Education Sector
@@ -52,11 +52,13 @@ function Education({onPress}) {
         sx={{
           textAlign: "center",
           color: "#153A5F",
-          fontSize: "1.1em",
+          fontSize: { xs: "0.9em", sm: "1.1em" },
           fontWeight: 600,
           mt: "5px",
-          lineHeight: "30px",
-          fontFamily:"Mont-Regular, Sans-serif",
+          pl: 3,
+          pr: 3,
+          lineHeight: { xs: "20px", sm: "30px" },
+          fontFamily: "Mont-Regular, Sans-serif",
         }}
       >
         Digital learning is the new normal. We help to create value through
@@ -76,12 +78,12 @@ function Education({onPress}) {
         <Box
           sx={{
             width: { xs: "90%", sm: "70%", md: "40%", lg: "40%", xl: "35%" },
-            mt:{md:'7%',lg:'4%',xl:'1%'},
+            mt: { md: '7%', lg: '4%', xl: '1%' },
             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width: "45%",
-                mt:'2%'
-              
-              },
+              width: "45%",
+              mt: '2%'
+
+            },
           }}
         >
           {/* Use next/image for image optimization */}

@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 
-function CrossLine({title,des}) {
+function CrossLine({ title, des }) {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
 
@@ -17,7 +17,7 @@ function CrossLine({title,des}) {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -37,15 +37,20 @@ function CrossLine({title,des}) {
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: { xs: "21em", sm: "33em", md: "35em", lg: "35em", xl: "40em" },
+        ml: {xs: "1%", sm: 0},
+        mr: {xs: "1%", sm: 0},
+        width: { xs: "20em", sm: "33em", md: "35em", lg: "35em", xl: "40em" },
         borderBottom: "1px solid #18B0E6",
         paddingBottom: "7px",
-        
+
       }}
     >
       <Typography
-        sx={{ fontSize: "1.5em", color: "#153A5F", fontWeight: "600" ,marginTop:'4%',transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,fontFamily:"Mont-Bold, Sans-serif",}}
+        sx={{
+          fontSize: { xs: "1.3em", sm: "1.5em" },
+          color: "#153A5F", fontWeight: "600", marginTop: '4%', transition: "opacity 1s ease-in-out",
+          opacity: isVisible ? 1 : 0, fontFamily: "Mont-Bold, Sans-serif",
+        }}
       >
         {title}
       </Typography>
@@ -54,11 +59,11 @@ function CrossLine({title,des}) {
           fontSize: "16px",
           color: "#153A5F",
           fontWeight: 800,
-          marginTop: "1%",
-          fontFamily:"Mont-Regular, Sans-serif",
+          marginTop: {xs: "6%",sm:"3%",md:"1%"},
+          fontFamily: "Mont-Regular, Sans-serif",
         }}
       >
-       {des}
+        {des}
       </Typography>
     </Box>
   );

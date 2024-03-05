@@ -43,7 +43,7 @@ function DoItMobile() {
       <Typography
         sx={{
           textAlign: "center",
-          fontSize: "2.2em",
+          fontSize: {xs: "25px",sm:"2.2em"},
           fontWeight: "600",
           color: "#153A5F",
           transition: "opacity 1s ease-in-out",

@@ -65,7 +65,7 @@ function PortfoliosCard({ title, description, mainImage, mr, ml ,width,height}) 
                 fontSize: "23px",
                 color: "#153A5F",
                 fontWeight: "600",
-                fontFamily: "'Mont-Regular',Sans-serif",
+                fontFamily: "'Mont-Bold',Sans-serif",
               }}
             >
               {title}
