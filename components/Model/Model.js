@@ -34,7 +34,7 @@ function Model({ onPress }) {
   }, []);
 
   return (
-    <Box sx={{ marginTop: "3%" }}  ref={weeksRef}>
+    <Box sx={{ marginTop: "4%" }}  ref={weeksRef}>
       <Typography
         sx={{
           color: "#153A5F",

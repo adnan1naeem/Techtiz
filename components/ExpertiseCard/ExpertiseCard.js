@@ -3,11 +3,11 @@ import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
 import { GoArrowUpRight } from "react-icons/go";
 import Link from "next/link";
 
-function ExpertiseCard({ title, imageCard, imagestyle, description, href }) {
+function ExpertiseCard({ title, imageCard, imagestyle, description, href, width, ml }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Box sx={{mt:'1.1%'}}>
+    <Box sx={{ mt: '1.1%' }}>
       <Link href={{ pathname: href }} style={{ textDecoration: 'none' }}>
         <Card
           sx={{
@@ -18,7 +18,7 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href }) {
             transition: "transform 1s ease", // Adding transition for the transform property
             transform: isHovered ? "translateY(-12px)" : "translateY(0)",
             marginTop: "4%",
-            boxShadow:'none'
+            boxShadow: 'none'
           }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -49,7 +49,7 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href }) {
                 sx={{
                   color: "#7A7A7A",
                   fontSize: "14px",
-   
+
                   fontFamily: "Mont-Regular, Sans-serif",
                   marginTop: "2%",
                   fontWeight: 600,
@@ -61,16 +61,16 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href }) {
             </Box>
             <Box
               sx={{
-                width: { xs: "60%", sm: "40%", md: "40%", lg: "40%" },
+                width: width,
                 marginTop: { xs: "8%", sm: "0%", md: "0%", lg: "0%" },
-                ml: {xs: '25%', sm: '0%'},
-                height:{md:'20%'}
+                ml: ml,
+                height: { md: '20%' }
               }}
             >
-              <img src={imageCard} alt="" style={{imagestyle}} />
+              <img src={imageCard} alt="" style={{ imagestyle }} />
             </Box>
           </CardContent>
-          <CardActions style={{ display: "flex", justifyContent: "flex-end",position:'absolute',right:"2%", }} sx={{top:{ xs: "90%", sm: "80%", md: "85%", lg: "80%" }}}>
+          <CardActions style={{ display: "flex", justifyContent: "flex-end", position: 'absolute',bottom: "5%", right: "5%", }} sx={{ top: { xs: "90%", sm: "80%", md: "85%", lg: "80%" } }}>
             <GoArrowUpRight
               style={{
                 fontSize: "30px",

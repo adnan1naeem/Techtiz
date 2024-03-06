@@ -37,7 +37,7 @@ function Weeks() {
     <Box
       ref={weeksRef}
       sx={{
-        marginTop: "5.5rem",
+        marginTop: {xs: "2.5rem", md: "5.5rem"},
       }}
     >
       <Typography
@@ -50,8 +50,6 @@ function Weeks() {
           fontFamily: "'Mont-Bold', sans-serif",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-
-
         }}
       >
         Go Live In Less Than 4 Weeks

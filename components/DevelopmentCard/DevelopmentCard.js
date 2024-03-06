@@ -18,7 +18,7 @@ function DevelopmentCard({ background, title, Description }) {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -33,17 +33,17 @@ function DevelopmentCard({ background, title, Description }) {
     };
   }, []);
   return (
-    <Box   ref={weeksRef} >
+    <Box ref={weeksRef} >
       <Card
         sx={{
-          width: { xs: "21rem", sm: "22rem", md: "22em", lg: "23rem" },
-          height: "23rem",
+          width: { xs: "23rem", sm: "25rem", md: "20rem", lg: "23rem", xl: "23rem" },
+          height: { xs: "auto", sm: "22rem", md: "22rem", lg: "22rem", xl: "22rem" },
           borderRadius: "6px",
           background: background,
           transition: "transform 1s ease", // Adding transition for the transform property
           transform: isHovered ? "translateY(-12px)" : "translateY(0)",
           marginTop: { xs: "4%", sm: "4%", md: "6%", lg: "6%" },
-          boxShadow:'none'
+          boxShadow: 'none'
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -53,13 +53,13 @@ function DevelopmentCard({ background, title, Description }) {
             sx={{
               fontSize: '1.5em',
               fontWeight: 'bold',
-              lineHeight:'50px',
-              marginTop: { xs: "8%", sm: "8%", md: "13%", lg: "13%" },
+              lineHeight: '50px',
+              marginTop: { xs: "8%", sm: "8%", md: "7%", lg: "7%" },
               color: "#FFFFFF",
               fontFamily: "'Mont-Bold', sans-serif",
               transition: "opacity 1s ease-in-out",
-              
-          opacity: isVisible ? 1 : 0,
+
+              opacity: isVisible ? 1 : 0,
             }}
             gutterBottom
           >
@@ -69,13 +69,13 @@ function DevelopmentCard({ background, title, Description }) {
             sx={{
               fontSize: "1rem",
               fontWeight: 100,
-              marginTop: { xs: "14%", sm: "14%", md: "18%", lg: "18%" },
+              marginTop: { xs: "14%", sm: "14%", md: "15%", lg: "15%" },
               color: "#FFFFFF",
               fontFamily: "'Mont-Regular', sans-serif",
-              lineHeight:'25px',
+              lineHeight: '25px',
               height: "9rem",
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
+              opacity: isVisible ? 1 : 0,
 
             }}
           >
@@ -91,7 +91,7 @@ function DevelopmentCard({ background, title, Description }) {
                 color: "#FFFFFF",
                 fontFamily: "'Mont-Regular', sans-serif",
                 transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
+                opacity: isVisible ? 1 : 0,
               }}
             >
               GET STARTED
@@ -104,7 +104,7 @@ function DevelopmentCard({ background, title, Description }) {
                 fontWeight: "100",
                 transform: "rotate(-40deg)",
                 transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
+                opacity: isVisible ? 1 : 0,
               }}
             />
           </CardActions>

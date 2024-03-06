@@ -2,11 +2,11 @@ import { Box, Typography } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Line from "../../public/bg-pat.svg";
-import ButtonBusiness from "../../components/Texts/ButtonBusiness";
 import styles from "../../styles/MainBanner.module.css";
 import Link from "next/link";
 import BannerButton from "./BannerButton";
 import banner from "../../assets/main-banner.svg"
+import HomeButtonBusiness from "../Texts/HomeButtonBusiness";
 
 function MainBanner({ onPress }) {
   const [showText, setShowText] = useState(false);
@@ -46,7 +46,7 @@ function MainBanner({ onPress }) {
         <Box
           sx={{
             height: {
-              xs: "35rem",
+              xs: "17rem",
               sm: "50rem",
               md: "50rem",
               lg: "50rem",
@@ -67,13 +67,20 @@ function MainBanner({ onPress }) {
         <Box
           sx={{
             width: {
-              xs: "22rem",
+              xs: "25rem",
               sm: "24rem",
               md: "25rem",
               lg: "35rem",
               xl: "52rem",
             },
             marginTop: { xs: "6%", sm: "30%", md: "23%", lg: "18%", xl: "10%" },
+            "@media screen and (min-width: 500px) and (max-width: 595px)": {
+              width: "30rem",
+            },
+            "@media screen and (min-width: 300px) and (max-width: 420px)": {
+              width: "21rem",
+              marginTop: "30%",
+            },
             "@media screen and (min-width: 1500px) and (max-width: 1600px)": {
               width: "40rem",
               marginTop: "11%",
@@ -96,9 +103,10 @@ function MainBanner({ onPress }) {
       <Box
         sx={{
           position: "absolute",
-          top: { xs: 150, sm: 200, md: 210, lg: 270, xl: 350 },
+          top: { xs: 160, sm: 200, md: 210, lg: 270, xl: 350 },
           left: { xs: 15, sm: 50, md: 90, lg: 150 },
           width: { xs: "90%", sm: "50%", md: "60%", lg: "55%" },
+          pl:{xs: "3%", md: 0},
           "@media screen and (min-width: 1700px)": {
             top: 410,
             left: 160,
@@ -125,9 +133,8 @@ function MainBanner({ onPress }) {
               md: "2.8rem",
               lg: "2.8em",
             },
-            fontWeight: "bold",
             textTransform: "uppercase",
-            lineHeight: "50px",
+            lineHeight: {xs: "42px", md:"50px"},
             fontFamily: "'Mont-Bold', sans-serif",
             opacity: showText ? 1 : 0, // Set opacity based on showText state
             transition: "opacity 1s ease-in-out", // Apply transition effect
@@ -142,8 +149,8 @@ function MainBanner({ onPress }) {
         <Box
           sx={{
             display: "flex",
-            flexDirection: { xs: "column", md: "row" },
-            gap: "20px",
+            flexDirection: { xs: "row", md: "row" },
+            gap: {xs:"5%",sm:"8%", md: "20px"},
             marginTop: "2%",
             alignItems: { xs: "center", sm: "flex-start" },
           }}
@@ -151,11 +158,9 @@ function MainBanner({ onPress }) {
           <Link href="/about">
             <BannerButton />
           </Link>
-          <ButtonBusiness
+          <HomeButtonBusiness
             text="Talk To Us"
             color="white"
-            paddingLeft="37px"
-            paddingRight="37px"
             onClick={onPress}
           />
         </Box>

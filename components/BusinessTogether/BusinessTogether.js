@@ -47,7 +47,7 @@ function BusinessTogether({ onClick }) {
   ]
 
   return (
-    <Box  ref={weeksRef} sx={{ marginTop: "4%" }}>
+    <Box  ref={weeksRef} sx={{ marginTop: {xs: "10%",md:"4%"} }}>
       <Typography
         sx={{
           fontWeight: 'bold',

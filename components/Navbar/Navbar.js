@@ -141,7 +141,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <li  className={router.pathname === "/industries" ? styles.menu : ""}>
+          <li className={router.pathname === "/industries" ? styles.menu : ""}>
             <Link href="/industries" onClick={closeMenu}>
               <TextNav
                 label="Industries"
@@ -149,7 +149,7 @@ const Navbar = () => {
               />
             </Link>
           </li>
-          <li   className={router.pathname === "/portfolios" ? styles.menu : ""}>
+          <li className={router.pathname === "/portfolios" ? styles.menu : ""}>
             <Link href="/portfolios" onClick={closeMenu}>
               <TextNav
                 label="Case Studies"
@@ -184,7 +184,10 @@ const Navbar = () => {
           {click ? (
             <FaTimes size={20} style={{ color: "white" }} />
           ) : (
-            <FaBars size={20} style={{ color: "white" }} />
+            <FaBars size={25} style={{
+              color: "white", position: 'absolute', right: 0, marginRight: 25,
+              top: 20,
+            }} />
           )}
         </div>
       </div>

@@ -32,9 +32,9 @@ function Expertise() {
     };
   }, []);
   return (
-    <Box ref={weeksRef} sx={{ background: "#18B0E6"}}>
+    <Box ref={weeksRef} sx={{ background: "#18B0E6", paddingBottom: {xs: "18%",md:0},}}>
       <Box
-        sx={{ paddingTop: "4.6%", display: "flex", flexDirection: "column",mt:'2%' }}
+        sx={{ paddingTop: {xs: "8%",md:"2.6%"}, display: "flex", flexDirection: "column",mt:'2%' }}
       >
         <Typography
           sx={{
@@ -91,24 +91,32 @@ function Expertise() {
           imageCard="https://techtiz.co/wp-content/uploads/2023/11/web-dev.svg"
           description="Techtiz crafts stunning websites with cutting-edge features."
           href="/website"
+          width= {{ xs: "80%", sm: "70%", md: "60%", lg: "40%" }}
+          ml= {{ xs: '15%', sm: '0%' }}
         />
         <ExpertiseCard
           title="Mobile App Development"
           imageCard="https://techtiz.co/wp-content/uploads/2023/11/mobileAppDev.svg"
           description="Techtiz delivers seamless mobile experiences for diverse platforms."
           href="/mobile-application"
+          width= {{ xs: "90%", sm: "70%", md: "60%", lg: "40%" }}
+          ml= {{ xs: '5%', sm: '0%' }}
         />
         <ExpertiseCard
           title="Software Quality Assurance"
-          imageCard="https://techtiz.co/wp-content/uploads/2023/11/ux-ui_.svg"
+          imageCard="https://techtiz.co/wp-content/uploads/2023/11/software-quality.svg"
           description="Techtiz ensures flawless performance through rigorous testing."
           href="sqa"
+          width= {{ xs: "40%", sm: "40%", md: "30%", lg: "40%", xl: "25%" }}
+          ml= {{ xs: '30%', sm: '0%' }}
         />
         <ExpertiseCard
           title="UI/UX Design"
           imageCard="https://techtiz.co/wp-content/uploads/2023/11/ux-ui_.svg"
           description="Techtiz creates intuitive and visually captivating user interfaces."
           href="ui-ux-design"
+          width= {{ xs: "80%", sm: "60%", md: "60%", lg: "40%" }}
+          ml= {{ xs: '15%', sm: '0%' }}
         />
       </Box>
     </Box>

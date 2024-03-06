@@ -104,7 +104,7 @@ function Technologies() {
   };
 
   return (
-    <Box sx={{ marginTop: "4%" }}  ref={weeksRef}>
+    <Box sx={{ marginTop: {xs: "20%", sm: "12%",md:"4%"},  marginBottom: {xs: "20%", sm: "12%",md:"4%"} }}  ref={weeksRef}>
       <Typography
         sx={{
           color: "var(--e-global-color-9f67d62)",
@@ -120,11 +120,11 @@ function Technologies() {
       </Typography>
       <Typography
         sx={{
-          marginTop: '1%',
+          marginTop: {xs: "5%",md:'1%'},
           color: "var(--e-global-color-9f67d62)",
           textAlign: "center",
           fontWeight: 600,
-          fontSize: "1em",
+          fontSize: {xs:"0.9em",md:"1em"},
           transition: "opacity 1s ease-in-out",
           pl: { xs: '3%' },
           pr: { xs: '3%' },
@@ -137,7 +137,7 @@ function Technologies() {
       </Typography>
       <Box
         sx={{
-          marginTop: "2%",
+          marginTop:  {xs: "5%",md:'2%'},
           marginLeft: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
           marginRight: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
           marginBottom: "5%",

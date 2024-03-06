@@ -39,6 +39,7 @@ function Partner({ onPress }) {
           "radial-gradient(at center center, #1594c6 25%, #153a5f 85%);",
         marginTop: "3%",
         padding: '4%',
+        paddingTop:  {xs: "14%",md:'3%'},
       }}
       ref={weeksRef}
     >
@@ -46,7 +47,7 @@ function Partner({ onPress }) {
         sx={{
           textAlign: "center",
           color: "#FFFFFF",
-          fontSize: { xs: "2em", sm: "2.5em", md: "2.7em", lg: '2.7em' },
+          fontSize: { xs: "28px", sm: "2.2em", md: "2.7em", lg: '2.7em' },
           fontWeight: "600",
           lineHeight: "53px",
           transition: "opacity 1s ease-in-out",

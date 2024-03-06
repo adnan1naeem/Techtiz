@@ -8,26 +8,23 @@ export default function BannerButton({ onClick }) {
             type="submit"
             onClick={onClick}
             sx={{
-                //fontFamily: 'Mont-Regular, Acme-Regular',
                 color: '#153A5F',
-                fontWeight: "400",
+                fontWeight: 600,
                 fontFamily: "'Mont-Regular', sans-serif",
                 borderRadius: 1,
                 fontSize: "17px",
                 border: '3px solid #ffffff !important',
                 textTransform: "none",
                 background: '#ffffff',
-                paddingTop: "12px",
-                paddingBottom: "12px",
-                paddingLeft: '40px',
-                paddingRight: '40px',
+                height: {xs: 50, sm: 55, md: 60},
+                paddingLeft: { xs: "26px", md: "40px" },
+                paddingRight: { xs: "26px", md: "40px" },
                 marginTop: "12px",
-
                 "&:hover": {
                     backgroundColor: "#153A5F",
                     color: "white",
                     border: '3px solid #ffffff !important',
-                 
+
                 },
             }}
         >
