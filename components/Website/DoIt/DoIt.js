@@ -59,7 +59,7 @@ function DoIt() {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "left",
+          justifyContent: "center",
           gap: "2%",
           background: "#F6F9FC",
           marginLeft: { lg: "10%", xl: '17%' },

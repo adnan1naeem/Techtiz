@@ -19,19 +19,24 @@ function Enterprises({ onPress }) {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "12%" }
+        marginTop: { xs: "30%", sm: "22%", md: "18%", lg: "12%" }
 
       }}
     >
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs: "1.7em", sm:"2.7em"},
+          fontSize: {xs: "28.8px",sm:'28.8',md:'43.2px', lg:"2.7em"},
           fontWeight: "bold",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily: "'Mont-Bold', sans-serif"
+          fontFamily: "'Mont-Bold', sans-serif",
+          "@media screen and (min-width: 100px) and (max-width: 450px)": {
+                  mt:'18%',
+                  width:'80%'
+              },
+          
         }}
       >
         Making Technology Work for You
@@ -53,11 +58,12 @@ function Enterprises({ onPress }) {
           color: "#153A5F",
           fontSize: {xs: "14px", sm:"17.6px"},
           fontWeight: 600,
-          pl: {xs: '3%', sm: '0%'},
-          pr: {xs: '3%', sm: '0%'},
+          // pl: {xs: '3%', sm: '0%'},
+          // pr: {xs: '3%', sm: '0%'},
           textAlign: "center",
-          marginTop: "1%",
-          fontFamily: "'Mont-Regular', sans-serif"
+          marginTop:{xs: "3%",sm:'1%'},
+          fontFamily: "'Mont-Regular', sans-serif",
+          width:'95%'
         }}
       >
         Techtiz is a custom software development company that helps startups and
@@ -73,15 +79,15 @@ function Enterprises({ onPress }) {
         endIcon={<IoMdArrowRoundForward />}
         onClick={onPress}
         sx={{
-          marginTop: "3%",
+          marginTop:{xs: "7%",sm:'4%',md:'3%'},
           boxShadow:'none',
-         pt:{xs:'2%',sm:'1%',lg:'0.6%'},
-         pb:{xs:'2%',sm:'1%',lg:'0.6%'},
-          pl:{xs:'4%',sm:'2.6%',lg:'2%'},
-          pr: {xs:'4%',sm:'2.6%',lg:'2%'},
-          borderRadius: 1,
+         pt:{xs:'1.2%',sm:'1%',lg:'0.6%'},
+         pb:{xs:'1.2%',sm:'1%',lg:'0.6%'},
+          pl:{xs:'3.3%',sm:'2.6%',lg:'2%'},
+          pr: {xs:'3.3%',sm:'2.6%',lg:'2%'},
+          borderRadius: "2%",
           textTransform: "none",
-          fontSize: "17px",
+          fontSize: {xs:'14.4px',sm:"17px"},
           fontWeight: "600",
           background: "#18B0E6",
           fontFamily: "'Mont-Regular', sans-serif",

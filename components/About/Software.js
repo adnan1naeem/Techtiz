@@ -39,8 +39,8 @@ function Software() {
         backgroundRepeat: 'repeat', // Set the background repeat property
         backgroundSize: '400px 800px', // Set the width of the background image
         marginTop: "5%",
-        paddingTop: "5%",
-        paddingBottom: "7%",
+        paddingTop: {xs:"28%",sm:'24%',md:'5%'},
+        paddingBottom: {xs:'24%',sm:"20%",md:'7%'},
         backgroundPosition: 'center', // Center the background image
         backgroundColor: '#153A5F',
         '@media screen and (min-width: 1700px)': {
@@ -61,7 +61,7 @@ function Software() {
         <Typography
           sx={{
             color: "#FFFFFF",
-            fontSize: {xs: "1.3em", sm: "2.3em"},
+            fontSize: {xs: "1.3em",sm:'1.3em', md: "2.3em"},
             textAlign: "center",
             fontWeight: "blod",
             transition: "opacity 1s ease-in-out",
@@ -75,7 +75,7 @@ function Software() {
         <Typography
           sx={{
             color: "#FFFFFF",
-            fontSize: {xs: "1em", sm:"1.1em"},
+            fontSize: {xs: "1em",sm:'1em', md:"1.1em"},
             textAlign: "center",
             fontWeight: 400,
             marginTop: "2.5%",

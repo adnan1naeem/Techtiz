@@ -8,7 +8,7 @@ function CoreCard({ image, heading, bg, para }) {
     <Box sx={{ marginTop: { xs: '5%', sm: "5%" } }}>
       <Card
         sx={{
-          width: { xs: "20rem", sm: "20rem", md: "22rem", lg: "22rem" },
+          width: { xs: "21rem", sm: "20rem", md: "22rem", lg: "22rem" },
           height: { xs: "17rem", sm: "22rem", md: "20rem", lg: "19rem" },
           background: bg,
           borderRadius: "15px",

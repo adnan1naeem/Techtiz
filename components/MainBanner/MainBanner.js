@@ -26,7 +26,7 @@ function MainBanner({ onPress }) {
         width: "100%",
         height: { xs: "110vh", sm: "100%", lg: "90%", xl: "99vh" },
         "@media screen and (min-width: 350px) and (max-width: 380px)": {
-              height:'140vh'
+              height:'120vh'
             },
       }}
     >
@@ -69,11 +69,11 @@ function MainBanner({ onPress }) {
             width: {
               xs: "25rem",
               sm: "24rem",
-              md: "25rem",
+              md: "35rem",
               lg: "35rem",
               xl: "52rem",
             },
-            marginTop: { xs: "6%", sm: "30%", md: "23%", lg: "18%", xl: "10%" },
+            marginTop: { xs: "30%", sm: "30%", md: "23%", lg: "18%", xl: "10%" },
             "@media screen and (min-width: 500px) and (max-width: 595px)": {
               width: "30rem",
             },
@@ -81,14 +81,41 @@ function MainBanner({ onPress }) {
               width: "21rem",
               marginTop: "30%",
             },
+            
             "@media screen and (min-width: 1500px) and (max-width: 1600px)": {
-              width: "40rem",
-              marginTop: "11%",
+              width: "39rem",
+              marginTop: "16%",
             },
             "@media screen and (min-width: 1700px)": {
               width: "48rem",
               marginTop: "16%",
             },
+            "@media screen and (min-width: 1900px) and (max-width: 2100px)": {
+              width: "50rem",
+              marginTop: "13%",
+             
+            },
+            "@media screen and (min-width: 1600px) and (max-width: 1800px)": {
+              width: "45rem",
+              marginTop: "14%",
+              
+            },
+            "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+              width: "35rem",
+              marginTop: "20%",
+              
+            },
+            "@media screen and (min-width: 600px) and (max-width: 730px)": {
+              marginTop: "40%",
+          },
+          "@media screen and (min-width: 330px) and (max-width: 450px)": {
+              marginTop: "50%",
+              width:'100%'
+          },
+          "@media screen and (min-width: 400px) and (max-width: 450px)": {
+              marginTop: "50%",
+              width:'80%'
+          },
           }}
         >
           <Image
@@ -103,28 +130,35 @@ function MainBanner({ onPress }) {
       <Box
         sx={{
           position: "absolute",
-          top: { xs: 160, sm: 200, md: 210, lg: 270, xl: 350 },
+          top: { xs: 160, sm: 240, md: 240, lg: 270, xl: 350 },
           left: { xs: 15, sm: 50, md: 90, lg: 150 },
-          width: { xs: "90%", sm: "50%", md: "60%", lg: "55%" },
+          width: { xs: "90%", sm: "50%", md: "40%", lg: "55%" },
           pl:{xs: "3%", md: 0},
           "@media screen and (min-width: 1700px)": {
             top: 410,
             left: 160,
           },
+          "@media screen and (min-width: 600px) and (max-width: 750px)": {
+           width:'55%'
+          },
           "@media screen and (min-width: 1250px) and (max-width: 1530px)": {
             width: "40%",
           },
-          "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
-              width: "44rem",
-              top:250,
+          "@media screen and (min-width: 1530px) and (max-width: 1650px)": {
+              width: "35rem",
+              top:300,
             },
             "@media screen and (min-width: 900px) and (max-width: 1020px)": {
               width:'53%',
               left: 40,
             },
             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-              top: 140,
+              top: 240,
             },
+            "@media screen and (min-width: 1800px) and (max-width: 2000px)": {
+              top: 420,
+              width:'53%'
+          },
         }}
       >
         <Typography

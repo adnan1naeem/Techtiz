@@ -44,7 +44,7 @@ function Core() {
     <Box
       ref={weeksRef}
       sx={{
-        marginTop: "7%",
+        marginTop:{xs: "23%",sm:'17%',md:'7%',lg:'7%'},
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -55,7 +55,7 @@ function Core() {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs: "1.7em", sm:"2.7em"},
+          fontSize: {xs: "27.2px",sm:'32px', md:"2.7em"},
           fontWeight: "bold",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,

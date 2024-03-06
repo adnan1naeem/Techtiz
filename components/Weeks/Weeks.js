@@ -43,9 +43,9 @@ function Weeks() {
       <Typography
         sx={{
           textAlign: "center",
-          fontSize: { xs: "1.8em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
-          fontWeight: 'bold',
-          lineHeight: '50px',
+          fontSize: { xs: "28px", sm: "28px", md: "2.1em", lg: "2.7em" },
+          
+          lineHeight: '35px',
           color: "#153A5F",
           fontFamily: "'Mont-Bold', sans-serif",
           transition: "opacity 1s ease-in-out",
