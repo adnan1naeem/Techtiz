@@ -64,7 +64,13 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href, width,
                 width: width,
                 marginTop: { xs: "8%", sm: "0%", md: "0%", lg: "0%" },
                 ml: ml,
-                height: { md: '20%' }
+                height: { md: '20%' },
+                "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                  width: href==="sqa" ?"25%": "35%",
+                },
+                "@media screen and (min-width: 1300px) and (max-width: 1535px)": {
+                  width: href==="sqa" ?"25%": "35%",
+                },
               }}
             >
               <img src={imageCard} alt="" style={{ imagestyle }} />

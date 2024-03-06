@@ -122,6 +122,9 @@ function MainBanner({ onPress }) {
               width:'53%',
               left: 40,
             },
+            "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+              top: 140,
+            },
         }}
       >
         <Typography
