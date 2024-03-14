@@ -10,10 +10,10 @@ function MobileServices({ image, title, des, onPress }) {
     }}>
       <Card
         sx={{
-          width: { xs: "18rem", sm: "22rem", md: "18rem", lg: "17rem" },
-          height: { xs: "15rem", sm: "18rem", md: "17rem", lg: "18rem" },
+          width: { xs: "22rem", sm: "22rem", md: "25rem", lg: "17rem" },
+          height: { xs: "17rem", sm: "18rem", md: "18rem", lg: "18rem" },
           background: "#153A5F",
-          paddingTop: {xs: 0, sm:'3%'},
+          paddingTop: {xs: 0, sm:'3%', md:'1%'},
           cursor: "pointer",
           boxShadow: "none",
           borderRadius: 0,

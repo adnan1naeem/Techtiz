@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Box } from "@mui/material";
-
+import { makeStyles } from '@mui/styles';
 import Grow from "../../components/MobileApplication/Grow";
 import CrossLine from "../../components/MobileApplication/CrossLine";
 import ExpertiseMobile from "../../components/MobileApplication/ExpertiseMobile";
@@ -10,9 +10,47 @@ import DiscussProject from "../../components/Website/DiscussProject";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import DevelopmentMobile from "../../components/MobileApplication/DevelopmentMobile";
 
+const useStyles = makeStyles((theme) => ({
+  leftPaper: {
+    position: 'sticky',
+    top: 150,
+    color: "yellow",
+    padding: 10,
+    zIndex: 1,
+  },
+  rightPaper: {
+    top: 10,
+    overflowY: 'auto',
+    padding: 0,
+  },
+}));
+
 function Mobile() {
   const contactSectionRef = useRef(null);
-  const [isHovered, setIsHovered] = React.useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const classes = useStyles();
+  const [scrollTop, setScrollTop] = useState(0);
+  const [scrollEnd, setScrollEnd] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setScrollTop(scrollY);
+      setScrollEnd(
+        document.documentElement.scrollHeight - window.innerHeight === scrollY
+      );
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleRightScroll = (e) => {
+    if (scrollEnd) {
+      e.stopPropagation();
+    }
+  };
+
   const handleClick = () => {
     if (contactSectionRef.current) {
       const yOffset = -180;
@@ -79,14 +117,16 @@ function Mobile() {
           <Box sx={{
             marginTop: "3%"
           }}>
+            <Box className={classes.leftPaper}>
             <ExpertiseMobile
               onPress={handleClick}
               title1="Our Expertise"
               des="Guaranteed delivery of an App that satisfies your goals."
             />
+            </Box>
           </Box>
 
-          <Box>
+          <Box onScroll={handleRightScroll} className={classes.rightPaper}>
             <CrossLine
               title="Cross-Platform Excellence"
               des="We specialize in developing mobile apps that seamlessly run on both iOS and Android platforms, ensuring a wider reach for your target audience."
