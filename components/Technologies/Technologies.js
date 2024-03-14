@@ -138,8 +138,8 @@ function Technologies() {
       <Box
         sx={{
           marginTop:  {xs: "5%",md:'2%'},
-          marginLeft: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
-          marginRight: {xs: '8%', sm: '10%', md: '7%', lg: '14%', xl:'22%'},
+          marginLeft: {xs: '8%', sm: '10%', md: '7%', lg: '8%', xl:'22%'},
+          marginRight: {xs: '8%', sm: '10%', md: '7%', lg: '8%', xl:'22%'},
           marginBottom: "5%",
           "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
               marginLeft:'18%',
@@ -151,13 +151,13 @@ function Technologies() {
 
      
         <Slider {...settings} >
-          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/css3-logo-svg-vector.svg'} />
+          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/css3-logo-svg-vector.svg'}  width="80%"/>
           <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Flutter.svg'} />
           <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/reactjs.svg'} />
           <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/android.svg'} />
           <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/nodejs-white.svg'} />
           <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Bootstrap-Icon.svg'} />
-          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/html5-2.svg'} />
+          <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/html5-2.svg'} width="60%"/>
         </Slider>
         </Box>
       </Box>

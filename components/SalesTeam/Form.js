@@ -93,7 +93,7 @@ function Form() {
             >
               <input
                 className={styles.input}
-                type="text"
+                type="email"
                 placeholder="E-mail Address"
                 name="from_email"
                 required

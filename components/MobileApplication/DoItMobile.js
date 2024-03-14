@@ -60,7 +60,7 @@ function DoItMobile() {
           flexWrap: "wrap",
           justifyContent: "center",
           gap: "1%",
-          marginTop: "1%",
+          marginTop:{xs:'1%',sm:'-3%',md:'-3',lg:'-3%', xl:"-2%"},
         }}
       >
         <MobileDoCard

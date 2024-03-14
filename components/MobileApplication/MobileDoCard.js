@@ -39,8 +39,8 @@ function MobileDoCard({ background, title, des }) {
         flexDirection: "column",
         alignItems: "center",
         width: { xs: "90%", sm: "16rem", md: "16rem", lg: "17rem" },
-        height: { xs: "auto", sm: "14rem", md: "13rem", lg: "13rem" },
-        marginTop: {xs: "5%", sm:"10%"},
+        height: { xs: "auto", sm: "14rem", md: "14rem", lg: "13rem" },
+        marginTop: {xs: "5%", sm:"5%"},
       }}
     >
       <Card sx={{

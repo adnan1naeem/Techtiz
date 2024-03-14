@@ -3,7 +3,7 @@ import { Box, Card, CardActions, CardContent, Typography } from "@mui/material";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { useEffect, useRef, useState } from "react";
 
-function DevelopmentCard({ background, title, Description }) {
+function DevelopmentCard({ background, title, Description,onClick }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
@@ -37,7 +37,7 @@ function DevelopmentCard({ background, title, Description }) {
       <Card
         sx={{
           width: { xs: "23rem", sm: "25rem", md: "20rem", lg: "23rem", xl: "23rem" },
-          height: { xs: "auto", sm: "22rem", md: "22rem", lg: "22rem", xl: "22rem" },
+          height: { xs: "auto", sm: "22rem", md: "22rem", lg: "23rem", xl: "22rem" },
           borderRadius: "6px",
           background: background,
           transition: "transform 1s ease", // Adding transition for the transform property
@@ -83,6 +83,7 @@ function DevelopmentCard({ background, title, Description }) {
           </Typography>
           <CardActions
             style={{ display: "flex", justifyContent: "space-between" }}
+            onClick={onClick}
           >
             <Typography
               sx={{
@@ -92,6 +93,7 @@ function DevelopmentCard({ background, title, Description }) {
                 fontFamily: "'Mont-Regular', sans-serif",
                 transition: "opacity 1s ease-in-out",
                 opacity: isVisible ? 1 : 0,
+
               }}
             >
               GET STARTED

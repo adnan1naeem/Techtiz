@@ -25,7 +25,7 @@ function HomeScreen() {
     <div>
       <Box>
         <MainBanner onPress={handleClick} />
-        <Weeks />
+        <Weeks onClick={handleClick} />
         <BusinessTogether onClick={handleClick} />
         <Expertise />
         <Model onPress={handleClick} />

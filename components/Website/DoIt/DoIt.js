@@ -45,7 +45,7 @@ function DoIt() {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs:"2.1em",md:"2.7em"},
+          fontSize: { xs: "2.1em", md: "2.7em" },
           fontWeight: "600",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
@@ -62,22 +62,24 @@ function DoIt() {
           justifyContent: "center",
           gap: "2%",
           background: "#F6F9FC",
-          marginLeft: { lg: "10%", xl: '17%' },
-          marginRight: { lg: "10%", xl: '17%' },
+          marginLeft: {xs:'2%',sm:'2%',md:'5%', lg: "10%", xl: "17%" },
+          marginRight: {xs:'2%',sm:'2%',md:'5%', lg: "10%", xl: "17%" },
           "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
-            marginLeft: '10%',
-            marginRight: '10%',
+            marginLeft: "10%",
+            marginRight: "10%",
           },
           padding: "0.5% 0.5% 0.5% 0.5%",
-          pl: { xs: "5%", sm: "4%", md: "2%", lg: "3%", xl: '2%' },
+          pl: { xs: "5%", sm: "4%", md: "2%", lg: "3%", xl: "2%" },
           borderRadius: "40px",
           marginTop: "3%",
-          mb: '3%',
-          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-            marginLeft: '3.9%',
-            marginRight: '3%',        
-              },
-          
+          mb: "3%",
+          "@media screen and (min-width: 1200px) and (max-width: 1500px)": {
+            marginLeft: "3.9%",
+            marginRight: "3%",
+          },
+          "@media screen and (min-width: 300px) and (max-width: 800px)": {
+            pb: "3%",
+          },
         }}
       >
         <DoButton
@@ -109,8 +111,8 @@ function DoIt() {
             "Conducting market research and competitor analysis",
             "Defining user personas and user journeys",
           ]}
-          lgTop='4%'
-          xlTop='4%'
+          lgTop="4%"
+          xlTop="4%"
           image="https://techtiz.co/wp-content/uploads/2023/10/dicovery2-768x768.webp"
         />
       )}
@@ -123,8 +125,8 @@ function DoIt() {
             "Defining the technology stack and architecture",
           ]}
           image="https://techtiz.co/wp-content/uploads/2023/09/wireframe.webp"
-          lgTop='4%'
-          xlTop='2%'
+          lgTop="4%"
+          xlTop="2%"
         />
       )}
       {selectedButton === "Design and Development" && (
@@ -135,8 +137,8 @@ function DoIt() {
             "Implementing responsive web design",
             "Code cleaning",
           ]}
-          lgTop='4%'
-          xlTop='2%'
+          lgTop="4%"
+          xlTop="2%"
           image="https://techtiz.co/wp-content/uploads/2023/11/Mobile-App.svg"
         />
       )}
@@ -144,14 +146,13 @@ function DoIt() {
         <AnalysisCard
           title="Testing and Deployment"
           lists={[
-
             "Conducting rigorous testing",
             "Ensuring device compatibility",
             "Deploying the website.",
             "Monitoring its performance",
-            "Providing ongoing support"
+            "Providing ongoing support",
           ]}
-          lgTop='4%'
+          lgTop="4%"
           xlTop="2%"
           image="https://techtiz.co/wp-content/uploads/2023/10/testing.svg"
         />

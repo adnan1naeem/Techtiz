@@ -91,8 +91,9 @@ function Partner({ onPress }) {
           type="submit"
           onClick={onPress}
           sx={{
+            fontWeight:600,
             paddingBottom: "3%",
-            fontFamily: 'Mont-Regular, Mont-Bold',
+            fontFamily: "'Mont-Regular', sans-serif",
             color: 'white',
             fontWeight: "500",
             borderRadius: 3,
@@ -111,7 +112,7 @@ function Partner({ onPress }) {
               color: "white",
               border: '3px solid #18B0E6 !important',
               borderRadius: 3,
-              transform: 'scale(1.05)',
+              transform: 'scale(1.08)',
             
     
 

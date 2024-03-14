@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import DevelopmentCard from "../DevelopmentCard/DevelopmentCard";
 import { useEffect, useRef, useState } from "react";
 
-function Weeks() {
+function Weeks({onClick}) {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
 
@@ -95,31 +95,39 @@ function Weeks() {
           background="#18B0E6"
           title="Ideation & Discovery"
           Description="This is where we get to know you; your needs, your ideas, and how we can turn them into a reality."
+          onClick={onClick}
         />
         <DevelopmentCard
           background="#153A5F"
           title="Custom Development"
           Description="Our super smart tech experts create and design products that are tailored to build positive user experiences for your customers, starting with an MVP."
+          onClick={onClick}
+
         />
         <DevelopmentCard
           background="#18B0E6"
           title="Team Augmentation"
           Description="You want to digitize your operations, or scale your tech foundations? Our managed teams of talented engineers and developers can augment your growth."
+          onClick={onClick}
         />
         <DevelopmentCard
           background="#153A5F"
           title="Product Design"
           Description="Intuitive and responsive design is what we excel at; whether it is a redesign job or starting from scratch."
+          onClick={onClick}
         />
         <DevelopmentCard
           background="#18B0E6"
           title="Support & Maintenance"
           Description="We don’t just sell and forget. We follow up and provide support and maintenance services for regular updates and seamless execution"
+          onClick={onClick}
         />
         <DevelopmentCard
           background="#153A5F"
           title="Rescue Missions"
           Description="If your previous development team fell short of meeting your project requirements, our rescue team is here to assist in getting your project back on course."
+          onClick={onClick}
+
         />
       </Box>
     </Box>
