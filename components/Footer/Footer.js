@@ -14,7 +14,7 @@ function Footer() {
       <Box
         sx={{
           display: "flex",
-          gap: "8%",
+          gap: "2%",
           justifyContent: "center",
           flexWrap: "wrap",
           paddingBottom: "5%",
@@ -65,8 +65,8 @@ function Footer() {
           flexWrap: "wrap",
           paddingLeft: { xs: "8%", lg: "8%", xl: "18%" },
           paddingRight: "10%",
-          paddingTop: "4%",
-          paddingBottom: "2.5%",
+          paddingTop: "3%",
+          paddingBottom: "1.5%",
         }}
       >
         <Box>
@@ -74,6 +74,7 @@ function Footer() {
             sx={{
               color: "#153A5F",
               fontWeight: "100",
+              fontSize: "14px",
               fontFamily: "Mont-Regular, Sans-serif",
               fontWeight: 600,
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {

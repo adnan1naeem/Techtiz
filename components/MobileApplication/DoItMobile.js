@@ -37,18 +37,18 @@ function DoItMobile() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        marginTop: "3%",
+        marginTop: { md: "2%", lg: "3%", xl: "2%" },
       }}
     >
       <Typography
         sx={{
           textAlign: "center",
-          fontSize: {xs: "25px",sm:"2.2em"},
+          fontSize: { xs: "25px", sm: "2.2em" },
           fontWeight: "600",
           color: "#153A5F",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
         }}
       >
         How we do it
@@ -60,7 +60,7 @@ function DoItMobile() {
           flexWrap: "wrap",
           justifyContent: "center",
           gap: "1%",
-          marginTop:{xs:'1%',sm:'-3%',md:'-3',lg:'-3%', xl:"-2%"},
+          marginTop: { xs: '1%', sm: '-3%', md: '-3', lg: '-2%', xl: "-2%" },
         }}
       >
         <MobileDoCard

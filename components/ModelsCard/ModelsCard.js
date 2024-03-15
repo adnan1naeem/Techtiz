@@ -27,7 +27,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
             width: "100%",
             height: "100%",
             marginTop: '-4.5%',
-            marginLeft: '-4.3%',
+            marginLeft: !isHovered ? '-4.3%': "-1%",
             transition: "transform 0.9s",
             transformStyle: "preserve-3d", // Preserve 3D transformations
             transform: isHovered ? "rotateY(180deg)" : "rotateY(0deg)", // Rotate on hover
@@ -57,10 +57,10 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                 sx={{
                   background: "#18B0E691",
                   width: "100%",
-                  height: "8rem",
+                  height: "4.5rem",
                   left: 0,
                   position: "absolute",
-                  top: '80%'
+                  bottom: 0
                 }}
               >
                 <Typography
@@ -117,10 +117,13 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
               </Typography>
               <Box sx={{ marginTop: "2%" }}>
                 <ButtonBusiness
-                  text="Get Started"
+                  text="GET STARTED"
                   color="white"
-                  paddingLeft="40px"
-                  paddingRight="40px"
+                  paddingLeft="30px"
+                  paddingRight="30px"
+                  fontSize="14px"
+                  paddingTop="10px"
+                  paddingBottom="10px"
                   onClick={onPress}
                 />
               </Box>

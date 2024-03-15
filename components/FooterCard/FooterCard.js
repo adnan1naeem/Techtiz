@@ -49,7 +49,7 @@ function FooterCard({
                   color: "#18B0E6",
                 },
                 cursor: "pointer",
-                fontSize: "16px",
+                fontSize: "15px",
                 fontFamily:"Mont-Regular, Sans-serif",
                 fontWeight:600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
@@ -73,7 +73,7 @@ function FooterCard({
                   color: "#18B0E6",
                 },
                 cursor: "pointer",
-                fontSize: "16px",
+                fontSize: "15px",
                 fontFamily:"Mont-Regular, Sans-serif",
                 fontWeight:600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
@@ -97,7 +97,7 @@ function FooterCard({
                   color: "#18B0E6",
                 },
                 cursor: "pointer",
-                fontSize: "17px",
+                fontSize: "15px",
                 fontFamily:"Mont-Regular, Sans-serif",
                 fontWeight:600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
@@ -121,7 +121,7 @@ function FooterCard({
                   color: "#18B0E6",
                 },
                 cursor: "pointer",
-                fontSize: "17px",
+                fontSize: "15px",
                 fontFamily:"Mont-Regular, Sans-serif",
                 fontWeight:600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
@@ -145,7 +145,7 @@ function FooterCard({
                   color: "#18B0E6",
                 },
                 cursor: "pointer",
-                fontSize: "17px",
+                fontSize: "15px",
                 fontFamily:"Mont-Regular, Sans-serif",
                 fontWeight:600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {

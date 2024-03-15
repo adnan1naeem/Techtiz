@@ -23,7 +23,7 @@ function FooterReach() {
               fontSize: "18px",
               fontWeight: "600",
               paddingBottom: "12%",
-              fontFamily:"Mont-Bold, Sans-serif",
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             Reach Us
@@ -40,12 +40,18 @@ function FooterReach() {
             }}
           >
             <IoMdCall
-              style={{ marginRight: "3%", fontWeight: "600", fontSize: "17px" , fontFamily:"Mont-Regular, Sans-serif",}}
+              style={{ marginRight: "3%", fontWeight: "600", fontSize: "17px", fontFamily: "Mont-Regular, Sans-serif", }}
             />
-            <span style={{ fontSize: "17px", fontFamily:"Mont-Regular, Sans-serif", fontWeight:600,
+            <a href="tel:+923261199244">
+
+              <span style={{
+                fontSize: "17px", fontFamily: "Mont-Regular, Sans-serif", fontWeight: 600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                   fontSize: "15px",
-              }, }}>+92 326 1199244</span>
+                },
+              }}>+92 326 1199244</span>
+            </a>
+
           </Typography>
           <a
             href="mailto:contact@techtiz.co"
@@ -61,10 +67,10 @@ function FooterReach() {
                   color: "#18B0E6",
                 },
                 cursor: "pointer",
-                fontWeight:600,
+                fontWeight: 600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                   fontSize: "15px",
-              },
+                },
               }}
             >
               <MdOutlineMail
@@ -75,7 +81,7 @@ function FooterReach() {
                 }}
               />
 
-              <span style={{ fontSize: "17px", fontFamily:"Mont-Regular, Sans-serif", }}>contact@techtiz.co</span>
+              <span style={{ fontSize: "17px", fontFamily: "Mont-Regular, Sans-serif", }}>contact@techtiz.co</span>
             </Typography>
           </a>
           <a
@@ -92,10 +98,10 @@ function FooterReach() {
                   color: "#18B0E6",
                 },
                 cursor: "pointer",
-                fontWeight:600,
+                fontWeight: 600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                   fontSize: "15px",
-              },
+                },
               }}
             >
               <FaSearchLocation
@@ -105,7 +111,7 @@ function FooterReach() {
                   fontSize: "17px",
                 }}
               />
-              <span style={{ fontSize: "17px", fontFamily:"Mont-Regular, Sans-serif", }}>Our location</span>
+              <span style={{ fontSize: "17px", fontFamily: "Mont-Regular, Sans-serif", }}>Our location</span>
             </Typography>
           </a>
         </CardContent>

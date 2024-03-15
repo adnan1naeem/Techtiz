@@ -95,12 +95,11 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
         onClick={onPress}s
         sx={{
           marginTop: "5%",
-
           padding: { xs: "3%", sm: "2%", md: "2.3%", lg: "2.3%" },
-          width: { xs: "20em", sm: "18em", md: "16em", lg: "16em" },
-          paddingLeft: "1%",
-          paddingRight: "1%",
-          borderRadius: 0,
+          width: { xs: "20em", sm: "18em", md: "16em", lg: "17em" },
+          paddingLeft: "2%",
+          paddingRight: "2%",
+          borderRadius: 1,
           textTransform: "none",
           fontSize: "16px",
           fontWeight: "400",

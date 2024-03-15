@@ -16,9 +16,9 @@ function SampleNextArrow(props) {
         ...style,
         display: "block",
         color: "white",
-        marginRight:'-0.7%'
+        marginRight: '-0.7%'
 
-       
+
       }}
       onClick={onClick}
     />
@@ -57,7 +57,7 @@ function FeedBack() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -96,16 +96,16 @@ function FeedBack() {
   };
   return (
     <Box
-     ref={weeksRef}
+      ref={weeksRef}
       sx={{
         display: 'flex',
         flexDirection: 'column', // or 'row' depending on your layout
         justifyContent: 'center',
         background: "#153A5F",
-        p:{xs:'0',sm:"5.5rem", md:'9rem',lg:'11.5rem'},
-        pt:{xs:'3.5rem',sm:"5.5rem",md:'10rem',lg:'15.5rem'},
-        pb:{xs:'3.5rem',sm:"5.5rem",md:'10rem',lg:'15.5rem'},
- 
+        p: { xs: '0', sm: "2.5rem", md: '0rem', lg: '11.5rem' },
+        pt: { xs: '3.5rem', sm: "5.5rem", md: '15rem', lg: '15.5rem' },
+        pb: { xs: '3.5rem', sm: "5.5rem", md: '15rem', lg: '15.5rem' },
+
       }}
     >
       <Typography
@@ -123,7 +123,7 @@ function FeedBack() {
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Bold', sans-serif",
-    
+
         }}
       >
         Feedback From Satisfied Clients
@@ -135,10 +135,11 @@ function FeedBack() {
           color: "#FFFFFF",
           paddingRight: 3,
           paddingLeft: 3,
+          mt: { xs: "5%", md: "0%" },
           fontSize: {
             xs: "0.8em",
             sm: "1em",
-            md: "1.2em",
+            lg: "1.2em",
           },
           fontWeight: "100",
           transition: "opacity 1s ease-in-out",
@@ -151,8 +152,8 @@ function FeedBack() {
       </Typography>
       <Box
         sx={{
-          marginLeft: '12%',
-          marginRight: '12%',
+          marginLeft: { xs: "10%",sm: "5%", md: '12%' },
+          marginRight: { xs: "10%",sm: "5%", md: '12%' },
           paddingTop: '4%'
         }}
       >

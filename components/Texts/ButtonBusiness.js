@@ -6,8 +6,11 @@ function ButtonBusiness({
   background,
   onClick,
   color,
+  paddingTop,
+  paddingBottom,
   paddingLeft,
   paddingRight,
+  fontSize
 }) {
   const disableHoverEffect = background === "#153A5F";
 
@@ -20,23 +23,23 @@ function ButtonBusiness({
           color: color,
           fontWeight: 600,
           borderRadius: 1,
-          fontSize: "17px",
+          fontSize: fontSize || "17px",
           fontFamily: "'Mont-Regular', sans-serif",
-          border: `1px solid ${disableHoverEffect ? background : "#18B0E6"}`,
+          border: `2px solid ${disableHoverEffect ? background : "#18B0E6"}`,
           textTransform: "none",
           background: background,
-          paddingTop: "15px",
-          paddingBottom: "15px",
+          paddingTop: paddingTop || "15px",
+          paddingBottom: paddingBottom || "15px",
           paddingLeft: paddingLeft,
           paddingRight: paddingRight,
           marginTop: "11px",
           "@media screen and (min-width: 700px) and (max-width: 910px)": {
             paddingTop: "10px",
-          paddingBottom: "10px",
-       
-            },
+            paddingBottom: "10px",
+
+          },
           "&:hover": {
-            
+
             backgroundColor: disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)',
             color: disableHoverEffect ? color : "white",
             border: `1px solid ${disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)'

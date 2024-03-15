@@ -39,8 +39,8 @@ function MobileDoCard({ background, title, des }) {
         flexDirection: "column",
         alignItems: "center",
         width: { xs: "90%", sm: "16rem", md: "16rem", lg: "17rem" },
-        height: { xs: "auto", sm: "14rem", md: "14rem", lg: "13rem" },
-        marginTop: {xs: "5%", sm:"5%"},
+        height: "auto",
+        marginTop: { xs: "5%", sm: "5%" },
       }}
     >
       <Card sx={{
@@ -59,7 +59,8 @@ function MobileDoCard({ background, title, des }) {
         >
           <Typography
             sx={{
-              fontSize: {xs: "1.3em",sm:"1.5em"},
+              pt: "5%",
+              fontSize: { xs: "1.3em", sm: "1.5em" },
               fontWeight: "600",
               color: "#153A5F",
               lineHeight: "30px",
@@ -77,6 +78,7 @@ function MobileDoCard({ background, title, des }) {
               color: "#54595F",
               lineHeight: "20px",
               marginTop: "9%",
+              pb: "2%",
               fontFamily: "Mont-Regular, Sans-serif",
             }}
           >

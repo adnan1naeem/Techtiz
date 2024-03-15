@@ -17,18 +17,17 @@ function Started() {
         display: "flex",
         justifyContent: "center",
         alignContent: "center",
-        marginTop: "11%",
+        marginTop: { xs: "-10%", sm: "3%", md: "8%", lg: "8%" },
         "@media screen and (min-width: 1700px)": {
-        mt:'9%'
-          
+          mt: '6%'
+
         },
       }}
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "100%", md: "33rem", lg: "31rem" },
-          height: { xs: "32rem", sm: "32xrem", md: "32rem", lg: "28rem" },
-
+          width: { xs: "100%", sm: "100%", md: "30rem", lg: "33rem" },
+          height: { xs: "32rem", sm: "32xrem", md: "28rem", lg: "28rem" },
           boxShadow: "none",
         }}
       >
@@ -36,13 +35,13 @@ function Started() {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "2.7em",
-              fontWeight: "600",
-              lineHeight:'50px',
+              fontSize: { xs: "2.1em", md: "2.7em" },
+              lineHeight: '50px',
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-    
-            
+              fontFamily: "'Mont-Bold', sans-serif",
+              opacity: isVisible ? 1 : 0,
+
+
             }}
           >
             Contact our team
@@ -52,16 +51,16 @@ function Started() {
             sx={{
               color: "#153A5F",
               fontSize: "1.1em",
-              fontWeight: "400",
-              marginTop: "10%",
-              
+              fontWeight: 600,
+              marginTop: { xs: "4%", md: "8%" },
+              fontFamily: "'Mont-Regular', sans-serif"
             }}
           >
             Thank you for considering TechTiz. For inquiries, feedback, or
             collaboration opportunities, please use the provided contact form or
             the contact details below. We look forward to connecting with you.
           </Typography>
-         
+
         </CardContent>
       </Card>
     </Box>
