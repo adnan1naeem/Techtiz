@@ -66,6 +66,7 @@ function QACard({ title, text, image, lg, top }) {
           sx={{
             color: "#153A5F",
             fontSize: "1em",
+            marginTop: "3%",
             fontWeight: 700,
             fontFamily: "Mont-Regular, Sans-serif",
           }}

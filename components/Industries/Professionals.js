@@ -19,22 +19,22 @@ function Professionals({ onPress }) {
         justifyContent: "center",
         alignContent: "center",
         marginTop: "2%",
-        mb:{xs:'6%',sm:'0%'}
       }}
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "100%", md: "31rem", lg: "31rem" },
+          width: { xs: "100%", sm: "34rem", md: "31rem", lg: "33rem", xl: "33rem" },
           height: { xs: "26rem", sm: "32xrem", md: "32rem", lg: "28rem" },
+          // backgroundColor: { xs: "red", md: "blue", xs: "orange", sm: "pink", lg: "green", xl: "transparent" },
           boxShadow: "none",
           '@media screen and (min-width: 1700px)': {
-            width:'33rem'         
-             },
-             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width:'33rem',
-                mt:'2%'
-              },
-             
+            width: '33rem'
+          },
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            width: '33rem',
+            mt: '2%'
+          },
+
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
@@ -48,8 +48,8 @@ function Professionals({ onPress }) {
               lineHeight: "18px",
               paddingLeft: "10px",
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+              opacity: isVisible ? 1 : 0,
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             Industries
@@ -57,12 +57,12 @@ function Professionals({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: {xs: "1.4em", sm:"2.2em"},
+              fontSize: { xs: "1.6em", md: "2.2em" },
               fontWeight: "600",
               marginTop: "1%",
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+              opacity: isVisible ? 1 : 0,
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             Skilled professionals with
@@ -70,13 +70,12 @@ function Professionals({ onPress }) {
           <Typography
             sx={{
               color: "#18B0E6",
-              fontSize: {xs: "1.4em", sm:"2.2em"},
+              fontSize: { xs: "1.6em", md: "2.2em" },
               fontWeight: "600",
-              lineHeight:'40px',
-              
+              lineHeight: '40px',
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+              opacity: isVisible ? 1 : 0,
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             State of the art technology
@@ -84,10 +83,10 @@ function Professionals({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: {xs: "0.9em",md:"1.1em"},
+              fontSize: { xs: "0.9em", md: "1.1em" },
               fontWeight: 600,
-              marginTop: "5%",
-              fontFamily:"Mont-Regular, Sans-serif",
+              marginTop: { xs: "3%", md: "5%" },
+              fontFamily: "Mont-Regular, Sans-serif",
             }}
           >
             If you need our help, have questions about how to use the platform
@@ -100,23 +99,20 @@ function Professionals({ onPress }) {
             onClick={onPress}
             sx={{
               marginTop: "8%",
-
-              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2.3%" },
-              width: { xs: "100%", sm: "40%", md: "60%", lg: "43%" },
+              padding: { xs: "1%", sm: "2%", md: "1.5%", lg: "2.3%" },
+              width: { xs: 170, sm: "40%", md: "50%", lg: "43%" },
               paddingLeft: "3%",
               paddingRight: "3%",
               borderRadius: 1,
               textTransform: "none",
               fontSize: "16px",
-              fontWeight: "400",
+              fontWeight: 600,
               background: "#18B0E6",
-              fontFamily:"Mont-Bold, Sans-serif",
+              fontFamily: "Mont-Regular, Sans-serif",
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 width: "41%",
-              
               },
-              
-              boxShadow:'none',
+              boxShadow: 'none',
               "&:hover": {
                 backgroundColor: "#153A5F",
               },

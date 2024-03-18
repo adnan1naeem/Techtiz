@@ -30,7 +30,7 @@ function ServicesCard({ image, heading, text }) {
         >
           <Box
             sx={{
-              width: { xs: "4rem", sm: "6rem", md: "5rem", lg: "4.8rem" },
+              width: { xs: "4rem", sm: "6rem", md: "4.5rem", lg: "4.8rem" },
               "&:hover img": { transform: "scale(1.1)",transition: "transform 0.3s ease" }, 
             }}
           >

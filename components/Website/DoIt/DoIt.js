@@ -73,6 +73,14 @@ function DoIt() {
           borderRadius: "40px",
           marginTop: "3%",
           mb: "3%",
+          "@media screen and (min-width: 1700px)": {
+            marginLeft: "7.9%",
+            marginRight: "7%",
+          },
+          "@media screen and (min-width: 1500px) and (max-width: 1700px)": {
+            marginLeft: "7.9%",
+            marginRight: "7%",
+          },
           "@media screen and (min-width: 1200px) and (max-width: 1500px)": {
             marginLeft: "3.9%",
             marginRight: "3%",

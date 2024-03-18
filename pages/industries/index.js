@@ -29,9 +29,15 @@ function Industries() {
         <Box
           sx={{
             display: "flex",
-            marginLeft: "2%",
+            marginLeft: { xs: "2%", sm: "0%", lg: "2%", xl: 0 },
             justifyContent: "center",
-            gap: "5%",
+            gap: {
+              xs: "10%",
+              sm: "0%",
+              md: "3%",
+              lg: "5%",
+              xl: "3%",
+            },
             flexWrap: "wrap",
           }}
         >
@@ -39,21 +45,21 @@ function Industries() {
           <Box
             sx={{
               width: {
-                xs: "100%",
-                sm: "100%",
-                md: "35%",
-                lg: "37%",
-                xl: "30%",
+                xs: "90%",
+                sm: "70%",
+                md: "44%",
+                lg: "42%",
+                xl: "38%",
               },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
-              marginTop: { xs: "3%", md: "4%", xs: "-8%", sm: "1%", lg: "1%" },
-              "@media screen and (min-width: 1700px)": {
-                width: "32%",
-              },
+              marginTop: { xs: "-15%", sm: "-15%", md: "1%", lg: "1%" },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width: "46%",
-                mt:'1%'
+                width: "43%",
+                mt: '2%'
+              },
+              "@media screen and (min-width: 600px) and (max-width: 700px)": {
+                width: "80%",
               },
             }}
             onMouseEnter={() => setIsHovered(true)}
@@ -86,7 +92,7 @@ function Industries() {
               marginTop: 5,
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 width: "46%",
-              
+
               },
             }}
           >

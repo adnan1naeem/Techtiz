@@ -71,7 +71,7 @@ function QAForYou() {
           marginLeft: { lg: "18%", xl: '26%' },
           marginRight: { lg: "18%", xl: '26%' },
           padding: "0% 0.5% 0.3% 0.5%",
-          "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
+          "@media screen and (min-width: 1530px) and (max-width: 1800px)": {
             marginLeft: '21%',
             marginRight: '21%',
           },
