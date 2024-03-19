@@ -67,7 +67,7 @@ function DevelopmentCard({ background, title, Description,onClick }) {
           </Typography>
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: "1em",
               fontWeight: 100,
               marginTop: { xs: "14%", sm: "14%", md: "15%", lg: "15%" },
               color: "#FFFFFF",
