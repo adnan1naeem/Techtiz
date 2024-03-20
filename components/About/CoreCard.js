@@ -5,11 +5,11 @@ function CoreCard({ image, heading, bg, para }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Box sx={{ marginTop: { xs: '5%', sm: "5%" } }}>
+    <Box sx={{ marginTop: { xs: '5%', sm: "2%" } }}>
       <Card
         sx={{
-          width: { xs: "21rem", sm: "20rem", md: "22rem", lg: "22rem" },
-          height: { xs: "17rem", sm: "22rem", md: "20rem", lg: "19rem" },
+          width: { xs: "21rem", sm: "35rem", md: "22rem", lg: "22rem" },
+          height: { xs: "17rem", sm: "auto", md: "20rem", lg: "19rem" },
           background: bg,
           borderRadius: "15px",
           cursor: "pointer",
@@ -32,11 +32,13 @@ function CoreCard({ image, heading, bg, para }) {
             zIndex: 1,
           }}
         >
-          <img
-            src={image}
-            alt=""
-            style={{ width: "35%", filter: "invert(100%)" }}
-          />
+          <Box sx={{ width: { xs: "35%", sm: "20%", md: "35%" } }}>
+            <img
+              src={image}
+              alt=""
+              style={{ width: "100%", filter: "invert(100%)" }}
+            />
+          </Box>
           <Typography
             sx={{
               color: "white",

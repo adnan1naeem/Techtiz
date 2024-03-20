@@ -5,12 +5,9 @@ import Link from "next/link";
 function Ceo({ imageceo, name, text }) {
   return (
     <Box>
-    
-
-
       <Card
         sx={{
-          width: { xs: "13rem", sm: "11rem", md: "11rem", lg: "14rem" },
+          width: { xs: "13rem", sm: "15rem", md: "15rem", lg: "14rem" },
           height: { xs: "22rem", sm: "22rem", md: "22rem", lg: "20rem" },
           boxShadow: "none",
           background: "none",
@@ -45,6 +42,7 @@ function Ceo({ imageceo, name, text }) {
           <Typography
             sx={{
               color: "#18B0E6",
+              fontWeight: 600,
               fontSize: "16px",
               fontFamily: "'Mont-Regular', sans-serif",
             }}

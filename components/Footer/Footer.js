@@ -85,24 +85,23 @@ function Footer() {
         
             }}
           >
-            © 2023  Techtiz. All Rights Reserved.
+            © 2024  Techtiz. All Rights Reserved.
           </Typography>
         </Box>
         <Box sx={{ display: "flex", gap: "1rem" }}>
-          {" "}
           <Link href="https://www.linkedin.com/company/techtiz/">
-            <FaLinkedinIn style={{ fontSize: "28px", color: "#153A5F" }} />
+            <FaLinkedinIn style={{ fontSize: "24px", color: "#153A5F" }} />
           </Link>
           <Link href="https://www.facebook.com/techtiz">
-            <FaFacebookF style={{ fontSize: "24px", color: "#153A5F" }} />
+            <FaFacebookF style={{ fontSize: "20px", color: "#153A5F" }} />
           </Link>
           <Link href="https://www.instagram.com/techtiz.co/">
-            <AiFillInstagram style={{ fontSize: "28px", color: "#153A5F" }} />
+            <AiFillInstagram style={{ fontSize: "24px", color: "#153A5F" }} />
           </Link>
           <Link href="https://clutch.co/profile/techtiz-0#highlights">
             <img
               src="https://seeklogo.com/images/C/clutch-co-logo-CE7F48313C-seeklogo.com.png"
-              style={{ width: "28px", borderRadius: "30px" }}
+              style={{ width: "24px", borderRadius: "30px" }}
             />
           </Link>
         </Box>

@@ -16,3 +16,10 @@
 .textNavLabel:hover {
   color: #18b0e6;
 }
+
+@media screen and (max-width:1080px) {
+  .textNavLabel {
+    font-size: 13px;
+    font-weight: 800;
+  }
+}

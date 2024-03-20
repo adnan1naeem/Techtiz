@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "../../styles/TextNav.module.css";
 import { Typography } from "@mui/material";
 
-function TextNav({ label,isActive,color }) {
+function TextNav({ label, isActive, color }) {
   return (
     <div className={Styles.TextNav}>
       <span

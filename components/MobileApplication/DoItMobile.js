@@ -49,6 +49,8 @@ function DoItMobile() {
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "Mont-Bold, Sans-serif",
+          marginBottom: { xs: "5%", lg: 0 },
+          marginTop: { xs: "4%", md: "2%", lg: 0 }
         }}
       >
         How we do it
@@ -59,7 +61,7 @@ function DoItMobile() {
           flexDirection: "row",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "1%",
+          gap: { xs: "2%", l: "1%" },
           marginTop: { xs: '1%', sm: '-3%', md: '-3', lg: '-2%', xl: "-2%" },
         }}
       >

@@ -39,29 +39,26 @@ function Software() {
         backgroundRepeat: 'repeat', // Set the background repeat property
         backgroundSize: '400px 800px', // Set the width of the background image
         marginTop: "5%",
-        paddingTop: {xs:"28%",sm:'24%',md:'5%'},
-        paddingBottom: {xs:'24%',sm:"20%",md:'7%'},
+        paddingTop: { xs: "28%", sm: '20%', },
+        paddingBottom: { xs: '24%', sm: "20%", },
         backgroundPosition: 'center', // Center the background image
         backgroundColor: '#153A5F',
-        '@media screen and (min-width: 1700px)': {
-          pt: '20%',
-          pb: '20%',
-          backgroundSize: '450px 900px',
-        },
-        "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
-          pt: '15%',
-          pb: '15%',
-          backgroundSize: '300px 500px',
-        },
         width: '100%'
 
       }}
     >
-      <Card sx={{ background: '#153A5FA3', pb: '2%', pt: '2%', ml: { xs: '5%', sm: '15%' }, mr: { xs: '5%', sm: '15%' }, boxShadow: 'none' }}>
+      <Card sx={{
+        background: '#153A5FA3',
+        paddingTop: { xs: "28%", sm: '24%', md: '9%', lg: '3%', xl: '2%' },
+        paddingBottom: { xs: '24%', sm: "20%", md: '9%', lg: '3%', xl: '2%' },
+        ml: { xs: '5%', sm: '5%', lg: "10%", xl: '15%' },
+        mr: { xs: '5%', sm: '5%', lg: "10%", xl: '15%' },
+        boxShadow: 'none'
+      }}>
         <Typography
           sx={{
             color: "#FFFFFF",
-            fontSize: {xs: "1.3em",sm:'1.3em', md: "2.3em"},
+            fontSize: { xs: "1.3em", sm: '2em', md: "2.3em" },
             textAlign: "center",
             fontWeight: "blod",
             transition: "opacity 1s ease-in-out",
@@ -75,7 +72,7 @@ function Software() {
         <Typography
           sx={{
             color: "#FFFFFF",
-            fontSize: {xs: "1em",sm:'1em', md:"1.1em"},
+            fontSize: { xs: "1em", sm: '1em', md: "1.1em" },
             textAlign: "center",
             fontWeight: 400,
             marginTop: "2.5%",
@@ -84,7 +81,7 @@ function Software() {
         >
           Techtiz offers more than software development services. With our
           expertise in software design and development, we also
-          <br /> offer cost-effective staffing resources, business consulting, and
+          offer cost-effective staffing resources, business consulting, and
           training.
         </Typography>
         <Typography
@@ -99,7 +96,7 @@ function Software() {
         >
           As a leading software agency, we have a proven track record of
           successfully helping diverse businesses embark on their
-          <br /> transformative journey, with on-time enterprise-level
+          transformative journey, with on-time enterprise-level
           implementation that requires minimal effort.
         </Typography>
       </Card>

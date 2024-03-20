@@ -39,10 +39,9 @@ function ButtonBusiness({
 
           },
           "&:hover": {
-
             backgroundColor: disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)',
             color: disableHoverEffect ? color : "white",
-            border: `1px solid ${disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)'
+            border: `2px solid ${disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)'
               }`,
           },
         }}

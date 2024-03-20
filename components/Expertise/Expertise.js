@@ -31,10 +31,11 @@ function Expertise() {
       }
     };
   }, []);
+  
   return (
     <Box ref={weeksRef} sx={{ background: "#18B0E6", paddingBottom: {xs: "18%",md:0},}}>
       <Box
-        sx={{ paddingTop: {xs: "8%",md:"2.6%"}, display: "flex", flexDirection: "column",mt:'2%' }}
+        sx={{ paddingTop: {xs: "8%",md:"4%"}, display: "flex", flexDirection: "column",mt:'2%' }}
       >
         <Typography
           sx={{
@@ -53,12 +54,14 @@ function Expertise() {
         <Typography
           sx={{
             textAlign: {xs: "", sm: "", md: "center", lg:"center"},
-            paddingLeft:{xs: "8%", sm: "8%", md: 0, lg:0},
-            fontSize:15,
-            marginTop: { xs:"5%",lg: "1%" },
+            paddingLeft:{xs: "8%", sm: "8%", md: "3%", lg:"3%"},
+            paddingRight:{xs: "8%", sm: "8%", md: "3%", lg:"3%"},
+            fontSize: "1rem",
+            marginTop: { xs:"5%", md:"2%",lg: "1%" },
+            marginBottom: { xs:"5%",md:0,xl: "1%" },
             color: "#FFFFFF",
-            fontFamily: "'Mont-Regular', sans-serif",
-            fontWeight: "300",
+            opacity: 0.9,
+            fontWeight: 300,
           }}
         >
           Our skilled team excels in mobile app development (iOS, Android,
@@ -72,11 +75,11 @@ function Expertise() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          paddingLeft: { md: 0, lg: 10 },
-          paddingRight: { md: 0, lg: 10 },
+          paddingLeft: { md: 0, lg: 10.5 },
+          paddingRight: { md: 0, lg: 10.5 },
           fontSize: { xs: "2.1em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
           gap: "3.1%",
-          marginTop: "2%",
+          marginTop: "1.5%",
           paddingBottom: "5%",
           "@media screen and (min-width: 1500px)": {
             justifyContent: "space-between",

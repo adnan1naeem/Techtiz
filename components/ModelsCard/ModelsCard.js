@@ -9,7 +9,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
     <Box>
       <Card
         sx={{
-          width: { xs: "22rem", sm: "23rem", md: "23rem", lg: "23rem", xl: "23rem" },
+          width: { xs: "22rem", sm: "24rem", md: "24rem", lg: "24rem", xl: "24rem" },
           height: { xs: "25rem", sm: "25rem", md: "28rem", lg: "28rem", xl: "28rem" },
           borderRadius: 3,
           overflow: "hidden",
@@ -27,7 +27,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
             width: "100%",
             height: "100%",
             marginTop: '-4.5%',
-            marginLeft: !isHovered ? '-4.3%': "-1%",
+            marginLeft: !isHovered ? '-4.3%' : "-1%",
             transition: "transform 0.9s",
             transformStyle: "preserve-3d", // Preserve 3D transformations
             transform: isHovered ? "rotateY(180deg)" : "rotateY(0deg)", // Rotate on hover

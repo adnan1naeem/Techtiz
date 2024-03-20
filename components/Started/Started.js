@@ -4,6 +4,7 @@ import { Box, Card, CardContent, Typography } from "@mui/material";
 function Started() {
   const [isVisible, setIsVisible] = React.useState(false);
 
+
   React.useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
@@ -27,8 +28,14 @@ function Started() {
       <Card
         sx={{
           width: { xs: "100%", sm: "100%", md: "30rem", lg: "33rem" },
+          mt: "2%",
+          marginLeft: {md: "-25%",lg: "-20%"},
           height: { xs: "32rem", sm: "32xrem", md: "28rem", lg: "28rem" },
           boxShadow: "none",
+          "@media screen and (min-width: 900px) and (max-width: 1080px)": {
+            ml: '5%%',
+            width: "25rem",
+          },
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
@@ -40,8 +47,6 @@ function Started() {
               transition: "opacity 1s ease-in-out",
               fontFamily: "'Mont-Bold', sans-serif",
               opacity: isVisible ? 1 : 0,
-
-
             }}
           >
             Contact our team

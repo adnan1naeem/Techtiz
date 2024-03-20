@@ -41,6 +41,10 @@
     list-style-type: none;
 }
 
+.activeMenu {
+    display: none;
+}
+
 .nav-menu a {
     font-size: 1rem;
     font-weight: 500;
@@ -55,6 +59,15 @@
 }
 
 .services-menu {
+    margin-top: -5%;
+}
+
+.menuHome {
+    display: none;
+}
+
+.services {
+    font-size: 30px;
     margin-top: -5%;
 }
 
@@ -149,8 +162,19 @@
     }
 }
 
+@media screen and (min-width:300px) and (max-width:1080px) {
+    .services {
+        font-size: 20px;
+        margin-top: 0%;
+    }
+}
+
 @media screen and (max-width:1080px) {
 
+    .menuHome {
+        display: flex;
+    }
+    
     .header {
         width: 100%;
 
@@ -199,7 +223,6 @@
         background-color: #153A5F;
         width: 100%;
         border: none;
-
     }
 
     .drop Link:hover {
@@ -215,13 +238,16 @@
         color: white;
     }
 
-    .nav-menu a {
-        font-size: 1.2rem;
-
+    .activeMenu {
+        display: flex;
+        background-color: #153A5F;
+        width: 100%;
+        border: none;
+        color: white;
     }
 
-    .services {
-        margin-top: -1%;
+    .nav-menu a {
+        font-size: 1.2rem;
     }
 
 }
@@ -253,7 +279,7 @@
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
-    color: #7A7A7A;
+    color: #000000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;

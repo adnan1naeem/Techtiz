@@ -43,7 +43,8 @@ function DevelopmentCard({ background, title, Description,onClick }) {
           transition: "transform 1s ease", // Adding transition for the transform property
           transform: isHovered ? "translateY(-12px)" : "translateY(0)",
           marginTop: { xs: "4%", sm: "4%", md: "6%", lg: "6%" },
-          boxShadow: 'none'
+          boxShadow: 'none',
+          cursor: 'pointer'
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -68,7 +69,7 @@ function DevelopmentCard({ background, title, Description,onClick }) {
           <Typography
             sx={{
               fontSize: "1em",
-              fontWeight: 100,
+              fontWeight: 600,
               marginTop: { xs: "14%", sm: "14%", md: "15%", lg: "15%" },
               color: "#FFFFFF",
               fontFamily: "'Mont-Regular', sans-serif",

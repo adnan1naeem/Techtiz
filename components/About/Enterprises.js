@@ -58,8 +58,8 @@ function Enterprises({ onPress }) {
           color: "#153A5F",
           fontSize: {xs: "14px", sm:"17.6px"},
           fontWeight: 600,
-          // pl: {xs: '3%', sm: '0%'},
-          // pr: {xs: '3%', sm: '0%'},
+          pl: {xs: '3%', sm: '5%', lg: '15%'},
+          pr: {xs: '3%', sm: '5%', lg: '15%'},
           textAlign: "center",
           marginTop:{xs: "3%",sm:'1%'},
           fontFamily: "'Mont-Regular', sans-serif",
@@ -67,11 +67,11 @@ function Enterprises({ onPress }) {
         }}
       >
         Techtiz is a custom software development company that helps startups and
-        businesses of all sizes create chart-topping apps <br /> and software.
+        businesses of all sizes create chart-topping apps and software.
         We have a team of super-talented engineers with advanced expertise in
-        mobile app development, web <br /> application development, UX/UI
+        mobile app development, web application development, UX/UI
         design, and more. With on-time enterprise-level implementation, we have
-        a proven track <br /> record of helping diverse businesses embark on
+        a proven track record of helping diverse businesses embark on
         their transformation journeys.
       </Typography>
       <Button

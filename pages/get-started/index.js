@@ -14,17 +14,20 @@ function Index() {
         sx={{
           display: "flex",
           justifyContent: "center",
-          gap: { md: "5%", lg: "10%" },
+          gap: { md: "2%", lg: "10%" },
           flexWrap: "wrap",
           "@media screen and (min-width: 1700px)": {
             gap: '6%'
+          },
+          "@media screen and (min-width: 1200px) and (max-width: 1400px)": {
+            gap: '2%'
           },
         }}
       >
         <Started />
         <Box
           sx={{
-            width: { xs: "90%", sm: "75%", md: "36%", lg: "34%", xl: "28%" },
+            width: { xs: "90%", sm: "75%", md: "38%", lg: "38%", xl: "28%" },
             transform: isHovered ? "translateY(-12px)" : "translateY(0)",
             transition: "transform 1s ease",
             marginTop: { xs: "-45%", sm: "-40%", md: "0%", lg: "0" },

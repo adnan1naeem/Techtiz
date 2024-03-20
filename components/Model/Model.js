@@ -18,7 +18,7 @@ function Model({ onPress }) {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -34,21 +34,23 @@ function Model({ onPress }) {
   }, []);
 
   return (
-    <Box sx={{ marginTop: "4%" }}  ref={weeksRef}>
+    <Box sx={{ marginTop: "4%", mb: "5%" }} ref={weeksRef}>
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs:'25px',sm:"35px",md:'43px',lg:"43px"},
+          fontSize: { xs: '25px', sm: "35px", md: '43px', lg: "43px" },
           fontWeight: "600",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Bold', sans-serif",
-          marginTop: {xs:"15%",sm: "5%",
+          marginTop: {
+            xs: "15%", sm: "5%",
             md: "3%",
             lg: "0",
-            xl: "0",},
-          marginBottom: {xs:"5%",sm:"0"}
+            xl: "0",
+          },
+          marginBottom: { xs: "5%", sm: "0" }
         }}
       >
         Engagement Models
@@ -58,7 +60,7 @@ function Model({ onPress }) {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "5%",
+          gap: { lg: "6%", xl: "5%" },
           marginTop: "1.4%",
         }}
       >

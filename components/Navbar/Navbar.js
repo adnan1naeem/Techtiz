@@ -64,6 +64,11 @@ const Navbar = () => {
               : styles["nav-menu"]
           }
         >
+          <li className={router.pathname === "/" ? styles.activeMenu : styles.menuHome}>
+            <Link href="/" onClick={closeMenu}>
+              <TextNav label="Home" isActive={router.pathname === "/"} />
+            </Link>
+          </li>
           <li className={router.pathname === "/about" ? styles.menu : ""}>
             <Link href="/about" onClick={closeMenu}>
               <TextNav label="About" isActive={router.pathname === "/about"} />
@@ -80,7 +85,6 @@ const Navbar = () => {
               {isArrowUp ? (
                 <IoMdArrowDropup
                   style={{
-                    fontSize: "30px",
                     color: "white",
                     cursor: "pointer",
                     transition: "opacity 0.3s ease-in-out",
@@ -90,7 +94,6 @@ const Navbar = () => {
               ) : (
                 <MdArrowDropDown
                   style={{
-                    fontSize: "30px",
                     color: "white",
                     cursor: "pointer",
                     transition: "opacity 0.3s ease-in-out",

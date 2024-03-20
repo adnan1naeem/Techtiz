@@ -17,7 +17,7 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href, width,
             background: "#F8F8F8",
             transition: "transform 1s ease", // Adding transition for the transform property
             transform: isHovered ? "translateY(-12px)" : "translateY(0)",
-            marginTop: "4%",
+            marginTop: "3%",
             boxShadow: 'none'
           }}
           onMouseEnter={() => setIsHovered(true)}
@@ -33,7 +33,7 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href, width,
             }}
           >
 
-            <Box sx={{ width: { xs: "100%", sm: "100%", md: "100%", lg: "46%" } }}>
+            <Box sx={{ width: { xs: "100%", sm: "100%", md: "100%", lg: "60%" } }}>
               <Typography
                 sx={{
                   fontSize: "31px",
@@ -62,14 +62,15 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href, width,
             <Box
               sx={{
                 width: width,
-                marginTop: { xs: "8%", sm: "0%", md: "0%", lg: "0%" },
+                marginTop: { xs: "8%", sm: "0%" },
                 ml: ml,
                 height: { md: '20%' },
+                height: { md: '20%' },
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                  width: href==="sqa" ?"25%": "35%",
+                  width: href==="sqa" ?"30%": "40%",
                 },
                 "@media screen and (min-width: 1300px) and (max-width: 1535px)": {
-                  width: href==="sqa" ?"25%": "35%",
+                  width: href==="sqa" ?"30%": "40%",
                 },
               }}
             >
