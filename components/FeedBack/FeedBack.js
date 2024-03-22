@@ -99,13 +99,22 @@ function FeedBack() {
       ref={weeksRef}
       sx={{
         display: 'flex',
-        flexDirection: 'column', // or 'row' depending on your layout
+        flexDirection: 'column',
         justifyContent: 'center',
         background: "#153A5F",
-        p: { xs: '0', sm: "2.5rem", md: '0rem', lg: '11.5rem' },
-        pt: { xs: '3.5rem', sm: "5.5rem", md: '15rem', lg: '15.5rem' },
-        pb: { xs: '3.5rem', sm: "5.5rem", md: '15rem', lg: '15.5rem' },
-
+        p: { xs: '0', sm: "2.5rem", md: '5.5rem', lg: '5.5rem', xl: "9.5rem" },
+        pt: { xs: '3.5rem', sm: "8rem", md: '10rem', lg: '15.5rem', xl: "15.5rem" },
+        pb: { xs: '3.5rem', sm: "8rem", md: '10rem', lg: '15.5rem', xl: "15.5rem" },
+        "@media screen and (min-width: 1100px) and (max-width: 1300px)": {
+          p: '1.5rem',
+          pt: "5rem",
+          pb: "5rem",
+        },
+         "@media screen and (min-width: 900px) and (max-width: 1100px)": {
+          p: '0',
+          pt: "10rem",
+          pb: "10rem",
+        },
       }}
     >
       <Typography
@@ -123,7 +132,6 @@ function FeedBack() {
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Bold', sans-serif",
-
         }}
       >
         Feedback From Satisfied Clients
@@ -139,7 +147,7 @@ function FeedBack() {
           fontSize: {
             xs: "0.8em",
             sm: "1em",
-            lg: "1.2em",
+            lg: "1em",
           },
           fontWeight: "100",
           transition: "opacity 1s ease-in-out",
@@ -152,8 +160,8 @@ function FeedBack() {
       </Typography>
       <Box
         sx={{
-          marginLeft: { xs: "10%",sm: "5%", md: '12%' },
-          marginRight: { xs: "10%",sm: "5%", md: '12%' },
+          marginLeft: { xs: "10%", sm: "5%", md: '12%', lg: "5%", xl: "12%" },
+          marginRight: { xs: "10%", sm: "5%", md: '12%', lg: "5%", xl: "12%" },
           paddingTop: '4%'
         }}
       >

@@ -48,10 +48,11 @@ function Leadership() {
           left: 0,
           width: "100%",
           height: "100%",
+          backgroundColor:'#dedede',
           backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/Sqr-Light-Outline.svg')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          opacity: isVisible ? 0.1 : 1, // Adjust the opacity value as needed
+          opacity: isVisible ? 0.15 : 1, // Adjust the opacity value as needed
         },
       }}
     >

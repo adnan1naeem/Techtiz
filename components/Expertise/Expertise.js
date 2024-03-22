@@ -78,7 +78,7 @@ function Expertise() {
           paddingLeft: { md: 0, lg: 10.5 },
           paddingRight: { md: 0, lg: 10.5 },
           fontSize: { xs: "2.1em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
-          gap: "3.1%",
+          gap: "3.6%",
           marginTop: "1.5%",
           paddingBottom: "5%",
           "@media screen and (min-width: 1500px)": {

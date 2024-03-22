@@ -1,5 +1,7 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import React from "react";
+import styles from "../../styles/MainBanner.module.css";
+
 function FooterLogoCard() {
   return (
     <Box>
@@ -8,11 +10,12 @@ function FooterLogoCard() {
           width: {
             sx: "20rem",
             sm: "29rem",
-            md: "19rem",
+            md: "45rem",
             lg: "17rem",
             xl: "19rem",
           },
           height: "17rem",
+          textAlign: { xs: "center", lg: "start" },
           background: "none",
           boxShadow: "none",
         }}
@@ -21,7 +24,7 @@ function FooterLogoCard() {
           <img
             src="https://techtiz.co/wp-content/uploads/2023/09/Techtiz-Logo-with-Icon-PNG-e1695527913263.png"
             alt=""
-            style={{ width: "10rem", paddingBottom: "10%" }}
+            className={styles.footerImage}
           />
           <Typography
             sx={{

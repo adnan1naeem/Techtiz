@@ -51,8 +51,8 @@ function Software() {
         background: '#153A5FA3',
         paddingTop: { xs: "28%", sm: '24%', md: '9%', lg: '3%', xl: '2%' },
         paddingBottom: { xs: '24%', sm: "20%", md: '9%', lg: '3%', xl: '2%' },
-        ml: { xs: '5%', sm: '5%', lg: "10%", xl: '15%' },
-        mr: { xs: '5%', sm: '5%', lg: "10%", xl: '15%' },
+        ml: { xs: '5%', sm: '4%', lg: "8%", xl: '18%' },
+        mr: { xs: '5%', sm: '4%', lg: "8%", xl: '18%' },
         boxShadow: 'none'
       }}>
         <Typography
@@ -72,9 +72,9 @@ function Software() {
         <Typography
           sx={{
             color: "#FFFFFF",
-            fontSize: { xs: "1em", sm: '1em', md: "1.1em" },
+            fontSize: { xs: "1em", sm: '1.1em', md: "1.1em" },
             textAlign: "center",
-            fontWeight: 400,
+            fontWeight: 600,
             marginTop: "2.5%",
             fontFamily: "'Mont-Regular', sans-serif"
           }}

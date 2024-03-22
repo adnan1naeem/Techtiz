@@ -14,14 +14,14 @@ function Footer() {
       <Box
         sx={{
           display: "flex",
-          gap: "2%",
+          ml: { xs: "0", sm:"5%", md:"1%"},
+          gap: { xs: "2%", md: "2%" },
           justifyContent: "center",
           flexWrap: "wrap",
           paddingBottom: "5%",
-        }}
-      >
+        }}>
         <FooterLogoCard />
-        <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+        <Box sx={{ marginTop: {xs: "-8%", lg: 0}, display: "flex", flexWrap: "wrap", gap: "0%" }}>
           <FooterCard
             title="Company"
             text1="About"
@@ -64,7 +64,7 @@ function Footer() {
           justifyContent: "space-between",
           flexWrap: "wrap",
           paddingLeft: { xs: "8%", lg: "8%", xl: "18%" },
-          paddingRight: "10%",
+          paddingRight: { xs: "10%", lg: "8%" },
           paddingTop: "3%",
           paddingBottom: "1.5%",
         }}
@@ -73,22 +73,24 @@ function Footer() {
           <Typography
             sx={{
               color: "#153A5F",
-              fontWeight: "100",
+              fontWeight: 400,
               fontSize: "14px",
               fontFamily: "Mont-Regular, Sans-serif",
               fontWeight: 600,
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 fontSize: "13px",
-                ml:'-10%'
-                
+                ml: '-10%',
               },
-        
-            }}
-          >
-            © 2024  Techtiz. All Rights Reserved.
+            }}>
+            © 2024 Techtiz. All Rights Reserved.
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", gap: "1rem" }}>
+        <Box sx={{
+          display: "flex", gap: "1rem",
+          "@media screen and (min-width: 100px) and (max-width: 467px)": {
+            marginTop: "3%",
+          },
+        }}>
           <Link href="https://www.linkedin.com/company/techtiz/">
             <FaLinkedinIn style={{ fontSize: "24px", color: "#153A5F" }} />
           </Link>

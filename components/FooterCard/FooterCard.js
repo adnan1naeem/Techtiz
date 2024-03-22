@@ -19,8 +19,8 @@ function FooterCard({
     <Box>
       <Card
         sx={{
-          height: { sx: "17rem", sm: "21rem", md: "19rem", lg: "17rem" },
-          width: { sx: "10rem", sm: "7rem", md: "9rem", lg: "12rem" },
+          height: { sx: "17rem", sm: "18rem", md: "19rem", lg: "17rem" },
+          width: { sx: "10rem", sm: "12rem", md: "12rem", lg: "12rem" },
           background: "none",
           boxShadow: "none",
         }}

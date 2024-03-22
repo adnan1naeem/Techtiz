@@ -39,14 +39,14 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
         mr: {xs: "3%", sm: 0},
         display: "flex",
         flexDirection: "column",
-        width: { xs: "21em", sm: "33em", md: "35em", lg: "26em", xl: "26em" },
+        width: "100%",
       }}
     >
       <Typography
         sx={{
           color: "#153A5F",
           fontSize: {xs: "1.5em",sm:"2.2em"},
-          fontWeight: "600",
+          fontWeight: 600,
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily:"Mont-Bold, Sans-serif",
@@ -58,7 +58,7 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
         sx={{
           color: "#153A5F",
           fontSize: {xs: "1.5em",sm:"2.2em"},
-          fontWeight: "600",
+          fontWeight: 600,
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily:"Mont-Bold, Sans-serif",
@@ -70,7 +70,7 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
         sx={{
           color: "#153A5F",
           fontSize: {xs: "1.5em",sm:"2.2em"},
-          fontWeight: "600",
+          fontWeight: 600,
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily:"Mont-Bold, Sans-serif",
@@ -84,6 +84,9 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
           fontSize: "1.1em",
           fontWeight: 600,
           marginTop: "3%",
+          "@media screen and (max-width: 1010px)": {
+            mt: '0%',
+          },
           fontFamily:"Mont-Regular, Sans-serif",
         }}
       >
@@ -96,7 +99,7 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
         sx={{
           marginTop: "5%",
           padding: { xs: "3%", sm: "2%", md: "2.3%", lg: "2.3%" },
-          width: { xs: "20em", sm: "18em", md: "16em", lg: "17em" },
+          width: { xs: "16em", sm: "18em", md: "16em", lg: "17em" },
           paddingLeft: "2%",
           paddingRight: "2%",
           borderRadius: 1,
@@ -106,6 +109,10 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
           background: "#18B0E6",
           fontFamily:"Mont-Regular, Sans-serif",
           boxShadow:'none',
+          "@media screen and (max-width: 1010px)": {
+            mt: '3%',
+            padding: "1.3%"
+          },
           "&:hover": {
             backgroundColor: "#153A5F",
           },

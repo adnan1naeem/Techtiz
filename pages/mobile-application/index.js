@@ -13,7 +13,7 @@ import DevelopmentMobile from "../../components/MobileApplication/DevelopmentMob
 const useStyles = makeStyles((theme) => ({
   leftPaper: {
     position: 'sticky',
-    top: 150,
+    top: 190,
     color: "yellow",
     padding: 10,
     zIndex: 1,
@@ -110,23 +110,60 @@ function Mobile() {
           sx={{
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: "center",
-            gap: "3%",
+            justifyContent: {xs:"start", md:"center"},
+            gap: "1%",
+            pl: { xs: "5%", md: "3%" },
+            pr: { xs: "5%", md: "3%" },
+            "@media screen and (min-width: 1200px) and (max-width: 1350px)": {
+              pl: '1%',
+              pr: '1%',
+              gap: "5%"
+            },
+            "@media screen and (min-width: 1010px) and (max-width: 1200px)": {
+              pl: '1%',
+              pr: '10%',
+              gap: "10%"
+            },
           }}
         >
           <Box sx={{
-            marginTop: "3%"
+            marginTop: "3%",
+            width: { xs: "100%", md: "100%%", lg: "30%", xl: "30%" },
+            "@media screen and (min-width: 1200px) and (max-width: 1350px)": {
+              width: '35%',
+            },
+            "@media screen and (min-width: 1010px) and (max-width: 1200px)": {
+              width: '35%',
+            },
           }}>
             <Box className={classes.leftPaper}>
-            <ExpertiseMobile
-              onPress={handleClick}
-              title1="Our Expertise"
-              des="Guaranteed delivery of an App that satisfies your goals."
-            />
+              <ExpertiseMobile
+                onPress={handleClick}
+                title1="Our Expertise"
+                des="Guaranteed delivery of an App that satisfies your goals."
+              />
             </Box>
           </Box>
 
-          <Box onScroll={handleRightScroll} className={classes.rightPaper}>
+          <Box sx={{
+            width: { xs: "100%", lg: "45%", xl:"40%" },
+            "@media screen and (min-width: 1200px) and (max-width: 1350px)": {
+              width: '55%',
+            },
+            "@media screen and (min-width: 1010px) and (max-width: 1200px)": {
+              width: '55%',
+            },
+            "@media screen and (max-width: 1010px)": {
+              mt: '-2%',
+              ml: "2%",
+              mr: "2%"
+            },
+            "@media screen and (max-width: 600px)": {
+              mt: '-2%',
+              ml: "5%",
+              mr: "5%"
+            },
+          }} onScroll={handleRightScroll} className={classes.rightPaper}>
             <CrossLine
               title="Cross-Platform Excellence"
               des="We specialize in developing mobile apps that seamlessly run on both iOS and Android platforms, ensuring a wider reach for your target audience."

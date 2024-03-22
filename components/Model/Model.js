@@ -60,7 +60,7 @@ function Model({ onPress }) {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: { lg: "6%", xl: "5%" },
+          gap: "6%",
           marginTop: "1.4%",
         }}
       >

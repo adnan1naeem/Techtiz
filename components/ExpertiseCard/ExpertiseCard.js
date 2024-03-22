@@ -7,7 +7,7 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href, width,
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Box sx={{ mt: '1.1%' }}>
+    <Box sx={{ mt: '2%' }}>
       <Link href={{ pathname: href }} style={{ textDecoration: 'none' }}>
         <Card
           sx={{
@@ -64,6 +64,7 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href, width,
                 width: width,
                 marginTop: { xs: "8%", sm: "0%" },
                 ml: ml,
+                mr: "-4%",
                 height: { md: '20%' },
                 height: { md: '20%' },
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {

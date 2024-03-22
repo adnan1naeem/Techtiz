@@ -12,7 +12,7 @@ import {
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { FaSquare } from "react-icons/fa";
 
-function BusinessCard({ data, onClick,activeButton }) {
+function BusinessCard({ fontSize, mb, data, onClick, activeButton }) {
   const bottomMap = {
     StartUps: 0,
     SMEs: "3%",
@@ -23,20 +23,20 @@ function BusinessCard({ data, onClick,activeButton }) {
     <Box>
       <Card
         sx={{
-          height: { xs: "62rem", sm: "36rem", md: "30rem", lg: "100%" },
-          width: { xs: "100%", sm: "100%", md: "36rem", lg: "100%" },
+          height: { xs: "62rem", sm: "auto" },
+          width: "100%",
           borderRadius: "3px",
           background: "#F8F8F8",
           marginTop: "8%",
           boxShadow: "none",
-          paddingBottom:bottom,
+          paddingBottom: bottom,
         }}
       >
         <Typography
           sx={{
             fontSize: "2.2em",
             fontWeight: "bold",
-            width: { xs: "100%", sm: "64%", md: "64%", lg: "64%" },
+            width: { xs: "100%", sm: "62%", md: "62%", lg: "62%" },
             marginTop: "2%",
             color: "#153A5F",
             fontFamily: "'Mont-Bold', sans-serif",
@@ -49,37 +49,38 @@ function BusinessCard({ data, onClick,activeButton }) {
 
         <CardContent
           sx={{
+            flexDirection: { xs: "column", sm: "row", md: "row", lg: "row" },
             display: "flex",
             marginLeft: "2%",
-            gap: "3%",
-            flexDirection: { xs: "column", sm: "row", md: "row", lg: "row" },
+            mb: mb || 0,
+            gap: "4%",
           }}
         >
           <Box
             sx={{
-              marginTop: {md:'5%',lg:"1%"},
-              width: { xs: "100%", sm: "40%", md: "13rem", lg: "15rem" },
-              height: { xs: "28rem", sm: "22rem", md: "18rem", lg: "22rem", xl: '22rem' },
+              marginTop: { xs: "-2%", md: '0%', lg: "-2%" },
+              width: { xs: "100%", sm: "50%", md: "15rem", lg: "15rem" },
+              height: { xs: "28rem", sm: "20rem", md: "18rem", lg: "22rem", xl: '22rem' },
               "@media screen and (min-width: 450px) and (max-width: 600px)": {
-              height:'33rem'
-            },
+                height: '33rem'
+              },
             }}
           >
             <img
               src={data?.image}
               alt=""
-              style={{ height: "80%", width: "100%" }}
+              style={{ height: "90%", width: "100%" }}
             />
           </Box>
           <Box
             sx={{
               width: { xs: "100%", sm: "25rem", md: "30rem", lg: "28rem" },
-              height: { xs: "18rem", sm: "18rem", md: "22rem", lg: "20rem" ,xl:'24rem'},
+              height: { xs: "18rem", sm: "18rem", md: "22rem", lg: "20rem", xl: '24rem' },
             }}
           >
-            <List sx={{ mt: {xs:'1%',sm:'3%'} }}>
+            <List sx={{ mt: { xs: '1%', sm: '3%' } }}>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '12px' }} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: fontSize || "12px" }} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
@@ -95,7 +96,7 @@ function BusinessCard({ data, onClick,activeButton }) {
             </List>
             <List>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '12px' }} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: fontSize || "12px" }} />
                 <Typography
                   sx={{
                     marginLeft: "2%",
@@ -111,7 +112,7 @@ function BusinessCard({ data, onClick,activeButton }) {
             </List>
             <List>
               <ListItemIcon>
-                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: '12px' }} />
+                <FaSquare style={{ marginTop: "1%", color: "#153A5F", fontSize: fontSize }} />
                 <Typography
                   sx={{
                     marginLeft: "2%",

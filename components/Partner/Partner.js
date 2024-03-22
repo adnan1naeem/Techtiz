@@ -92,7 +92,6 @@ function Partner({ onPress }) {
           onClick={onPress}
           sx={{
             fontWeight:600,
-            paddingBottom: "3%",
             fontFamily: "'Mont-Regular', sans-serif",
             color: 'white',
             fontWeight: "500",
@@ -104,8 +103,8 @@ function Partner({ onPress }) {
             paddingBottom: "12px",
             paddingLeft: "30px",
             paddingRight: "30px",
-            marginTop: "8px",
-            mb:{lg:'5%',xl:'4%'},
+            marginTop: "4px",
+            mb:{xs:'5%',xl:'4%'},
             transition: 'all 0.3s ease', 
             "&:hover": {
               backgroundColor: "rgba(24, 176, 230, 0.6)",
@@ -113,10 +112,10 @@ function Partner({ onPress }) {
               border: '3px solid #18B0E6 !important',
               borderRadius: 3,
               transform: 'scale(1.08)',
-            
-    
-
             },
+            "@media screen and (max-width: 599px)": {
+              mt:'-9%',
+          },
           }}
         >
           Let's Start

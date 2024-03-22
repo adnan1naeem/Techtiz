@@ -54,7 +54,7 @@ function DevelopmentCard({ background, title, Description,onClick }) {
             sx={{
               fontSize: '1.5em',
               fontWeight: 'bold',
-              lineHeight: '50px',
+              lineHeight: '30px',
               marginTop: { xs: "8%", sm: "8%", md: "7%", lg: "7%" },
               color: "#FFFFFF",
               fontFamily: "'Mont-Bold', sans-serif",

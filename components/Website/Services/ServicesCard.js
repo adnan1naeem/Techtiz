@@ -42,7 +42,7 @@ function ServicesCard({ image, heading, text }) {
               sx={{
                 color: "#153A5F",
                 fontSize: "1.3rem",
-                fontWeight: "600",
+                fontWeight: 500,
                 marginBottom: "15px",
                 width: "100%",
                 fontFamily:"Mont-Bold, Sans-serif",

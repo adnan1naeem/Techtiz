@@ -13,8 +13,8 @@ function DoButton({
                 onClick={onClick}
                 sx={{
                     color: "#153A5F",
-                    fontWeight: "700",
-                    fontSize: {xs:"15px", md:"17px"},
+                    fontWeight: "500",
+                    fontSize: {xs:"15px", md:"1rem"},
                     border: isSelected ? "2px solid #18B0E6" : "none",
                     textTransform: "none",
                     background: isSelected ? "#F6F9FC" : "#EAEAEA",
@@ -24,7 +24,8 @@ function DoButton({
                     paddingLeft: {xs:"25px", md: "23"},
                     paddingRight: {xs:"25px", md: "23px"},
                     fontFamily: "Mont-Bold, Sans-serif",
-                    marginTop: "8px",
+                    marginTop: "4px",
+                    marginBottom: "4px",
                     borderRadius: "28px",
                     "&:hover": {
                         backgroundColor: isSelected ? "#F6F9FC" : "#EAEAEA",

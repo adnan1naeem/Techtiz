@@ -26,8 +26,8 @@ function MainBanner({ onPress }) {
         width: "100%",
         height: { xs: "110vh", sm: "100%", lg: "90%", xl: "99vh" },
         "@media screen and (min-width: 350px) and (max-width: 380px)": {
-              height:'120vh'
-            },
+          height: '120vh'
+        },
       }}
     >
       <Box
@@ -53,7 +53,10 @@ function MainBanner({ onPress }) {
               xl: "60rem",
             },
             "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
-              height:'41rem'
+              height: '41rem'
+            },
+            "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+              height: '38rem'
             },
           }}
         >
@@ -74,6 +77,7 @@ function MainBanner({ onPress }) {
               xl: "52rem",
             },
             marginTop: { xs: "30%", sm: "30%", md: "23%", lg: "18%", xl: "10%" },
+
             "@media screen and (min-width: 500px) and (max-width: 595px)": {
               width: "30rem",
             },
@@ -81,7 +85,7 @@ function MainBanner({ onPress }) {
               width: "21rem",
               marginTop: "30%",
             },
-            
+
             "@media screen and (min-width: 1500px) and (max-width: 1600px)": {
               width: "39rem",
               marginTop: "16%",
@@ -93,29 +97,33 @@ function MainBanner({ onPress }) {
             "@media screen and (min-width: 1900px) and (max-width: 2100px)": {
               width: "50rem",
               marginTop: "13%",
-             
+
             },
             "@media screen and (min-width: 1600px) and (max-width: 1800px)": {
               width: "45rem",
               marginTop: "14%",
-              
+
             },
             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
               width: "35rem",
-              marginTop: "20%",
-              
+              marginTop: "13%",
+
+            },
+            "@media screen and (min-width: 900px) and (max-width: 1020px)": {
+              width: "35rem",
+              marginTop: "27%",
             },
             "@media screen and (min-width: 600px) and (max-width: 730px)": {
               marginTop: "40%",
-          },
-          "@media screen and (min-width: 330px) and (max-width: 450px)": {
+            },
+            "@media screen and (min-width: 330px) and (max-width: 450px)": {
               marginTop: "50%",
-              width:'100%'
-          },
-          "@media screen and (min-width: 400px) and (max-width: 450px)": {
+              width: '100%'
+            },
+            "@media screen and (min-width: 400px) and (max-width: 450px)": {
               marginTop: "50%",
-              width:'80%'
-          },
+              width: '80%'
+            },
           }}
         >
           <Image
@@ -133,31 +141,32 @@ function MainBanner({ onPress }) {
           top: { xs: 160, sm: 240, md: 240, lg: 270, xl: 350 },
           left: { xs: 15, sm: 50, md: 90, lg: 150 },
           width: { xs: "90%", sm: "50%", md: "40%", lg: "55%" },
-          pl:{xs: "3%", md: 0},
+          pl: { xs: "3%", md: 0 },
           "@media screen and (min-width: 1700px)": {
             top: 410,
             left: 160,
           },
           "@media screen and (min-width: 600px) and (max-width: 750px)": {
-           width:'55%'
+            width: '55%'
           },
           "@media screen and (min-width: 1250px) and (max-width: 1530px)": {
             width: "40%",
           },
           "@media screen and (min-width: 1530px) and (max-width: 1650px)": {
-              width: "35rem",
-              top:300,
-            },
-            "@media screen and (min-width: 900px) and (max-width: 1020px)": {
-              width:'53%',
-              left: 40,
-            },
-            "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-              top: 240,
-            },
-            "@media screen and (min-width: 1800px) and (max-width: 2000px)": {
-              top: 420,
-              width:'53%'
+            width: "35rem",
+            top: 300,
+          },
+          "@media screen and (min-width: 900px) and (max-width: 1020px)": {
+            width: '45%',
+            left: 40,
+          },
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            left: 130,
+            top: 160,
+          },
+          "@media screen and (min-width: 1800px) and (max-width: 2000px)": {
+            top: 420,
+            width: '53%'
           },
         }}
       >
@@ -171,12 +180,12 @@ function MainBanner({ onPress }) {
               lg: "2.8em",
             },
             textTransform: "uppercase",
-            lineHeight: {xs: "42px", md:"50px"},
+            lineHeight: { xs: "42px", md: "50px" },
             fontFamily: "'Mont-Bold', sans-serif",
             opacity: showText ? 1 : 0, // Set opacity based on showText state
             transition: "opacity 1s ease-in-out", // Apply transition effect
             "@media screen and (min-width: 900px) and (max-width: 1020px)": {
-              fontSize:'2.4rem'
+              fontSize: '2.4rem'
             },
           }}
         >
@@ -187,7 +196,7 @@ function MainBanner({ onPress }) {
           sx={{
             display: "flex",
             flexDirection: { xs: "row", md: "row" },
-            gap: {xs:"5%",sm:"8%", md: "20px"},
+            gap: { xs: "5%", sm: "8%", md: "20px" },
             marginTop: "2%",
             alignItems: { xs: "center", sm: "flex-start" },
           }}

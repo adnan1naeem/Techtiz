@@ -25,7 +25,7 @@ function ButtonBusiness({
           borderRadius: 1,
           fontSize: fontSize || "17px",
           fontFamily: "'Mont-Regular', sans-serif",
-          border: `2px solid ${disableHoverEffect ? background : "#18B0E6"}`,
+          border: `1px solid ${disableHoverEffect ? background : "#18B0E6"}`,
           textTransform: "none",
           background: background,
           paddingTop: paddingTop || "15px",
@@ -41,7 +41,7 @@ function ButtonBusiness({
           "&:hover": {
             backgroundColor: disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)',
             color: disableHoverEffect ? color : "white",
-            border: `2px solid ${disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)'
+            border: `1px solid ${disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)'
               }`,
           },
         }}

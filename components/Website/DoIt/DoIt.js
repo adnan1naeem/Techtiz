@@ -57,37 +57,30 @@ function DoIt() {
       </Typography>
       <Box
         sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "2%",
           background: "#F6F9FC",
-          marginLeft: {xs:'2%',sm:'2%',md:'5%', lg: "10%", xl: "17%" },
-          marginRight: {xs:'2%',sm:'2%',md:'5%', lg: "10%", xl: "17%" },
-          "@media screen and (min-width: 1530px) and (max-width: 1600px)": {
-            marginLeft: "10%",
-            marginRight: "10%",
+          width: "auto",
+          mt: "3%",
+          justifyContent: 'center',
+          alignItems:"center",
+          display: 'flex',
+          flexDirection: 'row',
+          pt: "0.5%",
+          pb: "0.5%",
+          ml: { lg: "8%", xl: "12%" },
+          mr: { lg: "8%", xl: "12%" },
+          "@media screen and (min-width: 1190px) and (max-width: 1295px)": {
+            ml: "3%",
+            mr: "3%",
           },
-          padding: "0.5% 0.5% 0.5% 0.5%",
-          pl: { xs: "5%", sm: "4%", md: "2%", lg: "3%", xl: "2%" },
+          "@media screen and (max-width: 1190px)": {
+            ml: "3%",
+            mr: "3%",
+          },
+          flexWrap: "wrap",
+          gap: "1%",
+          pl: "1.5%",
+          pr: "1.5%",
           borderRadius: "40px",
-          marginTop: "3%",
-          mb: "3%",
-          "@media screen and (min-width: 1700px)": {
-            marginLeft: "7.9%",
-            marginRight: "7%",
-          },
-          "@media screen and (min-width: 1500px) and (max-width: 1700px)": {
-            marginLeft: "7.9%",
-            marginRight: "7%",
-          },
-          "@media screen and (min-width: 1200px) and (max-width: 1500px)": {
-            marginLeft: "3.9%",
-            marginRight: "3%",
-          },
-          "@media screen and (min-width: 300px) and (max-width: 800px)": {
-            pb: "3%",
-          },
         }}
       >
         <DoButton
