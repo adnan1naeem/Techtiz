@@ -156,7 +156,7 @@ function Technologies() {
             <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/android.svg'} />
             <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/nodejs-white.svg'} />
             <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Bootstrap-Icon.svg'} />
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/html5-2.svg'} width="60%" />
+            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/html5-2.svg'} width="45%" />
           </Slider>
         </Box>
       </Box>

@@ -14,6 +14,7 @@ function FooterCard({
   href_three,
   href_four,
   href_five,
+  mt
 }) {
   return (
     <Box>
@@ -32,7 +33,7 @@ function FooterCard({
               fontSize: "18px",
               fontWeight: "600",
               paddingBottom: "12%",
-              fontFamily:"Mont-Bold, Sans-serif",
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             {title}
@@ -44,17 +45,18 @@ function FooterCard({
           >
             <Typography
               sx={{
+                mt: mt,
                 color: "#153A5F",
                 "&:hover": {
                   color: "#18B0E6",
                 },
                 cursor: "pointer",
                 fontSize: "15px",
-                fontFamily:"Mont-Regular, Sans-serif",
-                fontWeight:600,
+                fontFamily: "Mont-Regular, Sans-serif",
+                fontWeight: 600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                   fontSize: "15px",
-              },
+                },
               }}
             >
               {text1}
@@ -74,11 +76,11 @@ function FooterCard({
                 },
                 cursor: "pointer",
                 fontSize: "15px",
-                fontFamily:"Mont-Regular, Sans-serif",
-                fontWeight:600,
+                fontFamily: "Mont-Regular, Sans-serif",
+                fontWeight: 600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                   fontSize: "15px",
-              },
+                },
               }}
             >
               {text2}
@@ -98,11 +100,11 @@ function FooterCard({
                 },
                 cursor: "pointer",
                 fontSize: "15px",
-                fontFamily:"Mont-Regular, Sans-serif",
-                fontWeight:600,
+                fontFamily: "Mont-Regular, Sans-serif",
+                fontWeight: 600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                   fontSize: "15px",
-              },
+                },
               }}
             >
               {text3}
@@ -122,11 +124,11 @@ function FooterCard({
                 },
                 cursor: "pointer",
                 fontSize: "15px",
-                fontFamily:"Mont-Regular, Sans-serif",
-                fontWeight:600,
+                fontFamily: "Mont-Regular, Sans-serif",
+                fontWeight: 600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                   fontSize: "15px",
-              },
+                },
               }}
             >
               {text4}
@@ -146,11 +148,11 @@ function FooterCard({
                 },
                 cursor: "pointer",
                 fontSize: "15px",
-                fontFamily:"Mont-Regular, Sans-serif",
-                fontWeight:600,
+                fontFamily: "Mont-Regular, Sans-serif",
+                fontWeight: 600,
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                   fontSize: "15px",
-              },
+                },
               }}
             >
               {text5}

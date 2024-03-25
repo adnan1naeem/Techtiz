@@ -10,10 +10,11 @@ function FooterReach() {
     <Box>
       <Card
         sx={{
-          width: { sx: "12rem", sm: "12rem", md: "12rem", lg: "14em" },
+          width: { sx: "12rem", sm: "14rem", md: "14rem", lg: "14em" },
           height: "17rem",
           background: "none",
           boxShadow: "none",
+
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
@@ -68,6 +69,7 @@ function FooterReach() {
                 },
                 cursor: "pointer",
                 fontWeight: 600,
+                width: { md: "16rem" },
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                   fontSize: "15px",
                 },

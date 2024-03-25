@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import DevelopmentCard from "../DevelopmentCard/DevelopmentCard";
 import { useEffect, useRef, useState } from "react";
 
-function Weeks({onClick}) {
+function Weeks({ onClick }) {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
 
@@ -37,14 +37,13 @@ function Weeks({onClick}) {
     <Box
       ref={weeksRef}
       sx={{
-        marginTop: {xs: "2.5rem", md: "5.5rem"},
+        marginTop: { xs: "2.5rem", md: "5.5rem" },
       }}
     >
       <Typography
         sx={{
           textAlign: "center",
-          fontSize: { xs: "28px", sm: "28px", md: "2.1em", lg: "2.7em" },
-          
+          fontSize: { xs: "28px", sm: "28px", md: "2.1em", lg: "2.7em", xl: '2.7em' },
           lineHeight: '35px',
           color: "#153A5F",
           fontFamily: "'Mont-Bold', sans-serif",
@@ -64,6 +63,7 @@ function Weeks({onClick}) {
           lineHeight: "25px",
           fontSize: "1em",
           fontWeight: 600,
+          marginTop: "1.5rem",
           fontFamily: "'Mont-Regular', sans-serif",
           transition: "opacity 1s ease-in-out",
           pl: { xs: '3%' },
@@ -78,7 +78,6 @@ function Weeks({onClick}) {
 
       <Box
         sx={{
-
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",

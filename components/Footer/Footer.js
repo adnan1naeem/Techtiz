@@ -14,14 +14,14 @@ function Footer() {
       <Box
         sx={{
           display: "flex",
-          ml: { xs: "0", sm:"5%", md:"1%"},
+          ml: { xs: "0", sm: "5%", md: "1%" },
           gap: { xs: "2%", md: "2%" },
           justifyContent: "center",
           flexWrap: "wrap",
           paddingBottom: "5%",
         }}>
         <FooterLogoCard />
-        <Box sx={{ marginTop: {xs: "-8%", lg: 0}, display: "flex", flexWrap: "wrap", gap: "0%" }}>
+        <Box sx={{ marginTop: { xs: "-10%", lg: 0 }, display: "flex", flexWrap: "wrap", gap: "0%" }}>
           <FooterCard
             title="Company"
             text1="About"
@@ -34,6 +34,7 @@ function Footer() {
             href_four="/get-started"
             text5="Privacy Policy"
             href_five="/"
+            mt={{ xs: '10%', sm: 0 }}
           />
           <FooterCard
             title="Services"
@@ -52,6 +53,7 @@ function Footer() {
             href_one="/career"
             text2="Blog"
             href_two="/blogs"
+            mt={{ xs: '12%', sm: 0 }}
           />
           <FooterReach />
         </Box>

@@ -6,7 +6,7 @@ function ContactInfo() {
       <Card
         sx={{
           width: { xs: "20rem", sm: "23rem", md: "28rem", lg: "30rem" },
-          height: { xs: "27rem", sm: "27rem", md: "16rem", lg: "15rem" },
+          height: { xs: "27rem", sm: "27rem", md: "25rem", lg: "15rem" },
           borderRadius: "5px",
           background: "#6373810F",
           boxShadow: "none",
@@ -21,12 +21,12 @@ function ContactInfo() {
             flexWrap: "wrap",
           }}
         >
-        <Box sx={{ "&:hover img": { transform: "scale(1.1)",transition: "transform 0.3s ease" }, }}>
-          <img
-            src="https://techtiz.co/wp-content/uploads/2023/09/pakistan.svg"
-            alt=""
-            width={"63px"}
-          />
+          <Box sx={{ "&:hover img": { transform: "scale(1.1)", transition: "transform 0.3s ease" }, }}>
+            <img
+              src="https://techtiz.co/wp-content/uploads/2023/09/pakistan.svg"
+              alt=""
+              width={"63px"}
+            />
           </Box>
           <Box>
             <Typography
