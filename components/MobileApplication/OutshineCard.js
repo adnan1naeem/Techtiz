@@ -51,7 +51,7 @@ function OutshineCard() {
         sx={{
           display: "flex",
           justifyContent: "center",
-          gap: {xs:"2%", lg: "1.5%"},
+          gap: { xs: "2%", lg: "1.5%" },
           flexWrap: "wrap",
           marginTop: "2%",
           paddingBottom: "6%",

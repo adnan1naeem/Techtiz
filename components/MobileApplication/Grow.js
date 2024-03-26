@@ -11,7 +11,7 @@ function Grow({ onPress }) {
 
     return () => clearTimeout(timer);
   }, []);
-  
+
   return (
     <Box
       sx={{
@@ -27,17 +27,17 @@ function Grow({ onPress }) {
           height: { xs: "22rem", sm: "30rem", md: "32rem", lg: "25rem" },
           boxShadow: "none",
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width:'33rem',
-                
-              
-              },
+            width: '33rem',
+
+
+          },
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: {xs: "16px",sm:"1.3em"},
+              fontSize: { xs: "16px", sm: "1.3em" },
               fontWeight: "600",
               borderLeft: "3px solid #18B0E6",
               height: "16px",
@@ -52,13 +52,13 @@ function Grow({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: {xs: "22.4px", sm:"2.2em"},
+              fontSize: { xs: "22.4px", sm: "2.2em" },
               fontWeight: "600",
-              marginTop: {xs:'5%',sm:"3%"},
+              marginTop: { xs: '5%', sm: "3%" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
-              lineHeight:{xs:'30px',sm:'45px'}
+              lineHeight: { xs: '30px', sm: '45px' }
             }}
           >
             Grow With a Mobile App
@@ -67,18 +67,18 @@ function Grow({ onPress }) {
           <Typography
             sx={{
               color: "#18B0E6",
-              fontSize: {xs:'19.2px',sm:"1.2em"},
+              fontSize: { xs: '19.2px', sm: "1.2em" },
               fontWeight: "600",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
-              
+
 
             }}>iOS | Android | React Native | Flutter</Typography>
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: {xs: "0.9em",sm:"1.1em"},
+              fontSize: { xs: "0.9em", sm: "1.1em" },
               fontWeight: 600,
               marginTop: "5%",
               fontFamily: "Mont-Regular, Sans-serif",
@@ -99,7 +99,7 @@ function Grow({ onPress }) {
               textTransform: "none",
               fontFamily: "Mont-Regular, Sans-serif",
               fontSize: "16px",
-              fontWeight: "400",
+              fontWeight: "600",
               background: "#18B0E6",
               boxShadow: 'none',
               "&:hover": {

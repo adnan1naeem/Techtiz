@@ -27,7 +27,7 @@ function GrowWebsite({ onPress }) {
       <Card
         sx={{
           width: {
-            xs: "24rem",
+            xs: "20rem",
             sm: "37rem",
             md: "30rem",
             lg: "38rem",
@@ -50,14 +50,14 @@ function GrowWebsite({ onPress }) {
       >
         <CardContent sx={{
           display: "flex", flexDirection: "column",
-          ml: {xs: '3%', md: 0},
+          ml: { xs: '3%', md: 0 },
         }}>
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: {xs:"1em", sm: "1.3em"},
+              fontSize: { xs: "1em", sm: "1.3em" },
               fontWeight: "600",
-              marginTop: {xs:"4%",md: 1, lg: 2},
+              marginTop: { xs: "4%", md: 1, lg: 2 },
               borderLeft: "3px solid #18B0E6",
               height: "18px",
               lineHeight: "20px",
@@ -71,13 +71,14 @@ function GrowWebsite({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: {xs: "1.9em", sm:"2.2em", md: "2.7em"},
+              fontSize: { xs: "1.9em", sm: "2.2em", md: "2.7em" },
               fontWeight: "800",
-              marginTop: {xs:"4%",md: "3%"},
+              marginTop: { xs: "4%", md: "3%" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
-              lineHeight:'40px'
+              lineHeight: '40px',
+              width: "30rem"
             }}
           >
             {`Grow With an\n
@@ -88,7 +89,7 @@ function GrowWebsite({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: {xs: "14.4px", sm:"14.4px", md: "1.2em"},
+              fontSize: { xs: "14.4px", sm: "14.4px", md: "1.2em" },
               fontWeight: 600,
               marginTop: "2%",
               fontFamily: "Mont-Regular, Sans-serif",
@@ -106,12 +107,12 @@ function GrowWebsite({ onPress }) {
 
               padding: { xs: "1%", sm: "2%", md: "1.5%", lg: "1.8%" },
               width: { xs: "50%", sm: "40%", md: "60%", lg: "35%" },
-              paddingLeft: {xs:'2px',sm:"6px"},
-              paddingRight: {xs:'2px',sm:"6px"},
+              paddingLeft: { xs: '2px', sm: "6px" },
+              paddingRight: { xs: '2px', sm: "6px" },
               borderRadius: "5px",
               textTransform: "none",
               fontSize: "16px",
-              fontWeight: "400",
+              fontWeight: "600",
               background: "#18B0E6",
               fontFamily: "Mont-Regular, Sans-serif",
               boxShadow: "none",
@@ -120,7 +121,7 @@ function GrowWebsite({ onPress }) {
               },
             }}
           >
-            Discuss now &nbsp; 
+            Discuss now &nbsp;
           </Button>
         </CardContent>
       </Card>

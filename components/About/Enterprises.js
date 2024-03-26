@@ -8,7 +8,7 @@ function Enterprises({ onPress }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 700); 
+    }, 700);
 
     return () => clearTimeout(timer);
   }, []);
@@ -26,17 +26,17 @@ function Enterprises({ onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs: "28.8px",sm:'28.8',md:'43.2px', lg:"2.7em"},
+          fontSize: { xs: "28.8px", sm: '28.8', md: '43.2px', lg: "2.7em" },
           fontWeight: "bold",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Bold', sans-serif",
           "@media screen and (min-width: 100px) and (max-width: 450px)": {
-                  mt:'18%',
-                  width:'80%'
-              },
-          
+            mt: '18%',
+            width: '80%'
+          },
+
         }}
       >
         Making Technology Work for You
@@ -44,7 +44,7 @@ function Enterprises({ onPress }) {
       <Typography
         sx={{
           color: "#18B0E6",
-          fontSize: {xs: "1em", sm:"1.7em"},
+          fontSize: { xs: "1em", sm: "1.7em" },
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
@@ -56,14 +56,14 @@ function Enterprises({ onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs: "14px", sm:"17.6px"},
+          fontSize: { xs: "14px", sm: "17.6px" },
           fontWeight: 600,
-          pl: {xs: '3%', sm: '5%', lg: '15%'},
-          pr: {xs: '3%', sm: '5%', lg: '15%'},
+          pl: { xs: '3%', sm: '5%', lg: '3%' },
+          pr: { xs: '3%', sm: '5%', lg: '3%' },
           textAlign: "center",
-          marginTop:{xs: "3%",sm:'1%'},
+          marginTop: { xs: "3%", sm: '1%' },
           fontFamily: "'Mont-Regular', sans-serif",
-          width:'95%'
+          width: '95%'
         }}
       >
         Techtiz is a custom software development company that helps startups and
@@ -79,15 +79,15 @@ function Enterprises({ onPress }) {
         endIcon={<IoMdArrowRoundForward />}
         onClick={onPress}
         sx={{
-          marginTop:{xs: "7%",sm:'4%',md:'3%'},
-          boxShadow:'none',
-         pt:{xs:'1.2%',sm:'1%',lg:'0.6%'},
-         pb:{xs:'1.2%',sm:'1%',lg:'0.6%'},
-          pl:{xs:'3.3%',sm:'2.6%',lg:'2%'},
-          pr: {xs:'3.3%',sm:'2.6%',lg:'2%'},
+          marginTop: { xs: "7%", sm: '4%', md: '3%' },
+          boxShadow: 'none',
+          pt: { xs: '1.2%', sm: '1%', lg: '0.6%' },
+          pb: { xs: '1.2%', sm: '1%', lg: '0.6%' },
+          pl: { xs: '3.3%', sm: '2.6%', lg: '2%' },
+          pr: { xs: '3.3%', sm: '2.6%', lg: '2.5%' },
           borderRadius: "2%",
           textTransform: "none",
-          fontSize: {xs:'14.4px',sm:"17px"},
+          fontSize: { xs: '14.4px', sm: "17px" },
           fontWeight: "600",
           background: "#18B0E6",
           fontFamily: "'Mont-Regular', sans-serif",
@@ -95,15 +95,15 @@ function Enterprises({ onPress }) {
             backgroundColor: "#153A5F",
           },
           '@media screen and (min-width: 1700px)': {
-            pt:'0.6%',
-            pb:'0.6%',
-            pr:'1.7%',
-            pl:'1.7%'
-            
-             }
-       
+            pt: '0.6%',
+            pb: '0.6%',
+            pr: '1.7%',
+            pl: '1.7%'
+
+          }
+
         }}
-   
+
       >
         Discuss now &nbsp;
       </Button>

@@ -36,7 +36,7 @@ function OurServices() {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs:"1.9em",md:"2.8em"},
+          fontSize: { xs: "1.9em", md: "2.8em" },
           textAlign: "center",
           fontWeight: "600",
           paddingTop: "5%",
@@ -59,6 +59,10 @@ function OurServices() {
           '@media screen and (min-width: 1400px)': { // Adjust the minimum width as per your requirement
             maxWidth: "1200px",
             margin: "0 auto",
+          },
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            gap: "1px",
+
           }
         }}
       >

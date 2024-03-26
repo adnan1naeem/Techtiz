@@ -17,7 +17,7 @@ function ServicesCard({ image, heading, text }) {
           borderRadius: "10px",
           background: "white",
           border: "1px solid #18B0E6",
-          marginTop: "8%",
+          marginTop: "5.5%",
           boxShadow: "none",
         }}
       >
@@ -31,10 +31,10 @@ function ServicesCard({ image, heading, text }) {
           <Box
             sx={{
               width: { xs: "4rem", sm: "6rem", md: "4.5rem", lg: "4.8rem" },
-              "&:hover img": { transform: "scale(1.1)",transition: "transform 0.3s ease" }, 
+              "&:hover img": { transform: "scale(1.1)", transition: "transform 0.3s ease" },
             }}
           >
-            <img style={{ width: "100%" }} src={image} alt="" />
+            <img style={{ width: "100%", padding: "2%" }} src={image} alt="" />
           </Box>
 
           <Box sx={{ marginTop: "8%" }}>
@@ -45,7 +45,7 @@ function ServicesCard({ image, heading, text }) {
                 fontWeight: 500,
                 marginBottom: "15px",
                 width: "100%",
-                fontFamily:"Mont-Bold, Sans-serif",
+                fontFamily: "Mont-Bold, Sans-serif",
               }}
             >
               {heading}
@@ -57,7 +57,7 @@ function ServicesCard({ image, heading, text }) {
                 fontSize: "0.9rem",
                 lineHeight: "1.5em",
                 marginBottom: "5px",
-                fontFamily:"Mont-Regular, Sans-serif",
+                fontFamily: "Mont-Regular, Sans-serif",
               }}
             >
               {text}

@@ -110,7 +110,7 @@ function Mobile() {
           sx={{
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: {xs:"start", md:"center"},
+            justifyContent: { xs: "start", md: "center" },
             gap: "1%",
             pl: { xs: "5%", md: "3%" },
             pr: { xs: "5%", md: "3%" },
@@ -146,7 +146,7 @@ function Mobile() {
           </Box>
 
           <Box sx={{
-            width: { xs: "100%", lg: "45%", xl:"40%" },
+            width: { xs: "100%", lg: "45%", xl: "40%" },
             "@media screen and (min-width: 1200px) and (max-width: 1350px)": {
               width: '55%',
             },

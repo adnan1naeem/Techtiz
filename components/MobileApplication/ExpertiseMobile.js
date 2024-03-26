@@ -35,8 +35,8 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
     <Box
       ref={weeksRef}
       sx={{
-        ml: {xs: "3%", sm: 0},
-        mr: {xs: "3%", sm: 0},
+        ml: { xs: "3%", sm: "2%" },
+        mr: { xs: "3%", sm: 0 },
         display: "flex",
         flexDirection: "column",
         width: "100%",
@@ -45,11 +45,11 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs: "1.5em",sm:"2.2em"},
+          fontSize: { xs: "1.5em", sm: "2.2em" },
           fontWeight: 600,
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
         }}
       >
         {title1}
@@ -57,11 +57,11 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs: "1.5em",sm:"2.2em"},
+          fontSize: { xs: "1.5em", sm: "2.2em" },
           fontWeight: 600,
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
         }}
       >
         {title2}
@@ -69,11 +69,11 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs: "1.5em",sm:"2.2em"},
+          fontSize: { xs: "1.5em", sm: "2.2em" },
           fontWeight: 600,
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
         }}
       >
         {title3}
@@ -87,7 +87,7 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
           "@media screen and (max-width: 1010px)": {
             mt: '0%',
           },
-          fontFamily:"Mont-Regular, Sans-serif",
+          fontFamily: "Mont-Regular, Sans-serif",
         }}
       >
         {des}
@@ -95,7 +95,7 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
       <Button
         variant="contained"
         endIcon={<IoMdArrowRoundForward />}
-        onClick={onPress}s
+        onClick={onPress} s
         sx={{
           marginTop: "5%",
           padding: { xs: "3%", sm: "2%", md: "2.3%", lg: "2.3%" },
@@ -105,10 +105,10 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
           borderRadius: 1,
           textTransform: "none",
           fontSize: "16px",
-          fontWeight: "400",
+          fontWeight: "600",
           background: "#18B0E6",
-          fontFamily:"Mont-Regular, Sans-serif",
-          boxShadow:'none',
+          fontFamily: "Mont-Regular, Sans-serif",
+          boxShadow: 'none',
           "@media screen and (max-width: 1010px)": {
             mt: '3%',
             padding: "1.3%"

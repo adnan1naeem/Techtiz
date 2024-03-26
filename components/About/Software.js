@@ -37,10 +37,10 @@ function Software() {
       sx={{
         backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/bg-pat.svg')`, // Set the background image URL
         backgroundRepeat: 'repeat', // Set the background repeat property
-        backgroundSize: '400px 800px', // Set the width of the background image
+        backgroundSize: '300px 600px', // Set the width of the background image
         marginTop: "5%",
-        paddingTop: { xs: "28%", sm: '20%', },
-        paddingBottom: { xs: '24%', sm: "20%", },
+        paddingTop: { xs: "9%", sm: '10%', lg: '10%' },
+        paddingBottom: { xs: '9%', sm: "10%", lg: '10%' },
         backgroundPosition: 'center', // Center the background image
         backgroundColor: '#153A5F',
         width: '100%'

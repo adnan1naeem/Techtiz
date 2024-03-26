@@ -11,15 +11,17 @@ function MobileServices({ image, title, des, onPress }) {
       <Card
         sx={{
           width: { xs: "22rem", sm: "22rem", md: "25rem", lg: "17rem" },
-          height: { xs: "17rem", sm: "18rem", md: "18rem", lg: "18rem" },
+          height: { xs: "17rem", sm: "18rem", md: "18rem", lg: "17.5rem" },
           background: "#153A5F",
-          paddingTop: {xs: 0, sm:'3%', md:'1%'},
+          paddingTop: { xs: 0, sm: '3%', md: '1%' },
           cursor: "pointer",
           boxShadow: "none",
           borderRadius: 0,
           border: "1px solid white",
           transition: "opacity 1s ease-in-out",
           position: "relative",
+          marginLeft: { sm: "0.5rem" },
+          marginTop: { xs: "0.5rem", sm: 0 }
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -32,7 +34,7 @@ function MobileServices({ image, title, des, onPress }) {
             alignItems: "center",
             position: "relative",
             zIndex: 1,
-            marginTop: {xs: "3%", sm:'8%'},
+            marginTop: { xs: "3%", sm: '8%' },
             marginBottom: "5%",
             textAlign: "center",
             transition: "transform 1s ease",
@@ -79,7 +81,8 @@ function MobileServices({ image, title, des, onPress }) {
             sx={{
               marginTop: "4%",
               fontSize: "15px",
-              fontFamily: "Mont-Regular, Sans-serif"
+              fontFamily: "Mont-Regular, Sans-serif",
+              fontWeight: 600,
             }}>
             {des}
           </Typography>
@@ -88,10 +91,13 @@ function MobileServices({ image, title, des, onPress }) {
               mt: '1.3rem',
               color: "white",
               transition: "background-color 0.3s ease",
-              border: "2px solid #6EC1E4",
+              border: "2px solid #18B0E6",
               fontFamily: "Mont-Regular, Sans-serif",
+              fontWeight: 600,
+
               "&:hover": {
-                backgroundColor: "#6EC1E4",
+                backgroundColor: "rgba(24, 176, 230, 0.6)",
+                border: "2px solid #18B0E6",
               },
             }}
             onClick={onPress}

@@ -177,6 +177,11 @@
     }
 }
 
+
+    
+
+
+
 @media screen and (max-width:1080px) {
 
     .menuHome {
@@ -259,7 +264,6 @@
     }
 
 }
-
 .dropdown {
 
     overflow: none;
@@ -279,7 +283,7 @@
     position: absolute;
     background-color: #f2f2f2;
     min-width: 210px;
-    height: 180px;
+    height: 168px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.35);
     z-index: 1;
 }
@@ -305,4 +309,10 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+@media screen and (min-width:1200px) and (max-width:1280px) {
+    .dropdown-content {
+    height: 152px;
+}
 }

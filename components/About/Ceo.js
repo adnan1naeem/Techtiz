@@ -2,13 +2,16 @@ import React from "react";
 import { Box, Typography, CardContent, Card } from "@mui/material";
 import Link from "next/link";
 
-function Ceo({ imageceo, name, text }) {
+function Ceo({ imageceo, name, text, mt }) {
   return (
     <Box>
       <Card
         sx={{
           width: { xs: "13rem", sm: "15rem", md: "15rem", lg: "14rem" },
           height: { xs: "22rem", sm: "22rem", md: "22rem", lg: "20rem" },
+          "@media screen and (min-width: 100px) and (max-width: 447px)": {
+            mt: mt
+          },
           boxShadow: "none",
           background: "none",
         }}
@@ -22,7 +25,7 @@ function Ceo({ imageceo, name, text }) {
             textAlign: "center",
           }}
         >
-        
+
           <img
             src={imageceo}
             alt=""

@@ -18,7 +18,7 @@ function DevelopmentMobile({ onPress }) {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -34,7 +34,7 @@ function DevelopmentMobile({ onPress }) {
   }, []);
   return (
     <Box
-         ref={weeksRef}
+      ref={weeksRef}
       sx={{
         background: "#153A5F",
         marginTop: "1%",
@@ -51,10 +51,10 @@ function DevelopmentMobile({ onPress }) {
           textAlign: "center",
           paddingTop: "6%",
           color: "#FFFFFF",
-          fontSize: {xs: "21px",sm:"2.2em"},
+          fontSize: { xs: "18px", sm: "2.2em" },
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
           opacity: isVisible ? 1 : 0,
         }}
       >
@@ -68,9 +68,9 @@ function DevelopmentMobile({ onPress }) {
           gap: "1%",
           marginBottom: "2%",
           '@media screen and (min-width: 1700px)': {
-            mt:'0.7%'
-            
-             }
+            mt: '0.7%'
+
+          }
         }}
       >
         <MobileServices

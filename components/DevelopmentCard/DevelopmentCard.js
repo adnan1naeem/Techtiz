@@ -89,7 +89,7 @@ function DevelopmentCard({ background, title, Description, onClick }) {
             <Typography
               sx={{
                 fontSize: "15px",
-                fontWeight: '300',
+                fontWeight: '700',
                 color: "#FFFFFF",
                 fontFamily: "'Mont-Regular', sans-serif",
                 transition: "opacity 1s ease-in-out",

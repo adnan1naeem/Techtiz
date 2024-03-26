@@ -48,7 +48,7 @@ function Leadership() {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor:'#dedede',
+          backgroundColor: '#dedede',
           backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/Sqr-Light-Outline.svg')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -58,7 +58,7 @@ function Leadership() {
     >
       <Typography
         sx={{
-          color: "#153A5F",
+          color: "#0d263f",
           fontWeight: "700",
           fontFamily: "'Mont-Bold', sans-serif",
           fontSize: { xs: "1.6em", md: "2em", lg: "2.7em" },
@@ -78,7 +78,7 @@ function Leadership() {
           flexWrap: "wrap",
         }}
       >
-        <Button sx={{textDecoration: "none",  ":hover": { backgroundColor: "transparent" }}}>
+        <Button sx={{ textDecoration: "none", ":hover": { backgroundColor: "transparent" } }}>
           <Link
             href="https://www.linkedin.com/in/mohsin-m-naeem/">
             <Ceo
@@ -88,11 +88,12 @@ function Leadership() {
             />
           </Link>
         </Button>
-        <Button sx={{textDecoration: "none",  ":hover": { backgroundColor: "transparent" } }}>
+        <Button sx={{ textDecoration: "none", ":hover": { backgroundColor: "transparent" } }}>
           <Link
             href="https://www.linkedin.com/in/adnan-naeem-442620130/"
           >
             <Ceo
+              mt={"-40%"}
               imageceo="https://techtiz.co/wp-content/uploads/2023/11/Adnaan_Naeem.webp"
               name="Adnan Naeem"
               text="CTO"

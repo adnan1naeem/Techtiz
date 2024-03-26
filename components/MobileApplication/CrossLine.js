@@ -37,8 +37,8 @@ function CrossLine({ title, des }) {
       sx={{
         display: "flex",
         flexDirection: "column",
-        ml: {xs: "1%", sm: 0},
-        mr: {xs: "1%", sm: 0},
+        ml: { xs: "1%", sm: 0 },
+        mr: { xs: "1%", sm: 0 },
         width: "100%",
         borderBottom: "1px solid #18B0E6",
         paddingBottom: "7px",
@@ -59,7 +59,7 @@ function CrossLine({ title, des }) {
           fontSize: "16px",
           color: "#153A5F",
           fontWeight: 800,
-          marginTop: {xs: "6%",sm:"3%",md:"1%"},
+          marginTop: { xs: "6%", sm: "3%", md: "1%" },
           fontFamily: "Mont-Regular, Sans-serif",
         }}
       >
