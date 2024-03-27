@@ -50,17 +50,19 @@ function DesignUX({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: { xs: "1.9em", md: "2.8em" },
-              fontWeight: "800",
+              fontSize: { xs: "1.9em", md: "2.7em" },
+              fontWeight: "900",
               marginTop: { xs: "2%", md: "2%" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
+              lineHeight: '50px',
               '@media screen and (min-width: 1700px)': {
                 mt: '-2%'
               },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                mt: '-2%'
+                // mt: '-2%'
+                width: "90%",
               },
 
             }}

@@ -17,7 +17,7 @@ function Stack() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -36,13 +36,13 @@ function Stack() {
       <Typography
         sx={{
           textAlign: "center",
-          paddingTop: {xs:"26%", sm: "15%", md:"6%"},
+          paddingTop: { xs: "26%", sm: "15%", md: "6%" },
           color: "#FFFFFF",
-          fontSize: {xs: "1.9em",md:"2.7em"},
+          fontSize: { xs: "1.9em", md: "2.7em" },
           fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
         }}
       >
         Tech Stacks
@@ -53,10 +53,10 @@ function Stack() {
           marginTop: "1%",
           color: "#FFFFFF",
           fontSize: "0.9em",
-          fontWeight: "100",
+          fontWeight: "600",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Regular, Sans-serif",
+          fontFamily: "Mont-Regular, Sans-serif",
         }}
       >
         We invest our time and resources in state-of-the-art innovations to stay
@@ -67,14 +67,14 @@ function Stack() {
       <Box
         sx={{
           width: "100%",
-         display:'flex',
-         justifyContent:'center',
-         alignItems:'center',
-          paddingBottom:'10%',
-          marginTop:'1%'
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          paddingBottom: '10%',
+          marginTop: '1%'
         }}
       >
-        <Box sx={{ display: "flex", flexWrap: "wrap", gap: "10%",justifyContent:'center' }}>
+        <Box sx={{ display: "flex", flexWrap: "wrap", gap: "10%", justifyContent: 'center' }}>
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/js-logo.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/reactjs.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/appstore.svg" />
@@ -88,7 +88,7 @@ function Stack() {
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/swift.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/dart.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/typescript.svg" />
-       
+
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/php.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/diamond.svg" />
           <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/python.svg" />

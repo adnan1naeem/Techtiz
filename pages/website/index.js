@@ -63,7 +63,7 @@ function Web() {
             <img
               src="https://techtiz.co/wp-content/uploads/2023/11/webdesign_1.webp"
               alt=""
-              style={{ width: "100%" }}
+              style={{ width: { sm: "100%" } }}
             />
           </Box>
         </Box>

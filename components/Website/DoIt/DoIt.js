@@ -61,21 +61,22 @@ function DoIt() {
           width: "auto",
           mt: "3%",
           justifyContent: 'center',
-          alignItems:"center",
+          alignItems: "center",
           display: 'flex',
           flexDirection: 'row',
           pt: "0.5%",
           pb: "0.5%",
-          ml: { lg: "8%", xl: "12%" },
-          mr: { lg: "8%", xl: "12%" },
+          ml: { lg: "11%", xl: "12%" },
+          mr: { lg: "11%", xl: "12%" },
           "@media screen and (min-width: 1190px) and (max-width: 1295px)": {
-            ml: "3%",
-            mr: "3%",
+            ml: "7.5%",
+            mr: "7.5%",
           },
           "@media screen and (max-width: 1190px)": {
             ml: "3%",
             mr: "3%",
           },
+
           flexWrap: "wrap",
           gap: "1%",
           pl: "1.5%",
@@ -155,6 +156,7 @@ function DoIt() {
           ]}
           lgTop="4%"
           xlTop="2%"
+          width="20%"
           image="https://techtiz.co/wp-content/uploads/2023/10/testing.svg"
         />
       )}

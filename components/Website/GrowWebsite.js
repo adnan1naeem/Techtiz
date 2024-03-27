@@ -27,13 +27,20 @@ function GrowWebsite({ onPress }) {
       <Card
         sx={{
           width: {
-            xs: "20rem",
+            xs: "26rem",
             sm: "37rem",
             md: "30rem",
             lg: "38rem",
             xl: "33rem",
           },
-          height: { xs: "28rem", sm: "26rem", md: "32rem", lg: "28rem" },
+          "@media screen and (max-width: 360px)": {
+            width: "22rem",
+          },
+          "@media screen and (max-width: 280px)": {
+            width: "20rem",
+          },
+
+          height: { xs: "24rem", sm: "26rem", md: "32rem", lg: "28rem" },
           "@media screen and (min-width: 1700px)": {
             width: "36rem",
           },
@@ -71,14 +78,18 @@ function GrowWebsite({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: { xs: "1.9em", sm: "2.2em", md: "2.7em" },
+              fontSize: { xs: "1.6em", sm: "2.2em", md: "2.7em" },
               fontWeight: "800",
               marginTop: { xs: "4%", md: "3%" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
               lineHeight: '40px',
-              width: "30rem"
+              width: "100%",
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width: '60%',
+
+              },
             }}
           >
             {`Grow With an\n
@@ -104,9 +115,8 @@ function GrowWebsite({ onPress }) {
             onClick={onPress}
             sx={{
               marginTop: "6%",
-
               padding: { xs: "1%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "50%", sm: "40%", md: "60%", lg: "35%" },
+              width: { xs: "50%", sm: "40%", md: "60%", lg: "30%" },
               paddingLeft: { xs: '2px', sm: "6px" },
               paddingRight: { xs: '2px', sm: "6px" },
               borderRadius: "5px",
@@ -118,6 +128,9 @@ function GrowWebsite({ onPress }) {
               boxShadow: "none",
               "&:hover": {
                 backgroundColor: "#153A5F",
+              },
+              "@media screen and (max-width: 280px)": {
+                width: "60%",
               },
             }}
           >

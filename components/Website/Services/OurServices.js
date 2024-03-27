@@ -61,10 +61,10 @@ function OurServices() {
             margin: "0 auto",
           },
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-            gap: "1px",
+            gap: "1.5%",
 
           }
-          //this
+
 
 
         }}
