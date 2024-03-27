@@ -77,6 +77,9 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt, width }) {
                   "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                     fontSize: '14.4px'
                   },
+                  "@media screen and (max-width: 280px)": {
+                    width: "14rem",
+                  }
                 }}
               >
                 {list}
@@ -85,7 +88,7 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt, width }) {
           </List>
         ))}
       </Box>
-    </Box>
+    </Box >
   );
 }
 

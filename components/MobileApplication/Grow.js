@@ -94,7 +94,8 @@ function Grow({ onPress }) {
             sx={{
               marginTop: "8%",
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2.2%" },
-              width: { xs: "50%", sm: "40%", md: "60%", lg: "42.7%" },
+              // width: { xs: "50%", sm: "40%", md: "60%", lg: "42.7%" },
+              width: '12em',
               borderRadius: '3px',
               textTransform: "none",
               fontFamily: "Mont-Regular, Sans-serif",

@@ -18,7 +18,7 @@ function DoItUX() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -43,12 +43,12 @@ function DoItUX() {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs:"1.9em",md:"2.7em"},
+          fontSize: { xs: "1.9em", md: "2.7em" },
           fontWeight: "600",
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
         }}
       >
         How We Do It
@@ -60,15 +60,15 @@ function DoItUX() {
           justifyContent: "center",
           gap: "2%",
           background: "#F6F9FC",
-          marginLeft:{xs:0,sm:'10%',md:'15%',lg: "30%",xl:'33%'},
-          marginRight: {xs:0,sm:'10%',md:'15%',lg: "30%",xl:'33%'},
+          marginLeft: { xs: 0, sm: '10%', md: '15%', lg: "30%", xl: '33%' },
+          marginRight: { xs: 0, sm: '10%', md: '15%', lg: "30%", xl: '33%' },
           padding: " 0.5% 0.5% 0.5% 0.5%",
           borderRadius: "40px",
           marginTop: "3%",
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                ml:'27%',
-                mr:'27%'
-              },
+            ml: '29%',
+            mr: '29%'
+          },
         }}
       >
         <DoButton
@@ -86,7 +86,7 @@ function DoItUX() {
           isSelected={selectedButton === "Build and Itrate"}
           onClick={() => handleButtonClick("Build and Itrate")}
         />
-      
+
       </Box>
       {selectedButton === "Discovery" && (
         <AnalysisCard
@@ -110,8 +110,8 @@ function DoItUX() {
           ]}
           image="https://techtiz.co/wp-content/uploads/2023/09/wireframe.webp"
           width="27%"
-        
-       
+
+
         />
       )}
       {selectedButton === "Build and Itrate" && (
@@ -124,11 +124,11 @@ function DoItUX() {
             "UI Style guide/brand identity"
           ]}
           mt='3%'
-         
+
           image="https://techtiz.co/wp-content/uploads/2023/11/web-dev.svg"
         />
       )}
-     
+
     </Box>
   );
 }

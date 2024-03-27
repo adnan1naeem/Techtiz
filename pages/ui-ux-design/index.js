@@ -5,6 +5,7 @@ import DoUX from "../../components/UI-UX/DoUX";
 import DoItUX from "../../components/UI-UX/DoItUX";
 import DiscussProject from "../../components/Website/DiscussProject";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
+import styles from "../../styles/ModelCard.module.css";
 
 function UI() {
     const [isHovered, setIsHovered] = React.useState(false);
@@ -47,7 +48,15 @@ function UI() {
                         <img
                             src="https://techtiz.co/wp-content/uploads/2023/11/mobileAppDev.svg"
                             alt=""
-                            style={{ width: "100%" }}
+                            className={styles.uiImage}
+                            style={{
+                                width: "100%",
+                                // marginTop: { md: "-10rem", lg: 0 } 
+
+                                '@media screen and (max-width: 900px)': {
+                                    marginTop: "-10rem"
+                                }
+                            }}
                         />
                     </Box>
                 </Box>

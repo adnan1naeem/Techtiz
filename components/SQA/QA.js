@@ -35,7 +35,7 @@ function QA({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: {xs:'16px',md:"1.3em"},
+              fontSize: { xs: '16px', md: "1.3em" },
               fontWeight: "600",
               borderLeft: "3px solid #18B0E6",
               height: "20px",
@@ -50,10 +50,10 @@ function QA({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: {xs:'33.6px',md:"2.7em"},
+              fontSize: { xs: '33.6px', md: "2.7em" },
               fontWeight: "800",
               lineHeight: "43px",
-              marginTop: {xs:'5%',md:"1%"},
+              marginTop: { xs: '5%', md: "1%", lg: "3.5%" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
@@ -81,7 +81,6 @@ function QA({ onPress }) {
             onClick={onPress}
             sx={{
               marginTop: "6%",
-
               padding: { xs: "1%", sm: "2%", md: "1.5%", lg: "1.8%" },
               width: { xs: "50%", sm: "80%", md: "60%", lg: "40%" },
               paddingLeft: "1%",
@@ -89,7 +88,7 @@ function QA({ onPress }) {
               borderRadius: 1,
               textTransform: "none",
               fontSize: "16px",
-              fontWeight: "400",
+              fontWeight: "600",
               background: "#18B0E6",
               fontFamily: "Mont-Regular, Sans-serif",
               boxShadow: "none",
