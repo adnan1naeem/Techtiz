@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 
-function QACard({ title, text, image, lg, top }) {
+function QACard({ title, text, image, lg, top, ml, lgtext }) {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
 
@@ -44,10 +44,10 @@ function QACard({ title, text, image, lg, top }) {
     >
       <Box
         sx={{
-          width: { xs: "21rem", sm: "32em", md: "20em", lg: "30em" },
+          width: { xs: "21rem", sm: "32em", md: "20em", lg: lgtext },
           marginTop: "5%",
           textAlign: "left",
-          
+
         }}
       >
         <Typography
@@ -74,7 +74,9 @@ function QACard({ title, text, image, lg, top }) {
           {text}
         </Typography>
       </Box>
-      <Box sx={{ width: { xs: "18rem", sm: "24em", md: "17em", lg: lg } }}>
+      <Box sx={{
+        width: { xs: "18rem", sm: "18em", md: "16em", lg: lg }, marginTop: "3rem", marginLeft: ml
+      }}>
         <img src={image} alt="" style={{ width: "100%", marginTop: top }} />
       </Box>
     </Box>

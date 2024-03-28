@@ -53,41 +53,45 @@ function DoItUX() {
       >
         How We Do It
       </Typography>
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "2%",
-          background: "#F6F9FC",
-          marginLeft: { xs: 0, sm: '10%', md: '15%', lg: "30%", xl: '33%' },
-          marginRight: { xs: 0, sm: '10%', md: '15%', lg: "30%", xl: '33%' },
-          padding: " 0.5% 0.5% 0.5% 0.5%",
-          borderRadius: "40px",
-          marginTop: "3%",
-          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-            ml: '29%',
-            mr: '29%'
-          },
-        }}
-      >
-        <DoButton
-          text="Discovery"
-          isSelected={selectedButton === "Discovery"}
-          onClick={() => handleButtonClick("Discovery")}
-        />
-        <DoButton
-          text="Wireframes"
-          isSelected={selectedButton === "Wireframes"}
-          onClick={() => handleButtonClick("Wireframes")}
-        />
-        <DoButton
-          text="Build and Itrate"
-          isSelected={selectedButton === "Build and Itrate"}
-          onClick={() => handleButtonClick("Build and Itrate")}
-        />
+      <Box sx={{ display: 'flex', justifyContent: "center", width: '100%' }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "2%",
+            background: "#F6F9FC",
+            width: '33em',
+            // marginLeft: { xs: 0, sm: '10%', md: '20%', lg: "30%", xl: '33%' },
+            // marginRight: { xs: 0, sm: '10%', md: '20%', lg: "30%", xl: '33%' },
+            padding: " 0.5%",
+            borderRadius: "40px",
+            marginTop: "3%",
+            // "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            //   ml: '29%',
+            //   mr: '29%'
+            // },
+          }}
+        >
+          <DoButton
+            text="Discovery"
+            isSelected={selectedButton === "Discovery"}
+            onClick={() => handleButtonClick("Discovery")}
+          />
+          <DoButton
+            text="Wireframes"
+            isSelected={selectedButton === "Wireframes"}
+            onClick={() => handleButtonClick("Wireframes")}
+          />
+          <DoButton
+            text="Build and Itrate"
+            isSelected={selectedButton === "Build and Itrate"}
+            onClick={() => handleButtonClick("Build and Itrate")}
+          />
 
+        </Box>
       </Box>
+
       {selectedButton === "Discovery" && (
         <AnalysisCard
           title="Discovery"

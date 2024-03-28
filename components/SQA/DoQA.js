@@ -36,7 +36,7 @@ function DoQA() {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs:"1.9em",md:"2.8em"},
+          fontSize: { xs: "1.9em", md: "2.8em" },
           textAlign: "center",
           fontWeight: "600",
           paddingTop: "2%",
@@ -51,11 +51,11 @@ function DoQA() {
         sx={{
           display: "flex",
           justifyContent: "center",
-          gap: "2.1%",
+          gap: "1.6%",
           flexWrap: "wrap",
           marginTop: "1%",
           paddingBottom: "6%",
-       
+
           "@media screen and (min-width: 1500px)": {
             // Adjust the minimum width as per your requirement
             maxWidth: "1200px",

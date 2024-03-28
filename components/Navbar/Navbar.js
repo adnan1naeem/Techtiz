@@ -136,7 +136,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className={router.pathname === "/SQA" ? styles.menu : styles.drop}>
-                  <Link href="/SQA" onClick={closeMenu}>
+                  <Link href="/sqa" onClick={closeMenu}>
                     <TextNav label="SQA" />
                   </Link>
                 </li>

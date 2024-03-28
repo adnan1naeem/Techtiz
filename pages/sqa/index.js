@@ -19,10 +19,10 @@ function Sqa() {
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
-  
+
   return (
     <Box>
-      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%" ,xl:'10%'} }}>
+      <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%", xl: '10%' } }}>
         <Box
           sx={{
             display: "flex",
@@ -30,28 +30,32 @@ function Sqa() {
             gap: "2%",
             flexWrap: "wrap",
             '@media screen and (min-width: 1700px)': {
-              gap:'1%'
+              gap: '1%'
             },
             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-              gap:0,
-              
-              },
+              gap: 0,
+
+            },
           }}
         >
-          <QA  onPress={handleClick}/>
+          <QA onPress={handleClick} />
           <Box
             sx={{
               width: { xs: "100%", sm: "80%", md: "38%", lg: "43%", xl: "32%" },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
-              marginTop: { xs: "-32%", sm: "10%", md: 0, lg: 0 },
+              // mt: '-30%',
+              // marginTop: { xs: "-32%", sm: 0, md: 0, lg: 0 },
               '@media screen and (min-width: 1700px)': {
-                width:'35%'
+                width: '35%'
               },
-              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width:'50%'
-              
-              },
+              // '@media screen and (max-width: 899px)': {
+              //   marginTop: "-15em"
+              // },
+              // '@media screen and (max-width: 520px)': {
+              //   marginTop: "-32em"
+              // },
+
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -59,7 +63,7 @@ function Sqa() {
             <img
               src="https://techtiz.co/wp-content/uploads/2023/10/Quality-Check.webp"
               alt=""
-              style={{ width: "100%" }}
+              style={{ width: "96%" }}
             />
           </Box>
         </Box>
@@ -67,10 +71,10 @@ function Sqa() {
       <DoQA />
       <QAForYou />
       <Autonomous />
-      <DiscussProject onPress={handleClick}/>
+      <DiscussProject onPress={handleClick} />
       <div id="contact-section" ref={contactSectionRef}>
-          <SalesTeam />
-        </div>
+        <SalesTeam />
+      </div>
     </Box>
   );
 }

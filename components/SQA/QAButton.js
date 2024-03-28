@@ -6,7 +6,7 @@ function QAButton({
   text,
   isSelected,
   onClick,
-  icon: IconComponent, 
+  icon: IconComponent,
 }) {
   return (
     <div>
@@ -15,8 +15,8 @@ function QAButton({
         onClick={onClick}
         sx={{
           color: "#153A5F",
-          fontWeight: "700",
-          fontSize: "17px",
+          fontWeight: "600",
+          fontSize: "15px",
           border: isSelected ? "2px solid #18B0E6" : "none",
           textTransform: "none",
           background: isSelected ? "#F6F9FC" : "#EAEAEA",
@@ -26,7 +26,7 @@ function QAButton({
           paddingRight: "23px",
           marginTop: "8px",
           borderRadius: "28px",
-          fontFamily:"Mont-Bold, Sans-serif",
+          fontFamily: "Mont-Bold, Sans-serif",
           "&:hover": {
             backgroundColor: isSelected ? "#F6F9FC" : "#EAEAEA",
             border: isSelected ? "2px solid #18B0E6" : "none",

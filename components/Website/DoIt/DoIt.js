@@ -55,55 +55,56 @@ function DoIt() {
       >
         How We Do It
       </Typography>
-      <Box
-        sx={{
-          background: "#F6F9FC",
-          width: "auto",
-          mt: "3%",
-          justifyContent: 'center',
-          alignItems: "center",
-          display: 'flex',
-          flexDirection: 'row',
-          pt: "0.5%",
-          pb: "0.5%",
-          ml: { lg: "11%", xl: "12%" },
-          mr: { lg: "11%", xl: "12%" },
-          "@media screen and (min-width: 1190px) and (max-width: 1295px)": {
-            ml: "7.5%",
-            mr: "7.5%",
-          },
-          "@media screen and (max-width: 1190px)": {
-            ml: "3%",
-            mr: "3%",
-          },
+      <Box sx={{ display: 'flex', justifyContent: "center", width: '100%' }}>
+        <Box
+          sx={{
+            background: "#F6F9FC",
+            width: '68em',
+            mt: "3%",
+            justifyContent: 'center',
+            alignItems: "center",
+            display: 'flex',
+            flexDirection: 'row',
+            pt: "0.5%",
+            pb: "0.5%",
+            // ml: { lg: "11%", xl: "12%" },
+            // mr: { lg: "11%", xl: "12%" },
+            "@media screen and (min-width: 1626px)": {
+              width: "70em",
+            },
+            // "@media screen and (max-width: 1190px)": {
+            //   ml: "3%",
+            //   mr: "3%",
+            // },
 
-          flexWrap: "wrap",
-          gap: "1%",
-          pl: "1.5%",
-          pr: "1.5%",
-          borderRadius: "40px",
-        }}
-      >
-        <DoButton
-          text="Discovery and Analysis"
-          isSelected={selectedButton === "Discovery and Analysis"}
-          onClick={() => handleButtonClick("Discovery and Analysis")}
-        />
-        <DoButton
-          text="Planning and Strategy"
-          isSelected={selectedButton === "Planning and Strategy"}
-          onClick={() => handleButtonClick("Planning and Strategy")}
-        />
-        <DoButton
-          text="Design and Development"
-          isSelected={selectedButton === "Design and Development"}
-          onClick={() => handleButtonClick("Design and Development")}
-        />
-        <DoButton
-          text="Testing and Deployment"
-          isSelected={selectedButton === "Testing and Deployment"}
-          onClick={() => handleButtonClick("Testing and Deployment")}
-        />
+            flexWrap: "wrap",
+            gap: "1%",
+            pl: "1.5%",
+            pr: "1.5%",
+            borderRadius: "40px",
+          }}
+        >
+          <DoButton
+            text="Discovery and Analysis"
+            isSelected={selectedButton === "Discovery and Analysis"}
+            onClick={() => handleButtonClick("Discovery and Analysis")}
+          />
+          <DoButton
+            text="Planning and Strategy"
+            isSelected={selectedButton === "Planning and Strategy"}
+            onClick={() => handleButtonClick("Planning and Strategy")}
+          />
+          <DoButton
+            text="Design and Development"
+            isSelected={selectedButton === "Design and Development"}
+            onClick={() => handleButtonClick("Design and Development")}
+          />
+          <DoButton
+            text="Testing and Deployment"
+            isSelected={selectedButton === "Testing and Deployment"}
+            onClick={() => handleButtonClick("Testing and Deployment")}
+          />
+        </Box>
       </Box>
       {selectedButton === "Discovery and Analysis" && (
         <AnalysisCard

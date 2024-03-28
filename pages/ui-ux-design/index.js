@@ -51,11 +51,6 @@ function UI() {
                             className={styles.uiImage}
                             style={{
                                 width: "100%",
-                                // marginTop: { md: "-10rem", lg: 0 } 
-
-                                '@media screen and (max-width: 900px)': {
-                                    marginTop: "-10rem"
-                                }
                             }}
                         />
                     </Box>
