@@ -40,7 +40,7 @@ function DevelopmentCard({ background, title, Description, onClick }) {
           height: { xs: "auto", sm: "22rem", md: "22rem", lg: "22rem", xl: "22rem" },
           borderRadius: "6px",
           background: background,
-          transition: "transform 1s ease", // Adding transition for the transform property
+          transition: "transform 1s ease", // Adding transition for the transform propertyy
           transform: isHovered ? "translateY(-12px)" : "translateY(0)",
           marginTop: { xs: "4%", sm: "4%", md: "6%", lg: "6%" },
           boxShadow: 'none',
