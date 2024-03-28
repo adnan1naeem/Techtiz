@@ -113,7 +113,7 @@ const Navbar = () => {
                 <Link href="/ui-ux-design" onClick={closeMenu}>
                   UI/UX Design
                 </Link>
-                <Link href="/sqa" onClick={closeMenu}>
+                <Link href="/SQA" onClick={closeMenu}>
                   SQA
                 </Link>
               </div>
@@ -136,7 +136,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className={router.pathname === "/SQA" ? styles.menu : styles.drop}>
-                  <Link href="/sqa" onClick={closeMenu}>
+                  <Link href="/SQA" onClick={closeMenu}>
                     <TextNav label="SQA" />
                   </Link>
                 </li>
