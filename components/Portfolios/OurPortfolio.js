@@ -19,14 +19,12 @@ function OurPortfolio({ onPress }) {
       <Card
         sx={{
           width: { xs: "22rem", sm: "23rem", md: "31rem", lg: "31rem" },
-          height: { xs: "28rem", sm: "32xrem", md: "32rem", lg: "28rem" },
-          
-          '@media screen and (min-width: 1700px)': {
-           mt:'3%'
-            
-             },
-       
+          height: { xs: "28rem", sm: "32xrem", md: "32rem", lg: "25rem" },
 
+          '@media screen and (min-width: 1700px)': {
+            mt: '3%'
+
+          },
           boxShadow: "none",
         }}
       >
@@ -53,11 +51,11 @@ function OurPortfolio({ onPress }) {
               fontSize: "2.5em",
               fontSize: { xs: "1.4em", sm: "2em", md: "2.5em" },
               fontWeight: "600",
-              marginTop: {xs: 3, md: "3%"},
-              lineHeight: {xs:"35px",md:"45px"},
+              marginTop: { xs: 3, md: "3%" },
+              lineHeight: { xs: "35px", md: "45px" },
               transition: "opacity 1s ease-in-out",
-          opacity: isVisible ? 1 : 0,
-          fontFamily: "'Mont-Bold', sans-serif"
+              opacity: isVisible ? 1 : 0,
+              fontFamily: "'Mont-Bold', sans-serif"
             }}
           >
             We Have Innovative and Time-Tested Solutions to Grow Your Business
@@ -83,15 +81,16 @@ function OurPortfolio({ onPress }) {
               marginTop: "8%",
 
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "43%" },
+              // width: { xs: "100%", sm: "80%", md: "60%", lg: "43%" },
+              width: "12em",
               paddingLeft: "2%",
               paddingRight: "2%",
               borderRadius: "5px",
               textTransform: "none",
               fontSize: "16px",
-              fontWeight: "400",
+              fontWeight: "600",
               background: "#18B0E6",
-              boxShadow:'none',
+              boxShadow: 'none',
               "&:hover": {
 
                 backgroundColor: "#153A5F",

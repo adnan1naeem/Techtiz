@@ -15,8 +15,8 @@ function List({ listone, textColor }) {
 
                 <Typography sx={{
                     color: textColor,
-                    fontSize: {xs:"0.9em",sm:'1.2em'},
-                    fontWeight: '300',
+                    fontSize: { xs: "0.9em", sm: '1em' },
+                    fontWeight: '600',
                     width: '100%',
                     fontFamily: "Mont-Regular, Sans-serif",
                 }}>

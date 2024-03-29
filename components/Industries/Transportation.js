@@ -19,7 +19,7 @@ function Transportation({ onPress }) {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -35,33 +35,33 @@ function Transportation({ onPress }) {
   }, []);
   return (
     <Box
-    ref={weeksRef}
+      ref={weeksRef}
       sx={{ display: "flex", justifyContent: "center", alignContent: "center" }}
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "100%", md: "100%", lg: "33rem" },
-          height: { xs: "42rem", sm: "39rem", md: "38rem", lg: "38rem" },
+          width: { xs: "22rem", sm: "100%", md: "100%", lg: "36rem" },
+          height: { xs: "42rem", sm: "39rem", md: "38rem", lg: "33rem" },
           background: "none",
           boxShadow: "none",
           '@media screen and (min-width: 1700px)': {
-            width:'35rem'           
-             },
-             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width: "36rem",
-              
-              },
+            width: '35rem'
+          },
+          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+            width: "36rem",
+
+          },
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
           <Typography
             sx={{
               color: "#F8F8F8",
-              fontSize: {xs:"1.3em",sm:"2.2em"},
+              fontSize: { xs: "1.3em", sm: "2.2em" },
               fontWeight: "600",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
-              fontFamily:"Mont-Bold, Sans-serif",
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             Transportation and Logistics
@@ -69,10 +69,10 @@ function Transportation({ onPress }) {
           <Typography
             sx={{
               color: "#6EC1E4",
-              fontSize: {xs:"0.9em",sm:"1.1em"},
-              fontWeight: "300",
+              fontSize: { xs: "0.9em", sm: "1.1em" },
+              fontWeight: "500",
               marginTop: "2%",
-              fontFamily:"Mont-Regular, Sans-serif",
+              fontFamily: "Mnt-Regular, Sans-serif",
             }}
           >
             Convenient logistics and transportation solutions that save cost
@@ -83,14 +83,14 @@ function Transportation({ onPress }) {
               fontSize: "1.3em",
               fontWeight: "bold",
               marginTop: "7%",
-              borderLeft: {xs: "5px solid #18B0E6", sm:"10px solid #18B0E6"},
+              borderLeft: { xs: "5px solid #18B0E6", sm: "10px solid #18B0E6" },
               height: "18px",
               lineHeight: "18px",
               paddingLeft: "10px",
               paddingTop: "-10px%",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
-              fontFamily:"Mont-Bold, Sans-serif",
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             What we offer
@@ -98,13 +98,13 @@ function Transportation({ onPress }) {
           <Typography
             sx={{
               color: "#F8F8F8",
-              fontSize: {xs: "19px",sm:"21px"},
+              fontSize: { xs: "19px", sm: "21px" },
               fontWeight: "600",
               lineHeight: "29px",
               marginTop: "5%",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
-              fontFamily:"Mont-Bold, Sans-serif",
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             Development of software for management distribution
@@ -127,14 +127,14 @@ function Transportation({ onPress }) {
             onClick={onPress}
             sx={{
               marginTop: "8%",
-              ml:'3%',
+              ml: '3%',
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2%" },
               width: { xs: "90%", sm: "40%", md: "60%", lg: "40%" },
               paddingLeft: "1%",
               paddingRight: "1%",
               borderRadius: 1,
               textTransform: "none",
-              fontSize: "16px",
+              fontSize: "17px",
               fontWeight: "400",
               background: "none",
               boxShadow: "none",
@@ -142,7 +142,7 @@ function Transportation({ onPress }) {
               border: "1px solid #6EC1E4",
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 border: "2px solid #6EC1E4",
-                width:'38%'
+                width: '38%'
               },
               "&:hover": {
                 backgroundColor: "#6EC1E4",
@@ -150,7 +150,7 @@ function Transportation({ onPress }) {
               },
             }}
           >
-            Discuss now &nbsp; 
+            Discuss now &nbsp;
           </Button>
         </CardContent>
       </Card>

@@ -29,24 +29,27 @@ function Portfolios() {
             justifyContent: "center",
             gap: "5%",
             flexWrap: "wrap",
-            mb:'4%'
+            mb: '4%'
           }}
         >
-          <OurPortfolio   onPress={handleClick} />
+          <OurPortfolio onPress={handleClick} />
           <Box
             sx={{
               width: { xs: "100%", sm: "80%", md: "50%", lg: "40%", xl: "35%" },
-              mt:'-1%',
+              mt: '-1%',
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
               '@media screen and (min-width: 1700px)': {
-               width:'33%'
-                 },
-                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width:'44%'
-              
+                width: '33%'
               },
-           
+              "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+                width: '44%'
+
+              },
+              '@media screen and (max-width: 1103px)': {
+                marginTop: "-4rem"
+              },
+
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -58,11 +61,11 @@ function Portfolios() {
             />
           </Box>
         </Box>
-        <AllPortfolios/>
+        <AllPortfolios />
         <div id="contact-section" ref={contactSectionRef}>
-          <SalesTeam/>
+          <SalesTeam />
         </div>
-      
+
       </Box>
     </div>
   );

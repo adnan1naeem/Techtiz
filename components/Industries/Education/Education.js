@@ -59,6 +59,7 @@ function Education({ onPress }) {
           pr: 3,
           lineHeight: { xs: "20px", sm: "30px" },
           fontFamily: "Mont-Regular, Sans-serif",
+          marginBottom: "1rem"
         }}
       >
         Digital learning is the new normal. We help to create value through
@@ -77,10 +78,10 @@ function Education({ onPress }) {
         <Application onPress={onPress} />
         <Box
           sx={{
-            width: { xs: "90%", sm: "70%", md: "40%", lg: "40%", xl: "35%" },
-            mt: { md: '7%', lg: '4%', xl: '1%' },
+            width: { xs: "90%", sm: "70%", md: "40%", lg: "38%", xl: "35%" },
+            mt: { md: '7%', lg: '1%', xl: '1%' },
             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-              width: "45%",
+              width: "42%",
               mt: '2%'
 
             },

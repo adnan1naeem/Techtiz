@@ -63,10 +63,8 @@ function MVPsStartup({ onPress }) {
             sx={{
               color: "#6EC1E4",
               fontSize: { xs: "0.9em", sm: "1.1em" },
-              fontWeight: "300",
+              fontWeight: "600",
               marginTop: "1%",
-              pl: 3,
-              pr: 3,
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "'Mont-Regular', sans-serif"
@@ -133,20 +131,20 @@ function MVPsStartup({ onPress }) {
               paddingRight: "1%",
               borderRadius: '2px',
               textTransform: "none",
-              fontSize: "16px",
+              fontSize: "17px",
               fontWeight: "400",
               background: "none",
               boxShadow: "none",
               color: "F8F8F8",
-             
-              border: "1px solid #18B0E6",
+
+              border: "1px solid #6ec1e4",
               "&:hover": {
                 backgroundColor: "#6EC1E4",
                 color: "#595959",
               },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                border: "2px solid #18B0E6",
-              
+                border: "2px solid #6ec1e4",
+
               },
             }}
           >

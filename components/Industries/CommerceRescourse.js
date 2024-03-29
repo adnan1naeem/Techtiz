@@ -52,7 +52,7 @@ function CommerceRescourse({ onPress }) {
             lg: "70rem",
             xl: "70rem",
           },
-          height: { xs: "55rem", sm: "70rem", md: "60rem", lg: "33rem" },
+          height: { xs: "55rem", sm: "70rem", md: "60rem", lg: "31rem" },
           borderRadius: "60px",
           background: "#153A5F",
           boxShadow: "none",
@@ -68,14 +68,15 @@ function CommerceRescourse({ onPress }) {
             alignItems: "center",
             justifyContent: "center",
             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                gap:'6%'
-              
-              },
+              gap: '6%'
+
+            },
           }}
         >
           <Box
             sx={{
               width: { xs: "90%", sm: "60%", md: "46%", lg: "31%", xl: "30%" },
+
               mt: {
                 xs: "-36%",
                 sm: "-10%",
@@ -83,7 +84,7 @@ function CommerceRescourse({ onPress }) {
                 lg: "-10%",
                 xl: "-10%",
               },
-              
+
             }}
           >
             <img
@@ -94,16 +95,17 @@ function CommerceRescourse({ onPress }) {
           </Box>
           <Box
             sx={{
-              pt: "7%",
+              pt: "5%",
               display: "flex",
             }}
           >
             <Card
               sx={{
-                width: { xs: "22rem", sm: "28rem", md: "33rem", lg: "33rem" },
+                width: { xs: "22rem", sm: "28rem", md: "33rem", lg: "32rem" },
                 height: { xs: "38rem", sm: "39xrem", md: "38rem", lg: "34rem" },
                 background: "none",
                 boxShadow: "none",
+                marginLeft: "1rem"
               }}
             >
               <CardContent sx={{ display: "flex", flexDirection: "column" }}>
@@ -174,15 +176,15 @@ function CommerceRescourse({ onPress }) {
                     background: "none",
                     boxShadow: "none",
                     color: "F8F8F8",
-                    border: "1px solid #18B0E6",
+                    border: "1px solid #6ec1e4",
                     "&:hover": {
                       backgroundColor: "#6EC1E4",
-                color: "#595959",
+                      color: "#595959",
                     },
                     "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                      border: "2px solid #18B0E6",
-              
-              },
+                      border: "2px solid #6ec1e4",
+
+                    },
                   }}
                 >
                   Discuss now &nbsp; &nbsp;

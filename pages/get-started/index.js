@@ -8,7 +8,7 @@ function Index() {
   const [isHovered, setIsHovered] = React.useState(false);
   return (
     <Box sx={{
-      marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "13%" }
+      marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "10%" }
     }}>
       <Box
         sx={{
@@ -27,12 +27,15 @@ function Index() {
         <Started />
         <Box
           sx={{
-            width: { xs: "90%", sm: "75%", md: "38%", lg: "38%", xl: "28%" },
+            width: { xs: "90%", sm: "60%", md: "38%", lg: "38%", xl: "28%" },
             transform: isHovered ? "translateY(-12px)" : "translateY(0)",
             transition: "transform 1s ease",
-            marginTop: { xs: "-45%", sm: "-40%", md: "0%", lg: "0" },
+            marginTop: { xs: "-45%", sm: "-30%", md: "0%", lg: "0" },
             "@media screen and (min-width: 1700px)": {
               width: '28%'
+            },
+            "@media screen and (max-width: 380px)": {
+              marginTop: "-60%"
             },
           }}
           onMouseEnter={() => setIsHovered(true)}

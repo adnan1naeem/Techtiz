@@ -3,8 +3,8 @@ import { Box } from "@mui/material";
 import MVPsStartup from "../MVPs/MVPsStartup";
 import Image from "next/image";
 
-function MVPs({onPress}) {
-    
+function MVPs({ onPress }) {
+
     return (
         <Box
             sx={{
@@ -23,9 +23,9 @@ function MVPs({onPress}) {
                 sx={{
                     width: { xs: "100%", sm: "80%", md: "50%", lg: "40%", xl: "35%" },
                     "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width: "45%",
-              
-              },
+                        width: "44%",
+
+                    },
                 }}
             >
                 <img

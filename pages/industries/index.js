@@ -51,9 +51,19 @@ function Industries() {
                 lg: "42%",
                 xl: "38%",
               },
+              "@media screen  and (min-width: 1700px)": {
+                width: "30%",
+              },
+              "@media screen  and (max-width: 380px)": {
+                marginTop: "-12%"
+              },
+              "@media screen and (min-width: 900px) and (max-width: 936px)": {
+                marginTop: "-18%",
+                width: '45%'
+              },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
-              marginTop: { xs: "-15%", sm: "-15%", md: "1%", lg: "1%" },
+              marginTop: { xs: "-28%", sm: "-15%", md: "1%", lg: "1%" },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 width: "43%",
                 mt: '2%'
@@ -79,7 +89,7 @@ function Industries() {
             flexDirection: { sm: "column-reverse", md: "row" },
             flexWrap: "wrap",
             justifyContent: "center",
-            paddingTop: "8%",
+            paddingTop: "5%",
             paddingBottom: "3%",
             "@media screen and (min-width: 1700px)": {
               pt: "4%",
@@ -91,7 +101,7 @@ function Industries() {
               width: { xs: "100%", sm: "80%", md: "30%", lg: "40%", xl: "35%" },
               marginTop: 5,
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width: "46%",
+                width: "43%",
 
               },
             }}

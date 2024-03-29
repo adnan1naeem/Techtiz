@@ -41,7 +41,7 @@ function Application({ onPress }) {
       <Card
         sx={{
           width: { xs: "21rem", sm: "35rem", md: "30rem", lg: "35rem" },
-          height: { xs: "30rem", sm: "29rem", md: "30rem", lg: "30rem" },
+          height: { xs: "30rem", sm: "29rem", md: "30rem", lg: "27rem" },
           borderRadius: "10px",
           background: "#F8F8F8",
           boxShadow: "none",
@@ -63,7 +63,7 @@ function Application({ onPress }) {
               lineHeight: "18px",
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
-              fontFamily:"Mont-Bold, Sans-serif",
+              fontFamily: "Mont-Bold, Sans-serif",
             }}
           >
             What we offer
@@ -76,7 +76,7 @@ function Application({ onPress }) {
               mt: "3%",
               ml: "1%",
               transition: "opacity 1s ease-in-out",
-              fontFamily:"Mont-Bold, Sans-serif",
+              fontFamily: "Mont-Bold, Sans-serif",
               opacity: isVisible ? 1 : 0,
             }}
           >
@@ -98,7 +98,8 @@ function Application({ onPress }) {
             sx={{
               marginTop: "8%",
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+              // width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+              width: "12em",
               paddingLeft: "1%",
               paddingRight: "1%",
               borderRadius: "5px",
@@ -109,15 +110,15 @@ function Application({ onPress }) {
               boxShadow: "none",
               color: "white",
               border: "1px solid #18B0E6",
-              fontFamily:"Mont-Regular, Sans-serif",
+              fontFamily: "Mont-Regular, Sans-serif",
               "&:hover": {
                 backgroundColor: "#153A5F",
                 border: "1px solid #153A5F",
               },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                fontFamily:"Mont-Bold, Sans-serif",
-                width:'39%'
-              
+                fontFamily: "Mont-Bold, Sans-serif",
+                width: '39%'
+
               },
             }}
           >
