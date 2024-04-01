@@ -40,7 +40,7 @@ function SocialNetworking({ onPress }) {
       <Card
         sx={{
           width: { xs: "21rem", sm: "35rem", md: "30rem", lg: "33rem" },
-          height: { xs: "30rem", sm: "29rem", md: "30rem", lg: "28rem" },
+          height: { xs: "23rem", sm: "25rem", md: "26rem", lg: "28rem" },
           borderRadius: "10px",
           background: "#F8F8F8",
           boxShadow: "none",
@@ -100,7 +100,8 @@ function SocialNetworking({ onPress }) {
               marginTop: "8%",
 
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+              // width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+              width: "12em",
               paddingLeft: "1%",
               paddingRight: "1%",
               borderRadius: "5px",

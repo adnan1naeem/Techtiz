@@ -52,7 +52,7 @@ function CommerceRescourse({ onPress }) {
             lg: "70rem",
             xl: "70rem",
           },
-          height: { xs: "55rem", sm: "70rem", md: "60rem", lg: "31rem" },
+          height: { xs: "50rem", sm: "53rem", md: "56rem", lg: "31rem" },
           borderRadius: "60px",
           background: "#153A5F",
           boxShadow: "none",
@@ -75,12 +75,12 @@ function CommerceRescourse({ onPress }) {
         >
           <Box
             sx={{
-              width: { xs: "90%", sm: "60%", md: "46%", lg: "31%", xl: "30%" },
+              width: { xs: "60%", sm: "50%", md: "46%", lg: "31%", xl: "30%" },
 
               mt: {
-                xs: "-36%",
-                sm: "-10%",
-                md: "-10rem",
+                xs: "-40%",
+                sm: "-35%",
+                md: "-12rem",
                 lg: "-10%",
                 xl: "-10%",
               },
@@ -166,7 +166,8 @@ function CommerceRescourse({ onPress }) {
                   sx={{
                     marginTop: "8%",
                     padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2%" },
-                    width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+                    // idth: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+                    width: "12em",
                     paddingLeft: "1%",
                     paddingRight: "1%",
                     borderRadius: '2px',
@@ -176,7 +177,7 @@ function CommerceRescourse({ onPress }) {
                     background: "none",
                     boxShadow: "none",
                     color: "F8F8F8",
-                    border: "1px solid #6ec1e4",
+                    border: "2px solid #6ec1e4",
                     "&:hover": {
                       backgroundColor: "#6EC1E4",
                       color: "#595959",

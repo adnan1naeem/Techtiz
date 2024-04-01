@@ -78,8 +78,8 @@ function Education({ onPress }) {
         <Application onPress={onPress} />
         <Box
           sx={{
-            width: { xs: "90%", sm: "70%", md: "40%", lg: "38%", xl: "35%" },
-            mt: { md: '7%', lg: '1%', xl: '1%' },
+            width: { xs: "90%", sm: "60%", md: "40%", lg: "38%", xl: "35%" },
+            mt: { xs: "4%", md: '7%', lg: '1%', xl: '1%' },
             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
               width: "42%",
               mt: '2%'

@@ -41,7 +41,7 @@ function MVPsStartup({ onPress }) {
       <Card
         sx={{
           width: { xs: "22rem", sm: "32rem", md: "23rem", lg: "33rem" },
-          height: { xs: "38rem", sm: "39rem", md: "38rem", lg: "34rem" },
+          height: { xs: "30rem", sm: "30rem", md: "38rem", lg: "34rem" },
           background: "none",
           boxShadow: "none",
         }}
@@ -126,7 +126,8 @@ function MVPsStartup({ onPress }) {
             sx={{
               marginTop: "8%",
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2%" },
-              width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+              // width: { xs: "100%", sm: "80%", md: "60%", lg: "40%" },
+              width: "12em",
               paddingLeft: "1%",
               paddingRight: "1%",
               borderRadius: '2px',
@@ -137,7 +138,7 @@ function MVPsStartup({ onPress }) {
               boxShadow: "none",
               color: "F8F8F8",
 
-              border: "1px solid #6ec1e4",
+              border: "2px solid #6ec1e4",
               "&:hover": {
                 backgroundColor: "#6EC1E4",
                 color: "#595959",

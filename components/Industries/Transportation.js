@@ -41,7 +41,7 @@ function Transportation({ onPress }) {
       <Card
         sx={{
           width: { xs: "22rem", sm: "100%", md: "100%", lg: "36rem" },
-          height: { xs: "42rem", sm: "39rem", md: "38rem", lg: "33rem" },
+          height: { xs: "32rem", sm: "39rem", md: "38rem", lg: "33rem" },
           background: "none",
           boxShadow: "none",
           '@media screen and (min-width: 1700px)': {
@@ -129,7 +129,8 @@ function Transportation({ onPress }) {
               marginTop: "8%",
               ml: '3%',
               padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "2%" },
-              width: { xs: "90%", sm: "40%", md: "60%", lg: "40%" },
+              // width: { xs: "90%", sm: "40%", md: "60%", lg: "40%" },
+              width: "12em",
               paddingLeft: "1%",
               paddingRight: "1%",
               borderRadius: 1,
@@ -139,7 +140,7 @@ function Transportation({ onPress }) {
               background: "none",
               boxShadow: "none",
               color: "#F8F8F8",
-              border: "1px solid #6EC1E4",
+              border: "2px solid #6EC1E4",
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 border: "2px solid #6EC1E4",
                 width: '38%'

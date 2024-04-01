@@ -63,7 +63,7 @@ function Industries() {
               },
               transform: isHovered ? "translateY(-12px)" : "translateY(0)",
               transition: "transform 1s ease",
-              marginTop: { xs: "-28%", sm: "-15%", md: "1%", lg: "1%" },
+              marginTop: { xs: "-28%", sm: "-14%", md: "1%", lg: "1%" },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 width: "43%",
                 mt: '2%'
@@ -86,7 +86,7 @@ function Industries() {
           sx={{
             background: "#153A5F",
             display: "flex",
-            flexDirection: { sm: "column-reverse", md: "row" },
+            flexDirection: { xs: "column-reverse", md: "row" },
             flexWrap: "wrap",
             justifyContent: "center",
             paddingTop: "5%",
@@ -99,9 +99,12 @@ function Industries() {
           <Box
             sx={{
               width: { xs: "100%", sm: "80%", md: "30%", lg: "40%", xl: "35%" },
-              marginTop: 5,
+              marginTop: 2,
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 width: "43%",
+              },
+              "@media screen and (min-width: 600px) and (max-width: 890px)": {
+                marginTop: -10,
 
               },
             }}
@@ -109,7 +112,7 @@ function Industries() {
             <img
               src="https://techtiz.co/wp-content/uploads/2023/12/Transportation.webp"
               alt=""
-              style={{ width: "95%" }}
+              style={{ width: "100%" }}
             />
           </Box>
           <Transportation onPress={handleClick} />

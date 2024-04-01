@@ -41,7 +41,7 @@ function Application({ onPress }) {
       <Card
         sx={{
           width: { xs: "21rem", sm: "35rem", md: "30rem", lg: "35rem" },
-          height: { xs: "30rem", sm: "29rem", md: "30rem", lg: "27rem" },
+          height: { xs: "24rem", sm: "24rem", md: "30rem", lg: "27rem" },
           borderRadius: "10px",
           background: "#F8F8F8",
           boxShadow: "none",

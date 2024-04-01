@@ -11,7 +11,7 @@ function FooterLogoCard() {
             sx: "20rem",
             sm: "29rem",
             md: "45rem",
-            lg: "17rem",
+            lg: "19rem",
             xl: "19rem",
           },
           height: "17rem",

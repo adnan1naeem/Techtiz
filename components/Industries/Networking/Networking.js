@@ -81,10 +81,10 @@ function Networking({ onPress }) {
             width: { xs: "100%", sm: "80%", md: "40%", lg: "35%", xl: "30%" },
             marginTop: 5,
             "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                width: "40%",
-              
-              },
-            
+              width: "40%",
+
+            },
+
           }}
         >
           <img

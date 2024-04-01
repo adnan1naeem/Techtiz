@@ -15,7 +15,7 @@ function Footer() {
         sx={{
           display: "flex",
           ml: { xs: "0", sm: "5%", md: "1%" },
-          gap: { xs: "2%", md: "2%" },
+          gap: { xs: "2%", md: "2%", lg: "4%" },
           justifyContent: "center",
           flexWrap: "wrap",
           paddingBottom: "5%",
@@ -65,8 +65,8 @@ function Footer() {
           display: "flex",
           justifyContent: "space-between",
           flexWrap: "wrap",
-          paddingLeft: { xs: "8%", lg: "8%", xl: "18%" },
-          paddingRight: { xs: "10%", lg: "8%" },
+          paddingLeft: { xs: "8%", lg: "10.5%", xl: "18%" },
+          paddingRight: { xs: "10%", lg: "10.5%" },
           paddingTop: "3%",
           paddingBottom: "1.5%",
         }}

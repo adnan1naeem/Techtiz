@@ -12,16 +12,18 @@ function MVPs({ onPress }) {
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "center",
+                alignItems: "center",
                 gap: "3%",
                 paddingTop: "5%",
                 paddingBottom: "2%",
                 marginTop: "1%",
                 pt: "6%",
+                flexDirection: { xs: "column-reverse", lg: "row" }
             }}
         >
             <Box
                 sx={{
-                    width: { xs: "100%", sm: "80%", md: "50%", lg: "40%", xl: "35%" },
+                    width: { xs: "100%", sm: "80%", md: "50%", lg: "40%", xl: "25%" },
                     "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                         width: "44%",
 
