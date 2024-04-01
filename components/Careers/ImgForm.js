@@ -87,7 +87,7 @@ const ImgForm = () => {
               type="file"
               onChange={handleFileChange}
               accept="application/pdf"
-            // style={{ color: "red", }}
+              style={{ marginRight: "5px", fontWeight: "500" }}
             />
           </div>
           <div className={styles.button}>

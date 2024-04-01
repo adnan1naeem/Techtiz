@@ -16,8 +16,8 @@
     color: white;
     font-size: 20px;
     font-weight: bold;
-    top: 300px;
-    left: 160px;
+    top: 260px;
+    left: 10px;
     font-family: "Mont-Bold", Sans-serif;
 }
 
@@ -27,8 +27,8 @@
     color: #FFFFFF;
     font-family: "Mont-Bold", Sans-serif;
     text-transform: uppercase;
-    top: 320px;
-    left: 160px;
+    top: 270px;
+    left: 10px;
     line-height: 18px;
     height: 100px;
     padding-top: 2em;
@@ -39,8 +39,9 @@
     position: absolute;
     color: #FFFFFF;
     font-family: "Mont-Regular", Sans-serif;
-    top: 430px;
-    left: 160px;
+    top: 380px;
+    left: 10px;
+    font-weight: 600;
     line-height: 14px;
     font-size: 1.1em;
     padding-top: 2em;
@@ -52,9 +53,11 @@
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: 540px;
-    left: 150px;
+    top: 480px;
+    left: 5px;
+    font-weight: 600;
     font-family: "Mont-Regular", Sans-serif;
+    
 }
 
 .Careers_form {
@@ -97,6 +100,11 @@
     line-height: 40px;
     padding: 4px 12px;
     width: 20rem;
+    margin-top: 15px;
+    
+}
+.group_second{
+    margin-left: 25px;
 }
 
 .email::placeholder {
@@ -155,8 +163,9 @@
     font-family: 'Mont bold', Sans-serif;
 }
 .file::file-selector-button{
-  padding: 1em 0.4em;
+  padding: 0.9em 0.4em;
   border: none;
+  border-radius: 3px;
   /* line-height: 25px; */
 }
 .file::file-selector-button:hover{
@@ -228,8 +237,6 @@
     }
 
 
-
-
 }
 
 
@@ -245,11 +252,15 @@
         margin-left: 0%;
         margin-top: 15px;
         left: 4px;
+        top: 540px;
+ 
     }
 
     .career {
         margin-left: 0%;
         left: 10px;
+         top: 300px;
+   
     }
 
     .join_techtiz {
@@ -265,6 +276,8 @@
         left: 10px;
         font-size: 1em;
         margin-top: 20px;
+        top: 430px;
+    
     }
 
     .first_name {
