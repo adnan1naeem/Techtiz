@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 
-function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, mrstep, mlstep }) {
+function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, mrstep, mlstep, widthImg, mrlast }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -42,22 +42,24 @@ function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, 
           <Box
             sx={{
               height: { xs: "12rem", sm: "10rem", md: "9rem", lg: "11rem" },
-              width: { xs: "12rem", sm: "60rem", md: "50rem", lg: "65rem" },
+              width: widthImg,
               mt: "2%",
               mr: mr,
               ml: ml,
-              "@media screen and (min-width: 1700px)": {
-                width: "210%",
-              },
+              // "@media screen and (min-width: 1500px)": {
+              //   width: "210%",
+              // },
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 width: width,
-                height: height
+                height: height,
+                mr: mrlast,
 
               },
               "@media screen and (min-width: 1300px)": {
                 mr: mrstep,
                 ml: mlstep
               }
+
             }}
           >
             <img src={mainImage} alt="" style={{ height: "100%" }} />
@@ -86,7 +88,7 @@ function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, 
                 },
               }}
             >
-              {description.split('\n').map((item, key) => {
+              {(description ?? "").split(/\r?\n/).map((item, key) => {
                 return <span key={key}>{item}<br /></span>
               })}
             </Typography>

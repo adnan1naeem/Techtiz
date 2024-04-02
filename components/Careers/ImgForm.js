@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../../styles/CareerForm.module.css";
 import axios from "axios";
 import { Alert } from '@mui/material';
@@ -10,6 +10,7 @@ const ImgForm = () => {
   const [file, setFile] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const fileInputRef = useRef(null);
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -25,6 +26,7 @@ const ImgForm = () => {
           setFile({ content: result });
         })(reader.result);
     }
+
   };
 
   const handleSubmit = async (event) => {
@@ -34,14 +36,16 @@ const ImgForm = () => {
       await axios.request({
         url: "/api/emailHandler",
         method: "post",
-        data: { email: email, content: file.content },
+        data: { email: email, content: file?.content },
         maxBodyLength: Infinity,
       });
       setIsLoading(false);
       setIsSubmitted(true);
-      setEmail(" ");
-      setFile("null");
-      // setTimeout(setIsSubmitted(false), 6000)
+      setEmail("");
+      setFile(null);
+      setTimeout(() => setIsSubmitted(false), 3000);
+      event.target.reset();
+      fileInputRef.current.value = "";
 
     } catch (error) {
       console.error("Error:", error);
@@ -49,13 +53,15 @@ const ImgForm = () => {
     }
   };
 
+
+
   return (
     <div className={styles.main}>
       <div className={styles.career}>Careers</div>
 
       <div className={styles.join_techtiz}>
         <h1 className={styles.first_name}>Join Techtiz's</h1>
-        <h2 className={styles.last_name}>Flourishing community</h2>
+        <h2 className={styles.last_name}>Flourishing Community.</h2>
       </div>
 
       <div className={styles.text_line}>
@@ -66,48 +72,52 @@ const ImgForm = () => {
       </div>
 
       <div className={styles.form_section}>
-        <form className={styles.Careers_form} onSubmit={handleSubmit}>
-          <div className={styles.group_one}>
-            <label htmlFor="email">Enter Your Email</label>
-            <input
-              className={styles.email}
-              type="email"
-              placeholder="abc@gmail.com"
-              value={email}
-              required
-              onChange={handleEmailChange}
-            />
-          </div>
-          <div className={styles.group_second}>
-            <label for="fileUpload">Upload Your CV</label>
-            <input
-              id="fileUpload"
-              required
-              className={styles.file}
-              type="file"
-              onChange={handleFileChange}
-              accept="application/pdf"
-              style={{ marginRight: "5px", fontWeight: "500" }}
-            />
-          </div>
-          <div className={styles.button}>
-            <button type="submit" className={styles.submit_button} disabled={isLoading}>
-              {isLoading ? 'Submitting...' : 'Submit'}
-              <IoMdArrowRoundUp />
-            </button>
-          </div>
-          <div>
-            {isSubmitted && (
-              <Alert
-                sx={{ mt: "100px", ml: "-5.4rem" }}
-                icon={<CheckIcon fontSize="inherit" />}
-                severity="success"
-              >
-                Your Form Submitted Successfully
-              </Alert>
-            )}
-          </div>
-        </form>
+        <div>
+          <form className={styles.Careers_form} onSubmit={handleSubmit}>
+            <div className={styles.group_one}>
+              <label htmlFor="email">Enter Your Email</label>
+              <input
+                className={styles.email}
+                type="email"
+                placeholder="abc@gmail.com"
+                value={email}
+                required
+                onChange={handleEmailChange}
+              />
+            </div>
+            <div className={styles.group_second}>
+              <label for="fileUpload">Upload Your CV</label>
+              <input
+                id="fileUpload"
+                required
+                ref={fileInputRef}
+                className={styles.file}
+                type="file"
+                onChange={handleFileChange}
+                accept="application/pdf"
+                style={{ marginRight: "5px", fontWeight: "500" }}
+              />
+            </div>
+            <div className={styles.button}>
+              <button type="submit" className={isLoading ? styles.submit : styles.submit_button} disabled={isLoading}>
+                {isLoading ? 'Submitting...' : 'Submit'}
+                <IoMdArrowRoundUp />
+              </button>
+            </div>
+          </form>
+        </div>
+        <div>
+          {isSubmitted && (
+            <Alert
+              sx={{ mt: "110px", ml: "-39.5rem", width: "20rem" }}
+              icon={<CheckIcon fontSize="inherit" />}
+              severity="success"
+            >
+              Your Form Submitted Successfully
+            </Alert>
+          )}
+        </div>
+
 
       </div>
 

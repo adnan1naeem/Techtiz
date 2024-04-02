@@ -1,10 +1,10 @@
 .main {
     background: linear-gradient(rgba(25, 50, 76, 0.7), rgba(25, 50, 76, 0.7)),
-        url(https://techtiz.co/wp-content/uploads/2023/10/senior-manager-is-sitting-boardroom-with-multiracial-colleagues-discussing-project.jpg);
+    url(https://techtiz.co/wp-content/uploads/2023/10/senior-manager-is-sitting-boardroom-with-multiracial-colleagues-discussing-project.jpg);
     background-position: center;
     width: 100%;
     background-size: cover;
-    height: 1050px;
+    height: 850px;
     position: relative;
 }
 
@@ -97,7 +97,7 @@
     font-family: "Mont-Regular", Sans-serif;
     font-size: 15px;
     font-weight: 400;
-    line-height: 40px;
+    height: 50px;
     padding: 4px 12px;
     width: 20rem;
     margin-top: 15px;
@@ -124,11 +124,11 @@
 }
 
 .submit_button {
-    margin-top: 50%;
+    margin-top: 51.5%;
     background-color: #18b0e6;
     color: #FFFFFF;
     border: none;
-    height: 45px;
+    height: 47px;
     width: 170%;
     border-radius: 4px;
     font-family: "Mont Regular", Sans-serif;
@@ -141,6 +141,24 @@
     align-items: center;
     transition: all 0.3s;
 
+}
+.submit{
+    margin-top: 30%;
+    background-color: #18b0e6;
+    color: #FFFFFF;
+    border: none;
+    height: 47px;
+    width: 170%;
+    border-radius: 4px;
+    font-family: "Mont Regular", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
 }
 
 .submit_button:hover {
@@ -155,12 +173,14 @@
     font-size: 2.7em;
     font-weight: bold;
     font-family: 'Mont bold', Sans-serif;
+   
 }
 
 .last_name {
     font-size: 2em;
     font-weight: bold;
     font-family: 'Mont bold', Sans-serif;
+     text-transform: none;
 }
 .file::file-selector-button{
   padding: 0.9em 0.4em;
@@ -173,6 +193,31 @@
     transition: 0.9s;
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+.main {
+    height: 700px;
+} 
+.career{
+    margin-left: 8%;
+    top: 190px;
+}
+.join_techtiz {
+    margin-left: 8%;
+    top: 200px;
+}
+.text_line{
+    margin-left: 8%;
+    top: 302px;
+}
+.form_section {
+    margin-left: 8%;
+    top: 400px;
+}
+.submit_button{
+    margin-top: 47%;
+}
+
+ }
 
 @media screen and (max-width: 1160px) {
     .form_section {
@@ -211,20 +256,24 @@
 @media screen and (max-width: 960px) {
     .form_section {
         left: 4px;
+        margin-left: 2%;
     }
 
     .career {
         left: 10px;
+        margin-left: 2%;
     }
 
     .join_techtiz {
         left: 10px;
         line-height: 20px;
+        margin-left: 2%;
     }
 
     .text_line {
         left: 10px;
         line-height: 20px;
+        margin-left: 2%;
     }
 
     .first_name {
@@ -246,37 +295,38 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        height: 600px;
     }
 
     .form_section {
         margin-left: 0%;
         margin-top: 15px;
         left: 4px;
-        top: 540px;
+        top: 340px;
  
     }
 
     .career {
-        margin-left: 0%;
+        margin-left: 1%;
         left: 10px;
-         top: 300px;
+        top: 125px;
    
     }
 
     .join_techtiz {
-        top: 385px;
+        top: 170px;
         left: 10px;
         line-height: 20px;
-        margin-left: 0%;
+        margin-left: 1%;
         padding-top: 0em;
     }
 
     .text_line {
-        margin-left: 0%;
+        margin-left: 1%;
         left: 10px;
         font-size: 1em;
         margin-top: 20px;
-        top: 430px;
+        top: 220px;
     
     }
 
@@ -297,6 +347,7 @@
     .submit_button {
         width: 150%;
         margin-left: 10%;
+        margin-top: 48%;
     }
     .Careers_form {
         display: flex;
@@ -306,6 +357,26 @@
         gap: 30%;
        
     }
-   
-
+}
+@media screen and (max-width: 600px){
+.Careers_form {
+        gap: 1%;
+    
+    }
+    .group_second{
+    margin-left: 10px;
+}
+}
+@media screen and (max-width: 400px){
+.Careers_form {
+        gap:0%;
+       
+    }
+     .submit_button {
+        width: 130%;
+        margin-left: 2%;
+    }
+    .group_second{
+    margin-left: 10px;
+}
 }

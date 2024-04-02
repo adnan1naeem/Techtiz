@@ -160,8 +160,7 @@ function Mobile() {
             },
             "@media screen and (max-width: 600px)": {
               mt: '-2%',
-              ml: "5%",
-              mr: "5%"
+
             },
           }} onScroll={handleRightScroll} className={classes.rightPaper}>
             <CrossLine

@@ -50,6 +50,7 @@ function Hiring() {
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Bold', sans-serif",
+          lineHeight: "30px"
         }}
       >
         Techtiz Hiring Process
@@ -59,8 +60,8 @@ function Hiring() {
           textAlign: "center",
           color: "#153A5F",
           fontSize: "1em",
-          fontWeight: "400",
-          marginTop: "1%",
+          fontWeight: "600",
+          marginTop: "2%",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Regular', sans-serif",
@@ -80,8 +81,8 @@ function Hiring() {
       >
         <Box
           sx={{
-            width: { xs: "21em", sm: "35em", md: "19em", lg: "18rem" },
-            marginTop: "9%",
+            width: { xs: "21em", sm: "35em", md: "19em", lg: "20rem" },
+            marginTop: { xs: "6%", lg: "14%" }
           }}
         >
           <Typography
@@ -101,8 +102,8 @@ function Hiring() {
             sx={{
               color: "#153A5F",
               fontSize: { xs: "0.9em", md: "1.1em" },
-              fontWeight: "400",
-              marginTop: "2%",
+              fontWeight: "600",
+              marginTop: "3%",
               textAlign: { xs: "center", sm: "left" },
               fontFamily: "'Mont-Regular', sans-serif",
             }}
@@ -114,8 +115,8 @@ function Hiring() {
         </Box>
         <Box
           sx={{
-            width: { xs: "22em", sm: "34em", md: "34em", lg: "44rem" },
-            marginTop: { xs: "10%", sm: "10%", md: "0", lg: "0" },
+            width: { xs: "22em", sm: "34em", md: "34em", lg: "43rem" },
+            marginTop: { xs: "10%", sm: "10%", md: "5%", lg: "1%" },
           }}
         >
           <img

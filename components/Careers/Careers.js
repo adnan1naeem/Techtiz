@@ -54,10 +54,11 @@ function Careers({ onPress }) {
           sx={{
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: "center",
-            gap: "2%",
+            justifyContent: { xs: 'left', lg: "center" },
+            gap: "9%",
             mt: '3%',
-            mb: '5%'
+            mb: '5%',
+            ml: { xs: 0, sm: "5%" }
           }}
         >
           <Box>
@@ -71,27 +72,27 @@ function Careers({ onPress }) {
             </Box>
           </Box>
           <Box onScroll={handleRightScroll} className={classes.rightPaper}>
-              <CrossLine
-                title="Recreational trips"
-                des="We believe in work-life balance, offering recreational trips to unwind."
-              />
-              <CrossLine
-                title="In-house lunch"
-                des="Enjoy our delicious in-house lunches together as part of our team."
-              />
-              <CrossLine
-                title="Paid certifications"
-                des="We invest in your growth with paid certifications to boost your skills."
-              />
-              <CrossLine
-                title="Health coverage"
-                des="Your well-being matters; that’s why we provide comprehensive health coverage."
-              />
+            <CrossLine
+              title="Recreational trips"
+              des="We believe in work-life balance, offering recreational trips to unwind."
+            />
+            <CrossLine
+              title="In-house lunch"
+              des="Enjoy our delicious in-house lunches together as part of our team."
+            />
+            <CrossLine
+              title="Paid certifications"
+              des="We invest in your growth with paid certifications to boost your skills."
+            />
+            <CrossLine
+              title="Health coverage"
+              des="Your well-being matters; that’s why we provide comprehensive health coverage."
+            />
 
-              <CrossLine
-                title="Medical leaves"
-                des="Take care of yourself with the peace of mind of medical leaves when needed."
-              />
+            <CrossLine
+              title="Medical leaves"
+              des="Take care of yourself with the peace of mind of medical leaves when needed."
+            />
           </Box>
         </Box>
       </Box>

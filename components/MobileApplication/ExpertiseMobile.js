@@ -35,7 +35,7 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
     <Box
       ref={weeksRef}
       sx={{
-        ml: { xs: "3%", sm: "2%" },
+        ml: { xs: "3%", sm: "-3%" },
         mr: { xs: "3%", sm: 0 },
         display: "flex",
         flexDirection: "column",
