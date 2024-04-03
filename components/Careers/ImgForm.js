@@ -95,13 +95,12 @@ const ImgForm = () => {
                 type="file"
                 onChange={handleFileChange}
                 accept="application/pdf"
-                style={{ marginRight: "5px", fontWeight: "500", }}
+                style={{ marginRight: "5px", fontWeight: "500", lineHeight: "2px" }}
               />
             </div>
             <div className={styles.button}>
               <button type="submit" className={styles.submit_button} disabled={isLoading}>
                 {isLoading ? 'Submitting...' : 'Submit'}
-                {/* Submitting... */}
                 <IoMdArrowRoundUp />
               </button>
             </div>
