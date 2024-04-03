@@ -23,7 +23,7 @@ function BusinessCard({ fontSize, mb, data, onClick, activeButton }) {
     <Box>
       <Card
         sx={{
-          height: { xs: "62rem", sm: "auto" },
+          height: { xs: "62rem", sm: "35rem", md: "auto" },
           width: "100%",
           borderRadius: "3px",
           background: "#F8F8F8",

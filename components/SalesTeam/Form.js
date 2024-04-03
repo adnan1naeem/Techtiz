@@ -49,8 +49,8 @@ function Form() {
       <div>
         <form ref={form} onSubmit={sendEmail}>
           <div style={{ marginBottom: "7px" }}>
-            <select className={styles.select} id="selection" name="question" required>
-              <option value="how">How Can we help you?</option>
+            <select className={styles.select} id="selection" name="question" required >
+              <option value="">How Can we help you?</option>
               <option value="web">Web Application</option>
               <option value="ui/ux">UI/UX</option>
               <option value="mob-app">Mobile Application</option>
@@ -100,7 +100,9 @@ function Form() {
               />
               <input
                 className={styles.input}
-                type="text"
+                type="number"
+                // pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                // pattern=".{11,11}"
                 placeholder="Phone"
                 name="from_phone"
                 required

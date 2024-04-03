@@ -17,7 +17,7 @@ function PartnerCard({ cardImage, title, description }) {
           <img src={cardImage} alt="this" style={{ width: "65%" }} />
           <Box sx={{ marginTop: "15%" }}>
             <Typography
-              sx={{ color: "#FFFFFF", fontSize: "27px", fontWeight: "600" ,   fontFamily: "'Mont-Bold', sans-serif"}}
+              sx={{ color: "#FFFFFF", fontSize: "27px", fontWeight: "600", fontFamily: "'Mont-Bold', sans-serif" }}
             >
               {title}
             </Typography>
@@ -28,7 +28,7 @@ function PartnerCard({ cardImage, title, description }) {
                 fontWeight: "400",
                 textShadow: "0px 0px 10px rgba(0,0,0,0.3);",
                 marginTop: "3%",
-      
+
                 width: "91%",
                 fontFamily: "'Mont-Regular', sans-serif"
               }}

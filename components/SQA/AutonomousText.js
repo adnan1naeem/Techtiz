@@ -8,7 +8,7 @@ function AutonomousText() {
       <Card
         sx={{
           width: { xs: "23rem", sm: "35rem", md: "26rem", lg: "33rem" },
-          height: { xs: "35rem", sm: "25rem", md: "30rem", lg: "28rem" },
+          height: { xs: "37rem", sm: "25rem", md: "30rem", lg: "28rem" },
           background: "none",
           boxShadow: "none",
         }}

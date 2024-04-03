@@ -15,7 +15,7 @@ function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, 
       <Card
         sx={{
           width: { xs: "21rem", sm: "35rem", md: "30rem", lg: "35rem" },
-          height: { xs: "33rem", sm: "19rem", md: "20rem", lg: "19rem" },
+          height: { xs: "36rem", sm: "19rem", md: "20rem", lg: "19rem" },
           borderRadius: "30px",
           background: "#F8F8F8",
           transition: "transform 1s ease", // Adding transition for the transform property

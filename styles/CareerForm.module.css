@@ -124,7 +124,7 @@
 }
 
 .submit_button {
-    margin-top: 51.5%;
+    margin-top: 2.8rem;
     background-color: #18b0e6;
     color: #FFFFFF;
     border: none;
@@ -142,25 +142,6 @@
     transition: all 0.3s;
 
 }
-.submit{
-    margin-top: 30%;
-    background-color: #18b0e6;
-    color: #FFFFFF;
-    border: none;
-    height: 47px;
-    width: 170%;
-    border-radius: 4px;
-    font-family: "Mont Regular", Sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 1.3px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-}
-
 .submit_button:hover {
     background-color: #153A5F;
     cursor: pointer;
@@ -214,7 +195,7 @@
     top: 400px;
 }
 .submit_button{
-    margin-top: 47%;
+    margin-top: 2.7rem;
 }
 
  }
@@ -284,18 +265,21 @@
         line-height: 24px;
         font-size: 25px;
     }
+    /* .submit{
+        width: 120%;
+    } */
 
 
 }
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 850px) {
     .main {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        height: 600px;
+        height: 740px;
     }
 
     .form_section {
@@ -341,42 +325,50 @@
         line-height: 24px;
         font-size: 25px;
     }
-
-
+     .group_second{
+    margin-left: 15px;
+}
 
     .submit_button {
-        width: 150%;
-        margin-left: 10%;
-        margin-top: 48%;
+        margin-top: 2.6rem;
     }
     .Careers_form {
         display: flex;
         flex-wrap: wrap;
         color: #f8f8f8;
         width: 100%;
-        gap: 30%;
+        gap: 15%;
        
     }
 }
 @media screen and (max-width: 600px){
 .Careers_form {
         gap: 1%;
-    
     }
     .group_second{
     margin-left: 10px;
 }
-}
-@media screen and (max-width: 400px){
-.Careers_form {
-        gap:0%;
-       
+.submit_button {
+        margin-left: 0.8rem;
     }
-     .submit_button {
-        width: 130%;
-        margin-left: 2%;
-    }
-    .group_second{
-    margin-left: 10px;
 }
+@media screen and (max-width: 500px){
+    .main{
+        height: 650px;
+    }
+ .submit_button{
+    width: 130%;
+ }
+}
+@media screen and (max-width: 440px){
+    .main{
+        height: 750px;
+    }
+.group_second{
+    margin-right: 140px;
+}
+.submit_button {
+        margin-left: 10%;
+    }
+
 }

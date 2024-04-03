@@ -24,7 +24,7 @@ function Professionals({ onPress }) {
       <Card
         sx={{
           width: { xs: "100%", sm: "34rem", md: "31rem", lg: "33rem", xl: "33rem" },
-          height: { xs: "26rem", sm: "32xrem", md: "32rem", lg: "28rem" },
+          height: { xs: "29rem", sm: "32xrem", md: "32rem", lg: "28rem" },
           // backgroundColor: { xs: "red", md: "blue", xs: "orange", sm: "pink", lg: "green", xl: "transparent" },
           boxShadow: "none",
           '@media screen and (min-width: 1700px)': {

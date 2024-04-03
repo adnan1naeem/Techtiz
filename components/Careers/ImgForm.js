@@ -95,12 +95,13 @@ const ImgForm = () => {
                 type="file"
                 onChange={handleFileChange}
                 accept="application/pdf"
-                style={{ marginRight: "5px", fontWeight: "500" }}
+                style={{ marginRight: "5px", fontWeight: "500", }}
               />
             </div>
             <div className={styles.button}>
-              <button type="submit" className={isLoading ? styles.submit : styles.submit_button} disabled={isLoading}>
+              <button type="submit" className={styles.submit_button} disabled={isLoading}>
                 {isLoading ? 'Submitting...' : 'Submit'}
+                {/* Submitting... */}
                 <IoMdArrowRoundUp />
               </button>
             </div>
@@ -109,7 +110,36 @@ const ImgForm = () => {
         <div>
           {isSubmitted && (
             <Alert
-              sx={{ mt: "110px", ml: "-39.5rem", width: "20rem" }}
+              sx={{
+                mt: "110px", ml: "-39.5rem", width: "20rem",
+                "@media screen and (min-width: 100px) and (max-width: 780px)": {
+                  mt: "220px",
+                  ml: "-38.5rem",
+                },
+                "@media screen and (min-width: 600px) and (max-width: 628px)": {
+                  mt: "220px",
+                  ml: "-36.5rem",
+                },
+                "@media screen and (min-width: 500px) and (max-width: 600px)": {
+                  mt: "220px",
+                  ml: "-30.5rem",
+                },
+                "@media screen and (min-width: 440px) and (max-width: 500px)": {
+                  mt: "210px",
+                  ml: "-24.5rem",
+                },
+                "@media screen and (min-width: 400px) and (max-width: 440px)": {
+                  mt: "310px",
+                  ml: "-24.5rem",
+                },
+                "@media screen and (min-width: 300px) and (max-width: 400px)": {
+                  mt: "310px",
+                  ml: "-21rem",
+                },
+
+
+
+              }}
               icon={<CheckIcon fontSize="inherit" />}
               severity="success"
             >
