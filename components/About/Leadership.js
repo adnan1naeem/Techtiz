@@ -78,7 +78,9 @@ function Leadership() {
           flexWrap: "wrap",
         }}
       >
-        <Button sx={{ textDecoration: "none", ":hover": { backgroundColor: "transparent" } }}>
+        <Button disableRipple sx={{
+          textDecoration: "none", ":hover": { backgroundColor: "transparent" },
+        }}>
           <Link
             href="https://www.linkedin.com/in/mohsin-m-naeem/">
             <Ceo
@@ -88,7 +90,7 @@ function Leadership() {
             />
           </Link>
         </Button>
-        <Button sx={{ textDecoration: "none", ":hover": { backgroundColor: "transparent" } }}>
+        <Button disableRipple sx={{ textDecoration: "none", ":hover": { backgroundColor: "transparent" } }}>
           <Link
             href="https://www.linkedin.com/in/adnan-naeem-442620130/"
           >

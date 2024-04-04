@@ -116,6 +116,8 @@ function BusinessTogether({ onClick }) {
             paddingTop="13px"
             paddingBottom="13px"
             fontSize="16px"
+            prSM="99.5px"
+            plSM="99.5px"
           />
           <ButtonBusiness
             text="Enterprises"

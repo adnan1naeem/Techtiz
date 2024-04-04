@@ -10,7 +10,10 @@ function ButtonBusiness({
   paddingBottom,
   paddingLeft,
   paddingRight,
-  fontSize
+  fontSize,
+  plSM,
+  prSM
+
 }) {
   const disableHoverEffect = background === "#153A5F";
 
@@ -36,6 +39,11 @@ function ButtonBusiness({
           "@media screen and (min-width: 700px) and (max-width: 910px)": {
             paddingTop: "10px",
             paddingBottom: "10px",
+
+          },
+          "@media screen and (min-width: 600px)": {
+            paddingLeft: plSM,
+            paddingRight: prSM
 
           },
           "&:hover": {

@@ -20,7 +20,7 @@ function SalesTeam({ id }) {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -35,20 +35,19 @@ function SalesTeam({ id }) {
     };
   }, []);
   return (
-    <Box id={id}  ref={weeksRef}>
+    <Box id={id} ref={weeksRef}>
       <Typography
         sx={{
-          marginTop:7,
+          marginTop: 7,
           color: "#153A5F",
           fontSize: { xs: "1.8em", sm: "2.1em", md: "2.1em", lg: "2.7em" },
-        
           textAlign: "center",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
-          pl: {xs: '3%', sm: '0%'},
-          pr: {xs: '3%', sm: '0%'},
+          pl: { xs: '3%', sm: '0%' },
+          pr: { xs: '3%', sm: '0%' },
           fontFamily: "'Mont-Bold', sans-serif"
-          
+
         }}
       >
         Contact our sales team
@@ -60,8 +59,8 @@ function SalesTeam({ id }) {
           gap: "5%",
           flexWrap: "wrap",
           marginTop: "3%",
-          pl: {xs: '3%', sm: '0%'},
-          pr: {xs: '3%', sm: '0%'},
+          pl: { xs: '3%', sm: '0%' },
+          pr: { xs: '3%', sm: '0%' },
         }}
       >
         <Box>
