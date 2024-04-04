@@ -32,7 +32,7 @@ function DoItUX() {
       }
     };
   }, []);
-  const [selectedButton, setSelectedButton] = useState("Build and Itrate");
+  const [selectedButton, setSelectedButton] = useState("Discovery");
 
   const handleButtonClick = (text) => {
     setSelectedButton(text);
@@ -100,7 +100,7 @@ function DoItUX() {
             "Interviews & observations",
             "Functional requirements",
           ]}
-          width="24%"
+          width="23%"
           image="https://techtiz.co/wp-content/uploads/2023/10/dicovery2-768x768.webp"
         />
       )}
@@ -113,7 +113,7 @@ function DoItUX() {
             "Information architecture",
           ]}
           image="https://techtiz.co/wp-content/uploads/2023/09/wireframe.webp"
-          width="27%"
+          width="22%"
 
 
         />
@@ -128,6 +128,7 @@ function DoItUX() {
             "UI Style guide/brand identity"
           ]}
           mt='3%'
+          width="23%"
 
           image="https://techtiz.co/wp-content/uploads/2023/11/web-dev.svg"
         />

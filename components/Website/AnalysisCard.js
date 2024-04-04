@@ -2,7 +2,7 @@ import { Box, List, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
 import { FaSquare } from "react-icons/fa";
 
-function AnalysisCard({ title, lists, lgTop, xlTop, image, mt, width }) {
+function AnalysisCard({ title, lists, lgTop, xlTop, image, mt, width, height }) {
   return (
     <Box
       sx={{
@@ -20,16 +20,18 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt, width }) {
     >
       <Box
         sx={{
-          width: {
-            xs: "17rem",
-            sm: "19em",
-            xl: "20em",
-          },
+          // width: {
+          //   xs: "17rem",
+          //   sm: "19em",
+          //   xl: "20em",
+          // },
+          width: width,
+          height: height,
           marginRight: { lg: "4.5rem" },
           mt: mt,
-          "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-            width: width,
-          },
+          // "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
+          //   width: width,
+          // },
         }}
       >
         <img src={image} alt="" style={{ width: "100%" }} />

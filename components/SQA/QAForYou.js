@@ -12,7 +12,7 @@ import { useEffect, useRef, useState } from "react";
 
 function QAForYou() {
   const [selectedButton, setSelectedButton] = useState(
-    "Top Talent"
+    "Fast Results"
   );
 
   const handleButtonClick = (text) => {
@@ -119,7 +119,7 @@ function QAForYou() {
           title="Fast Results"
           text="Producing better software in short time periods for maintaining a high level of quality through automation testing."
           image="https://techtiz.co/wp-content/uploads/2023/09/fast-results.webp"
-          lg="13em"
+          lg="14em"
           lgtext="30em"
         />
       )}
@@ -128,7 +128,7 @@ function QAForYou() {
           title="Detailed Testing"
           text="Comprehensive testing to cover the most popular testing solutions."
           image="https://techtiz.co/wp-content/uploads/2023/09/testing.webp"
-          lg="13em"
+          lg="14em"
           lgtext="30em"
 
         />
@@ -150,7 +150,7 @@ function QAForYou() {
           title="Top Talent"
           text="QA testing professionals that are on top of their game with the latest changes in mobile and web quality indicators."
           image="https://techtiz.co/wp-content/uploads/2023/09/top-talent.webp"
-          lg='15em'
+          lg='13em'
           lgtext="30em"
         />
       )}

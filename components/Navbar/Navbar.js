@@ -178,8 +178,8 @@ const Navbar = () => {
 
         {isWideScreen && (
           <div className={styles["btn-group"]} style={{ marginRight: "2%" }}>
-            <Link href={{ pathname: "/get-started" }}>
-              <ButtonHover textButton="Get Started" />
+            <Link href={{ pathname: "/contact-us" }}>
+              <ButtonHover textButton="Contact Us" />
             </Link>
           </div>
         )}

@@ -31,7 +31,7 @@ function Footer() {
             text3="Case Studies"
             href_three="/portfolios"
             text4="Contact Us"
-            href_four="/get-started"
+            href_four="/contact-us"
             text5="Privacy Policy"
             href_five="/"
             mt={{ xs: '10%', sm: 0 }}

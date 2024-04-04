@@ -5,7 +5,7 @@ import AnalysisCard from "../AnalysisCard";
 import { useEffect, useRef, useState } from "react";
 function DoIt() {
   const [selectedButton, setSelectedButton] = useState(
-    "Design and Development"
+    "Discovery and Analysis"
   );
 
   const handleButtonClick = (text) => {
@@ -117,6 +117,8 @@ function DoIt() {
           lgTop="4%"
           xlTop="4%"
           image="https://techtiz.co/wp-content/uploads/2023/10/dicovery2-768x768.webp"
+          width="18rem"
+          height="19rem"
         />
       )}
       {selectedButton === "Planning and Strategy" && (
@@ -130,6 +132,8 @@ function DoIt() {
           image="https://techtiz.co/wp-content/uploads/2023/09/wireframe.webp"
           lgTop="4%"
           xlTop="2%"
+          width="18rem"
+          height="19rem"
         />
       )}
       {selectedButton === "Design and Development" && (
@@ -142,6 +146,8 @@ function DoIt() {
           ]}
           lgTop="4%"
           xlTop="2%"
+          width="18rem"
+          height="19rem"
           image="https://techtiz.co/wp-content/uploads/2023/11/Mobile-App.svg"
         />
       )}
@@ -157,7 +163,8 @@ function DoIt() {
           ]}
           lgTop="4%"
           xlTop="2%"
-          width="20%"
+          width="15rem"
+          height="19rem"
           image="https://techtiz.co/wp-content/uploads/2023/10/testing.svg"
         />
       )}
