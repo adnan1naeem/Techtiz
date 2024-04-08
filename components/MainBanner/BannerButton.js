@@ -16,7 +16,7 @@ export default function BannerButton({ onClick }) {
                 border: '3px solid #ffffff !important',
                 textTransform: "none",
                 background: '#ffffff',
-                height: {xs: 50, sm: 55, md: 60},
+                height: { xs: 50, sm: 55, md: 60 },
                 paddingLeft: { xs: "26px", md: "40px" },
                 paddingRight: { xs: "26px", md: "40px" },
                 marginTop: "12px",

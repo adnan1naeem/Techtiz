@@ -39,7 +39,7 @@ function SamplePrevArrow(props) {
         height: 30,
         width: 30,
         color: "#153A8D",
-        marginLeft: "-4%",
+        marginLeft: "-5%",
       }}
       onClick={onClick}
     />
@@ -98,7 +98,7 @@ function Technologies() {
         settings: {
           slidesToShow: 2,
         },
-      },
+      }
     ],
   };
 
@@ -150,13 +150,20 @@ function Technologies() {
           ml: '5%',
         }}>
           <Slider {...settings} >
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/css3-logo-svg-vector.svg'} width="80%" />
+            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/html5-2.svg'} width="40%" />
+            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/css3-logo-svg-vector.svg'} width="67%" />
             <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Flutter.svg'} />
+
             <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/reactjs.svg'} />
             <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/android.svg'} />
             <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/nodejs-white.svg'} />
             <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Bootstrap-Icon.svg'} />
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/html5-2.svg'} width="45%" />
+
+
+            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/apple2.svg'} width="60%" />
+            <TechnologiesCard image={"https://img.icons8.com/ios-filled/100/FFFFFF/angularjs.png"} width="48%" />
+            <TechnologiesCard image={'https://img.icons8.com/ios-filled/100/FFFFFF/shopify.png'} width="48%" />
+
           </Slider>
         </Box>
       </Box>

@@ -1,6 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import ModelsCard from "../ModelsCard/ModelsCard";
 import { useEffect, useRef, useState } from "react";
+import teamImg from "../../public/team.jpg"
+import ppImg from "../../public/price-paper.jpg"
 function Model({ onPress }) {
 
   const [isVisible, setIsVisible] = useState(false);
@@ -66,14 +68,15 @@ function Model({ onPress }) {
       >
         <ModelsCard
           maintitle="Dedicated Resources"
-          backgroundImage="url('https://techtiz.co/wp-content/uploads/2023/10/team.jpg')"
+          backgroundImage={`url(${teamImg.src})`}
+
           onPress={onPress}
           resource="DEDICATED RESOURSES"
           titleresource="Our team of enthusiastic software engineers understand what's ideal for your business and create pleasant user experiences for your customers. Get Started"
         />
         <ModelsCard
           maintitle="Fixed Cost Projects"
-          backgroundImage="url('https://techtiz.co/wp-content/uploads/2023/10/price-paper.jpg')"
+          backgroundImage={`url(${ppImg.src})`}
           onPress={onPress}
           resource="FIXED COST PROJECTS"
           titleresource="Techtiz Custom Software Development Agency prioritizes client satisfaction and offers the ideal pricing plans to satisfy clients' requirements without disturbing their budgets."

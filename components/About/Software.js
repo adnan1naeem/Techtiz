@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Card, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
+import bgImg from "../../public/bg-pat.svg"
 function Software() {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
@@ -35,7 +36,7 @@ function Software() {
     <Box
       ref={weeksRef}
       sx={{
-        backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/bg-pat.svg')`, // Set the background image URL
+        backgroundImage: `url(${bgImg.src})`, // Set the background image URL
         backgroundRepeat: 'repeat', // Set the background repeat property
         backgroundSize: '300px 600px', // Set the width of the background image
         marginTop: "5%",

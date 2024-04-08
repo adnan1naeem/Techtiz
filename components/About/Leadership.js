@@ -3,6 +3,9 @@ import { Box, Button, Typography } from "@mui/material";
 import Ceo from "./Ceo";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import ceoImg from "../../public/Mohsin-Naeem.webp"
+import ctoImg from "../../public/Adnaan_Naeem.webp"
+import bgImg from "../../public/Sqr-Light-Outline.svg"
 function Leadership() {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
@@ -49,7 +52,7 @@ function Leadership() {
           width: "100%",
           height: "100%",
           backgroundColor: '#dedede',
-          backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/Sqr-Light-Outline.svg')`,
+          backgroundImage: `url(${bgImg.src})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           opacity: isVisible ? 0.15 : 1, // Adjust the opacity value as needed
@@ -84,7 +87,7 @@ function Leadership() {
           <Link
             href="https://www.linkedin.com/in/mohsin-m-naeem/">
             <Ceo
-              imageceo="https://techtiz.co/wp-content/uploads/2023/11/Mohsin-Naeem.webp"
+              imageceo={ceoImg}
               name="Mohsin Naeem"
               text="CEO"
             />
@@ -96,7 +99,7 @@ function Leadership() {
           >
             <Ceo
               mt={"-40%"}
-              imageceo="https://techtiz.co/wp-content/uploads/2023/11/Adnaan_Naeem.webp"
+              imageceo={ctoImg}
               name="Adnan Naeem"
               text="CTO"
             />

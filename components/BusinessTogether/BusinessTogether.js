@@ -3,6 +3,9 @@ import React from "react";
 import BusinessCard from "../BusinessPlace/BusinessCard";
 import ButtonBusiness from "../Texts/ButtonBusiness";
 import { useEffect, useRef, useState } from "react";
+import startupImg from "../../public/startup.png"
+import sme from "../../public/sme.png"
+import enterprise from "../../public/enterprise.png"
 
 function BusinessTogether({ onClick }) {
   const [activeButton, setActiveButton] = useState("SMEs");
@@ -41,9 +44,9 @@ function BusinessTogether({ onClick }) {
   };
 
   const businessDetail = [
-    { title: "Startps", point1: "We evaluate the technical feasibility of your digital products", point2: "Swift MVP development for relevant and time-sensitive insights", point3: "Team collaboration and resource management to boost productivity", image: "	https://techtiz.co/wp-content/uploads/2023/10/startup.png" },
-    { title: "SMEs", point1: "Development of innovative digital applications to turn the idea behind your business into a reality", point2: "Team augmentation with technical training and expert assistance to boost business development and growth", point3: "Implementation of a client-centric approach with superlative technologies for web and mobile applications development", image: "https://techtiz.co/wp-content/uploads/2023/10/sme.png" },
-    { title: "Enterprises", point1: "Optimizing business operations and streamlining workflows with customized and functional software", point2: "Improving the efficiency of your existing digital solutions by upgrading the right features and designs", point3: "Empowering your staff with skills to successfully achieve business goals and develop a greater digital footprint", image: "https://techtiz.co/wp-content/uploads/2023/10/enterprise.png" }
+    { title: "Startps", point1: "We evaluate the technical feasibility of your digital products", point2: "Swift MVP development for relevant and time-sensitive insights", point3: "Team collaboration and resource management to boost productivity", image: startupImg.src },
+    { title: "SMEs", point1: "Development of innovative digital applications to turn the idea behind your business into a reality", point2: "Team augmentation with technical training and expert assistance to boost business development and growth", point3: "Implementation of a client-centric approach with superlative technologies for web and mobile applications development", image: sme.src },
+    { title: "Enterprises", point1: "Optimizing business operations and streamlining workflows with customized and functional software", point2: "Improving the efficiency of your existing digital solutions by upgrading the right features and designs", point3: "Empowering your staff with skills to successfully achieve business goals and develop a greater digital footprint", image: enterprise.src }
   ]
 
   return (

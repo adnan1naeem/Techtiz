@@ -75,26 +75,28 @@ function Stack() {
         }}
       >
         <Box sx={{ display: "flex", flexWrap: "wrap", gap: "10%", justifyContent: 'center' }}>
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/js-logo.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/reactjs.svg" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/js-logo.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/reactjs.svg" height="5rem" />
 
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/dotnet.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/angular.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/java.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/ruby-white.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/nodejs-white.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/jango.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/swift.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/dart.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/typescript.svg" />
+          <WebImage image="https://img.icons8.com/pastel-glyph/64/FFFFFF/blockchain-technology--v1.png" height="2.8rem" mt="18px" />
 
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/php.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/diamond.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/python.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/bindhi.svg" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/dotnet.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/angular.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/java.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/ruby-white.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/nodejs-white.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/jango.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/swift.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/dart.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/typescript.svg" height="5rem" />
 
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/golang.svg" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/database.svg" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/php.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/diamond.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/python.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/bindhi.svg" height="5rem" />
+
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/golang.svg" height="5rem" />
+          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/database.svg" height="5rem" />
         </Box>
       </Box>
     </Box>

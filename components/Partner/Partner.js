@@ -2,6 +2,9 @@ import React from "react";
 import PartnerCard from "../PartnerCard/PartnerCard";
 import { Box, Button, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
+import quart1 from "../../public/qartt-1.png"
+import quart2 from "../../public/quart2.png"
+import quart3 from "../../public/quart3.png"
 function Partner({ onPress }) {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
@@ -18,7 +21,7 @@ function Partner({ onPress }) {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -39,7 +42,7 @@ function Partner({ onPress }) {
           "radial-gradient(at center center, #1594c6 25%, #153a5f 85%);",
         marginTop: "3%",
         padding: '4%',
-        paddingTop:  {xs: "14%",md:'3%'},
+        paddingTop: { xs: "14%", md: '3%' },
       }}
       ref={weeksRef}
     >
@@ -68,17 +71,17 @@ function Partner({ onPress }) {
         }}
       >
         <PartnerCard
-          cardImage="https://techtiz.co/wp-content/uploads/2023/09/qartt-2-1.png"
+          cardImage={quart1.src}
           title="Qartt"
           description="Qartt streamlines order tracking and  delivery for businesses, offering optimized routes for delivery partners, making product management seamless."
         />
         <PartnerCard
-          cardImage="https://techtiz.co/wp-content/uploads/elementor/thumbs/techhitz-qratt-01-1-qd89iqy5aq9yfjsbroo4rixfrh4ulujpjsp250oidu.png"
+          cardImage={quart2.src}
           title="Qartt partner"
           description="Qartt bridges the digital gap between businesses and customers, helping them manage deliveries, track orders, and focus on their products without the need for an in-house delivery team."
         />
         <PartnerCard
-          cardImage="https://techtiz.co/wp-content/uploads/elementor/thumbs/techhitz-dash-board-1-1-qd89in6sk9piyqjz6hvzyj4yllrj3kr9v8v9i2wxhu.png"
+          cardImage={quart3.src}
           title="Dashboard.Earth"
           description="Dashboard.earth connects communities to local activities addressing climate change, fostering collaboration for environmental improvement."
         />
@@ -91,7 +94,7 @@ function Partner({ onPress }) {
           type="submit"
           onClick={onPress}
           sx={{
-            fontWeight:600,
+            fontWeight: 600,
             fontFamily: "'Mont-Regular', sans-serif",
             color: 'white',
             fontWeight: "500",
@@ -104,8 +107,8 @@ function Partner({ onPress }) {
             paddingLeft: "30px",
             paddingRight: "30px",
             marginTop: "4px",
-            mb:{xs:'5%',xl:'4%'},
-            transition: 'all 0.3s ease', 
+            mb: { xs: '5%', xl: '4%' },
+            transition: 'all 0.3s ease',
             "&:hover": {
               backgroundColor: "rgba(24, 176, 230, 0.6)",
               color: "white",
@@ -114,8 +117,8 @@ function Partner({ onPress }) {
               transform: 'scale(1.08)',
             },
             "@media screen and (max-width: 599px)": {
-              mt:'-9%',
-          },
+              mt: '-9%',
+            },
           }}
         >
           Let's Start

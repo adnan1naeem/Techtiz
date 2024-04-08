@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography, CardContent, Card } from "@mui/material";
 import Link from "next/link";
+import Image from "next/image";
 
 function Ceo({ imageceo, name, text, mt }) {
   return (
@@ -26,10 +27,11 @@ function Ceo({ imageceo, name, text, mt }) {
           }}
         >
 
-          <img
+          <Image
             src={imageceo}
-            alt=""
-            style={{ borderRadius: "100%", width: "80%", marginBottom: "8%" }}
+            alt=" no img"
+            width={"80%"}
+            style={{ borderRadius: "100%", marginBottom: "8%" }}
           />
 
           <Typography
