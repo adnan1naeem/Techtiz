@@ -1,5 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
+import Image from 'next/image';
+
 function Hiring() {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
@@ -119,8 +121,8 @@ function Hiring() {
             marginTop: { xs: "10%", sm: "10%", md: "5%", lg: "1%" },
           }}
         >
-          <img
-            src="https://techtiz.co/wp-content/uploads/2023/10/Hiring.webp"
+          <Image
+            src={require('../../assets/carear-hiring.webp')}
             alt=""
             style={{ width: "100%" }}
           />

@@ -1,4 +1,5 @@
 import { Box, List, ListItemIcon, Typography } from "@mui/material";
+import Image from "next/image";
 import React from "react";
 import { FaSquare } from "react-icons/fa";
 
@@ -34,7 +35,7 @@ function AnalysisCard({ title, lists, lgTop, xlTop, image, mt, width, height }) 
           // },
         }}
       >
-        <img src={image} alt="" style={{ width: "100%" }} />
+        <Image src={image} alt="" style={{ width: "100%" }} />
       </Box>
       <Box
         sx={{

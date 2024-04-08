@@ -41,6 +41,12 @@ const Navbar = () => {
     setIsArrowUp(false);
   };
 
+  const closeHomeMenu = () => {
+    setClick(false);
+    setIsDropdownOpen(false);
+    setIsArrowUp(false);
+  };
+
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
     setIsArrowUp(!isArrowUp);
@@ -64,11 +70,12 @@ const Navbar = () => {
               : styles["nav-menu"]
           }
         >
-          <li className={router.pathname === "/" ? styles.activeMenu :  styles.menu + styles.activeMenu}>
-            <Link href="/" onClick={closeMenu}>
-              <TextNav label="Home" isActive={router.pathname === "/"} />
-            </Link>
-          </li>
+          {click &&
+            <li className={router.pathname === "/" ? styles.menu : ""}>
+              <Link href="/" onClick={closeHomeMenu}>
+                <TextNav label="Home" isActive={router.pathname === "/"} />
+              </Link>
+            </li>}
           <li className={router.pathname === "/about" ? styles.menu : ""}>
             <Link href="/about" onClick={closeMenu}>
               <TextNav label="About" isActive={router.pathname === "/about"} />

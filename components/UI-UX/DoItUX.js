@@ -100,8 +100,8 @@ function DoItUX() {
             "Interviews & observations",
             "Functional requirements",
           ]}
-          width="23%"
-          image="https://techtiz.co/wp-content/uploads/2023/10/dicovery2-768x768.webp"
+          width={{ xs: "55%", sm: "43%", md: "23%" }}
+          image={require('../../assets/website-dicovery.webp')}
         />
       )}
       {selectedButton === "Wireframes" && (
@@ -112,10 +112,8 @@ function DoItUX() {
             "System/Process flow",
             "Information architecture",
           ]}
-          image="https://techtiz.co/wp-content/uploads/2023/09/wireframe.webp"
-          width="22%"
-
-
+          image={require('../../assets/website-wireframe.webp')}
+          width={{ xs: "53%", sm: "42%", md: "22%" }}
         />
       )}
       {selectedButton === "Build and Itrate" && (
@@ -128,9 +126,8 @@ function DoItUX() {
             "UI Style guide/brand identity"
           ]}
           mt='3%'
-          width="23%"
-
-          image="https://techtiz.co/wp-content/uploads/2023/11/web-dev.svg"
+          width={{ xs: "55%", sm: "43%", md: "23%" }}
+          image={require('../../assets/ui-ux-web-dev.svg')}
         />
       )}
 

@@ -30,8 +30,8 @@ function MVPs({ onPress }) {
                     },
                 }}
             >
-                <img
-                    src="https://techtiz.co/wp-content/uploads/2023/12/mvp-1024x864.webp"
+                <Image
+                    src={require('../../../assets/industries-mvp.webp')}
                     alt=""
                     style={{ width: "100%" }}
                 />

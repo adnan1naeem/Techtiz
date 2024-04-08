@@ -7,6 +7,7 @@ import QAForYou from "../../components/SQA/QAForYou";
 import Autonomous from "../../components/SQA/Autonomous";
 import DiscussProject from "../../components/Website/DiscussProject";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
+import Image from "next/image";
 
 function Sqa() {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -60,8 +61,8 @@ function Sqa() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <img
-              src="https://techtiz.co/wp-content/uploads/2023/10/Quality-Check.webp"
+            <Image
+              src={require('../../assets/sqa-quality-check.webp')}
               alt=""
               style={{ width: "96%" }}
             />

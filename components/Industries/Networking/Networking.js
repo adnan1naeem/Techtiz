@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import SocialNetworking from "./SocialNetworking";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 function Networking({ onPress }) {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
@@ -87,8 +88,8 @@ function Networking({ onPress }) {
 
           }}
         >
-          <img
-            src="https://techtiz.co/wp-content/uploads/2023/12/social.webp"
+          <Image
+            src={require('../../../assets/industries-social.webp')}
             alt=""
             style={{ width: "100%" }}
           />

@@ -3,6 +3,7 @@ import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import List from "./List";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 function CommerceRescourse({ onPress }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -87,8 +88,8 @@ function CommerceRescourse({ onPress }) {
 
             }}
           >
-            <img
-              src="https://techtiz.co/wp-content/uploads/2023/11/emcommerce.webp"
+            <Image
+              src={require('../../assets/industries-emcommerce.webp')}
               alt=""
               style={{ width: "100%" }}
             />

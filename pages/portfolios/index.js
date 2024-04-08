@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import OurPortfolio from "../../components/Portfolios/OurPortfolio";
 import AllPortfolios from "./AllPortfolios";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
+import Image from "next/image";
 // import SalesTeam from "../../components/SalesTeam/SalesTeam";
 // import Footer from "../../Component/Footer/Footer";
 
@@ -54,8 +55,8 @@ function Portfolios() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <img
-              src="https://techtiz.co/wp-content/uploads/2023/10/innovation.webp"
+            <Image
+              src={require('../../assets/portfolio-innovation.webp')}
               alt=""
               style={{ width: "100%" }}
             />

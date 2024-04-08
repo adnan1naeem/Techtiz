@@ -6,6 +6,7 @@ import DoIt from "../../components/Website/DoIt/DoIt";
 import Stack from "../../components/Website/Stacks";
 import DiscussProject from "../../components/Website/DiscussProject";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
+import Image from "next/image";
 
 function Web() {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -60,8 +61,8 @@ function Web() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <img
-              src="https://techtiz.co/wp-content/uploads/2023/11/webdesign_1.webp"
+            <Image
+              src={require('../../assets/website-webdesign.webp')}
               alt=""
               style={{ width: { sm: "100%" } }}
             />

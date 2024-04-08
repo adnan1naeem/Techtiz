@@ -118,7 +118,7 @@ function QAForYou() {
         <QACard
           title="Fast Results"
           text="Producing better software in short time periods for maintaining a high level of quality through automation testing."
-          image="https://techtiz.co/wp-content/uploads/2023/09/fast-results.webp"
+          image={require('../../assets/sqa-fast-results.webp')}
           lg="14em"
           lgtext="30em"
         />
@@ -127,7 +127,7 @@ function QAForYou() {
         <QACard
           title="Detailed Testing"
           text="Comprehensive testing to cover the most popular testing solutions."
-          image="https://techtiz.co/wp-content/uploads/2023/09/testing.webp"
+          image={require('../../assets/sqa-testing.webp')}
           lg="14em"
           lgtext="30em"
 
@@ -137,7 +137,7 @@ function QAForYou() {
         <QACard
           title="Cost Reduction"
           text="Reduce costs of manual testing while integrating the GUI"
-          image="https://techtiz.co/wp-content/uploads/2023/09/cost-reduction-1.svg"
+          image={require('../../assets/sqa-cost-reduction-1.svg')}
           lg="22em"
           top='-25%'
           lgtext="20em"
@@ -149,7 +149,7 @@ function QAForYou() {
         <QACard
           title="Top Talent"
           text="QA testing professionals that are on top of their game with the latest changes in mobile and web quality indicators."
-          image="https://techtiz.co/wp-content/uploads/2023/09/top-talent.webp"
+          image={require('../../assets/sqa-top-talent.webp')}
           lg='13em'
           lgtext="30em"
         />

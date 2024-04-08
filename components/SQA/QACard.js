@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import Image from "next/image";
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 
@@ -77,7 +78,7 @@ function QACard({ title, text, image, lg, top, ml, lgtext }) {
       <Box sx={{
         width: { xs: "18rem", sm: "18em", md: "16em", lg: lg }, marginTop: "3rem", marginLeft: ml
       }}>
-        <img src={image} alt="" style={{ width: "100%", marginTop: top }} />
+        <Image src={image} alt="" style={{ width: "100%", marginTop: top }} />
       </Box>
     </Box>
   );

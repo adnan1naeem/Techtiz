@@ -88,8 +88,8 @@ function Education({ onPress }) {
           }}
         >
           {/* Use next/image for image optimization */}
-          <img
-            src="https://techtiz.co/wp-content/uploads/2023/12/education-1024x864.webp"
+          <Image
+            src={require('../../../assets/industries-education.webp')}
             alt=""
             style={{ width: "90%" }}
           />

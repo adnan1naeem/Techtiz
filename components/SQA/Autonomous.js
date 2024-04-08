@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import AutonomousText from "./AutonomousText";
+import Image from "next/image";
 
 function Autonomous() {
   return (
@@ -32,8 +33,8 @@ function Autonomous() {
 
           }}
         >
-          <img
-            src="https://techtiz.co/wp-content/uploads/2023/10/Ai-testing.webp"
+          <Image
+            src={require('../../assets/sqa-ai-testing.webp')}
             alt=""
             style={{ width: "100%" }}
           />

@@ -1,5 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
+import Image from 'next/image';
+
 function Welcoming() {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
@@ -62,8 +64,8 @@ function Welcoming() {
         <Box
           sx={{ width: { xs: "21em", sm: "28em", md: "29em", lg: "32rem" } }}
         >
-          <img
-            src="https://techtiz.co/wp-content/uploads/2023/10/welcoming-team.webp"
+          <Image
+            src={require('../../assets/carear-welcoming-team.webp')}
             alt=""
             style={{ width: "100%" }}
           />

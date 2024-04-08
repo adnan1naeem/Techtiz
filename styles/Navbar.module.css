@@ -252,7 +252,6 @@
     }
 
     .activeMenu {
-        display: flex;
         background-color: #153A5F;
         width: 100%;
         border: none;

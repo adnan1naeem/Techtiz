@@ -7,6 +7,7 @@ import Commerce from "../../components/Industries/Commerce";
 import Networking from "../../components/Industries/Networking/Networking";
 import MVPs from "../../components/Industries/MVPs/MVPs";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
+import Image from "next/image";
 // import Footer from "../components/Footer/Footer";
 
 function Industries() {
@@ -75,8 +76,8 @@ function Industries() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <img
-              src="https://techtiz.co/wp-content/uploads/2023/10/skilled-pro.webp"
+            <Image
+              src={require('../../assets/industries-skilled-main.webp')}
               alt=""
               style={{ width: "100%" }}
             />
@@ -109,8 +110,8 @@ function Industries() {
               },
             }}
           >
-            <img
-              src="https://techtiz.co/wp-content/uploads/2023/12/Transportation.webp"
+            <Image
+              src={require('../../assets/industries-transportation.webp')}
               alt=""
               style={{ width: "100%" }}
             />

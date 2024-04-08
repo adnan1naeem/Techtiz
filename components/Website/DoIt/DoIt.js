@@ -116,7 +116,7 @@ function DoIt() {
           ]}
           lgTop="4%"
           xlTop="4%"
-          image="https://techtiz.co/wp-content/uploads/2023/10/dicovery2-768x768.webp"
+          image={require('../../../assets/website-dicovery.webp')}
           width="18rem"
           height="19rem"
         />
@@ -129,7 +129,7 @@ function DoIt() {
             "Creating wireframes and prototypes",
             "Defining the technology stack and architecture",
           ]}
-          image="https://techtiz.co/wp-content/uploads/2023/09/wireframe.webp"
+          image={require('../../../assets/website-wireframe.webp')}
           lgTop="4%"
           xlTop="2%"
           width="18rem"
@@ -148,7 +148,7 @@ function DoIt() {
           xlTop="2%"
           width="18rem"
           height="19rem"
-          image="https://techtiz.co/wp-content/uploads/2023/11/Mobile-App.svg"
+          image={require('../../../assets/website-mobile-app.svg')}
         />
       )}
       {selectedButton === "Testing and Deployment" && (
@@ -165,7 +165,7 @@ function DoIt() {
           xlTop="2%"
           width="15rem"
           height="19rem"
-          image="https://techtiz.co/wp-content/uploads/2023/10/testing.svg"
+          image={require('../../../assets/website-testing.svg')}
         />
       )}
     </Box>
