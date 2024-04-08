@@ -64,7 +64,7 @@ const Navbar = () => {
               : styles["nav-menu"]
           }
         >
-          <li className={router.pathname === "/" ? styles.activeMenu : styles.menuHome}>
+          <li className={router.pathname === "/" ? styles.activeMenu :  styles.menu + styles.activeMenu}>
             <Link href="/" onClick={closeMenu}>
               <TextNav label="Home" isActive={router.pathname === "/"} />
             </Link>
