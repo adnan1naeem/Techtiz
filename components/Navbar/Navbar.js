@@ -70,20 +70,12 @@ const Navbar = () => {
               : styles["nav-menu"]
           }
         >
-<<<<<<< Updated upstream
           {click &&
             <li className={router.pathname === "/" ? styles.menu : ""}>
               <Link href="/" onClick={closeHomeMenu}>
                 <TextNav label="Home" isActive={router.pathname === "/"} />
               </Link>
             </li>}
-=======
-          <li className={router.pathname === "/" ? styles.activeMenu : styles.menu + styles.activeMenu}>
-            <Link href="/" onClick={closeMenu}>
-              <TextNav label="Home" isActive={router.pathname === "/"} />
-            </Link>
-          </li>
->>>>>>> Stashed changes
           <li className={router.pathname === "/about" ? styles.menu : ""}>
             <Link href="/about" onClick={closeMenu}>
               <TextNav label="About" isActive={router.pathname === "/about"} />
