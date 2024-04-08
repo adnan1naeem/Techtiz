@@ -150,19 +150,19 @@ function Technologies() {
           ml: '5%',
         }}>
           <Slider {...settings} >
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/html5-2.svg'} width="40%" />
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/css3-logo-svg-vector.svg'} width="67%" />
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Flutter.svg'} />
+            <TechnologiesCard image={require('../../assets/svg/home-html5-2.svg')} width="40%" />
+            <TechnologiesCard image={require('../../assets/svg/home-css3-logo.svg')} width="67%" />
+            <TechnologiesCard image={require('../../assets/svg/home-flutter.svg')} />
 
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/reactjs.svg'} />
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/android.svg'} />
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/09/nodejs-white.svg'} />
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/Bootstrap-Icon.svg'} />
+            <TechnologiesCard image={require('../../assets/svg/home-reactjs.svg')} />
+            <TechnologiesCard image={require('../../assets/svg/home-android.svg')} />
+            <TechnologiesCard image={require('../../assets/svg/home-nodejs-white.svg')} />
+            <TechnologiesCard image={require('../../assets/svg/home-bootstrap-Icon.svg')} />
 
 
-            <TechnologiesCard image={'https://techtiz.co/wp-content/uploads/2023/10/apple2.svg'} width="60%" />
-            <TechnologiesCard image={"https://img.icons8.com/ios-filled/100/FFFFFF/angularjs.png"} width="48%" />
-            <TechnologiesCard image={'https://img.icons8.com/ios-filled/100/FFFFFF/shopify.png'} width="48%" />
+            <TechnologiesCard image={require('../../assets/svg/home-apple2.svg')} width="60%" />
+            <TechnologiesCard image={require('../../assets/svg/home-angularjs.png')} width="48%" />
+            <TechnologiesCard image={require('../../assets/svg/home-shopify.png')} width="48%" />
 
           </Slider>
         </Box>

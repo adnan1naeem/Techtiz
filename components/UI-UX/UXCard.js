@@ -1,4 +1,5 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
+import Image from "next/image";
 import React from "react";
 
 function UXCard({ image, heading, text, lg }) {
@@ -40,7 +41,7 @@ function UXCard({ image, heading, text, lg }) {
               },
             }}
           >
-            <img style={{ width: "100%" }} src={image} alt="" />
+            <Image style={{ width: "100%" }} src={image} alt="" />
           </Box>
           <Box sx={{ marginTop: "3%", width: "90%" }}>
             <Typography

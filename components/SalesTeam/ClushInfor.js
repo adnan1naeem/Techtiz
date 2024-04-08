@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Card, CardContent, CardMedia } from "@mui/material";
+import clutchImage from '../../assets/sales-clutch.jpeg';
 function ClushInfor() {
   return (
     <Box>
@@ -19,7 +20,7 @@ function ClushInfor() {
           }}
         >
           <CardMedia
-            image="https://techtiz.co/wp-content/uploads/2023/09/clutch-e1696137965599.jpg"
+            image={`${clutchImage.src}`}
             sx={{ width: "100px", height: "110px" }}
           />
         </CardContent>

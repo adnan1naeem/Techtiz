@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
+import Image from "next/image";
+import imageis from '../../assets/svg/contact-pakistan.svg';
 function ContactInfo() {
   return (
     <Box>
@@ -23,7 +25,7 @@ function ContactInfo() {
         >
           <Box sx={{ "&:hover img": { transform: "scale(1.1)", transition: "transform 0.3s ease" }, }}>
             <img
-              src="https://techtiz.co/wp-content/uploads/2023/09/pakistan.svg"
+              src={`${imageis.src}`}
               alt=""
               width={"63px"}
             />

@@ -1,4 +1,5 @@
 import { Box, Card, CardContent } from "@mui/material";
+import Image from "next/image";
 import React from "react";
 
 function TechnologiesCard({ image, width }) {
@@ -21,7 +22,7 @@ function TechnologiesCard({ image, width }) {
           justifyContent: "center",
         }}
       >
-        <img
+        <Image
           src={image}
           alt=""
           style={{

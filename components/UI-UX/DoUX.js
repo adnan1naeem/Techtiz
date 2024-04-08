@@ -63,26 +63,26 @@ function DoUX() {
         }}
       >
         <UXCard
-          lg="10%"
-          image="https://techtiz.co/wp-content/uploads/2023/10/Asset-4.svg"
+          lg="13%"
+          image={require('../../assets/svg/ui-ux-asset-4.svg')}
           heading="Mobile Application UI/UX Design"
           text="We design simple user-interfaces and create a delightful user experience for your customers with easily accessible functionalities."
         />
         <UXCard
-          lg="17%"
-          image="https://techtiz.co/wp-content/uploads/2023/10/Asset-3.svg"
+          lg="18%"
+          image={require('../../assets/svg/ui-ux-asset-3.svg')}
           heading="Web Application Design"
           text="We bring your digital product to life with functional and appealing designs that boost customer engagement with every click."
         />
         <UXCard
-          lg="13%"
-          image="https://techtiz.co/wp-content/uploads/2023/10/Asset-2.svg"
+          lg="16%"
+          image={require('../../assets/svg/ui-ux-asset-2.svg')}
           heading="Cross-platform Experience Design"
           text="We identify the critical points to make your website/app design stand out among the rest. We take complete responsibility for successful project delivery."
         />
         <UXCard
-          lg="13%"
-          image="https://techtiz.co/wp-content/uploads/2023/10/Asset-1.svg"
+          lg="16%"
+          image={require('../../assets/svg/ui-ux-asset-1.svg')}
           heading="UI and UX Consulting"
           text="We establish your internet presence with attractive designs while using maximum team productivity to help you achieve business goals."
         />

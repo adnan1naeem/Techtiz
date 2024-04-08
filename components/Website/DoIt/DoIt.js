@@ -148,7 +148,7 @@ function DoIt() {
           xlTop="2%"
           width="18rem"
           height="19rem"
-          image={require('../../../assets/website-mobile-app.svg')}
+          image={require('../../../assets/svg/website-mobile-app.svg')}
         />
       )}
       {selectedButton === "Testing and Deployment" && (

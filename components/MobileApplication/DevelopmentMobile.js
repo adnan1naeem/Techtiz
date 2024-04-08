@@ -2,6 +2,8 @@ import { Box, Typography } from "@mui/material";
 import MobileServices from "./MobileServices";
 import React from "react";
 import { useEffect, useRef, useState } from "react";
+import bgLine from '../../assets/mobile-bg-lines.png'
+
 function DevelopmentMobile({ onPress }) {
   const [isVisible, setIsVisible] = useState(false);
   const weeksRef = useRef(null);
@@ -38,7 +40,7 @@ function DevelopmentMobile({ onPress }) {
       sx={{
         background: "#153A5F",
         marginTop: "1%",
-        backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/bg-lines.png')`,
+        backgroundImage: `url(${bgLine.src})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: '260px',
 

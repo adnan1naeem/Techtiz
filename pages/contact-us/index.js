@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 
 import Started from "../../components/Started/Started";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
+import Image from "next/image";
 
 function Index() {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -41,8 +42,8 @@ function Index() {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <img
-            src="https://techtiz.co/wp-content/uploads/2023/10/contact-us.webp"
+          <Image
+            src={require('../../assets/contact-us.webp')}
             alt=""
             style={{ width: "100%" }}
           />

@@ -75,28 +75,28 @@ function Stack() {
         }}
       >
         <Box sx={{ display: "flex", flexWrap: "wrap", gap: "10%", justifyContent: 'center' }}>
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/js-logo.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/reactjs.svg" height="5rem" />
+          <WebImage image={require('../../assets/svg/website-js-logo.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-reactjs.svg')} height="5rem" />
 
-          <WebImage image="https://img.icons8.com/pastel-glyph/64/FFFFFF/blockchain-technology--v1.png" height="2.8rem" mt="18px" />
+          <WebImage image={require('../../assets/svg/website-blockchain-technology.png')} height="2.8rem" mt="18px" />
 
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/dotnet.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/angular.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/java.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/ruby-white.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/nodejs-white.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/jango.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/swift.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/dart.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/typescript.svg" height="5rem" />
+          <WebImage image={require('../../assets/svg/website-dotnet.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-angular.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-java.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-ruby-white.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-nodejs-white.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-jango.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-swift.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-dart.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-typescript.svg')} height="5rem" />
 
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/php.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/diamond.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/python.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/bindhi.svg" height="5rem" />
+          <WebImage image={require('../../assets/svg/website-php.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-diamond.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-python.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-bindhi.svg')} height="5rem" />
 
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/golang.svg" height="5rem" />
-          <WebImage image="https://techtiz.co/wp-content/uploads/2023/09/database.svg" height="5rem" />
+          <WebImage image={require('../../assets/svg/website-golang.svg')} height="5rem" />
+          <WebImage image={require('../../assets/svg/website-database.svg')} height="5rem" />
         </Box>
       </Box>
     </Box>

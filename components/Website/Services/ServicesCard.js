@@ -1,4 +1,5 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
+import Image from "next/image";
 import React from "react";
 
 function ServicesCard({ image, heading, text }) {
@@ -34,7 +35,7 @@ function ServicesCard({ image, heading, text }) {
               "&:hover img": { transform: "scale(1.1)", transition: "transform 0.3s ease" },
             }}
           >
-            <img style={{ width: "100%", padding: "2%" }} src={image} alt="" />
+            <Image style={{ width: "100%", padding: "2%" }} src={image} alt="" />
           </Box>
 
           <Box sx={{ marginTop: "8%" }}>

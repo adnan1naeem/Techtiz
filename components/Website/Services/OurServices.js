@@ -62,40 +62,36 @@ function OurServices() {
           },
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
             gap: "1.5%",
-
           }
-
-
-
         }}
       >
         <ServicesCard
-          image="https://techtiz.co/wp-content/uploads/2023/10/Asset-22.svg"
+          image={require('../../../assets/svg/website-asset-22.svg')}
           heading="Frontend Development"
           text="We ensure your website delivers a seamless user experience and optimal performance."
         />
         <ServicesCard
-          image="https://techtiz.co/wp-content/uploads/2023/10/Asset-21.svg"
+          image={require('../../../assets/svg/website-asset-21.svg')}
           heading="Backend Development"
           text="Employing the latest tools and technologies to develop functional websites to meet your business goals."
         />
         <ServicesCard
-          image="https://techtiz.co/wp-content/uploads/2023/10/Asset-20.svg"
+          image={require('../../../assets/svg/website-asset-20.svg')}
           heading="Full Stack Development"
           text="Our full-stack experts use the most recent technology to create applications and integrate APIs for seamless end-to-end web development services from ideation to execution."
         />
         <ServicesCard
-          image="https://techtiz.co/wp-content/uploads/2023/10/Asset-19.svg"
+          image={require('../../../assets/svg/website-asset-19.svg')}
           heading="Support and Maintenance"
           text="From the day your software system goes live, our SQA team will support, maintain, and properly “evolve” your application as per market needs."
         />
         <ServicesCard
-          image="https://techtiz.co/wp-content/uploads/2023/10/Asset-18.svg"
+          image={require('../../../assets/svg/website-asset-18.svg')}
           heading="E-commerce Development"
           text="We specialize in creating robust e-commerce solutions, enabling your business to thrive in the digital marketplace."
         />
         <ServicesCard
-          image="https://techtiz.co/wp-content/uploads/2023/10/Asset-17.svg"
+          image={require('../../../assets/svg/website-asset-17.svg')}
           heading="Content Management Systems (CMS)"
           text="We offer tailored CMS development services, providing you with user-friendly platforms to manage and update your website's content efficiently."
         />

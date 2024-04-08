@@ -6,6 +6,7 @@ import DoItUX from "../../components/UI-UX/DoItUX";
 import DiscussProject from "../../components/Website/DiscussProject";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import styles from "../../styles/ModelCard.module.css";
+import Image from "next/image";
 
 function UI() {
     const [isHovered, setIsHovered] = React.useState(false);
@@ -45,9 +46,8 @@ function UI() {
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                     >
-                        
-                        <img
-                            src="https://techtiz.co/wp-content/uploads/2023/11/mobileAppDev.svg"
+                        <Image
+                            src={require('../../assets/svg/ui-ux-mobile-app-dev.svg')}
                             alt=""
                             className={styles.uiImage}
                             style={{

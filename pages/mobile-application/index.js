@@ -9,6 +9,7 @@ import DoItMobile from "../../components/MobileApplication/DoItMobile";
 import DiscussProject from "../../components/Website/DiscussProject";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import DevelopmentMobile from "../../components/MobileApplication/DevelopmentMobile";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
   leftPaper: {
@@ -98,8 +99,8 @@ function Mobile() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <img
-              src="https://techtiz.co/wp-content/uploads/2023/11/Mobile-App.svg"
+            <Image
+              src={require('../../assets/svg/website-mobile-app.svg')}
               alt=""
               style={{ width: "100%" }}
             />

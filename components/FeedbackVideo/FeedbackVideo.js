@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
+import thumbnail from '../../assets/home-Feedback-video-thumbnail.jpeg'
 
 function FeedbackVideo({ link }) {
   return (
@@ -22,7 +23,7 @@ function FeedbackVideo({ link }) {
       <video
         controls
         style={{ width: "100%" }}
-        poster="https://techtiz.co/wp-content/uploads/2023/11/Feedback-video-thumbnail-1.jpeg"
+        poster={`${thumbnail.src}`}
       >
         <source src={link} type="video/mp4" />
       </video>

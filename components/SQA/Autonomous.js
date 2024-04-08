@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import AutonomousText from "./AutonomousText";
 import Image from "next/image";
+import bg from '../../assets/svg/sqa-bg-pat-autonomus.svg';
 
 function Autonomous() {
   return (
@@ -8,10 +9,8 @@ function Autonomous() {
       sx={{
         background: "#153A5F",
         marginTop: "5%",
-        backgroundImage: `url('https://techtiz.co/wp-content/uploads/2023/10/bg-pat.svg')`,
+        backgroundImage: `url(${bg.src})`,
         backgroundSize: '600px',
-
-
       }}
     >
       <Box
