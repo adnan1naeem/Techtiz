@@ -183,13 +183,12 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {isWideScreen && (
-          <div className={styles["btn-group"]} style={{ marginRight: "2%" }}>
-            <Link href={{ pathname: "/contact-us" }}>
-              <ButtonHover textButton="Contact Us" />
-            </Link>
-          </div>
-        )}
+
+            <div className={styles.contactUs} style={{ marginRight: "2%" }}>
+              <Link href={{ pathname: "/contact-us" }}>
+                <ButtonHover textButton="Contact Us" />
+              </Link>
+            </div>
         <div className={styles.hamburger} onClick={handleClick}>
           {click ? (
             <FaTimes size={20} style={{ color: "white" }} />
