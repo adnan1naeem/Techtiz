@@ -44,7 +44,7 @@ function Core() {
     <Box
       ref={weeksRef}
       sx={{
-        marginTop:{xs: "23%",sm:'17%',md:'7%',lg:'7%'},
+        marginTop: { xs: "23%", sm: '17%', md: '7%', lg: '7%' },
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -55,7 +55,7 @@ function Core() {
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: {xs: "27.2px",sm:'32px', md:"2.7em"},
+          fontSize: { xs: "27.2px", sm: '32px', md: "2.7em" },
           fontWeight: "bold",
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
@@ -68,9 +68,9 @@ function Core() {
         sx={{
           color: "#153A5F",
           fontSize: "1.1em",
-          fontSize: {xs: "0.9em", sm:"1.1em"},
-          pl: {xs: '3%', sm: '3%', md: "0%"},
-          pr: {xs: '3%', sm: '3%', md: "0%"},
+          fontSize: { xs: "0.9em", sm: "1.1em" },
+          pl: { xs: '3%', sm: '3%', md: "0%" },
+          pr: { xs: '3%', sm: '3%', md: "0%" },
           fontWeight: 600,
           textAlign: "center",
           mt: '7px',
@@ -88,38 +88,39 @@ function Core() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          width: {xs: "100%", sm: "100%", md: "100%", lg: "100%", xl:"75%"},
+          width: { xs: "100%", sm: "100%", md: "100%", lg: "100%", xl: "75%" },
           gap: "1.9%",
           mt: "2%",
         }}
-        
+
       >
         <CoreCard
-          image="https://techtiz.co/wp-content/uploads/2023/11/badge.svg"
+          image={require("../../assets/about-badge.svg")}
           heading="Quality"
           bg="#18B0E6"
           para="Our work speaks for itself through the quality we deliver, within the given timescales and budgets."
         />
         <CoreCard
-          image="https://techtiz.co/wp-content/uploads/2023/11/creative.svg"
+          image={require("../../assets/about-creative.svg")}
           heading="Creativity"
           bg="#153A5F"
           para="Creativity is the fuel our company runs on. We have fostered a culture that appreciates out-of-the-box thinking and innovative ideas."
         />
         <CoreCard
-          image="https://techtiz.co/wp-content/uploads/2023/11/privacy.svg"
+          image={require("../../assets/svg/about-privacy.svg")}
+
           heading="Privacy"
           bg="#18B0E6"
           para="When we partner with your business, we ensure that we safeguard your confidential information and provide the maximum privacy and security."
         />
         <CoreCard
-          image="https://techtiz.co/wp-content/uploads/2023/11/transparency.svg"
+          image={require("../../assets/svg/about-transparency.svg")}
           heading="Transparency"
           bg="#153A5F"
           para="We believe in open and honest communication with our clients, keeping them updated every step of the product lifecycle while ensuring complete transparency."
         />
         <CoreCard
-          image="https://techtiz.co/wp-content/uploads/2023/11/deal.svg"
+          image={require("../../assets/svg/about-deal.svg")}
           heading="Collaboration"
           bg="#18B0E6"
           para="Great ideas emerge through collaboration and teamwork. All our employees are team players who bring their own unique blend of creativity and inspiration to the table."

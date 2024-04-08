@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Typography, Card, CardContent } from "@mui/material";
+import Image from "next/image";
 
 function CoreCard({ image, heading, bg, para }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -33,7 +34,7 @@ function CoreCard({ image, heading, bg, para }) {
           }}
         >
           <Box sx={{ width: { xs: "35%", sm: "20%", md: "35%" } }}>
-            <img
+            <Image
               src={image}
               alt=""
               style={{ width: "100%", filter: "invert(100%)" }}

@@ -105,12 +105,6 @@ function Leadership() {
             />
           </Link>
         </Button>
-        {/* <Ceo
-            imageceo="https://techtiz.co/wp-content/uploads/2023/11/Ghazanfar-Ali.webp"
-            name="Ghazanfar Ali"
-            text="Business Development Executive"
-          />
-       */}
       </Box>
     </Box>
   );

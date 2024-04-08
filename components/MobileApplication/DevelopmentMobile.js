@@ -74,27 +74,27 @@ function DevelopmentMobile({ onPress }) {
         }}
       >
         <MobileServices
-          image="https://techtiz.co/wp-content/uploads/2023/10/reactjs-svgrepo-com.svg"
+          image={require("../../assets/mobile-application-reactjs.svg")}
           title="React Native Development"
           des="We develop high-quality digital products using the best cross-platform mobile app development platform."
           onPress={onPress}
         />
         <MobileServices
-          image="https://techtiz.co/wp-content/uploads/2023/10/flutter-svgrepo-com.svg"
+          image={require("../../assets/svg/mobile-application-flutter.svg")}
           title="Flutter App Development"
           des="Our solution-oriented developers use Flutter UI framework to deliver unconventional and engaging app designs that drive growth."
           onPress={onPress}
 
         />
         <MobileServices
-          image="https://techtiz.co/wp-content/uploads/2023/10/icons8-android-2.svg"
+          image={require("../../assets/svg/mobile-application-android.svg")}
           title="Andriod Development"
           des="We design intuitive and easy-to-use Android apps with people in mind, so your customers can use them on any device type"
           onPress={onPress}
 
         />
         <MobileServices
-          image="https://techtiz.co/wp-content/uploads/2023/10/icons8-ios-800-300x300.png"
+          image={require("../../assets/svg/mobile-application-ios.png")}
           title="iOS Development"
           des="With years of experience and expertise in all the latest coding languages, our solution-oriented programmers create feature-rich and intuitive rich iOS apps."
           onPress={onPress}

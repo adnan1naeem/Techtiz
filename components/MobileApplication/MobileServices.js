@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography, Card, CardContent, Button } from "@mui/material";
 import { useState } from "react";
+import Image from "next/image";
 
 function MobileServices({ image, title, des, onPress }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -40,7 +41,7 @@ function MobileServices({ image, title, des, onPress }) {
             transition: "transform 1s ease",
           }}
         >
-          <img src={image} alt="" style={{ width: "40%" }} />
+          <Image src={image} alt="" style={{ width: "40%" }} />
 
           <Typography
             sx={{

@@ -1,6 +1,7 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import React from "react";
 import styles from "../../styles/MainBanner.module.css";
+import Image from "next/image";
 
 function FooterLogoCard() {
   return (
@@ -21,8 +22,8 @@ function FooterLogoCard() {
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column" }}>
-          <img
-            src="https://techtiz.co/wp-content/uploads/2023/09/Techtiz-Logo-with-Icon-PNG-e1695527913263.png"
+          <Image
+            src={require("../../assets/footer-Techtiz-Logo.png")}
             alt=""
             className={styles.footerImage}
           />

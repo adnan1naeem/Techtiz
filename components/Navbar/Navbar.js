@@ -7,6 +7,7 @@ import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
 import { IoMdArrowDropup } from "react-icons/io";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Navbar = () => {
   const router = useRouter();
@@ -56,9 +57,9 @@ const Navbar = () => {
     <div className={styles.header}>
       <div className={styles.container}>
         <Link href="/">
-          <img
+          <Image
             className={styles.logo}
-            src="https://techtiz.co/wp-content/uploads/2023/09/Techtiz-Logo-White@2x.webp"
+            src={require("../../assets/navbar-Techtiz-Logo-White.webp")}
             alt=""
           />
         </Link>
@@ -183,12 +184,13 @@ const Navbar = () => {
           </li>
         </ul>
 
-
-            <div className={styles.contactUs} style={{ marginRight: "2%" }}>
-              <Link href={{ pathname: "/contact-us" }}>
-                <ButtonHover textButton="Contact Us" />
-              </Link>
-            </div>
+        {isWideScreen && (
+          <div className={styles["btn-group"]} style={{ marginRight: "2%" }}>
+            <Link href={{ pathname: "/contact-us" }}>
+              <ButtonHover textButton="Contact Us" />
+            </Link>
+          </div>
+        )}
         <div className={styles.hamburger} onClick={handleClick}>
           {click ? (
             <FaTimes size={20} style={{ color: "white" }} />
