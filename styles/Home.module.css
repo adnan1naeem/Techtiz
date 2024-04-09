@@ -90,3 +90,10 @@
     flex-direction: column;
   }
 }
+@media (max-width: 479px) {
+  .techArrow{
+    margin-left: "-5%";
+    height: "30px";
+  }
+}
+
