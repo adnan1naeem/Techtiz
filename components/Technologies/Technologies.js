@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useRef, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+// import styles from "../../styles/HomeForm.module.css";
 
 function SampleNextArrow(props) {
 
@@ -19,8 +20,7 @@ function SampleNextArrow(props) {
         display: "block",
         color: "#153A8D",
         height: 30,
-        width: 30,
-        marginRight: '1%'
+        marginRight: '-0.7%'
 
       }}
       onClick={onClick}
@@ -37,7 +37,6 @@ function SamplePrevArrow(props) {
         ...style,
         display: "block",
         height: 30,
-        width: 30,
         color: "#153A8D",
         marginLeft: "-5%",
       }}
@@ -80,7 +79,7 @@ function Technologies() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Show 4 slides by default
+    slidesToShow: 5, // Show 4 slides by default
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -88,13 +87,26 @@ function Technologies() {
 
     responsive: [
       {
+        breakpoint: 1536, // Show 4 slides on large screens (lg)
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
         breakpoint: 1200, // Show 3 slides on medium screens (md)
         settings: {
           slidesToShow: 3,
         },
       },
+
       {
         breakpoint: 768, // Show 2 slides on small screens (sm)
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 490, // Show 2 slides on small screens (sm)
         settings: {
           slidesToShow: 2,
         },
@@ -103,7 +115,7 @@ function Technologies() {
   };
 
   return (
-    <Box sx={{ marginTop: { xs: "20%", sm: "12%", md: "4%" }, marginBottom: { xs: "20%", sm: "12%", md: "4%" } }} ref={weeksRef}>
+    <Box sx={{ marginLeft: { xs: "25px" }, marginRight: { xs: "15px", sm: 0 }, marginTop: { xs: "20%", sm: "12%", md: "4%" }, marginBottom: { xs: "20%", sm: "12%", md: "4%" } }} ref={weeksRef}>
       <Typography
         sx={{
           color: "#153A5F",
@@ -147,7 +159,6 @@ function Technologies() {
         }}
       >
         <Box sx={{
-          ml: '5%',
         }}>
           <Slider {...settings} >
             <TechnologiesCard image={require('../../assets/svg/home-html5-2.svg')} width="40%" />
