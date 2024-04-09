@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Slider from "react-slick";
 import { useEffect, useRef, useState } from "react";
-// import linkedGolf from '../../assets/video/client-feedback-linked-golf-app-review.mp4';
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -167,9 +166,9 @@ function FeedBack() {
         }}
       >
         <Slider {...settings}>
-          <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Linked-golf-app-review.mp4'} />
-          <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Norbu-Snow-Feedback.mp4'} />
-          <FeedbackVideo link={'https://techtiz.co/wp-content/uploads/2023/11/Linked-golf-app-review.mp4'} />
+          <FeedbackVideo link={'/videos/client-feedback-linked-golf-app-review.mp4'} />
+          <FeedbackVideo link={'/videos/client-feedback-norbu-snow-feedback.mp4'} />
+          <FeedbackVideo link={'/videos/client-feedback-linked-golf-app-review.mp4'} />
         </Slider>
       </Box>
     </Box>
