@@ -27,7 +27,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
             width: "100%",
             height: "100%",
             marginTop: '-4.5%',
-            marginLeft: !isHovered ? '-1%' : "-1%",
+            marginLeft: !isHovered ? '-4.3%' : "-1%",
             transition: "transform 1.6s",
             transformStyle: "preserve-3d", // Preserve 3D transformations
             transform: isHovered ? "rotateY(180deg)" : "rotateY(0deg)", // Rotate on hover

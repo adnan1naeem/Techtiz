@@ -17,7 +17,7 @@ function AutonomousText() {
           <Typography
             sx={{
               color: "#FFFFFF",
-              fontSize: "2.7em",
+              fontSize: { xs: "1.7rem", sm: "2.7em", xl: "2.7em" },
               fontWeight: "600",
               lineHeight: "48px",
               fontFamily: "Mont-Bold, Sans-serif",

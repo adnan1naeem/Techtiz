@@ -60,7 +60,7 @@ const ImgForm = () => {
       <div className={styles.career}>Careers</div>
 
       <div className={styles.join_techtiz}>
-        <h1 className={styles.first_name}>Join Techtiz's</h1>
+        <h1 className={styles.first_name}>echtiz's</h1>
         <h2 className={styles.last_name}>Flourishing Community.</h2>
       </div>
 
@@ -111,7 +111,7 @@ const ImgForm = () => {
             <Alert
               sx={{
                 mt: "110px", ml: "-39.5rem", width: "20rem",
-                "@media screen and (min-width: 100px) and (max-width: 780px)": {
+                "@media screen and (min-width: 100px) and (max-width: 850px)": {
                   mt: "220px",
                   ml: "-38.5rem",
                 },
@@ -134,6 +134,10 @@ const ImgForm = () => {
                 "@media screen and (min-width: 300px) and (max-width: 400px)": {
                   mt: "310px",
                   ml: "-21rem",
+
+                },
+                "@media screen and (max-width: 400px)": {
+                  width: "18rem",
                 },
 
 

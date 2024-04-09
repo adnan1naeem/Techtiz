@@ -21,7 +21,7 @@ function DesignUX({ onPress }) {
     >
       <Card
         sx={{
-          width: { xs: "23rem", sm: "100%", md: "36rem", lg: "36rem" },
+          width: { xs: "100%", sm: "100%", md: "36rem", lg: "36rem" },
           height: { xs: "30rem", sm: "30rem", md: "32rem", lg: "25rem" },
 
           boxShadow: "none",

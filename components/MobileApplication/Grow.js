@@ -23,7 +23,7 @@ function Grow({ onPress }) {
     >
       <Card
         sx={{
-          width: { xs: "90%", sm: "100%", md: "38rem", lg: "31rem" },
+          width: { xs: "100%", sm: "100%", md: "38rem", lg: "31rem" },
           height: { xs: "22rem", sm: "30rem", md: "32rem", lg: "25rem" },
           boxShadow: "none",
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {

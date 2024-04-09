@@ -58,24 +58,27 @@ function BusinessCard({ fontSize, mb, data, onClick, activeButton }) {
         >
           <Box
             sx={{
-              marginTop: { xs: "-2%", md: '0%', lg: "-2%" },
-              width: { xs: "100%", sm: "50%", md: "15rem", lg: "15rem" },
-              height: { xs: "28rem", sm: "20rem", md: "18rem", lg: "22rem", xl: '22rem' },
-              "@media screen and (min-width: 450px) and (max-width: 600px)": {
-                height: '33rem'
-              },
+              marginTop: { xs: "-9%", sm: "-2%", md: '-2%', lg: "-2%" },
+              width: { xs: "97%", sm: "50%", md: "35%", lg: "30%" },
+              height: { xs: "20%", sm: "20%", md: "18%", lg: "20%", xl: '22rem' },
+              // "@media screen and (min-width: 600px) and (max-width: 770px)": {
+              //   width: "95%"
+              // },
             }}
           >
             <img
               src={data?.image}
               alt=""
-              style={{ height: "90%", width: "100%" }}
+              style={{ height: "100%", width: "100%" }}
             />
           </Box>
           <Box
             sx={{
               width: { xs: "100%", sm: "25rem", md: "30rem", lg: "28rem" },
               height: { xs: "18rem", sm: "18rem", md: "22rem", lg: "20rem", xl: '24rem' },
+              // "@media screen and (min-width: 600px) and (max-width: 770px)": {
+              //   width: "95%"
+              // },
             }}
           >
             <List sx={{ mt: { xs: '1%', sm: '3%' } }}>
@@ -134,8 +137,9 @@ function BusinessCard({ fontSize, mb, data, onClick, activeButton }) {
                 endIcon={<IoMdArrowRoundForward />}
                 sx={{
                   padding: "2.8%",
-                  paddingLeft: "9%",
-                  paddingRight: "9%",
+                  // paddingLeft: "9%",
+                  // paddingRight: "9%",
+                  width: "12em",
                   fontFamily: "'Mont-Regular', sans-serif",
                   background: "#18B0E6",
                   boxShadow: 'none',

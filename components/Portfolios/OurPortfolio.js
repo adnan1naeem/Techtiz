@@ -18,7 +18,7 @@ function OurPortfolio({ onPress }) {
     >
       <Card
         sx={{
-          width: { xs: "22rem", sm: "23rem", md: "31rem", lg: "31rem" },
+          width: { xs: "100%", sm: "23rem", md: "31rem", lg: "31rem" },
           height: { xs: "28rem", sm: "32xrem", md: "32rem", lg: "25rem" },
 
           '@media screen and (min-width: 1700px)': {

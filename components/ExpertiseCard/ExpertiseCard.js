@@ -11,8 +11,8 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href, width,
       <Link href={{ pathname: href }} style={{ textDecoration: 'none' }}>
         <Card
           sx={{
-            width: { xs: "20rem", sm: "36rem", md: "26rem", lg: "31rem" },
-            height: { xs: "25rem", sm: "22rem", md: "20rem", lg: "19rem" },
+            width: { xs: "21rem", sm: "36rem", md: "26rem", lg: "31rem" },
+            height: { xs: "26rem", sm: "22rem", md: "20rem", lg: "19rem" },
             borderRadius: "30px",
             background: "#F8F8F8",
             transition: "transform 1s ease", // Adding transition for the transform property
@@ -68,17 +68,17 @@ function ExpertiseCard({ title, imageCard, imagestyle, description, href, width,
                 height: { md: '20%' },
                 height: { md: '20%' },
                 "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                  width: href==="sqa" ?"30%": "40%",
+                  width: href === "sqa" ? "30%" : "40%",
                 },
                 "@media screen and (min-width: 1300px) and (max-width: 1535px)": {
-                  width: href==="sqa" ?"30%": "40%",
+                  width: href === "sqa" ? "30%" : "40%",
                 },
               }}
             >
               <img src={imageCard} alt="" style={{ imagestyle }} />
             </Box>
           </CardContent>
-          <CardActions style={{ display: "flex", justifyContent: "flex-end", position: 'absolute',bottom: "5%", right: "5%", }} sx={{ top: { xs: "90%", sm: "80%", md: "85%", lg: "80%" } }}>
+          <CardActions style={{ display: "flex", justifyContent: "flex-end", position: 'absolute', bottom: "5%", right: "5%", }} sx={{ top: { xs: "90%", sm: "80%", md: "85%", lg: "80%" } }}>
             <GoArrowUpRight
               style={{
                 fontSize: "30px",

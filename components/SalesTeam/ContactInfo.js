@@ -7,11 +7,16 @@ function ContactInfo() {
     <Box>
       <Card
         sx={{
-          width: { xs: "20rem", sm: "23rem", md: "28rem", lg: "30rem" },
+          width: { xs: "97.5%", sm: "30rem", md: "30rem", lg: "30rem" },
+          // width: "97.5%",
           height: { xs: "27rem", sm: "27rem", md: "25rem", lg: "15rem" },
           borderRadius: "5px",
           background: "#6373810F",
           boxShadow: "none",
+          marginLeft: { xs: "5px", sm: 0 },
+          "@media screen and (min-width: 500px) and (max-width: 600px)": {
+            width: "30rem"
+          },
         }}
       >
         <CardContent

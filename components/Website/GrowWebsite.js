@@ -27,7 +27,7 @@ function GrowWebsite({ onPress }) {
       <Card
         sx={{
           width: {
-            xs: "21rem",
+            xs: "100%",
             sm: "37rem",
             md: "30rem",
             lg: "38rem",
