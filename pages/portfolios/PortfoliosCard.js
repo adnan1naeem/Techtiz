@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
+import Image from "next/image";
 
 function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, mrstep, mlstep, widthImg, mrlast }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -62,9 +63,9 @@ function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, 
 
             }}
           >
-            <img src={mainImage} alt="" style={{ height: "100%" }} />
+            <Image src={mainImage} alt="" style={{ height: "100%" }} />
           </Box>
-          <Box sx={{ mt: "3%" }}>
+          <Box sx={{ mt: "3%", ml: title === "Step" ? "5%" : 0 }}>
             <Typography
               sx={{
                 fontSize: "23px",
