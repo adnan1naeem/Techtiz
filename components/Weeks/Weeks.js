@@ -43,7 +43,7 @@ function Weeks({ onClick }) {
       <Typography
         sx={{
           textAlign: "center",
-          fontSize: { xs: "28px", sm: "28px", md: "2.1em", lg: "2.7em", xl: '2.7em' },
+          fontSize: { xs: "27px", sm: "28px", md: "2.1em", lg: "2.7em", xl: '2.7em' },
           lineHeight: '35px',
           color: "#153A5F",
           fontFamily: "'Mont-Bold', sans-serif",
@@ -78,6 +78,7 @@ function Weeks({ onClick }) {
 
       <Box
         sx={{
+          margin: "10px",
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",

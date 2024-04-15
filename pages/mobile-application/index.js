@@ -81,6 +81,7 @@ function Mobile() {
           }}
         >
           <Grow onPress={handleClick} />
+
           <Box
             sx={{
               width: { xs: "60%", sm: "70%", md: "30%", lg: "30%", xl: "24%" },
@@ -113,8 +114,8 @@ function Mobile() {
             flexWrap: "wrap",
             justifyContent: { xs: "start", md: "center" },
             gap: "1%",
-            pl: { xs: "5%", md: "3%" },
-            pr: { xs: "5%", md: "3%" },
+            pl: { xs: "0%", sm: '5%', md: "3%" },
+            pr: { xs: "5%", sm: '5%', md: "3%" },
             "@media screen and (min-width: 1200px) and (max-width: 1350px)": {
               pl: '1%',
               pr: '1%',

@@ -59,7 +59,7 @@ function DoIt() {
         <Box
           sx={{
             background: "#F6F9FC",
-            width: '68em',
+            width: { xs: "90%", sm: "68em", xl: "68em" },
             mt: "3%",
             justifyContent: 'center',
             alignItems: "center",

@@ -22,9 +22,11 @@ function Grow({ onPress }) {
       }}
     >
       <Card
+
+
         sx={{
           width: { xs: "100%", sm: "100%", md: "38rem", lg: "31rem" },
-          height: { xs: "22rem", sm: "30rem", md: "32rem", lg: "25rem" },
+          height: { xs: "22rem", sm: "30rem", md: "31rem", lg: "25rem" },
           boxShadow: "none",
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
             width: '33rem',
@@ -52,9 +54,9 @@ function Grow({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: { xs: "22.4px", sm: "2.2em" },
+              fontSize: { xs: "1.4em", sm: "2.2em", md: "2.6em" },
               fontWeight: "600",
-              marginTop: { xs: '5%', sm: "3%" },
+              marginTop: { xs: "3%", md: 1, lg: 2 },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",

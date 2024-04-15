@@ -23,20 +23,20 @@ function HomeButtonBusiness({
           border: `2px solid ${disableHoverEffect ? background : "#18B0E6"}`,
           textTransform: "none",
           background: background,
-          height: {xs: 50, sm: 55, md: 60},
-          paddingLeft: {xs:"24px", md: "37px"},
-          paddingRight: {xs:"24px", md: "37px"},
+          height: { xs: 50, sm: 55, md: 60 },
+          paddingLeft: { xs: "24px", md: "37px" },
+          paddingRight: { xs: "24px", md: "37px" },
           marginTop: "11px",
           "@media screen and (min-width: 700px) and (max-width: 910px)": {
             paddingTop: "10px",
-          paddingBottom: "10px",
-       
-            },
+            paddingBottom: "10px",
+
+          },
           "&:hover": {
-            
+
             backgroundColor: disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)',
             color: disableHoverEffect ? color : "white",
-            border: `1px solid ${disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)'
+            border: `2px solid ${disableHoverEffect ? background : 'rgba(24, 176, 230, 0.6)'
               }`,
           },
         }}

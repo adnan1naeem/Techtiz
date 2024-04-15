@@ -47,14 +47,14 @@ function CommerceRescourse({ onPress }) {
       <Card
         sx={{
           width: {
-            xs: "30rem",
+            xs: "90%",
             sm: "35rem",
             md: "42rem",
             lg: "70rem",
             xl: "70rem",
           },
           height: { xs: "50rem", sm: "53rem", md: "56rem", lg: "31rem" },
-          borderRadius: "60px",
+          borderRadius: { xs: "20px", sm: "60px", xl: "60px" },
           background: "#153A5F",
           boxShadow: "none",
           mt: "1%",

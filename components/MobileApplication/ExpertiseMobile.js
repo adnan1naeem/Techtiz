@@ -35,11 +35,14 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
     <Box
       ref={weeksRef}
       sx={{
-        ml: { xs: "3%", sm: "-3%" },
+        ml: { xs: "5%", sm: "1.5%" },
         mr: { xs: "3%", sm: 0 },
         display: "flex",
         flexDirection: "column",
         width: "100%",
+        // "@media screen and (min-width: 400px) and (max-width: 440px)": {
+        //   ml: { xs: "3%", sm: "1.5%" },
+        // },
       }}
     >
       <Typography
@@ -95,7 +98,7 @@ function ExpertiseMobile({ title1, title2, title3, des, onPress }) {
       <Button
         variant="contained"
         endIcon={<IoMdArrowRoundForward />}
-        onClick={onPress} s
+        onClick={onPress}
         sx={{
           marginTop: "5%",
           padding: { xs: "3%", sm: "2%", md: "2.3%", lg: "2.3%" },

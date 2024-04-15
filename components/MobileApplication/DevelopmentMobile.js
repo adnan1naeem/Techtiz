@@ -60,6 +60,7 @@ function DevelopmentMobile({ onPress }) {
           opacity: isVisible ? 1 : 0,
         }}
       >
+
         Mobile App Development Services
       </Typography>
       <Box
@@ -72,7 +73,10 @@ function DevelopmentMobile({ onPress }) {
           '@media screen and (min-width: 1700px)': {
             mt: '0.7%'
 
-          }
+          },
+          "@media screen and (min-width: 700px) and (max-width: 760px)": {
+            gap: "6%",
+          },
         }}
       >
         <MobileServices

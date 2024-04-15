@@ -41,7 +41,7 @@ function MVPsStartup({ onPress }) {
       <Card
         sx={{
           width: { xs: "22rem", sm: "32rem", md: "23rem", lg: "33rem" },
-          height: { xs: "33rem", sm: "30rem", md: "38rem", lg: "34rem" },
+          height: { xs: "28rem", sm: "30rem", md: "38rem", lg: "34rem" },
           background: "none",
           boxShadow: "none",
         }}

@@ -24,11 +24,12 @@ function GrowWebsite({ onPress }) {
         },
       }}
     >
+
       <Card
         sx={{
           width: {
             xs: "100%",
-            sm: "37rem",
+            sm: "100%",
             md: "30rem",
             lg: "38rem",
             xl: "33rem",
@@ -49,7 +50,7 @@ function GrowWebsite({ onPress }) {
 
           },
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-            width: '45rem',
+            width: '47rem',
 
           },
           boxShadow: "none",
@@ -57,14 +58,15 @@ function GrowWebsite({ onPress }) {
       >
         <CardContent sx={{
           display: "flex", flexDirection: "column",
-          ml: { xs: '3%', md: 0 },
+          // ml: { xs: '3%', md: 0 },
         }}>
           <Typography
             sx={{
               color: "#153A5F",
               fontSize: { xs: "1em", sm: "1.3em" },
               fontWeight: "600",
-              marginTop: { xs: "4%", md: 1, lg: 2 },
+              marginTop: { xs: "3%", md: 1, lg: 2 },
+
               borderLeft: "3px solid #18B0E6",
               height: "18px",
               lineHeight: "20px",
@@ -78,13 +80,13 @@ function GrowWebsite({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: { xs: "1.6em", sm: "2.2em", md: "2.7em" },
-              fontWeight: "800",
+              fontSize: { xs: "1.4em", sm: "2.2em", md: "2.6em" },
+              fontWeight: "600",
               marginTop: { xs: "4%", md: "3%" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
-              lineHeight: '40px',
+              lineHeight: { xs: '30px', sm: '45px' },
               width: "100%",
               "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
                 width: '60%',
@@ -102,6 +104,7 @@ function GrowWebsite({ onPress }) {
               color: "#153A5F",
               fontSize: { xs: "14.4px", sm: "14.4px", md: "1.2em" },
               fontWeight: 600,
+
               marginTop: "2%",
               fontFamily: "Mont-Regular, Sans-serif",
             }}
@@ -115,7 +118,7 @@ function GrowWebsite({ onPress }) {
             onClick={onPress}
             sx={{
               marginTop: "6%",
-              padding: { xs: "1%", sm: "2%", md: "1.5%", lg: "1.8%" },
+              padding: { xs: "3%", sm: "2%", md: "1.5%", lg: "1.8%" },
               width: '12em',
               paddingLeft: { xs: '2px', sm: "6px" },
               paddingRight: { xs: '2px', sm: "6px" },

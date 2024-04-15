@@ -27,7 +27,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
             width: "100%",
             height: "100%",
             marginTop: '-4.5%',
-            marginLeft: !isHovered ? '-4.3%' : "-1%",
+            marginLeft: '-4.3%',
             transition: "transform 1.6s",
             transformStyle: "preserve-3d", // Preserve 3D transformations
             transform: isHovered ? "rotateY(180deg)" : "rotateY(0deg)", // Rotate on hover
@@ -98,6 +98,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                 background: "#153A5F",
                 color: "white",
                 mr: '-9%',
+                ml: '8%',
                 pl: '9%'
 
               }}

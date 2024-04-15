@@ -43,8 +43,6 @@ function Welcoming() {
           color: "#153A5F",
           fontSize: { xs: "1.2em", sm: "1.9em", md: "2.2em" },
           fontWeight: "600",
-          pl: 3,
-          pr: 3,
           transition: "opacity 1s ease-in-out",
           opacity: isVisible ? 1 : 0,
           fontFamily: "'Mont-Bold', sans-serif"
@@ -72,14 +70,12 @@ function Welcoming() {
         </Box>
         <Box
           sx={{
-            width: { xs: "21em", sm: "30em", md: "30em", lg: "35rem" },
+            width: { xs: "22em", sm: "30em", md: "30em", lg: "35rem" },
             marginTop: "1.5rem"
           }}
         >
           <Typography sx={{
             color: "#000000",
-            pl: 3,
-            pr: 3,
             fontSize: { xs: "0.9em", sm: "1em" },
             fontWeight: "600",
             fontFamily: "'Mont-Regular', sans-serif",
@@ -89,10 +85,8 @@ function Welcoming() {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: { xs: "1em", sm: "1em" },
+              fontSize: { xs: "0.9em", sm: "1em" },
               fontWeight: 600,
-              pl: 3,
-              pr: 3,
               marginTop: "5%",
               fontFamily: "'Mont-Regular', sans-serif",
               color: "#153a5f"

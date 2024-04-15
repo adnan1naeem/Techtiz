@@ -61,7 +61,7 @@ function DoItMobile() {
           flexDirection: "row",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: { xs: "2%", l: "1%" },
+          gap: { xs: "2%", sm: "3%", lg: "2%" },
           marginTop: { xs: '1%', sm: '-3%', md: '-3', lg: '-2%', xl: "-2%" },
         }}
       >

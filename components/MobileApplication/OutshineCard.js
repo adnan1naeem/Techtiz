@@ -32,11 +32,13 @@ function OutshineCard() {
     };
   }, []);
   return (
-    <Box ref={weeksRef} sx={{ background: "#F8F8F8", marginTop: "3%" }}>
+    <Box ref={weeksRef} sx={{ background: "#F8F8F8", marginTop: "3%", margin: "10px" }}>
       <Typography
         sx={{
           color: "#153A5F",
-          fontSize: "1.6em",
+          fontSize: { xs: "1.5em", sm: "1.6em", xl: "1.6em" },
+          marginLeft: "2%",
+          marginRight: "2%",
           textAlign: "center",
           fontWeight: "600",
           paddingTop: "4%",
@@ -60,6 +62,7 @@ function OutshineCard() {
             margin: "0 auto",
             marginTop: "2%",
           }
+
         }}
       >
         <ServicesCard

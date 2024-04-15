@@ -61,7 +61,7 @@ function DoItUX() {
             justifyContent: "center",
             gap: "2%",
             background: "#F6F9FC",
-            width: '33em',
+            width: { xs: "90%", sm: "33em", xl: "33em" },
             // marginLeft: { xs: 0, sm: '10%', md: '20%', lg: "30%", xl: '33%' },
             // marginRight: { xs: 0, sm: '10%', md: '20%', lg: "30%", xl: '33%' },
             padding: " 0.5%",

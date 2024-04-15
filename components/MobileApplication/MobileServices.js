@@ -22,7 +22,14 @@ function MobileServices({ image, title, des, onPress }) {
           transition: "opacity 1s ease-in-out",
           position: "relative",
           marginLeft: { sm: "0.5rem" },
-          marginTop: { xs: "0.5rem", sm: 0 }
+          marginTop: { xs: "0.5rem", sm: 0 },
+          "@media screen and (min-width: 400px) and (max-width: 430px)": {
+            width: "23.5rem"
+          },
+          "@media screen and (min-width: 430px) and (max-width: 435px)": {
+            width: "24.5rem"
+          },
+
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

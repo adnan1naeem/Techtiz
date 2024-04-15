@@ -24,15 +24,24 @@ function Professionals({ onPress }) {
       <Card
         sx={{
           width: { xs: "100%", sm: "34rem", md: "31rem", lg: "33rem", xl: "33rem" },
-          height: { xs: "29rem", sm: "32xrem", md: "32rem", lg: "28rem" },
+          height: { xs: "28rem", sm: "32rem", md: "32rem", lg: "28rem" },
           // backgroundColor: { xs: "red", md: "blue", xs: "orange", sm: "pink", lg: "green", xl: "transparent" },
           boxShadow: "none",
           '@media screen and (min-width: 1700px)': {
             width: '33rem'
           },
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-            width: '33rem',
+            width: '35.5rem',
             mt: '2%'
+          },
+          '@media screen and (max-width: 380px)': {
+            height: "22rem"
+          },
+          '@media screen and (max-width: 380px)': {
+            height: "22rem"
+          },
+          '@media screen and (max-width: 936px)': {
+            width: "100%"
           },
 
         }}
@@ -41,7 +50,7 @@ function Professionals({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.3em",
+              fontSize: { xs: "16px", sm: "1.3em" },
               fontWeight: "600",
               borderLeft: "3px solid #18B0E6",
               height: "17px",
@@ -57,9 +66,9 @@ function Professionals({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: { xs: "1.6em", md: "2.2em" },
+              fontSize: { xs: "22.4px", sm: "2.2em" },
               fontWeight: "600",
-              marginTop: "1.2%",
+              marginTop: { xs: '5%', sm: "3%" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
@@ -70,7 +79,7 @@ function Professionals({ onPress }) {
           <Typography
             sx={{
               color: "#18B0E6",
-              fontSize: { xs: "1.6em", md: "2.2em" },
+              fontSize: { xs: "1.4em", md: "2.2em" },
               fontWeight: "600",
               lineHeight: '30px',
               transition: "opacity 1s ease-in-out",

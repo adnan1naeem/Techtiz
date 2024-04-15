@@ -60,7 +60,7 @@ const ImgForm = () => {
       <div className={styles.career}>Careers</div>
 
       <div className={styles.join_techtiz}>
-        <h1 className={styles.first_name}>echtiz's</h1>
+        <h1 className={styles.first_name}>join techtiz's</h1>
         <h2 className={styles.last_name}>Flourishing Community.</h2>
       </div>
 
@@ -100,7 +100,7 @@ const ImgForm = () => {
             </div>
             <div className={styles.button}>
               <button type="submit" className={styles.submit_button} disabled={isLoading}>
-                {isLoading ? 'Submitting...' : 'Submit'}
+                {isLoading ? 'Submiting...' : 'Submit'}
                 <IoMdArrowRoundUp />
               </button>
             </div>

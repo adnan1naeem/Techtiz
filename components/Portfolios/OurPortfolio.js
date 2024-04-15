@@ -18,11 +18,16 @@ function OurPortfolio({ onPress }) {
     >
       <Card
         sx={{
-          width: { xs: "100%", sm: "23rem", md: "31rem", lg: "31rem" },
+          width: { xs: "100%", sm: "100%", md: "31rem", lg: "33rem" },
           height: { xs: "28rem", sm: "32xrem", md: "32rem", lg: "25rem" },
+          marginTop: "5%",
 
           '@media screen and (min-width: 1700px)': {
             mt: '3%'
+
+          },
+          '@media screen and (max-width: 1100px)': {
+            width: "100%",
 
           },
           boxShadow: "none",
@@ -32,7 +37,7 @@ function OurPortfolio({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.3em",
+              fontSize: { xs: "16px", sm: "1.3em" },
               fontWeight: "600",
               borderLeft: "3px solid #18B0E6",
               height: "18px",
@@ -49,10 +54,10 @@ function OurPortfolio({ onPress }) {
             sx={{
               color: "#153A5F",
               fontSize: "2.5em",
-              fontSize: { xs: "1.4em", sm: "2em", md: "2.5em" },
+              fontSize: { xs: "1.4em", sm: "2.2em", md: "2.6em" },
               fontWeight: "600",
               marginTop: { xs: 3, md: "3%" },
-              lineHeight: { xs: "35px", md: "45px" },
+              lineHeight: { xs: "30px", md: "45px" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "'Mont-Bold', sans-serif"

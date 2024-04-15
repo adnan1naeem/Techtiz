@@ -22,10 +22,13 @@ function QA({ onPress }) {
     >
       <Card
         sx={{
-          width: { xs: "100%", sm: "33rem", md: "28rem", lg: "36rem" },
-          height: { xs: "29rem", sm: "26rem", md: "32rem", lg: "28rem" },
+          width: { xs: "98%", sm: "100%", md: "28rem", lg: "36rem" },
+          height: { xs: "23rem", sm: "26rem", md: "35rem", lg: "32rem" },
+          marginTop: "1%",
+          marginLeft: "-4%",
+          // background: "red",
           "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-            width: "31rem",
+            width: "36rem",
           },
           "@media screen and (min-width: 400px) and (max-width: 600px)": {
             height: '24rem'
@@ -53,9 +56,9 @@ function QA({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: { xs: '33.6px', md: "2.6em" },
-              fontWeight: "800",
-              lineHeight: "43px",
+              fontSize: { xs: "1.4em", sm: "2.2em", md: "2.6em" },
+              fontWeight: "600",
+              lineHeight: { xs: '30px', sm: '45px' },
               marginTop: { xs: '5%', md: "1%", lg: "3.5%" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
@@ -69,7 +72,7 @@ function QA({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: "1.1em",
+              fontSize: { xs: "14.4px", sm: "14.4px", md: "1.2em" },
               fontWeight: 600,
               marginTop: "2%",
               fontFamily: "Mont-Regular, Sans-serif",

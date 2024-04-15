@@ -62,7 +62,7 @@ function Careers({ onPress }) {
           }}
         >
           <Box>
-            <Box className={classes.leftPaper}>
+            <Box className={classes.leftPaper} sx={{ marginLeft: "-1%" }}>
               <ExpertiseMobile
                 title1={`Why`}
                 title2={`You Should`}
