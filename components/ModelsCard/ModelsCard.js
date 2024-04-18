@@ -2,21 +2,39 @@ import React, { useState } from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import ButtonBusiness from "../Texts/ButtonBusiness";
 
-function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresource }) {
+function ModelsCard({
+  maintitle,
+  backgroundImage,
+  onPress,
+  resource,
+  titleresource,
+}) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <Box>
       <Card
         sx={{
-          width: { xs: "22rem", sm: "24rem", md: "24rem", lg: "24rem", xl: "24rem" },
-          height: { xs: "25rem", sm: "25rem", md: "28rem", lg: "28rem", xl: "28rem" },
+          width: {
+            xs: "22rem",
+            sm: "24rem",
+            md: "24rem",
+            lg: "24rem",
+            xl: "24rem",
+          },
+          height: {
+            xs: "25rem",
+            sm: "25rem",
+            md: "28rem",
+            lg: "28rem",
+            xl: "28rem",
+          },
           borderRadius: 3,
           overflow: "hidden",
           marginTop: "6%",
           cursor: "pointer",
           perspective: "1000px",
-          boxShadow: 'none',
+          boxShadow: "none",
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -26,8 +44,8 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
             position: "relative",
             width: "100%",
             height: "100%",
-            marginTop: '-4.5%',
-            marginLeft: '-4.3%',
+            marginTop: "-4.5%",
+            marginLeft: "-4.3%",
             transition: "transform 1.6s",
             transformStyle: "preserve-3d", // Preserve 3D transformations
             transform: isHovered ? "rotateY(180deg)" : "rotateY(0deg)", // Rotate on hover
@@ -46,7 +64,7 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                 backgroundImage: backgroundImage,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                width: '100%',
+                width: "100%",
                 borderRadius: 3,
                 height: "100%",
                 display: "flex",
@@ -58,9 +76,10 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                   background: "#18B0E691",
                   width: "100%",
                   height: "4.5rem",
+                  borderRadius: "0px 0px 12px 12px",
                   left: 0,
                   position: "absolute",
-                  bottom: 0
+                  bottom: 0,
                 }}
               >
                 <Typography
@@ -91,16 +110,15 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                height: '100%',
+                height: "100%",
                 paddingTop: "30%",
                 marginLeft: "3%",
                 borderRadius: 3,
                 background: "#153A5F",
                 color: "white",
-                mr: '-9%',
-                ml: '8%',
-                pl: '9%'
-
+                mr: "-9%",
+                ml: "8%",
+                pl: "9%",
               }}
             >
               <Typography
@@ -108,12 +126,18 @@ function ModelsCard({ maintitle, backgroundImage, onPress, resource, titleresour
                 sx={{
                   fontSize: "25px",
                   fontWeight: "600",
-                  fontFamily: "'Mont-Bold', sans-serif"
+                  fontFamily: "'Mont-Bold', sans-serif",
                 }}
               >
                 {resource}
               </Typography>
-              <Typography color="white" sx={{ marginTop: "2%", fontFamily: "'Mont-Regular', sans-serif" }}>
+              <Typography
+                color="white"
+                sx={{
+                  marginTop: "2%",
+                  fontFamily: "'Mont-Regular', sans-serif",
+                }}
+              >
                 {titleresource}
               </Typography>
               <Box sx={{ marginTop: "2%" }}>

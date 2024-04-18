@@ -17,7 +17,7 @@ function QA({ onPress }) {
         display: "flex",
         justifyContent: "center",
         alignContent: "center",
-        // mb: { xs: "28%", sm: '1%', md: "0%" },
+        ml: { xs: "1%", sm: "2%", md: "0%", lg: "0%" },
       }}
     >
       <Card
@@ -31,7 +31,7 @@ function QA({ onPress }) {
             width: "36rem",
           },
           "@media screen and (min-width: 400px) and (max-width: 600px)": {
-            height: '24rem'
+            height: "24rem",
           },
 
           boxShadow: "none",
@@ -41,7 +41,7 @@ function QA({ onPress }) {
           <Typography
             sx={{
               color: "#153A5F",
-              fontSize: { xs: '16px', md: "1.3em" },
+              fontSize: { xs: "16px", md: "1.3em" },
               fontWeight: "600",
               borderLeft: "3px solid #18B0E6",
               height: "20px",
@@ -58,8 +58,8 @@ function QA({ onPress }) {
               color: "#153A5F",
               fontSize: { xs: "1.4em", sm: "2.2em", md: "2.6em" },
               fontWeight: "600",
-              lineHeight: { xs: '30px', sm: '45px' },
-              marginTop: { xs: '5%', md: "1%", lg: "3.5%" },
+              lineHeight: { xs: "30px", sm: "45px" },
+              marginTop: { xs: "5%", md: "1%", lg: "3.5%" },
               transition: "opacity 1s ease-in-out",
               opacity: isVisible ? 1 : 0,
               fontFamily: "Mont-Bold, Sans-serif",
@@ -89,7 +89,7 @@ function QA({ onPress }) {
               marginTop: "6%",
               padding: { xs: "1%", sm: "2%", md: "1.5%", lg: "1.8%" },
               // width: { xs: "50%", sm: "80%", md: "60%", lg: "40%" },
-              width: '12em',
+              width: "12em",
               paddingLeft: "1%",
               paddingRight: "1%",
               borderRadius: 1,
