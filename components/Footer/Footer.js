@@ -33,7 +33,7 @@ function Footer() {
             text4="Contact Us"
             href_four="/contact-us"
             text5="Privacy Policy"
-            href_five="/"
+            href_five="/privacypolicy"
             mt={{ xs: '10%', sm: 0 }}
           />
           <FooterCard
