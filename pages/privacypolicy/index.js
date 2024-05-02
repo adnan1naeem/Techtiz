@@ -2,6 +2,7 @@ import { Typography, Box, Grid } from "@mui/material";
 import React from "react";
 
 import Link from "next/link";
+import Head from "next/head";
 
 function index() {
   const paragraphText = () => {
@@ -14,7 +15,12 @@ function index() {
   };
 
   return (
-    <Box sx={{ ml: "10%", marginRight: {xs:"8%",md:'20%'}, pt: "25px", mt: {xs:"12%",sm:'10%' }}}>
+    <>
+       <Head>
+        <title>Privacy Policy | Techtiz</title>
+        <meta name="description" content="" key="desc" />
+      </Head>
+      <Box sx={{ ml: "10%", marginRight: {xs:"8%",md:'20%'}, pt: "25px", mt: {xs:"12%",sm:'10%' }}}>
       <Typography
         variant="h2"
         sx={{
@@ -207,6 +213,8 @@ function index() {
         please contact us.
       </Typography>
     </Box>
+    </>
+    
   );
 }
 

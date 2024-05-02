@@ -8,6 +8,8 @@ import Networking from "../../components/Industries/Networking/Networking";
 import MVPs from "../../components/Industries/MVPs/MVPs";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import Image from "next/image";
+import Head from "next/head";
+
 // import Footer from "../components/Footer/Footer";
 
 function Industries() {
@@ -25,6 +27,10 @@ function Industries() {
 
   return (
     <div>
+      <Head>
+        <title>Induestries | Techtiz</title>
+        <meta name="description" content="" key="desc" />
+      </Head>
       {/* <NavBar /> */}
       <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "11%" } }}>
         <Box

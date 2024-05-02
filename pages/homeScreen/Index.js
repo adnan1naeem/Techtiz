@@ -10,6 +10,7 @@ import Technologies from "../../components/Technologies/Technologies";
 import FeedBack from "../../components/FeedBack/FeedBack";
 
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
+import Head from "next/head";
 
 function HomeScreen() {
   const contactSectionRef = useRef(null);
@@ -23,6 +24,10 @@ function HomeScreen() {
   };
   return (
     <div>
+     <Head>
+        <title>Techtiz</title>
+        <meta name="description" content="" key="desc" />
+      </Head>
       <Box>
         <MainBanner onPress={handleClick} />
         <Weeks onClick={handleClick} />

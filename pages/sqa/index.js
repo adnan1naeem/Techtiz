@@ -8,6 +8,7 @@ import Autonomous from "../../components/SQA/Autonomous";
 import DiscussProject from "../../components/Website/DiscussProject";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import Image from "next/image";
+import Head from "next/head";
 
 function Sqa() {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -23,6 +24,10 @@ function Sqa() {
 
   return (
     <Box>
+    <Head>
+        <title>SQA | Techtiz</title>
+        <meta name="description" content="" key="desc" />
+      </Head>
       <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%", xl: '10%' } }}>
         <Box
           sx={{

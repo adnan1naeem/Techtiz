@@ -5,6 +5,8 @@ import Core from "../../components/About/Core";
 import Software from "../../components/About/Software";
 import Leadership from "../../components/About/Leadership";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
+import Head from "next/head";
+
 
 function Index() {
   const contactSectionRef = useRef(null);
@@ -17,7 +19,12 @@ function Index() {
     }
   };
   return (
-    <div>
+    <>
+    <Head>
+        <title>About | Techtiz</title>
+        <meta name="description" content="" key="desc" />
+      </Head>
+      <div>
       <Box>
         <Enterprises onPress={handleClick} />
         <Core />
@@ -28,6 +35,8 @@ function Index() {
         </div>
       </Box>
     </div>
+    </>
+    
   );
 }
 

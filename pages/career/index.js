@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import Careers from "../../components/Careers/Careers";
 import Hiring from "../../components/Careers/Hiring";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
+import Head from "next/head";
 
 function Career() {
   const contactSectionRef = useRef(null);
@@ -18,6 +19,10 @@ function Career() {
 
   return (
     <div>
+     <Head>
+        <title>Career | Techtiz</title>
+        <meta name="description" content="" key="desc" />
+      </Head>
       <Box>
         <Careers onPress={handleClick} />
         <Hiring />

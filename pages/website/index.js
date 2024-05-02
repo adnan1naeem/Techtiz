@@ -7,6 +7,7 @@ import Stack from "../../components/Website/Stacks";
 import DiscussProject from "../../components/Website/DiscussProject";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import Image from "next/image";
+import Head from "next/head";
 
 function Web() {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -22,6 +23,10 @@ function Web() {
 
   return (
     <div>
+    <Head>
+        <title>Website | Techtiz</title>
+        <meta name="description" content="" key="desc" />
+      </Head>
       <Box sx={{
         marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "13%" }, "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
           mt: '12%'

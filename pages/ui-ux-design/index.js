@@ -7,6 +7,8 @@ import DiscussProject from "../../components/Website/DiscussProject";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import styles from "../../styles/ModelCard.module.css";
 import Image from "next/image";
+import Head from "next/head";
+
 
 function UI() {
     const [isHovered, setIsHovered] = React.useState(false);
@@ -23,6 +25,10 @@ function UI() {
 
     return (
         <div>
+         <Head>
+        <title>UI/UX Design | Techtiz</title>
+        <meta name="description" content="" key="desc" />
+      </Head>
             <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "14%", xl: '12%' } }}>
                 <Box
                     sx={{

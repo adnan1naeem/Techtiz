@@ -5,6 +5,11 @@ import OurPortfolio from "../../components/Portfolios/OurPortfolio";
 import AllPortfolios from "./AllPortfolios";
 import SalesTeam from "../../components/SalesTeam/SalesTeam";
 import Image from "next/image";
+import Head from "next/head";
+
+
+
+
 // import SalesTeam from "../../components/SalesTeam/SalesTeam";
 // import Footer from "../../Component/Footer/Footer";
 
@@ -22,6 +27,10 @@ function Portfolios() {
   };
   return (
     <div>
+    <Head>
+        <title>Portfolios | Techtiz</title>
+        <meta name="description" content="" key="desc" />
+      </Head>
       {/* <NavBar /> */}
       <Box sx={{ marginTop: { xs: "30%", sm: "15%", md: "14%", lg: "12%" } }}>
         <Box
