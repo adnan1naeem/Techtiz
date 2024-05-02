@@ -52,7 +52,7 @@ function Footer() {
             text1="Careers"
             href_one="/career"
             text2="Blog"
-            href_two="/blogs"
+            href_two="https://blog.techtiz.co"
             mt={{ xs: '12%', sm: 0 }}
           />
           <FooterReach />
