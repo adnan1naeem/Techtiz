@@ -1,7 +1,8 @@
+import "../styles/global.css";
+
+import Footer from "../components/Footer/Footer";
 // import '@/styles/globals.css'
 import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import "../styles/global.css"
 
 export default function App({ Component, pageProps }) {
   return (
@@ -14,7 +15,7 @@ export default function App({ Component, pageProps }) {
         body {
           padding: 0;
           margin: 0;
-          
+
           font-family: sans-serif;
         }
         * {
