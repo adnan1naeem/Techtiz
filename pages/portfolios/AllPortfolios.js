@@ -50,7 +50,7 @@ function AllPortfolios() {
         <PortfoliosCard
           widthImg={{ xs: "6rem", sm: "35rem", md: "35rem", lg: "30rem" }}
           mainImage={require('../../assets/portfolio-group.png')}
-          blogLink={"https://blog.techtiz.co/how-to-build-a-healthcare-app-a-step-by-step-guide-to-development/"}
+          blogLink={"https://blog.techtiz.co/the-linked-golf-success-story-connecting-golf-buddies/"}
           title="Step"
           description="Qartt, based in the UK, is an application that bridges businesses and delivery partners. Managing delivery teams and monitoring their productivity can be a significant challenge for businesses. TechTiz played a pivotal role in transforming qartt into a real-time application that empowers companies to track orders, optimize delivery routes for riders, and seamlessly manage their products."
           mrstep='-2px'
