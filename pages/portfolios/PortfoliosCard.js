@@ -2,7 +2,20 @@ import React, { useState } from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import Image from "next/image";
 
-function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, mrstep, mlstep, widthImg, mrlast }) {
+function PortfoliosCard({
+  title,
+  description,
+  mainImage,
+  mr,
+  ml,
+  width,
+  height,
+  mrstep,
+  mlstep,
+  widthImg,
+  mrlast,
+  blogLink
+}) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -11,6 +24,10 @@ function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, 
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        cursor: "pointer"
+      }}
+      onClick={() => {
+        window.location.href = blogLink;
       }}
     >
       <Card
@@ -54,13 +71,11 @@ function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, 
                 width: width,
                 height: height,
                 mr: mrlast,
-
               },
               "@media screen and (min-width: 1300px)": {
                 mr: mrstep,
-                ml: mlstep
-              }
-
+                ml: mlstep,
+              },
             }}
           >
             <Image src={mainImage} alt="" style={{ height: "100%" }} />
@@ -84,13 +99,19 @@ function PortfoliosCard({ title, description, mainImage, mr, ml, width, height, 
                 fontFamily: "'Mont-Regular',Sans-serif",
                 marginTop: "1%",
                 lineHeight: "19px",
-                "@media screen and (min-width: 1200px) and (max-width: 1300px)": {
-                  fontSize: "13px",
-                },
+                "@media screen and (min-width: 1200px) and (max-width: 1300px)":
+                  {
+                    fontSize: "13px",
+                  },
               }}
             >
               {(description ?? "").split(/\r?\n/).map((item, key) => {
-                return <span key={key}>{item}<br /></span>
+                return (
+                  <span key={key}>
+                    {item}
+                    <br />
+                  </span>
+                );
               })}
             </Typography>
           </Box>
