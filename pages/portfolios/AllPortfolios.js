@@ -48,16 +48,16 @@ function AllPortfolios() {
           description="Qartt, based in the UK, is an application that bridges businesses and delivery partners. Managing delivery teams and monitoring their productivity can be a significant challenge for businesses. TechTiz played a pivotal role in transforming qartt into a real-time application that empowers companies to track orders, optimize delivery routes for riders, and seamlessly manage their products."
         />
         <PortfoliosCard
-          widthImg={{ xs: "6rem", sm: "35rem", md: "35rem", lg: "30rem" }}
-          mainImage={require('../../assets/portfolio-group.png')}
+          widthImg={{ xs: "10rem", sm: "55rem", md: "60rem", lg: "50rem" }}
+          mainImage={require('../../assets/ss.png')}
           blogLink={"https://blog.techtiz.co/the-linked-golf-success-story-connecting-golf-buddies/"}
-          title="Step"
-          description="Qartt, based in the UK, is an application that bridges businesses and delivery partners. Managing delivery teams and monitoring their productivity can be a significant challenge for businesses. TechTiz played a pivotal role in transforming qartt into a real-time application that empowers companies to track orders, optimize delivery routes for riders, and seamlessly manage their products."
-          mrstep='-2px'
-          mlstep="4.5%"
-          mr="3%"
-          ml={{ xs: "15%", sm: "5%", lg: "2%" }}
-          mrlast="-0.9%"
+          title="Linked Golf"
+          description="Our client’s vision was to create an app that facilitates seamless connections among golfers, allowing them to effortlessly coordinate playing times with fellow enthusiasts. Matt wanted the app to make it easier for golfers to find others to play with and ensure everyone is on the same page about scheduling a game. Here are just some of the features he wanted in the app."
+          // mrstep='-2px'
+          // mlstep="4.5%"
+          // mr="3%"
+          // ml={{ xs: "15%", sm: "5%", lg: "2%" }}
+          // mrlast="-0.9%"
         />
       </Box>
     </Box>

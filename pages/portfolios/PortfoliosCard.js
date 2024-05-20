@@ -80,7 +80,7 @@ function PortfoliosCard({
           >
             <Image src={mainImage} alt="" style={{ height: "100%" }} />
           </Box>
-          <Box sx={{ mt: "3%", ml: title === "Step" ? "5%" : 0 }}>
+          <Box sx={{ mt: "3%", ml: title === "Linked Golf" ? "3%" : 0 }}>
             <Typography
               sx={{
                 fontSize: "23px",
