@@ -36,7 +36,7 @@ function DevelopmentCard({ background, title, Description, onClick }) {
     <Box ref={weeksRef} >
       <Card
         sx={{
-          width: { xs: "23rem", sm: "25rem", md: "20rem", lg: "23rem", xl: "23rem" },
+          width: { xs: "100%", sm: "25rem", md: "20rem", lg: "23rem", xl: "23rem" },
           height: { xs: "auto", sm: "22rem", md: "22rem", lg: "22rem", xl: "22rem" },
           borderRadius: "6px",
           background: background,
