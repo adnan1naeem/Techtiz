@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         service: "gmail",
         auth: {
           user: "hr@techtiz.co",
-          pass: "aitc qooa myjt lcwf",
+          pass: "fnwe tzxa pkei iqzu",
         },
       });
       const mailOptions = {
